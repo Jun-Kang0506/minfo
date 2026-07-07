@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(npm --version)",
-      "Bash(npx --yes create-next-app@latest . --ts --tailwind --eslint --app --src-dir --use-npm --import-alias \"@/*\" --turbopack --yes)"
-    ]
-  }
-}

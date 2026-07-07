@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MINFO｜みんなのインフォ
 
-## Getting Started
+**Multilingual Information Navigator for Foreign-Origin Residents**
 
-First, run the development server:
+A civic-tech prototype: a source-grounded, multilingual AI life-information
+navigator for foreign-origin residents, piloting in Shinjuku / Okubo, Tokyo.
+Not a translation chatbot — a trusted navigator that explains daily-life
+systems simply, always shows its official sources, and guides people to the
+right real-world office.
+
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 — mobile-first, so try a narrow window or device mode.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What's inside
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **6 languages** from local dictionaries: English, やさしい日本語, 中文, 한국어, Tiếng Việt, नेपाली
+- **Source-grounded answers**: every answer shows official/public source cards
+  (Shinjuku City, Tokyo Metropolitan Government, Himawari, Tokyo Bousai, ISA, FRESC…)
+- **Safety behavior**: 119/110 emergency escalation, caution notices for
+  legal/visa/tax/housing topics, honest low-confidence fallback to real
+  consultation desks
+- **Answer structure**: direct answer → safety note → next steps → sources → feedback
 
-## Learn More
+## Architecture
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/lib/types.ts                  shared types (Answer, Source, Category, Language…)
+src/lib/data/                     local trusted data: sources, categories, prompts,
+                                  6-language answer templates, UI strings
+src/lib/engine/localAnswerEngine  v1 engine — deterministic, works offline
+src/lib/engine/claudeAnswerEngine placeholder for server-side Claude API (Phase 2)
+src/app/api/ask/route.ts          server route — the engine swap point
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The MVP requires **no API key**. To prepare Claude integration, copy
+`.env.local.example` to `.env.local` — keys are only read server-side and are
+never exposed to the browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Status
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Hackathon prototype (2026). Not a government service. Feedback buttons store
+state locally only; the open-data roadmap items are future plans, clearly
+labeled as not yet implemented.

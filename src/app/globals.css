@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* MINFO civic palette — warm paper, aizome indigo (trust), shu vermillion (action) */
+  --color-paper: #f7f2e9;
+  --color-card: #fffdf8;
+  --color-ink: #23201a;
+  --color-ink-soft: #5c564a;
+  --color-line: #e4dcc9;
+
+  --color-civic: #29486b;
+  --color-civic-deep: #1c3049;
+  --color-civic-soft: #e9eef4;
+
+  --color-shu: #c73e1d;
+  --color-shu-deep: #a53318;
+  --color-shu-soft: #faeae3;
+
+  --color-moss: #33604a;
+  --color-moss-soft: #e7efe9;
+
+  --color-caution: #7a5200;
+  --color-caution-soft: #fbf2d8;
+  --color-caution-line: #d9a521;
+
+  --color-danger: #a52815;
+  --color-danger-soft: #fbe9e4;
+
+  --font-display: var(--font-instrument), ui-serif, Georgia, serif;
+  --font-sans: var(--font-public-sans), var(--font-noto-jp), ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Anchor targets clear the sticky header */
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+/* Accessible, consistent focus states everywhere */
+:focus-visible {
+  outline: 3px solid var(--color-civic);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--color-shu-soft);
 }
