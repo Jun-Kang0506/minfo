@@ -51,6 +51,7 @@ function buildAnswer(template: AnswerTemplate | null, req: AskRequest): Answer {
         (content.safety ? { level: "caution", text: content.safety } : undefined),
       sources: getSources(FALLBACK_SOURCE_IDS),
       confidence: "low",
+      engine: "local",
     };
   }
 
@@ -71,6 +72,7 @@ function buildAnswer(template: AnswerTemplate | null, req: AskRequest): Answer {
     safety,
     sources: getSources(template.sourceIds),
     confidence: "high",
+    engine: "local",
   };
 }
 

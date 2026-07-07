@@ -90,6 +90,8 @@ export interface Answer {
   safety?: SafetyInfo;
   sources: Source[];
   confidence: "high" | "low";
+  /** Which engine produced this answer (shown as a small badge in the UI). */
+  engine?: "local" | "claude";
 }
 
 export type FeedbackChoice = "helpful" | "confusing" | "wrong" | "language";

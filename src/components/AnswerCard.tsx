@@ -12,6 +12,12 @@ export function AnswerCard({ answer }: { answer: Answer }) {
 
   return (
     <article className="rounded-2xl border border-line bg-card p-5 shadow-sm sm:p-6">
+      {answer.engine === "claude" && (
+        <p className="mb-3 inline-flex items-center gap-1.5 rounded-full bg-civic-soft px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-civic">
+          <span className="h-1.5 w-1.5 rounded-full bg-civic" aria-hidden />
+          AI answer by Claude · sources verified locally
+        </p>
+      )}
       {/* Direct answer */}
       <p className="text-[16px] leading-relaxed text-ink">{answer.direct}</p>
 
