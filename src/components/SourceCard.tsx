@@ -1,10 +1,18 @@
+"use client";
+
 import type { Source } from "@/lib/types";
+import { useLanguage } from "./LanguageProvider";
 import { IconCheck, IconExternal } from "./icons";
 
 export function SourceCard({ source, compact = false }: { source: Source; compact?: boolean }) {
+  const { lang } = useLanguage();
+  // Open the official page in the user's language when one exists;
+  // otherwise fall back to the canonical official URL.
+  const href = source.localizedUrls?.[lang] ?? source.url;
+
   return (
     <a
-      href={source.url}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       className="group flex flex-col rounded-xl border border-line bg-card p-4 shadow-sm transition-colors hover:border-moss"
@@ -25,7 +33,9 @@ export function SourceCard({ source, compact = false }: { source: Source; compac
         <span className="mt-0.5 block text-[12px] text-ink-soft">{source.titleJa}</span>
       )}
       {!compact && (
-        <span className="mt-2 block text-[13px] leading-relaxed text-ink-soft">{source.note}</span>
+        <span className="mt-2 block text-[13px] leading-relaxed text-ink-soft">
+          {source.note[lang]}
+        </span>
       )}
     </a>
   );

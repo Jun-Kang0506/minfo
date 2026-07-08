@@ -73,12 +73,12 @@ export function ChatPanel({
         <p className="mt-5 text-xs font-bold uppercase tracking-[0.16em] text-paper/60">
           {t.ask.examples}
         </p>
-        <div className="mt-2.5 flex flex-wrap gap-2">
+        <div className="mt-3 flex flex-wrap gap-2.5">
           {DEMO_PROMPTS.map((prompt, i) => (
             <button
               key={`${prompt.topicId}-${i}`}
               onClick={() => onAsk(prompt.label[lang], prompt.topicId)}
-              className="rounded-full border border-paper/25 bg-paper/10 px-3.5 py-2 text-left text-[13px] font-medium text-paper transition-colors hover:border-paper/60 hover:bg-paper/20"
+              className="rounded-full border border-paper/25 bg-paper/10 px-4 py-2.5 text-left text-[13.5px] font-medium leading-snug text-paper transition-colors hover:border-paper/60 hover:bg-paper/20"
             >
               {prompt.label[lang]}
             </button>

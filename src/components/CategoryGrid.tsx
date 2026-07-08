@@ -34,8 +34,12 @@ export function CategoryGrid({
               >
                 <CategoryIcon name={cat.icon} className="h-6 w-6" />
               </span>
-              <span className="mt-3 block text-[16px] font-bold leading-snug">{cat.titleEn}</span>
-              <span className="block text-[13px] font-semibold text-ink-soft">{cat.titleJa}</span>
+              <span className="mt-3 block text-[16px] font-bold leading-snug">
+                {cat.title[lang]}
+              </span>
+              {cat.title[lang] !== cat.titleJa && (
+                <span className="block text-[13px] font-semibold text-ink-soft">{cat.titleJa}</span>
+              )}
               <span className="mt-2 block flex-1 text-[13.5px] leading-relaxed text-ink-soft">
                 {cat.description[lang]}
               </span>

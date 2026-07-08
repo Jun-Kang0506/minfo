@@ -8,6 +8,7 @@ import { Header } from "./Header";
 import { Hero } from "./Hero";
 import { ChatPanel, type ChatEntry } from "./ChatPanel";
 import { CategoryGrid } from "./CategoryGrid";
+import { WhyMinfo } from "./WhyMinfo";
 import { HackathonStory } from "./HackathonStory";
 import { DataSourcesSection } from "./DataSourcesSection";
 import { Footer } from "./Footer";
@@ -57,10 +58,12 @@ function AppInner() {
       <Header />
       <main className="flex-1">
         <Hero onAsk={scrollToAsk} />
+        {/* Page order mirrors the nav: ask → categories → sources → why MINFO → why Shinjuku */}
         <ChatPanel entries={entries} onAsk={ask} />
         <CategoryGrid onSelect={(text, topicId) => ask(text, topicId)} />
-        <HackathonStory />
         <DataSourcesSection />
+        <WhyMinfo />
+        <HackathonStory />
       </main>
       <Footer />
     </div>

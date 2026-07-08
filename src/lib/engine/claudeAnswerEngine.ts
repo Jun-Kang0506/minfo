@@ -123,7 +123,7 @@ interface ClaudePayload {
 }
 
 const SOURCE_CATALOG = SOURCES.map(
-  (s) => `- ${s.id}: ${s.title} (${s.organization}) — ${s.note}`
+  (s) => `- ${s.id}: ${s.title} (${s.organization}) — ${s.note.en}`
 ).join("\n");
 
 // Keep this prompt static (no per-request interpolation) so it stays

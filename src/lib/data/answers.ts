@@ -11,14 +11,18 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
     id: "hospital",
     categoryId: "hospitals",
     safetyLevel: "caution",
-    keywords: ["doctor", "hospital", "clinic", "sick", "medical", "medicine", "fever", "dentist", "病院", "医者"],
-    sourceIds: ["himawari", "tabunka-plaza", "shinjuku-city"],
+    keywords: [
+      "doctor", "hospital", "clinic", "sick", "medical", "medicine", "fever", "dentist",
+      "病院", "医者", "医院", "看病", "医生", "병원", "의사", "아파요",
+      "bệnh viện", "bác sĩ", "khám bệnh", "अस्पताल", "डाक्टर", "बिरामी",
+    ],
+    sourceIds: ["iryou-net", "tabunka-plaza", "shinjuku-foreign"],
     content: {
       en: {
         direct:
-          "You can see a doctor even if you don't speak Japanese. Tokyo's official 'Himawari' service finds hospitals and clinics by the language they speak, and its phone line can guide you in your language.",
+          "You can see a doctor even if you don't speak Japanese. Japan's official Medical Information Net (NAVII) lets you search hospitals and clinics near you — including by the languages they can handle.",
         steps: [
-          "Search Himawari online, or call 03-5285-8181 (daily 9:00–20:00) for guidance in your language.",
+          "Search the Medical Information Net (NAVII) for a hospital or clinic near you that supports your language.",
           "Bring your residence card and health insurance card to the clinic.",
           "If you are unsure where to start, Shinjuku Multicultural Plaza can help you in person.",
         ],
@@ -27,9 +31,9 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
       },
       ja: {
         direct:
-          "日本語が わからなくても、病院に 行くことが できます。東京都の「ひまわり」で、あなたの ことばが 通じる 病院を さがすことが できます。",
+          "日本語が わからなくても、病院に 行くことが できます。国の 公式サイト「医療情報ネット（ナビイ）」で、ことばが 通じる 病院を さがすことが できます。",
         steps: [
-          "「ひまわり」の サイトを 見るか、電話 03-5285-8181（毎日 9時〜20時）に かけてください。",
+          "「医療情報ネット（ナビイ）」で、近くの 病院を さがしてください。",
           "在留カードと 保険証を 持って いってください。",
           "こまったときは、しんじゅく多文化共生プラザで 相談できます。",
         ],
@@ -37,9 +41,9 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
       },
       zh: {
         direct:
-          "即使不会说日语，也可以看医生。东京都的官方服务「Himawari」可以按语言查找医院和诊所，其电话热线也能用您的语言提供指引。",
+          "即使不会说日语，也可以看医生。日本官方的「医疗信息网（NAVII）」可以检索附近的医院和诊所，还能按支持的语言筛选。",
         steps: [
-          "在线搜索 Himawari，或拨打 03-5285-8181（每天 9:00–20:00）。",
+          "在医疗信息网（NAVII）上查找您附近、支持您语言的医院或诊所。",
           "就诊时请携带在留卡和健康保险证。",
           "如果不知道从哪里开始，可以到新宿多文化共生广场当面咨询。",
         ],
@@ -47,9 +51,9 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
       },
       ko: {
         direct:
-          "일본어를 못해도 병원에 갈 수 있습니다. 도쿄도의 공식 서비스 '히마와리(Himawari)'에서 사용 언어별로 병원을 찾을 수 있고, 전화로도 안내를 받을 수 있습니다.",
+          "일본어를 못해도 병원에 갈 수 있습니다. 일본의 공식 '의료정보넷(NAVII)'에서 가까운 병원과 클리닉을 검색할 수 있고, 대응 가능한 언어로도 찾을 수 있습니다.",
         steps: [
-          "Himawari에서 검색하거나 03-5285-8181(매일 9:00–20:00)로 전화하세요.",
+          "의료정보넷(NAVII)에서 내 언어가 통하는 가까운 병원을 검색하세요.",
           "재류카드와 건강보험증을 가지고 가세요.",
           "막막할 때는 신주쿠 다문화공생플라자에서 직접 상담할 수 있습니다.",
         ],
@@ -57,9 +61,9 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
       },
       vi: {
         direct:
-          "Bạn vẫn có thể đi khám bác sĩ dù không nói được tiếng Nhật. Dịch vụ chính thức 'Himawari' của Tokyo giúp tìm bệnh viện theo ngôn ngữ, và có đường dây điện thoại hỗ trợ bằng tiếng của bạn.",
+          "Bạn vẫn có thể đi khám bác sĩ dù không nói được tiếng Nhật. Trang chính thức Medical Information Net (NAVII) của Nhật giúp tìm bệnh viện, phòng khám gần bạn — kể cả theo ngôn ngữ họ hỗ trợ.",
         steps: [
-          "Tìm trên Himawari, hoặc gọi 03-5285-8181 (hằng ngày 9:00–20:00).",
+          "Tìm trên Medical Information Net (NAVII) bệnh viện gần bạn có hỗ trợ ngôn ngữ của bạn.",
           "Mang theo thẻ cư trú và thẻ bảo hiểm y tế khi đi khám.",
           "Nếu chưa biết bắt đầu từ đâu, hãy đến Shinjuku Multicultural Plaza để được hướng dẫn trực tiếp.",
         ],
@@ -67,9 +71,9 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
       },
       ne: {
         direct:
-          "जापानी भाषा नआए पनि तपाईं डाक्टरकहाँ जान सक्नुहुन्छ। टोकियोको आधिकारिक सेवा 'Himawari' ले तपाईंको भाषा बोल्ने अस्पताल खोज्न मद्दत गर्छ।",
+          "जापानी भाषा नआए पनि तपाईं डाक्टरकहाँ जान सक्नुहुन्छ। जापानको आधिकारिक 'Medical Information Net (NAVII)' मा नजिकको अस्पताल खोज्न सकिन्छ — कुन भाषा चल्छ भनेर पनि हेर्न सकिन्छ।",
         steps: [
-          "Himawari मा खोज्नुहोस्, वा 03-5285-8181 (हरेक दिन 9:00–20:00) मा फोन गर्नुहोस्।",
+          "NAVII मा आफ्नो नजिकको र आफ्नो भाषा चल्ने अस्पताल खोज्नुहोस्।",
           "आफ्नो रेसिडेन्स कार्ड र स्वास्थ्य बीमा कार्ड लिएर जानुहोस्।",
           "कहाँबाट सुरु गर्ने थाहा नभए, Shinjuku Multicultural Plaza मा सल्लाह लिन सकिन्छ।",
         ],
@@ -81,8 +85,11 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
     id: "insurance",
     categoryId: "hospitals",
     safetyLevel: "caution",
-    keywords: ["insurance", "health insurance", "nhi", "premium", "保険", "国民健康保険"],
-    sourceIds: ["shinjuku-city", "tokyo-metro", "tabunka-plaza"],
+    keywords: [
+      "insurance", "health insurance", "nhi", "premium", "保険", "国民健康保険",
+      "保险", "健康保险", "건강보험", "보험", "bảo hiểm", "बीमा",
+    ],
+    sourceIds: ["shinjuku-foreign", "shinjuku-city", "tabunka-plaza"],
     content: {
       en: {
         direct:
@@ -150,8 +157,12 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
   {
     id: "garbage",
     categoryId: "garbage",
-    keywords: ["garbage", "trash", "waste", "recycle", "rubbish", "dispose", "ごみ", "ゴミ"],
-    sourceIds: ["shinjuku-garbage", "shinjuku-city"],
+    keywords: [
+      "garbage", "trash", "waste", "recycle", "rubbish", "dispose", "sort garbage", "garbage sorting",
+      "ごみ", "ゴミ", "分別", "垃圾", "垃圾分类", "쓰레기", "분리수거",
+      "rác", "phân loại rác", "फोहोर",
+    ],
+    sourceIds: ["shinjuku-garbage", "shinjuku-foreign"],
     content: {
       en: {
         direct:
@@ -213,8 +224,13 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
     id: "earthquake",
     categoryId: "disaster",
     safetyLevel: "caution",
-    keywords: ["earthquake", "disaster", "typhoon", "evacuation", "evacuate", "emergency bag", "地震", "災害"],
-    sourceIds: ["tokyo-bousai", "shinjuku-city", "tokyo-opendata"],
+    keywords: [
+      "earthquake", "disaster", "typhoon", "evacuation", "evacuate", "emergency bag",
+      "地震", "災害", "防災", "避難", "台風", "防灾", "台风", "避难",
+      "지진", "재난", "태풍", "피난", "방재",
+      "động đất", "thiên tai", "bão", "sơ tán", "भूकम्प", "विपद्", "आँधी",
+    ],
+    sourceIds: ["tokyo-bousai", "shinjuku-foreign", "tokyo-opendata"],
     content: {
       en: {
         direct:
@@ -281,8 +297,13 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
   {
     id: "japanese-learning",
     categoryId: "japanese",
-    keywords: ["learn japanese", "japanese class", "study japanese", "language class", "日本語教室", "kanji"],
-    sourceIds: ["tabunka-plaza", "shinjuku-city", "tokyo-metro"],
+    keywords: [
+      "learn japanese", "japanese class", "study japanese", "language class", "kanji",
+      "日本語教室", "日本語を 勉強", "日本語を勉強", "学日语", "日语教室", "日语课",
+      "일본어 교실", "일본어 배우", "học tiếng nhật", "lớp tiếng nhật",
+      "जापानी भाषा", "जापानी सिक्न",
+    ],
+    sourceIds: ["tabunka-plaza", "shinjuku-foreign", "tokyo-metro"],
     content: {
       en: {
         direct:
@@ -343,8 +364,13 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
   {
     id: "consultation",
     categoryId: "consultation",
-    keywords: ["consultation", "help", "advice", "counter", "city office", "ward office", "support", "english", "相談", "窓口"],
-    sourceIds: ["tabunka-plaza", "fresc", "shinjuku-city"],
+    keywords: [
+      "consultation", "help", "advice", "counter", "city office", "ward office", "support",
+      "english", "in english", "interpreter", "translator", "translation",
+      "相談", "窓口", "通訳", "翻訳", "咨询", "翻译", "상담", "통역",
+      "tư vấn", "phiên dịch", "परामर्श", "दोभाषे", "सल्लाह",
+    ],
+    sourceIds: ["tabunka-plaza", "fresc", "shinjuku-foreign"],
     content: {
       en: {
         direct:
@@ -406,7 +432,11 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
     id: "tax",
     categoryId: "taxes",
     safetyLevel: "caution",
-    keywords: ["tax", "taxes", "pension", "nenkin", "notice", "bill", "payment", "resident tax", "税金", "年金"],
+    keywords: [
+      "tax", "taxes", "pension", "nenkin", "notice", "bill", "payment", "resident tax",
+      "税金", "年金", "住民税", "納税", "税务", "纳税", "养老金",
+      "세금", "주민세", "연금", "thuế", "lương hưu", "कर", "पेन्सन",
+    ],
     sourceIds: ["nta", "shinjuku-city", "nenkin"],
     content: {
       en: {
@@ -476,7 +506,12 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
     id: "housing",
     categoryId: "housing",
     safetyLevel: "caution",
-    keywords: ["housing", "apartment", "rent", "landlord", "guarantor", "deposit", "lease", "contract", "家", "賃貸"],
+    keywords: [
+      "housing", "apartment", "rent", "landlord", "guarantor", "deposit", "lease", "contract",
+      "moving", "move in", "move out", "moving house",
+      "家", "賃貸", "引っ越し", "引越し", "敷金", "礼金", "搬家", "租房", "房子",
+      "이사", "월세", "임대", "thuê nhà", "chuyển nhà", "घर भाडा", "घर सर्ने",
+    ],
     sourceIds: ["tokyo-metro", "tabunka-plaza", "fresc"],
     content: {
       en: {
@@ -546,8 +581,13 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
     id: "residence-card",
     categoryId: "consultation",
     safetyLevel: "caution",
-    keywords: ["residence card", "zairyu", "visa", "immigration", "status of residence", "lost card", "在留カード", "ビザ"],
-    sourceIds: ["isa", "fresc", "shinjuku-city"],
+    keywords: [
+      "residence card", "zairyu", "visa", "immigration", "status of residence", "lost card",
+      "lost residence card", "lost my residence card",
+      "在留カード", "ビザ", "在留卡", "签证", "재류카드", "비자",
+      "thẻ cư trú", "रेसिडेन्स कार्ड", "भिसा",
+    ],
+    sourceIds: ["isa", "fresc", "shinjuku-foreign"],
     content: {
       en: {
         direct:
@@ -616,7 +656,12 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
     id: "police",
     categoryId: "emergency",
     safetyLevel: "emergency",
-    keywords: ["unsafe", "danger", "police", "crime", "theft", "stolen", "stalker", "harassment", "violence", "scared", "警察"],
+    keywords: [
+      "unsafe", "danger", "police", "crime", "theft", "stolen", "stalker", "harassment", "violence", "scared",
+      "警察", "危ない", "危険", "怖い", "泥棒", "危险", "不安全", "被偷", "被盗",
+      "경찰", "위험", "도둑", "cảnh sát", "nguy hiểm", "trộm",
+      "प्रहरी", "खतरा", "चोरी", "असुरक्षित",
+    ],
     sourceIds: ["tokyo-metro", "fresc", "tabunka-plaza"],
     content: {
       en: {
@@ -685,8 +730,12 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
     id: "ambulance",
     categoryId: "emergency",
     safetyLevel: "emergency",
-    keywords: ["ambulance", "119", "emergency", "injured", "bleeding", "unconscious", "heart", "breathing", "救急車"],
-    sourceIds: ["tokyo-fire", "himawari"],
+    keywords: [
+      "ambulance", "119", "emergency", "injured", "bleeding", "unconscious", "heart", "breathing",
+      "救急車", "救急", "救护车", "急救", "구급차", "응급",
+      "xe cứu thương", "cấp cứu", "cap cuu", "एम्बुलेन्स", "आपतकालीन",
+    ],
+    sourceIds: ["tokyo-fire", "iryou-net"],
     content: {
       en: {
         direct:
@@ -753,7 +802,10 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
   {
     id: "easy-japanese",
     categoryId: "japanese",
-    keywords: ["easy japanese", "yasashii", "simple japanese", "explain simply", "やさしい日本語"],
+    keywords: [
+      "easy japanese", "yasashii", "simple japanese", "explain simply",
+      "やさしい日本語", "简明日语", "쉬운 일본어", "tiếng nhật đơn giản", "सजिलो जापानी",
+    ],
     sourceIds: ["tabunka-plaza", "tokyo-metro"],
     content: {
       en: {
@@ -812,74 +864,301 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
       },
     },
   },
+  {
+    id: "bank-account",
+    categoryId: "consultation",
+    safetyLevel: "caution",
+    keywords: [
+      "bank", "bank account", "open an account", "banking", "atm",
+      "銀行", "口座", "银行", "开户", "账户", "은행", "계좌",
+      "ngân hàng", "tài khoản", "बैंक", "खाता",
+    ],
+    sourceIds: ["shinjuku-foreign", "tabunka-plaza", "fresc"],
+    content: {
+      en: {
+        direct:
+          "Foreign residents can open bank accounts in Japan, but every bank sets its own rules — this is general guidance, not official banking advice.",
+        steps: [
+          "Procedures vary by bank — check the official requirements of the bank you want to use before going.",
+          "Banks commonly ask for a residence card, proof of address, and a phone number or other contact — bring what you have and ask what else is needed.",
+          "If the forms or requirements are confusing, a multilingual consultation desk can help you prepare.",
+        ],
+        safety:
+          "Requirements differ by bank and can change. Always confirm with the bank's own official information.",
+      },
+      ja: {
+        direct:
+          "外国人も、日本で 銀行口座を つくることが できます。でも、ルールは 銀行に よって ちがいます。これは 一般的な 案内です。",
+        steps: [
+          "手続きは 銀行ごとに ちがいます。行く前に、その 銀行の 公式サイトで かくにん してください。",
+          "在留カード・住所が わかるもの・電話番号などを 聞かれることが 多いです。持っている ものを 持って いってください。",
+          "書類が むずかしいときは、相談窓口で 手つだって もらえます。",
+        ],
+        safety: "ルールは 銀行に よって ちがいます。かならず 銀行の 公式の 案内で かくにん してください。",
+      },
+      zh: {
+        direct:
+          "外国居民可以在日本开设银行账户，但每家银行的规则不同——这里只是一般性指引，不是官方银行建议。",
+        steps: [
+          "手续因银行而异——去之前请先查看该银行官网的正式要求。",
+          "银行通常会要求在留卡、住址证明、电话号码等联系方式——带上您有的证件，并询问还需要什么。",
+          "如果表格或要求看不懂，可以请多语言咨询窗口帮您准备。",
+        ],
+        safety: "各银行要求不同，且可能变化。请务必以银行官方信息为准。",
+      },
+      ko: {
+        direct:
+          "외국인도 일본에서 은행 계좌를 만들 수 있지만, 규칙은 은행마다 다릅니다 — 이것은 일반 안내이며 공식 은행 상담이 아닙니다.",
+        steps: [
+          "절차는 은행마다 다릅니다 — 가기 전에 이용할 은행의 공식 요건을 확인하세요.",
+          "은행은 보통 재류카드, 주소 확인 서류, 전화번호 등 연락처를 요구합니다 — 가진 것을 가져가고 더 필요한 것을 물어보세요.",
+          "서류나 요건이 헷갈리면 다국어 상담 창구에서 준비를 도와줍니다.",
+        ],
+        safety: "요건은 은행마다 다르고 바뀔 수 있습니다. 반드시 해당 은행의 공식 정보로 확인하세요.",
+      },
+      vi: {
+        direct:
+          "Cư dân nước ngoài có thể mở tài khoản ngân hàng ở Nhật, nhưng mỗi ngân hàng có quy định riêng — đây là hướng dẫn chung, không phải tư vấn chính thức của ngân hàng.",
+        steps: [
+          "Thủ tục khác nhau tùy ngân hàng — hãy xem yêu cầu chính thức của ngân hàng bạn muốn dùng trước khi đi.",
+          "Ngân hàng thường yêu cầu thẻ cư trú, giấy tờ xác nhận địa chỉ và số điện thoại hoặc cách liên lạc khác — mang theo những gì bạn có và hỏi thêm cần gì.",
+          "Nếu giấy tờ khó hiểu, quầy tư vấn đa ngôn ngữ có thể giúp bạn chuẩn bị.",
+        ],
+        safety: "Yêu cầu khác nhau theo từng ngân hàng và có thể thay đổi. Hãy luôn xác nhận với thông tin chính thức của ngân hàng.",
+      },
+      ne: {
+        direct:
+          "विदेशी बासिन्दाले पनि जापानमा बैंक खाता खोल्न सक्छन्, तर नियम बैंकपिच्छे फरक हुन्छ — यो सामान्य जानकारी हो, आधिकारिक बैंक सल्लाह होइन।",
+        steps: [
+          "प्रक्रिया बैंकअनुसार फरक हुन्छ — जानुअघि आफूले चाहेको बैंकको आधिकारिक जानकारी हेर्नुहोस्।",
+          "बैंकले प्रायः रेसिडेन्स कार्ड, ठेगाना खुल्ने कागज र फोन नम्बर माग्छ — भएका कागज लिएर जानुहोस् र अरू के चाहिन्छ सोध्नुहोस्।",
+          "फारम गाह्रो लागे बहुभाषिक परामर्श डेस्कले तयारीमा सघाउँछ।",
+        ],
+        safety: "नियम बैंकपिच्छे फरक र परिवर्तन हुन सक्छ। बैंकको आधिकारिक जानकारीमै पुष्टि गर्नुहोस्।",
+      },
+    },
+  },
+  {
+    id: "lost-wallet",
+    categoryId: "consultation",
+    safetyLevel: "caution",
+    keywords: [
+      "lost wallet", "wallet", "lost my wallet", "lost and found", "dropped my",
+      "財布", "落とした", "落としました", "钱包", "丢了", "지갑", "잃어버렸",
+      "mất ví", "ví tiền", "पर्स", "हरायो",
+    ],
+    sourceIds: ["shinjuku-foreign", "tabunka-plaza"],
+    content: {
+      en: {
+        direct:
+          "If you lost your wallet, report it at the nearest koban (police box) or police station — found items in Japan are very often handed in. Then protect your cards.",
+        steps: [
+          "Go to the nearest koban or police station and report the loss — you will get a report number.",
+          "If bank or credit cards were inside, contact the card companies to stop them.",
+          "If your residence card was inside, you also need the re-issue procedure at immigration — ask a consultation desk if you need language help.",
+        ],
+        safety:
+          "If the wallet was stolen rather than lost, tell the police that too. If you are in danger right now, call 110.",
+      },
+      ja: {
+        direct:
+          "財布を なくしたら、近くの 交番か 警察署に とどけてください。日本では、なくした ものが もどってくることが 多いです。カードも まもりましょう。",
+        steps: [
+          "近くの 交番か 警察署で「なくしました」と 言ってください。番号（受理番号）を もらえます。",
+          "銀行の カードや クレジットカードが 入っていたら、カード会社に 電話して 止めてください。",
+          "在留カードが 入っていたら、入管で 再発行の 手続きも 必要です。こまったら 相談窓口に 聞いてください。",
+        ],
+        safety: "ぬすまれた ときは、それも 警察に 言ってください。いま あぶないときは、110に 電話してください。",
+      },
+      zh: {
+        direct:
+          "钱包丢了，请到最近的交番（派出所）或警察署报失——在日本，失物被送回的情况很常见。同时要保护好您的银行卡。",
+        steps: [
+          "到最近的交番或警察署办理遗失申报——会拿到受理号码。",
+          "如果里面有银行卡或信用卡，请联系发卡公司挂失。",
+          "如果在留卡也在里面，还需要到入管办理补发手续——需要语言帮助时可咨询窗口。",
+        ],
+        safety: "如果是被偷而不是丢失，也请告诉警察。如果您现在处于危险中，请拨打 110。",
+      },
+      ko: {
+        direct:
+          "지갑을 잃어버렸다면 가까운 고반(파출소)이나 경찰서에 신고하세요 — 일본에서는 분실물이 돌아오는 경우가 많습니다. 카드도 보호하세요.",
+        steps: [
+          "가까운 고반이나 경찰서에서 분실 신고를 하세요 — 접수 번호를 받습니다.",
+          "은행 카드나 신용카드가 들어 있었다면 카드사에 연락해 정지하세요.",
+          "재류카드가 들어 있었다면 출입국관리청의 재발급 절차도 필요합니다 — 언어 도움이 필요하면 상담 창구에 문의하세요.",
+        ],
+        safety: "분실이 아니라 도난이라면 그것도 경찰에 알리세요. 지금 위험하다면 110에 전화하세요.",
+      },
+      vi: {
+        direct:
+          "Nếu mất ví, hãy trình báo tại koban (chốt cảnh sát) hoặc đồn cảnh sát gần nhất — đồ thất lạc ở Nhật rất thường được giao nộp. Sau đó bảo vệ các thẻ của bạn.",
+        steps: [
+          "Đến koban hoặc đồn cảnh sát gần nhất để khai báo mất đồ — bạn sẽ nhận số biên nhận.",
+          "Nếu trong ví có thẻ ngân hàng hoặc thẻ tín dụng, hãy liên hệ công ty thẻ để khóa.",
+          "Nếu thẻ cư trú cũng ở trong ví, bạn cần làm thêm thủ tục cấp lại ở cục xuất nhập cảnh — cần hỗ trợ ngôn ngữ thì hỏi quầy tư vấn.",
+        ],
+        safety: "Nếu ví bị trộm chứ không phải bị mất, hãy nói với cảnh sát điều đó. Nếu bạn đang gặp nguy hiểm, gọi 110.",
+      },
+      ne: {
+        direct:
+          "पर्स/वालेट हरायो भने नजिकको koban (प्रहरी चौकी) वा प्रहरी कार्यालयमा खबर गर्नुहोस् — जापानमा हराएका सामान फिर्ता आउने धेरै हुन्छ। कार्डहरू पनि जोगाउनुहोस्।",
+        steps: [
+          "नजिकको koban वा प्रहरी कार्यालयमा हराएको रिपोर्ट गर्नुहोस् — रिपोर्ट नम्बर पाइन्छ।",
+          "बैंक वा क्रेडिट कार्ड थियो भने कार्ड कम्पनीलाई फोन गरेर रोक्नुहोस्।",
+          "रेसिडेन्स कार्ड पनि थियो भने अध्यागमनमा पुनः जारी प्रक्रिया चाहिन्छ — भाषा सहयोग चाहिए परामर्श डेस्कमा सोध्नुहोस्।",
+        ],
+        safety: "हराएको होइन, चोरी भएको हो भने त्यो पनि प्रहरीलाई भन्नुहोस्। अहिले खतरामा हुनुहुन्छ भने 110 मा फोन गर्नुहोस्।",
+      },
+    },
+  },
+  {
+    id: "city-office-letter",
+    categoryId: "consultation",
+    safetyLevel: "caution",
+    keywords: [
+      "letter", "got a letter", "received a letter", "letter from", "document from", "envelope", "official mail",
+      "手紙", "書類が 来た", "書類が来た", "通知が来た", "信件", "收到通知", "看不懂的信",
+      "편지", "통지서", "서류가 왔", "thư", "giấy báo", "nhận được thư",
+      "चिठी", "कागज आयो",
+    ],
+    sourceIds: ["tabunka-plaza", "shinjuku-foreign", "shinjuku-city"],
+    content: {
+      en: {
+        direct:
+          "You don't have to understand an official letter alone. Free consultation desks will read it with you, explain what it means, and tell you what to do next.",
+        steps: [
+          "Check who sent it — the office name is printed on the envelope or letterhead.",
+          "Bring the letter to Shinjuku Multicultural Plaza — staff can read it with you in your language.",
+          "Confirm any payment or procedure directly with the office that sent the letter.",
+        ],
+        safety:
+          "Official letters often have deadlines. If you see a date, act before it — don't set the letter aside.",
+      },
+      ja: {
+        direct:
+          "役所の 手紙が わからなくても、ひとりで なやまないでください。相談窓口の 人が、いっしょに 読んで、なにを するか おしえてくれます。無料です。",
+        steps: [
+          "だれから 来たか 見てください。ふうとうに 役所の 名前が あります。",
+          "手紙を しんじゅく多文化共生プラザに 持って いってください。いっしょに 読んでくれます。",
+          "お金や 手続きの ことは、手紙を 出した 役所で かくにん してください。",
+        ],
+        safety: "役所の 手紙には、しめきりが あることが 多いです。日にちが 書いてあったら、その 前に 行ってください。",
+      },
+      zh: {
+        direct:
+          "看不懂官方信件不必一个人烦恼。免费咨询窗口可以和您一起阅读，解释内容，并告诉您接下来该怎么做。",
+        steps: [
+          "先确认寄件方——信封或信头上印有机构名称。",
+          "把信带到新宿多文化共生广场——工作人员会用您的语言和您一起阅读。",
+          "涉及缴费或手续的事项，请直接向寄信的机构确认。",
+        ],
+        safety: "官方信件通常有期限。如果信上有日期，请在期限前处理，不要搁置。",
+      },
+      ko: {
+        direct:
+          "관공서 편지를 혼자 이해하지 않아도 됩니다. 무료 상담 창구에서 함께 읽고, 무슨 뜻인지, 다음에 무엇을 해야 하는지 알려줍니다.",
+        steps: [
+          "누가 보냈는지 확인하세요 — 봉투나 서류 상단에 기관명이 인쇄되어 있습니다.",
+          "편지를 신주쿠 다문화공생플라자에 가져가세요 — 직원이 함께 읽어 줍니다.",
+          "납부나 절차는 편지를 보낸 기관에 직접 확인하세요.",
+        ],
+        safety: "관공서 편지에는 기한이 있는 경우가 많습니다. 날짜가 보이면 그 전에 처리하세요.",
+      },
+      vi: {
+        direct:
+          "Bạn không cần tự mình hiểu thư của cơ quan hành chính. Quầy tư vấn miễn phí sẽ đọc cùng bạn, giải thích ý nghĩa và hướng dẫn việc cần làm tiếp.",
+        steps: [
+          "Xem ai gửi — tên cơ quan in trên phong bì hoặc đầu thư.",
+          "Mang thư đến Shinjuku Multicultural Plaza — nhân viên sẽ đọc cùng bạn bằng ngôn ngữ của bạn.",
+          "Việc nộp tiền hoặc thủ tục: xác nhận trực tiếp với cơ quan đã gửi thư.",
+        ],
+        safety: "Thư hành chính thường có thời hạn. Nếu thấy ngày trên thư, hãy xử lý trước ngày đó — đừng để thư sang một bên.",
+      },
+      ne: {
+        direct:
+          "सरकारी चिठी एक्लै बुझ्नुपर्दैन। निःशुल्क परामर्श डेस्कले सँगै पढेर अर्थ बुझाइदिन्छ र अब के गर्ने भनिदिन्छ।",
+        steps: [
+          "कसले पठायो हेर्नुहोस् — खाम वा चिठीमा कार्यालयको नाम छापिएको हुन्छ।",
+          "चिठी Shinjuku Multicultural Plaza मा लिएर जानुहोस् — कर्मचारीले सँगै पढिदिन्छन्।",
+          "पैसा वा प्रक्रियाको कुरा चिठी पठाउने कार्यालयमै पुष्टि गर्नुहोस्।",
+        ],
+        safety: "सरकारी चिठीमा प्रायः म्याद हुन्छ। मिति देखिए त्यसअघि नै काम गर्नुहोस् — चिठी थन्क्याएर नराख्नुहोस्।",
+      },
+    },
+  },
 ];
 
 export const TEMPLATE_MAP = Object.fromEntries(
   ANSWER_TEMPLATES.map((t) => [t.id, t])
 ) as Record<string, AnswerTemplate>;
 
-/** Shown when no topic matches — honest "no reliable answer" behavior. */
+/**
+ * Shown when no topic matches — honest, but never a dead end:
+ * acknowledge the limit, give real next actions, point to the closest
+ * categories, and invite the user to rephrase or tap a chip.
+ */
 export const FALLBACK_CONTENT: Localized<LocalizedAnswerContent> = {
   en: {
     direct:
-      "I couldn't confirm a reliable answer for this from MINFO's trusted sources yet. Rather than guess, I recommend asking a real consultation desk — they handle any daily-life topic, in many languages, for free.",
+      "I don't have a confirmed answer for this exact question in MINFO's trusted sources yet — but here is what usually works. Your question may fit one of MINFO's topics (hospitals, taxes, garbage, housing, consultation), so try a category below or ask again in different words.",
     steps: [
-      "Visit Shinjuku Multicultural Plaza for free multilingual consultation.",
-      "For national procedures (visa, work, legal), contact FRESC.",
-      "Try rephrasing your question, or tap one of the topics below.",
+      "Ask Shinjuku Multicultural Plaza — a free desk that handles any daily-life question in many languages and points you to the right office.",
+      "For visa, work, or legal matters, FRESC near Shinjuku gathers the national support desks with interpretation.",
+      "Try rephrasing your question with a simpler word (e.g. \"hospital\", \"tax letter\", \"garbage\"), or tap a category or example above.",
     ],
     safety: "For anything urgent or official, please confirm directly with the relevant public office.",
   },
   ja: {
     direct:
-      "ごめんなさい。この 質問の たしかな こたえは、まだ MINFOに ありません。相談窓口の 人に 聞くのが いちばん 安心です。無料で、いろいろな ことばで 話せます。",
+      "この 質問の たしかな こたえは、まだ MINFOに ありません。でも、つぎの 方法が あります。下の カテゴリー（病院・税金・ごみ・住まい・相談）に 近いものが あるかもしれません。ことばを かえて、もういちど 聞いてみてください。",
     steps: [
-      "しんじゅく多文化共生プラザで 相談してください（無料）。",
-      "ビザや 仕事の ことは、FRESCに 聞いてください。",
-      "ことばを かえて、もういちど 質問してみてください。",
+      "しんじゅく多文化共生プラザで 聞いてください。無料で、いろいろな ことばで、どんな 生活の 質問でも だいじょうぶです。",
+      "ビザ・仕事・法律の ことは、FRESC（四ツ谷）で 通訳つきで 相談できます。",
+      "かんたんな ことば（「病院」「税金」「ごみ」など）で、もういちど 質問してみてください。上の カテゴリーも つかえます。",
     ],
-    safety: "たいせつな ことは、かならず 役所で かくにん してください。",
+    safety: "たいせつな ことや いそぐ ことは、かならず 役所で かくにん してください。",
   },
   zh: {
     direct:
-      "抱歉，MINFO 的可信来源中暂时没有这个问题的确切答案。与其猜测，我建议您咨询真正的咨询窗口——免费、多语言、什么生活问题都可以问。",
+      "MINFO 的可信来源中暂时没有这个问题的确切答案——但您可以这样做。您的问题可能属于 MINFO 的某个分类（医院、税金、垃圾、住房、咨询），请试试下面的分类，或换个说法再问一次。",
     steps: [
-      "到新宿多文化共生广场进行免费多语言咨询。",
-      "签证、工作、法律等国家级手续请联系 FRESC。",
-      "也可以换个说法再问一次，或点击下方的主题。",
+      "向新宿多文化共生广场咨询——免费、多语言，任何生活问题都可以问，还会告诉您该去哪个窗口。",
+      "签证、工作、法律问题：新宿附近的 FRESC 汇集了国家级支援窗口，提供翻译。",
+      "换个更简单的词再问一次（如「医院」「税务通知」「垃圾」），或点击上方的分类和示例。",
     ],
-    safety: "任何紧急或正式事项，请直接向相关公共机构确认。",
+    safety: "任何紧急或正式事项，请直接向相关官方窗口确认。",
   },
   ko: {
     direct:
-      "죄송합니다. 이 질문에 대한 확실한 답을 MINFO의 신뢰 소스에서 아직 찾지 못했습니다. 추측하는 대신 실제 상담 창구에 문의하시길 권합니다 — 무료이고 여러 언어로 어떤 생활 주제든 상담할 수 있습니다.",
+      "이 질문에 대한 확실한 답은 MINFO의 신뢰 소스에 아직 없습니다 — 하지만 이렇게 해볼 수 있습니다. 질문이 MINFO의 카테고리(병원, 세금, 쓰레기, 주거, 상담)에 가까울 수 있으니, 아래 카테고리를 누르거나 다른 말로 다시 물어보세요.",
     steps: [
-      "신주쿠 다문화공생플라자에서 무료 다국어 상담을 받으세요.",
-      "비자·노동·법률 등 국가 절차는 FRESC에 문의하세요.",
-      "질문을 바꿔서 다시 해보거나, 아래 주제를 눌러보세요.",
+      "신주쿠 다문화공생플라자에 물어보세요 — 무료 다국어 창구로, 어떤 생활 질문이든 올바른 기관을 안내해 줍니다.",
+      "비자·노동·법률 문제는 신주쿠 근처 FRESC에서 통역과 함께 상담할 수 있습니다.",
+      "더 간단한 단어(예: '병원', '세금 통지서', '쓰레기')로 다시 질문하거나, 위의 카테고리와 예시를 눌러보세요.",
     ],
-    safety: "긴급하거나 공식적인 사항은 해당 공공기관에 직접 확인하세요.",
+    safety: "긴급하거나 공식적인 사항은 반드시 해당 공공기관에 직접 확인하세요.",
   },
   vi: {
     direct:
-      "Xin lỗi, MINFO chưa tìm được câu trả lời đáng tin cậy cho câu hỏi này từ các nguồn chính thức. Thay vì đoán, tôi khuyên bạn hỏi quầy tư vấn thực — miễn phí, nhiều ngôn ngữ, mọi chủ đề đời sống.",
+      "MINFO chưa có câu trả lời chắc chắn cho câu hỏi này trong các nguồn đáng tin cậy — nhưng bạn có thể làm như sau. Câu hỏi của bạn có thể thuộc một chủ đề của MINFO (bệnh viện, thuế, rác, nhà ở, tư vấn), hãy thử chọn danh mục bên dưới hoặc hỏi lại bằng cách khác.",
     steps: [
-      "Đến Shinjuku Multicultural Plaza để được tư vấn đa ngôn ngữ miễn phí.",
-      "Thủ tục quốc gia (visa, lao động, pháp lý): liên hệ FRESC.",
-      "Thử diễn đạt lại câu hỏi, hoặc chọn một chủ đề bên dưới.",
+      "Hỏi Shinjuku Multicultural Plaza — quầy miễn phí, nhiều ngôn ngữ, nhận mọi câu hỏi đời sống và chỉ bạn đến đúng cơ quan.",
+      "Vấn đề visa, lao động, pháp lý: FRESC gần Shinjuku tập hợp các quầy hỗ trợ quốc gia, có phiên dịch.",
+      "Thử hỏi lại bằng từ đơn giản hơn (ví dụ: 'bệnh viện', 'giấy báo thuế', 'rác'), hoặc chạm vào danh mục và ví dụ phía trên.",
     ],
     safety: "Việc khẩn cấp hoặc chính thức: hãy xác nhận trực tiếp với cơ quan công liên quan.",
   },
   ne: {
     direct:
-      "माफ गर्नुहोस्, यो प्रश्नको भरपर्दो उत्तर MINFO का विश्वसनीय स्रोतमा अहिले छैन। अनुमान गर्नुभन्दा वास्तविक परामर्श डेस्कमा सोध्नु राम्रो — निःशुल्क, धेरै भाषामा, जुनसुकै दैनिक विषयमा।",
+      "यो प्रश्नको पक्का उत्तर MINFO का विश्वसनीय स्रोतमा अहिले छैन — तर यसो गर्न सकिन्छ। तपाईंको प्रश्न MINFO का विषय (अस्पताल, कर, फोहोर, आवास, परामर्श) मध्ये कुनैसँग मिल्न सक्छ — तलको विषय थिच्नुहोस् वा अर्को शब्दमा फेरि सोध्नुहोस्।",
     steps: [
-      "Shinjuku Multicultural Plaza मा निःशुल्क बहुभाषिक परामर्श लिनुहोस्।",
-      "भिसा, काम, कानुनी विषयका लागि FRESC मा सम्पर्क गर्नुहोस्।",
-      "प्रश्न अर्को तरिकाले सोध्नुहोस्, वा तलका विषय थिच्नुहोस्।",
+      "Shinjuku Multicultural Plaza मा सोध्नुहोस् — निःशुल्क, धेरै भाषामा, जुनसुकै दैनिक प्रश्न लिन्छ र सही कार्यालय देखाइदिन्छ।",
+      "भिसा, काम, कानुनी विषय: Shinjuku नजिकको FRESC मा दोभाषेसहित परामर्श पाइन्छ।",
+      "अझ सजिलो शब्दमा (जस्तै: 'अस्पताल', 'करको चिठी', 'फोहोर') फेरि सोध्नुहोस्, वा माथिका विषय र उदाहरण थिच्नुहोस्।",
     ],
-    safety: "जरुरी वा आधिकारिक कुरा सम्बन्धित सरकारी कार्यालयमै बुझ्नुहोस्।",
+    safety: "जरुरी वा आधिकारिक कुरा सम्बन्धित सरकारी कार्यालयमै पुष्टि गर्नुहोस्।",
   },
 };
 
-export const FALLBACK_SOURCE_IDS = ["tabunka-plaza", "fresc", "shinjuku-city"];
+export const FALLBACK_SOURCE_IDS = ["tabunka-plaza", "shinjuku-foreign", "fresc"];

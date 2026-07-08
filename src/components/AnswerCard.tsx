@@ -15,7 +15,7 @@ export function AnswerCard({ answer }: { answer: Answer }) {
       {answer.engine === "claude" && (
         <p className="mb-3 inline-flex items-center gap-1.5 rounded-full bg-civic-soft px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-civic">
           <span className="h-1.5 w-1.5 rounded-full bg-civic" aria-hidden />
-          AI answer by Claude · sources verified locally
+          {t.answer.aiBadge}
         </p>
       )}
       {/* Direct answer */}

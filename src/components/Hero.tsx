@@ -5,15 +5,19 @@ import { IconCheck } from "./icons";
 
 /** Transit-style route map — MINFO's visual motif: trusted navigation. */
 function RouteMap() {
+  const { t } = useLanguage();
+
   return (
     <div className="relative rounded-2xl border border-line bg-card p-6 shadow-sm">
-      <p className="text-xs font-bold uppercase tracking-[0.18em] text-ink-soft">Pilot route</p>
+      <p className="text-xs font-bold uppercase tracking-[0.18em] text-ink-soft">
+        {t.hero.routeTitle}
+      </p>
       <p className="mt-0.5 text-[13px] font-semibold text-ink-soft">新宿・大久保から始める</p>
       <svg
         viewBox="0 0 300 190"
         className="mt-3 w-full"
         role="img"
-        aria-label="Route map: starting at Shinjuku and Okubo, expanding to all of Tokyo"
+        aria-label={t.hero.routeAria}
       >
         {/* route line */}
         <path d="M40 150 L40 95 L40 40" stroke="#c73e1d" strokeWidth="6" strokeLinecap="round" />
@@ -31,11 +35,11 @@ function RouteMap() {
         <circle cx="95" cy="14" r="8" fill="#fffdf8" stroke="#29486b" strokeWidth="4" strokeDasharray="3 4" />
         {/* labels */}
         <text x="62" y="148" fontSize="15" fontWeight="700" fill="#23201a">Shinjuku</text>
-        <text x="62" y="164" fontSize="11" fill="#5c564a">新宿 — now</text>
+        <text x="62" y="164" fontSize="11" fill="#5c564a">新宿 — {t.hero.routeNow}</text>
         <text x="62" y="93" fontSize="15" fontWeight="700" fill="#23201a">Okubo</text>
-        <text x="62" y="109" fontSize="11" fill="#5c564a">大久保 — now</text>
-        <text x="112" y="14" fontSize="15" fontWeight="700" fill="#29486b">All of Tokyo</text>
-        <text x="112" y="30" fontSize="11" fill="#5c564a">東京 — next</text>
+        <text x="62" y="109" fontSize="11" fill="#5c564a">大久保 — {t.hero.routeNow}</text>
+        <text x="112" y="14" fontSize="15" fontWeight="700" fill="#29486b">{t.hero.routeGoal}</text>
+        <text x="112" y="30" fontSize="11" fill="#5c564a">東京 — {t.hero.routeNext}</text>
       </svg>
       {/* vertical Japanese accent */}
       <span

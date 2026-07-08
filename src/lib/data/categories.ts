@@ -3,7 +3,14 @@ import type { Category } from "../types";
 export const CATEGORIES: Category[] = [
   {
     id: "hospitals",
-    titleEn: "Hospitals & Insurance",
+    title: {
+      en: "Hospitals & Insurance",
+      ja: "病院・保険",
+      zh: "医院与保险",
+      ko: "병원·보험",
+      vi: "Bệnh viện & Bảo hiểm",
+      ne: "अस्पताल र बीमा",
+    },
     titleJa: "病院・保険",
     icon: "cross",
     exampleTopic: "hospital",
@@ -18,7 +25,14 @@ export const CATEGORIES: Category[] = [
   },
   {
     id: "taxes",
-    titleEn: "Taxes & Pension",
+    title: {
+      en: "Taxes & Pension",
+      ja: "税金・年金",
+      zh: "税金与年金",
+      ko: "세금·연금",
+      vi: "Thuế & Lương hưu",
+      ne: "कर र पेन्सन",
+    },
     titleJa: "税金・年金",
     icon: "yen",
     exampleTopic: "tax",
@@ -33,7 +47,14 @@ export const CATEGORIES: Category[] = [
   },
   {
     id: "garbage",
-    titleEn: "Garbage Rules",
+    title: {
+      en: "Garbage Rules",
+      ja: "ごみの出し方",
+      zh: "垃圾分类",
+      ko: "쓰레기 배출",
+      vi: "Quy tắc đổ rác",
+      ne: "फोहोर नियम",
+    },
     titleJa: "ごみの出し方",
     icon: "trash",
     exampleTopic: "garbage",
@@ -48,7 +69,14 @@ export const CATEGORIES: Category[] = [
   },
   {
     id: "disaster",
-    titleEn: "Disaster Preparedness",
+    title: {
+      en: "Disaster Preparedness",
+      ja: "防災",
+      zh: "防灾准备",
+      ko: "재난 대비",
+      vi: "Phòng chống thiên tai",
+      ne: "विपद् तयारी",
+    },
     titleJa: "防災",
     icon: "shield",
     exampleTopic: "earthquake",
@@ -63,7 +91,14 @@ export const CATEGORIES: Category[] = [
   },
   {
     id: "housing",
-    titleEn: "Housing",
+    title: {
+      en: "Housing",
+      ja: "住まい",
+      zh: "住房",
+      ko: "주거",
+      vi: "Nhà ở",
+      ne: "आवास",
+    },
     titleJa: "住まい",
     icon: "house",
     exampleTopic: "housing",
@@ -78,7 +113,14 @@ export const CATEGORIES: Category[] = [
   },
   {
     id: "japanese",
-    titleEn: "Japanese Learning",
+    title: {
+      en: "Japanese Learning",
+      ja: "日本語学習",
+      zh: "日语学习",
+      ko: "일본어 학습",
+      vi: "Học tiếng Nhật",
+      ne: "जापानी सिकाइ",
+    },
     titleJa: "日本語学習",
     icon: "book",
     exampleTopic: "japanese-learning",
@@ -93,7 +135,14 @@ export const CATEGORIES: Category[] = [
   },
   {
     id: "consultation",
-    titleEn: "Consultation Desks",
+    title: {
+      en: "Consultation Desks",
+      ja: "相談窓口",
+      zh: "咨询窗口",
+      ko: "상담 창구",
+      vi: "Quầy tư vấn",
+      ne: "परामर्श डेस्क",
+    },
     titleJa: "相談窓口",
     icon: "chat",
     exampleTopic: "consultation",
@@ -108,7 +157,14 @@ export const CATEGORIES: Category[] = [
   },
   {
     id: "emergency",
-    titleEn: "Emergency Help",
+    title: {
+      en: "Emergency Help",
+      ja: "緊急時",
+      zh: "紧急求助",
+      ko: "긴급 도움",
+      vi: "Trợ giúp khẩn cấp",
+      ne: "आपतकालीन सहायता",
+    },
     titleJa: "緊急時",
     icon: "alert",
     exampleTopic: "ambulance",

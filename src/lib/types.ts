@@ -34,11 +34,16 @@ export type TopicId =
   | "police"
   | "ambulance"
   | "easy-japanese"
+  | "bank-account"
+  | "lost-wallet"
+  | "city-office-letter"
   | "fallback";
 
 export interface Category {
   id: CategoryId;
-  titleEn: string;
+  /** Card title in each UI language. */
+  title: Localized<string>;
+  /** Japanese label, shown as a signage-style subtitle when it differs. */
   titleJa: string;
   icon: string;
   description: Localized<string>;
@@ -50,10 +55,13 @@ export interface Source {
   title: string;
   titleJa?: string;
   organization: string;
+  /** Canonical official URL — short and stable, the source of truth. */
   url: string;
+  /** Official language versions of the same page; fall back to `url` when absent. */
+  localizedUrls?: Partial<Record<LanguageCode, string>>;
   categories: CategoryId[];
-  /** Why this source is relevant — shown on the source card. */
-  note: string;
+  /** Why this source is relevant to MINFO users — shown on the source card. */
+  note: Localized<string>;
 }
 
 export type SafetyLevel = "emergency" | "caution";
