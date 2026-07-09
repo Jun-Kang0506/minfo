@@ -19,19 +19,19 @@ function RouteMap() {
         role="img"
         aria-label={t.hero.routeAria}
       >
-        {/* route line */}
-        <path d="M40 150 L40 95 L40 40" stroke="#c73e1d" strokeWidth="6" strokeLinecap="round" />
+        {/* route line — calm green, matching MINFO's primary accent */}
+        <path d="M40 150 L40 95 L40 40" stroke="#33604a" strokeWidth="6" strokeLinecap="round" />
         <path
           d="M40 40 C40 20, 70 14, 95 14"
-          stroke="#c73e1d"
+          stroke="#33604a"
           strokeWidth="6"
           strokeDasharray="2 10"
           strokeLinecap="round"
           fill="none"
         />
         {/* stops */}
-        <circle cx="40" cy="150" r="10" fill="#fffdf8" stroke="#c73e1d" strokeWidth="5" />
-        <circle cx="40" cy="95" r="10" fill="#fffdf8" stroke="#c73e1d" strokeWidth="5" />
+        <circle cx="40" cy="150" r="10" fill="#fffdf8" stroke="#33604a" strokeWidth="5" />
+        <circle cx="40" cy="95" r="10" fill="#fffdf8" stroke="#33604a" strokeWidth="5" />
         <circle cx="95" cy="14" r="8" fill="#fffdf8" stroke="#29486b" strokeWidth="4" strokeDasharray="3 4" />
         {/* labels */}
         <text x="62" y="148" fontSize="15" fontWeight="700" fill="#23201a">Shinjuku</text>
@@ -63,7 +63,7 @@ export function Hero({ onAsk }: { onAsk: () => void }) {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-[1.15fr_0.85fr] md:items-center md:py-20">
         <div>
           <p className="inline-flex items-center gap-2 rounded-full border border-line bg-card px-3 py-1 text-[13px] font-semibold text-civic">
-            <span className="h-2 w-2 rounded-sm bg-shu" aria-hidden />
+            <span className="h-2 w-2 rounded-sm bg-moss" aria-hidden />
             {t.hero.kicker}
           </p>
           <h1 className="mt-5 font-display text-5xl leading-[1.05] sm:text-6xl md:text-7xl">
@@ -74,7 +74,7 @@ export function Hero({ onAsk }: { onAsk: () => void }) {
           <div className="mt-8 flex flex-wrap gap-3">
             <button
               onClick={onAsk}
-              className="rounded-xl bg-shu px-6 py-3.5 text-base font-bold text-white shadow-sm transition-colors hover:bg-shu-deep"
+              className="rounded-xl bg-moss px-6 py-3.5 text-base font-bold text-white shadow-sm transition-[background-color,transform] hover:bg-moss-deep active:scale-[0.98]"
             >
               {t.hero.ctaAsk}
             </button>

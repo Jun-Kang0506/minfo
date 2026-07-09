@@ -2,7 +2,7 @@
 
 @theme inline {
   /* MINFO civic palette — warm paper, aizome indigo (trust), shu vermillion (action) */
-  --color-paper: #f7f2e9;
+  --color-paper: #f8f1e3;
   --color-card: #fffdf8;
   --color-ink: #23201a;
   --color-ink-soft: #5c564a;
@@ -17,6 +17,7 @@
   --color-shu-soft: #faeae3;
 
   --color-moss: #33604a;
+  --color-moss-deep: #264a38;
   --color-moss-soft: #e7efe9;
 
   --color-caution: #7a5200;
@@ -60,5 +61,76 @@ section[id] {
 }
 
 ::selection {
-  background: var(--color-shu-soft);
+  background: var(--color-moss-soft);
+}
+
+/* Entrance animations — short, one-shot, and fully disabled under
+   prefers-reduced-motion so they never get in the way of reading. */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mascot-in {
+  0% {
+    opacity: 0;
+    transform: translateY(4px) scale(0.92);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(0) scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* "Checking information" dots next to the loading label */
+@keyframes dot-pulse {
+  0%,
+  60%,
+  100% {
+    opacity: 0.25;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
+
+.animate-rise {
+  animation: rise-in 0.3s ease-out both;
+}
+
+.animate-mascot {
+  animation: mascot-in 0.26s ease-out both;
+}
+
+.loading-dot {
+  animation: dot-pulse 1.2s ease-in-out infinite;
+}
+.loading-dot:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.loading-dot:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-rise,
+  .animate-mascot,
+  .loading-dot {
+    animation: none;
+  }
 }

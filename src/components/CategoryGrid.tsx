@@ -25,7 +25,7 @@ export function CategoryGrid({
             <button
               key={cat.id}
               onClick={() => onSelect(exampleText, cat.exampleTopic)}
-              className="group flex flex-col rounded-2xl border border-line bg-card p-5 text-left shadow-sm transition-all hover:-translate-y-0.5 hover:border-civic hover:shadow-md"
+              className="group flex flex-col rounded-2xl border border-line bg-card p-5 text-left shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-civic hover:shadow-lg active:translate-y-0 active:scale-[0.98] active:shadow-sm"
             >
               <span
                 className={`grid h-11 w-11 place-items-center rounded-xl ${

@@ -64,6 +64,25 @@ export interface Source {
   note: Localized<string>;
 }
 
+export interface OpenDataCandidate {
+  id: string;
+  /** Official dataset title as listed in the Tokyo Open Data Catalog. */
+  titleJa: string;
+  /** Short English gloss of the official title. */
+  titleEn: string;
+  /** Catalog page recorded during research — dataset page or category page. */
+  url: string;
+  organization: string;
+  /** Data format visible in the catalog, when confirmed. */
+  format?: string;
+  /** How a future MINFO would keep this fresh — never fetched automatically today. */
+  updatePlan: "batch" | "live";
+  /** "dataset" = a specific catalog entry; "searchTarget" = a catalog category to search. */
+  kind: "dataset" | "searchTarget";
+  /** Why this matters for MINFO users — shown in the user's language. */
+  note: Localized<string>;
+}
+
 export type SafetyLevel = "emergency" | "caution";
 
 export interface SafetyInfo {

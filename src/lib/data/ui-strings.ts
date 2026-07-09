@@ -5,6 +5,16 @@ interface RoadmapItem {
   body: string;
 }
 
+interface StrategyItem {
+  title: string;
+  body: string;
+}
+
+interface QualityItem {
+  label: string;
+  desc: string;
+}
+
 interface StoryBlock {
   title: string;
   body: string;
@@ -51,6 +61,7 @@ export interface UIStrings {
     lowConfidence: string;
     disclaimer: string;
     aiBadge: string;
+    answerLabel: string;
   };
   feedback: {
     question: string;
@@ -67,6 +78,31 @@ export interface UIStrings {
     roadmapBadge: string;
     roadmap: RoadmapItem[];
   };
+  openData: {
+    title: string;
+    sub: string;
+    positioning: string;
+    strategyTitle: string;
+    strategyIntro: string;
+    /** Fixed order: stable / periodic / time-sensitive — badges are mapped by index. */
+    strategy: StrategyItem[];
+    candidatesTitle: string;
+    candidatesSub: string;
+    catalogCta: string;
+    badges: {
+      curated: string;
+      candidate: string;
+      batch: string;
+      live: string;
+      searchTarget: string;
+    };
+  };
+  quality: {
+    title: string;
+    sub: string;
+    items: QualityItem[];
+  };
+  mascot: { alt: string };
   whyMinfo: {
     title: string;
     sub: string;
@@ -93,7 +129,7 @@ const en: UIStrings = {
   nav: { ask: "Ask", categories: "Categories", sources: "Sources", whyMinfo: "Why MINFO?", why: "Why Shinjuku?" },
   emergencyBar: "Emergency? 119 Fire / Ambulance · 110 Police — free, 24h, interpretation available",
   hero: {
-    kicker: "公式情報にもとづく案内 — grounded in official public sources",
+    kicker: "公式情報をもとにした案内 — grounded in official public sources",
     headline: "Reliable life information, in your language.",
     sub: "MINFO helps foreign-origin residents navigate hospitals, insurance, garbage rules, disasters, and daily life in Japan — explained simply, always with official sources.",
     ctaAsk: "Ask MINFO",
@@ -129,6 +165,7 @@ const en: UIStrings = {
     lowConfidence: "MINFO could not fully confirm this — please check with an official office.",
     disclaimer: "MINFO is a prototype navigator, not a government service. Always confirm important matters with official offices.",
     aiBadge: "AI answer by Claude · sources verified locally",
+    answerLabel: "Answer",
   },
   feedback: {
     question: "Was this helpful?",
@@ -158,6 +195,52 @@ const en: UIStrings = {
       },
     ],
   },
+  openData: {
+    title: "From open data to usable guidance",
+    sub: "Open data is not useful only because it is published. It becomes useful when residents can find it, understand it, and act on it. MINFO focuses on the final mile: turning official and open public information into multilingual next steps.",
+    positioning:
+      "Today MINFO runs on curated official/public sources with an open-data-ready record structure — it does not fetch datasets automatically. This is intentional: trust, source clarity, and safety come before live automation. Future versions can pull records from the Tokyo Open Data Catalog, official APIs, CSVs, and ward sites.",
+    strategyTitle: "How MINFO chooses a data access method",
+    strategyIntro: "MINFO does not use APIs just for the sake of using APIs — the method follows the use case:",
+    strategy: [
+      {
+        title: "Stable information",
+        body: "Rules and contact desks that rarely change. Curated CSV/JSON source records are enough for the MVP.",
+      },
+      {
+        title: "Periodically updated data",
+        body: "Facility lists and statistics. Scheduled CSV downloads or batch updates can refresh these records.",
+      },
+      {
+        title: "Time-sensitive information",
+        body: "Disasters, shelter status, sudden closures. Future versions may need APIs or frequent automated updates.",
+      },
+    ],
+    candidatesTitle: "Tokyo Open Data — candidate datasets",
+    candidatesSub: "Catalog entries and search targets MINFO plans to connect next. None are fetched automatically yet.",
+    catalogCta: "Browse the Tokyo Open Data Catalog",
+    badges: {
+      curated: "Curated now",
+      candidate: "Open-data candidate",
+      batch: "Future batch update",
+      live: "Future API/live update",
+      searchTarget: "Catalog search target",
+    },
+  },
+  quality: {
+    title: "MINFO source-quality check",
+    sub: "A lightweight checklist inspired by Japan's public open-data quality guidance — not a formal government assessment. Every source in MINFO goes through it.",
+    items: [
+      { label: "Official / public source", desc: "Published by a government body or public organization." },
+      { label: "Link verified", desc: "The URL was checked by hand and points to the official page." },
+      { label: "Language accessible", desc: "Multilingual, or usable with simple Japanese." },
+      { label: "Daily-life relevance", desc: "Answers a question residents actually ask." },
+      { label: "Update-ready", desc: "The record can be refreshed when the source changes." },
+      { label: "Ward-expandable", desc: "The same structure can host other wards' sources." },
+      { label: "Improved by feedback", desc: "User feedback can flag and fix weak sources." },
+    ],
+  },
+  mascot: { alt: "MINFO guide mascot" },
   whyMinfo: {
     title: "Why MINFO — not just search or AI chat?",
     sub: "MINFO is not trying to beat search engines or general AI at general knowledge. It does one local job well.",
@@ -219,7 +302,7 @@ const ja: UIStrings = {
   nav: { ask: "質問する", categories: "カテゴリー", sources: "情報のもと", whyMinfo: "MINFOとは", why: "なぜ新宿？" },
   emergencyBar: "緊急のとき：火事・救急車は 119 ／ 警察は 110（無料・24時間・通訳あり）",
   hero: {
-    kicker: "公式情報にもとづく案内",
+    kicker: "公式情報をもとにした案内",
     headline: "あなたの ことばで、生活の 情報を。",
     sub: "MINFOは、病院・保険・ごみ・防災など、日本の 生活の 情報を やさしく 案内します。こたえには、いつも 公式の 情報のもとが ついています。",
     ctaAsk: "MINFOに 質問する",
@@ -255,6 +338,7 @@ const ja: UIStrings = {
     lowConfidence: "たしかな こたえが できません。役所で かくにん してください。",
     disclaimer: "MINFOは 試作品（プロトタイプ）です。役所の サービスでは ありません。たいせつな ことは 役所で かくにん してください。",
     aiBadge: "Claudeの AIこたえ · 情報のもとは かくにん済み",
+    answerLabel: "こたえ",
   },
   feedback: {
     question: "この こたえは 役に立ちましたか？",
@@ -284,6 +368,52 @@ const ja: UIStrings = {
       },
     ],
   },
+  openData: {
+    title: "オープンデータを、使える案内に",
+    sub: "オープンデータは、公開するだけでは 十分では ありません。住民が 見つけて、わかって、行動できることが たいせつです。MINFOは、公式情報を「つぎに 何を すればよいか」に かえます。",
+    positioning:
+      "いまの MINFOは、人が えらんだ 公式・公共の 情報を つかっています。データを 自動では とっていません。これは わざとです。まず 信頼と 安全を たいせつに します。これから、東京都オープンデータカタログや CSV、APIから データを とる 計画です。",
+    strategyTitle: "データの とりかたの きめかた",
+    strategyIntro: "MINFOは、APIを つかうことが 目的では ありません。つかいかたに あわせて えらびます。",
+    strategy: [
+      {
+        title: "あまり かわらない 情報",
+        body: "ルールや 窓口の 情報です。人が えらんだ CSV/JSONの データで 十分です。",
+      },
+      {
+        title: "ときどき かわる 情報",
+        body: "施設の リストなどです。これから、決まった 日に CSVを ダウンロードして 更新できます。",
+      },
+      {
+        title: "すぐ かわる 情報",
+        body: "災害や 避難所の 情報です。これから、APIや 自動更新が 必要に なるかもしれません。",
+      },
+    ],
+    candidatesTitle: "東京都オープンデータ — つかいたい データ",
+    candidatesSub: "MINFOが これから つなげたい データです。まだ 自動では つかっていません。",
+    catalogCta: "東京都オープンデータカタログを 見る",
+    badges: {
+      curated: "いま つかっています",
+      candidate: "オープンデータ候補",
+      batch: "これから：定期更新",
+      live: "これから：API・自動更新",
+      searchTarget: "カタログで さがす",
+    },
+  },
+  quality: {
+    title: "MINFOの 情報チェック",
+    sub: "国の オープンデータの 考えかたを 参考にした、かんたんな チェックです。政府の 正式な 審査では ありません。MINFOの 情報は、ぜんぶ この チェックを します。",
+    items: [
+      { label: "公式・公共の 情報", desc: "役所や 公共の 組織が 出した 情報です。" },
+      { label: "リンクを かくにん", desc: "URLは 人が 見て、公式ページに つながることを かくにんしました。" },
+      { label: "ことばが わかる", desc: "いろいろな ことばが あるか、やさしい日本語で つかえます。" },
+      { label: "生活に 役立つ", desc: "住民が ほんとうに 聞く 質問に こたえます。" },
+      { label: "更新できる", desc: "情報が かわったら、新しく できます。" },
+      { label: "ほかの 区でも つかえる", desc: "同じ しくみで、ほかの 区の 情報も 入れられます。" },
+      { label: "フィードバックで よくなる", desc: "みなさんの 声で、情報を よくできます。" },
+    ],
+  },
+  mascot: { alt: "MINFOの 案内キャラクター" },
   whyMinfo: {
     title: "検索や AIチャットと、なにが ちがう？",
     sub: "MINFOは、検索や AIより ものしりに なりたいのでは ありません。新宿の 生活案内という 一つの 仕事を します。",
@@ -381,6 +511,7 @@ const zh: UIStrings = {
     lowConfidence: "MINFO 无法完全确认——请向官方窗口确认。",
     disclaimer: "MINFO 是原型产品，不是政府服务。重要事项请务必向官方窗口确认。",
     aiBadge: "由 Claude 生成的 AI 回答 · 来源经本地核验",
+    answerLabel: "回答",
   },
   feedback: {
     question: "这个回答有帮助吗？",
@@ -410,6 +541,52 @@ const zh: UIStrings = {
       },
     ],
   },
+  openData: {
+    title: "让开放数据变成用得上的指引",
+    sub: "开放数据不是发布了就有用——只有当居民能找到、能看懂、能行动时才有用。MINFO 专注于「最后一公里」：把官方与公开信息变成多语言的下一步行动。",
+    positioning:
+      "目前 MINFO 使用人工筛选的官方/公共信息，数据结构已为开放数据做好准备——尚未自动抓取数据集。这是有意为之：信任、来源清晰和安全优先于自动化。未来版本可以从东京都开放数据目录、官方 API、CSV 和各区网站定期获取数据。",
+    strategyTitle: "MINFO 如何选择数据获取方式",
+    strategyIntro: "MINFO 不为了用 API 而用 API——方式取决于用途：",
+    strategy: [
+      {
+        title: "较稳定的信息",
+        body: "很少变化的规则和窗口信息。人工筛选的 CSV/JSON 记录对 MVP 已经足够。",
+      },
+      {
+        title: "定期更新的数据",
+        body: "设施列表和统计数据。可通过定时 CSV 下载或批量更新来刷新。",
+      },
+      {
+        title: "时效性强的信息",
+        body: "灾害、避难所状态、临时关闭。未来可能需要 API 或高频自动更新。",
+      },
+    ],
+    candidatesTitle: "东京都开放数据——候选数据集",
+    candidatesSub: "MINFO 计划接入的目录条目和检索目标。目前均未自动获取。",
+    catalogCta: "浏览东京都开放数据目录",
+    badges: {
+      curated: "当前人工维护",
+      candidate: "开放数据候选",
+      batch: "未来：批量更新",
+      live: "未来：API/实时更新",
+      searchTarget: "目录检索目标",
+    },
+  },
+  quality: {
+    title: "MINFO 来源质量检查",
+    sub: "参考日本政府开放数据质量指引的轻量检查——不是正式的政府评估。MINFO 的每个来源都经过这些检查。",
+    items: [
+      { label: "官方/公共来源", desc: "由政府机构或公共组织发布。" },
+      { label: "链接已核实", desc: "URL 经人工确认，指向官方页面。" },
+      { label: "语言可及", desc: "提供多语言，或可用简明日语理解。" },
+      { label: "贴近日常生活", desc: "回答居民真正会问的问题。" },
+      { label: "可更新", desc: "来源变化时记录可以刷新。" },
+      { label: "可扩展到各区", desc: "同样的结构可容纳其他区的来源。" },
+      { label: "反馈可改进", desc: "用户反馈能发现并修正薄弱来源。" },
+    ],
+  },
+  mascot: { alt: "MINFO 向导吉祥物" },
   whyMinfo: {
     title: "为什么用 MINFO，而不只是搜索或 AI 聊天？",
     sub: "MINFO 不打算在通用知识上超越搜索引擎或通用 AI，它只把一件本地的事做好。",
@@ -507,6 +684,7 @@ const ko: UIStrings = {
     lowConfidence: "MINFO가 완전히 확인하지 못했습니다 — 공식 기관에 확인하세요.",
     disclaimer: "MINFO는 프로토타입이며 정부 서비스가 아닙니다. 중요한 사항은 반드시 공식 기관에 확인하세요.",
     aiBadge: "Claude AI 답변 · 출처는 로컬에서 검증",
+    answerLabel: "답변",
   },
   feedback: {
     question: "이 답변이 도움이 되었나요?",
@@ -536,6 +714,52 @@ const ko: UIStrings = {
       },
     ],
   },
+  openData: {
+    title: "오픈데이터를 쓸 수 있는 안내로",
+    sub: "오픈데이터는 공개만으로는 유용하지 않습니다. 주민이 찾고, 이해하고, 행동할 수 있어야 비로소 유용해집니다. MINFO는 '마지막 구간'에 집중합니다: 공식·공공 정보를 다국어 다음 단계로 바꾸는 일입니다.",
+    positioning:
+      "지금의 MINFO는 사람이 선별한 공식/공공 소스와 오픈데이터 대응 구조로 동작합니다 — 데이터셋을 자동으로 가져오지 않습니다. 이는 의도된 설계입니다: 신뢰, 출처의 명확함, 안전이 자동화보다 먼저입니다. 향후 버전은 도쿄 오픈데이터 카탈로그, 공식 API, CSV, 구 웹사이트에서 주기적으로 데이터를 가져올 수 있습니다.",
+    strategyTitle: "MINFO의 데이터 접근 방식 선택",
+    strategyIntro: "MINFO는 API를 위해 API를 쓰지 않습니다 — 방식은 용도에 따라 정합니다:",
+    strategy: [
+      {
+        title: "안정적인 정보",
+        body: "거의 바뀌지 않는 규칙과 창구 정보. 선별된 CSV/JSON 레코드로 MVP에는 충분합니다.",
+      },
+      {
+        title: "주기적으로 바뀌는 데이터",
+        body: "시설 목록과 통계. 정기 CSV 다운로드나 배치 업데이트로 갱신할 수 있습니다.",
+      },
+      {
+        title: "시간에 민감한 정보",
+        body: "재난, 대피소 상황, 갑작스러운 휴업. 향후 API나 잦은 자동 업데이트가 필요할 수 있습니다.",
+      },
+    ],
+    candidatesTitle: "도쿄 오픈데이터 — 후보 데이터셋",
+    candidatesSub: "MINFO가 다음에 연결하려는 카탈로그 항목과 검색 대상입니다. 아직 자동으로 가져오지 않습니다.",
+    catalogCta: "도쿄 오픈데이터 카탈로그 보기",
+    badges: {
+      curated: "현재 수동 관리",
+      candidate: "오픈데이터 후보",
+      batch: "향후: 배치 업데이트",
+      live: "향후: API/실시간",
+      searchTarget: "카탈로그 검색 대상",
+    },
+  },
+  quality: {
+    title: "MINFO 출처 품질 체크",
+    sub: "일본 정부의 오픈데이터 품질 지침에서 영감을 받은 가벼운 체크리스트입니다 — 공식 정부 평가가 아닙니다. MINFO의 모든 출처가 이 체크를 거칩니다.",
+    items: [
+      { label: "공식/공공 출처", desc: "정부 기관이나 공공 조직이 발행합니다." },
+      { label: "링크 검증", desc: "URL을 직접 확인해 공식 페이지로 연결됩니다." },
+      { label: "언어 접근성", desc: "다국어이거나 쉬운 일본어로 이용할 수 있습니다." },
+      { label: "생활 밀착성", desc: "주민이 실제로 묻는 질문에 답합니다." },
+      { label: "업데이트 가능", desc: "출처가 바뀌면 레코드를 갱신할 수 있습니다." },
+      { label: "구 단위 확장 가능", desc: "같은 구조로 다른 구의 출처도 담을 수 있습니다." },
+      { label: "피드백으로 개선", desc: "사용자 피드백으로 약한 출처를 찾아 고칠 수 있습니다." },
+    ],
+  },
+  mascot: { alt: "MINFO 안내 마스코트" },
   whyMinfo: {
     title: "왜 MINFO인가 — 검색이나 AI 챗이 아니라?",
     sub: "MINFO는 일반 지식에서 검색이나 범용 AI를 이기려는 것이 아닙니다. 지역의 한 가지 일을 제대로 합니다.",
@@ -633,6 +857,7 @@ const vi: UIStrings = {
     lowConfidence: "MINFO chưa thể xác nhận hoàn toàn — hãy kiểm tra với cơ quan chính thức.",
     disclaimer: "MINFO là bản thử nghiệm, không phải dịch vụ của chính phủ. Việc quan trọng hãy luôn xác nhận với cơ quan chính thức.",
     aiBadge: "Câu trả lời AI của Claude · nguồn được xác minh cục bộ",
+    answerLabel: "Trả lời",
   },
   feedback: {
     question: "Câu trả lời này có hữu ích không?",
@@ -662,6 +887,52 @@ const vi: UIStrings = {
       },
     ],
   },
+  openData: {
+    title: "Từ dữ liệu mở đến hướng dẫn dùng được",
+    sub: "Dữ liệu mở không tự nhiên hữu ích chỉ vì được công bố. Nó chỉ hữu ích khi cư dân tìm được, hiểu được và hành động được. MINFO tập trung vào 'chặng cuối': biến thông tin chính thức và dữ liệu mở thành các bước tiếp theo đa ngôn ngữ.",
+    positioning:
+      "Hiện tại MINFO chạy trên các nguồn chính thức/công cộng được chọn lọc, với cấu trúc sẵn sàng cho dữ liệu mở — chưa tự động lấy dữ liệu. Đây là chủ ý: niềm tin, nguồn rõ ràng và an toàn đi trước tự động hóa. Các phiên bản sau có thể lấy dữ liệu định kỳ từ Danh mục Dữ liệu Mở Tokyo, API chính thức, CSV và trang của các quận.",
+    strategyTitle: "MINFO chọn cách lấy dữ liệu như thế nào",
+    strategyIntro: "MINFO không dùng API chỉ để dùng API — cách lấy phụ thuộc vào mục đích:",
+    strategy: [
+      {
+        title: "Thông tin ổn định",
+        body: "Quy tắc và quầy liên hệ ít thay đổi. Bản ghi CSV/JSON chọn lọc là đủ cho MVP.",
+      },
+      {
+        title: "Dữ liệu cập nhật định kỳ",
+        body: "Danh sách cơ sở và thống kê. Có thể làm mới bằng tải CSV theo lịch hoặc cập nhật hàng loạt.",
+      },
+      {
+        title: "Thông tin nhạy về thời gian",
+        body: "Thiên tai, tình trạng nơi trú ẩn, đóng cửa đột xuất. Tương lai có thể cần API hoặc cập nhật tự động thường xuyên.",
+      },
+    ],
+    candidatesTitle: "Dữ liệu Mở Tokyo — các bộ dữ liệu ứng viên",
+    candidatesSub: "Các mục trong danh mục và mục tiêu tìm kiếm mà MINFO dự định kết nối tiếp theo. Chưa có mục nào được lấy tự động.",
+    catalogCta: "Xem Danh mục Dữ liệu Mở Tokyo",
+    badges: {
+      curated: "Đang chọn lọc thủ công",
+      candidate: "Ứng viên dữ liệu mở",
+      batch: "Tương lai: cập nhật định kỳ",
+      live: "Tương lai: API/trực tiếp",
+      searchTarget: "Mục tiêu tìm trong danh mục",
+    },
+  },
+  quality: {
+    title: "Kiểm tra chất lượng nguồn của MINFO",
+    sub: "Danh sách kiểm tra gọn nhẹ, lấy cảm hứng từ hướng dẫn chất lượng dữ liệu mở của chính phủ Nhật — không phải đánh giá chính thức của chính phủ. Mọi nguồn trong MINFO đều qua bước kiểm tra này.",
+    items: [
+      { label: "Nguồn chính thức/công cộng", desc: "Do cơ quan nhà nước hoặc tổ chức công cộng công bố." },
+      { label: "Liên kết đã xác minh", desc: "URL được kiểm tra thủ công và dẫn đến trang chính thức." },
+      { label: "Tiếp cận được về ngôn ngữ", desc: "Đa ngôn ngữ, hoặc dùng được với tiếng Nhật đơn giản." },
+      { label: "Sát với đời sống", desc: "Trả lời câu hỏi cư dân thực sự hay hỏi." },
+      { label: "Sẵn sàng cập nhật", desc: "Bản ghi có thể làm mới khi nguồn thay đổi." },
+      { label: "Mở rộng theo quận", desc: "Cùng cấu trúc có thể chứa nguồn của quận khác." },
+      { label: "Cải thiện nhờ phản hồi", desc: "Phản hồi của người dùng giúp phát hiện và sửa nguồn yếu." },
+    ],
+  },
+  mascot: { alt: "Linh vật hướng dẫn MINFO" },
   whyMinfo: {
     title: "Vì sao MINFO — thay vì chỉ tìm kiếm hay AI chat?",
     sub: "MINFO không cố vượt công cụ tìm kiếm hay AI tổng quát về kiến thức chung. Nó làm tốt một việc tại địa phương.",
@@ -759,6 +1030,7 @@ const ne: UIStrings = {
     lowConfidence: "MINFO ले पूर्ण पुष्टि गर्न सकेन — आधिकारिक कार्यालयमा बुझ्नुहोस्।",
     disclaimer: "MINFO प्रोटोटाइप हो, सरकारी सेवा होइन। महत्त्वपूर्ण कुरा सधैं आधिकारिक कार्यालयमा पुष्टि गर्नुहोस्।",
     aiBadge: "Claude को AI उत्तर · स्रोत स्थानीय रूपमा प्रमाणित",
+    answerLabel: "उत्तर",
   },
   feedback: {
     question: "यो उत्तर उपयोगी थियो?",
@@ -788,6 +1060,52 @@ const ne: UIStrings = {
       },
     ],
   },
+  openData: {
+    title: "खुला डाटाबाट, काम लाग्ने मार्गदर्शनसम्म",
+    sub: "खुला डाटा प्रकाशित भएर मात्र उपयोगी हुँदैन। बासिन्दाले भेट्टाउन, बुझ्न र काम गर्न सक्दा मात्र उपयोगी हुन्छ। MINFO 'अन्तिम खुड्किलो' मा केन्द्रित छ: आधिकारिक र खुला जानकारीलाई बहुभाषिक 'अर्को कदम' मा बदल्ने।",
+    positioning:
+      "अहिले MINFO छानिएका आधिकारिक/सार्वजनिक स्रोतमा चल्छ, र संरचना खुला डाटाका लागि तयार छ — डाटा स्वतः लिँदैन। यो जानाजानी हो: विश्वास, स्पष्ट स्रोत र सुरक्षा पहिले। भविष्यका संस्करणले टोकियो खुला डाटा क्याटलग, आधिकारिक API, CSV र वडा साइटबाट समय-समयमा डाटा लिन सक्छ।",
+    strategyTitle: "MINFO ले डाटा लिने तरिका कसरी छान्छ",
+    strategyIntro: "MINFO ले API प्रयोग गर्नकै लागि API चलाउँदैन — तरिका प्रयोजनअनुसार:",
+    strategy: [
+      {
+        title: "स्थिर जानकारी",
+        body: "कम बदलिने नियम र डेस्क। छानिएका CSV/JSON रेकर्ड MVP का लागि पर्याप्त छ।",
+      },
+      {
+        title: "समय-समयमा बदलिने डाटा",
+        body: "सुविधा सूची र तथ्याङ्क। तालिकाबद्ध CSV डाउनलोड वा ब्याच अपडेटले ताजा गर्न सकिन्छ।",
+      },
+      {
+        title: "छिटो बदलिने जानकारी",
+        body: "विपद्, आश्रयको अवस्था, अचानक बन्द। भविष्यमा API वा छिटो स्वचालित अपडेट चाहिन सक्छ।",
+      },
+    ],
+    candidatesTitle: "टोकियो खुला डाटा — उम्मेदवार डाटासेट",
+    candidatesSub: "MINFO ले अब जोड्न चाहेका क्याटलग सूची र खोज लक्ष्यहरू। अहिले कुनै पनि स्वतः लिइँदैन।",
+    catalogCta: "टोकियो खुला डाटा क्याटलग हेर्नुहोस्",
+    badges: {
+      curated: "अहिले हातले छानिएको",
+      candidate: "खुला डाटा उम्मेदवार",
+      batch: "भविष्य: ब्याच अपडेट",
+      live: "भविष्य: API/लाइभ",
+      searchTarget: "क्याटलग खोज लक्ष्य",
+    },
+  },
+  quality: {
+    title: "MINFO स्रोत गुणस्तर जाँच",
+    sub: "जापान सरकारको खुला डाटा गुणस्तर मार्गदर्शनबाट प्रेरित हल्का जाँचसूची — औपचारिक सरकारी मूल्याङ्कन होइन। MINFO का हरेक स्रोत यसबाट जाँचिन्छ।",
+    items: [
+      { label: "आधिकारिक/सार्वजनिक स्रोत", desc: "सरकारी निकाय वा सार्वजनिक संस्थाले प्रकाशित।" },
+      { label: "लिंक प्रमाणित", desc: "URL हातैले जाँचेर आधिकारिक पृष्ठमा पुग्छ।" },
+      { label: "भाषा पहुँचयोग्य", desc: "बहुभाषिक छ, वा सजिलो जापानीमा बुझिन्छ।" },
+      { label: "दैनिक जीवनसँग सम्बन्धित", desc: "बासिन्दाले साँच्चै सोध्ने प्रश्नको उत्तर दिन्छ।" },
+      { label: "अपडेट गर्न मिल्ने", desc: "स्रोत बदलिए रेकर्ड ताजा गर्न सकिन्छ।" },
+      { label: "वडा-वडा विस्तारयोग्य", desc: "उही संरचनामा अरू वडाका स्रोत राख्न मिल्छ।" },
+      { label: "सुझावले सुधारिने", desc: "प्रयोगकर्ताको सुझावले कमजोर स्रोत भेटेर सुधार्न सकिन्छ।" },
+    ],
+  },
+  mascot: { alt: "MINFO गाइड मास्कट" },
   whyMinfo: {
     title: "किन MINFO — खोज वा AI च्याट मात्र होइन?",
     sub: "MINFO सामान्य ज्ञानमा खोज वा AI लाई जित्न खोज्दैन। यसले स्थानीय एउटा काम राम्ररी गर्छ।",

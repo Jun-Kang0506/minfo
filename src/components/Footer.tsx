@@ -13,7 +13,7 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-[1.2fr_1fr]">
           <div>
             <p className="flex items-center gap-2.5">
-              <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-shu text-lg font-bold text-white">
+              <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-moss text-lg font-bold text-white">
                 み
               </span>
               <span className="leading-tight">

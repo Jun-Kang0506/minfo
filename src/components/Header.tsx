@@ -39,7 +39,7 @@ export function Header() {
       <div className="border-b border-line bg-paper/95 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
           <a href="#top" className="flex items-center gap-2.5">
-            <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-shu text-lg font-bold text-white">
+            <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-moss text-lg font-bold text-white">
               み
             </span>
             <span className="leading-tight">
@@ -53,7 +53,7 @@ export function Header() {
               <a
                 key={item.href}
                 href={item.href}
-                className="whitespace-nowrap text-sm font-semibold text-ink-soft transition-colors hover:text-shu"
+                className="whitespace-nowrap text-sm font-semibold text-ink-soft transition-colors hover:text-moss"
               >
                 {item.label}
               </a>

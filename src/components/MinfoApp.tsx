@@ -26,8 +26,8 @@ function AppInner() {
   const ask = useCallback(
     async (text: string, topicId?: TopicId) => {
       const id = crypto.randomUUID();
+      // ChatPanel scrolls the new answer area into view itself.
       setEntries((prev) => [...prev, { id, question: text, answer: null }]);
-      scrollToAsk();
 
       const started = Date.now();
       let answer: Answer;

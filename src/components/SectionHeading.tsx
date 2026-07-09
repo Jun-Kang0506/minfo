@@ -20,7 +20,7 @@ export function SectionHeading({
       <div className="flex items-center gap-3">
         <span
           className={`grid h-8 w-8 shrink-0 place-items-center rounded-md text-sm font-bold ${
-            dark ? "bg-shu text-white" : "bg-ink text-paper"
+            dark ? "bg-moss text-white" : "bg-ink text-paper"
           }`}
         >
           {num}
