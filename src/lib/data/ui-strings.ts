@@ -26,6 +26,12 @@ interface WhyMinfoCard {
 }
 
 export interface UIStrings {
+  brand: {
+    /** Localized brand subtitle shown after "MINFO" (みんなのインフォ = "everyone's info"). */
+    subtitle: string;
+    /** Accessible label for the language selector. */
+    languageLabel: string;
+  };
   nav: { ask: string; categories: string; sources: string; whyMinfo: string; why: string };
   emergencyBar: string;
   hero: {
@@ -33,15 +39,9 @@ export interface UIStrings {
     headline: string;
     sub: string;
     ctaAsk: string;
-    ctaExplore: string;
     trustSources: string;
     trustLanguages: string;
     trustPilot: string;
-    routeTitle: string;
-    routeAria: string;
-    routeNow: string;
-    routeNext: string;
-    routeGoal: string;
   };
   categories: { title: string; sub: string; tryLabel: string };
   ask: {
@@ -74,6 +74,10 @@ export interface UIStrings {
   sources: {
     title: string;
     sub: string;
+    /** Register group headings: ward / metropolitan / national tiers. */
+    groupWard: string;
+    groupTokyo: string;
+    groupNational: string;
     roadmapTitle: string;
     roadmapBadge: string;
     roadmap: RoadmapItem[];
@@ -126,22 +130,17 @@ export interface UIStrings {
 }
 
 const en: UIStrings = {
+  brand: { subtitle: "Everyone's Info", languageLabel: "Language" },
   nav: { ask: "Ask", categories: "Categories", sources: "Sources", whyMinfo: "Why MINFO?", why: "Why Shinjuku?" },
-  emergencyBar: "Emergency? 119 Fire / Ambulance · 110 Police — free, 24h, interpretation available",
+  emergencyBar: "Emergency? 119 Fire / Ambulance · 110 Police (free, 24h, interpretation available)",
   hero: {
-    kicker: "公式情報をもとにした案内 — grounded in official public sources",
+    kicker: "Grounded in official public sources",
     headline: "Reliable life information, in your language.",
-    sub: "MINFO helps foreign-origin residents navigate hospitals, insurance, garbage rules, disasters, and daily life in Japan — explained simply, always with official sources.",
+    sub: "Hospitals, insurance, garbage, disasters: MINFO explains daily life in Japan simply, always with official sources.",
     ctaAsk: "Ask MINFO",
-    ctaExplore: "Explore categories",
     trustSources: "Every answer shows its official sources",
-    trustLanguages: "6 languages incl. やさしい日本語",
-    trustPilot: "Starting from Shinjuku / Okubo — expandable to Tokyo",
-    routeTitle: "Pilot route",
-    routeAria: "Route map: starting at Shinjuku and Okubo, expanding to all of Tokyo",
-    routeNow: "now",
-    routeNext: "next",
-    routeGoal: "All of Tokyo",
+    trustLanguages: "6 languages, including Easy Japanese (やさしい日本語)",
+    trustPilot: "Starting from Shinjuku / Okubo, expandable across Tokyo",
   },
   categories: {
     title: "What do you need help with?",
@@ -153,7 +152,7 @@ const en: UIStrings = {
     sub: "Type a question or tap an example. Answers come with official sources.",
     placeholder: "Ask about daily life in Shinjuku…",
     send: "Ask",
-    examples: "Example questions",
+    examples: "Common questions",
     thinking: "Checking trusted sources…",
     emptyHint: "Your answer will appear here, with sources.",
   },
@@ -162,7 +161,7 @@ const en: UIStrings = {
     caution: "Please note",
     steps: "Recommended next steps",
     sources: "Official & public sources",
-    lowConfidence: "MINFO could not fully confirm this — please check with an official office.",
+    lowConfidence: "MINFO could not fully confirm this. Please check with an official office.",
     disclaimer: "MINFO is a prototype navigator, not a government service. Always confirm important matters with official offices.",
     aiBadge: "AI answer by Claude · sources verified locally",
     answerLabel: "Answer",
@@ -173,13 +172,16 @@ const en: UIStrings = {
     confusing: "Confusing",
     wrong: "Wrong info",
     language: "Need my language",
-    thanks: "Thank you — your feedback helps improve MINFO.",
+    thanks: "Thank you. Your feedback helps improve MINFO.",
   },
   sources: {
     title: "Built on official & public information",
-    sub: "MINFO answers only from a curated set of official and public organizations — every answer links back to them.",
+    sub: "MINFO answers only from a curated set of official and public organizations. Every answer links back to them.",
+    groupWard: "Shinjuku City",
+    groupTokyo: "Tokyo Metropolitan",
+    groupNational: "National",
     roadmapTitle: "Open-data roadmap",
-    roadmapBadge: "Future — not yet implemented",
+    roadmapBadge: "Planned · not yet implemented",
     roadmap: [
       {
         title: "Tokyo Open Data Catalog connection",
@@ -191,7 +193,7 @@ const en: UIStrings = {
       },
       {
         title: "Anonymized question trends",
-        body: "Understand what information residents actually need — shared with wards as a public-interest signal, never as personal data.",
+        body: "Understand what information residents actually need, shared with wards as a public-interest signal, never as personal data.",
       },
     ],
   },
@@ -199,9 +201,9 @@ const en: UIStrings = {
     title: "From open data to usable guidance",
     sub: "Open data is not useful only because it is published. It becomes useful when residents can find it, understand it, and act on it. MINFO focuses on the final mile: turning official and open public information into multilingual next steps.",
     positioning:
-      "Today MINFO runs on curated official/public sources with an open-data-ready record structure — it does not fetch datasets automatically. This is intentional: trust, source clarity, and safety come before live automation. Future versions can pull records from the Tokyo Open Data Catalog, official APIs, CSVs, and ward sites.",
+      "Today MINFO runs on curated official/public sources with an open-data-ready record structure. It does not fetch datasets automatically. This is intentional: trust, source clarity, and safety come before live automation. Future versions can pull records from the Tokyo Open Data Catalog, official APIs, CSVs, and ward sites.",
     strategyTitle: "How MINFO chooses a data access method",
-    strategyIntro: "MINFO does not use APIs just for the sake of using APIs — the method follows the use case:",
+    strategyIntro: "MINFO does not use APIs for their own sake. The method follows the use case:",
     strategy: [
       {
         title: "Stable information",
@@ -216,7 +218,7 @@ const en: UIStrings = {
         body: "Disasters, shelter status, sudden closures. Future versions may need APIs or frequent automated updates.",
       },
     ],
-    candidatesTitle: "Tokyo Open Data — candidate datasets",
+    candidatesTitle: "Tokyo Open Data: candidate datasets",
     candidatesSub: "Catalog entries and search targets MINFO plans to connect next. None are fetched automatically yet.",
     catalogCta: "Browse the Tokyo Open Data Catalog",
     badges: {
@@ -229,7 +231,7 @@ const en: UIStrings = {
   },
   quality: {
     title: "MINFO source-quality check",
-    sub: "A lightweight checklist inspired by Japan's public open-data quality guidance — not a formal government assessment. Every source in MINFO goes through it.",
+    sub: "A lightweight checklist inspired by Japan's public open-data quality guidance, not a formal government assessment. Every source in MINFO goes through it.",
     items: [
       { label: "Official / public source", desc: "Published by a government body or public organization." },
       { label: "Link verified", desc: "The URL was checked by hand and points to the official page." },
@@ -242,20 +244,20 @@ const en: UIStrings = {
   },
   mascot: { alt: "MINFO guide mascot" },
   whyMinfo: {
-    title: "Why MINFO — not just search or AI chat?",
+    title: "Why MINFO, not just search or AI chat?",
     sub: "MINFO is not trying to beat search engines or general AI at general knowledge. It does one local job well.",
     cards: [
       {
         title: "Search engines",
-        body: "Give you many links — you still have to judge which page is official, current, and applies to Shinjuku.",
+        body: "Give you many links. You still have to judge which page is official, current, and applies to Shinjuku.",
       },
       {
         title: "General AI chat",
-        body: "Gives broad, general answers — helpful, but not grounded in your ward's offices, and it can guess.",
+        body: "Gives broad, general answers. Helpful, but not grounded in your ward's offices, and it can guess.",
       },
       {
         title: "MINFO",
-        body: "Local, source-grounded next steps in your language — official source cards on every answer, and 119/110 guidance that is always the same. A navigator to real offices, never a replacement for them.",
+        body: "Local, source-grounded next steps in your language, with official sources on every answer and 119/110 guidance that never changes. A navigator to real offices, never a replacement for them.",
       },
     ],
   },
@@ -265,15 +267,15 @@ const en: UIStrings = {
     blocks: [
       {
         title: "The problem",
-        body: "Official life information in Japan is reliable — but scattered across dozens of sites, written in dense administrative Japanese, and hard to act on. For residents navigating an unfamiliar system in a second language, even simple questions (\"which counter?\", \"which form?\") become barriers.",
+        body: "Official life information in Japan is reliable, but scattered across dozens of sites, written in dense administrative Japanese, and hard to act on. For residents navigating an unfamiliar system in a second language, even simple questions (\"which counter?\", \"which form?\") become barriers.",
       },
       {
         title: "The people",
-        body: "Foreign-origin residents and multilingual communities: newly arrived residents, international students, workers, families — and the community supporters who help them. People facing language and information-access barriers, not a lack of ability.",
+        body: "Foreign-origin residents and multilingual communities: newly arrived residents, international students, workers, families, and the community supporters who help them. People facing language and information-access barriers, not a lack of ability.",
       },
       {
         title: "The approach",
-        body: "MINFO is not a translation chatbot. It is a civic information navigator: it explains daily-life systems simply, in six languages including やさしい日本語, always shows its official sources, and guides people to the right real-world office — never replacing it.",
+        body: "MINFO is not a translation chatbot. It is a civic information navigator: it explains daily-life systems simply, in six languages including やさしい日本語, always shows its official sources, and guides people to the right real-world office, never replacing it.",
       },
       {
         title: "Pilot → expansion",
@@ -290,7 +292,7 @@ const en: UIStrings = {
   },
   footer: {
     tagline: "Multilingual Information Navigator for Foreign-Origin Residents",
-    meta: "Hackathon prototype · 2026 · Shinjuku / Okubo pilot",
+    meta: "Hackathon prototype 2026 · Shinjuku / Okubo pilot",
     emergencyTitle: "Emergency",
     fire: "Fire / Ambulance",
     police: "Police",
@@ -299,22 +301,17 @@ const en: UIStrings = {
 };
 
 const ja: UIStrings = {
+  brand: { subtitle: "みんなのインフォ", languageLabel: "ことば" },
   nav: { ask: "質問する", categories: "カテゴリー", sources: "情報のもと", whyMinfo: "MINFOとは", why: "なぜ新宿？" },
   emergencyBar: "緊急のとき：火事・救急車は 119 ／ 警察は 110（無料・24時間・通訳あり）",
   hero: {
     kicker: "公式情報をもとにした案内",
     headline: "あなたの ことばで、生活の 情報を。",
-    sub: "MINFOは、病院・保険・ごみ・防災など、日本の 生活の 情報を やさしく 案内します。こたえには、いつも 公式の 情報のもとが ついています。",
+    sub: "病院・保険・ごみ・防災。MINFOは 日本の 生活の 情報を やさしく 案内します。こたえには、いつも 公式の 情報のもとが つきます。",
     ctaAsk: "MINFOに 質問する",
-    ctaExplore: "カテゴリーを 見る",
     trustSources: "こたえには 公式の 情報のもとが つきます",
     trustLanguages: "6つの ことば（やさしい日本語も あります）",
     trustPilot: "新宿・大久保から 始めます",
-    routeTitle: "パイロット路線",
-    routeAria: "路線図：新宿と 大久保から 始めて、東京ぜんぶに ひろげます",
-    routeNow: "いま",
-    routeNext: "つぎ",
-    routeGoal: "東京ぜんぶ",
   },
   categories: {
     title: "なにに こまっていますか？",
@@ -326,7 +323,7 @@ const ja: UIStrings = {
     sub: "質問を 書くか、下の れいを おしてください。",
     placeholder: "新宿の 生活の ことを 聞いてください…",
     send: "質問する",
-    examples: "質問の れい",
+    examples: "よくある 質問",
     thinking: "公式の 情報を しらべています…",
     emptyHint: "ここに こたえが 出ます。",
   },
@@ -351,6 +348,9 @@ const ja: UIStrings = {
   sources: {
     title: "公式の 情報を つかっています",
     sub: "MINFOは、公式・公共の 情報だけを つかって こたえます。こたえには、いつも 情報のもとが ついています。",
+    groupWard: "新宿区",
+    groupTokyo: "東京都",
+    groupNational: "国の 機関",
     roadmapTitle: "これからの 計画（オープンデータ）",
     roadmapBadge: "これからの 計画です（まだ ありません）",
     roadmap: [
@@ -389,7 +389,7 @@ const ja: UIStrings = {
         body: "災害や 避難所の 情報です。これから、APIや 自動更新が 必要に なるかもしれません。",
       },
     ],
-    candidatesTitle: "東京都オープンデータ — つかいたい データ",
+    candidatesTitle: "東京都オープンデータ：つかいたい データ",
     candidatesSub: "MINFOが これから つなげたい データです。まだ 自動では つかっていません。",
     catalogCta: "東京都オープンデータカタログを 見る",
     badges: {
@@ -463,7 +463,7 @@ const ja: UIStrings = {
   },
   footer: {
     tagline: "外国から 来た 住民の ための 生活情報ナビ",
-    meta: "ハッカソン試作品 · 2026 · 新宿・大久保",
+    meta: "ハッカソン試作品 2026 · 新宿・大久保",
     emergencyTitle: "緊急のとき",
     fire: "火事・救急車",
     police: "警察",
@@ -472,22 +472,17 @@ const ja: UIStrings = {
 };
 
 const zh: UIStrings = {
+  brand: { subtitle: "大家的信息", languageLabel: "语言" },
   nav: { ask: "提问", categories: "分类", sources: "信息来源", whyMinfo: "为什么用 MINFO", why: "为什么是新宿？" },
   emergencyBar: "紧急情况：火警·救护车 119 ／ 警察 110（免费·24小时·有翻译）",
   hero: {
     kicker: "基于官方信息的生活向导",
     headline: "用您的语言，获取可靠的生活信息。",
-    sub: "MINFO 帮助外国居民了解日本的医院、保险、垃圾分类、防灾等生活信息——解释简单，始终附有官方来源。",
+    sub: "医院、保险、垃圾分类、防灾：MINFO 用简单的方式解释在日生活，回答始终附有官方来源。",
     ctaAsk: "向 MINFO 提问",
-    ctaExplore: "浏览分类",
     trustSources: "每个回答都显示官方来源",
-    trustLanguages: "支持 6 种语言（含简明日语）",
+    trustLanguages: "支持 6 种语言，含简明日语（やさしい日本語）",
     trustPilot: "从新宿·大久保开始，可扩展至全东京",
-    routeTitle: "试点路线",
-    routeAria: "路线图：从新宿和大久保出发，扩展至全东京",
-    routeNow: "现在",
-    routeNext: "下一步",
-    routeGoal: "全东京",
   },
   categories: {
     title: "您需要哪方面的帮助？",
@@ -499,7 +494,7 @@ const zh: UIStrings = {
     sub: "输入问题或点击示例，回答附带官方来源。",
     placeholder: "问问新宿的生活问题…",
     send: "提问",
-    examples: "示例问题",
+    examples: "常见问题",
     thinking: "正在查询可信来源…",
     emptyHint: "回答会显示在这里，并附来源。",
   },
@@ -508,7 +503,7 @@ const zh: UIStrings = {
     caution: "请注意",
     steps: "建议的下一步",
     sources: "官方·公共来源",
-    lowConfidence: "MINFO 无法完全确认——请向官方窗口确认。",
+    lowConfidence: "MINFO 无法完全确认，请向官方窗口确认。",
     disclaimer: "MINFO 是原型产品，不是政府服务。重要事项请务必向官方窗口确认。",
     aiBadge: "由 Claude 生成的 AI 回答 · 来源经本地核验",
     answerLabel: "回答",
@@ -519,13 +514,16 @@ const zh: UIStrings = {
     confusing: "看不懂",
     wrong: "信息有误",
     language: "需要我的语言",
-    thanks: "谢谢——您的反馈会帮助改进 MINFO。",
+    thanks: "谢谢！您的反馈会帮助改进 MINFO。",
   },
   sources: {
     title: "基于官方与公共信息",
-    sub: "MINFO 只使用经过筛选的官方和公共机构信息回答——每个回答都会注明来源。",
+    sub: "MINFO 只使用经过筛选的官方和公共机构信息回答，每个回答都会注明来源。",
+    groupWard: "新宿区",
+    groupTokyo: "东京都",
+    groupNational: "全国机构",
     roadmapTitle: "开放数据路线图",
-    roadmapBadge: "未来计划——尚未实现",
+    roadmapBadge: "未来计划（尚未实现）",
     roadmap: [
       {
         title: "接入东京都开放数据目录",
@@ -537,17 +535,17 @@ const zh: UIStrings = {
       },
       {
         title: "匿名问题趋势",
-        body: "了解居民真正需要什么信息——以公共利益信号的形式与各区共享，绝不涉及个人数据。",
+        body: "了解居民真正需要什么信息，以公共利益信号的形式与各区共享，绝不涉及个人数据。",
       },
     ],
   },
   openData: {
     title: "让开放数据变成用得上的指引",
-    sub: "开放数据不是发布了就有用——只有当居民能找到、能看懂、能行动时才有用。MINFO 专注于「最后一公里」：把官方与公开信息变成多语言的下一步行动。",
+    sub: "开放数据不是发布了就有用。只有当居民能找到、能看懂、能行动时才有用。MINFO 专注于「最后一公里」：把官方与公开信息变成多语言的下一步行动。",
     positioning:
-      "目前 MINFO 使用人工筛选的官方/公共信息，数据结构已为开放数据做好准备——尚未自动抓取数据集。这是有意为之：信任、来源清晰和安全优先于自动化。未来版本可以从东京都开放数据目录、官方 API、CSV 和各区网站定期获取数据。",
+      "目前 MINFO 使用人工筛选的官方/公共信息，数据结构已为开放数据做好准备，尚未自动抓取数据集。这是有意为之：信任、来源清晰和安全优先于自动化。未来版本可以从东京都开放数据目录、官方 API、CSV 和各区网站定期获取数据。",
     strategyTitle: "MINFO 如何选择数据获取方式",
-    strategyIntro: "MINFO 不为了用 API 而用 API——方式取决于用途：",
+    strategyIntro: "MINFO 不为了用 API 而用 API，方式取决于用途：",
     strategy: [
       {
         title: "较稳定的信息",
@@ -562,7 +560,7 @@ const zh: UIStrings = {
         body: "灾害、避难所状态、临时关闭。未来可能需要 API 或高频自动更新。",
       },
     ],
-    candidatesTitle: "东京都开放数据——候选数据集",
+    candidatesTitle: "东京都开放数据：候选数据集",
     candidatesSub: "MINFO 计划接入的目录条目和检索目标。目前均未自动获取。",
     catalogCta: "浏览东京都开放数据目录",
     badges: {
@@ -575,7 +573,7 @@ const zh: UIStrings = {
   },
   quality: {
     title: "MINFO 来源质量检查",
-    sub: "参考日本政府开放数据质量指引的轻量检查——不是正式的政府评估。MINFO 的每个来源都经过这些检查。",
+    sub: "参考日本政府开放数据质量指引的轻量检查，不是正式的政府评估。MINFO 的每个来源都经过这些检查。",
     items: [
       { label: "官方/公共来源", desc: "由政府机构或公共组织发布。" },
       { label: "链接已核实", desc: "URL 经人工确认，指向官方页面。" },
@@ -593,15 +591,15 @@ const zh: UIStrings = {
     cards: [
       {
         title: "搜索引擎",
-        body: "给你很多链接——哪个是官方的、是否是最新的、适不适用于新宿，还得自己判断。",
+        body: "给你很多链接。哪个是官方的、是否是最新的、适不适用于新宿，还得自己判断。",
       },
       {
         title: "通用 AI 聊天",
-        body: "给出宽泛的一般性回答——有帮助，但不基于你所在区的窗口信息，还可能猜测。",
+        body: "给出宽泛的一般性回答。有帮助，但不基于你所在区的窗口信息，还可能猜测。",
       },
       {
         title: "MINFO",
-        body: "用你的语言给出本地的、有官方来源的下一步行动——每个回答附官方来源卡片，119/110 紧急指引始终一致。MINFO 是通往真实窗口的向导，绝不取代窗口。",
+        body: "用你的语言给出本地的、有官方来源的下一步行动：每个回答附官方来源，119/110 紧急指引始终一致。MINFO 是通往真实窗口的向导，绝不取代窗口。",
       },
     ],
   },
@@ -615,11 +613,11 @@ const zh: UIStrings = {
       },
       {
         title: "对象",
-        body: "外国出身的居民和多语言社区：新来的居民、留学生、上班族、家庭——以及帮助他们的社区支援者。他们面对的是语言和信息获取的障碍，而不是能力问题。",
+        body: "外国出身的居民和多语言社区：新来的居民、留学生、上班族、家庭，以及帮助他们的社区支援者。他们面对的是语言和信息获取的障碍，而不是能力问题。",
       },
       {
         title: "方法",
-        body: "MINFO 不是翻译聊天机器人，而是公民信息向导：用包括简明日语在内的六种语言简单解释生活制度，始终展示官方来源，并把人引导到正确的实体窗口——绝不取代窗口。",
+        body: "MINFO 不是翻译聊天机器人，而是公民信息向导：用包括简明日语在内的六种语言简单解释生活制度，始终展示官方来源，并把人引导到正确的实体窗口，绝不取代窗口。",
       },
       {
         title: "试点 → 扩展",
@@ -636,7 +634,7 @@ const zh: UIStrings = {
   },
   footer: {
     tagline: "面向外国居民的多语言生活信息导航",
-    meta: "黑客松原型 · 2026 · 新宿·大久保试点",
+    meta: "黑客松原型 2026 · 新宿·大久保试点",
     emergencyTitle: "紧急情况",
     fire: "火警·救护车",
     police: "警察",
@@ -645,22 +643,17 @@ const zh: UIStrings = {
 };
 
 const ko: UIStrings = {
+  brand: { subtitle: "모두의 정보", languageLabel: "언어" },
   nav: { ask: "질문하기", categories: "카테고리", sources: "정보 출처", whyMinfo: "왜 MINFO?", why: "왜 신주쿠?" },
   emergencyBar: "긴급 상황: 화재·구급차 119 ／ 경찰 110 (무료·24시간·통역 지원)",
   hero: {
     kicker: "공식 정보에 기반한 생활 안내",
     headline: "당신의 언어로, 믿을 수 있는 생활 정보를.",
-    sub: "MINFO는 병원, 보험, 쓰레기 분리, 재난 대비 등 일본 생활 정보를 쉽게 안내합니다 — 항상 공식 출처와 함께.",
+    sub: "병원, 보험, 쓰레기, 재난 대비. MINFO는 일본 생활 정보를 쉽게 안내하고, 답변에는 항상 공식 출처가 붙습니다.",
     ctaAsk: "MINFO에 질문하기",
-    ctaExplore: "카테고리 보기",
     trustSources: "모든 답변에 공식 출처 표시",
-    trustLanguages: "6개 언어 지원 (쉬운 일본어 포함)",
+    trustLanguages: "6개 언어 지원, 쉬운 일본어(やさしい日本語) 포함",
     trustPilot: "신주쿠·오쿠보에서 시작, 도쿄 전역으로 확장 가능",
-    routeTitle: "시범 노선",
-    routeAria: "노선도: 신주쿠와 오쿠보에서 시작해 도쿄 전역으로 확장",
-    routeNow: "지금",
-    routeNext: "다음",
-    routeGoal: "도쿄 전역",
   },
   categories: {
     title: "어떤 도움이 필요하세요?",
@@ -672,7 +665,7 @@ const ko: UIStrings = {
     sub: "질문을 입력하거나 예시를 눌러보세요. 답변에는 공식 출처가 붙습니다.",
     placeholder: "신주쿠 생활에 대해 물어보세요…",
     send: "질문",
-    examples: "예시 질문",
+    examples: "자주 묻는 질문",
     thinking: "신뢰할 수 있는 출처를 확인 중…",
     emptyHint: "답변이 출처와 함께 여기에 표시됩니다.",
   },
@@ -681,7 +674,7 @@ const ko: UIStrings = {
     caution: "유의하세요",
     steps: "권장 다음 단계",
     sources: "공식·공공 출처",
-    lowConfidence: "MINFO가 완전히 확인하지 못했습니다 — 공식 기관에 확인하세요.",
+    lowConfidence: "MINFO가 완전히 확인하지 못했습니다. 공식 기관에 확인하세요.",
     disclaimer: "MINFO는 프로토타입이며 정부 서비스가 아닙니다. 중요한 사항은 반드시 공식 기관에 확인하세요.",
     aiBadge: "Claude AI 답변 · 출처는 로컬에서 검증",
     answerLabel: "답변",
@@ -692,13 +685,16 @@ const ko: UIStrings = {
     confusing: "이해 어려움",
     wrong: "잘못된 정보",
     language: "내 언어 필요",
-    thanks: "감사합니다 — 피드백은 MINFO 개선에 사용됩니다.",
+    thanks: "감사합니다. 피드백은 MINFO 개선에 사용됩니다.",
   },
   sources: {
     title: "공식·공공 정보로 만들어졌습니다",
-    sub: "MINFO는 선별된 공식·공공 기관의 정보만으로 답합니다 — 모든 답변에 출처가 연결됩니다.",
+    sub: "MINFO는 선별된 공식·공공 기관의 정보만으로 답합니다. 모든 답변에 출처가 연결됩니다.",
+    groupWard: "신주쿠구",
+    groupTokyo: "도쿄도",
+    groupNational: "국가 기관",
     roadmapTitle: "오픈데이터 로드맵",
-    roadmapBadge: "향후 계획 — 아직 미구현",
+    roadmapBadge: "향후 계획 (아직 미구현)",
     roadmap: [
       {
         title: "도쿄 오픈데이터 카탈로그 연결",
@@ -710,7 +706,7 @@ const ko: UIStrings = {
       },
       {
         title: "익명 질문 트렌드",
-        body: "주민이 실제로 필요한 정보를 파악해 — 개인 데이터가 아닌 공익 신호로 구와 공유합니다.",
+        body: "주민이 실제로 필요한 정보를 파악해, 개인 데이터가 아닌 공익 신호로 구와 공유합니다.",
       },
     ],
   },
@@ -718,9 +714,9 @@ const ko: UIStrings = {
     title: "오픈데이터를 쓸 수 있는 안내로",
     sub: "오픈데이터는 공개만으로는 유용하지 않습니다. 주민이 찾고, 이해하고, 행동할 수 있어야 비로소 유용해집니다. MINFO는 '마지막 구간'에 집중합니다: 공식·공공 정보를 다국어 다음 단계로 바꾸는 일입니다.",
     positioning:
-      "지금의 MINFO는 사람이 선별한 공식/공공 소스와 오픈데이터 대응 구조로 동작합니다 — 데이터셋을 자동으로 가져오지 않습니다. 이는 의도된 설계입니다: 신뢰, 출처의 명확함, 안전이 자동화보다 먼저입니다. 향후 버전은 도쿄 오픈데이터 카탈로그, 공식 API, CSV, 구 웹사이트에서 주기적으로 데이터를 가져올 수 있습니다.",
+      "지금의 MINFO는 사람이 선별한 공식/공공 소스와 오픈데이터 대응 구조로 동작합니다. 데이터셋을 자동으로 가져오지 않습니다. 이는 의도된 설계입니다: 신뢰, 출처의 명확함, 안전이 자동화보다 먼저입니다. 향후 버전은 도쿄 오픈데이터 카탈로그, 공식 API, CSV, 구 웹사이트에서 주기적으로 데이터를 가져올 수 있습니다.",
     strategyTitle: "MINFO의 데이터 접근 방식 선택",
-    strategyIntro: "MINFO는 API를 위해 API를 쓰지 않습니다 — 방식은 용도에 따라 정합니다:",
+    strategyIntro: "MINFO는 API를 위해 API를 쓰지 않습니다. 방식은 용도에 따라 정합니다:",
     strategy: [
       {
         title: "안정적인 정보",
@@ -735,7 +731,7 @@ const ko: UIStrings = {
         body: "재난, 대피소 상황, 갑작스러운 휴업. 향후 API나 잦은 자동 업데이트가 필요할 수 있습니다.",
       },
     ],
-    candidatesTitle: "도쿄 오픈데이터 — 후보 데이터셋",
+    candidatesTitle: "도쿄 오픈데이터: 후보 데이터셋",
     candidatesSub: "MINFO가 다음에 연결하려는 카탈로그 항목과 검색 대상입니다. 아직 자동으로 가져오지 않습니다.",
     catalogCta: "도쿄 오픈데이터 카탈로그 보기",
     badges: {
@@ -748,7 +744,7 @@ const ko: UIStrings = {
   },
   quality: {
     title: "MINFO 출처 품질 체크",
-    sub: "일본 정부의 오픈데이터 품질 지침에서 영감을 받은 가벼운 체크리스트입니다 — 공식 정부 평가가 아닙니다. MINFO의 모든 출처가 이 체크를 거칩니다.",
+    sub: "일본 정부의 오픈데이터 품질 지침에서 영감을 받은 가벼운 체크리스트입니다. 공식 정부 평가가 아닙니다. MINFO의 모든 출처가 이 체크를 거칩니다.",
     items: [
       { label: "공식/공공 출처", desc: "정부 기관이나 공공 조직이 발행합니다." },
       { label: "링크 검증", desc: "URL을 직접 확인해 공식 페이지로 연결됩니다." },
@@ -761,26 +757,26 @@ const ko: UIStrings = {
   },
   mascot: { alt: "MINFO 안내 마스코트" },
   whyMinfo: {
-    title: "왜 MINFO인가 — 검색이나 AI 챗이 아니라?",
+    title: "왜 MINFO인가, 검색이나 AI 챗이 아니라?",
     sub: "MINFO는 일반 지식에서 검색이나 범용 AI를 이기려는 것이 아닙니다. 지역의 한 가지 일을 제대로 합니다.",
     cards: [
       {
         title: "검색 엔진",
-        body: "링크를 잔뜩 보여줍니다 — 어떤 페이지가 공식이고 최신이며 신주쿠에 해당하는지는 직접 판단해야 합니다.",
+        body: "링크를 잔뜩 보여줍니다. 어떤 페이지가 공식이고 최신이며 신주쿠에 해당하는지는 직접 판단해야 합니다.",
       },
       {
         title: "일반 AI 챗",
-        body: "폭넓은 일반 답변을 줍니다 — 유용하지만 우리 구의 창구 정보에 기반하지 않고, 추측할 수도 있습니다.",
+        body: "폭넓은 일반 답변을 줍니다. 유용하지만 우리 구의 창구 정보에 기반하지 않고, 추측할 수도 있습니다.",
       },
       {
         title: "MINFO",
-        body: "내 언어로, 공식 출처가 붙은 신주쿠의 '다음 행동'을 안내합니다 — 모든 답변에 공식 출처 카드, 119/110 안내는 항상 동일합니다. MINFO는 실제 창구로 가는 내비게이터이지, 창구의 대체물이 아닙니다.",
+        body: "내 언어로, 공식 출처가 붙은 신주쿠의 '다음 행동'을 안내합니다. 모든 답변에 공식 출처가 붙고, 119/110 안내는 항상 동일합니다. MINFO는 실제 창구로 가는 내비게이터이지, 창구의 대체물이 아닙니다.",
       },
     ],
   },
   story: {
     title: "왜 신주쿠·오쿠보인가?",
-    sub: "다국어 정보 접근을 위한 시빅테크 시범 사업 — 도쿄 전역 확장을 목표로 합니다.",
+    sub: "다국어 정보 접근을 위한 시빅테크 시범 사업. 도쿄 전역 확장을 목표로 합니다.",
     blocks: [
       {
         title: "문제",
@@ -788,11 +784,11 @@ const ko: UIStrings = {
       },
       {
         title: "대상",
-        body: "외국 출신 주민과 다언어 커뮤니티: 새로 온 주민, 유학생, 직장인, 가족 — 그리고 그들을 돕는 지역 서포터. 능력이 아니라 언어와 정보 접근의 장벽에 부딪힌 사람들입니다.",
+        body: "외국 출신 주민과 다언어 커뮤니티: 새로 온 주민, 유학생, 직장인, 가족, 그리고 그들을 돕는 지역 서포터. 능력이 아니라 언어와 정보 접근의 장벽에 부딪힌 사람들입니다.",
       },
       {
         title: "접근",
-        body: "MINFO는 번역 챗봇이 아닙니다. 생활 제도를 쉬운 일본어를 포함한 6개 언어로 쉽게 설명하고, 항상 공식 출처를 보여주고, 올바른 실제 창구로 안내하는 시민 정보 내비게이터입니다 — 창구를 대체하지 않습니다.",
+        body: "MINFO는 번역 챗봇이 아닙니다. 생활 제도를 쉬운 일본어를 포함한 6개 언어로 쉽게 설명하고, 항상 공식 출처를 보여주고, 올바른 실제 창구로 안내하는 시민 정보 내비게이터입니다. 창구를 대체하지 않습니다.",
       },
       {
         title: "시범 → 확장",
@@ -809,7 +805,7 @@ const ko: UIStrings = {
   },
   footer: {
     tagline: "외국 출신 주민을 위한 다국어 정보 내비게이터",
-    meta: "해커톤 프로토타입 · 2026 · 신주쿠·오쿠보 시범",
+    meta: "해커톤 프로토타입 2026 · 신주쿠·오쿠보 시범",
     emergencyTitle: "긴급 상황",
     fire: "화재·구급차",
     police: "경찰",
@@ -818,22 +814,17 @@ const ko: UIStrings = {
 };
 
 const vi: UIStrings = {
+  brand: { subtitle: "Thông tin của mọi người", languageLabel: "Ngôn ngữ" },
   nav: { ask: "Hỏi", categories: "Danh mục", sources: "Nguồn tin", whyMinfo: "Vì sao MINFO?", why: "Vì sao Shinjuku?" },
-  emergencyBar: "Khẩn cấp? 119 Cứu hỏa / Cấp cứu · 110 Cảnh sát — miễn phí, 24h, có phiên dịch",
+  emergencyBar: "Khẩn cấp? 119 Cứu hỏa / Cấp cứu · 110 Cảnh sát (miễn phí, 24h, có phiên dịch)",
   hero: {
     kicker: "Hướng dẫn dựa trên thông tin chính thức",
     headline: "Thông tin đời sống đáng tin cậy, bằng ngôn ngữ của bạn.",
-    sub: "MINFO giúp cư dân gốc nước ngoài tìm hiểu bệnh viện, bảo hiểm, phân loại rác, phòng chống thiên tai và đời sống ở Nhật — giải thích đơn giản, luôn kèm nguồn chính thức.",
+    sub: "Bệnh viện, bảo hiểm, rác, thiên tai: MINFO giải thích đời sống ở Nhật một cách đơn giản, luôn kèm nguồn chính thức.",
     ctaAsk: "Hỏi MINFO",
-    ctaExplore: "Xem danh mục",
     trustSources: "Mọi câu trả lời đều kèm nguồn chính thức",
-    trustLanguages: "6 ngôn ngữ, gồm tiếng Nhật đơn giản",
-    trustPilot: "Bắt đầu từ Shinjuku / Okubo — mở rộng ra Tokyo",
-    routeTitle: "Tuyến thí điểm",
-    routeAria: "Bản đồ tuyến: bắt đầu từ Shinjuku và Okubo, mở rộng ra toàn Tokyo",
-    routeNow: "hiện tại",
-    routeNext: "tiếp theo",
-    routeGoal: "Toàn Tokyo",
+    trustLanguages: "6 ngôn ngữ, gồm tiếng Nhật đơn giản (やさしい日本語)",
+    trustPilot: "Bắt đầu từ Shinjuku / Okubo, mở rộng ra Tokyo",
   },
   categories: {
     title: "Bạn cần trợ giúp về điều gì?",
@@ -845,7 +836,7 @@ const vi: UIStrings = {
     sub: "Gõ câu hỏi hoặc chạm vào ví dụ. Câu trả lời kèm nguồn chính thức.",
     placeholder: "Hỏi về đời sống ở Shinjuku…",
     send: "Hỏi",
-    examples: "Câu hỏi mẫu",
+    examples: "Câu hỏi thường gặp",
     thinking: "Đang kiểm tra các nguồn đáng tin cậy…",
     emptyHint: "Câu trả lời sẽ hiện ở đây, kèm nguồn.",
   },
@@ -854,7 +845,7 @@ const vi: UIStrings = {
     caution: "Lưu ý",
     steps: "Các bước tiếp theo",
     sources: "Nguồn chính thức & công cộng",
-    lowConfidence: "MINFO chưa thể xác nhận hoàn toàn — hãy kiểm tra với cơ quan chính thức.",
+    lowConfidence: "MINFO chưa thể xác nhận hoàn toàn. Hãy kiểm tra với cơ quan chính thức.",
     disclaimer: "MINFO là bản thử nghiệm, không phải dịch vụ của chính phủ. Việc quan trọng hãy luôn xác nhận với cơ quan chính thức.",
     aiBadge: "Câu trả lời AI của Claude · nguồn được xác minh cục bộ",
     answerLabel: "Trả lời",
@@ -865,13 +856,16 @@ const vi: UIStrings = {
     confusing: "Khó hiểu",
     wrong: "Sai thông tin",
     language: "Cần ngôn ngữ của tôi",
-    thanks: "Cảm ơn bạn — phản hồi giúp MINFO tốt hơn.",
+    thanks: "Cảm ơn bạn. Phản hồi giúp MINFO tốt hơn.",
   },
   sources: {
     title: "Dựa trên thông tin chính thức & công cộng",
-    sub: "MINFO chỉ trả lời từ các tổ chức chính thức và công cộng được chọn lọc — mọi câu trả lời đều dẫn nguồn.",
+    sub: "MINFO chỉ trả lời từ các tổ chức chính thức và công cộng được chọn lọc. Mọi câu trả lời đều dẫn nguồn.",
+    groupWard: "Quận Shinjuku",
+    groupTokyo: "Chính quyền Tokyo",
+    groupNational: "Cấp quốc gia",
     roadmapTitle: "Lộ trình dữ liệu mở",
-    roadmapBadge: "Tương lai — chưa triển khai",
+    roadmapBadge: "Kế hoạch (chưa triển khai)",
     roadmap: [
       {
         title: "Kết nối Danh mục Dữ liệu Mở Tokyo",
@@ -883,7 +877,7 @@ const vi: UIStrings = {
       },
       {
         title: "Xu hướng câu hỏi ẩn danh",
-        body: "Hiểu cư dân thực sự cần thông tin gì — chia sẻ với các quận như tín hiệu vì lợi ích chung, không bao giờ là dữ liệu cá nhân.",
+        body: "Hiểu cư dân thực sự cần thông tin gì, chia sẻ với các quận như tín hiệu vì lợi ích chung, không bao giờ là dữ liệu cá nhân.",
       },
     ],
   },
@@ -891,9 +885,9 @@ const vi: UIStrings = {
     title: "Từ dữ liệu mở đến hướng dẫn dùng được",
     sub: "Dữ liệu mở không tự nhiên hữu ích chỉ vì được công bố. Nó chỉ hữu ích khi cư dân tìm được, hiểu được và hành động được. MINFO tập trung vào 'chặng cuối': biến thông tin chính thức và dữ liệu mở thành các bước tiếp theo đa ngôn ngữ.",
     positioning:
-      "Hiện tại MINFO chạy trên các nguồn chính thức/công cộng được chọn lọc, với cấu trúc sẵn sàng cho dữ liệu mở — chưa tự động lấy dữ liệu. Đây là chủ ý: niềm tin, nguồn rõ ràng và an toàn đi trước tự động hóa. Các phiên bản sau có thể lấy dữ liệu định kỳ từ Danh mục Dữ liệu Mở Tokyo, API chính thức, CSV và trang của các quận.",
+      "Hiện tại MINFO chạy trên các nguồn chính thức/công cộng được chọn lọc, với cấu trúc sẵn sàng cho dữ liệu mở. Chưa tự động lấy dữ liệu. Đây là chủ ý: niềm tin, nguồn rõ ràng và an toàn đi trước tự động hóa. Các phiên bản sau có thể lấy dữ liệu định kỳ từ Danh mục Dữ liệu Mở Tokyo, API chính thức, CSV và trang của các quận.",
     strategyTitle: "MINFO chọn cách lấy dữ liệu như thế nào",
-    strategyIntro: "MINFO không dùng API chỉ để dùng API — cách lấy phụ thuộc vào mục đích:",
+    strategyIntro: "MINFO không dùng API chỉ để dùng API. Cách lấy phụ thuộc vào mục đích:",
     strategy: [
       {
         title: "Thông tin ổn định",
@@ -908,7 +902,7 @@ const vi: UIStrings = {
         body: "Thiên tai, tình trạng nơi trú ẩn, đóng cửa đột xuất. Tương lai có thể cần API hoặc cập nhật tự động thường xuyên.",
       },
     ],
-    candidatesTitle: "Dữ liệu Mở Tokyo — các bộ dữ liệu ứng viên",
+    candidatesTitle: "Dữ liệu Mở Tokyo: các bộ dữ liệu ứng viên",
     candidatesSub: "Các mục trong danh mục và mục tiêu tìm kiếm mà MINFO dự định kết nối tiếp theo. Chưa có mục nào được lấy tự động.",
     catalogCta: "Xem Danh mục Dữ liệu Mở Tokyo",
     badges: {
@@ -921,7 +915,7 @@ const vi: UIStrings = {
   },
   quality: {
     title: "Kiểm tra chất lượng nguồn của MINFO",
-    sub: "Danh sách kiểm tra gọn nhẹ, lấy cảm hứng từ hướng dẫn chất lượng dữ liệu mở của chính phủ Nhật — không phải đánh giá chính thức của chính phủ. Mọi nguồn trong MINFO đều qua bước kiểm tra này.",
+    sub: "Danh sách kiểm tra gọn nhẹ, lấy cảm hứng từ hướng dẫn chất lượng dữ liệu mở của chính phủ Nhật. Không phải đánh giá chính thức của chính phủ. Mọi nguồn trong MINFO đều qua bước kiểm tra này.",
     items: [
       { label: "Nguồn chính thức/công cộng", desc: "Do cơ quan nhà nước hoặc tổ chức công cộng công bố." },
       { label: "Liên kết đã xác minh", desc: "URL được kiểm tra thủ công và dẫn đến trang chính thức." },
@@ -934,20 +928,20 @@ const vi: UIStrings = {
   },
   mascot: { alt: "Linh vật hướng dẫn MINFO" },
   whyMinfo: {
-    title: "Vì sao MINFO — thay vì chỉ tìm kiếm hay AI chat?",
+    title: "Vì sao MINFO, thay vì chỉ tìm kiếm hay AI chat?",
     sub: "MINFO không cố vượt công cụ tìm kiếm hay AI tổng quát về kiến thức chung. Nó làm tốt một việc tại địa phương.",
     cards: [
       {
         title: "Công cụ tìm kiếm",
-        body: "Cho bạn nhiều liên kết — bạn vẫn phải tự phán đoán trang nào chính thức, mới nhất và áp dụng cho Shinjuku.",
+        body: "Cho bạn nhiều liên kết. Bạn vẫn phải tự phán đoán trang nào chính thức, mới nhất và áp dụng cho Shinjuku.",
       },
       {
         title: "AI chat thông thường",
-        body: "Trả lời rộng và chung chung — hữu ích, nhưng không dựa trên các cơ quan của quận bạn, và có thể đoán.",
+        body: "Trả lời rộng và chung chung. Hữu ích, nhưng không dựa trên các cơ quan của quận bạn, và có thể đoán.",
       },
       {
         title: "MINFO",
-        body: "Bước tiếp theo cụ thể tại địa phương, bằng ngôn ngữ của bạn, kèm thẻ nguồn chính thức trên mọi câu trả lời — và hướng dẫn 119/110 luôn cố định. MINFO dẫn bạn đến cơ quan thật, không thay thế họ.",
+        body: "Bước tiếp theo cụ thể tại địa phương, bằng ngôn ngữ của bạn, kèm nguồn chính thức trên mọi câu trả lời, và hướng dẫn 119/110 luôn cố định. MINFO dẫn bạn đến cơ quan thật, không thay thế họ.",
       },
     ],
   },
@@ -957,15 +951,15 @@ const vi: UIStrings = {
     blocks: [
       {
         title: "Vấn đề",
-        body: "Thông tin chính thức ở Nhật đáng tin cậy — nhưng rải rác trên hàng chục trang web và viết bằng tiếng Nhật hành chính khó hiểu. Với cư dân phải tìm hiểu một hệ thống xa lạ bằng ngôn ngữ thứ hai, cả câu hỏi đơn giản ('quầy nào?', 'mẫu nào?') cũng thành rào cản.",
+        body: "Thông tin chính thức ở Nhật đáng tin cậy, nhưng rải rác trên hàng chục trang web và viết bằng tiếng Nhật hành chính khó hiểu. Với cư dân phải tìm hiểu một hệ thống xa lạ bằng ngôn ngữ thứ hai, cả câu hỏi đơn giản ('quầy nào?', 'mẫu nào?') cũng thành rào cản.",
       },
       {
         title: "Đối tượng",
-        body: "Cư dân gốc nước ngoài và cộng đồng đa ngôn ngữ: người mới đến, du học sinh, người lao động, các gia đình — và những người hỗ trợ cộng đồng giúp họ. Họ gặp rào cản ngôn ngữ và tiếp cận thông tin, không phải thiếu năng lực.",
+        body: "Cư dân gốc nước ngoài và cộng đồng đa ngôn ngữ: người mới đến, du học sinh, người lao động, các gia đình, và những người hỗ trợ cộng đồng giúp họ. Họ gặp rào cản ngôn ngữ và tiếp cận thông tin, không phải thiếu năng lực.",
       },
       {
         title: "Cách tiếp cận",
-        body: "MINFO không phải chatbot dịch thuật. Đó là người dẫn đường thông tin công dân: giải thích đơn giản các hệ thống đời sống bằng sáu ngôn ngữ (gồm tiếng Nhật đơn giản), luôn hiển thị nguồn chính thức, và dẫn bạn đến đúng cơ quan thực — không bao giờ thay thế cơ quan.",
+        body: "MINFO không phải chatbot dịch thuật. Đó là người dẫn đường thông tin công dân: giải thích đơn giản các hệ thống đời sống bằng sáu ngôn ngữ (gồm tiếng Nhật đơn giản), luôn hiển thị nguồn chính thức, và dẫn bạn đến đúng cơ quan thực, không bao giờ thay thế cơ quan.",
       },
       {
         title: "Thí điểm → mở rộng",
@@ -982,7 +976,7 @@ const vi: UIStrings = {
   },
   footer: {
     tagline: "Trình điều hướng thông tin đa ngôn ngữ cho cư dân gốc nước ngoài",
-    meta: "Nguyên mẫu hackathon · 2026 · Thí điểm Shinjuku / Okubo",
+    meta: "Nguyên mẫu hackathon 2026 · Thí điểm Shinjuku / Okubo",
     emergencyTitle: "Khẩn cấp",
     fire: "Cứu hỏa / Cấp cứu",
     police: "Cảnh sát",
@@ -991,22 +985,17 @@ const vi: UIStrings = {
 };
 
 const ne: UIStrings = {
+  brand: { subtitle: "सबैको जानकारी", languageLabel: "भाषा" },
   nav: { ask: "सोध्नुहोस्", categories: "विषयहरू", sources: "स्रोतहरू", whyMinfo: "किन MINFO?", why: "किन Shinjuku?" },
-  emergencyBar: "आपतकाल? 119 आगो / एम्बुलेन्स · 110 प्रहरी — निःशुल्क, २४ घण्टा, दोभाषे उपलब्ध",
+  emergencyBar: "आपतकाल? 119 आगो / एम्बुलेन्स · 110 प्रहरी (निःशुल्क, २४ घण्टा, दोभाषे उपलब्ध)",
   hero: {
     kicker: "आधिकारिक जानकारीमा आधारित मार्गदर्शन",
     headline: "भरपर्दो जीवन जानकारी, तपाईंकै भाषामा।",
-    sub: "MINFO ले विदेशी मूलका बासिन्दालाई अस्पताल, बीमा, फोहोर, विपद् र दैनिक जीवनका जानकारी सजिलो भाषामा दिन्छ — सधैं आधिकारिक स्रोतसहित।",
+    sub: "अस्पताल, बीमा, फोहोर, विपद्: MINFO ले जापानको दैनिक जीवन सजिलो भाषामा बुझाउँछ, सधैं आधिकारिक स्रोतसहित।",
     ctaAsk: "MINFO लाई सोध्नुहोस्",
-    ctaExplore: "विषयहरू हेर्नुहोस्",
     trustSources: "हरेक उत्तरमा आधिकारिक स्रोत देखिन्छ",
-    trustLanguages: "६ भाषा (सजिलो जापानी सहित)",
-    trustPilot: "Shinjuku / Okubo बाट सुरु — टोकियोभर विस्तार सम्भव",
-    routeTitle: "पाइलट मार्ग",
-    routeAria: "मार्ग नक्सा: Shinjuku र Okubo बाट सुरु, टोकियोभर विस्तार",
-    routeNow: "अहिले",
-    routeNext: "अर्को",
-    routeGoal: "सम्पूर्ण टोकियो",
+    trustLanguages: "६ भाषा, सजिलो जापानी (やさしい日本語) सहित",
+    trustPilot: "Shinjuku / Okubo बाट सुरु, टोकियोभर विस्तार सम्भव",
   },
   categories: {
     title: "तपाईंलाई केमा सहयोग चाहिन्छ?",
@@ -1018,7 +1007,7 @@ const ne: UIStrings = {
     sub: "प्रश्न लेख्नुहोस् वा उदाहरण थिच्नुहोस्। उत्तरसँगै आधिकारिक स्रोत आउँछ।",
     placeholder: "Shinjuku को दैनिक जीवनबारे सोध्नुहोस्…",
     send: "सोध्नुहोस्",
-    examples: "उदाहरण प्रश्नहरू",
+    examples: "धेरै सोधिने प्रश्नहरू",
     thinking: "विश्वसनीय स्रोत जाँच्दै…",
     emptyHint: "उत्तर यहाँ स्रोतसहित देखिन्छ।",
   },
@@ -1027,7 +1016,7 @@ const ne: UIStrings = {
     caution: "ध्यान दिनुहोस्",
     steps: "अर्को कदम",
     sources: "आधिकारिक तथा सार्वजनिक स्रोत",
-    lowConfidence: "MINFO ले पूर्ण पुष्टि गर्न सकेन — आधिकारिक कार्यालयमा बुझ्नुहोस्।",
+    lowConfidence: "MINFO ले पूर्ण पुष्टि गर्न सकेन। आधिकारिक कार्यालयमा बुझ्नुहोस्।",
     disclaimer: "MINFO प्रोटोटाइप हो, सरकारी सेवा होइन। महत्त्वपूर्ण कुरा सधैं आधिकारिक कार्यालयमा पुष्टि गर्नुहोस्।",
     aiBadge: "Claude को AI उत्तर · स्रोत स्थानीय रूपमा प्रमाणित",
     answerLabel: "उत्तर",
@@ -1038,13 +1027,16 @@ const ne: UIStrings = {
     confusing: "अलमल्लमा पार्ने",
     wrong: "गलत जानकारी",
     language: "मेरो भाषा चाहियो",
-    thanks: "धन्यवाद — तपाईंको सुझावले MINFO लाई राम्रो बनाउँछ।",
+    thanks: "धन्यवाद। तपाईंको सुझावले MINFO लाई राम्रो बनाउँछ।",
   },
   sources: {
     title: "आधिकारिक तथा सार्वजनिक जानकारीमा आधारित",
-    sub: "MINFO ले छानिएका आधिकारिक/सार्वजनिक निकायबाट मात्र उत्तर दिन्छ — हरेक उत्तरमा स्रोत जोडिन्छ।",
+    sub: "MINFO ले छानिएका आधिकारिक/सार्वजनिक निकायबाट मात्र उत्तर दिन्छ। हरेक उत्तरमा स्रोत जोडिन्छ।",
+    groupWard: "Shinjuku वडा",
+    groupTokyo: "टोकियो महानगर",
+    groupNational: "राष्ट्रिय निकाय",
     roadmapTitle: "खुला डाटा योजना",
-    roadmapBadge: "भविष्यको योजना — अहिले छैन",
+    roadmapBadge: "योजना (अहिले छैन)",
     roadmap: [
       {
         title: "टोकियो खुला डाटासँग जडान",
@@ -1056,7 +1048,7 @@ const ne: UIStrings = {
       },
       {
         title: "अज्ञात प्रश्न प्रवृत्ति",
-        body: "बासिन्दालाई के जानकारी चाहिन्छ बुझ्ने — व्यक्तिगत डाटा होइन, सार्वजनिक हितको संकेतका रूपमा वडासँग साझा।",
+        body: "बासिन्दालाई के जानकारी चाहिन्छ बुझ्ने। व्यक्तिगत डाटा होइन, सार्वजनिक हितको संकेतका रूपमा वडासँग साझा।",
       },
     ],
   },
@@ -1064,9 +1056,9 @@ const ne: UIStrings = {
     title: "खुला डाटाबाट, काम लाग्ने मार्गदर्शनसम्म",
     sub: "खुला डाटा प्रकाशित भएर मात्र उपयोगी हुँदैन। बासिन्दाले भेट्टाउन, बुझ्न र काम गर्न सक्दा मात्र उपयोगी हुन्छ। MINFO 'अन्तिम खुड्किलो' मा केन्द्रित छ: आधिकारिक र खुला जानकारीलाई बहुभाषिक 'अर्को कदम' मा बदल्ने।",
     positioning:
-      "अहिले MINFO छानिएका आधिकारिक/सार्वजनिक स्रोतमा चल्छ, र संरचना खुला डाटाका लागि तयार छ — डाटा स्वतः लिँदैन। यो जानाजानी हो: विश्वास, स्पष्ट स्रोत र सुरक्षा पहिले। भविष्यका संस्करणले टोकियो खुला डाटा क्याटलग, आधिकारिक API, CSV र वडा साइटबाट समय-समयमा डाटा लिन सक्छ।",
+      "अहिले MINFO छानिएका आधिकारिक/सार्वजनिक स्रोतमा चल्छ, र संरचना खुला डाटाका लागि तयार छ। डाटा स्वतः लिँदैन। यो जानाजानी हो: विश्वास, स्पष्ट स्रोत र सुरक्षा पहिले। भविष्यका संस्करणले टोकियो खुला डाटा क्याटलग, आधिकारिक API, CSV र वडा साइटबाट समय-समयमा डाटा लिन सक्छ।",
     strategyTitle: "MINFO ले डाटा लिने तरिका कसरी छान्छ",
-    strategyIntro: "MINFO ले API प्रयोग गर्नकै लागि API चलाउँदैन — तरिका प्रयोजनअनुसार:",
+    strategyIntro: "MINFO ले API प्रयोग गर्नकै लागि API चलाउँदैन। तरिका प्रयोजनअनुसार:",
     strategy: [
       {
         title: "स्थिर जानकारी",
@@ -1081,7 +1073,7 @@ const ne: UIStrings = {
         body: "विपद्, आश्रयको अवस्था, अचानक बन्द। भविष्यमा API वा छिटो स्वचालित अपडेट चाहिन सक्छ।",
       },
     ],
-    candidatesTitle: "टोकियो खुला डाटा — उम्मेदवार डाटासेट",
+    candidatesTitle: "टोकियो खुला डाटा: उम्मेदवार डाटासेट",
     candidatesSub: "MINFO ले अब जोड्न चाहेका क्याटलग सूची र खोज लक्ष्यहरू। अहिले कुनै पनि स्वतः लिइँदैन।",
     catalogCta: "टोकियो खुला डाटा क्याटलग हेर्नुहोस्",
     badges: {
@@ -1094,7 +1086,7 @@ const ne: UIStrings = {
   },
   quality: {
     title: "MINFO स्रोत गुणस्तर जाँच",
-    sub: "जापान सरकारको खुला डाटा गुणस्तर मार्गदर्शनबाट प्रेरित हल्का जाँचसूची — औपचारिक सरकारी मूल्याङ्कन होइन। MINFO का हरेक स्रोत यसबाट जाँचिन्छ।",
+    sub: "जापान सरकारको खुला डाटा गुणस्तर मार्गदर्शनबाट प्रेरित हल्का जाँचसूची। औपचारिक सरकारी मूल्याङ्कन होइन। MINFO का हरेक स्रोत यसबाट जाँचिन्छ।",
     items: [
       { label: "आधिकारिक/सार्वजनिक स्रोत", desc: "सरकारी निकाय वा सार्वजनिक संस्थाले प्रकाशित।" },
       { label: "लिंक प्रमाणित", desc: "URL हातैले जाँचेर आधिकारिक पृष्ठमा पुग्छ।" },
@@ -1107,20 +1099,20 @@ const ne: UIStrings = {
   },
   mascot: { alt: "MINFO गाइड मास्कट" },
   whyMinfo: {
-    title: "किन MINFO — खोज वा AI च्याट मात्र होइन?",
+    title: "किन MINFO, खोज वा AI च्याट मात्र होइन?",
     sub: "MINFO सामान्य ज्ञानमा खोज वा AI लाई जित्न खोज्दैन। यसले स्थानीय एउटा काम राम्ररी गर्छ।",
     cards: [
       {
         title: "सर्च इन्जिन",
-        body: "धेरै लिंक दिन्छ — कुन आधिकारिक हो, नयाँ हो र Shinjuku मा लागू हुन्छ, आफैंले छुट्याउनुपर्छ।",
+        body: "धेरै लिंक दिन्छ। कुन आधिकारिक हो, नयाँ हो र Shinjuku मा लागू हुन्छ, आफैंले छुट्याउनुपर्छ।",
       },
       {
         title: "सामान्य AI च्याट",
-        body: "फराकिलो, सामान्य उत्तर दिन्छ — उपयोगी, तर तपाईंको वडाका कार्यालयमा आधारित हुँदैन, अनुमान पनि गर्न सक्छ।",
+        body: "फराकिलो, सामान्य उत्तर दिन्छ। उपयोगी, तर तपाईंको वडाका कार्यालयमा आधारित हुँदैन, अनुमान पनि गर्न सक्छ।",
       },
       {
         title: "MINFO",
-        body: "तपाईंकै भाषामा, आधिकारिक स्रोतसहित स्थानीय 'अर्को कदम' दिन्छ — हरेक उत्तरमा स्रोत कार्ड, र 119/110 मार्गदर्शन सधैं एउटै। MINFO वास्तविक कार्यालयसम्म पुर्‍याउने नेभिगेटर हो, विकल्प होइन।",
+        body: "तपाईंकै भाषामा, आधिकारिक स्रोतसहित स्थानीय 'अर्को कदम' दिन्छ। हरेक उत्तरमा स्रोत जोडिन्छ, र 119/110 मार्गदर्शन सधैं एउटै। MINFO वास्तविक कार्यालयसम्म पुर्‍याउने नेभिगेटर हो, विकल्प होइन।",
       },
     ],
   },
@@ -1130,19 +1122,19 @@ const ne: UIStrings = {
     blocks: [
       {
         title: "समस्या",
-        body: "जापानको आधिकारिक जानकारी भरपर्दो छ — तर दर्जनौं साइटमा छरिएको र गाह्रो प्रशासनिक जापानीमा लेखिएको छ। दोस्रो भाषामा नयाँ प्रणाली बुझ्नुपर्ने बासिन्दालाई 'कुन काउन्टर?', 'कुन फारम?' जस्ता साना प्रश्न पनि अवरोध बन्छन्।",
+        body: "जापानको आधिकारिक जानकारी भरपर्दो छ, तर दर्जनौं साइटमा छरिएको र गाह्रो प्रशासनिक जापानीमा लेखिएको छ। दोस्रो भाषामा नयाँ प्रणाली बुझ्नुपर्ने बासिन्दालाई 'कुन काउन्टर?', 'कुन फारम?' जस्ता साना प्रश्न पनि अवरोध बन्छन्।",
       },
       {
         title: "लक्षित समूह",
-        body: "विदेशी मूलका बासिन्दा र बहुभाषिक समुदाय: नयाँ आएका, विद्यार्थी, कामदार, परिवार — र उनीहरूलाई सघाउने सामुदायिक सहयोगीहरू। समस्या क्षमताको होइन, भाषा र जानकारी पहुँचको हो।",
+        body: "विदेशी मूलका बासिन्दा र बहुभाषिक समुदाय: नयाँ आएका, विद्यार्थी, कामदार, परिवार, र उनीहरूलाई सघाउने सामुदायिक सहयोगीहरू। समस्या क्षमताको होइन, भाषा र जानकारी पहुँचको हो।",
       },
       {
         title: "समाधान",
-        body: "MINFO अनुवाद च्याटबोट होइन। यो नागरिक जानकारी नेभिगेटर हो: ६ भाषामा (सजिलो जापानीसहित) जीवनका प्रणाली सजिलै बुझाउँछ, सधैं आधिकारिक स्रोत देखाउँछ, र सही कार्यालयसम्म पुर्‍याउँछ — कार्यालयको विकल्प बन्दैन।",
+        body: "MINFO अनुवाद च्याटबोट होइन। यो नागरिक जानकारी नेभिगेटर हो: ६ भाषामा (सजिलो जापानीसहित) जीवनका प्रणाली सजिलै बुझाउँछ, सधैं आधिकारिक स्रोत देखाउँछ, र सही कार्यालयसम्म पुर्‍याउँछ। कार्यालयको विकल्प बन्दैन।",
       },
       {
         title: "पाइलट → विस्तार",
-        body: "Shinjuku / Okubo जापानकै सबैभन्दा बहुभाषिक टोलमध्ये एक हो — जीवन जानकारी चाहिने विद्यार्थी, कामदार र परिवारले भरिएको। यही 'विषय + विश्वसनीय स्रोत' संरचना वडा-वडा गर्दै टोकियोभर विस्तार गर्न सकिन्छ।",
+        body: "Shinjuku / Okubo जापानकै सबैभन्दा बहुभाषिक टोलमध्ये एक हो, जीवन जानकारी चाहिने विद्यार्थी, कामदार र परिवारले भरिएको। यही 'विषय + विश्वसनीय स्रोत' संरचना वडा-वडा गर्दै टोकियोभर विस्तार गर्न सकिन्छ।",
       },
     ],
     impactTitle: "राम्रो जानकारी पहुँचले के बदल्छ",
@@ -1155,7 +1147,7 @@ const ne: UIStrings = {
   },
   footer: {
     tagline: "विदेशी मूलका बासिन्दाका लागि बहुभाषिक जानकारी नेभिगेटर",
-    meta: "ह्याकाथन प्रोटोटाइप · 2026 · Shinjuku / Okubo पाइलट",
+    meta: "ह्याकाथन प्रोटोटाइप 2026 · Shinjuku / Okubo पाइलट",
     emergencyTitle: "आपतकाल",
     fire: "आगो / एम्बुलेन्स",
     police: "प्रहरी",

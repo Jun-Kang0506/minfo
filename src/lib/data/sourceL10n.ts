@@ -4,7 +4,7 @@ import type { LanguageCode, Source } from "../types";
  * Localized display names for sources and organizations.
  *
  * Policy: these are descriptive display names so non-English UIs never feel
- * English-only — they never replace the official identity. The official
+ * English-only: they never replace the official identity. The official
  * Japanese name (`titleJa`) stays visible as a signage-style subtitle, and
  * URLs are untouched. Fallback order: current language → English → title.
  */
@@ -69,7 +69,7 @@ const ORG_NAMES: Record<string, L10nMap> = {
   },
 };
 
-/** Keyed by Source.id — ja entries use やさしい日本語 where the official name is hard. */
+/** Keyed by Source.id: ja entries use やさしい日本語 where the official name is hard. */
 const SOURCE_TITLES: Record<string, L10nMap> = {
   "shinjuku-foreign": {
     ja: "新宿区 外国人のための生活情報",
@@ -122,10 +122,10 @@ const SOURCE_TITLES: Record<string, L10nMap> = {
   },
   "tokyo-fire": {
     ja: "東京消防庁（119・#7119）",
-    zh: "东京消防厅 — 119 / #7119",
-    ko: "도쿄소방청 — 119 / #7119",
-    vi: "Sở Cứu hỏa Tokyo — 119 / #7119",
-    ne: "टोकियो दमकल विभाग — 119 / #7119",
+    zh: "东京消防厅: 119 / #7119",
+    ko: "도쿄소방청: 119 / #7119",
+    vi: "Sở Cứu hỏa Tokyo: 119 / #7119",
+    ne: "टोकियो दमकल विभाग: 119 / #7119",
   },
   isa: {
     ja: "出入国在留管理庁",

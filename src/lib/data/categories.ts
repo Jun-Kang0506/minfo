@@ -169,12 +169,12 @@ export const CATEGORIES: Category[] = [
     icon: "alert",
     exampleTopic: "ambulance",
     description: {
-      en: "119 for ambulance & fire, 110 for police — how to call and what to say.",
+      en: "119 for ambulance & fire, 110 for police: how to call and what to say.",
       ja: "救急車は 119、警察は 110。かけ方が わかります。",
-      zh: "救护车·火警 119，警察 110——如何拨打、说什么。",
-      ko: "구급·화재 119, 경찰 110 — 거는 법과 할 말.",
-      vi: "119 cấp cứu & cứu hỏa, 110 cảnh sát — cách gọi và nói gì.",
-      ne: "एम्बुलेन्स/आगो 119, प्रहरी 110 — कसरी फोन गर्ने।",
+      zh: "救护车·火警 119，警察 110：如何拨打、说什么。",
+      ko: "구급·화재 119, 경찰 110: 거는 법과 할 말.",
+      vi: "119 cấp cứu & cứu hỏa, 110 cảnh sát: cách gọi và nói gì.",
+      ne: "एम्बुलेन्स/आगो 119, प्रहरी 110: कसरी फोन गर्ने।",
     },
   },
 ];

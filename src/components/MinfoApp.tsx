@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { Answer, TopicId } from "@/lib/types";
 import { localAnswerEngine } from "@/lib/engine/localAnswerEngine";
 import { LanguageProvider, useLanguage } from "./LanguageProvider";
@@ -22,6 +22,17 @@ function scrollToAsk() {
 function AppInner() {
   const { lang } = useLanguage();
   const [entries, setEntries] = useState<ChatEntry[]>([]);
+  const mainRef = useRef<HTMLElement | null>(null);
+
+  // Language switch: replay a short opacity settle on the page content so
+  // the wholesale text swap doesn't snap. No remount — chat state survives.
+  useEffect(() => {
+    const el = mainRef.current;
+    if (!el) return;
+    el.classList.remove("lang-fade");
+    void el.offsetWidth; // restart the animation
+    el.classList.add("lang-fade");
+  }, [lang]);
 
   const ask = useCallback(
     async (text: string, topicId?: TopicId) => {
@@ -56,7 +67,7 @@ function AppInner() {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
-      <main className="flex-1">
+      <main ref={mainRef} className="flex-1">
         <Hero onAsk={scrollToAsk} />
         {/* Page order mirrors the nav: ask → categories → sources → why MINFO → why Shinjuku */}
         <ChatPanel entries={entries} onAsk={ask} />

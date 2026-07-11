@@ -13,12 +13,12 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-[1.2fr_1fr]">
           <div>
             <p className="flex items-center gap-2.5">
-              <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-moss text-lg font-bold text-white">
+              <span className="grid h-9 w-9 shrink-0 place-items-center rounded-sm bg-moss text-lg font-bold text-white">
                 み
               </span>
               <span className="leading-tight">
                 <span className="block text-lg font-extrabold tracking-tight">
-                  MINFO｜みんなのインフォ
+                  MINFO｜{t.brand.subtitle}
                 </span>
                 <span className="block text-[12px] text-paper/70">{t.footer.tagline}</span>
               </span>
@@ -26,13 +26,14 @@ export function Footer() {
             <p className="mt-4 max-w-md text-[13px] leading-relaxed text-paper/70">
               {t.answer.disclaimer}
             </p>
-            <p className="mt-3 text-[12px] text-paper/50">
-              {t.footer.meta} · {LANGUAGES.map((l) => l.nativeLabel).join(" · ")}
+            <p className="mt-3 text-[12px] text-paper/50">{t.footer.meta}</p>
+            <p className="mt-1 text-[12px] text-paper/50">
+              {LANGUAGES.map((l) => l.nativeLabel).join(", ")}
             </p>
           </div>
 
-          <div className="rounded-2xl border border-paper/20 p-5">
-            <h3 className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-paper/70">
+          <div className="rounded-lg border border-paper/20 p-5">
+            <h3 className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-paper/70">
               <IconPhone className="h-4 w-4" />
               {t.footer.emergencyTitle}
             </h3>

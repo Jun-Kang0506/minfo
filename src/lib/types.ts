@@ -70,6 +70,12 @@ export interface OpenDataCandidate {
   titleJa: string;
   /** Short English gloss of the official title. */
   titleEn: string;
+  /**
+   * Short gloss of the official title in every UI language, so non-Japanese
+   * readers can identify the dataset. The official Japanese title stays the
+   * primary label for accuracy.
+   */
+  titleGloss: Localized<string>;
   /** Catalog page recorded during research — dataset page or category page. */
   url: string;
   organization: string;
