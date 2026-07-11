@@ -117,12 +117,19 @@ export function DataSourcesSection() {
         <ul className="mt-4 border-t-2 border-ink">
           {OPEN_DATA_CANDIDATES.map((c) => {
             const gloss = c.titleGloss[lang];
+            // Official catalog title is visible signage only in the Japanese
+            // UI; other languages lead with the localized gloss and keep the
+            // official name as tooltip metadata for traceability.
+            const jaPrimary = lang === "ja";
+            const showGlossSub =
+              jaPrimary && gloss.replace(/\s+/g, "") !== c.titleJa.replace(/\s+/g, "");
             return (
               <li key={c.id}>
                 <a
                   href={c.url}
                   target="_blank"
                   rel="noopener noreferrer"
+                  title={jaPrimary ? undefined : c.titleJa}
                   className="group flex flex-col gap-2 border-b border-line py-4 transition-colors hover:bg-card sm:flex-row sm:gap-6"
                 >
                   <span className="flex flex-col gap-1.5 sm:w-56 sm:shrink-0">
@@ -144,11 +151,10 @@ export function DataSourcesSection() {
                   <span className="min-w-0 flex-1">
                     <span className="flex items-start justify-between gap-2">
                       <span>
-                        {/* Official catalog title stays primary for accuracy */}
                         <span className="block text-[14.5px] font-bold leading-snug text-ink group-hover:underline">
-                          {c.titleJa}
+                          {jaPrimary ? c.titleJa : gloss}
                         </span>
-                        {gloss.replace(/\s+/g, "") !== c.titleJa.replace(/\s+/g, "") && (
+                        {showGlossSub && (
                           <span className="mt-0.5 block text-[12.5px] text-ink-soft">{gloss}</span>
                         )}
                       </span>
