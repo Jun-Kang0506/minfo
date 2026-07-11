@@ -17,11 +17,14 @@ export function SourceCard({ source, compact = false }: { source: Source; compac
   const href = source.localizedUrls?.[lang] ?? source.url;
   const title = localizedSourceTitle(source, lang);
   const organization = localizedOrganization(source.organization, lang);
-  // Official Japanese name stays visible so the source identity is
-  // unambiguous, unless the displayed title already contains it.
+  // Official Japanese name is visible signage only in the Japanese UI
+  // (and only when the displayed title doesn't already contain it); other
+  // languages keep it as tooltip metadata for traceability.
   const showJa =
-    source.titleJa &&
+    lang === "ja" &&
+    !!source.titleJa &&
     !title.replace(/\s+/g, "").includes(source.titleJa.replace(/\s+/g, ""));
+  const officialName = showJa ? undefined : source.titleJa;
 
   if (compact) {
     return (
@@ -29,6 +32,7 @@ export function SourceCard({ source, compact = false }: { source: Source; compac
         href={href}
         target="_blank"
         rel="noopener noreferrer"
+        title={officialName}
         className="group flex items-center justify-between gap-3 py-2.5"
       >
         <span className="min-w-0">
@@ -51,6 +55,7 @@ export function SourceCard({ source, compact = false }: { source: Source; compac
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      title={officialName}
       className="group flex flex-col gap-1 py-4 sm:flex-row sm:gap-6"
     >
       <span className="flex items-start gap-1.5 text-[12px] font-bold text-moss sm:w-44 sm:shrink-0 sm:pt-0.5">
