@@ -11,7 +11,7 @@ export function SafetyNotice({ safety }: { safety: SafetyInfo }) {
   return (
     <div
       role="alert"
-      className={`flex gap-3 rounded-xl border-l-4 p-4 ${
+      className={`flex gap-3 rounded-sm border-l-4 p-4 ${
         emergency
           ? "border-danger bg-danger-soft"
           : "border-caution-line bg-caution-soft"
@@ -24,7 +24,7 @@ export function SafetyNotice({ safety }: { safety: SafetyInfo }) {
       )}
       <div>
         <p
-          className={`text-xs font-bold uppercase tracking-[0.14em] ${
+          className={`text-xs font-bold uppercase tracking-[0.12em] ${
             emergency ? "text-danger" : "text-caution"
           }`}
         >

@@ -25,7 +25,7 @@ export function Header() {
           <span>
             {t.emergencyBar.split(/(119|110)/).map((part, i) =>
               part === "119" || part === "110" ? (
-                <strong key={i} className="rounded bg-shu px-1.5 py-0.5 font-bold text-white">
+                <strong key={i} className="rounded-sm bg-shu px-1.5 py-0.5 font-bold text-white">
                   {part}
                 </strong>
               ) : (
@@ -39,12 +39,14 @@ export function Header() {
       <div className="border-b border-line bg-paper/95 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
           <a href="#top" className="flex items-center gap-2.5">
-            <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-moss text-lg font-bold text-white">
+            <span className="grid h-9 w-9 shrink-0 place-items-center rounded-sm bg-moss text-lg font-bold text-white">
               み
             </span>
             <span className="leading-tight">
               <span className="block text-lg font-extrabold tracking-tight">MINFO</span>
-              <span className="block text-[11px] font-medium text-ink-soft">みんなのインフォ</span>
+              <span className="block text-[11px] font-medium text-ink-soft">
+                {t.brand.subtitle}
+              </span>
             </span>
           </a>
 

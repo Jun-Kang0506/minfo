@@ -1,5 +1,6 @@
 "use client";
 
+import type { Source } from "@/lib/types";
 import { SOURCES } from "@/lib/data/sources";
 import { OPEN_DATA_CANDIDATES } from "@/lib/data/openDataCandidates";
 import { localizedOrganization } from "@/lib/data/sourceL10n";
@@ -11,16 +12,21 @@ import { IconCheck, IconExternal } from "./icons";
 
 const TOKYO_OPEN_DATA_PORTAL = "https://portal.data.metro.tokyo.lg.jp/";
 
-function Badge({ tone, children }: { tone: "moss" | "civic" | "caution"; children: string }) {
+/** Register tiers: ward → metropolitan → national, like a directory of offices. */
+function sourceTier(source: Source): "ward" | "tokyo" | "national" {
+  if (source.organization.includes("Shinjuku")) return "ward";
+  if (source.organization.startsWith("Tokyo")) return "tokyo";
+  return "national";
+}
+
+function Tag({ tone, children }: { tone: "moss" | "caution" | "ink"; children: string }) {
   const tones = {
     moss: "bg-moss-soft text-moss",
-    civic: "bg-civic-soft text-civic",
     caution: "bg-caution-soft text-caution",
+    ink: "bg-paper text-ink-soft border border-line",
   } as const;
   return (
-    <span
-      className={`inline-block rounded-full px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-[0.08em] ${tones[tone]}`}
-    >
+    <span className={`inline-block rounded-sm px-1.5 py-0.5 text-[11px] font-bold ${tones[tone]}`}>
       {children}
     </span>
   );
@@ -28,6 +34,12 @@ function Badge({ tone, children }: { tone: "moss" | "civic" | "caution"; childre
 
 export function DataSourcesSection() {
   const { lang, t } = useLanguage();
+
+  const tiers = [
+    { key: "ward", label: t.sources.groupWard },
+    { key: "tokyo", label: t.sources.groupTokyo },
+    { key: "national", label: t.sources.groupNational },
+  ] as const;
 
   // Fixed order matches t.openData.strategy: stable / periodic / time-sensitive.
   const strategyBadges = [
@@ -39,17 +51,31 @@ export function DataSourcesSection() {
 
   return (
     <section id="sources" className="mx-auto max-w-6xl px-4 py-14 md:py-20">
-      <SectionHeading num="03" ja="公式・公共の情報源" en={t.sources.title} sub={t.sources.sub} />
+      <SectionHeading title={t.sources.title} sub={t.sources.sub} />
 
-      <div className="grid gap-3.5 sm:grid-cols-2 lg:grid-cols-3">
-        {SOURCES.map((source) => (
-          <SourceCard key={source.id} source={source} />
-        ))}
+      {/* Source register — grouped by office tier, a reference list, not cards */}
+      <div className="grid gap-x-12 lg:grid-cols-2">
+        {tiers.map((tier) => {
+          const items = SOURCES.filter((s) => sourceTier(s) === tier.key);
+          if (items.length === 0) return null;
+          return (
+            <div key={tier.key} className="mt-8 first:mt-0 lg:first:mt-0 lg:[&:nth-child(2)]:mt-0">
+              <h3 className="border-b-2 border-ink pb-2 text-[13px] font-bold text-ink">
+                {tier.label}
+              </h3>
+              <div className="divide-y divide-line">
+                {items.map((source) => (
+                  <SourceCard key={source.id} source={source} />
+                ))}
+              </div>
+            </div>
+          );
+        })}
       </div>
 
       {/* From open data to usable guidance — the final-mile story */}
-      <div className="mt-12 rounded-2xl border border-line bg-card p-5 shadow-sm sm:p-7">
-        <h3 className="font-display text-2xl leading-tight text-ink sm:text-3xl">
+      <div className="mt-14 rounded-lg border border-line bg-card p-5 sm:p-8">
+        <h3 className="text-xl font-bold tracking-tight text-ink sm:text-2xl">
           {t.openData.title}
         </h3>
         <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-ink">{t.openData.sub}</p>
@@ -57,94 +83,118 @@ export function DataSourcesSection() {
           {t.openData.positioning}
         </p>
 
-        <h4 className="mt-7 text-[15px] font-bold text-ink">{t.openData.strategyTitle}</h4>
+        {/* Data-access pipeline: curated now → scheduled batch → live only where needed */}
+        <h4 className="mt-8 text-[15px] font-bold text-ink">{t.openData.strategyTitle}</h4>
         <p className="mt-1 text-[13.5px] text-ink-soft">{t.openData.strategyIntro}</p>
-        <div className="mt-3.5 grid gap-3.5 md:grid-cols-3">
+        <ol className="mt-4 md:grid md:grid-cols-3">
           {t.openData.strategy.map((item, i) => (
-            <div key={item.title} className="rounded-xl border border-line bg-paper p-4">
-              <Badge tone={strategyTones[i]}>{strategyBadges[i]}</Badge>
-              <h5 className="mt-2.5 text-[14.5px] font-bold text-ink">{item.title}</h5>
-              <p className="mt-1.5 text-[13.5px] leading-relaxed text-ink-soft">{item.body}</p>
-            </div>
+            <li
+              key={item.title}
+              className="relative border-l-2 border-moss/30 py-3 pl-4 md:border-l-0 md:border-t-2 md:py-0 md:pl-0 md:pr-8 md:pt-4"
+            >
+              <div className="flex items-center gap-2">
+                <span className="text-[12px] font-bold tabular-nums text-moss">{i + 1}</span>
+                <Tag tone={strategyTones[i]}>{strategyBadges[i]}</Tag>
+                {i < 2 && (
+                  <span aria-hidden className="ml-auto hidden text-ink-soft/50 md:block">
+                    →
+                  </span>
+                )}
+              </div>
+              <h5 className="mt-2 text-[14.5px] font-bold text-ink">{item.title}</h5>
+              <p className="mt-1 text-[13.5px] leading-relaxed text-ink-soft">{item.body}</p>
+            </li>
           ))}
-        </div>
+        </ol>
       </div>
 
-      {/* Tokyo Open Data candidates — verified catalog entries, honestly labeled */}
-      <div className="mt-10">
-        <h3 className="text-[17px] font-bold text-ink">{t.openData.candidatesTitle}</h3>
+      {/* Tokyo Open Data candidates — a dataset registry, honestly labeled */}
+      <div className="mt-12">
+        <h3 className="text-lg font-bold tracking-tight text-ink">{t.openData.candidatesTitle}</h3>
         <p className="mt-1 max-w-3xl text-[13.5px] leading-relaxed text-ink-soft">
           {t.openData.candidatesSub}
         </p>
-        <ul className="mt-4 grid gap-2.5 md:grid-cols-2">
-          {OPEN_DATA_CANDIDATES.map((c) => (
-            <li key={c.id}>
-              <a
-                href={c.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex h-full flex-col rounded-xl border border-line bg-card p-4 shadow-sm transition-[border-color,box-shadow,transform] duration-150 hover:-translate-y-0.5 hover:border-moss hover:shadow-md focus-visible:border-moss active:translate-y-0 active:scale-[0.99]"
-              >
-                <span className="flex flex-wrap items-center gap-1.5">
-                  <Badge tone={c.kind === "dataset" ? "moss" : "civic"}>
-                    {c.kind === "dataset"
-                      ? t.openData.badges.candidate
-                      : t.openData.badges.searchTarget}
-                  </Badge>
-                  <Badge tone="caution">
-                    {c.updatePlan === "live" ? t.openData.badges.live : t.openData.badges.batch}
-                  </Badge>
-                </span>
-                <span className="mt-2.5 flex items-start justify-between gap-2">
-                  <span className="text-[14.5px] font-bold leading-snug text-ink group-hover:underline">
-                    {c.titleJa}
+        <ul className="mt-4 border-t-2 border-ink">
+          {OPEN_DATA_CANDIDATES.map((c) => {
+            const gloss = c.titleGloss[lang];
+            return (
+              <li key={c.id}>
+                <a
+                  href={c.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col gap-2 border-b border-line py-4 transition-colors hover:bg-card sm:flex-row sm:gap-6"
+                >
+                  <span className="flex flex-col gap-1.5 sm:w-56 sm:shrink-0">
+                    <span className="flex flex-wrap gap-1.5">
+                      <Tag tone={c.kind === "dataset" ? "moss" : "ink"}>
+                        {c.kind === "dataset"
+                          ? t.openData.badges.candidate
+                          : t.openData.badges.searchTarget}
+                      </Tag>
+                      <Tag tone="caution">
+                        {c.updatePlan === "live" ? t.openData.badges.live : t.openData.badges.batch}
+                      </Tag>
+                    </span>
+                    <span className="text-[12px] text-ink-soft">
+                      {localizedOrganization(c.organization, lang)}
+                      {c.format ? ` · ${c.format}` : ""}
+                    </span>
                   </span>
-                  <IconExternal className="mt-0.5 h-4 w-4 shrink-0 text-ink-soft" />
-                </span>
-                <span className="mt-0.5 text-[12.5px] text-ink-soft">
-                  {/* The English gloss only helps English readers; other UIs get the note in their language */}
-                  {lang === "en" ? `${c.titleEn} · ` : ""}
-                  {localizedOrganization(c.organization, lang)}
-                  {c.format ? ` · ${c.format}` : ""}
-                </span>
-                <span className="mt-2 text-[13px] leading-relaxed text-ink-soft">
-                  {c.note[lang]}
-                </span>
-              </a>
-            </li>
-          ))}
+                  <span className="min-w-0 flex-1">
+                    <span className="flex items-start justify-between gap-2">
+                      <span>
+                        {/* Official catalog title stays primary for accuracy */}
+                        <span className="block text-[14.5px] font-bold leading-snug text-ink group-hover:underline">
+                          {c.titleJa}
+                        </span>
+                        {gloss.replace(/\s+/g, "") !== c.titleJa.replace(/\s+/g, "") && (
+                          <span className="mt-0.5 block text-[12.5px] text-ink-soft">{gloss}</span>
+                        )}
+                      </span>
+                      <IconExternal className="hover-arrow mt-0.5 h-4 w-4 shrink-0 text-ink-soft" />
+                    </span>
+                    <span className="mt-1 block text-[13px] leading-relaxed text-ink-soft">
+                      {c.note[lang]}
+                    </span>
+                  </span>
+                </a>
+              </li>
+            );
+          })}
         </ul>
         <a
           href={TOKYO_OPEN_DATA_PORTAL}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 inline-flex items-center gap-2 rounded-xl border-2 border-moss px-4 py-2.5 text-[14px] font-bold text-moss transition-colors hover:bg-moss hover:text-white"
+          className="pressable mt-5 inline-flex items-center gap-2 rounded-sm border-2 border-moss px-4 py-2.5 text-[14px] font-bold text-moss transition-colors hover:bg-moss hover:text-white"
         >
           {t.openData.catalogCta}
           <IconExternal className="h-4 w-4" />
         </a>
       </div>
 
-      {/* Source-quality check — inspired by public open-data guidance */}
-      <div className="mt-10 rounded-2xl border border-line bg-card p-5 shadow-sm sm:p-7">
+      {/* Source-quality check — a verification process every record passes */}
+      <div className="mt-12 rounded-lg border border-line bg-card p-5 sm:p-8">
         <div className="flex items-start gap-4">
-          <Mascot variant="thinking" size={56} className="hidden shrink-0 sm:block" />
+          <Mascot variant="thinking" size={56} className="hidden sm:block" />
           <div>
-            <h3 className="text-[17px] font-bold text-ink">{t.quality.title}</h3>
+            <h3 className="text-lg font-bold tracking-tight text-ink">{t.quality.title}</h3>
             <p className="mt-1 max-w-3xl text-[13.5px] leading-relaxed text-ink-soft">
               {t.quality.sub}
             </p>
           </div>
         </div>
-        <ul className="mt-5 grid gap-x-6 gap-y-3.5 sm:grid-cols-2 lg:grid-cols-3">
-          {t.quality.items.map((item) => (
-            <li key={item.label} className="flex items-start gap-2.5">
-              <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-moss-soft">
-                <IconCheck className="h-3 w-3 text-moss" strokeWidth={3} />
+        <ol className="mt-5 grid gap-x-10 border-t border-line sm:grid-cols-2">
+          {t.quality.items.map((item, i) => (
+            <li key={item.label} className="flex items-start gap-3 border-b border-line py-3">
+              <span className="w-5 shrink-0 pt-0.5 text-right text-[13px] font-bold tabular-nums text-moss">
+                {i + 1}.
               </span>
-              <span>
-                <span className="block text-[14px] font-bold leading-snug text-ink">
+              <span className="min-w-0">
+                <span className="flex items-center gap-1.5 text-[14px] font-bold leading-snug text-ink">
                   {item.label}
+                  <IconCheck className="h-3.5 w-3.5 shrink-0 text-moss" strokeWidth={3} />
                 </span>
                 <span className="mt-0.5 block text-[12.5px] leading-relaxed text-ink-soft">
                   {item.desc}
@@ -152,25 +202,23 @@ export function DataSourcesSection() {
               </span>
             </li>
           ))}
-        </ul>
+        </ol>
       </div>
 
       {/* Open-data roadmap — future plans, clearly labeled */}
-      <div className="mt-10">
+      <div className="mt-12">
         <h3 className="flex flex-wrap items-center gap-2.5 text-[15px] font-bold">
           {t.sources.roadmapTitle}
-          <span className="rounded-full bg-caution-soft px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-[0.1em] text-caution">
-            {t.sources.roadmapBadge}
-          </span>
+          <Tag tone="caution">{t.sources.roadmapBadge}</Tag>
         </h3>
-        <div className="mt-3.5 grid gap-3.5 md:grid-cols-3">
+        <div className="mt-3 border-t border-dashed border-ink-soft/40">
           {t.sources.roadmap.map((item) => (
             <div
               key={item.title}
-              className="rounded-2xl border border-dashed border-ink-soft/40 bg-paper p-5"
+              className="flex flex-col gap-1 border-b border-dashed border-ink-soft/40 py-4 sm:flex-row sm:gap-6"
             >
-              <h4 className="text-[14.5px] font-bold">{item.title}</h4>
-              <p className="mt-1.5 text-[13.5px] leading-relaxed text-ink-soft">{item.body}</p>
+              <h4 className="text-[14.5px] font-bold sm:w-64 sm:shrink-0">{item.title}</h4>
+              <p className="flex-1 text-[13.5px] leading-relaxed text-ink-soft">{item.body}</p>
             </div>
           ))}
         </div>

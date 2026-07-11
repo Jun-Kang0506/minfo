@@ -12,7 +12,7 @@ export function FeedbackButtons() {
 
   if (given) {
     return (
-      <p className="flex items-center gap-2 text-[14px] font-semibold text-moss" role="status">
+      <p className="animate-fade flex items-center gap-2 text-[14px] font-semibold text-moss" role="status">
         <IconCheck className="h-4 w-4" />
         {t.feedback.thanks}
       </p>
@@ -34,7 +34,7 @@ export function FeedbackButtons() {
           <button
             key={opt.choice}
             onClick={() => setGiven(opt.choice)}
-            className="rounded-full border border-line bg-paper px-3.5 py-1.5 text-[13px] font-semibold text-ink transition-colors hover:border-civic hover:text-civic"
+            className="pressable rounded-sm border border-line bg-paper px-3.5 py-1.5 text-[13px] font-semibold text-ink transition-colors hover:border-moss hover:text-moss"
           >
             {opt.label}
           </button>

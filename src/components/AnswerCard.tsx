@@ -5,107 +5,99 @@ import { useLanguage } from "./LanguageProvider";
 import { SafetyNotice } from "./SafetyNotice";
 import { SourceCard } from "./SourceCard";
 import { FeedbackButtons } from "./FeedbackButtons";
-import { Mascot } from "./Mascot";
 import { IconAlert } from "./icons";
 
-export function AnswerCard({
-  answer,
-  withMascot = false,
-}: {
-  answer: Answer;
-  withMascot?: boolean;
-}) {
+/**
+ * An answer is a structured guidance document: label → direct answer →
+ * safety → numbered steps → sources → feedback. Non-emergency answers
+ * reveal group by group (70ms apart) so the structure reads top-down;
+ * emergency answers appear in a single sober fade — never staggered,
+ * never playful.
+ */
+export function AnswerCard({ answer }: { answer: Answer }) {
   const { t } = useLanguage();
 
-  // Emergency answers never get a mascot — 119/110 guidance must dominate.
   const emergency = answer.safety?.level === "emergency";
-  const lowConfidence = answer.confidence === "low" || answer.topicId === "fallback";
-  const showMascot = withMascot && !emergency;
+  // Group reveal classes; emergencies get everything at once.
+  const g = (n: 1 | 2 | 3 | 4) => (emergency ? "" : `reveal-${n}`);
 
   return (
     <article
-      // Emergency answers get the reserved red accent; everything else is moss.
-      className={`animate-rise rounded-2xl border border-line border-t-4 bg-card p-5 shadow-md sm:p-6 ${
-        emergency ? "border-t-danger" : "border-t-moss"
+      className={`rounded-lg border border-line border-l-4 bg-card p-5 sm:p-6 ${
+        emergency ? "animate-fade border-l-danger" : "border-l-moss"
       }`}
     >
-      <div className="mb-3.5 flex flex-wrap items-center justify-between gap-2">
+      <div className={`flex flex-wrap items-center justify-between gap-2 ${g(1)}`}>
         <h3
-          className={`text-xs font-bold uppercase tracking-[0.14em] ${
+          className={`text-xs font-bold uppercase tracking-[0.12em] ${
             emergency ? "text-danger" : "text-moss"
           }`}
         >
           {t.answer.answerLabel}
         </h3>
         {answer.engine === "claude" && (
-          <p className="inline-flex items-center gap-1.5 rounded-full bg-civic-soft px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-civic">
-            <span className="h-1.5 w-1.5 rounded-full bg-civic" aria-hidden />
+          <p className="rounded-sm border border-line bg-paper px-2 py-0.5 text-[11px] font-semibold text-ink-soft">
             {t.answer.aiBadge}
           </p>
         )}
       </div>
 
-      {/* Direct answer — with the guide mascot on the newest card only */}
-      <div className={showMascot ? "flex items-start gap-3.5" : undefined}>
-        {showMascot && (
-          <Mascot
-            variant={lowConfidence ? "question" : "guide"}
-            size={48}
-            className="mt-0.5 shrink-0"
-          />
+      {/* Direct answer, then the safety notice — never buried */}
+      <div className={g(2)}>
+        <p className="mt-3 text-[16px] leading-relaxed text-ink">{answer.direct}</p>
+        {answer.safety && (
+          <div className="mt-4">
+            <SafetyNotice safety={answer.safety} />
+          </div>
         )}
-        <p className="min-w-0 text-[16px] leading-relaxed text-ink">{answer.direct}</p>
       </div>
 
-      {/* Safety notice — never buried, right under the answer */}
-      {answer.safety && (
-        <div className="mt-4">
-          <SafetyNotice safety={answer.safety} />
-        </div>
-      )}
-
       {/* Recommended next steps */}
-      {answer.steps.length > 0 && (
-        <div className="mt-5">
-          <h3 className="text-xs font-bold uppercase tracking-[0.14em] text-civic">
-            {t.answer.steps}
-          </h3>
-          <ol className="mt-2.5 space-y-2.5">
-            {answer.steps.map((step, i) => (
-              <li key={i} className="flex gap-3 text-[15px] leading-relaxed text-ink">
-                <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-civic-soft text-[12px] font-bold text-civic">
-                  {i + 1}
-                </span>
-                {step}
-              </li>
-            ))}
-          </ol>
-        </div>
-      )}
-
-      {answer.confidence === "low" && (
-        <p className="mt-4 flex items-start gap-2 text-[13.5px] font-semibold text-caution">
-          <IconAlert className="mt-0.5 h-4 w-4 shrink-0" />
-          {t.answer.lowConfidence}
-        </p>
-      )}
-
-      {/* Sources — the heart of MINFO */}
-      {answer.sources.length > 0 && (
-        <div className="mt-5 border-t border-line pt-4">
-          <h3 className="text-xs font-bold uppercase tracking-[0.14em] text-moss">
-            {t.answer.sources}
-          </h3>
-          <div className="mt-2.5 grid gap-2.5 sm:grid-cols-2">
-            {answer.sources.map((source) => (
-              <SourceCard key={source.id} source={source} compact />
-            ))}
+      <div className={g(3)}>
+        {answer.steps.length > 0 && (
+          <div className="mt-5">
+            <h3 className="text-xs font-bold uppercase tracking-[0.12em] text-ink-soft">
+              {t.answer.steps}
+            </h3>
+            <ol className="mt-1 divide-y divide-line">
+              {answer.steps.map((step, i) => (
+                <li key={i} className="flex gap-3 py-2.5 text-[15px] leading-relaxed text-ink">
+                  <span className="w-5 shrink-0 text-right font-bold tabular-nums text-moss">
+                    {i + 1}.
+                  </span>
+                  {step}
+                </li>
+              ))}
+            </ol>
           </div>
-        </div>
-      )}
+        )}
 
-      <div className="mt-5 border-t border-line pt-4">
-        <FeedbackButtons />
+        {answer.confidence === "low" && (
+          <p className="mt-4 flex items-start gap-2 text-[13.5px] font-semibold text-caution">
+            <IconAlert className="mt-0.5 h-4 w-4 shrink-0" />
+            {t.answer.lowConfidence}
+          </p>
+        )}
+      </div>
+
+      {/* Sources — the heart of MINFO, a reference list, not cards */}
+      <div className={g(4)}>
+        {answer.sources.length > 0 && (
+          <div className="mt-5">
+            <h3 className="border-b-2 border-ink pb-1.5 text-xs font-bold uppercase tracking-[0.12em] text-ink">
+              {t.answer.sources}
+            </h3>
+            <div className="divide-y divide-line">
+              {answer.sources.map((source) => (
+                <SourceCard key={source.id} source={source} compact />
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div className="mt-5 border-t border-line pt-4">
+          <FeedbackButtons />
+        </div>
       </div>
     </article>
   );
