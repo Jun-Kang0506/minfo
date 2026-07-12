@@ -93,7 +93,7 @@ const SOURCE_TITLES: Record<string, L10nMap> = {
     ne: "शिन्जुकु सिटीको आधिकारिक वेबसाइट",
   },
   "shinjuku-garbage": {
-    ja: "新宿区 ごみと 資源の 出しかた",
+    ja: "新宿区 ごみと資源の出しかた",
     zh: "新宿区垃圾与资源分类指南",
     ko: "신주쿠구 쓰레기·재활용 배출 안내",
     vi: "Hướng dẫn phân loại rác và tái chế của quận Shinjuku",

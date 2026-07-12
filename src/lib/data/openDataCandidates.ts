@@ -22,7 +22,7 @@ export const OPEN_DATA_CANDIDATES: OpenDataCandidate[] = [
     titleEn: "Shinjuku designated emergency evacuation sites",
     titleGloss: {
       en: "Shinjuku designated emergency evacuation sites",
-      ja: "新宿区の 避難場所の リスト",
+      ja: "新宿区の避難場所のリスト",
       zh: "新宿区指定紧急避难场所一览",
       ko: "신주쿠구 지정 긴급 대피 장소 목록",
       vi: "Danh sách nơi sơ tán khẩn cấp của quận Shinjuku",
@@ -35,7 +35,7 @@ export const OPEN_DATA_CANDIDATES: OpenDataCandidate[] = [
     kind: "dataset",
     note: {
       en: "Where to go in an earthquake or fire: the ward's official evacuation site list, ready to link to disaster answers.",
-      ja: "地震や 火事の とき、どこに にげるか。新宿区の 公式の 避難場所の リストです。",
+      ja: "地震や火事のとき、どこににげるか。新宿区の公式の避難場所のリストです。",
       zh: "地震或火灾时该去哪里避难：新宿区官方的紧急避难场所列表。",
       ko: "지진·화재 시 대피 장소: 신주쿠구 공식 긴급 대피 장소 목록입니다.",
       vi: "Chạy đến đâu khi động đất hoặc hỏa hoạn: danh sách nơi sơ tán khẩn cấp chính thức của quận.",
@@ -48,7 +48,7 @@ export const OPEN_DATA_CANDIDATES: OpenDataCandidate[] = [
     titleEn: "Shinjuku public facilities",
     titleGloss: {
       en: "Shinjuku public facilities",
-      ja: "新宿区の 公共施設の データ",
+      ja: "新宿区の公共施設のデータ",
       zh: "新宿区公共设施信息",
       ko: "신주쿠구 공공시설 정보",
       vi: "Thông tin cơ sở công cộng của quận Shinjuku",
@@ -61,7 +61,7 @@ export const OPEN_DATA_CANDIDATES: OpenDataCandidate[] = [
     kind: "dataset",
     note: {
       en: "Ward facilities (offices, halls, libraries) as structured data. The base for “which desk do I go to?” answers.",
-      ja: "区役所や 図書館などの 施設の データです。「どの 窓口に 行く？」の こたえに つかえます。",
+      ja: "区役所や図書館などの施設のデータです。「どの窓口に行く？」のこたえにつかえます。",
       zh: "区役所、会馆、图书馆等设施的结构化数据：支撑「该去哪个窗口」类回答。",
       ko: "구청·회관·도서관 등 시설의 구조화 데이터: '어느 창구로 가야 하나' 답변의 기반입니다.",
       vi: "Dữ liệu có cấu trúc về cơ sở công cộng của quận: nền cho câu trả lời 'tôi phải đến quầy nào?'.",
@@ -74,7 +74,7 @@ export const OPEN_DATA_CANDIDATES: OpenDataCandidate[] = [
     titleEn: "Shinjuku garbage sorting methods",
     titleGloss: {
       en: "Shinjuku garbage sorting methods",
-      ja: "新宿区の ごみの 分け方の リスト",
+      ja: "新宿区のごみの分け方のリスト",
       zh: "新宿区垃圾分类方法一览",
       ko: "신주쿠구 쓰레기 분리 방법 목록",
       vi: "Danh sách cách phân loại rác của quận Shinjuku",
@@ -87,7 +87,7 @@ export const OPEN_DATA_CANDIDATES: OpenDataCandidate[] = [
     kind: "dataset",
     note: {
       en: "Garbage separation rules as data: one of the most-asked daily-life questions in every language.",
-      ja: "ごみの 分け方の データです。生活で いちばん 多い 質問の 一つです。",
+      ja: "ごみの分け方のデータです。生活でいちばん多い質問の一つです。",
       zh: "垃圾分类规则的数据：各种语言中最常被问到的生活问题之一。",
       ko: "쓰레기 분리 규칙 데이터: 모든 언어에서 가장 많이 받는 생활 질문 중 하나입니다.",
       vi: "Quy tắc phân loại rác dạng dữ liệu: một trong những câu hỏi đời sống được hỏi nhiều nhất.",
@@ -100,7 +100,7 @@ export const OPEN_DATA_CANDIDATES: OpenDataCandidate[] = [
     titleEn: "Tokyo disaster-prevention map: shelter list",
     titleGloss: {
       en: "Tokyo disaster-prevention map: shelter list",
-      ja: "東京都の 避難所の リスト（防災マップ）",
+      ja: "東京都の避難所のリスト（防災マップ）",
       zh: "东京都防灾地图：避难所一览数据",
       ko: "도쿄도 방재 지도: 대피소 목록 데이터",
       vi: "Bản đồ phòng chống thiên tai Tokyo: danh sách nơi trú ẩn",
@@ -113,7 +113,7 @@ export const OPEN_DATA_CANDIDATES: OpenDataCandidate[] = [
     kind: "dataset",
     note: {
       en: "Tokyo-wide shelter list with accessibility flags: a cross-check for ward data and the base for expansion.",
-      ja: "東京ぜんぶの 避難所の リストです。バリアフリーの 情報も あります。区の データの かくにんにも つかえます。",
+      ja: "東京ぜんぶの避難所のリストです。バリアフリーの情報もあります。区のデータのかくにんにもつかえます。",
       zh: "覆盖全东京的避难所列表（含无障碍信息）：可交叉核对区级数据，也是扩展的基础。",
       ko: "도쿄 전역 대피소 목록(배리어프리 정보 포함): 구 데이터 교차 확인과 확장의 기반입니다.",
       vi: "Danh sách nơi trú ẩn toàn Tokyo (kèm thông tin tiếp cận): để đối chiếu dữ liệu quận và mở rộng.",
@@ -126,7 +126,7 @@ export const OPEN_DATA_CANDIDATES: OpenDataCandidate[] = [
     titleEn: "Flood inundation forecast maps",
     titleGloss: {
       en: "Flood inundation forecast maps",
-      ja: "水害の リスクの 地図",
+      ja: "水害のリスクの地図",
       zh: "洪水淹没预测区域图",
       ko: "침수 예상 구역도",
       vi: "Bản đồ dự báo khu vực ngập lụt",
@@ -139,7 +139,7 @@ export const OPEN_DATA_CANDIDATES: OpenDataCandidate[] = [
     kind: "dataset",
     note: {
       en: "Official flood-risk maps for Tokyo: grounding for disaster-preparedness answers around Shinjuku / Okubo.",
-      ja: "東京都の 公式の 水害リスクの 地図です。新宿・大久保の 防災の こたえに つかえます。",
+      ja: "東京都の公式の水害リスクの地図です。新宿・大久保の防災のこたえにつかえます。",
       zh: "东京都官方洪水风险地图：支撑新宿·大久保周边的防灾回答。",
       ko: "도쿄도 공식 침수 위험 지도: 신주쿠·오쿠보 주변 방재 답변의 근거입니다.",
       vi: "Bản đồ rủi ro ngập lụt chính thức của Tokyo: căn cứ cho câu trả lời phòng chống thiên tai quanh Shinjuku / Okubo.",
@@ -152,7 +152,7 @@ export const OPEN_DATA_CANDIDATES: OpenDataCandidate[] = [
     titleEn: "Medical institutions ledger",
     titleGloss: {
       en: "Medical institutions ledger",
-      ja: "病院・クリニックの データ",
+      ja: "病院・クリニックのデータ",
       zh: "医疗机构台账",
       ko: "의료기관 대장",
       vi: "Sổ bộ các cơ sở y tế",
@@ -165,7 +165,7 @@ export const OPEN_DATA_CANDIDATES: OpenDataCandidate[] = [
     kind: "dataset",
     note: {
       en: "A structured ledger of medical institutions in a standardized open-data schema. The base for “find care near me”.",
-      ja: "病院や クリニックの データです。国の 標準の かたちで 公開されています。「近くの 病院」の こたえに つかえます。",
+      ja: "病院やクリニックのデータです。国の標準のかたちで公開されています。「近くの病院」のこたえにつかえます。",
       zh: "医疗机构的结构化台账（全国标准开放数据格式）：支撑「附近医院」类回答。",
       ko: "표준 오픈데이터 스키마의 의료기관 대장: '근처 병원 찾기'의 기반입니다.",
       vi: "Sổ bộ cơ sở y tế theo chuẩn dữ liệu mở: nền cho tính năng 'tìm nơi khám gần tôi'.",
@@ -178,7 +178,7 @@ export const OPEN_DATA_CANDIDATES: OpenDataCandidate[] = [
     titleEn: "Foreign population by nationality",
     titleGloss: {
       en: "Foreign population by nationality",
-      ja: "外国人の 人口（国せきごと）",
+      ja: "外国人の人口（国せきごと）",
       zh: "外国人人口（按国籍）",
       ko: "외국인 인구 (국적별)",
       vi: "Dân số người nước ngoài (theo quốc tịch)",
@@ -191,7 +191,7 @@ export const OPEN_DATA_CANDIDATES: OpenDataCandidate[] = [
     kind: "dataset",
     note: {
       en: "Foreign population by nationality: evidence for which languages MINFO should prioritize, ward by ward.",
-      ja: "国せきごとの 外国人の 人口です。どの ことばを 先に 出すか、データで きめられます。",
+      ja: "国せきごとの外国人の人口です。どのことばを先に出すか、データできめられます。",
       zh: "按国籍统计的外国人口：为 MINFO 应优先支持哪些语言提供依据。",
       ko: "국적별 외국인 인구: MINFO가 어떤 언어를 우선할지 정하는 근거입니다.",
       vi: "Dân số người nước ngoài theo quốc tịch: căn cứ để MINFO ưu tiên ngôn ngữ nào theo từng quận.",
@@ -204,7 +204,7 @@ export const OPEN_DATA_CANDIDATES: OpenDataCandidate[] = [
     titleEn: "Medical & welfare: catalog category",
     titleGloss: {
       en: "Medical & welfare: catalog category",
-      ja: "医療・福祉の カタログの ページ",
+      ja: "医療・福祉のカタログのページ",
       zh: "医疗·福祉（目录分类）",
       ko: "의료·복지 (카탈로그 분류)",
       vi: "Y tế & phúc lợi (nhóm trong danh mục)",
@@ -216,7 +216,7 @@ export const OPEN_DATA_CANDIDATES: OpenDataCandidate[] = [
     kind: "searchTarget",
     note: {
       en: "The catalog's medical & welfare category: the search path for per-ward clinic and welfare datasets, which vary in naming.",
-      ja: "カタログの「医療・福祉」の ページです。区ごとの データは、ここから さがします。",
+      ja: "カタログの「医療・福祉」のページです。区ごとのデータは、ここからさがします。",
       zh: "目录中的「医疗·福祉」分类：检索各区诊所和福祉数据的入口（各区命名不一）。",
       ko: "카탈로그의 '의료·복지' 카테고리: 구별 의료·복지 데이터를 찾는 검색 경로입니다.",
       vi: "Nhóm 'y tế & phúc lợi' trong danh mục: đường tìm dữ liệu phòng khám và phúc lợi theo từng quận.",
