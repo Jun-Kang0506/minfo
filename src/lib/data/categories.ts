@@ -16,7 +16,7 @@ export const CATEGORIES: Category[] = [
     exampleTopic: "hospital",
     description: {
       en: "Find doctors who speak your language, and understand health insurance.",
-      ja: "ことばが 通じる 病院や、健康保険の ことが わかります。",
+      ja: "ことばが通じる病院や、健康保険のことがわかります。",
       zh: "查找会说您语言的医生，了解健康保险。",
       ko: "내 언어가 통하는 병원 찾기와 건강보험 안내.",
       vi: "Tìm bác sĩ nói ngôn ngữ của bạn và hiểu về bảo hiểm y tế.",
@@ -38,7 +38,7 @@ export const CATEGORIES: Category[] = [
     exampleTopic: "tax",
     description: {
       en: "Understand tax notices, resident tax, and the pension system.",
-      ja: "税金の 手紙や、年金の しくみが わかります。",
+      ja: "税金の手紙や、年金のしくみがわかります。",
       zh: "看懂税务通知、住民税和年金制度。",
       ko: "세금 통지서, 주민세, 연금 제도 이해하기.",
       vi: "Hiểu giấy báo thuế, thuế cư trú và chế độ hưu trí.",
@@ -60,7 +60,7 @@ export const CATEGORIES: Category[] = [
     exampleTopic: "garbage",
     description: {
       en: "Shinjuku's separation rules, collection days, and oversized items.",
-      ja: "ごみの 分け方と、出す 曜日が わかります。",
+      ja: "ごみの分け方と、出す曜日がわかります。",
       zh: "新宿的垃圾分类规则、收集日和大型垃圾。",
       ko: "신주쿠의 분리배출 규칙, 수거 요일, 대형 쓰레기.",
       vi: "Quy tắc phân loại rác, ngày thu gom và rác cỡ lớn ở Shinjuku.",
@@ -82,7 +82,7 @@ export const CATEGORIES: Category[] = [
     exampleTopic: "earthquake",
     description: {
       en: "Earthquakes, typhoons, evacuation areas, and multilingual alerts.",
-      ja: "地震や 台風の とき、どうするかが わかります。",
+      ja: "地震や台風のとき、どうするかがわかります。",
       zh: "地震、台风、避难场所和多语言警报。",
       ko: "지진·태풍 대비, 피난 장소, 다국어 알림.",
       vi: "Động đất, bão, nơi sơ tán và cảnh báo đa ngôn ngữ.",
@@ -104,7 +104,7 @@ export const CATEGORIES: Category[] = [
     exampleTopic: "housing",
     description: {
       en: "Renting rules, guarantors, contracts, and where to get help.",
-      ja: "家の かり方、契約、保証人の ことが わかります。",
+      ja: "家のかり方、契約、保証人のことがわかります。",
       zh: "租房规则、保证人、合同以及求助渠道。",
       ko: "임대 규칙, 보증인, 계약, 도움받을 곳.",
       vi: "Quy tắc thuê nhà, người bảo lãnh, hợp đồng và nơi hỗ trợ.",
@@ -126,7 +126,7 @@ export const CATEGORIES: Category[] = [
     exampleTopic: "japanese-learning",
     description: {
       en: "Free and low-cost classes near Okubo, plus Easy Japanese support.",
-      ja: "大久保の 近くの 日本語教室が わかります。",
+      ja: "大久保の近くの日本語教室がわかります。",
       zh: "大久保附近的免费/低价日语教室，以及简明日语支持。",
       ko: "오쿠보 근처 무료·저렴한 일본어 교실과 쉬운 일본어 지원.",
       vi: "Lớp học miễn phí/giá rẻ gần Okubo và hỗ trợ tiếng Nhật đơn giản.",
@@ -148,7 +148,7 @@ export const CATEGORIES: Category[] = [
     exampleTopic: "consultation",
     description: {
       en: "Free multilingual desks for any daily-life question, big or small.",
-      ja: "こまったことを 無料で 相談できる 場所が わかります。",
+      ja: "こまったことを無料で相談できる場所がわかります。",
       zh: "免费多语言咨询窗口，大小生活问题都能问。",
       ko: "크고 작은 생활 고민을 무료로 묻는 다국어 창구.",
       vi: "Quầy tư vấn đa ngôn ngữ miễn phí cho mọi câu hỏi đời sống.",
@@ -170,7 +170,7 @@ export const CATEGORIES: Category[] = [
     exampleTopic: "ambulance",
     description: {
       en: "119 for ambulance & fire, 110 for police: how to call and what to say.",
-      ja: "救急車は 119、警察は 110。かけ方が わかります。",
+      ja: "救急車は 119、警察は 110。かけ方がわかります。",
       zh: "救护车·火警 119，警察 110：如何拨打、说什么。",
       ko: "구급·화재 119, 경찰 110: 거는 법과 할 말.",
       vi: "119 cấp cứu & cứu hỏa, 110 cảnh sát: cách gọi và nói gì.",

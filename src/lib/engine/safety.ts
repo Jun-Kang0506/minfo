@@ -64,9 +64,9 @@ const EMERGENCY_TEXT: Record<LanguageCode, { medical: string; police: string; fi
     fire: "If there is a fire, call 119 now — free, 24h, interpretation available. Get to a safe place first.",
   },
   ja: {
-    medical: "緊急かもしれません。いますぐ 119に 電話してください（無料・24時間・通訳あり）。",
-    police: "いま あぶないときは、すぐ 110（警察）に 電話してください（無料・24時間・通訳あり）。",
-    fire: "火事のときは、すぐ 119に 電話してください（無料・24時間・通訳あり）。まず 安全な ところに にげてください。",
+    medical: "緊急かもしれません。いますぐ 119に電話してください（無料・24時間・通訳あり）。",
+    police: "いまあぶないときは、すぐ 110（警察）に電話してください（無料・24時間・通訳あり）。",
+    fire: "火事のときは、すぐ 119に電話してください（無料・24時間・通訳あり）。まず安全なところににげてください。",
   },
   zh: {
     medical: "这可能是医疗紧急情况。请立即拨打 119 叫救护车——免费、24小时、有翻译。",
