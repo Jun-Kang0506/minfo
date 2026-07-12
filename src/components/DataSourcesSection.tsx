@@ -97,8 +97,13 @@ export function DataSourcesSection() {
         })}
       </div>
 
-      {/* From open data to usable guidance — the final-mile story */}
-      <div className="mt-14 rounded-lg border border-line bg-card p-5 sm:p-8">
+      {/* From open data to usable guidance — the final-mile story.
+          Anchor target for the header "Open Data" link; scroll margin
+          matches the sticky header (see section[id] in globals.css). */}
+      <div
+        id="open-data"
+        className="mt-14 scroll-mt-[10.5rem] rounded-lg border border-line bg-card p-5 sm:p-8 lg:scroll-mt-[6.5rem]"
+      >
         <h3 className="text-xl font-bold tracking-tight text-ink sm:text-2xl">
           {t.openData.title}
         </h3>

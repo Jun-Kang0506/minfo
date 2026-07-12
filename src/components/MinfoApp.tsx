@@ -12,6 +12,7 @@ import { WhyMinfo } from "./WhyMinfo";
 import { HackathonStory } from "./HackathonStory";
 import { DataSourcesSection } from "./DataSourcesSection";
 import { Footer } from "./Footer";
+import { ScrollToTopButton } from "./ScrollToTopButton";
 
 const MIN_THINK_MS = 700; // brief "checking sources" state so answers feel deliberate
 
@@ -77,6 +78,7 @@ function AppInner() {
         <HackathonStory />
       </main>
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }
