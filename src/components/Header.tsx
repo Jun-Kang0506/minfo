@@ -11,6 +11,7 @@ export function Header() {
     { href: "#ask", label: t.nav.ask },
     { href: "#categories", label: t.nav.categories },
     { href: "#sources", label: t.nav.sources },
+    { href: "#open-data", label: t.nav.openData },
     { href: "#why-minfo", label: t.nav.whyMinfo },
     { href: "#why", label: t.nav.why },
   ];

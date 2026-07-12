@@ -125,6 +125,14 @@ export function IconArrowRight(props: IconProps) {
   );
 }
 
+export function IconArrowUp(props: IconProps) {
+  return (
+    <svg {...base(props)}>
+      <path d="M12 20V4M6 10l6-6 6 6" />
+    </svg>
+  );
+}
+
 const CATEGORY_ICONS = {
   cross: IconCross,
   yen: IconYen,

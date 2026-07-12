@@ -37,7 +37,16 @@ export interface UIStrings {
     /** Accessible label for the language selector. */
     languageLabel: string;
   };
-  nav: { ask: string; categories: string; sources: string; whyMinfo: string; why: string };
+  nav: {
+    ask: string;
+    categories: string;
+    sources: string;
+    openData: string;
+    whyMinfo: string;
+    why: string;
+    /** Accessible label for the floating scroll-to-top button. */
+    backToTop: string;
+  };
   emergencyBar: string;
   hero: {
     kicker: string;
@@ -142,7 +151,15 @@ export interface UIStrings {
 
 const en: UIStrings = {
   brand: { subtitle: "Everyone's Info", languageLabel: "Language" },
-  nav: { ask: "Ask", categories: "Categories", sources: "Sources", whyMinfo: "Why MINFO?", why: "Why Shinjuku?" },
+  nav: {
+    ask: "Ask",
+    categories: "Categories",
+    sources: "Sources",
+    openData: "Open Data",
+    whyMinfo: "Why MINFO?",
+    why: "Why Shinjuku?",
+    backToTop: "Back to top",
+  },
   emergencyBar: "Emergency? 119 Fire / Ambulance · 110 Police (free, 24h, interpretation available)",
   hero: {
     kicker: "Grounded in official public sources",
@@ -326,7 +343,15 @@ const en: UIStrings = {
 
 const ja: UIStrings = {
   brand: { subtitle: "みんなのインフォ", languageLabel: "ことば" },
-  nav: { ask: "質問する", categories: "カテゴリー", sources: "情報のもと", whyMinfo: "MINFOとは", why: "なぜ新宿？" },
+  nav: {
+    ask: "質問する",
+    categories: "カテゴリー",
+    sources: "情報のもと",
+    openData: "オープンデータ",
+    whyMinfo: "MINFOとは",
+    why: "なぜ新宿？",
+    backToTop: "上にもどる",
+  },
   emergencyBar: "緊急のとき：火事・救急車は 119 ／ 警察は 110（無料・24時間・通訳あり）",
   hero: {
     kicker: "公式情報をもとにした案内",
@@ -510,7 +535,15 @@ const ja: UIStrings = {
 
 const zh: UIStrings = {
   brand: { subtitle: "大家的信息", languageLabel: "语言" },
-  nav: { ask: "提问", categories: "分类", sources: "信息来源", whyMinfo: "为什么用 MINFO", why: "为什么是新宿？" },
+  nav: {
+    ask: "提问",
+    categories: "分类",
+    sources: "信息来源",
+    openData: "开放数据",
+    whyMinfo: "为什么用 MINFO",
+    why: "为什么是新宿？",
+    backToTop: "回到顶部",
+  },
   emergencyBar: "紧急情况：火警·救护车 119 ／ 警察 110（免费·24小时·有翻译）",
   hero: {
     kicker: "基于官方信息的生活向导",
@@ -694,7 +727,15 @@ const zh: UIStrings = {
 
 const ko: UIStrings = {
   brand: { subtitle: "모두의 정보", languageLabel: "언어" },
-  nav: { ask: "질문하기", categories: "카테고리", sources: "정보 출처", whyMinfo: "왜 MINFO?", why: "왜 신주쿠?" },
+  nav: {
+    ask: "질문하기",
+    categories: "카테고리",
+    sources: "정보 출처",
+    openData: "오픈데이터",
+    whyMinfo: "왜 MINFO?",
+    why: "왜 신주쿠?",
+    backToTop: "맨 위로",
+  },
   emergencyBar: "긴급 상황: 화재·구급차 119 ／ 경찰 110 (무료·24시간·통역 지원)",
   hero: {
     kicker: "공식 정보에 기반한 생활 안내",
@@ -878,7 +919,15 @@ const ko: UIStrings = {
 
 const vi: UIStrings = {
   brand: { subtitle: "Thông tin của mọi người", languageLabel: "Ngôn ngữ" },
-  nav: { ask: "Hỏi", categories: "Danh mục", sources: "Nguồn tin", whyMinfo: "Vì sao MINFO?", why: "Vì sao Shinjuku?" },
+  nav: {
+    ask: "Hỏi",
+    categories: "Danh mục",
+    sources: "Nguồn tin",
+    openData: "Dữ liệu mở",
+    whyMinfo: "Vì sao MINFO?",
+    why: "Vì sao Shinjuku?",
+    backToTop: "Lên đầu trang",
+  },
   emergencyBar: "Khẩn cấp? 119 Cứu hỏa / Cấp cứu · 110 Cảnh sát (miễn phí, 24h, có phiên dịch)",
   hero: {
     kicker: "Hướng dẫn dựa trên thông tin chính thức",
@@ -1062,7 +1111,15 @@ const vi: UIStrings = {
 
 const ne: UIStrings = {
   brand: { subtitle: "सबैको जानकारी", languageLabel: "भाषा" },
-  nav: { ask: "सोध्नुहोस्", categories: "विषयहरू", sources: "स्रोतहरू", whyMinfo: "किन MINFO?", why: "किन Shinjuku?" },
+  nav: {
+    ask: "सोध्नुहोस्",
+    categories: "विषयहरू",
+    sources: "स्रोतहरू",
+    openData: "खुला डाटा",
+    whyMinfo: "किन MINFO?",
+    why: "किन Shinjuku?",
+    backToTop: "माथि जानुहोस्",
+  },
   emergencyBar: "आपतकाल? 119 आगो / एम्बुलेन्स · 110 प्रहरी (निःशुल्क, २४ घण्टा, दोभाषे उपलब्ध)",
   hero: {
     kicker: "आधिकारिक जानकारीमा आधारित मार्गदर्शन",
