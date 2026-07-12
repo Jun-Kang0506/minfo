@@ -10,6 +10,11 @@ interface StrategyItem {
   body: string;
 }
 
+interface PipelineStep {
+  label: string;
+  desc: string;
+}
+
 interface QualityItem {
   label: string;
   desc: string;
@@ -85,7 +90,13 @@ export interface UIStrings {
   openData: {
     title: string;
     sub: string;
-    positioning: string;
+    /** Data-use status row: curated records running today. Body contains "{count}", replaced with the number of curated source records. */
+    now: { badge: string; body: string };
+    /** Data-use status row: identified open-data candidates, never auto-fetched yet. */
+    next: { badge: string; body: string };
+    pipelineTitle: string;
+    /** Fixed order: official data → curated record → multilingual explanation → next action. */
+    pipeline: PipelineStep[];
     strategyTitle: string;
     strategyIntro: string;
     /** Fixed order: stable / periodic / time-sensitive — badges are mapped by index. */
@@ -199,11 +210,24 @@ const en: UIStrings = {
   },
   openData: {
     title: "From open data to usable guidance",
-    sub: "Open data is not useful only because it is published. It becomes useful when residents can find it, understand it, and act on it. MINFO focuses on the final mile: turning official and open public information into multilingual next steps.",
-    positioning:
-      "Today MINFO runs on curated official/public sources with an open-data-ready record structure. It does not fetch datasets automatically. This is intentional: trust, source clarity, and safety come before live automation. Future versions can pull records from the Tokyo Open Data Catalog, official APIs, CSVs, and ward sites.",
+    sub: "Open data becomes useful when residents can find it, understand it, and act on it. MINFO builds that final mile.",
+    now: {
+      badge: "In use now",
+      body: "{count} curated records from official/public sources power every answer and source card. Hand-checked, structured open-data-ready.",
+    },
+    next: {
+      badge: "Candidates · not auto-fetched",
+      body: "Tokyo / Shinjuku open datasets are identified below, prioritized by usefulness and update needs. Automatic fetching is future work.",
+    },
+    pipelineTitle: "How data becomes guidance",
+    pipeline: [
+      { label: "Official data", desc: "Open dataset or official page" },
+      { label: "Curated record", desc: "Checked, structured, source-linked" },
+      { label: "Multilingual explanation", desc: "Plain answers in 6 languages" },
+      { label: "Next action", desc: "Right office, steps, 119/110 guidance" },
+    ],
     strategyTitle: "How MINFO chooses a data access method",
-    strategyIntro: "MINFO does not use APIs for their own sake. The method follows the use case:",
+    strategyIntro: "Not every dataset should be a live API. The method follows how fast the information changes:",
     strategy: [
       {
         title: "Stable information",
@@ -219,13 +243,13 @@ const en: UIStrings = {
       },
     ],
     candidatesTitle: "Tokyo Open Data: candidate datasets",
-    candidatesSub: "Catalog entries and search targets MINFO plans to connect next. None are fetched automatically yet.",
+    candidatesSub: "Catalog entries and search targets MINFO plans to connect next, with what each would improve. None are fetched automatically yet.",
     catalogCta: "Browse the Tokyo Open Data Catalog",
     badges: {
       curated: "Curated now",
       candidate: "Open-data candidate",
-      batch: "Future batch update",
-      live: "Future API/live update",
+      batch: "Periodic · future batch",
+      live: "Time-sensitive · future API",
       searchTarget: "Catalog search target",
     },
   },
@@ -370,11 +394,24 @@ const ja: UIStrings = {
   },
   openData: {
     title: "オープンデータを、使える案内に",
-    sub: "オープンデータは、公開するだけでは 十分では ありません。住民が 見つけて、わかって、行動できることが たいせつです。MINFOは、公式情報を「つぎに 何を すればよいか」に かえます。",
-    positioning:
-      "いまの MINFOは、人が えらんだ 公式・公共の 情報を つかっています。データを 自動では とっていません。これは わざとです。まず 信頼と 安全を たいせつに します。これから、東京都オープンデータカタログや CSV、APIから データを とる 計画です。",
+    sub: "オープンデータは、住民が 見つけて、わかって、行動できて、はじめて 役に立ちます。MINFOは その「さいごの 一歩」を つくります。",
+    now: {
+      badge: "いま つかっています",
+      body: "公式・公共の 情報から、人が えらんだ {count}件の データです。すべての こたえと 情報カードは、この データから 作られます。",
+    },
+    next: {
+      badge: "候補・まだ 自動では とりません",
+      body: "下の 東京・新宿の オープンデータは、役に立つ 順番に えらんだ 候補です。自動で とるのは、これからの 計画です。",
+    },
+    pipelineTitle: "データが 案内に なるまで",
+    pipeline: [
+      { label: "公式の データ", desc: "オープンデータや 公式ページ" },
+      { label: "えらんだ 記録", desc: "人が かくにんして、整理します" },
+      { label: "多言語の 説明", desc: "6つの ことばで やさしく" },
+      { label: "つぎの 行動", desc: "窓口・手順・119/110の 案内" },
+    ],
     strategyTitle: "データの とりかたの きめかた",
-    strategyIntro: "MINFOは、APIを つかうことが 目的では ありません。つかいかたに あわせて えらびます。",
+    strategyIntro: "ぜんぶを APIに する 必要は ありません。情報の かわる 速さで きめます。",
     strategy: [
       {
         title: "あまり かわらない 情報",
@@ -390,13 +427,13 @@ const ja: UIStrings = {
       },
     ],
     candidatesTitle: "東京都オープンデータ：つかいたい データ",
-    candidatesSub: "MINFOが これから つなげたい データです。まだ 自動では つかっていません。",
+    candidatesSub: "MINFOが これから つなげたい データと、何が よくなるかです。まだ 自動では つかっていません。",
     catalogCta: "東京都オープンデータカタログを 見る",
     badges: {
       curated: "いま つかっています",
       candidate: "オープンデータ候補",
-      batch: "これから：定期更新",
-      live: "これから：API・自動更新",
+      batch: "ときどき かわる・これから 定期更新",
+      live: "すぐ かわる・これから API",
       searchTarget: "カタログで さがす",
     },
   },
@@ -541,11 +578,24 @@ const zh: UIStrings = {
   },
   openData: {
     title: "让开放数据变成用得上的指引",
-    sub: "开放数据不是发布了就有用。只有当居民能找到、能看懂、能行动时才有用。MINFO 专注于「最后一公里」：把官方与公开信息变成多语言的下一步行动。",
-    positioning:
-      "目前 MINFO 使用人工筛选的官方/公共信息，数据结构已为开放数据做好准备，尚未自动抓取数据集。这是有意为之：信任、来源清晰和安全优先于自动化。未来版本可以从东京都开放数据目录、官方 API、CSV 和各区网站定期获取数据。",
+    sub: "开放数据要能被居民找到、看懂、用于行动才真正有用。MINFO 负责这「最后一公里」。",
+    now: {
+      badge: "当前在用",
+      body: "{count} 条人工筛选的官方/公共来源记录，支撑现在的每个回答和来源卡片。逐条核对，结构已为开放数据做好准备。",
+    },
+    next: {
+      badge: "候选·尚未自动获取",
+      body: "下方的东京/新宿开放数据集是已确定的候选，按有用程度和更新需求排序。自动获取属于未来工作。",
+    },
+    pipelineTitle: "数据如何变成指引",
+    pipeline: [
+      { label: "官方数据", desc: "开放数据集或官方页面" },
+      { label: "筛选记录", desc: "人工核对、结构化、附来源" },
+      { label: "多语言说明", desc: "6 种语言的通俗回答" },
+      { label: "下一步行动", desc: "窗口、步骤或 119/110 指引" },
+    ],
     strategyTitle: "MINFO 如何选择数据获取方式",
-    strategyIntro: "MINFO 不为了用 API 而用 API，方式取决于用途：",
+    strategyIntro: "并非所有数据都该用实时 API，方式取决于信息变化的速度：",
     strategy: [
       {
         title: "较稳定的信息",
@@ -561,13 +611,13 @@ const zh: UIStrings = {
       },
     ],
     candidatesTitle: "东京都开放数据：候选数据集",
-    candidatesSub: "MINFO 计划接入的目录条目和检索目标。目前均未自动获取。",
+    candidatesSub: "MINFO 计划接入的目录条目和检索目标，以及各自能改进什么。目前均未自动获取。",
     catalogCta: "浏览东京都开放数据目录",
     badges: {
       curated: "当前人工维护",
       candidate: "开放数据候选",
-      batch: "未来：批量更新",
-      live: "未来：API/实时更新",
+      batch: "定期变化·未来批量更新",
+      live: "时效性强·未来 API",
       searchTarget: "目录检索目标",
     },
   },
@@ -712,11 +762,24 @@ const ko: UIStrings = {
   },
   openData: {
     title: "오픈데이터를 쓸 수 있는 안내로",
-    sub: "오픈데이터는 공개만으로는 유용하지 않습니다. 주민이 찾고, 이해하고, 행동할 수 있어야 비로소 유용해집니다. MINFO는 '마지막 구간'에 집중합니다: 공식·공공 정보를 다국어 다음 단계로 바꾸는 일입니다.",
-    positioning:
-      "지금의 MINFO는 사람이 선별한 공식/공공 소스와 오픈데이터 대응 구조로 동작합니다. 데이터셋을 자동으로 가져오지 않습니다. 이는 의도된 설계입니다: 신뢰, 출처의 명확함, 안전이 자동화보다 먼저입니다. 향후 버전은 도쿄 오픈데이터 카탈로그, 공식 API, CSV, 구 웹사이트에서 주기적으로 데이터를 가져올 수 있습니다.",
+    sub: "오픈데이터는 주민이 찾고, 이해하고, 행동할 수 있어야 유용해집니다. MINFO는 그 '마지막 구간'을 만듭니다.",
+    now: {
+      badge: "현재 사용 중",
+      body: "사람이 선별한 공식/공공 소스 레코드 {count}건이 지금의 모든 답변과 출처 카드를 뒷받침합니다. 직접 확인했고, 오픈데이터 대응 구조입니다.",
+    },
+    next: {
+      badge: "후보 · 아직 자동 수집 안 함",
+      body: "아래 도쿄/신주쿠 오픈데이터는 유용성과 업데이트 필요에 따라 우선순위를 정한 후보입니다. 자동 수집은 향후 작업입니다.",
+    },
+    pipelineTitle: "데이터가 안내가 되기까지",
+    pipeline: [
+      { label: "공식 데이터", desc: "오픈 데이터셋 또는 공식 페이지" },
+      { label: "선별 레코드", desc: "확인·구조화·출처 연결" },
+      { label: "다국어 설명", desc: "6개 언어의 쉬운 답변" },
+      { label: "다음 행동", desc: "창구·절차·119/110 안내" },
+    ],
     strategyTitle: "MINFO의 데이터 접근 방식 선택",
-    strategyIntro: "MINFO는 API를 위해 API를 쓰지 않습니다. 방식은 용도에 따라 정합니다:",
+    strategyIntro: "모든 데이터가 실시간 API일 필요는 없습니다. 방식은 정보가 바뀌는 속도에 따라 정합니다:",
     strategy: [
       {
         title: "안정적인 정보",
@@ -732,13 +795,13 @@ const ko: UIStrings = {
       },
     ],
     candidatesTitle: "도쿄 오픈데이터: 후보 데이터셋",
-    candidatesSub: "MINFO가 다음에 연결하려는 카탈로그 항목과 검색 대상입니다. 아직 자동으로 가져오지 않습니다.",
+    candidatesSub: "MINFO가 다음에 연결하려는 카탈로그 항목과 검색 대상, 그리고 각각 무엇이 좋아지는지입니다. 아직 자동으로 가져오지 않습니다.",
     catalogCta: "도쿄 오픈데이터 카탈로그 보기",
     badges: {
       curated: "현재 수동 관리",
       candidate: "오픈데이터 후보",
-      batch: "향후: 배치 업데이트",
-      live: "향후: API/실시간",
+      batch: "주기적 변경 · 향후 배치",
+      live: "시간 민감 · 향후 API",
       searchTarget: "카탈로그 검색 대상",
     },
   },
@@ -883,11 +946,24 @@ const vi: UIStrings = {
   },
   openData: {
     title: "Từ dữ liệu mở đến hướng dẫn dùng được",
-    sub: "Dữ liệu mở không tự nhiên hữu ích chỉ vì được công bố. Nó chỉ hữu ích khi cư dân tìm được, hiểu được và hành động được. MINFO tập trung vào 'chặng cuối': biến thông tin chính thức và dữ liệu mở thành các bước tiếp theo đa ngôn ngữ.",
-    positioning:
-      "Hiện tại MINFO chạy trên các nguồn chính thức/công cộng được chọn lọc, với cấu trúc sẵn sàng cho dữ liệu mở. Chưa tự động lấy dữ liệu. Đây là chủ ý: niềm tin, nguồn rõ ràng và an toàn đi trước tự động hóa. Các phiên bản sau có thể lấy dữ liệu định kỳ từ Danh mục Dữ liệu Mở Tokyo, API chính thức, CSV và trang của các quận.",
+    sub: "Dữ liệu mở chỉ hữu ích khi cư dân tìm được, hiểu được và hành động được. MINFO đảm nhận 'chặng cuối' đó.",
+    now: {
+      badge: "Đang dùng",
+      body: "{count} bản ghi chọn lọc từ nguồn chính thức/công cộng đang tạo nên mọi câu trả lời và thẻ nguồn. Kiểm tra thủ công, cấu trúc sẵn sàng cho dữ liệu mở.",
+    },
+    next: {
+      badge: "Ứng viên · chưa tự động lấy",
+      body: "Các bộ dữ liệu mở Tokyo/Shinjuku bên dưới là ứng viên đã xác định, xếp theo mức hữu ích và nhu cầu cập nhật. Việc lấy tự động là bước tương lai.",
+    },
+    pipelineTitle: "Dữ liệu trở thành hướng dẫn như thế nào",
+    pipeline: [
+      { label: "Dữ liệu chính thức", desc: "Bộ dữ liệu mở hoặc trang chính thức" },
+      { label: "Bản ghi chọn lọc", desc: "Đã kiểm tra, có cấu trúc, kèm nguồn" },
+      { label: "Giải thích đa ngôn ngữ", desc: "Trả lời dễ hiểu bằng 6 thứ tiếng" },
+      { label: "Hành động tiếp theo", desc: "Quầy đúng, các bước, hướng dẫn 119/110" },
+    ],
     strategyTitle: "MINFO chọn cách lấy dữ liệu như thế nào",
-    strategyIntro: "MINFO không dùng API chỉ để dùng API. Cách lấy phụ thuộc vào mục đích:",
+    strategyIntro: "Không phải dữ liệu nào cũng cần API trực tiếp. Cách lấy tùy theo tốc độ thay đổi của thông tin:",
     strategy: [
       {
         title: "Thông tin ổn định",
@@ -903,13 +979,13 @@ const vi: UIStrings = {
       },
     ],
     candidatesTitle: "Dữ liệu Mở Tokyo: các bộ dữ liệu ứng viên",
-    candidatesSub: "Các mục trong danh mục và mục tiêu tìm kiếm mà MINFO dự định kết nối tiếp theo. Chưa có mục nào được lấy tự động.",
+    candidatesSub: "Các mục trong danh mục và mục tiêu tìm kiếm MINFO dự định kết nối tiếp theo, kèm điều mỗi bộ sẽ cải thiện. Chưa có mục nào được lấy tự động.",
     catalogCta: "Xem Danh mục Dữ liệu Mở Tokyo",
     badges: {
       curated: "Đang chọn lọc thủ công",
       candidate: "Ứng viên dữ liệu mở",
-      batch: "Tương lai: cập nhật định kỳ",
-      live: "Tương lai: API/trực tiếp",
+      batch: "Đổi định kỳ · tương lai: hàng loạt",
+      live: "Nhạy thời gian · tương lai: API",
       searchTarget: "Mục tiêu tìm trong danh mục",
     },
   },
@@ -1054,11 +1130,24 @@ const ne: UIStrings = {
   },
   openData: {
     title: "खुला डाटाबाट, काम लाग्ने मार्गदर्शनसम्म",
-    sub: "खुला डाटा प्रकाशित भएर मात्र उपयोगी हुँदैन। बासिन्दाले भेट्टाउन, बुझ्न र काम गर्न सक्दा मात्र उपयोगी हुन्छ। MINFO 'अन्तिम खुड्किलो' मा केन्द्रित छ: आधिकारिक र खुला जानकारीलाई बहुभाषिक 'अर्को कदम' मा बदल्ने।",
-    positioning:
-      "अहिले MINFO छानिएका आधिकारिक/सार्वजनिक स्रोतमा चल्छ, र संरचना खुला डाटाका लागि तयार छ। डाटा स्वतः लिँदैन। यो जानाजानी हो: विश्वास, स्पष्ट स्रोत र सुरक्षा पहिले। भविष्यका संस्करणले टोकियो खुला डाटा क्याटलग, आधिकारिक API, CSV र वडा साइटबाट समय-समयमा डाटा लिन सक्छ।",
+    sub: "खुला डाटा बासिन्दाले भेट्टाउन, बुझ्न र काम गर्न सक्दा मात्र उपयोगी हुन्छ। MINFO ले त्यही 'अन्तिम खुड्किलो' बनाउँछ।",
+    now: {
+      badge: "अहिले प्रयोगमा",
+      body: "आधिकारिक/सार्वजनिक स्रोतबाट छानिएका {count} रेकर्डले अहिलेका सबै उत्तर र स्रोत कार्ड चलाउँछन्। हातैले जाँचिएको, खुला डाटाका लागि तयार संरचना।",
+    },
+    next: {
+      badge: "उम्मेदवार · अझै स्वतः लिइँदैन",
+      body: "तलका टोकियो/Shinjuku खुला डाटासेट पहिचान गरिएका उम्मेदवार हुन्, उपयोगिता र अपडेट आवश्यकताअनुसार क्रमबद्ध। स्वतः लिने काम भविष्यको योजना हो।",
+    },
+    pipelineTitle: "डाटा कसरी मार्गदर्शन बन्छ",
+    pipeline: [
+      { label: "आधिकारिक डाटा", desc: "खुला डाटासेट वा आधिकारिक पृष्ठ" },
+      { label: "छानिएको रेकर्ड", desc: "जाँचिएको, संरचित, स्रोतसहित" },
+      { label: "बहुभाषिक व्याख्या", desc: "६ भाषामा सजिलो उत्तर" },
+      { label: "अर्को कदम", desc: "सही डेस्क, चरण, 119/110 मार्गदर्शन" },
+    ],
     strategyTitle: "MINFO ले डाटा लिने तरिका कसरी छान्छ",
-    strategyIntro: "MINFO ले API प्रयोग गर्नकै लागि API चलाउँदैन। तरिका प्रयोजनअनुसार:",
+    strategyIntro: "सबै डाटा लाइभ API हुनुपर्दैन। जानकारी कति छिटो बदलिन्छ, त्यसैअनुसार तरिका:",
     strategy: [
       {
         title: "स्थिर जानकारी",
@@ -1074,13 +1163,13 @@ const ne: UIStrings = {
       },
     ],
     candidatesTitle: "टोकियो खुला डाटा: उम्मेदवार डाटासेट",
-    candidatesSub: "MINFO ले अब जोड्न चाहेका क्याटलग सूची र खोज लक्ष्यहरू। अहिले कुनै पनि स्वतः लिइँदैन।",
+    candidatesSub: "MINFO ले अब जोड्न चाहेका क्याटलग सूची र खोज लक्ष्य, र हरेकले के सुधार्छ। अहिले कुनै पनि स्वतः लिइँदैन।",
     catalogCta: "टोकियो खुला डाटा क्याटलग हेर्नुहोस्",
     badges: {
       curated: "अहिले हातले छानिएको",
       candidate: "खुला डाटा उम्मेदवार",
-      batch: "भविष्य: ब्याच अपडेट",
-      live: "भविष्य: API/लाइभ",
+      batch: "समय-समयमा बदलिने · भविष्य: ब्याच",
+      live: "छिटो बदलिने · भविष्य: API",
       searchTarget: "क्याटलग खोज लक्ष्य",
     },
   },

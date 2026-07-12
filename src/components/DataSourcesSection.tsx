@@ -53,6 +53,30 @@ export function DataSourcesSection() {
     <section id="sources" className="mx-auto max-w-6xl px-4 py-14 md:py-20">
       <SectionHeading title={t.sources.title} sub={t.sources.sub} />
 
+      {/* Data-use status register: what runs today vs what is identified next */}
+      <div className="mb-10 border-t-2 border-ink">
+        {(
+          [
+            {
+              tone: "moss",
+              badge: t.openData.now.badge,
+              body: t.openData.now.body.replace("{count}", String(SOURCES.length)),
+            },
+            { tone: "caution", badge: t.openData.next.badge, body: t.openData.next.body },
+          ] as const
+        ).map((row) => (
+          <div
+            key={row.badge}
+            className="flex flex-col gap-1.5 border-b border-line py-3.5 sm:flex-row sm:items-baseline sm:gap-6"
+          >
+            <span className="sm:w-64 sm:shrink-0">
+              <Tag tone={row.tone}>{row.badge}</Tag>
+            </span>
+            <p className="flex-1 text-[13.5px] leading-relaxed text-ink">{row.body}</p>
+          </div>
+        ))}
+      </div>
+
       {/* Source register — grouped by office tier, a reference list, not cards */}
       <div className="grid gap-x-12 lg:grid-cols-2">
         {tiers.map((tier) => {
@@ -78,10 +102,34 @@ export function DataSourcesSection() {
         <h3 className="text-xl font-bold tracking-tight text-ink sm:text-2xl">
           {t.openData.title}
         </h3>
-        <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-ink">{t.openData.sub}</p>
-        <p className="mt-3 max-w-3xl text-[13.5px] leading-relaxed text-ink-soft">
-          {t.openData.positioning}
-        </p>
+        <p className="mt-3 max-w-3xl text-[14.5px] leading-relaxed text-ink">{t.openData.sub}</p>
+
+        {/* official data → curated record → multilingual explanation → next action */}
+        <h4 className="mt-8 text-[15px] font-bold text-ink">{t.openData.pipelineTitle}</h4>
+        <ol className="mt-3 flex flex-col md:flex-row md:items-stretch">
+          {t.openData.pipeline.map((step, i) => (
+            <li key={step.label} className="flex flex-col md:flex-1 md:flex-row md:items-stretch">
+              <div className="flex-1 rounded-sm border border-line bg-paper px-3.5 py-3">
+                <span className="block text-[11px] font-bold tabular-nums text-moss">{i + 1}</span>
+                <span className="mt-0.5 block text-[13.5px] font-bold leading-snug text-ink">
+                  {step.label}
+                </span>
+                <span className="mt-0.5 block text-[12px] leading-snug text-ink-soft">
+                  {step.desc}
+                </span>
+              </div>
+              {i < t.openData.pipeline.length - 1 && (
+                <span
+                  aria-hidden
+                  className="py-1 pl-4 text-[14px] leading-none text-ink-soft/60 md:self-center md:px-1.5 md:py-0"
+                >
+                  <span className="md:hidden">↓</span>
+                  <span className="hidden md:inline">→</span>
+                </span>
+              )}
+            </li>
+          ))}
+        </ol>
 
         {/* Data-access pipeline: curated now → scheduled batch → live only where needed */}
         <h4 className="mt-8 text-[15px] font-bold text-ink">{t.openData.strategyTitle}</h4>
@@ -110,7 +158,10 @@ export function DataSourcesSection() {
 
       {/* Tokyo Open Data candidates — a dataset registry, honestly labeled */}
       <div className="mt-12">
-        <h3 className="text-lg font-bold tracking-tight text-ink">{t.openData.candidatesTitle}</h3>
+        <h3 className="flex flex-wrap items-center gap-2.5 text-lg font-bold tracking-tight text-ink">
+          {t.openData.candidatesTitle}
+          <Tag tone="caution">{t.openData.next.badge}</Tag>
+        </h3>
         <p className="mt-1 max-w-3xl text-[13.5px] leading-relaxed text-ink-soft">
           {t.openData.candidatesSub}
         </p>
