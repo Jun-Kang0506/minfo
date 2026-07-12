@@ -64,7 +64,7 @@ const SOURCE_IDS = SOURCES.map((s) => s.id);
 
 const LANGUAGE_NAMES: Record<LanguageCode, string> = {
   en: "English",
-  ja: "やさしい日本語 (Easy Japanese: short sentences, simple words, a space between phrases)",
+  ja: "やさしい日本語 (Easy Japanese: short sentences, simple words, normal Japanese punctuation, no extra spaces between words)",
   zh: "Simplified Chinese (中文)",
   ko: "Korean (한국어)",
   vi: "Vietnamese (Tiếng Việt)",
