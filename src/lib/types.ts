@@ -19,7 +19,9 @@ export type CategoryId =
   | "housing"
   | "japanese"
   | "consultation"
-  | "emergency";
+  | "emergency"
+  | "schools-children"
+  | "food-prayer";
 
 export type TopicId =
   | "hospital"

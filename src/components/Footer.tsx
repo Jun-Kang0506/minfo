@@ -30,6 +30,11 @@ export function Footer() {
             <p className="mt-1 text-[12px] text-paper/50">
               {LANGUAGES.map((l) => l.nativeLabel).join(", ")}
             </p>
+            <nav aria-label="Information" className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-[13px] font-semibold text-paper/85">
+              <a className="underline-offset-4 hover:underline" href="/about">{t.nav.whyMinfo}</a>
+              <a className="underline-offset-4 hover:underline" href="/sources">{t.nav.sources}</a>
+              <a className="underline-offset-4 hover:underline" href="/data">{t.nav.openData}</a>
+            </nav>
           </div>
 
           <div className="rounded-lg border border-paper/20 p-5">

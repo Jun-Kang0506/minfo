@@ -172,7 +172,7 @@ const en: UIStrings = {
   },
   categories: {
     title: "What do you need help with?",
-    sub: "Eight areas of daily life, grounded in official information.",
+    sub: "Choose a topic to start with official information.",
     tryLabel: "Try asking",
   },
   ask: {
@@ -363,8 +363,8 @@ const ja: UIStrings = {
     trustPilot: "新宿・大久保から始めます",
   },
   categories: {
-    title: "なににこまっていますか？",
-    sub: "生活の 8つの分野を、公式情報で案内します。",
+    title: "何について手伝ってほしいですか？",
+    sub: "知りたいことをえらんでください。公式情報で案内します。",
     tryLabel: "質問のれい",
   },
   ask: {
@@ -556,7 +556,7 @@ const zh: UIStrings = {
   },
   categories: {
     title: "您需要哪方面的帮助？",
-    sub: "八大生活领域，全部基于官方信息。",
+    sub: "选择一个主题，从官方信息开始。",
     tryLabel: "试着问",
   },
   ask: {
@@ -748,7 +748,7 @@ const ko: UIStrings = {
   },
   categories: {
     title: "어떤 도움이 필요하세요?",
-    sub: "생활의 8개 분야를 공식 정보로 안내합니다.",
+    sub: "주제를 선택하면 공식 정보로 안내합니다.",
     tryLabel: "이렇게 물어보세요",
   },
   ask: {
@@ -940,7 +940,7 @@ const vi: UIStrings = {
   },
   categories: {
     title: "Bạn cần trợ giúp về điều gì?",
-    sub: "Tám lĩnh vực đời sống, dựa trên thông tin chính thức.",
+    sub: "Chọn một chủ đề để bắt đầu với thông tin chính thức.",
     tryLabel: "Thử hỏi",
   },
   ask: {
@@ -1132,7 +1132,7 @@ const ne: UIStrings = {
   },
   categories: {
     title: "तपाईंलाई केमा सहयोग चाहिन्छ?",
-    sub: "दैनिक जीवनका ८ क्षेत्र, आधिकारिक जानकारीमा आधारित।",
+    sub: "आधिकारिक जानकारीबाट सुरु गर्न एउटा विषय छान्नुहोस्।",
     tryLabel: "यसरी सोध्नुहोस्",
   },
   ask: {

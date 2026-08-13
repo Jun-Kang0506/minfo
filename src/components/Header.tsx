@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useLanguage } from "./LanguageProvider";
 import { LanguageSelector } from "./LanguageSelector";
 import { IconPhone } from "./icons";
@@ -8,12 +9,9 @@ export function Header() {
   const { t } = useLanguage();
 
   const navItems = [
-    { href: "#ask", label: t.nav.ask },
-    { href: "#categories", label: t.nav.categories },
-    { href: "#sources", label: t.nav.sources },
-    { href: "#open-data", label: t.nav.openData },
-    { href: "#why-minfo", label: t.nav.whyMinfo },
-    { href: "#why", label: t.nav.why },
+    { href: "/about", label: t.nav.whyMinfo },
+    { href: "/sources", label: t.nav.sources },
+    { href: "/data", label: t.nav.openData },
   ];
 
   return (
@@ -39,7 +37,7 @@ export function Header() {
 
       <div className="border-b border-line bg-paper/95 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
-          <a href="#top" className="flex items-center gap-2.5">
+          <Link href="/" className="flex items-center gap-2.5">
             <span className="grid h-9 w-9 shrink-0 place-items-center rounded-sm bg-moss text-lg font-bold text-white">
               み
             </span>
@@ -49,38 +47,33 @@ export function Header() {
                 {t.brand.subtitle}
               </span>
             </span>
-          </a>
+          </Link>
 
           <nav aria-label="Main" className="hidden items-center gap-6 lg:flex">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 className="whitespace-nowrap text-sm font-semibold text-ink-soft transition-colors hover:text-moss"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
-          <LanguageSelector />
+          <div className="flex items-center gap-2">
+            <Link
+              href="/about"
+              aria-label={t.nav.whyMinfo}
+              title={t.nav.whyMinfo}
+              className="grid min-h-11 min-w-11 place-items-center rounded-sm border border-line bg-card text-sm font-bold text-ink transition-colors hover:border-moss hover:text-moss lg:hidden"
+            >
+              <span aria-hidden>i</span>
+            </Link>
+            <LanguageSelector />
+          </div>
         </div>
 
-        {/* Compact anchor nav for mobile / tablet */}
-        <nav
-          aria-label="Sections"
-          className="flex gap-5 overflow-x-auto border-t border-line px-4 py-2 lg:hidden"
-        >
-          {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="whitespace-nowrap text-[13px] font-semibold text-ink-soft"
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
       </div>
     </header>
   );

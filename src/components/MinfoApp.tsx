@@ -5,19 +5,19 @@ import type { Answer, TopicId } from "@/lib/types";
 import { localAnswerEngine } from "@/lib/engine/localAnswerEngine";
 import { LanguageProvider, useLanguage } from "./LanguageProvider";
 import { Header } from "./Header";
-import { Hero } from "./Hero";
 import { ChatPanel, type ChatEntry } from "./ChatPanel";
 import { CategoryGrid } from "./CategoryGrid";
-import { WhyMinfo } from "./WhyMinfo";
-import { HackathonStory } from "./HackathonStory";
-import { DataSourcesSection } from "./DataSourcesSection";
 import { Footer } from "./Footer";
 import { ScrollToTopButton } from "./ScrollToTopButton";
 
 const MIN_THINK_MS = 700; // brief "checking sources" state so answers feel deliberate
 
 function scrollToAsk() {
-  document.getElementById("ask")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.getElementById("ask")?.scrollIntoView({
+    behavior: reduceMotion ? "auto" : "smooth",
+    block: "start",
+  });
 }
 
 function AppInner() {
@@ -69,13 +69,8 @@ function AppInner() {
     <div className="flex min-h-screen flex-col">
       <Header />
       <main ref={mainRef} className="flex-1">
-        <Hero onAsk={scrollToAsk} />
-        {/* Page order mirrors the nav: ask → categories → sources → why MINFO → why Shinjuku */}
+        <CategoryGrid onSelect={(text, topicId) => { scrollToAsk(); ask(text, topicId); }} />
         <ChatPanel entries={entries} onAsk={ask} />
-        <CategoryGrid onSelect={(text, topicId) => ask(text, topicId)} />
-        <DataSourcesSection />
-        <WhyMinfo />
-        <HackathonStory />
       </main>
       <Footer />
       <ScrollToTopButton />
