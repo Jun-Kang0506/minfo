@@ -1,0 +1,38 @@
+{
+  "shinjuku-childcare-facilities": {
+    "titleGloss": "新宿区の子育て施設一覧",
+    "note": "新宿区の子育て施設の公式スナップショットデータです。空き状況や受付状況はわかりません。"
+  },
+  "shinjuku-evacuation-sites": {
+    "titleGloss": "新宿区の避難場所のリスト",
+    "note": "地震や火事のとき、どこににげるか。新宿区の公式の避難場所のリストです。"
+  },
+  "shinjuku-public-facilities": {
+    "titleGloss": "新宿区の公共施設のデータ",
+    "note": "区役所や図書館などの施設のデータです。「どの窓口に行く？」のこたえにつかえます。"
+  },
+  "shinjuku-garbage-sorting": {
+    "titleGloss": "新宿区のごみの分け方のリスト",
+    "note": "ごみの分け方のデータです。生活でいちばん多い質問の一つです。"
+  },
+  "tokyo-evacuation-shelters": {
+    "titleGloss": "東京都の避難所のリスト（防災マップ）",
+    "note": "東京ぜんぶの避難所のリストです。バリアフリーの情報もあります。区のデータのかくにんにもつかえます。"
+  },
+  "tokyo-flood-forecast": {
+    "titleGloss": "水害のリスクの地図",
+    "note": "東京都の公式の水害リスクの地図です。新宿・大久保の防災のこたえにつかえます。"
+  },
+  "tokyo-medical-ledger": {
+    "titleGloss": "病院・クリニックのデータ",
+    "note": "病院やクリニックのデータです。国の標準のかたちで公開されています。「近くの病院」のこたえにつかえます。"
+  },
+  "tokyo-foreign-population": {
+    "titleGloss": "外国人の人口（国せきごと）",
+    "note": "国せきごとの外国人の人口です。どのことばを先に出すか、データできめられます。"
+  },
+  "tokyo-medical-welfare-group": {
+    "titleGloss": "医療・福祉のカタログのページ",
+    "note": "カタログの「医療・福祉」のページです。区ごとのデータは、ここからさがします。"
+  }
+}

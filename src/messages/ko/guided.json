@@ -1,0 +1,199 @@
+{
+  "questions": {
+    "health": {
+      "title": "무엇이 필요하신가요?",
+      "options": [
+        {
+          "label": "병원 찾기",
+          "request": "병원 찾기"
+        },
+        {
+          "label": "건강보험 알아보기",
+          "request": "건강보험 알아보기"
+        },
+        {
+          "label": "지금 긴급 도움이 필요해요",
+          "request": "지금 긴급 도움이 필요해요"
+        }
+      ]
+    },
+    "health_urgent_kind": {
+      "title": "어떤 긴급 상황인가요?",
+      "options": [
+        {
+          "label": "구급차 또는 화재",
+          "request": "구급차 또는 화재"
+        },
+        {
+          "label": "경찰 또는 즉시 위험",
+          "request": "경찰 또는 즉시 위험"
+        }
+      ]
+    },
+    "schools": {
+      "title": "무엇이 필요하신가요?",
+      "options": [
+        {
+          "label": "초등학교 또는 중학교 입학",
+          "request": "초등학교 또는 중학교 입학"
+        },
+        {
+          "label": "보육을 신청하기",
+          "request": "보육을 신청하기"
+        },
+        {
+          "label": "보육 시설 찾기",
+          "request": "보육 시설 찾기"
+        }
+      ]
+    },
+    "taxes": {
+      "title": "무엇이 필요하신가요?",
+      "options": [
+        {
+          "label": "세금 또는 연금 통지서, 또는 납부 어려움",
+          "request": "세금 또는 연금 통지서, 또는 납부 어려움"
+        },
+        {
+          "label": "세금 계산",
+          "request": "세금 계산"
+        }
+      ]
+    },
+    "garbage": {
+      "title": "무엇이 필요하신가요?",
+      "options": [
+        {
+          "label": "분리배출, 수거 요일 또는 대형 쓰레기",
+          "request": "분리배출, 수거 요일 또는 대형 쓰레기"
+        }
+      ]
+    },
+    "disaster": {
+      "title": "무엇이 필요하신가요?",
+      "options": [
+        {
+          "label": "지진 대비와 공식 알림",
+          "request": "지진 대비와 공식 알림"
+        },
+        {
+          "label": "태풍·호우 대비",
+          "request": "태풍·호우 대비"
+        },
+        {
+          "label": "대피 장소",
+          "request": "대피 장소"
+        }
+      ]
+    },
+    "japanese": {
+      "title": "무엇이 필요하신가요?",
+      "options": [
+        {
+          "label": "일본어 수업 찾기",
+          "request": "일본어 수업 찾기"
+        },
+        {
+          "label": "쉬운 일본어",
+          "request": "쉬운 일본어"
+        }
+      ]
+    },
+    "japanese_class_need": {
+      "title": "어떤 수업을 찾고 있나요?",
+      "options": [
+        {
+          "label": "초급자 수업",
+          "request": "초급자 수업"
+        },
+        {
+          "label": "저녁 수업",
+          "request": "저녁 수업"
+        },
+        {
+          "label": "오쿠보 지역 수업",
+          "request": "오쿠보 지역 수업"
+        }
+      ]
+    },
+    "housing": {
+      "title": "무엇이 필요하신가요?",
+      "options": [
+        {
+          "label": "이사 신고",
+          "request": "이사 신고"
+        },
+        {
+          "label": "임대, 계약 또는 집주인 문제",
+          "request": "임대, 계약 또는 집주인 문제"
+        },
+        {
+          "label": "공공 주택",
+          "request": "공공 주택"
+        }
+      ]
+    },
+    "consultation": {
+      "title": "무엇이 필요하신가요?",
+      "options": [
+        {
+          "label": "생활 상담",
+          "request": "생활 상담"
+        },
+        {
+          "label": "관공서 편지 이해",
+          "request": "관공서 편지 이해"
+        },
+        {
+          "label": "재류카드",
+          "request": "재류카드"
+        },
+        {
+          "label": "지갑 분실",
+          "request": "지갑 분실"
+        },
+        {
+          "label": "은행 계좌 개설",
+          "request": "은행 계좌 개설"
+        }
+      ]
+    },
+    "food-prayer": {
+      "title": "무엇이 필요하신가요?",
+      "options": [
+        {
+          "label": "할랄 음식",
+          "request": "할랄 음식"
+        },
+        {
+          "label": "기도 시설",
+          "request": "기도 시설"
+        }
+      ]
+    },
+    "emergency": {
+      "title": "어떤 긴급 상황인가요?",
+      "options": [
+        {
+          "label": "구급차 또는 화재",
+          "request": "구급차 또는 화재"
+        },
+        {
+          "label": "경찰 또는 즉시 위험",
+          "request": "경찰 또는 즉시 위험"
+        }
+      ]
+    }
+  },
+  "ui": {
+    "next": "다음",
+    "back": "뒤로",
+    "startOver": "처음부터",
+    "loading": "신뢰할 수 있는 정보를 확인하고 있어요…",
+    "unsupportedTitle": "이 주제의 정보는 준비 중입니다.",
+    "unsupportedNeed": "선택한 항목: {need}",
+    "consultation": "상담 창구 찾기",
+    "structuredLookupTitle": "보육 시설 조회를 준비 중입니다.",
+    "structuredLookupBody": "이 조회를 사용하기 전에 공식 데이터세트와 카탈로그 메타데이터를 확인해야 합니다. 현재 결과는 표시하지 않습니다."
+  }
+}

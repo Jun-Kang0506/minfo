@@ -1,0 +1,31 @@
+{
+  "loading": "Đang tải bản chụp chính thức…",
+  "unavailable": "Bản chụp chính thức này hiện không khả dụng.",
+  "count": "địa điểm",
+  "more": "Hiển thị thêm 5",
+  "location": "Dùng vị trí của tôi",
+  "stop": "Ngừng dùng vị trí",
+  "distance": "Khoảng cách đường thẳng gần đúng",
+  "map": "Mở bản đồ",
+  "child": "Bản chụp này không cho biết chỗ trống, điều kiện, phí, giờ, tiếp nhận nhập học hoặc hoạt động hiện tại. Hãy xác nhận trực tiếp.",
+  "evac": "Đây là dữ liệu vị trí, không phải tình trạng mở cửa hoặc trực tiếp. Sự phù hợp tùy vào nguy cơ và hướng dẫn chính thức. Hãy xem cảnh báo chính thức hiện tại riêng.",
+  "privacy": "Vị trí chỉ được dùng trên thiết bị này và không gửi đến MINFO.",
+  "locationError": "Không thể dùng vị trí của bạn. Bạn vẫn có thể tiếp tục xem danh sách.",
+  "listedFor": "Áp dụng cho",
+  "earthquake": "Động đất",
+  "large_fire": "Hỏa hoạn lớn",
+  "data": "Dữ liệu đã kiểm tra:",
+  "update": "Cập nhật khi cần. Dữ liệu ảnh chụp.",
+  "catalog": "Thông tin dữ liệu",
+  "provenance": "Open Data ✓ · Shinjuku City · CC BY 4.0",
+  "preparing": {
+    "shinjuku-childcare-facilities": {
+      "title": "Tính năng tìm cơ sở chăm sóc trẻ đang được chuẩn bị.",
+      "body": "Cần xác minh bộ dữ liệu chính thức và siêu dữ liệu danh mục trước khi dùng tính năng này. Không hiển thị kết quả trực tiếp."
+    },
+    "shinjuku-evacuation-sites": {
+      "title": "Tính năng tìm địa điểm sơ tán đang được chuẩn bị.",
+      "body": "Tính năng đang chuẩn bị này không hiển thị địa điểm sơ tán trực tiếp, đang mở hoặc gần nhất. Hãy xem thông tin thiên tai chính thức để biết tình hình hiện tại."
+    }
+  }
+}

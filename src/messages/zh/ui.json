@@ -1,0 +1,41 @@
+{
+  "brand": {
+    "subtitle": "大家的信息",
+    "languageLabel": "语言"
+  },
+  "nav": {
+    "ask": "提问",
+    "categories": "分类",
+    "sources": "信息来源",
+    "openData": "开放数据",
+    "whyMinfo": "为什么用 MINFO",
+    "why": "为什么是新宿？",
+    "backToTop": "回到顶部"
+  },
+  "hero": {
+    "kicker": "基于官方信息的生活向导",
+    "headline": "用您的语言，获取可靠的生活信息。",
+    "sub": "医院、保险、垃圾分类、防灾：MINFO 用简单的方式解释在日生活，回答始终附有官方来源。",
+    "ctaAsk": "向 MINFO 提问",
+    "trustSources": "每个回答都显示官方来源",
+    "trustLanguages": "支持 6 种语言，含简明日语（やさしい日本語）",
+    "trustPilot": "从新宿·大久保开始，可扩展至全东京"
+  },
+  "categories": {
+    "title": "您需要哪方面的帮助？",
+    "sub": "选择一个主题，从官方信息开始。",
+    "tryLabel": "试着问"
+  },
+  "ask": {
+    "title": "向 MINFO 提问",
+    "sub": "输入问题或点击示例，回答附带官方来源。",
+    "placeholder": "问问新宿的生活问题…",
+    "send": "提问",
+    "examples": "常见问题",
+    "thinking": "正在查询可信来源…",
+    "emptyHint": "回答会显示在这里，并附来源。"
+  },
+  "mascot": {
+    "alt": "MINFO 向导吉祥物"
+  }
+}

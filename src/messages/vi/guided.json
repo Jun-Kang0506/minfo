@@ -1,0 +1,199 @@
+{
+  "questions": {
+    "health": {
+      "title": "Bạn cần hỗ trợ việc gì?",
+      "options": [
+        {
+          "label": "Tìm bệnh viện",
+          "request": "Tìm bệnh viện"
+        },
+        {
+          "label": "Tìm hiểu bảo hiểm y tế",
+          "request": "Tìm hiểu bảo hiểm y tế"
+        },
+        {
+          "label": "Tôi cần trợ giúp khẩn cấp ngay",
+          "request": "Tôi cần trợ giúp khẩn cấp ngay"
+        }
+      ]
+    },
+    "health_urgent_kind": {
+      "title": "Đó là tình huống khẩn cấp nào?",
+      "options": [
+        {
+          "label": "Cấp cứu hoặc cháy",
+          "request": "Cấp cứu hoặc cháy"
+        },
+        {
+          "label": "Cảnh sát hoặc nguy hiểm ngay",
+          "request": "Cảnh sát hoặc nguy hiểm ngay"
+        }
+      ]
+    },
+    "schools": {
+      "title": "Bạn cần hỗ trợ việc gì?",
+      "options": [
+        {
+          "label": "Nhập học tiểu học hoặc trung học cơ sở",
+          "request": "Nhập học tiểu học hoặc trung học cơ sở"
+        },
+        {
+          "label": "Nộp đơn chăm sóc trẻ",
+          "request": "Nộp đơn chăm sóc trẻ"
+        },
+        {
+          "label": "Tìm cơ sở chăm sóc trẻ",
+          "request": "Tìm cơ sở chăm sóc trẻ"
+        }
+      ]
+    },
+    "taxes": {
+      "title": "Bạn cần hỗ trợ việc gì?",
+      "options": [
+        {
+          "label": "Thông báo thuế hoặc lương hưu, hoặc khó thanh toán",
+          "request": "Thông báo thuế hoặc lương hưu, hoặc khó thanh toán"
+        },
+        {
+          "label": "Tính thuế",
+          "request": "Tính thuế"
+        }
+      ]
+    },
+    "garbage": {
+      "title": "Bạn cần hỗ trợ việc gì?",
+      "options": [
+        {
+          "label": "Phân loại, ngày thu gom hoặc rác cỡ lớn",
+          "request": "Phân loại, ngày thu gom hoặc rác cỡ lớn"
+        }
+      ]
+    },
+    "disaster": {
+      "title": "Bạn cần hỗ trợ việc gì?",
+      "options": [
+        {
+          "label": "Chuẩn bị động đất và cảnh báo chính thức",
+          "request": "Chuẩn bị động đất và cảnh báo chính thức"
+        },
+        {
+          "label": "Chuẩn bị bão và mưa lớn",
+          "request": "Chuẩn bị bão và mưa lớn"
+        },
+        {
+          "label": "Địa điểm sơ tán",
+          "request": "Địa điểm sơ tán"
+        }
+      ]
+    },
+    "japanese": {
+      "title": "Bạn cần hỗ trợ việc gì?",
+      "options": [
+        {
+          "label": "Tìm lớp tiếng Nhật",
+          "request": "Tìm lớp tiếng Nhật"
+        },
+        {
+          "label": "Tiếng Nhật đơn giản",
+          "request": "Tiếng Nhật đơn giản"
+        }
+      ]
+    },
+    "japanese_class_need": {
+      "title": "Bạn đang tìm lớp nào?",
+      "options": [
+        {
+          "label": "Lớp cho người mới bắt đầu",
+          "request": "Lớp cho người mới bắt đầu"
+        },
+        {
+          "label": "Lớp buổi tối",
+          "request": "Lớp buổi tối"
+        },
+        {
+          "label": "Lớp ở khu Okubo",
+          "request": "Lớp ở khu Okubo"
+        }
+      ]
+    },
+    "housing": {
+      "title": "Bạn cần hỗ trợ việc gì?",
+      "options": [
+        {
+          "label": "Đăng ký chuyển nhà",
+          "request": "Đăng ký chuyển nhà"
+        },
+        {
+          "label": "Thuê nhà, hợp đồng hoặc vấn đề với chủ nhà",
+          "request": "Thuê nhà, hợp đồng hoặc vấn đề với chủ nhà"
+        },
+        {
+          "label": "Nhà ở công",
+          "request": "Nhà ở công"
+        }
+      ]
+    },
+    "consultation": {
+      "title": "Bạn cần hỗ trợ việc gì?",
+      "options": [
+        {
+          "label": "Hỗ trợ đời sống",
+          "request": "Hỗ trợ đời sống"
+        },
+        {
+          "label": "Hiểu thư của cơ quan",
+          "request": "Hiểu thư của cơ quan"
+        },
+        {
+          "label": "Thẻ cư trú",
+          "request": "Thẻ cư trú"
+        },
+        {
+          "label": "Mất ví",
+          "request": "Mất ví"
+        },
+        {
+          "label": "Mở tài khoản ngân hàng",
+          "request": "Mở tài khoản ngân hàng"
+        }
+      ]
+    },
+    "food-prayer": {
+      "title": "Bạn cần hỗ trợ việc gì?",
+      "options": [
+        {
+          "label": "Thức ăn halal",
+          "request": "Thức ăn halal"
+        },
+        {
+          "label": "Cơ sở cầu nguyện",
+          "request": "Cơ sở cầu nguyện"
+        }
+      ]
+    },
+    "emergency": {
+      "title": "Đó là tình huống khẩn cấp nào?",
+      "options": [
+        {
+          "label": "Cấp cứu hoặc cháy",
+          "request": "Cấp cứu hoặc cháy"
+        },
+        {
+          "label": "Cảnh sát hoặc nguy hiểm ngay",
+          "request": "Cảnh sát hoặc nguy hiểm ngay"
+        }
+      ]
+    }
+  },
+  "ui": {
+    "next": "Tiếp theo",
+    "back": "Quay lại",
+    "startOver": "Bắt đầu lại",
+    "loading": "Đang kiểm tra nguồn đáng tin cậy…",
+    "unsupportedTitle": "Thông tin cho chủ đề này đang được chuẩn bị.",
+    "unsupportedNeed": "Bạn đã chọn: {need}",
+    "consultation": "Tìm quầy tư vấn",
+    "structuredLookupTitle": "Tính năng tìm cơ sở chăm sóc trẻ đang được chuẩn bị.",
+    "structuredLookupBody": "Cần xác minh bộ dữ liệu chính thức và siêu dữ liệu danh mục trước khi dùng tính năng này. Không hiển thị kết quả trực tiếp."
+  }
+}

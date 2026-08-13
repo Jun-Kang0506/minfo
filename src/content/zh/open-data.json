@@ -1,0 +1,38 @@
+{
+  "shinjuku-childcare-facilities": {
+    "titleGloss": "新宿区育儿设施一览",
+    "note": "新宿区育儿设施的官方快照数据，不显示空位或受理情况。"
+  },
+  "shinjuku-evacuation-sites": {
+    "titleGloss": "新宿区指定紧急避难场所一览",
+    "note": "地震或火灾时该去哪里避难：新宿区官方的紧急避难场所列表。"
+  },
+  "shinjuku-public-facilities": {
+    "titleGloss": "新宿区公共设施信息",
+    "note": "区役所、会馆、图书馆等设施的结构化数据：支撑「该去哪个窗口」类回答。"
+  },
+  "shinjuku-garbage-sorting": {
+    "titleGloss": "新宿区垃圾分类方法一览",
+    "note": "垃圾分类规则的数据：各种语言中最常被问到的生活问题之一。"
+  },
+  "tokyo-evacuation-shelters": {
+    "titleGloss": "东京都防灾地图：避难所一览数据",
+    "note": "覆盖全东京的避难所列表（含无障碍信息）：可交叉核对区级数据，也是扩展的基础。"
+  },
+  "tokyo-flood-forecast": {
+    "titleGloss": "洪水淹没预测区域图",
+    "note": "东京都官方洪水风险地图：支撑新宿·大久保周边的防灾回答。"
+  },
+  "tokyo-medical-ledger": {
+    "titleGloss": "医疗机构台账",
+    "note": "医疗机构的结构化台账（全国标准开放数据格式）：支撑「附近医院」类回答。"
+  },
+  "tokyo-foreign-population": {
+    "titleGloss": "外国人人口（按国籍）",
+    "note": "按国籍统计的外国人口：为 MINFO 应优先支持哪些语言提供依据。"
+  },
+  "tokyo-medical-welfare-group": {
+    "titleGloss": "医疗·福祉（目录分类）",
+    "note": "目录中的「医疗·福祉」分类：检索各区诊所和福祉数据的入口（各区命名不一）。"
+  }
+}

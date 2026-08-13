@@ -1,0 +1,38 @@
+{
+  "shinjuku-childcare-facilities": {
+    "titleGloss": "Danh sách cơ sở chăm sóc trẻ ở Shinjuku",
+    "note": "Dữ liệu ảnh chụp chính thức về cơ sở chăm sóc trẻ Shinjuku, không cho biết chỗ trống hay tình trạng tiếp nhận."
+  },
+  "shinjuku-evacuation-sites": {
+    "titleGloss": "Danh sách nơi sơ tán khẩn cấp của quận Shinjuku",
+    "note": "Chạy đến đâu khi động đất hoặc hỏa hoạn: danh sách nơi sơ tán khẩn cấp chính thức của quận."
+  },
+  "shinjuku-public-facilities": {
+    "titleGloss": "Thông tin cơ sở công cộng của quận Shinjuku",
+    "note": "Dữ liệu có cấu trúc về cơ sở công cộng của quận: nền cho câu trả lời 'tôi phải đến quầy nào?'."
+  },
+  "shinjuku-garbage-sorting": {
+    "titleGloss": "Danh sách cách phân loại rác của quận Shinjuku",
+    "note": "Quy tắc phân loại rác dạng dữ liệu: một trong những câu hỏi đời sống được hỏi nhiều nhất."
+  },
+  "tokyo-evacuation-shelters": {
+    "titleGloss": "Bản đồ phòng chống thiên tai Tokyo: danh sách nơi trú ẩn",
+    "note": "Danh sách nơi trú ẩn toàn Tokyo (kèm thông tin tiếp cận): để đối chiếu dữ liệu quận và mở rộng."
+  },
+  "tokyo-flood-forecast": {
+    "titleGloss": "Bản đồ dự báo khu vực ngập lụt",
+    "note": "Bản đồ rủi ro ngập lụt chính thức của Tokyo: căn cứ cho câu trả lời phòng chống thiên tai quanh Shinjuku / Okubo."
+  },
+  "tokyo-medical-ledger": {
+    "titleGloss": "Sổ bộ các cơ sở y tế",
+    "note": "Sổ bộ cơ sở y tế theo chuẩn dữ liệu mở: nền cho tính năng 'tìm nơi khám gần tôi'."
+  },
+  "tokyo-foreign-population": {
+    "titleGloss": "Dân số người nước ngoài (theo quốc tịch)",
+    "note": "Dân số người nước ngoài theo quốc tịch: căn cứ để MINFO ưu tiên ngôn ngữ nào theo từng quận."
+  },
+  "tokyo-medical-welfare-group": {
+    "titleGloss": "Y tế & phúc lợi (nhóm trong danh mục)",
+    "note": "Nhóm 'y tế & phúc lợi' trong danh mục: đường tìm dữ liệu phòng khám và phúc lợi theo từng quận."
+  }
+}

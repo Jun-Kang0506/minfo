@@ -8,6 +8,9 @@ import type { Answer, CategoryId, FeedbackChoice, TopicId } from "@/lib/types";
 import { useLanguage } from "./LanguageProvider";
 import { deriveResultCards, ResultSequence } from "./ResultSequence";
 import { IconArrowRight } from "./icons";
+import { StructuredLookup } from "./StructuredLookup";
+import { isLookupDatasetId } from "@/lib/lookups";
+import { getMessages } from "@/i18n/messages";
 
 type View = "question" | "loading" | "result" | "unsupported" | "structuredLookup";
 type ActiveQuestion = { questionId: string; selectedOptionId?: string };
@@ -172,6 +175,7 @@ export function GuidedFlow({ categoryId, onExit }: { categoryId: CategoryId; onE
 
   if (view === "structuredLookup" && resolution?.datasetCandidateId) {
     const lookup = STRUCTURED_LOOKUP_METADATA[resolution.datasetCandidateId];
+    if (isLookupDatasetId(resolution.datasetCandidateId)) return <StructuredLookup key={resolution.datasetCandidateId} datasetId={resolution.datasetCandidateId} onBack={goBack} onStartOver={onExit} />;
     // Static IDs never trigger a fetch. Missing metadata remains an honest preparing state.
     return <StructuredLookupCard lang={lang} lookup={lookup} headingRef={headingRef} onBack={goBack} onStartOver={onExit} />;
   }
@@ -200,8 +204,10 @@ export function GuidedFlow({ categoryId, onExit }: { categoryId: CategoryId; onE
 }
 
 function StructuredLookupCard({ lang, lookup, headingRef, onBack, onStartOver }: { lang: "en" | "ja" | "zh" | "ko" | "vi" | "ne"; lookup?: typeof STRUCTURED_LOOKUP_METADATA[string]; headingRef: React.RefObject<HTMLHeadingElement | HTMLLegendElement | null>; onBack: () => void; onStartOver: () => void }) {
-  const title = lookup?.display.title[lang] ?? GUIDED_UI.unsupportedTitle[lang];
-  const body = lookup?.display.body[lang] ?? GUIDED_UI.unsupportedNeed[lang];
+  const preparingById = getMessages(lang).lookup.preparing as Record<string, { title: string; body: string }>;
+  const preparing = lookup ? preparingById[lookup.id] : undefined;
+  const title = preparing?.title ?? GUIDED_UI.unsupportedTitle[lang];
+  const body = preparing?.body ?? GUIDED_UI.unsupportedNeed[lang];
   return (
     <section className="rounded-lg border border-line border-l-4 border-l-caution-line bg-card p-5 sm:p-6" aria-live="polite">
       <p className="text-[15px] font-bold tabular-nums text-caution">2 / 2</p>

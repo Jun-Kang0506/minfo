@@ -1,0 +1,31 @@
+{
+  "loading": "正在加载官方快照…",
+  "unavailable": "此官方快照目前不可用。",
+  "count": "处",
+  "more": "再显示 5 条",
+  "location": "使用我的位置",
+  "stop": "停止使用位置",
+  "distance": "大致直线距离",
+  "map": "打开地图",
+  "child": "此快照不显示空位、资格、费用、时间、入园受理或当前运营情况。请直接确认。",
+  "evac": "这是位置数据，不是实时开放或状态。是否适合取决于灾害和官方指示。请另行查看当前官方警报。",
+  "privacy": "您的位置只在此设备上使用，不会发送给 MINFO。",
+  "locationError": "无法使用您的位置。您仍可继续浏览。",
+  "listedFor": "适用灾害",
+  "earthquake": "地震",
+  "large_fire": "大规模火灾",
+  "data": "数据核对日：",
+  "update": "按需更新。快照数据。",
+  "catalog": "关于此数据",
+  "provenance": "Open Data ✓ · Shinjuku City · CC BY 4.0",
+  "preparing": {
+    "shinjuku-childcare-facilities": {
+      "title": "托育设施查询正在准备中。",
+      "body": "使用此查询前，必须确认官方数据集和目录信息。这里不显示实时结果。"
+    },
+    "shinjuku-evacuation-sites": {
+      "title": "避难场所查询正在准备中。",
+      "body": "此准备中的查询不显示实时、开放或最近的避难场所。请查看官方防灾信息了解当前情况。"
+    }
+  }
+}

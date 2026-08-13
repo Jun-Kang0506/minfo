@@ -1,0 +1,41 @@
+{
+  "brand": {
+    "subtitle": "みんなのインフォ",
+    "languageLabel": "ことば"
+  },
+  "nav": {
+    "ask": "質問する",
+    "categories": "カテゴリー",
+    "sources": "情報のもと",
+    "openData": "オープンデータ",
+    "whyMinfo": "MINFOとは",
+    "why": "なぜ新宿？",
+    "backToTop": "上にもどる"
+  },
+  "hero": {
+    "kicker": "公式情報をもとにした案内",
+    "headline": "あなたのことばで、生活の情報を。",
+    "sub": "病院・保険・ごみ・防災。MINFOは日本の生活の情報をやさしく案内します。こたえには、いつも公式の情報のもとがつきます。",
+    "ctaAsk": "MINFOに質問する",
+    "trustSources": "こたえには公式の情報のもとがつきます",
+    "trustLanguages": "6つのことば（やさしい日本語もあります）",
+    "trustPilot": "新宿・大久保から始めます"
+  },
+  "categories": {
+    "title": "何について手伝ってほしいですか？",
+    "sub": "知りたいことをえらんでください。公式情報で案内します。",
+    "tryLabel": "質問のれい"
+  },
+  "ask": {
+    "title": "MINFOに質問する",
+    "sub": "質問を書くか、下のれいをおしてください。",
+    "placeholder": "新宿の生活のことを聞いてください…",
+    "send": "質問する",
+    "examples": "よくある質問",
+    "thinking": "公式の情報をしらべています…",
+    "emptyHint": "ここにこたえが出ます。"
+  },
+  "mascot": {
+    "alt": "MINFOの案内キャラクター"
+  }
+}

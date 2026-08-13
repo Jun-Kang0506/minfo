@@ -1,0 +1,31 @@
+{
+  "loading": "Loading official snapshot…",
+  "unavailable": "This official snapshot is unavailable right now.",
+  "count": "places",
+  "more": "Show 5 more",
+  "location": "Use my location",
+  "stop": "Stop using location",
+  "distance": "Approximate straight-line distance",
+  "map": "Open map",
+  "child": "This snapshot does not show vacancies, eligibility, fees, hours, enrollment acceptance, or current operation. Confirm directly.",
+  "evac": "This is location data, not live opening or status. Suitability depends on the hazard and official instructions. Check current official alerts separately.",
+  "privacy": "Your location stays on this device and is not sent to MINFO.",
+  "locationError": "Could not use your location. You can keep browsing.",
+  "listedFor": "Listed for",
+  "earthquake": "Earthquake",
+  "large_fire": "Large fire",
+  "data": "Data checked:",
+  "update": "Updated as needed. Snapshot data.",
+  "catalog": "About this data",
+  "provenance": "Open Data ✓ · Shinjuku City · CC BY 4.0",
+  "preparing": {
+    "shinjuku-childcare-facilities": {
+      "title": "Childcare facility lookup is being prepared.",
+      "body": "The official dataset and catalog metadata must be verified before this lookup can be used. It does not show live results."
+    },
+    "shinjuku-evacuation-sites": {
+      "title": "Evacuation-site lookup is being prepared.",
+      "body": "This prepared lookup does not show live, open, or nearest sites. For the current situation, check official disaster information."
+    }
+  }
+}

@@ -101,6 +101,11 @@ export interface OpenDataCandidate {
   note: Localized<string>;
 }
 
+export type LookupDatasetId = "shinjuku-childcare-facilities" | "shinjuku-evacuation-sites";
+export interface LookupRecord { id: string; officialId: string; nameJa: string; nameKana?: string; nameLatin?: string; addressJa?: string; facilityTypeJa?: string; latitude?: number; longitude?: number; officialUrl?: string; phone?: string; postal?: string; hazards?: Partial<Record<"flood" | "landslide" | "storm_surge" | "earthquake" | "tsunami" | "large_fire" | "inland_flooding" | "volcano", true>>; }
+export interface LookupSnapshotMetadata { datasetId: LookupDatasetId; titleJa: string; catalogUrl: string; resourceId: string; resourceUrl: string; sourceId: string; license: string; encoding: string; retrievedAt: string; verifiedAt: string; updateFrequency: string; snapshot: true; recordCount: number; sourceColumns: string[]; normalizerVersion: 1; rawSha256: string; }
+export interface LookupSnapshot { metadata: LookupSnapshotMetadata; records: LookupRecord[]; }
+
 /** How an intent can be delivered without implying every source is live. */
 export type DeliveryKind = "static_guidance" | "structured_lookup" | "live_status" | "unsupported";
 export type ClaimLevel = "information" | "current_status" | "recommendation";
@@ -119,7 +124,6 @@ export interface StructuredLookupMetadata {
   verifiedAt: string;
   claimLevel: ClaimLevel;
   deliveryKind: "structured_lookup";
-  display: { title: Localized<string>; body: Localized<string> };
 }
 
 /** Evidence and delivery contract for a stable guided-flow intent. */

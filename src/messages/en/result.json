@@ -1,0 +1,24 @@
+{
+  "answer": {
+    "emergency": "Emergency",
+    "caution": "Please note",
+    "steps": "Recommended next steps",
+    "sources": "Official & public sources",
+    "lowConfidence": "MINFO could not fully confirm this. Please check with an official office.",
+    "disclaimer": "MINFO is a prototype navigator, not a government service. Always confirm important matters with official offices.",
+    "aiBadge": "AI answer by Claude · sources verified locally",
+    "answerLabel": "Answer",
+    "nextStep": "Next step",
+    "whatToDo": "What to do",
+    "officialInformation": "Official information",
+    "resultCardLabel": "Result card"
+  },
+  "feedback": {
+    "question": "Was this helpful?",
+    "helpful": "Helpful",
+    "confusing": "Confusing",
+    "wrong": "Wrong info",
+    "language": "Need my language",
+    "thanks": "Thank you. Your feedback helps improve MINFO."
+  }
+}

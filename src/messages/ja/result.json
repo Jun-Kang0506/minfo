@@ -1,0 +1,24 @@
+{
+  "answer": {
+    "emergency": "緊急",
+    "caution": "ちゅうい",
+    "steps": "つぎにすること",
+    "sources": "公式の情報のもと",
+    "lowConfidence": "たしかなこたえができません。役所でかくにんしてください。",
+    "disclaimer": "MINFOは試作品（プロトタイプ）です。役所のサービスではありません。たいせつなことは役所でかくにんしてください。",
+    "aiBadge": "Claudeの AIこたえ · 情報のもとはかくにん済み",
+    "answerLabel": "こたえ",
+    "nextStep": "次へ",
+    "whatToDo": "すること",
+    "officialInformation": "公式情報",
+    "resultCardLabel": "結果カード"
+  },
+  "feedback": {
+    "question": "このこたえは役に立ちましたか？",
+    "helpful": "役に立った",
+    "confusing": "わかりにくい",
+    "wrong": "まちがっている",
+    "language": "自分のことばがほしい",
+    "thanks": "ありがとうございます。MINFOをよくするためにつかいます。"
+  }
+}

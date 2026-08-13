@@ -1,0 +1,199 @@
+{
+  "questions": {
+    "health": {
+      "title": "What do you need help with?",
+      "options": [
+        {
+          "label": "Find a hospital",
+          "request": "Find a hospital"
+        },
+        {
+          "label": "Understand health insurance",
+          "request": "Understand health insurance"
+        },
+        {
+          "label": "I need urgent help now",
+          "request": "I need urgent help now"
+        }
+      ]
+    },
+    "health_urgent_kind": {
+      "title": "What kind of emergency is it?",
+      "options": [
+        {
+          "label": "Ambulance or fire",
+          "request": "Ambulance or fire"
+        },
+        {
+          "label": "Police or immediate danger",
+          "request": "Police or immediate danger"
+        }
+      ]
+    },
+    "schools": {
+      "title": "What do you need help with?",
+      "options": [
+        {
+          "label": "Enroll in elementary or junior-high school",
+          "request": "Enroll in elementary or junior-high school"
+        },
+        {
+          "label": "Apply for childcare",
+          "request": "Apply for childcare"
+        },
+        {
+          "label": "Find a childcare facility",
+          "request": "Find a childcare facility"
+        }
+      ]
+    },
+    "taxes": {
+      "title": "What do you need help with?",
+      "options": [
+        {
+          "label": "Tax or pension notice, or difficulty paying",
+          "request": "Tax or pension notice, or difficulty paying"
+        },
+        {
+          "label": "Calculate my tax",
+          "request": "Calculate my tax"
+        }
+      ]
+    },
+    "garbage": {
+      "title": "What do you need help with?",
+      "options": [
+        {
+          "label": "Sorting, collection days, or oversized garbage",
+          "request": "Sorting, collection days, or oversized garbage"
+        }
+      ]
+    },
+    "disaster": {
+      "title": "What do you need help with?",
+      "options": [
+        {
+          "label": "Earthquake preparation and official alerts",
+          "request": "Earthquake preparation and official alerts"
+        },
+        {
+          "label": "Typhoon and heavy-rain preparedness",
+          "request": "Typhoon and heavy-rain preparedness"
+        },
+        {
+          "label": "Evacuation sites",
+          "request": "Evacuation sites"
+        }
+      ]
+    },
+    "japanese": {
+      "title": "What do you need help with?",
+      "options": [
+        {
+          "label": "Find a Japanese class",
+          "request": "Find a Japanese class"
+        },
+        {
+          "label": "Easy Japanese",
+          "request": "Easy Japanese"
+        }
+      ]
+    },
+    "japanese_class_need": {
+      "title": "What kind of class are you looking for?",
+      "options": [
+        {
+          "label": "Beginner class",
+          "request": "Beginner class"
+        },
+        {
+          "label": "Evening class",
+          "request": "Evening class"
+        },
+        {
+          "label": "Class in the Okubo area",
+          "request": "Class in the Okubo area"
+        }
+      ]
+    },
+    "housing": {
+      "title": "What do you need help with?",
+      "options": [
+        {
+          "label": "Moving registration",
+          "request": "Moving registration"
+        },
+        {
+          "label": "Renting, contracts, or landlord problems",
+          "request": "Renting, contracts, or landlord problems"
+        },
+        {
+          "label": "Public housing",
+          "request": "Public housing"
+        }
+      ]
+    },
+    "consultation": {
+      "title": "What do you need help with?",
+      "options": [
+        {
+          "label": "Daily-life help",
+          "request": "Daily-life help"
+        },
+        {
+          "label": "Understand an official letter",
+          "request": "Understand an official letter"
+        },
+        {
+          "label": "Residence card",
+          "request": "Residence card"
+        },
+        {
+          "label": "Lost wallet",
+          "request": "Lost wallet"
+        },
+        {
+          "label": "Open a bank account",
+          "request": "Open a bank account"
+        }
+      ]
+    },
+    "food-prayer": {
+      "title": "What do you need help with?",
+      "options": [
+        {
+          "label": "Halal food",
+          "request": "Halal food"
+        },
+        {
+          "label": "Prayer facilities",
+          "request": "Prayer facilities"
+        }
+      ]
+    },
+    "emergency": {
+      "title": "What kind of emergency is it?",
+      "options": [
+        {
+          "label": "Ambulance or fire",
+          "request": "Ambulance or fire"
+        },
+        {
+          "label": "Police or immediate danger",
+          "request": "Police or immediate danger"
+        }
+      ]
+    }
+  },
+  "ui": {
+    "next": "Next",
+    "back": "Back",
+    "startOver": "Start over",
+    "loading": "Checking trusted sources…",
+    "unsupportedTitle": "Information for this topic is being prepared.",
+    "unsupportedNeed": "You selected: {need}",
+    "consultation": "Find a consultation desk",
+    "structuredLookupTitle": "Childcare facility lookup is being prepared.",
+    "structuredLookupBody": "The official dataset and catalog metadata must be verified before this lookup can be used. It does not show live results."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "answer": {
+    "emergency": "긴급",
+    "caution": "유의하세요",
+    "steps": "권장 다음 단계",
+    "sources": "공식·공공 출처",
+    "lowConfidence": "MINFO가 완전히 확인하지 못했습니다. 공식 기관에 확인하세요.",
+    "disclaimer": "MINFO는 프로토타입이며 정부 서비스가 아닙니다. 중요한 사항은 반드시 공식 기관에 확인하세요.",
+    "aiBadge": "Claude AI 답변 · 출처는 로컬에서 검증",
+    "answerLabel": "답변",
+    "nextStep": "다음 단계",
+    "whatToDo": "해야 할 일",
+    "officialInformation": "공식 정보",
+    "resultCardLabel": "결과 카드"
+  },
+  "feedback": {
+    "question": "이 답변이 도움이 되었나요?",
+    "helpful": "도움됨",
+    "confusing": "이해 어려움",
+    "wrong": "잘못된 정보",
+    "language": "내 언어 필요",
+    "thanks": "감사합니다. 피드백은 MINFO 개선에 사용됩니다."
+  }
+}
