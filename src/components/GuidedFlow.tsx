@@ -4,9 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import { GUIDED_FLOWS, GUIDED_QUESTIONS, GUIDED_UI } from "@/lib/data/guided-flow";
 import { STRUCTURED_LOOKUP_METADATA } from "@/lib/data/intent-delivery";
 import { localAnswerEngine } from "@/lib/engine/localAnswerEngine";
-import type { Answer, CategoryId, TopicId } from "@/lib/types";
+import type { Answer, CategoryId, FeedbackChoice, TopicId } from "@/lib/types";
 import { useLanguage } from "./LanguageProvider";
-import { AnswerCard } from "./AnswerCard";
+import { deriveResultCards, ResultSequence } from "./ResultSequence";
 import { IconArrowRight } from "./icons";
 
 type View = "question" | "loading" | "result" | "unsupported" | "structuredLookup";
@@ -35,20 +35,26 @@ function LoadingCard({ label }: { label: string }) {
 }
 
 export function GuidedFlow({ categoryId, onExit }: { categoryId: CategoryId; onExit: () => void }) {
-  const { lang, t } = useLanguage();
+  const { lang } = useLanguage();
   const [history, setHistory] = useState<ActiveQuestion[]>([
     { questionId: GUIDED_FLOWS[categoryId].startQuestionId },
   ]);
   const [view, setView] = useState<View>("question");
   const [answer, setAnswer] = useState<Answer | null>(null);
   const [resolution, setResolution] = useState<SemanticResolution | null>(null);
+  const [resultCardIndex, setResultCardIndex] = useState(0);
+  const [feedback, setFeedback] = useState<FeedbackChoice | null>(null);
   const headingRef = useRef<HTMLHeadingElement | HTMLLegendElement | null>(null);
   const hasFocused = useRef(false);
+  const latestResolution = useRef<SemanticResolution | null>(null);
+  const latestLang = useRef(lang);
 
   const active = history[history.length - 1];
   const question = GUIDED_QUESTIONS[active.questionId];
   const selected = question.options.find((option) => option.id === active.selectedOptionId);
+  const semanticKey = resolution?.topicId ? [resolution.questionId, resolution.optionId, resolution.intentId, resolution.topicId].join(":") : null;
 
+  useEffect(() => { latestResolution.current = resolution; latestLang.current = lang; }, [lang, resolution]);
   useEffect(() => {
     if (!hasFocused.current) { hasFocused.current = true; return; }
     headingRef.current?.focus({ preventScroll: true });
@@ -68,6 +74,9 @@ export function GuidedFlow({ categoryId, onExit }: { categoryId: CategoryId; onE
     const controller = new AbortController();
     let current = true;
     const request = resolvedOption.request[lang];
+    const capturedKey = semanticKey;
+    const capturedLang = lang;
+    const isCurrent = () => current && latestLang.current === capturedLang && latestResolution.current?.topicId && [latestResolution.current.questionId, latestResolution.current.optionId, latestResolution.current.intentId, latestResolution.current.topicId].join(":") === capturedKey;
 
     void (async () => {
       try {
@@ -79,14 +88,14 @@ export function GuidedFlow({ categoryId, onExit }: { categoryId: CategoryId; onE
         });
         if (!res.ok) throw new Error("Answer request failed");
         const nextAnswer = (await res.json()) as Answer;
-        if (current) {
+        if (isCurrent()) {
           setAnswer(nextAnswer);
           setView("result");
         }
       } catch {
-        if (!current || controller.signal.aborted) return;
+        if (!isCurrent() || controller.signal.aborted) return;
         const nextAnswer = await localAnswerEngine.ask({ text: request, topicId: resolution.topicId, lang });
-        if (current) {
+        if (isCurrent()) {
           setAnswer(nextAnswer);
           setView("result");
         }
@@ -97,7 +106,7 @@ export function GuidedFlow({ categoryId, onExit }: { categoryId: CategoryId; onE
       current = false;
       controller.abort();
     };
-  }, [lang, resolution, resolvedOption]);
+  }, [lang, resolution, resolvedOption, semanticKey]);
 
   const advance = () => {
     if (!selected) return;
@@ -117,6 +126,8 @@ export function GuidedFlow({ categoryId, onExit }: { categoryId: CategoryId; onE
       return;
     }
     setAnswer(null);
+    setResultCardIndex(0);
+    setFeedback(null);
     setView("loading");
     setResolution({ questionId: question.id, optionId: selected.id, intentId: selected.intentId, topicId: outcome.topicId });
   };
@@ -137,7 +148,9 @@ export function GuidedFlow({ categoryId, onExit }: { categoryId: CategoryId; onE
   if (view === "loading") return <LoadingCard label={GUIDED_UI.loading[lang]} />;
 
   if (view === "result" && answer?.lang === lang) {
-    return <div aria-live="polite"><h2 ref={(node) => { headingRef.current = node; }} tabIndex={-1} className="mb-3 text-[24px] font-bold tracking-tight text-ink">2 / 2 <span className="sr-only">{t.answer.answerLabel}</span></h2><AnswerCard answer={answer} /><FlowActions lang={lang} onBack={goBack} onStartOver={onExit} /></div>;
+    const cards = deriveResultCards(answer);
+    const index = Math.min(resultCardIndex, cards.length - 1);
+    return <ResultSequence answer={answer} index={index} feedback={feedback} onFeedback={setFeedback} onBack={() => { if (index > 0) setResultCardIndex(index - 1); else goBack(); }} onNext={() => setResultCardIndex(index + 1)} onStartOver={onExit} />;
   }
 
   if (view === "result") return <LoadingCard label={GUIDED_UI.loading[lang]} />;
@@ -149,7 +162,7 @@ export function GuidedFlow({ categoryId, onExit }: { categoryId: CategoryId; onE
         <h2 ref={(node) => { headingRef.current = node; }} tabIndex={-1} className="mt-3 text-[24px] font-bold tracking-tight text-ink">{GUIDED_UI.unsupportedTitle[lang]}</h2>
         <p className="mt-4 text-[18px] leading-relaxed text-ink">{GUIDED_UI.unsupportedNeed[lang].replace("{need}", resolvedOption.label[lang])}</p>
         <div className="mt-6 grid gap-3 sm:flex sm:flex-wrap">
-          <button onClick={() => { setAnswer(null); setView("loading"); setResolution((current) => current ? { ...current, topicId: "consultation" } : current); }} className="pressable min-h-12 rounded-sm bg-moss px-5 text-[16px] font-bold text-white hover:bg-moss-deep">{GUIDED_UI.consultation[lang]}</button>
+          <button onClick={() => { setAnswer(null); setResultCardIndex(0); setFeedback(null); setView("loading"); setResolution((current) => current ? { ...current, topicId: "consultation" } : current); }} className="pressable min-h-12 rounded-sm bg-moss px-5 text-[16px] font-bold text-white hover:bg-moss-deep">{GUIDED_UI.consultation[lang]}</button>
           <button onClick={goBack} className="pressable min-h-12 rounded-sm border border-line bg-card px-5 text-[16px] font-bold text-ink hover:border-moss">{GUIDED_UI.back[lang]}</button>
           <button onClick={onExit} className="pressable min-h-12 rounded-sm px-3 text-[16px] font-bold text-moss hover:underline">{GUIDED_UI.startOver[lang]}</button>
         </div>
@@ -200,8 +213,4 @@ function StructuredLookupCard({ lang, lookup, headingRef, onBack, onStartOver }:
       </div>
     </section>
   );
-}
-
-function FlowActions({ lang, onBack, onStartOver }: { lang: "en" | "ja" | "zh" | "ko" | "vi" | "ne"; onBack: () => void; onStartOver: () => void }) {
-  return <div className="mt-4 flex flex-wrap items-center justify-between gap-3"><button onClick={onBack} className="pressable min-h-12 rounded-sm px-3 text-[16px] font-bold text-moss hover:underline">{GUIDED_UI.back[lang]}</button><button onClick={onStartOver} className="pressable min-h-12 rounded-sm border border-line bg-card px-5 text-[16px] font-bold text-ink hover:border-moss">{GUIDED_UI.startOver[lang]}</button></div>;
 }

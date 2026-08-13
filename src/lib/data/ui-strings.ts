@@ -76,6 +76,10 @@ export interface UIStrings {
     disclaimer: string;
     aiBadge: string;
     answerLabel: string;
+    nextStep: string;
+    whatToDo: string;
+    officialInformation: string;
+    resultCardLabel: string;
   };
   feedback: {
     question: string;
@@ -193,6 +197,7 @@ const en: UIStrings = {
     disclaimer: "MINFO is a prototype navigator, not a government service. Always confirm important matters with official offices.",
     aiBadge: "AI answer by Claude · sources verified locally",
     answerLabel: "Answer",
+    nextStep: "Next step", whatToDo: "What to do", officialInformation: "Official information", resultCardLabel: "Result card",
   },
   feedback: {
     question: "Was this helpful?",
@@ -385,6 +390,7 @@ const ja: UIStrings = {
     disclaimer: "MINFOは試作品（プロトタイプ）です。役所のサービスではありません。たいせつなことは役所でかくにんしてください。",
     aiBadge: "Claudeの AIこたえ · 情報のもとはかくにん済み",
     answerLabel: "こたえ",
+    nextStep: "次へ", whatToDo: "すること", officialInformation: "公式情報", resultCardLabel: "結果カード",
   },
   feedback: {
     question: "このこたえは役に立ちましたか？",
@@ -577,6 +583,7 @@ const zh: UIStrings = {
     disclaimer: "MINFO 是原型产品，不是政府服务。重要事项请务必向官方窗口确认。",
     aiBadge: "由 Claude 生成的 AI 回答 · 来源经本地核验",
     answerLabel: "回答",
+    nextStep: "下一步", whatToDo: "该怎么做", officialInformation: "官方信息", resultCardLabel: "结果卡片",
   },
   feedback: {
     question: "这个回答有帮助吗？",
@@ -769,6 +776,7 @@ const ko: UIStrings = {
     disclaimer: "MINFO는 프로토타입이며 정부 서비스가 아닙니다. 중요한 사항은 반드시 공식 기관에 확인하세요.",
     aiBadge: "Claude AI 답변 · 출처는 로컬에서 검증",
     answerLabel: "답변",
+    nextStep: "다음 단계", whatToDo: "해야 할 일", officialInformation: "공식 정보", resultCardLabel: "결과 카드",
   },
   feedback: {
     question: "이 답변이 도움이 되었나요?",
@@ -961,6 +969,7 @@ const vi: UIStrings = {
     disclaimer: "MINFO là bản thử nghiệm, không phải dịch vụ của chính phủ. Việc quan trọng hãy luôn xác nhận với cơ quan chính thức.",
     aiBadge: "Câu trả lời AI của Claude · nguồn được xác minh cục bộ",
     answerLabel: "Trả lời",
+    nextStep: "Bước tiếp theo", whatToDo: "Việc cần làm", officialInformation: "Thông tin chính thức", resultCardLabel: "Thẻ kết quả",
   },
   feedback: {
     question: "Câu trả lời này có hữu ích không?",
@@ -1153,6 +1162,7 @@ const ne: UIStrings = {
     disclaimer: "MINFO प्रोटोटाइप हो, सरकारी सेवा होइन। महत्त्वपूर्ण कुरा सधैं आधिकारिक कार्यालयमा पुष्टि गर्नुहोस्।",
     aiBadge: "Claude को AI उत्तर · स्रोत स्थानीय रूपमा प्रमाणित",
     answerLabel: "उत्तर",
+    nextStep: "अर्को चरण", whatToDo: "के गर्ने", officialInformation: "आधिकारिक जानकारी", resultCardLabel: "नतिजा कार्ड",
   },
   feedback: {
     question: "यो उत्तर उपयोगी थियो?",

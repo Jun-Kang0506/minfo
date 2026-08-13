@@ -5,12 +5,13 @@ import type { FeedbackChoice } from "@/lib/types";
 import { useLanguage } from "./LanguageProvider";
 import { IconCheck } from "./icons";
 
-export function FeedbackButtons() {
+export function FeedbackButtons({ value, onChange }: { value?: FeedbackChoice | null; onChange?: (choice: FeedbackChoice) => void }) {
   const { t } = useLanguage();
   // Feedback lives in local state only for v1 — no tracking, no backend.
   const [given, setGiven] = useState<FeedbackChoice | null>(null);
 
-  if (given) {
+  const selected = value ?? given;
+  if (selected) {
     return (
       <p className="animate-fade flex items-center gap-2 text-[14px] font-semibold text-moss" role="status">
         <IconCheck className="h-4 w-4" />
@@ -33,8 +34,8 @@ export function FeedbackButtons() {
         {options.map((opt) => (
           <button
             key={opt.choice}
-            onClick={() => setGiven(opt.choice)}
-            className="pressable rounded-sm border border-line bg-paper px-3.5 py-1.5 text-[13px] font-semibold text-ink transition-colors hover:border-moss hover:text-moss"
+            onClick={() => { setGiven(opt.choice); onChange?.(opt.choice); }}
+            className="pressable min-h-12 rounded-sm border border-line bg-paper px-3.5 py-1.5 text-[13px] font-semibold text-ink transition-colors hover:border-moss hover:text-moss"
           >
             {opt.label}
           </button>
