@@ -224,6 +224,25 @@ const ANSWER_METADATA: Omit<AnswerTemplate, "content">[] = [
     ]
   },
   {
+    "id": "tax-estimate",
+    "categoryId": "taxes",
+    "safetyLevel": "caution",
+    "keywords": [
+      "tax calculation",
+      "tax estimate",
+      "resident tax calculation",
+      "住民税 計算",
+      "住民税 シミュレーション",
+      "居民税 试算",
+      "주민세 계산",
+      "tính thuế cư trú",
+      "निवासी कर गणना"
+    ],
+    "sourceIds": [
+      "shinjuku-resident-tax-simulator"
+    ]
+  },
+  {
     "id": "housing",
     "categoryId": "housing",
     "safetyLevel": "caution",

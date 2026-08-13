@@ -13,7 +13,7 @@ export function FeedbackButtons({ value, onChange }: { value?: FeedbackChoice | 
   const selected = value ?? given;
   if (selected) {
     return (
-      <p className="animate-fade flex items-center gap-2 text-[14px] font-semibold text-moss" role="status">
+      <p className="animate-fade flex items-center gap-2 text-sm font-semibold text-moss" role="status">
         <IconCheck className="h-4 w-4" />
         {t.feedback.thanks}
       </p>
@@ -29,13 +29,13 @@ export function FeedbackButtons({ value, onChange }: { value?: FeedbackChoice | 
 
   return (
     <div>
-      <p className="text-[13px] font-semibold text-ink-soft">{t.feedback.question}</p>
+      <p className="text-sm font-semibold text-ink-soft">{t.feedback.question}</p>
       <div className="mt-2 flex flex-wrap gap-2">
         {options.map((opt) => (
           <button
             key={opt.choice}
             onClick={() => { setGiven(opt.choice); onChange?.(opt.choice); }}
-            className="pressable min-h-12 rounded-sm border border-line bg-paper px-3.5 py-1.5 text-[13px] font-semibold text-ink transition-colors hover:border-moss hover:text-moss"
+            className="pressable min-h-12 rounded-sm border border-line bg-paper px-3.5 py-1.5 text-sm font-semibold text-ink transition-colors hover:border-moss hover:text-moss"
           >
             {opt.label}
           </button>

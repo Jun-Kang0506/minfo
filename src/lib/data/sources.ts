@@ -152,6 +152,14 @@ const SOURCE_METADATA: SourceMetadata[] = [
     ]
   },
   {
+    "id": "shinjuku-resident-tax-simulator",
+    "titleJa": "新宿区 特別区民税・都民税（住民税）税額シミュレーション",
+    "url": "https://www.city.shinjuku.lg.jp/hoken/zeimu01_000001_00034.html",
+    "categories": [
+      "taxes"
+    ]
+  },
+  {
     "id": "tokyo-opendata",
     "titleJa": "東京都オープンデータカタログ",
     "url": "https://portal.data.metro.tokyo.lg.jp/",

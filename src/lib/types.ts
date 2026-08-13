@@ -1,7 +1,7 @@
 // Shared types for MINFO — keep this file dependency-free so both
 // server (API route / engines) and client components can import it.
 
-export type LanguageCode = "en" | "ja" | "zh" | "ko" | "vi" | "ne";
+export type LanguageCode = "en" | "ja" | "zh" | "ko" | "vi" | "ne" | "tl" | "bn";
 
 export type Localized<T> = Record<LanguageCode, T>;
 
@@ -31,6 +31,7 @@ export type TopicId =
   | "japanese-learning"
   | "consultation"
   | "tax"
+  | "tax-estimate"
   | "housing"
   | "residence-card"
   | "police"
@@ -102,8 +103,12 @@ export interface OpenDataCandidate {
 }
 
 export type LookupDatasetId = "shinjuku-childcare-facilities" | "shinjuku-evacuation-sites";
-export interface LookupRecord { id: string; officialId: string; nameJa: string; nameKana?: string; nameLatin?: string; addressJa?: string; facilityTypeJa?: string; latitude?: number; longitude?: number; officialUrl?: string; phone?: string; postal?: string; hazards?: Partial<Record<"flood" | "landslide" | "storm_surge" | "earthquake" | "tsunami" | "large_fire" | "inland_flooding" | "volcano", true>>; }
-export interface LookupSnapshotMetadata { datasetId: LookupDatasetId; titleJa: string; catalogUrl: string; resourceId: string; resourceUrl: string; sourceId: string; license: string; encoding: string; retrievedAt: string; verifiedAt: string; updateFrequency: string; snapshot: true; recordCount: number; sourceColumns: string[]; normalizerVersion: 1; rawSha256: string; }
+export type LookupNameStatus = "official_source" | "verified_current" | "provisional" | "excluded";
+export type DirectoryAttribute = string | number | boolean | string[];
+/** A common record shape for current and future facility lookup datasets. */
+export interface LookupRecord { id: string; datasetId: LookupDatasetId; sourceId: string; officialId: string; /** Exact official dataset value retained for signs/maps. */ sourceName: string; /** Trusted source Latin name when supplied, otherwise sourceName. */ displayName: string; nameStatus: LookupNameStatus; nameKana?: string; nameLatin?: string; address?: string; type?: string; subtype?: string; ownership?: string; officialUrl?: string; latitude?: number; longitude?: number; phone?: string; postal?: string; attributes?: Record<string, DirectoryAttribute>; hazards?: Partial<Record<"flood" | "landslide" | "storm_surge" | "earthquake" | "tsunami" | "large_fire" | "inland_flooding" | "volcano", true>>; }
+export interface ExcludedLookupRecord { officialId: string; sourceName: string; nameStatus: "excluded"; reason: "unverified_provisional_name"; }
+export interface LookupSnapshotMetadata { datasetId: LookupDatasetId; titleJa: string; catalogUrl: string; resourceId: string; resourceUrl: string; sourceId: string; license: string; encoding: string; retrievedAt: string; verifiedAt: string; updateFrequency: string; snapshot: true; /** User-facing records after deterministic exclusions. */ recordCount: number; sourceRecordCount: number; excludedRecordCount: number; excludedProvisionalRecordCount: number; excludedRecords: ExcludedLookupRecord[]; sourceColumns: string[]; normalizerVersion: 3; rawSha256: string; }
 export interface LookupSnapshot { metadata: LookupSnapshotMetadata; records: LookupRecord[]; }
 
 /** How an intent can be delivered without implying every source is live. */

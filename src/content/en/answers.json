@@ -215,4 +215,5 @@
     ],
     "safety": "For anything urgent or official, please confirm directly with the relevant public office."
   }
+  ,"tax-estimate":{"direct":"Use Shinjuku City's official resident-tax simulator for an estimate. MINFO does not calculate tax.","steps":["Use the official simulator.","The estimate depends on income and deductions.","Treat the result as an estimate, not a final tax decision."],"safety":"Some special situations may not be handled. Do not enter sensitive information into MINFO."}
 }

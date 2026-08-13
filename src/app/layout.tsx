@@ -18,7 +18,7 @@ const notoSansJP = Noto_Sans_JP({
 export const metadata: Metadata = {
   title: "MINFO｜みんなのインフォ · Reliable life information, in your language",
   description:
-    "Multilingual Information Navigator for Foreign-Origin Residents. Source-grounded daily-life guidance in 6 languages, starting from Shinjuku / Okubo, Tokyo.",
+    "Multilingual Information Navigator for Foreign-Origin Residents. Source-grounded daily-life guidance in 8 languages, starting from Shinjuku / Okubo, Tokyo.",
 };
 
 export default function RootLayout({

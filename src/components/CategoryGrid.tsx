@@ -42,7 +42,7 @@ export function CategoryGrid({
                 strokeWidth={2}
               />
               <span className="min-w-0">
-                <span className={`block text-[15px] font-bold leading-snug ${emergency ? "text-danger" : "text-ink"}`}>
+                <span className={`block text-base font-bold leading-snug ${emergency ? "text-danger" : "text-ink"}`}>
                   {cat.title[lang]}
                 </span>
               </span>

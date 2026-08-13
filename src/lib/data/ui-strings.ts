@@ -1,4 +1,4 @@
-import type { Localized } from "../types";
+import type { LanguageCode, Localized } from "../types";
 
 interface RoadmapItem {
   title: string;
@@ -37,6 +37,7 @@ export interface UIStrings {
     /** Accessible label for the language selector. */
     languageLabel: string;
   };
+  textSize: { label: string; standard: string; large: string };
   nav: {
     ask: string;
     categories: string;
@@ -78,6 +79,7 @@ export interface UIStrings {
     answerLabel: string;
     nextStep: string;
     whatToDo: string;
+    important: string;
     officialInformation: string;
     resultCardLabel: string;
   };
@@ -155,7 +157,7 @@ export interface UIStrings {
 
 import { MESSAGES } from "@/i18n/messages";
 
-const locales = ["en", "ja", "zh", "ko", "vi", "ne"] as const;
+const locales: LanguageCode[] = ["en", "ja", "zh", "ko", "vi", "ne", "tl", "bn"];
 export const UI_STRINGS: Localized<UIStrings> = Object.fromEntries(
   locales.map((locale) => {
     const messages = MESSAGES[locale];

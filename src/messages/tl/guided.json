@@ -1,1 +1,199 @@
-{}
+{
+  "questions": {
+    "health": {
+      "title": "Ano ang kailangan mo ng tulong?",
+      "options": [
+        {
+          "label": "Maghanap ng ospital",
+          "request": "Maghanap ng ospital"
+        },
+        {
+          "label": "Unawain ang segurong pangkalusugan",
+          "request": "Unawain ang segurong pangkalusugan"
+        },
+        {
+          "label": "Kailangan ko ng agarang tulong ngayon",
+          "request": "Kailangan ko ng agarang tulong ngayon"
+        }
+      ]
+    },
+    "health_urgent_kind": {
+      "title": "Anong klaseng emergency ito?",
+      "options": [
+        {
+          "label": "Ambulansya o sunog",
+          "request": "Ambulansya o sunog"
+        },
+        {
+          "label": "Pulis o agarang panganib",
+          "request": "Pulis o agarang panganib"
+        }
+      ]
+    },
+    "schools": {
+      "title": "Ano ang kailangan mo ng tulong?",
+      "options": [
+        {
+          "label": "Mag-enroll sa elementarya o junior-high school",
+          "request": "Mag-enroll sa elementarya o junior-high school"
+        },
+        {
+          "label": "Mag-apply para sa pangangalaga ng bata",
+          "request": "Mag-apply para sa pangangalaga ng bata"
+        },
+        {
+          "label": "Maghanap ng pasilidad sa pangangalaga ng bata",
+          "request": "Maghanap ng pasilidad sa pangangalaga ng bata"
+        }
+      ]
+    },
+    "taxes": {
+      "title": "Ano ang kailangan mo ng tulong?",
+      "options": [
+        {
+          "label": "Paunawa sa buwis o pensiyon, o kahirapan sa pagbabayad",
+          "request": "Paunawa sa buwis o pensiyon, o kahirapan sa pagbabayad"
+        },
+        {
+          "label": "Kalkulahin ang aking buwis",
+          "request": "Kalkulahin ang aking buwis"
+        }
+      ]
+    },
+    "garbage": {
+      "title": "Ano ang kailangan mo ng tulong?",
+      "options": [
+        {
+          "label": "Pag-uuri, araw ng koleksyon, o malalaking basura",
+          "request": "Pag-uuri, araw ng koleksyon, o malalaking basura"
+        }
+      ]
+    },
+    "disaster": {
+      "title": "Ano ang kailangan mo ng tulong?",
+      "options": [
+        {
+          "label": "Paghahanda sa lindol at opisyal na mga alerto",
+          "request": "Paghahanda sa lindol at opisyal na mga alerto"
+        },
+        {
+          "label": "Paghahanda sa bagyo at malakas na ulan",
+          "request": "Paghahanda sa bagyo at malakas na ulan"
+        },
+        {
+          "label": "Mga lugar ng paglikas",
+          "request": "Mga lugar ng paglikas"
+        }
+      ]
+    },
+    "japanese": {
+      "title": "Ano ang kailangan mo ng tulong?",
+      "options": [
+        {
+          "label": "Maghanap ng Japanese class",
+          "request": "Maghanap ng Japanese class"
+        },
+        {
+          "label": "Madaling Hapon",
+          "request": "Madaling Hapon"
+        }
+      ]
+    },
+    "japanese_class_need": {
+      "title": "Anong klaseng klase ang hinahanap mo?",
+      "options": [
+        {
+          "label": "Klase para sa baguhan",
+          "request": "Klase para sa baguhan"
+        },
+        {
+          "label": "Panggabing klase",
+          "request": "Panggabing klase"
+        },
+        {
+          "label": "Klase sa lugar ng Okubo",
+          "request": "Klase sa lugar ng Okubo"
+        }
+      ]
+    },
+    "housing": {
+      "title": "Ano ang kailangan mo ng tulong?",
+      "options": [
+        {
+          "label": "Paglilipat ng pagpaparehistro",
+          "request": "Paglipat ng pagpaparehistro"
+        },
+        {
+          "label": "Mga problema sa pag-upa, kontrata, o panginoong maylupa",
+          "request": "Mga problema sa pag-upa, kontrata, o panginoong maylupa"
+        },
+        {
+          "label": "Pampublikong pabahay",
+          "request": "Pampublikong pabahay"
+        }
+      ]
+    },
+    "consultation": {
+      "title": "Ano ang kailangan mo ng tulong?",
+      "options": [
+        {
+          "label": "Pang-araw-araw na tulong sa buhay",
+          "request": "Pang-araw-araw na tulong sa buhay"
+        },
+        {
+          "label": "Unawain ang isang opisyal na liham",
+          "request": "Unawain ang isang opisyal na liham"
+        },
+        {
+          "label": "Card ng paninirahan",
+          "request": "Card ng paninirahan"
+        },
+        {
+          "label": "Nawala ang wallet",
+          "request": "Nawala ang wallet"
+        },
+        {
+          "label": "Magbukas ng bank account",
+          "request": "Magbukas ng bank account"
+        }
+      ]
+    },
+    "food-prayer": {
+      "title": "Ano ang kailangan mo ng tulong?",
+      "options": [
+        {
+          "label": "Halal na pagkain",
+          "request": "Halal na pagkain"
+        },
+        {
+          "label": "Mga pasilidad ng panalangin",
+          "request": "Mga pasilidad ng panalangin"
+        }
+      ]
+    },
+    "emergency": {
+      "title": "Anong klaseng emergency ito?",
+      "options": [
+        {
+          "label": "Ambulansya o sunog",
+          "request": "Ambulansya o sunog"
+        },
+        {
+          "label": "Pulis o agarang panganib",
+          "request": "Pulis o agarang panganib"
+        }
+      ]
+    }
+  },
+  "ui": {
+    "next": "Susunod",
+    "back": "Bumalik",
+    "startOver": "Magsimula muli",
+    "loading": "Sinusuri ang mga pinagkakatiwalaang mapagkukunan...",
+    "unsupportedTitle": "Inihahanda ang impormasyon para sa paksang ito.",
+    "unsupportedNeed": "Pinili mo: {need}",
+    "consultation": "Maghanap ng consultation desk",
+    "structuredLookupTitle": "Inihahanda ang paghahanap sa pasilidad ng pangangalaga ng bata.",
+    "structuredLookupBody": "Dapat ma-verify ang opisyal na dataset at metadata ng catalog bago magamit ang paghahanap na ito. Hindi ito nagpapakita ng mga live na resulta."
+  }
+}

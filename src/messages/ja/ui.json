@@ -3,6 +3,7 @@
     "subtitle": "みんなのインフォ",
     "languageLabel": "ことば"
   },
+  "textSize": { "label": "文字の大きさ", "standard": "標準", "large": "大きい" },
   "nav": {
     "ask": "質問する",
     "categories": "カテゴリー",
@@ -18,7 +19,7 @@
     "sub": "病院・保険・ごみ・防災。MINFOは日本の生活の情報をやさしく案内します。こたえには、いつも公式の情報のもとがつきます。",
     "ctaAsk": "MINFOに質問する",
     "trustSources": "こたえには公式の情報のもとがつきます",
-    "trustLanguages": "6つのことば（やさしい日本語もあります）",
+    "trustLanguages": "8つのことば（やさしい日本語もあります）",
     "trustPilot": "新宿・大久保から始めます"
   },
   "categories": {

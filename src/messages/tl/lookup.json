@@ -1,1 +1,39 @@
-{}
+{
+  "loading": "Nilo-load ang opisyal na snapshot...",
+  "unavailable": "Ang opisyal na snapshot na ito ay hindi magagamit sa ngayon.",
+  "count": "mga lugar",
+  "more": "Magpakita ng 5 pa",
+  "location": "Gamitin ang aking lokasyon",
+  "stop": "Ihinto ang paggamit ng lokasyon",
+  "distance": "Tinatayang straight-line na distansya",
+  "map": "Buksan ang mapa",
+  "child": "Ang snapshot na ito ay hindi nagpapakita ng mga bakante, pagiging kwalipikado, mga bayarin, oras, pagtanggap sa pagpapatala, o kasalukuyang operasyon. Direktang kumpirmahin.",
+  "evac": "Ito ay data ng lokasyon, hindi live na pagbubukas o status. Ang pagiging angkop ay nakasalalay sa panganib at opisyal na mga tagubilin. Suriin nang hiwalay ang mga kasalukuyang opisyal na alerto.",
+  "privacy": "Nananatili ang iyong lokasyon sa device na ito at hindi ipinapadala sa MINFO.",
+  "locationError": "Hindi magamit ang iyong lokasyon. Maaari kang magpatuloy sa pagba-browse.",
+  "listedFor": "Nakalista para sa",
+  "earthquake": "Lindol",
+  "large_fire": "Malaking apoy",
+  "data": "Sinuri ang data:",
+  "update": "Na-update kung kinakailangan. Data ng snapshot.",
+  "catalog": "Tungkol sa data na ito",
+  "provenance": "Open Data ✓ · Shinjuku City · CC BY 4.0",
+  "addressLabel": "Address",
+  "typeLabel": "Uri",
+  "attributionLabel": "Pagpapatungkol sa Open Data",
+  "snapshotLabel": "Snapshot na data",
+  "sourceLabel": "Pinagmulan",
+  "licenseLabel": "Lisensya",
+  "facilityTypes": { "childrens_center": "Sentro para sa mga bata", "municipal_kindergarten": "Kindergarten ng lungsod", "municipal_licensed_nursery": "Lisensiyadong nursery ng lungsod", "municipal_certified_childcare_center": "Sertipikadong childcare center ng lungsod", "workplace_childcare": "Childcare center sa trabaho", "childcare_room": "Silid ng pangangalaga ng bata", "family_daycare": "Pangangalaga ng bata sa tahanan", "after_school_club": "Klub para sa mga bata pagkatapos ng klase", "private_kindergarten": "Pribadong kindergarten", "private_licensed_nursery": "Pribadong lisensiyadong nursery", "private_certified_childcare_center": "Pribadong sertipikadong childcare center", "evacuation_site": "Lugar ng paglikas" },
+  "datasetNotes": { "childcare": "Ang snapshot na ito ay hindi nagpapakita ng mga bakante, pagiging kwalipikado, mga bayarin, oras, pagtanggap sa pagpapatala, o kasalukuyang operasyon. Direktang kumpirmahin.", "evacuation": "Ito ay data ng lokasyon, hindi live na pagbubukas o status. Ang pagiging angkop ay nakasalalay sa panganib at opisyal na mga tagubilin. Suriin nang hiwalay ang mga kasalukuyang opisyal na alerto." },
+  "preparing": {
+    "shinjuku-childcare-facilities": {
+      "title": "Inihahanda ang paghahanap sa pasilidad ng pangangalaga ng bata.",
+      "body": "Dapat ma-verify ang opisyal na dataset at metadata ng catalog bago magamit ang paghahanap na ito. Hindi ito nagpapakita ng mga live na resulta."
+    },
+    "shinjuku-evacuation-sites": {
+      "title": "Inihahanda ang paghahanap sa lugar ng paglikas.",
+      "body": "Ang inihandang paghahanap na ito ay hindi nagpapakita ng live, bukas, o pinakamalapit na mga site. Para sa kasalukuyang sitwasyon, suriin ang opisyal na impormasyon sa sakuna."
+    }
+  }
+}

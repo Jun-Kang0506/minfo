@@ -3,6 +3,7 @@
     "subtitle": "大家的信息",
     "languageLabel": "语言"
   },
+  "textSize": { "label": "文字大小", "standard": "标准", "large": "大号" },
   "nav": {
     "ask": "提问",
     "categories": "分类",
@@ -18,7 +19,7 @@
     "sub": "医院、保险、垃圾分类、防灾：MINFO 用简单的方式解释在日生活，回答始终附有官方来源。",
     "ctaAsk": "向 MINFO 提问",
     "trustSources": "每个回答都显示官方来源",
-    "trustLanguages": "支持 6 种语言，含简明日语（やさしい日本語）",
+    "trustLanguages": "支持 8 种语言，含简明日语（やさしい日本語）",
     "trustPilot": "从新宿·大久保开始，可扩展至全东京"
   },
   "categories": {

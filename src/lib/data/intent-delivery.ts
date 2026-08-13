@@ -23,6 +23,9 @@ export const STRUCTURED_LOOKUP_METADATA: Record<string, StructuredLookupMetadata
 };
 
 export const INTENT_DELIVERY_METADATA: Record<string, IntentDeliveryMetadata> = {
+  tax_calculation: {
+    intentId: "tax_calculation", deliveryKind: "static_guidance", claimLevel: "information", sourceIds: ["shinjuku-resident-tax-simulator"], datasetCandidateIds: [], verifiedAt: "2026-08-14", freshnessPolicy: "official simulator linked; MINFO does not calculate", researchStatus: "verified_content",
+  },
   moving_registration: {
     intentId: "moving_registration",
     deliveryKind: "static_guidance",

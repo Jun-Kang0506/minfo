@@ -1,1 +1,8 @@
-{}
+{
+  "emergencyBar": "Emergency? 119 Bumbero / Ambulansya · 110 Pulis (libre, 24h, available ang interpretasyon)",
+  "notices": {
+    "medical": "Maaaring ito ay isang medikal na emergency. Tumawag sa 119 ngayon para sa isang ambulansya — libre, 24h, magagamit ang interpretasyon.",
+    "police": "Kung nasa panganib ka ngayon, tumawag kaagad sa 110 (pulis) — libre, 24h, magagamit ang interpretasyon.",
+    "fire": "Kung may sunog, tumawag sa 119 ngayon — libre, 24h, magagamit ang interpretasyon. Pumunta muna sa isang ligtas na lugar."
+  }
+}

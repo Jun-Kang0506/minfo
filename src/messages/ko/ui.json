@@ -3,6 +3,7 @@
     "subtitle": "모두의 정보",
     "languageLabel": "언어"
   },
+  "textSize": { "label": "글자 크기", "standard": "기본", "large": "크게" },
   "nav": {
     "ask": "질문하기",
     "categories": "카테고리",
@@ -18,7 +19,7 @@
     "sub": "병원, 보험, 쓰레기, 재난 대비. MINFO는 일본 생활 정보를 쉽게 안내하고, 답변에는 항상 공식 출처가 붙습니다.",
     "ctaAsk": "MINFO에 질문하기",
     "trustSources": "모든 답변에 공식 출처 표시",
-    "trustLanguages": "6개 언어 지원, 쉬운 일본어(やさしい日本語) 포함",
+    "trustLanguages": "8개 언어 지원, 쉬운 일본어(やさしい日本語) 포함",
     "trustPilot": "신주쿠·오쿠보에서 시작, 도쿄 전역으로 확장 가능"
   },
   "categories": {

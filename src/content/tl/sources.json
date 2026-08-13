@@ -1,1 +1,93 @@
-{}
+{
+  "shinjuku-foreign": {
+    "title": "Shinjuku City: Impormasyon sa Pamumuhay para sa mga Dayuhang Residente",
+    "organization": "Shinjuku City",
+    "note": "Opisyal na website ng Shinjuku para sa mga dayuhang residente: araw-araw na buhay, basura, kalusugan, sakuna, buwis, klase sa Japanese, at konsultasyon, na may bersyon sa Japanese, English, Chinese, at Korean."
+  },
+  "tabunka-plaza": {
+    "title": "Shinjuku Multicultural Plaza",
+    "organization": "Shinjuku City",
+    "note": "Libreng consultation desk sa maraming wika at mga klase sa Japanese, ilang minuto mula sa Okubo: unang pupuntahan para sa mga tanong sa araw-araw kapag hindi mo alam kung saan pupunta."
+  },
+  "shinjuku-city": {
+    "title": "Opisyal na Website ng Shinjuku City",
+    "organization": "Shinjuku City",
+    "note": "Ang ward office para sa mga residente ng Shinjuku / Okubo: dito ginagawa ang resident registration, health insurance, buwis, at mga proseso sa araw-araw (karamihan ng site ay Japanese)."
+  },
+  "shinjuku-garbage": {
+    "title": "Shinjuku City: Mga Recyclable na Resource at Basura",
+    "organization": "Shinjuku City",
+    "note": "Opisyal na mga patakaran ng Shinjuku sa basura at recycling para sa mga dayuhang residente: paano maghiwalay, anong araw ilabas, at mga gabay sa maraming wika."
+  },
+  "iryou-net": {
+    "title": "Medical Information Net (NAVII)",
+    "organization": "Ministry of Health, Labour and Welfare",
+    "note": "Opisyal na pambansang paghahanap ng Japan para sa mga ospital at klinika: maghanap ng pasilidad malapit sa iyo at tingnan kung aling mga wika ang kaya nila."
+  },
+  "tokyo-metro": {
+    "title": "Tokyo Metropolitan Government",
+    "organization": "Tokyo Metropolitan Government",
+    "note": "Impormasyon sa pamumuhay sa buong Tokyo at multilingual support services mula sa metropolitan government: kapaki-pakinabang kapag lampas sa Shinjuku ang tanong."
+  },
+  "tokyo-bousai": {
+    "title": "Tokyo Disaster Prevention (Tokyo Bousai)",
+    "organization": "Tokyo Metropolitan Government",
+    "note": "Opisyal na disaster site ng Tokyo: mga gabay sa paghahanda, evacuation information, at emergency updates, na may mga pahina sa maraming wika."
+  },
+  "tokyo-fire": {
+    "title": "Tokyo Fire Department: 119 / #7119",
+    "organization": "Tokyo Fire Department",
+    "note": "Opisyal na awtoridad para sa 119 (sunog / ambulansya). Pinapatakbo rin ang #7119, ang 24-oras na linya para sa payo kapag hindi ka sigurado kung emergency."
+  },
+  "isa": {
+    "title": "Immigration Services Agency of Japan",
+    "organization": "Ministry of Justice",
+    "note": "Opisyal na awtoridad para sa residence cards, visa, at status of residence: ito lamang ang lugar upang kumpirmahin ang anumang immigration procedure."
+  },
+  "fresc": {
+    "title": "FRESC: Foreign Residents Support Center",
+    "organization": "Ministry of Justice (Yotsuya, Tokyo)",
+    "note": "Mga pambansang support desk para sa immigration, trabaho, legal, at human rights, na pinagsama sa isang gusali malapit sa Shinjuku, na may interpretasyon."
+  },
+  "nta": {
+    "title": "National Tax Agency",
+    "organization": "National Tax Agency",
+    "note": "Opisyal na awtoridad para sa national taxes: income tax, filing, at mga tax guide sa English."
+  },
+  "nenkin": {
+    "title": "Japan Pension Service",
+    "organization": "Japan Pension Service",
+    "note": "Opisyal na tanggapan para sa national pension enrollment, bayad, at exemption, na may international section sa English."
+  },
+  "tokyo-opendata": {
+    "title": "Tokyo Open Data Catalog",
+    "organization": "Tokyo Metropolitan Government",
+    "note": "Mga pampublikong dataset (pasilidad, consultation desk, impormasyon sa sakuna) na planong ikonekta ng MINFO para sa pagpapalawak ayon sa ward sa buong Tokyo."
+  },
+  "shinjuku-public-housing-recruitment": {
+    "title": "Shinjuku City: Recruitment para sa ward-run rental housing",
+    "organization": "Shinjuku City",
+    "note": "Opisyal na impormasyon sa recruitment at eligibility para sa rental housing na pinapatakbo ng ward ng Shinjuku. Tingnan ang kasalukuyang notice dahil nagkakaiba ang requirements."
+  },
+  "shinjuku-flood-guidance": {
+    "title": "Shinjuku City: Gabay sa baha at water disaster",
+    "organization": "Shinjuku City",
+    "note": "Opisyal na gabay ng Shinjuku para sa paghahanda sa baha at water disaster."
+  },
+  "shinjuku-weather-information": {
+    "title": "Shinjuku City: Impormasyon sa panahon",
+    "organization": "Shinjuku City",
+    "note": "Opisyal na mga link sa impormasyon sa panahon at sakuna para sa mga residente ng Shinjuku."
+  },
+  "regasu-japanese-classes": {
+    "title": "Shinjuku Cultural Center Foundation: Mga klase sa Japanese",
+    "organization": "Shinjuku Cultural Center Foundation (Regasu Shinjuku)",
+    "note": "Opisyal na impormasyon ng klase para sa mga hindi katutubong nagsasalita na nag-aaral ng Japanese para sa araw-araw na buhay sa Shinjuku. Maaaring magbago ang availability."
+  },
+  "tokyo-muslim-travelers-guide": {
+    "title": "Tokyo Muslim Travelers' Guide",
+    "organization": "Tokyo Convention & Visitors Bureau",
+    "note": "Gabay sa Tokyo para sa mga pasilidad sa pagdarasal, halal at Muslim-friendly na kainan, at iba pang pasilidad. Kumpirmahin direkta ang detalye sa bawat pasilidad."
+  }
+  ,"shinjuku-resident-tax-simulator":{"title":"Shinjuku City: Resident tax simulation","organization":"Shinjuku City","note":"Opisyal na simulator ng Shinjuku City para sa pagtatantiya ng resident tax. Nakasalalay ang resulta sa kita at mga deduction at tantiya lamang ito, hindi pinal."}
+}

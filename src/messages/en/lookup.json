@@ -18,6 +18,14 @@
   "update": "Updated as needed. Snapshot data.",
   "catalog": "About this data",
   "provenance": "Open Data ✓ · Shinjuku City · CC BY 4.0",
+  "addressLabel": "Address",
+  "typeLabel": "Type",
+  "attributionLabel": "Open Data attribution",
+  "snapshotLabel": "Snapshot data",
+  "sourceLabel": "Source",
+  "licenseLabel": "License",
+  "facilityTypes": { "childrens_center": "Children's center", "municipal_kindergarten": "Municipal kindergarten", "municipal_licensed_nursery": "Municipal licensed nursery", "municipal_certified_childcare_center": "Municipal certified childcare center", "workplace_childcare": "Workplace childcare center", "childcare_room": "Childcare room", "family_daycare": "Family daycare", "after_school_club": "After-school children's club", "private_kindergarten": "Private kindergarten", "private_licensed_nursery": "Private licensed nursery", "private_certified_childcare_center": "Private certified childcare center", "evacuation_site": "Evacuation location" },
+  "datasetNotes": { "childcare": "This snapshot does not show vacancies, eligibility, fees, hours, enrollment acceptance, or current operation. Confirm directly.", "evacuation": "This is location data, not live opening or status. Suitability depends on the hazard and official instructions. Check current official alerts separately." },
   "preparing": {
     "shinjuku-childcare-facilities": {
       "title": "Childcare facility lookup is being prepared.",

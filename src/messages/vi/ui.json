@@ -3,6 +3,7 @@
     "subtitle": "Thông tin của mọi người",
     "languageLabel": "Ngôn ngữ"
   },
+  "textSize": { "label": "Cỡ chữ", "standard": "Chuẩn", "large": "Lớn" },
   "nav": {
     "ask": "Hỏi",
     "categories": "Danh mục",
@@ -18,7 +19,7 @@
     "sub": "Bệnh viện, bảo hiểm, rác, thiên tai: MINFO giải thích đời sống ở Nhật một cách đơn giản, luôn kèm nguồn chính thức.",
     "ctaAsk": "Hỏi MINFO",
     "trustSources": "Mọi câu trả lời đều kèm nguồn chính thức",
-    "trustLanguages": "6 ngôn ngữ, gồm tiếng Nhật đơn giản (やさしい日本語)",
+    "trustLanguages": "8 ngôn ngữ, gồm tiếng Nhật đơn giản (やさしい日本語)",
     "trustPilot": "Bắt đầu từ Shinjuku / Okubo, mở rộng ra Tokyo"
   },
   "categories": {

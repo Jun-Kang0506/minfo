@@ -1,1 +1,25 @@
-{}
+{
+  "answer": {
+    "emergency": "Emergency na sitwasyon",
+    "caution": "Mangyaring tandaan",
+    "steps": "Inirerekomenda ang mga susunod na hakbang",
+    "sources": "Opisyal at pampublikong mapagkukunan",
+    "lowConfidence": "Hindi ito ganap na makumpirma ng MINFO. Mangyaring suriin sa isang opisyal na opisina.",
+    "disclaimer": "Ang MINFO ay isang prototype navigator, hindi isang serbisyo ng gobyerno. Palaging kumpirmahin ang mahahalagang bagay sa mga opisyal na opisina.",
+    "aiBadge": "Sagot ng AI ni Claude · lokal na na-verify ang mga source",
+    "answerLabel": "Sagot",
+    "nextStep": "Susunod na hakbang",
+    "whatToDo": "Ano ang gagawin",
+    "important": "Mahalagang malaman",
+    "officialInformation": "Opisyal na impormasyon",
+    "resultCardLabel": "Card ng resulta"
+  },
+  "feedback": {
+    "question": "Nakakatulong ba ito?",
+    "helpful": "Nakakatulong",
+    "confusing": "Nakakalito",
+    "wrong": "Maling impormasyon",
+    "language": "Kailangan ang aking wika",
+    "thanks": "salamat po. Nakakatulong ang iyong feedback na mapabuti ang MINFO."
+  }
+}

@@ -1,10 +1,111 @@
 "use client";
+
 import { useEffect, useMemo, useState } from "react";
 import type { LanguageCode, LookupDatasetId, LookupRecord, LookupSnapshot } from "@/lib/types";
 import { useLanguage } from "./LanguageProvider";
 import { getMessages } from "@/i18n/messages";
+import { DIRECTORY_DATASETS } from "@/lib/directory-config";
 
-function km(a: LookupRecord,b:[number,number]) { const r=Math.PI/180, d1=(b[0]-a.latitude!)*r,d2=(b[1]-a.longitude!)*r,x=Math.sin(d1/2)**2+Math.cos(a.latitude!*r)*Math.cos(b[0]*r)*Math.sin(d2/2)**2; return 6371*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x)); }
-const catalogUrls: Record<LookupDatasetId, string> = { "shinjuku-childcare-facilities": "https://catalog.data.metro.tokyo.lg.jp/dataset/t131041d0000000117", "shinjuku-evacuation-sites": "https://catalog.data.metro.tokyo.lg.jp/dataset/t131041d0000000115" };
-export function StructuredLookup({ datasetId, onBack, onStartOver }: { datasetId: LookupDatasetId; onBack:()=>void; onStartOver:()=>void }) { const {lang}=useLanguage(); const c=getMessages(lang).lookup; const [data,setData]=useState<LookupSnapshot|null>(null),[state,setState]=useState<"loading"|"ready"|"unavailable">("loading"),[count,setCount]=useState(5),[position,setPosition]=useState<[number,number]|null>(null),[locationMessage,setLocationMessage]=useState(""); useEffect(()=>{const ac=new AbortController(); fetch(`/api/lookups/${datasetId}`,{signal:ac.signal}).then(r=>r.ok?r.json():Promise.reject()).then((v:LookupSnapshot)=>{if(!v?.metadata||!Array.isArray(v.records))throw Error();setData(v);setState("ready");}).catch(()=>{if(!ac.signal.aborted)setState("unavailable")});return()=>ac.abort();},[datasetId]); const records=useMemo(()=>!data?[]:[...data.records].sort((a,b)=>{const ac=position&&a.latitude!==undefined,bc=position&&b.latitude!==undefined;if(ac!==bc)return ac?-1:1;if(ac){const delta=km(a,position!)-km(b,position!);if(delta)return delta;}return a.nameJa.localeCompare(b.nameJa,"ja")||a.officialId.localeCompare(b.officialId)}),[data,position]); const locate=()=>{if(!navigator.geolocation){setLocationMessage(c.locationError);return;}navigator.geolocation.getCurrentPosition(p=>{setPosition([p.coords.latitude,p.coords.longitude]);setLocationMessage("")},()=>setLocationMessage(c.locationError),{timeout:10000});}; const hazardLabels: Partial<Record<keyof NonNullable<LookupRecord["hazards"]>, string>> = { earthquake:c.earthquake, large_fire:c.large_fire }; if(state==="loading")return <section className="rounded-lg border border-line border-l-4 border-l-moss bg-card p-5 sm:p-6"><p className="text-[16px] font-semibold text-moss">{c.loading}</p></section>; if(state==="unavailable")return <section className="rounded-lg border border-line border-l-4 border-l-caution-line bg-card p-5 sm:p-6"><p className="text-[18px] leading-relaxed text-ink">{c.unavailable}</p><a href={catalogUrls[datasetId]} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block font-bold text-moss hover:underline">{c.catalog}</a><Actions lang={lang} onBack={onBack} onStartOver={onStartOver}/></section>; return <section className="rounded-lg border border-line border-l-4 border-l-moss bg-card p-5 sm:p-6"><h2 className="text-[24px] font-bold text-ink">{data!.metadata.titleJa}</h2><p className="mt-2 text-[16px] text-ink-soft">{data!.metadata.recordCount} {c.count}</p><div className="mt-4 flex flex-wrap gap-3"><button onClick={locate} className="pressable min-h-12 rounded-sm border border-line px-4 font-bold text-moss">{c.location}</button>{position&&<button onClick={()=>{setPosition(null);setLocationMessage("")}} className="pressable min-h-12 rounded-sm border border-line px-4 font-bold text-moss">{c.stop}</button>}</div><p className="mt-2 text-[14px] text-ink-soft">{c.privacy}</p>{locationMessage&&<p className="mt-2 text-[14px] text-ink-soft">{locationMessage}</p>}<div className="mt-4 divide-y divide-line">{records.slice(0,count).map(r=><div key={r.id} className="py-3"><p className="font-bold text-ink">{r.nameJa}{r.nameLatin&&<span className="ml-2 font-normal text-ink-soft">{r.nameLatin}</span>}</p>{r.addressJa&&<p className="mt-1 text-[16px] text-ink">{r.addressJa}</p>}{r.facilityTypeJa&&<p className="mt-1 text-[14px] text-ink-soft">{r.facilityTypeJa}</p>}{r.hazards&&<p className="mt-1 text-[14px] text-ink-soft">{c.listedFor}: {Object.keys(r.hazards).map(key=>hazardLabels[key as keyof typeof hazardLabels]).filter(Boolean).join(", ")}</p>}{position&&r.latitude!==undefined&&<p className="mt-1 text-[14px] text-ink-soft">{c.distance}: {km(r,position).toFixed(1)} km</p>}{(r.latitude!==undefined||r.addressJa)&&<a className="mt-2 inline-block text-[14px] font-bold text-moss hover:underline" target="_blank" rel="noopener noreferrer" href={r.latitude!==undefined?`https://www.openstreetmap.org/?mlat=${r.latitude}&mlon=${r.longitude}#map=17/${r.latitude}/${r.longitude}`:`https://www.openstreetmap.org/search?query=${encodeURIComponent(r.addressJa!)}`}>{c.map}</a>}</div>)}</div>{count<records.length&&<button onClick={()=>setCount(n=>n+5)} className="pressable mt-4 min-h-12 rounded-sm border border-line px-4 font-bold text-moss">{c.more}</button>}<p className="mt-5 text-[14px] leading-relaxed text-ink-soft">{datasetId==="shinjuku-childcare-facilities"?c.child:c.evac}</p><div className="mt-4 border-t border-line pt-3 text-[13px] text-ink-soft"><p>{c.provenance}</p><p>{c.data} {data!.metadata.retrievedAt} · {c.update}</p><a href={data!.metadata.catalogUrl} target="_blank" rel="noopener noreferrer" className="font-bold text-moss hover:underline">{c.catalog}</a></div><Actions lang={lang} onBack={onBack} onStartOver={onStartOver}/></section>; }
-function Actions({lang,onBack,onStartOver}:{lang:LanguageCode;onBack:()=>void;onStartOver:()=>void}){return <div className="mt-5 flex flex-wrap gap-3"><button onClick={onBack} className="pressable min-h-12 px-3 font-bold text-moss">{getMessages(lang).guided.ui.back}</button><button onClick={onStartOver} className="pressable min-h-12 rounded-sm border border-line px-4 font-bold text-ink">{getMessages(lang).guided.ui.startOver}</button></div>}
+function km(record: LookupRecord, position: [number, number]) {
+  const radians = Math.PI / 180;
+  const latitudeDifference = (position[0] - record.latitude!) * radians;
+  const longitudeDifference = (position[1] - record.longitude!) * radians;
+  const calculation = Math.sin(latitudeDifference / 2) ** 2 + Math.cos(record.latitude! * radians) * Math.cos(position[0] * radians) * Math.sin(longitudeDifference / 2) ** 2;
+  return 6371 * 2 * Math.atan2(Math.sqrt(calculation), Math.sqrt(1 - calculation));
+}
+
+export function StructuredLookup({ datasetId, onBack, onStartOver }: { datasetId: LookupDatasetId; onBack: () => void; onStartOver: () => void }) {
+  const { lang } = useLanguage();
+  const copy = getMessages(lang).lookup;
+  const config = DIRECTORY_DATASETS[datasetId];
+  const [data, setData] = useState<LookupSnapshot | null>(null);
+  const [state, setState] = useState<"loading" | "ready" | "unavailable">("loading");
+  const [count, setCount] = useState(config.initialResultCount);
+  const [position, setPosition] = useState<[number, number] | null>(null);
+  const [locationMessage, setLocationMessage] = useState("");
+
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch(`/api/lookups/${datasetId}`, { signal: controller.signal })
+      .then((response) => response.ok ? response.json() : Promise.reject())
+      .then((snapshot: LookupSnapshot) => {
+        if (!snapshot?.metadata || !Array.isArray(snapshot.records)) throw new Error("Invalid lookup snapshot");
+        setData(snapshot);
+        setState("ready");
+      })
+      .catch(() => { if (!controller.signal.aborted) setState("unavailable"); });
+    return () => controller.abort();
+  }, [datasetId]);
+
+  const records = useMemo(() => !data ? [] : [...data.records].sort((first, second) => {
+    const firstHasLocation = Boolean(config.supportsDistance && position && first.latitude !== undefined && first.longitude !== undefined);
+    const secondHasLocation = Boolean(config.supportsDistance && position && second.latitude !== undefined && second.longitude !== undefined);
+    if (firstHasLocation !== secondHasLocation) return firstHasLocation ? -1 : 1;
+    if (firstHasLocation) {
+      const difference = km(first, position!) - km(second, position!);
+      if (difference) return difference;
+    }
+    return first.displayName.localeCompare(second.displayName, "ja") || first.officialId.localeCompare(second.officialId);
+  }), [config.supportsDistance, data, position]);
+
+  const locate = () => {
+    if (!navigator.geolocation) { setLocationMessage(copy.locationError); return; }
+    navigator.geolocation.getCurrentPosition(
+      (nextPosition) => { setPosition([nextPosition.coords.latitude, nextPosition.coords.longitude]); setLocationMessage(""); },
+      () => setLocationMessage(copy.locationError),
+      { timeout: 10000 },
+    );
+  };
+
+  if (state === "loading") return <section className="lookup-sheet" aria-busy="true"><p className="text-base font-semibold text-moss">{copy.loading}</p></section>;
+  if (state === "unavailable") return <section className="lookup-sheet border-l-caution-line"><p className="text-lg leading-relaxed text-ink">{copy.unavailable}</p><a href={config.fallbackCatalogUrl} target="_blank" rel="noopener noreferrer" className="link-action mt-3">{copy.catalog}</a><Actions lang={lang} onBack={onBack} onStartOver={onStartOver} /></section>;
+
+  const { metadata } = data!;
+  return (
+    <section className="lookup-sheet">
+      <header>
+        <h2 className="text-2xl font-bold tracking-tight text-ink">{metadata.titleJa}</h2>
+        <p className="mt-2 text-base text-ink-soft">{metadata.recordCount} {copy.count}</p>
+      </header>
+      {config.supportsDistance && <div className="mt-4 flex flex-wrap gap-3">
+        <button onClick={locate} className="button-secondary">{copy.location}</button>
+        {position && <button onClick={() => { setPosition(null); setLocationMessage(""); }} className="button-secondary">{copy.stop}</button>}
+      </div>}
+      {config.supportsDistance && <p className="mt-2 text-sm leading-relaxed text-ink-soft">{copy.privacy}</p>}
+      {locationMessage && <p className="mt-2 text-sm font-medium text-caution" role="status">{locationMessage}</p>}
+      <div className="mt-5 divide-y divide-line">
+        {records.slice(0, count).map((record) => <FacilityRow key={record.id} record={record} position={position} copy={copy} supportsMap={config.supportsMap} supportsDistance={config.supportsDistance} />)}
+      </div>
+      {count < records.length && <button onClick={() => setCount((current) => current + 5)} className="button-secondary mt-4">{copy.more}</button>}
+      <p className="mt-5 text-sm leading-relaxed text-ink-soft">{copy.datasetNotes[config.disclaimerKey]}</p>
+      <aside className="mt-4 border-t border-line pt-3 text-xs leading-relaxed text-ink-soft" aria-label={copy.attributionLabel}>
+        <p>{copy.data} {metadata.retrievedAt} · {copy.snapshotLabel}</p>
+        <p>{copy.sourceLabel}: {metadata.sourceId} · {copy.licenseLabel}: {metadata.license}</p>
+        <a href={metadata.catalogUrl} target="_blank" rel="noopener noreferrer" className="link-action">{copy.catalog}</a>
+      </aside>
+      <Actions lang={lang} onBack={onBack} onStartOver={onStartOver} />
+    </section>
+  );
+}
+
+function FacilityRow({ record, position, copy, supportsMap, supportsDistance }: { record: LookupRecord; position: [number, number] | null; copy: ReturnType<typeof getMessages>["lookup"]; supportsMap: boolean; supportsDistance: boolean }) {
+  const hazardLabels: Partial<Record<keyof NonNullable<LookupRecord["hazards"]>, string>> = { earthquake: copy.earthquake, large_fire: copy.large_fire };
+  const mapUrl = !supportsMap ? undefined : record.latitude !== undefined && record.longitude !== undefined
+    ? `https://www.openstreetmap.org/?mlat=${record.latitude}&mlon=${record.longitude}#map=17/${record.latitude}/${record.longitude}`
+    : record.address ? `https://www.openstreetmap.org/search?query=${encodeURIComponent(record.address)}` : undefined;
+  const hazards = record.hazards ? Object.keys(record.hazards).map((key) => hazardLabels[key as keyof typeof hazardLabels]).filter(Boolean).join(", ") : "";
+  const facilityTypes = copy.facilityTypes as Record<string, string>;
+  return <article className="py-4">
+    <h3 className="text-base font-bold leading-snug text-ink">{record.displayName}</h3>
+    {record.displayName !== record.sourceName && <p className="mt-1 text-sm text-ink-soft" lang="ja">{record.sourceName}</p>}
+    {record.address && <p className="mt-2 text-base leading-relaxed text-ink"><span className="font-semibold text-ink-soft">{copy.addressLabel}: </span><span lang="ja">{record.address}</span></p>}
+    {record.type && <p className="mt-1 text-sm text-ink-soft"><span className="font-semibold">{copy.typeLabel}: </span>{facilityTypes[record.type] ?? record.type}</p>}
+    {hazards && <p className="mt-1 text-sm text-ink-soft"><span className="font-semibold">{copy.listedFor}: </span>{hazards}</p>}
+    {supportsDistance && position && record.latitude !== undefined && record.longitude !== undefined && <p className="mt-1 text-sm text-ink-soft"><span className="font-semibold">{copy.distance}: </span>{km(record, position).toFixed(1)} km</p>}
+    {mapUrl && <a className="link-action mt-2" target="_blank" rel="noopener noreferrer" href={mapUrl}>{copy.map}</a>}
+  </article>;
+}
+
+function Actions({ lang, onBack, onStartOver }: { lang: LanguageCode; onBack: () => void; onStartOver: () => void }) {
+  return <div className="mt-5 flex flex-wrap gap-3"><button onClick={onBack} className="button-secondary">{getMessages(lang).guided.ui.back}</button><button onClick={onStartOver} className="button-secondary">{getMessages(lang).guided.ui.startOver}</button></div>;
+}

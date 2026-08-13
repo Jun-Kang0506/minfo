@@ -1,7 +1,7 @@
-import type { Category } from "../types";
+import type { Category, LanguageCode } from "../types";
 import { MESSAGES } from "@/i18n/messages";
 
-const locales = ["en", "ja", "zh", "ko", "vi", "ne"] as const;
+const locales: LanguageCode[] = ["en", "ja", "zh", "ko", "vi", "ne", "tl", "bn"];
 const CATEGORY_METADATA = [
   {
     "id": "hospitals",

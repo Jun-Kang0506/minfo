@@ -1,8 +1,8 @@
-import type { CategoryId, GuidedOption, GuidedQuestion } from "../types";
+import type { CategoryId, GuidedOption, GuidedQuestion, LanguageCode } from "../types";
 import { MESSAGES } from "@/i18n/messages";
 
-const locales = ["en", "ja", "zh", "ko", "vi", "ne"] as const;
-const messageFor = (locale: (typeof locales)[number]) => MESSAGES[locale] as {
+const locales: LanguageCode[] = ["en", "ja", "zh", "ko", "vi", "ne", "tl", "bn"];
+const messageFor = (locale: LanguageCode) => MESSAGES[locale] as {
   guided: { questions: Record<string, { title: string; options: Array<{ label: string; request: string }> }>; ui: Record<string, string> };
 };
 export const DEFAULT_CATEGORY_ORDER: CategoryId[] = ["hospitals", "schools-children", "taxes", "garbage", "disaster", "japanese", "housing", "consultation", "food-prayer", "emergency"];
@@ -104,7 +104,8 @@ const QUESTION_METADATA = {
         "id": "tax_calculation",
         "intentId": "tax_calculation",
         "outcome": {
-          "type": "unsupported"
+          "type": "topic",
+          "topicId": "tax-estimate"
         }
       }
     ]
@@ -319,4 +320,4 @@ const QUESTION_METADATA = {
   }
 } as const;
 export const GUIDED_QUESTIONS: Record<string, GuidedQuestion> = Object.fromEntries(Object.entries(QUESTION_METADATA).map(([id, question]) => [id, { id, title: Object.fromEntries(locales.map((locale) => [locale, messageFor(locale).guided.questions[id].title])) as GuidedQuestion["title"], options: question.options.map((option, index) => ({ ...option, label: Object.fromEntries(locales.map((locale) => [locale, messageFor(locale).guided.questions[id].options[index].label])) as GuidedOption["label"], request: Object.fromEntries(locales.map((locale) => [locale, messageFor(locale).guided.questions[id].options[index].request])) as GuidedOption["request"] })) }]));
-export const GUIDED_UI = Object.fromEntries(Object.keys(MESSAGES.en.guided.ui).map((key) => [key, Object.fromEntries(locales.map((locale) => [locale, messageFor(locale).guided.ui[key]]))])) as Record<keyof typeof MESSAGES.en.guided.ui, Record<(typeof locales)[number], string>>;
+export const GUIDED_UI = Object.fromEntries(Object.keys(MESSAGES.en.guided.ui).map((key) => [key, Object.fromEntries(locales.map((locale) => [locale, messageFor(locale).guided.ui[key]]))])) as Record<keyof typeof MESSAGES.en.guided.ui, Record<LanguageCode, string>>;

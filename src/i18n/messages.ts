@@ -46,6 +46,22 @@ import nePages from "@/messages/ne/pages.json";
 import neCategories from "@/messages/ne/categories.json";
 import neEmergency from "@/messages/ne/emergency.json";
 import nePrompts from "@/messages/ne/prompts.json";
+import tlUi from "@/messages/tl/ui.json";
+import tlGuided from "@/messages/tl/guided.json";
+import tlResult from "@/messages/tl/result.json";
+import tlLookup from "@/messages/tl/lookup.json";
+import tlPages from "@/messages/tl/pages.json";
+import tlCategories from "@/messages/tl/categories.json";
+import tlEmergency from "@/messages/tl/emergency.json";
+import tlPrompts from "@/messages/tl/prompts.json";
+import bnUi from "@/messages/bn/ui.json";
+import bnGuided from "@/messages/bn/guided.json";
+import bnResult from "@/messages/bn/result.json";
+import bnLookup from "@/messages/bn/lookup.json";
+import bnPages from "@/messages/bn/pages.json";
+import bnCategories from "@/messages/bn/categories.json";
+import bnEmergency from "@/messages/bn/emergency.json";
+import bnPrompts from "@/messages/bn/prompts.json";
 import type { LanguageCode } from "@/lib/types";
 
 export const MESSAGES = {
@@ -55,6 +71,8 @@ export const MESSAGES = {
   ko: { ui: koUi, guided: koGuided, result: koResult, lookup: koLookup, pages: koPages, categories: koCategories, emergency: koEmergency, prompts: koPrompts },
   vi: { ui: viUi, guided: viGuided, result: viResult, lookup: viLookup, pages: viPages, categories: viCategories, emergency: viEmergency, prompts: viPrompts },
   ne: { ui: neUi, guided: neGuided, result: neResult, lookup: neLookup, pages: nePages, categories: neCategories, emergency: neEmergency, prompts: nePrompts },
+  tl: { ui: tlUi, guided: tlGuided, result: tlResult, lookup: tlLookup, pages: tlPages, categories: tlCategories, emergency: tlEmergency, prompts: tlPrompts },
+  bn: { ui: bnUi, guided: bnGuided, result: bnResult, lookup: bnLookup, pages: bnPages, categories: bnCategories, emergency: bnEmergency, prompts: bnPrompts },
 } as const satisfies Record<LanguageCode, unknown>;
 
 export function getMessages(lang: LanguageCode) {

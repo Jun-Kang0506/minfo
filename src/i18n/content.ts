@@ -5,23 +5,29 @@ import zhAnswers from "../content/zh/answers.json";
 import koAnswers from "../content/ko/answers.json";
 import viAnswers from "../content/vi/answers.json";
 import neAnswers from "../content/ne/answers.json";
+import tlAnswers from "../content/tl/answers.json";
+import bnAnswers from "../content/bn/answers.json";
 import enSources from "../content/en/sources.json";
 import jaSources from "../content/ja/sources.json";
 import zhSources from "../content/zh/sources.json";
 import koSources from "../content/ko/sources.json";
 import viSources from "../content/vi/sources.json";
 import neSources from "../content/ne/sources.json";
+import tlSources from "../content/tl/sources.json";
+import bnSources from "../content/bn/sources.json";
 import enOpenData from "../content/en/open-data.json";
 import jaOpenData from "../content/ja/open-data.json";
 import zhOpenData from "../content/zh/open-data.json";
 import koOpenData from "../content/ko/open-data.json";
 import viOpenData from "../content/vi/open-data.json";
 import neOpenData from "../content/ne/open-data.json";
+import tlOpenData from "../content/tl/open-data.json";
+import bnOpenData from "../content/bn/open-data.json";
 
 type SourceContent = { title: string; organization: string; note: string };
 type OpenDataContent = { titleGloss: string; note: string };
 
-const languages: LanguageCode[] = ["en", "ja", "zh", "ko", "vi", "ne"];
+const languages: LanguageCode[] = ["en", "ja", "zh", "ko", "vi", "ne", "tl", "bn"];
 
 const answerContent = {
   en: enAnswers,
@@ -30,6 +36,8 @@ const answerContent = {
   ko: koAnswers,
   vi: viAnswers,
   ne: neAnswers,
+  tl: tlAnswers,
+  bn: bnAnswers,
 } as Localized<Record<string, LocalizedAnswerContent>>;
 
 const sourceContent = {
@@ -39,6 +47,8 @@ const sourceContent = {
   ko: koSources,
   vi: viSources,
   ne: neSources,
+  tl: tlSources,
+  bn: bnSources,
 } as Localized<Record<string, SourceContent>>;
 
 const openDataContent = {
@@ -48,6 +58,8 @@ const openDataContent = {
   ko: koOpenData,
   vi: viOpenData,
   ne: neOpenData,
+  tl: tlOpenData,
+  bn: bnOpenData,
 } as Localized<Record<string, OpenDataContent>>;
 
 export function getAnswerContent(id: string): Localized<LocalizedAnswerContent> {

@@ -1,1 +1,42 @@
-{}
+[
+  {
+    "title": "Mga Ospital at Kalusugan",
+    "description": "Maghanap ng mga doktor na nagsasalita ng iyong wika, at unawain ang health insurance."
+  },
+  {
+    "title": "Mga Buwis at Pensiyon",
+    "description": "Unawain ang mga abiso sa buwis, buwis sa residente, at sistema ng pensiyon."
+  },
+  {
+    "title": "Mga Paaralan at Mga Bata",
+    "description": "Maghanap ng tamang lugar para magtanong tungkol sa paaralan at mga serbisyo ng mga bata."
+  },
+  {
+    "title": "Pagkain at Panalangin",
+    "description": "Humanap ng consultation desk para sa pagkain o mga tanong na may kaugnayan sa panalangin."
+  },
+  {
+    "title": "Mga Panuntunan sa Basura",
+    "description": "Mga panuntunan sa paghihiwalay ng Shinjuku, araw ng koleksyon, at malalaking item."
+  },
+  {
+    "title": "Paghahanda sa Sakuna",
+    "description": "Mga lindol, bagyo, evacuation area, at multilingguwal na alerto."
+  },
+  {
+    "title": "Pabahay",
+    "description": "Mga panuntunan sa pag-upa, guarantor, kontrata, at kung saan kukuha ng tulong."
+  },
+  {
+    "title": "Pag-aaral ng Hapon",
+    "description": "Libre at murang mga klase malapit sa Okubo, kasama ang Easy Japanese na suporta."
+  },
+  {
+    "title": "Mga Konsultasyon",
+    "description": "Mga libreng multilingual desk para sa anumang pang-araw-araw na tanong sa buhay, malaki man o maliit."
+  },
+  {
+    "title": "Tulong sa Emergency",
+    "description": "119 para sa ambulansya at bumbero, 110 para sa pulis: kung paano tumawag at kung ano ang sasabihin."
+  }
+]

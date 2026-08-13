@@ -3,6 +3,7 @@
     "subtitle": "Everyone's Info",
     "languageLabel": "Language"
   },
+  "textSize": { "label": "Text size", "standard": "Standard", "large": "Large" },
   "nav": {
     "ask": "Ask",
     "categories": "Categories",
@@ -18,7 +19,7 @@
     "sub": "Hospitals, insurance, garbage, disasters: MINFO explains daily life in Japan simply, always with official sources.",
     "ctaAsk": "Ask MINFO",
     "trustSources": "Every answer shows its official sources",
-    "trustLanguages": "6 languages, including Easy Japanese (やさしい日本語)",
+    "trustLanguages": "8 languages, including Easy Japanese (やさしい日本語)",
     "trustPilot": "Starting from Shinjuku / Okubo, expandable across Tokyo"
   },
   "categories": {

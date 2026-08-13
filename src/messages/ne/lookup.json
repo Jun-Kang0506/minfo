@@ -18,6 +18,14 @@
   "update": "आवश्यकताअनुसार अद्यावधिक। स्न्यापसट डाटा।",
   "catalog": "यो डाटाबारे",
   "provenance": "Open Data ✓ · Shinjuku City · CC BY 4.0",
+  "addressLabel": "ठेगाना",
+  "typeLabel": "प्रकार",
+  "attributionLabel": "खुला डाटा स्रोत",
+  "snapshotLabel": "स्न्यापसट डाटा",
+  "sourceLabel": "स्रोत",
+  "licenseLabel": "लाइसेन्स",
+  "facilityTypes": { "childrens_center": "बाल केन्द्र", "municipal_kindergarten": "नगर बालवाडी", "municipal_licensed_nursery": "नगर स्वीकृत नर्सरी", "municipal_certified_childcare_center": "नगर प्रमाणित बाल हेरचाह केन्द्र", "workplace_childcare": "कार्यस्थल बाल हेरचाह केन्द्र", "childcare_room": "बाल हेरचाह कक्ष", "family_daycare": "पारिवारिक बाल हेरचाह", "after_school_club": "विद्यालयपछिको बाल क्लब", "private_kindergarten": "निजी बालवाडी", "private_licensed_nursery": "निजी स्वीकृत नर्सरी", "private_certified_childcare_center": "निजी प्रमाणित बाल हेरचाह केन्द्र", "evacuation_site": "निकासी स्थान" },
+  "datasetNotes": { "childcare": "यस स्न्यापसटमा खाली ठाउँ, योग्यता, शुल्क, समय, भर्ना स्वीकृति वा हालको सञ्चालन देखाइँदैन। सिधै पुष्टि गर्नुहोस्।", "evacuation": "यो स्थान डाटा हो, प्रत्यक्ष खुला वा स्थिति होइन। उपयुक्तता जोखिम र आधिकारिक निर्देशनमा निर्भर हुन्छ। हालका आधिकारिक सूचना छुट्टै हेर्नुहोस्।" },
   "preparing": {
     "shinjuku-childcare-facilities": {
       "title": "बाल हेरचाह सुविधा खोजी तयार हुँदैछ।",

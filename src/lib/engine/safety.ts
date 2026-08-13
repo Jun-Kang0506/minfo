@@ -7,7 +7,7 @@ import { getMessages } from "@/i18n/messages";
  * danger, we escalate the safety notice on top of the matched answer.
  *
  * Fully deterministic and local — 119/110 guidance never depends on a
- * network call or a model. Keywords cover all six supported languages
+ * network call or a model. Keywords cover all eight supported languages
  * (plus a few unaccented Vietnamese spellings people actually type).
  */
 const MEDICAL_EMERGENCY = [
@@ -25,6 +25,10 @@ const MEDICAL_EMERGENCY = [
   "chảy máu", "chay mau",
   // ne
   "एम्बुलेन्स", "बेहोस", "रगत",
+  // tl
+  "ambulansya", "walang malay", "dumudugo", "hindi makahinga",
+  // bn
+  "অ্যাম্বুলেন্স", "অজ্ঞান", "রক্তপাত", "শ্বাস নিতে পারছি না",
 ];
 
 const POLICE_EMERGENCY = [
@@ -41,6 +45,10 @@ const POLICE_EMERGENCY = [
   "bị tấn công", "bị theo dõi", "bạo lực", "cướp", "không an toàn", "nguy hiểm", "nguy hiem",
   // ne
   "आक्रमण", "पछ्याइरहेको", "हिंसा", "लुटियो", "असुरक्षित", "खतरा",
+  // tl
+  "inaatake", "sinusundan ako", "karahasan", "ninakawan", "nanganganib",
+  // bn
+  "আক্রমণ", "আমাকে অনুসরণ করছে", "সহিংসতা", "ছিনতাই", "বিপদে",
 ];
 
 const FIRE_EMERGENCY = [
@@ -56,6 +64,10 @@ const FIRE_EMERGENCY = [
   "cháy", "chay nha", "hỏa hoạn",
   // ne
   "आगो", "आगलागी",
+  // tl
+  "sunog", "nasusunog", "usok",
+  // bn
+  "আগুন", "আগুন লেগেছে", "ধোঁয়া",
 ];
 
 export function detectEmergency(text: string, lang: LanguageCode): SafetyInfo | null {

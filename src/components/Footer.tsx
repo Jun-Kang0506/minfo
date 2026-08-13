@@ -20,17 +20,17 @@ export function Footer() {
                 <span className="block text-lg font-extrabold tracking-tight">
                   MINFO｜{t.brand.subtitle}
                 </span>
-                <span className="block text-[12px] text-paper/70">{t.footer.tagline}</span>
+                <span className="block text-sm text-paper/70">{t.footer.tagline}</span>
               </span>
             </p>
-            <p className="mt-4 max-w-md text-[13px] leading-relaxed text-paper/70">
+            <p className="mt-4 max-w-md text-sm leading-relaxed text-paper/70">
               {t.answer.disclaimer}
             </p>
-            <p className="mt-3 text-[12px] text-paper/50">{t.footer.meta}</p>
-            <p className="mt-1 text-[12px] text-paper/50">
+            <p className="mt-3 text-sm text-paper/50">{t.footer.meta}</p>
+            <p className="mt-1 text-sm text-paper/50">
               {LANGUAGES.map((l) => l.nativeLabel).join(", ")}
             </p>
-            <nav aria-label="Information" className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-[13px] font-semibold text-paper/85">
+            <nav aria-label="Information" className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-paper/85">
               <a className="underline-offset-4 hover:underline" href="/about">{t.nav.whyMinfo}</a>
               <a className="underline-offset-4 hover:underline" href="/sources">{t.nav.sources}</a>
               <a className="underline-offset-4 hover:underline" href="/data">{t.nav.openData}</a>
@@ -52,7 +52,7 @@ export function Footer() {
                 <span className="text-[12.5px] text-paper/70">{t.footer.police}</span>
               </p>
             </div>
-            <p className="mt-2.5 text-[12px] text-paper/60">{t.footer.freeNote}</p>
+            <p className="mt-2.5 text-sm text-paper/60">{t.footer.freeNote}</p>
           </div>
         </div>
       </div>

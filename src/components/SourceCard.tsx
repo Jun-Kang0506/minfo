@@ -40,10 +40,10 @@ export function SourceCard({ source, compact = false }: { source: Source; compac
             <IconCheck className="h-3 w-3 shrink-0" strokeWidth={3} />
             {organization}
           </span>
-          <span className="mt-0.5 block text-[14px] font-bold leading-snug text-ink group-hover:underline">
+          <span className="mt-0.5 block text-sm font-bold leading-snug text-ink group-hover:underline">
             {title}
           </span>
-          {showJa && <span className="mt-0.5 block text-[12px] text-ink-soft">{source.titleJa}</span>}
+          {showJa && <span className="mt-0.5 block text-sm text-ink-soft">{source.titleJa}</span>}
         </span>
         <IconExternal className="hover-arrow h-4 w-4 shrink-0 text-ink-soft" />
       </a>
@@ -58,19 +58,19 @@ export function SourceCard({ source, compact = false }: { source: Source; compac
       title={officialName}
       className="group flex flex-col gap-1 py-4 sm:flex-row sm:gap-6"
     >
-      <span className="flex items-start gap-1.5 text-[12px] font-bold text-moss sm:w-44 sm:shrink-0 sm:pt-0.5">
+      <span className="flex items-start gap-1.5 text-sm font-bold text-moss sm:w-44 sm:shrink-0 sm:pt-0.5">
         <IconCheck className="mt-0.5 h-3 w-3 shrink-0" strokeWidth={3} />
         {organization}
       </span>
       <span className="min-w-0 flex-1">
         <span className="flex items-start justify-between gap-2">
-          <span className="text-[15px] font-bold leading-snug text-ink group-hover:underline">
+          <span className="text-base font-bold leading-snug text-ink group-hover:underline">
             {title}
           </span>
           <IconExternal className="hover-arrow mt-0.5 h-4 w-4 shrink-0 text-ink-soft" />
         </span>
         {showJa && <span className="mt-0.5 block text-[12.5px] text-ink-soft">{source.titleJa}</span>}
-        <span className="mt-1 block text-[13px] leading-relaxed text-ink-soft">
+        <span className="mt-1 block text-sm leading-relaxed text-ink-soft">
           {source.note[lang]}
         </span>
       </span>

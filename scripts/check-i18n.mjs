@@ -1,8 +1,8 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
-const productionLocales = ["en", "ja", "zh", "ko", "vi", "ne"];
-const draftLocales = ["tl", "bn"];
+const productionLocales = ["en", "ja", "zh", "ko", "vi", "ne", "tl", "bn"];
+const draftLocales = [];
 const groups = [
   { root: "src/messages", domains: ["ui", "guided", "result", "lookup", "pages", "categories", "emergency", "prompts"] },
   { root: "src/content", domains: ["answers", "sources", "open-data"] },

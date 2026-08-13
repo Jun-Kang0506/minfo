@@ -18,6 +18,14 @@
   "update": "随時更新。スナップショットデータ。",
   "catalog": "このデータについて",
   "provenance": "Open Data ✓ · Shinjuku City · CC BY 4.0",
+  "addressLabel": "住所",
+  "typeLabel": "種類",
+  "attributionLabel": "オープンデータの出典",
+  "snapshotLabel": "スナップショットデータ",
+  "sourceLabel": "情報源",
+  "licenseLabel": "ライセンス",
+  "facilityTypes": { "childrens_center": "児童館", "municipal_kindergarten": "区立幼稚園", "municipal_licensed_nursery": "区立認可保育園", "municipal_certified_childcare_center": "区立認定こども園", "workplace_childcare": "事業所内保育所", "childcare_room": "保育ルーム", "family_daycare": "家庭的保育", "after_school_club": "放課後児童クラブ", "private_kindergarten": "私立幼稚園", "private_licensed_nursery": "私立認可保育園", "private_certified_childcare_center": "私立認定こども園", "evacuation_site": "避難場所" },
+  "datasetNotes": { "childcare": "このスナップショットには空き状況、利用資格、料金、時間、入園受付、現在の運営状況はありません。直接確認してください。", "evacuation": "これは場所のデータで、開設状況や現在の状況ではありません。適切かどうかは災害と公式の指示によります。現在の警報は別に確認してください。" },
   "preparing": {
     "shinjuku-childcare-facilities": {
       "title": "保育施設の検索は準備中です。",

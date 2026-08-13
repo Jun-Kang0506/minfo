@@ -215,4 +215,5 @@
     ],
     "safety": "Việc khẩn cấp hoặc chính thức: hãy xác nhận trực tiếp với cơ quan công liên quan."
   }
+  ,"tax-estimate":{"direct":"Hãy dùng công cụ mô phỏng thuế cư trú chính thức của Shinjuku City để ước tính. MINFO không tính thuế.","steps":["Dùng công cụ mô phỏng chính thức.","Ước tính phụ thuộc vào thu nhập và các khoản khấu trừ.","Xem kết quả là ước tính, không phải quyết định thuế cuối cùng."],"safety":"Một số trường hợp đặc biệt có thể không được xử lý. Không nhập thông tin nhạy cảm vào MINFO."}
 }

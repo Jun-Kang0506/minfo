@@ -30,7 +30,7 @@ export function SafetyNotice({ safety }: { safety: SafetyInfo }) {
         >
           {emergency ? t.answer.emergency : t.answer.caution}
         </p>
-        <p className="mt-1 text-[15px] font-medium leading-relaxed text-ink">{safety.text}</p>
+        <p className="mt-1 text-base font-medium leading-relaxed text-ink">{safety.text}</p>
       </div>
     </div>
   );
