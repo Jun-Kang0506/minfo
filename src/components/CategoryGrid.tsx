@@ -1,20 +1,20 @@
 "use client";
 
 import { CATEGORIES } from "@/lib/data/categories";
-import { DEMO_PROMPTS } from "@/lib/data/prompts";
-import type { TopicId } from "@/lib/types";
+import { DEFAULT_CATEGORY_ORDER } from "@/lib/data/guided-flow";
+import type { CategoryId } from "@/lib/types";
 import { useLanguage } from "./LanguageProvider";
 import { SectionHeading } from "./SectionHeading";
 import { CategoryIcon } from "./icons";
 
 /**
- * Categories are a compact task chooser. Every card is one large tap target
- * that asks the category's example question in the existing answer desk.
+ * Categories emit only their stable ID. The guided flow owns all questions
+ * and outcomes, so translated visible labels never act as routing keys.
  */
 export function CategoryGrid({
   onSelect,
 }: {
-  onSelect: (text: string, topicId: TopicId) => void;
+  onSelect: (categoryId: CategoryId) => void;
 }) {
   const { lang, t } = useLanguage();
 
@@ -22,14 +22,14 @@ export function CategoryGrid({
     <section id="categories" className="mx-auto max-w-5xl px-4 py-7 md:py-10">
       <SectionHeading title={t.categories.title} sub={t.categories.sub} />
       <div className="grid grid-cols-2 gap-3 sm:gap-4">
-        {CATEGORIES.map((cat) => {
-          const example = DEMO_PROMPTS.find((p) => p.topicId === cat.exampleTopic);
-          const exampleText = example?.label[lang] ?? "";
+        {DEFAULT_CATEGORY_ORDER.map((categoryId) => {
+          const cat = CATEGORIES.find((item) => item.id === categoryId);
+          if (!cat) return null;
           const emergency = cat.id === "emergency";
           return (
             <button
               key={cat.id}
-              onClick={() => onSelect(exampleText, cat.exampleTopic)}
+              onClick={() => onSelect(cat.id)}
               className={`pressable group flex min-h-24 w-full flex-col items-start justify-between rounded-lg border p-4 text-left transition-colors focus-visible:z-10 ${
                 emergency
                   ? "border-danger bg-danger-soft hover:bg-[#f7d8cf]"

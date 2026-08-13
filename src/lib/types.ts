@@ -39,6 +39,16 @@ export type TopicId =
   | "bank-account"
   | "lost-wallet"
   | "city-office-letter"
+  | "moving-registration"
+  | "school-enrollment"
+  | "childcare-application"
+  | "public-housing"
+  | "typhoon-heavy-rain"
+  | "japanese-class-beginner"
+  | "japanese-class-evening"
+  | "japanese-class-okubo"
+  | "halal-food"
+  | "prayer-facilities"
   | "fallback";
 
 export interface Category {
@@ -91,6 +101,39 @@ export interface OpenDataCandidate {
   note: Localized<string>;
 }
 
+/** How an intent can be delivered without implying every source is live. */
+export type DeliveryKind = "static_guidance" | "structured_lookup" | "live_status" | "unsupported";
+export type ClaimLevel = "information" | "current_status" | "recommendation";
+export type ResearchStatus = "verified_content" | "catalog_url_required" | "implementation_pending";
+
+/**
+ * A structured lookup that is deliberately not an OpenDataCandidate yet:
+ * it has no verified catalog URL, schema, or dataset freshness information.
+ */
+export interface StructuredLookupMetadata {
+  id: string;
+  title: string;
+  ownerDescription: string;
+  freshnessPolicy: string;
+  researchStatus: ResearchStatus;
+  verifiedAt: string;
+  claimLevel: ClaimLevel;
+  deliveryKind: "structured_lookup";
+  display: { title: Localized<string>; body: Localized<string> };
+}
+
+/** Evidence and delivery contract for a stable guided-flow intent. */
+export interface IntentDeliveryMetadata {
+  intentId: string;
+  deliveryKind: DeliveryKind;
+  claimLevel: ClaimLevel;
+  sourceIds: string[];
+  datasetCandidateIds: string[];
+  verifiedAt: string;
+  freshnessPolicy: string;
+  researchStatus: ResearchStatus;
+}
+
 export type SafetyLevel = "emergency" | "caution";
 
 export interface SafetyInfo {
@@ -141,6 +184,30 @@ export interface AskRequest {
 export interface DemoPrompt {
   topicId: TopicId;
   label: Localized<string>;
+}
+
+/** Stable, non-visible identifiers for the guided category flow. */
+export type GuidedOutcome =
+  | { type: "nextQuestion"; questionId: string }
+  | { type: "topic"; topicId: TopicId }
+  | { type: "structuredLookup"; datasetCandidateId: string }
+  | { type: "unsupported" }
+  | { type: "emergency"; topicId: "ambulance" | "police" };
+
+export interface GuidedOption {
+  id: string;
+  /** Stable semantic meaning for this option. Never derive it from translated copy. */
+  intentId: string;
+  label: Localized<string>;
+  /** Descriptive request sent to the answer API. It is never used as a key. */
+  request: Localized<string>;
+  outcome: GuidedOutcome;
+}
+
+export interface GuidedQuestion {
+  id: string;
+  title: Localized<string>;
+  options: GuidedOption[];
 }
 
 /**

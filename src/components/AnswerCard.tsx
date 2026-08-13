@@ -44,7 +44,7 @@ export function AnswerCard({ answer }: { answer: Answer }) {
 
       {/* Direct answer, then the safety notice — never buried */}
       <div className={g(2)}>
-        <p className="mt-3 text-[16px] leading-relaxed text-ink">{answer.direct}</p>
+        <p className="mt-3 text-[18px] leading-relaxed text-ink">{answer.direct}</p>
         {answer.safety && (
           <div className="mt-4">
             <SafetyNotice safety={answer.safety} />
@@ -61,7 +61,7 @@ export function AnswerCard({ answer }: { answer: Answer }) {
             </h3>
             <ol className="mt-1 divide-y divide-line">
               {answer.steps.map((step, i) => (
-                <li key={i} className="flex gap-3 py-2.5 text-[15px] leading-relaxed text-ink">
+                <li key={i} className="flex gap-3 py-2.5 text-[16px] leading-relaxed text-ink">
                   <span className="w-5 shrink-0 text-right font-bold tabular-nums text-moss">
                     {i + 1}.
                   </span>

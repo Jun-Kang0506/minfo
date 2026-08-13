@@ -23,7 +23,7 @@ export const SOURCES: Source[] = [
       zh: "https://www.foreign.city.shinjuku.lg.jp/cn/",
       ko: "https://www.foreign.city.shinjuku.lg.jp/kr/",
     },
-    categories: ["hospitals", "taxes", "garbage", "disaster", "housing", "japanese", "consultation"],
+    categories: ["hospitals", "taxes", "garbage", "disaster", "housing", "japanese", "consultation", "schools-children"],
     note: {
       en: "Shinjuku's official website made for foreign residents: daily life, garbage, health, disaster, taxes, Japanese classes, and consultation, with Japanese, English, Chinese, and Korean versions.",
       ja: "新宿区が外国人のために作った公式サイトです。生活・ごみ・病院・防災・税金・日本語教室・相談の情報があります。",
@@ -61,7 +61,7 @@ export const SOURCES: Source[] = [
     titleJa: "新宿区公式ホームページ",
     organization: "Shinjuku City",
     url: "https://www.city.shinjuku.lg.jp/",
-    categories: ["hospitals", "taxes", "garbage", "disaster", "housing", "consultation"],
+    categories: ["hospitals", "taxes", "garbage", "disaster", "housing", "consultation", "schools-children"],
     note: {
       en: "The ward office for Shinjuku / Okubo residents: resident registration, health insurance, tax, and daily-life procedures all happen here (site mainly in Japanese).",
       ja: "新宿区役所の公式サイトです。住民登録・健康保険・税金などの手続きはここでします。",
@@ -245,6 +245,26 @@ export const SOURCES: Source[] = [
       vi: "Danh mục dữ liệu mở của Tokyo (cơ sở, quầy tư vấn, thông tin thiên tai): MINFO dự định kết nối để mở rộng ra các quận.",
       ne: "टोकियोको खुला डाटा क्याटलग: MINFO ले टोकियोभर विस्तारका लागि जोड्ने योजना गरेको डाटा।",
     },
+  },
+  {
+    id: "shinjuku-public-housing-recruitment", title: "Shinjuku City: Ward-run rental housing recruitment", titleJa: "新宿区 区営住宅等の入居者募集", organization: "Shinjuku City", url: "https://www.city.shinjuku.lg.jp/seikatsu/jutaku01_002117.html", categories: ["housing"],
+    note: { en: "Official information on Shinjuku ward-run rental housing recruitment and eligibility. Check the current notice because requirements vary.", ja: "新宿区の区営住宅などの募集と応募資格の公式情報です。条件は募集ごとに確認してください。", zh: "新宿区区营出租住房招募和资格的官方信息。条件因招募而异，请查看当前公告。", ko: "신주쿠구 운영 임대주택 모집과 자격의 공식 정보입니다. 조건은 모집마다 확인하세요.", vi: "Thông tin chính thức về tuyển người vào nhà cho thuê do quận Shinjuku quản lý và điều kiện. Hãy xem thông báo hiện tại vì điều kiện thay đổi.", ne: "Shinjuku वडाले चलाउने भाडा आवासको भर्ती र योग्यताको आधिकारिक जानकारी। सर्त हरेक भर्तीमा फरक हुन सक्छ।" },
+  },
+  {
+    id: "shinjuku-flood-guidance", title: "Shinjuku City: Flood and water-disaster guidance", titleJa: "新宿区 水害について", organization: "Shinjuku City", url: "https://www.foreign.city.shinjuku.lg.jp/en/kurashi/suigai/", localizedUrls: { ja: "https://www.foreign.city.shinjuku.lg.jp/jp/kurashi/suigai/", zh: "https://www.foreign.city.shinjuku.lg.jp/cn/kurashi/suigai/", ko: "https://www.foreign.city.shinjuku.lg.jp/kr/kurashi/suigai/" }, categories: ["disaster"],
+    note: { en: "Official Shinjuku guidance for flood and water-disaster preparation.", ja: "水害への備えについての新宿区公式情報です。", zh: "新宿区关于洪水和水灾准备的官方信息。", ko: "홍수·수해 대비에 관한 신주쿠구 공식 정보입니다.", vi: "Hướng dẫn chính thức của quận Shinjuku về chuẩn bị cho lũ lụt và thiên tai do nước.", ne: "बाढी र पानीजन्य विपद्को तयारीबारे Shinjuku सिटीको आधिकारिक मार्गदर्शन।" },
+  },
+  {
+    id: "shinjuku-weather-information", title: "Shinjuku City: Weather information", titleJa: "新宿区 気象情報", organization: "Shinjuku City", url: "https://www.foreign.city.shinjuku.lg.jp/en/kurashi/kishocho/", localizedUrls: { ja: "https://www.foreign.city.shinjuku.lg.jp/jp/kurashi/kishocho/", zh: "https://www.foreign.city.shinjuku.lg.jp/cn/kurashi/kishocho/", ko: "https://www.foreign.city.shinjuku.lg.jp/kr/kurashi/kishocho/" }, categories: ["disaster"],
+    note: { en: "Official weather and disaster-information links for Shinjuku residents.", ja: "新宿区の公式気象・防災情報への案内です。", zh: "面向新宿居民的官方天气和防灾信息链接。", ko: "신주쿠 주민을 위한 공식 기상·재난 정보 안내입니다.", vi: "Liên kết thời tiết và thông tin thiên tai chính thức cho cư dân Shinjuku.", ne: "Shinjuku बासिन्दाका लागि आधिकारिक मौसम र विपद् जानकारी लिंकहरू।" },
+  },
+  {
+    id: "regasu-japanese-classes", title: "Shinjuku Cultural Center Foundation: Japanese classes", titleJa: "新宿未来創造財団 日本語講座", organization: "Shinjuku Cultural Center Foundation (Regasu Shinjuku)", url: "https://www.regasu-shinjuku.or.jp/?p=630", categories: ["japanese"],
+    note: { en: "Official class information for non-native speakers learning daily-life Japanese in Shinjuku. Availability can change.", ja: "新宿で生活日本語を学ぶ外国人向けの公式講座情報です。開講状況は変わることがあります。", zh: "面向在新宿学习生活日语的非母语者的官方课程信息。开课情况可能变化。", ko: "신주쿠에서 생활 일본어를 배우는 비원어민을 위한 공식 수업 정보입니다. 운영 상황은 바뀔 수 있습니다.", vi: "Thông tin lớp học chính thức cho người không phải bản ngữ học tiếng Nhật đời sống ở Shinjuku. Lịch mở lớp có thể thay đổi.", ne: "Shinjuku मा दैनिक जीवनको जापानी सिक्ने गैर-मातृभाषीका लागि आधिकारिक कक्षा जानकारी। उपलब्धता बदलिन सक्छ।" },
+  },
+  {
+    id: "tokyo-muslim-travelers-guide", title: "Tokyo Muslim Travelers' Guide", titleJa: "東京ムスリム旅行者ガイド", organization: "Tokyo Convention & Visitors Bureau", url: "https://www.gotokyo.org/book/en/list/1664/", categories: ["food-prayer"],
+    note: { en: "A Tokyo guide to prayer facilities, halal and Muslim-friendly dining, and other facilities. Confirm details directly with each facility.", ja: "礼拝施設、ハラール・ムスリムフレンドリーな飲食店などを紹介する東京のガイドです。詳細は各施設に直接確認してください。", zh: "东京的指南，介绍礼拜设施、清真和穆斯林友好餐饮等。请直接向各设施确认详情。", ko: "기도 시설, 할랄·무슬림 친화 식당 등을 소개하는 도쿄 가이드입니다. 자세한 사항은 각 시설에 직접 확인하세요.", vi: "Hướng dẫn Tokyo về cơ sở cầu nguyện, ăn uống halal và thân thiện với người Hồi giáo. Hãy xác nhận trực tiếp với từng cơ sở.", ne: "प्रार्थना सुविधा, हलाल र मुस्लिम-मैत्री भोजन र अन्य सुविधाबारे टोकियो गाइड। विवरण प्रत्येक सुविधासँग सिधै पुष्टि गर्नुहोस्।" },
   },
 ];
 

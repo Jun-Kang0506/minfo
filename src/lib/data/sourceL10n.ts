@@ -67,6 +67,20 @@ const ORG_NAMES: Record<string, L10nMap> = {
     vi: "Cơ quan Hưu trí Nhật Bản",
     ne: "जापान पेन्सन सेवा",
   },
+  "Shinjuku Cultural Center Foundation (Regasu Shinjuku)": {
+    ja: "公益財団法人 新宿未来創造財団（レガス新宿）",
+    zh: "新宿未来创造财团（Regasu Shinjuku）",
+    ko: "신주쿠 미래창조재단(레가스 신주쿠)",
+    vi: "Quỹ Sáng tạo Tương lai Shinjuku (Regasu Shinjuku)",
+    ne: "Shinjuku Future Creation Foundation (Regasu Shinjuku)",
+  },
+  "Tokyo Convention & Visitors Bureau": {
+    ja: "公益財団法人 東京観光財団",
+    zh: "东京观光财团",
+    ko: "도쿄관광재단",
+    vi: "Cục Hội nghị và Du khách Tokyo",
+    ne: "टोकियो कन्भेन्सन एन्ड भिजिटर्स ब्युरो",
+  },
 };
 
 /** Keyed by Source.id: ja entries use やさしい日本語 where the official name is hard. */
@@ -161,6 +175,41 @@ const SOURCE_TITLES: Record<string, L10nMap> = {
     ko: "도쿄도 오픈데이터 카탈로그",
     vi: "Danh mục Dữ liệu mở Tokyo",
     ne: "टोकियो खुला डाटा क्याटलग",
+  },
+  "shinjuku-public-housing-recruitment": {
+    ja: "新宿区 区営住宅等の入居者募集",
+    zh: "新宿区区营住房招租信息",
+    ko: "신주쿠구 구영주택 입주자 모집",
+    vi: "Tuyển người thuê nhà do quận Shinjuku quản lý",
+    ne: "Shinjuku वडाको सार्वजनिक भाडा आवास भर्ती",
+  },
+  "shinjuku-flood-guidance": {
+    ja: "新宿区 台風・集中豪雨",
+    zh: "新宿区台风与集中暴雨指南",
+    ko: "신주쿠구 태풍·집중호우 안내",
+    vi: "Hướng dẫn bão và mưa lớn của quận Shinjuku",
+    ne: "Shinjuku सिटीको आँधी र भारी वर्षा मार्गदर्शन",
+  },
+  "shinjuku-weather-information": {
+    ja: "新宿区 防災気象情報",
+    zh: "新宿区防灾气象信息",
+    ko: "신주쿠구 방재 기상 정보",
+    vi: "Thông tin thời tiết phòng chống thiên tai Shinjuku",
+    ne: "Shinjuku सिटीको विपद् मौसम जानकारी",
+  },
+  "regasu-japanese-classes": {
+    ja: "新宿未来創造財団 日本語教室",
+    zh: "新宿未来创造财团日语教室",
+    ko: "신주쿠 미래창조재단 일본어 교실",
+    vi: "Lớp tiếng Nhật của Quỹ Sáng tạo Tương lai Shinjuku",
+    ne: "Shinjuku Future Creation Foundation जापानी कक्षा",
+  },
+  "tokyo-muslim-travelers-guide": {
+    ja: "東京ムスリム旅行者ガイド",
+    zh: "东京穆斯林旅行者指南",
+    ko: "도쿄 무슬림 여행자 가이드",
+    vi: "Hướng dẫn Du khách Hồi giáo Tokyo",
+    ne: "टोकियो मुस्लिम ट्राभलर्स गाइड",
   },
 };
 

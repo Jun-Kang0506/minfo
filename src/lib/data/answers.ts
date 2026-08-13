@@ -303,60 +303,54 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
       "일본어 교실", "일본어 배우", "học tiếng nhật", "lớp tiếng nhật",
       "जापानी भाषा", "जापानी सिक्न",
     ],
-    sourceIds: ["tabunka-plaza", "shinjuku-foreign", "tokyo-metro"],
+    sourceIds: ["regasu-japanese-classes"],
     content: {
       en: {
         direct:
-          "There are free and low-cost Japanese classes near Okubo. Shinjuku Multicultural Plaza runs classes and can connect you with volunteer teachers; the city also lists community classes around Okubo and Takadanobaba.",
+          "Regasu Shinjuku offers daily-life Japanese classes for non-native speakers, mainly introductory and beginner level. Class availability can change.",
         steps: [
-          "Visit or contact Shinjuku Multicultural Plaza to find a class that fits your level and schedule.",
-          "Check Shinjuku City's list of Japanese classes for locations near you.",
-          "Many classes welcome beginners — you can start without any Japanese.",
+          "Check the current class information, locations, and schedule.",
+          "Apply through the community exchange office or relevant foundation.",
         ],
       },
       ja: {
         direct:
-          "大久保の近くに、安い日本語教室がたくさんあります。しんじゅく多文化共生プラザで、教室やボランティアの先生をしょうかいしています。",
+          "新宿未来創造財団には、外国語を母語とする人向けの生活日本語講座があります。主に入門・初級で、開講状況は変わることがあります。",
         steps: [
-          "しんじゅく多文化共生プラザに行って、自分にあう教室を聞いてください。",
-          "新宿区のサイトにも教室のリストがあります。",
-          "はじめての人もだいじょうぶです。",
+          "現在の講座情報・会場・時間を確認してください。",
+          "地域交流課または財団の案内で申し込んでください。",
         ],
       },
       zh: {
         direct:
-          "大久保附近有免费或低价的日语教室。新宿多文化共生广场开设课程，还能介绍志愿者老师；区政府也公布大久保、高田马场周边的社区教室名单。",
+          "新宿未来创造财团为非日语母语者开设生活日语课程，主要是入门和初级。开课情况可能变化。",
         steps: [
-          "前往或联系新宿多文化共生广场，找到适合您水平和时间的课程。",
-          "在新宿区官网查看日语教室列表。",
-          "许多教室欢迎零基础学员。",
+          "查看当前课程信息、地点和时间。",
+          "通过社区交流办公室或相关财团申请。",
         ],
       },
       ko: {
         direct:
-          "오쿠보 근처에 무료·저렴한 일본어 교실이 많습니다. 신주쿠 다문화공생플라자가 수업을 운영하고 자원봉사 선생님도 연결해 주며, 구청도 오쿠보·다카다노바바 주변 교실 목록을 공개합니다.",
+          "레가스 신주쿠는 비원어민을 위한 생활 일본어 수업을 운영하며 주로 입문·초급 수준입니다. 운영 상황은 바뀔 수 있습니다.",
         steps: [
-          "신주쿠 다문화공생플라자에 방문하거나 연락해 나에게 맞는 수업을 찾으세요.",
-          "신주쿠구 사이트의 일본어 교실 목록을 확인하세요.",
-          "왕초보도 환영하는 교실이 많습니다.",
+          "현재 수업 정보, 장소와 시간을 확인하세요.",
+          "지역교류 사무소 또는 관련 재단을 통해 신청하세요.",
         ],
       },
       vi: {
         direct:
-          "Gần Okubo có nhiều lớp tiếng Nhật miễn phí hoặc giá rẻ. Shinjuku Multicultural Plaza mở lớp và giới thiệu giáo viên tình nguyện; quận cũng công bố danh sách lớp học quanh Okubo và Takadanobaba.",
+          "Regasu Shinjuku có lớp tiếng Nhật đời sống cho người không phải bản ngữ, chủ yếu trình độ nhập môn và sơ cấp. Lịch mở lớp có thể thay đổi.",
         steps: [
-          "Đến hoặc liên hệ Shinjuku Multicultural Plaza để tìm lớp phù hợp với trình độ và lịch của bạn.",
-          "Xem danh sách lớp tiếng Nhật trên trang web quận Shinjuku.",
-          "Nhiều lớp chào đón người mới bắt đầu — chưa biết tiếng Nhật vẫn học được.",
+          "Xem thông tin lớp, địa điểm và lịch hiện tại.",
+          "Đăng ký qua văn phòng giao lưu cộng đồng hoặc quỹ liên quan.",
         ],
       },
       ne: {
         direct:
-          "Okubo नजिकै निःशुल्क वा सस्ता जापानी भाषा कक्षाहरू छन्। Shinjuku Multicultural Plaza ले कक्षा चलाउँछ र स्वयंसेवक शिक्षक पनि जोडिदिन्छ।",
+          "Regasu Shinjuku मा गैर-मातृभाषीका लागि दैनिक जीवन जापानी कक्षा छन्, मुख्यतः परिचयात्मक र शुरुआती स्तरका। उपलब्धता बदलिन सक्छ।",
         steps: [
-          "Shinjuku Multicultural Plaza मा गएर आफ्नो स्तर र समय मिल्ने कक्षा सोध्नुहोस्।",
-          "Shinjuku सिटीको वेबसाइटमा कक्षाहरूको सूची हेर्नुहोस्।",
-          "धेरै कक्षामा शुरुवाती विद्यार्थीलाई पनि स्वागत छ।",
+          "हालको कक्षा जानकारी, स्थान र समय हेर्नुहोस्।",
+          "सामुदायिक विनिमय कार्यालय वा सम्बन्धित फाउन्डेसनमार्फत आवेदन दिनुहोस्।",
         ],
       },
     },
@@ -1086,6 +1080,79 @@ export const ANSWER_TEMPLATES: AnswerTemplate[] = [
         safety: "सरकारी चिठीमा प्रायः म्याद हुन्छ। मिति देखिए त्यसअघि नै काम गर्नुहोस् — चिठी थन्क्याएर नराख्नुहोस्।",
       },
     },
+  },
+  {
+    id: "moving-registration",
+    categoryId: "housing",
+    safetyLevel: "caution",
+    keywords: ["moving registration", "change address", "moved", "引っ越し", "住所変更", "搬家登记", "地址变更", "이사 신고", "주소 변경", "đăng ký chuyển nhà", "đổi địa chỉ", "बसाइँसराइ", "ठेगाना परिवर्तन"],
+    sourceIds: ["shinjuku-city", "shinjuku-foreign"],
+    content: {
+      en: { direct: "Submit the appropriate address-change notification to Shinjuku City.", steps: ["After moving into Shinjuku from another municipality, generally file a moving-in notification within 14 days after moving.", "Foreign residents should bring a residence card or special permanent resident certificate.", "Confirm required additional documents with resident registration services, because household relationship or status can change what is required."], safety: "The listed documents are not guaranteed to be sufficient. Confirm with Shinjuku City resident registration services." },
+      ja: { direct: "新宿区に、該当する住所変更の届出を出してください。", steps: ["ほかの市区町村から新宿区へ引っ越したときは、通常、引っ越した日から14日以内に転入届を出します。", "外国人住民は、在留カードまたは特別永住者証明書を持っていってください。", "世帯の関係や在留資格などで必要な書類が変わることがあるため、住民登録の窓口で追加書類を確認してください。"], safety: "ここにある書類だけで足りるとは限りません。新宿区の住民登録窓口で確認してください。" },
+      zh: { direct: "请向新宿区提交相应的地址变更申报。", steps: ["从其他市区町村搬入新宿区后，通常应在搬入后14天内提交迁入申报。", "外国居民请携带在留卡或特别永住者证明书。", "家庭关系或身份状况可能改变所需材料，请向住民登记窗口确认是否需要其他文件。"], safety: "所列文件不保证足够。请向新宿区住民登记窗口确认。" },
+      ko: { direct: "신주쿠구에 해당하는 주소 변경 신고를 제출하세요.", steps: ["다른 시·구·정·촌에서 신주쿠구로 이사한 경우, 일반적으로 이사한 날부터 14일 이내에 전입 신고를 합니다.", "외국인 주민은 재류카드 또는 특별영주자증명서를 가져가세요.", "세대 관계나 체류 자격에 따라 필요한 서류가 달라질 수 있으므로 주민등록 창구에 추가 서류를 확인하세요."], safety: "나열된 서류만으로 충분하다고 보장할 수 없습니다. 신주쿠구 주민등록 창구에 확인하세요." },
+      vi: { direct: "Hãy nộp thông báo thay đổi địa chỉ phù hợp cho quận Shinjuku.", steps: ["Sau khi chuyển đến Shinjuku từ một địa phương khác, thông thường hãy nộp thông báo chuyển đến trong vòng 14 ngày sau khi chuyển nhà.", "Cư dân nước ngoài mang theo thẻ cư trú hoặc giấy chứng nhận thường trú đặc biệt.", "Hãy xác nhận giấy tờ bổ sung với bộ phận đăng ký cư trú, vì quan hệ hộ gia đình hoặc tình trạng có thể làm thay đổi yêu cầu."], safety: "Các giấy tờ được liệt kê không được bảo đảm là đủ. Hãy xác nhận với bộ phận đăng ký cư trú của quận Shinjuku." },
+      ne: { direct: "Shinjuku सिटीमा उपयुक्त ठेगाना परिवर्तन सूचना बुझाउनुहोस्।", steps: ["अर्को नगरपालिका क्षेत्रबाट Shinjuku मा सरेपछि, सामान्यतया सरेको १४ दिनभित्र बसाइँसराइ दर्ता बुझाउनुहोस्।", "विदेशी बासिन्दाले रेसिडेन्स कार्ड वा विशेष स्थायी बासिन्दा प्रमाणपत्र ल्याउनुहोस्।", "घरपरिवारको सम्बन्ध वा स्थिति अनुसार आवश्यक कागजात फरक हुन सक्ने भएकाले, बसोबास दर्ता सेवासँग थप कागजात पुष्टि गर्नुहोस्।"], safety: "सूचीका कागजात पर्याप्त हुन्छन् भन्ने ग्यारेन्टी छैन। Shinjuku सिटीको बसोबास दर्ता सेवासँग पुष्टि गर्नुहोस्।" },
+    },
+  },
+  {
+    id: "school-enrollment",
+    categoryId: "schools-children",
+    safetyLevel: "caution",
+    keywords: ["school enrollment", "elementary school", "junior high school", "入学", "小学校", "中学校", "入学申请", "小学", "初中", "학교 입학", "초등학교", "중학교", "nhập học", "tiểu học", "trung học cơ sở", "विद्यालय भर्ना"],
+    sourceIds: ["shinjuku-city", "shinjuku-foreign"],
+    content: {
+      en: { direct: "Foreign-national children who wish to attend a Shinjuku municipal elementary or junior-high school need an enrollment application.", steps: ["For an overseas transfer or enrollment, complete Shinjuku residence registration first.", "The child and guardian may need residence cards or special permanent resident certificates.", "Contact the School Operations Division / school enrollment section. After applying, coordinate with the designated school."], safety: "Do not assume acceptance or eligibility is automatic. Confirm official requirements." },
+      ja: { direct: "新宿区立の小学校・中学校に通いたい外国籍の子どもは、入学の申請が必要です。", steps: ["海外からの転入・入学は、先に新宿区で住民登録をしてください。", "子どもと保護者の在留カードまたは特別永住者証明書が必要になることがあります。", "学校運営課の就学担当に連絡してください。申請後、指定された学校と調整します。"], safety: "入学できることや対象であることが自動的に決まるわけではありません。公式の要件を確認してください。" },
+      zh: { direct: "希望就读新宿区立小学或初中的外国籍儿童需要提交入学申请。", steps: ["从海外转入或入学时，请先完成新宿区的住民登记。", "儿童和监护人可能需要在留卡或特别永住者证明书。", "请联系学校运营课／就学担当。申请后，请与指定学校协调。"], safety: "不要认为一定会被录取或自动符合资格。请确认官方要求。" },
+      ko: { direct: "신주쿠구립 초등학교 또는 중학교에 다니고 싶은 외국 국적 아동은 입학 신청이 필요합니다.", steps: ["해외에서 전학하거나 입학하는 경우 먼저 신주쿠구 주민등록을 완료하세요.", "아동과 보호자에게 재류카드 또는 특별영주자증명서가 필요할 수 있습니다.", "학교운영과/취학 담당에 연락하세요. 신청 후 지정 학교와 조정하세요."], safety: "자동으로 입학되거나 자격이 있다고 생각하지 마세요. 공식 요건을 확인하세요." },
+      vi: { direct: "Trẻ em mang quốc tịch nước ngoài muốn học tiểu học hoặc trung học cơ sở công lập của Shinjuku cần nộp đơn nhập học.", steps: ["Nếu chuyển trường hoặc nhập học từ nước ngoài, hãy hoàn tất đăng ký cư trú tại Shinjuku trước.", "Trẻ và người giám hộ có thể cần thẻ cư trú hoặc giấy chứng nhận thường trú đặc biệt.", "Liên hệ Phòng Vận hành Trường học / bộ phận nhập học. Sau khi nộp đơn, phối hợp với trường được chỉ định."], safety: "Đừng cho rằng việc được nhận hoặc đủ điều kiện là tự động. Hãy xác nhận yêu cầu chính thức." },
+      ne: { direct: "Shinjuku का नगर प्राथमिक वा निम्न माध्यमिक विद्यालयमा पढ्न चाहने विदेशी नागरिक बालबालिकाले भर्ना आवेदन दिनुपर्छ।", steps: ["विदेशबाट स्थानान्तरण वा भर्ना गर्नुअघि Shinjuku मा बसोबास दर्ता पूरा गर्नुहोस्।", "बालबालिका र अभिभावकलाई रेसिडेन्स कार्ड वा विशेष स्थायी बासिन्दा प्रमाणपत्र चाहिन सक्छ।", "स्कूल सञ्चालन विभाग / विद्यालय भर्ना शाखासँग सम्पर्क गर्नुहोस्। आवेदनपछि तोकिएको विद्यालयसँग समन्वय गर्नुहोस्।"], safety: "भर्ना वा योग्यता स्वतः हुन्छ भनेर नमान्नुहोस्। आधिकारिक आवश्यकताहरू पुष्टि गर्नुहोस्।" },
+    },
+  },
+  {
+    id: "childcare-application",
+    categoryId: "schools-children",
+    safetyLevel: "caution",
+    keywords: ["childcare application", "nursery application", "保育園申請", "認可保育園", "托儿申请", "保育园申请", "보육 신청", "어린이집 신청", "đơn nhà trẻ", "đăng ký giữ trẻ", "बाल हेरचाह आवेदन", "नर्सरी आवेदन"],
+    sourceIds: ["shinjuku-city", "shinjuku-foreign"],
+    content: {
+      en: { direct: "Eligible applicants can submit authorized nursery school or certified childcare center applications electronically through MynaPortal Pittari Service.", steps: ["Deadlines apply. Use the official source for the current deadline.", "Some applicants, including certain applicants outside Shinjuku or overseas, may need a different procedure.", "Contact the Childcare Division Enrollment/Certification section."], safety: "Confirm eligibility, deadline, and procedure with the responsible office." },
+      ja: { direct: "対象となる人は、マイナポータルのぴったりサービスから、認可保育園・認定こども園の申込みを電子申請できます。", steps: ["締切があります。現在の締切は公式情報で確認してください。", "新宿区外や海外にいる人を含め、一部の申請者は別の手続きが必要になることがあります。", "保育課の入園・認定担当に連絡してください。"], safety: "対象かどうか、締切、手続きを担当窓口で確認してください。" },
+      zh: { direct: "符合条件的申请人可通过 MynaPortal 的 Pittari Service 以电子方式申请获认可保育园或认定儿童园。", steps: ["有截止日期。请通过官方信息确认当前截止日期。", "部分申请人，包括某些在新宿区外或海外的申请人，可能需要不同的手续。", "请联系保育课的入园／认定担当。"], safety: "请向负责窗口确认资格、截止日期和手续。" },
+      ko: { direct: "자격이 되는 신청자는 마이나포털 피타리 서비스에서 인가 보육원 또는 인정어린이원 신청을 전자적으로 제출할 수 있습니다.", steps: ["마감일이 있습니다. 현재 마감일은 공식 정보에서 확인하세요.", "신주쿠구 밖이나 해외에 있는 일부 신청자를 포함해, 다른 절차가 필요한 경우가 있습니다.", "보육과 입원/인정 담당에 연락하세요."], safety: "자격, 마감일 및 절차를 담당 창구에 확인하세요." },
+      vi: { direct: "Người đủ điều kiện có thể nộp điện tử đơn vào trường mẫu giáo được cấp phép hoặc trung tâm chăm sóc trẻ được chứng nhận qua MynaPortal Pittari Service.", steps: ["Có hạn nộp. Hãy dùng nguồn chính thức để xem hạn hiện tại.", "Một số người nộp đơn, gồm một số người ở ngoài Shinjuku hoặc ở nước ngoài, có thể cần thủ tục khác.", "Liên hệ bộ phận Tuyển sinh/Chứng nhận của Phòng Chăm sóc Trẻ em."], safety: "Hãy xác nhận điều kiện, hạn nộp và thủ tục với cơ quan phụ trách." },
+      ne: { direct: "योग्य आवेदकले MynaPortal Pittari Service मार्फत मान्यताप्राप्त नर्सरी विद्यालय वा प्रमाणित बाल हेरचाह केन्द्रको आवेदन विद्युतीय रूपमा बुझाउन सक्छन्।", steps: ["म्याद लागू हुन्छ। हालको म्यादका लागि आधिकारिक स्रोत हेर्नुहोस्।", "Shinjuku बाहिर वा विदेशमा रहेका केही आवेदकसहित, केहीलाई फरक प्रक्रिया चाहिन सक्छ।", "बाल हेरचाह विभागको भर्ना/प्रमाणीकरण शाखासँग सम्पर्क गर्नुहोस्।"], safety: "योग्यता, म्याद र प्रक्रिया जिम्मेवार कार्यालयसँग पुष्टि गर्नुहोस्।" },
+    },
+  },
+  {
+    id: "public-housing", categoryId: "housing", safetyLevel: "caution", keywords: ["public housing", "ward housing", "公営住宅", "区営住宅", "公共住房", "공공 주택", "nhà ở công", "सार्वजनिक आवास"], sourceIds: ["shinjuku-public-housing-recruitment"],
+    content: { en: { direct: "Shinjuku runs rental housing and announces public recruitment. General criteria include Shinjuku residence, income, housing need, and other rules; exact eligibility varies.", steps: ["Check the current recruitment notice.", "Ask the Housing Division or Ward Housing Management Center about your case."], safety: "Foreign residents need specified statuses such as permanent or long-term residence; not every work visa qualifies. MINFO cannot decide eligibility." }, ja: { direct: "新宿区には区営住宅などがあり、募集が行われます。住所・収入・住宅に困っていることなどが条件ですが、詳しい資格は募集ごとに異なります。", steps: ["現在の募集案内を確認してください。", "住宅課または区営住宅管理センターに自分のケースを相談してください。"], safety: "外国籍の人は永住者・定住者など指定された在留資格が必要で、すべての就労ビザが対象ではありません。MINFOは資格を判断できません。" }, zh: { direct: "新宿区运营出租住房，并会公开招募。一般条件包括在新宿居住、收入、住房需求等；具体资格因招募而异。", steps: ["查看当前招募公告。", "向住宅课或区营住宅管理中心咨询您的情况。"], safety: "外国居民需要永住、定住等指定在留资格；并非所有工作签证都符合。MINFO 不能判断资格。" }, ko: { direct: "신주쿠구는 임대주택을 운영하고 공개 모집합니다. 신주쿠 거주, 소득, 주거 필요 등 일반 조건이 있으며 정확한 자격은 모집마다 다릅니다.", steps: ["현재 모집 공고를 확인하세요.", "주택과 또는 구영주택 관리센터에 본인 상황을 문의하세요."], safety: "외국인 주민은 영주·정주 등 지정 체류자격이 필요하며 모든 취업비자가 해당하지는 않습니다. MINFO는 자격을 판단할 수 없습니다." }, vi: { direct: "Quận Shinjuku có nhà cho thuê và công bố tuyển người vào ở. Điều kiện chung gồm cư trú tại Shinjuku, thu nhập, nhu cầu nhà ở và các quy định khác; điều kiện chính xác thay đổi theo đợt.", steps: ["Xem thông báo tuyển hiện tại.", "Hỏi Phòng Nhà ở hoặc Trung tâm Quản lý Nhà ở Quận về trường hợp của bạn."], safety: "Người nước ngoài cần tư cách lưu trú được chỉ định như vĩnh trú hoặc định trú; không phải mọi visa làm việc đều đủ điều kiện. MINFO không thể quyết định điều kiện." }, ne: { direct: "Shinjuku वडाले भाडा आवास चलाउँछ र सार्वजनिक भर्ती गर्छ। Shinjuku बसोबास, आय, आवासको आवश्यकता र अन्य नियम सामान्य सर्त हुन्; ठ्याक्कै योग्यता फरक हुन्छ।", steps: ["हालको भर्ती सूचना हेर्नुहोस्।", "Housing Division वा Ward Housing Management Center मा आफ्नो अवस्थाबारे सोध्नुहोस्।"], safety: "विदेशी बासिन्दालाई स्थायी वा दीर्घकालीनजस्ता तोकिएका हैसियत चाहिन्छ; सबै कामका भिसा योग्य हुँदैनन्। MINFO ले योग्यता तय गर्न सक्दैन।" } },
+  },
+  {
+    id: "typhoon-heavy-rain", categoryId: "disaster", safetyLevel: "caution", keywords: ["typhoon", "heavy rain", "flood", "台風", "大雨", "水害", "台风", "暴雨", "태풍", "호우", "bão", "mưa lớn", "आँधी", "भारी वर्षा"], sourceIds: ["shinjuku-flood-guidance", "shinjuku-weather-information", "tokyo-bousai"],
+    content: { en: { direct: "Typhoons and water disasters are more common from July to September and conditions can develop quickly. Prepare early.", steps: ["Review flood guidance and prepare what you may need before bad weather.", "For the current situation, check official weather and disaster alerts." ] }, ja: { direct: "台風や水害は7月から9月ごろに多く、状況が急に変わることがあります。早めに備えてください。", steps: ["大雨の前に水害情報を確認し、必要なものを準備してください。", "現在の状況は公式の気象・防災情報で確認してください。"] }, zh: { direct: "7 月至 9 月台风和水灾较多，情况可能迅速变化。请尽早准备。", steps: ["恶劣天气前查看洪水指引并准备需要的物品。", "当前情况请查看官方天气和防灾警报。"] }, ko: { direct: "7월부터 9월에는 태풍과 수해가 더 잦고 상황이 빠르게 바뀔 수 있습니다. 일찍 준비하세요.", steps: ["악천후 전에 수해 안내를 확인하고 필요한 것을 준비하세요.", "현재 상황은 공식 기상·재난 알림을 확인하세요."] }, vi: { direct: "Bão và thiên tai do nước thường nhiều hơn từ tháng 7 đến tháng 9, và tình hình có thể thay đổi nhanh. Hãy chuẩn bị sớm.", steps: ["Xem hướng dẫn về lũ và chuẩn bị vật dụng cần thiết trước thời tiết xấu.", "Để biết tình hình hiện tại, hãy xem cảnh báo thời tiết và thiên tai chính thức."] }, ne: { direct: "जुलाईदेखि सेप्टेम्बरसम्म आँधी र पानीजन्य विपद् बढी हुन्छन् र अवस्था छिट्टै बदलिन सक्छ। चाँडै तयारी गर्नुहोस्।", steps: ["खराब मौसमअघि बाढी मार्गदर्शन हेर्नुहोस् र आवश्यक कुरा तयार गर्नुहोस्।", "हालको अवस्थाका लागि आधिकारिक मौसम र विपद् सूचना हेर्नुहोस्।"] } },
+  },
+  {
+    id: "japanese-class-beginner", categoryId: "japanese", keywords: ["beginner japanese class", "初級 日本語", "日语 初学", "초급 일본어", "lớp tiếng nhật mới bắt đầu", "शुरुआती जापानी"], sourceIds: ["regasu-japanese-classes"],
+    content: { en: { direct: "Regasu Shinjuku offers daily-life Japanese classes for non-native speakers, mainly introductory and beginner level.", steps: ["Check the current class information and eligibility.", "Apply through the community exchange office or relevant foundation." ] }, ja: { direct: "新宿未来創造財団には、外国語を母語とする人向けの生活日本語講座があります。主に入門・初級です。", steps: ["現在の講座情報と対象を確認してください。", "地域交流課または財団の案内で申し込んでください。"] }, zh: { direct: "新宿未来创造财团为非日语母语者开设生活日语课程，主要是入门和初级。", steps: ["查看当前课程信息和对象条件。", "通过社区交流办公室或相关财团申请。"] }, ko: { direct: "레가스 신주쿠는 비원어민을 위한 생활 일본어 수업을 운영하며 주로 입문·초급 수준입니다.", steps: ["현재 수업 정보와 대상 조건을 확인하세요.", "지역교류 사무소 또는 관련 재단을 통해 신청하세요."] }, vi: { direct: "Regasu Shinjuku có lớp tiếng Nhật đời sống cho người không phải bản ngữ, chủ yếu trình độ nhập môn và sơ cấp.", steps: ["Xem thông tin lớp và điều kiện hiện tại.", "Đăng ký qua văn phòng giao lưu cộng đồng hoặc quỹ liên quan."] }, ne: { direct: "Regasu Shinjuku मा गैर-मातृभाषीका लागि दैनिक जीवन जापानी कक्षा छन्, मुख्यतः परिचयात्मक र शुरुआती स्तरका।", steps: ["हालको कक्षा जानकारी र सर्त हेर्नुहोस्।", "सामुदायिक विनिमय कार्यालय वा सम्बन्धित फाउन्डेसनमार्फत आवेदन दिनुहोस्।"] } },
+  },
+  {
+    id: "japanese-class-evening", categoryId: "japanese", keywords: ["evening japanese class", "夜 日本語教室", "晚间 日语课", "저녁 일본어", "lớp tiếng nhật buổi tối", "साँझ जापानी"], sourceIds: ["regasu-japanese-classes"],
+    content: { en: { direct: "Some Regasu Japanese classes meet on Monday or Thursday evenings. Availability can change.", steps: ["Check the current schedule.", "Apply through the community exchange office or relevant foundation." ] }, ja: { direct: "月曜日または木曜日の夜に行う日本語講座があります。開講状況は変わることがあります。", steps: ["現在の時間割を確認してください。", "地域交流課または財団の案内で申し込んでください。"] }, zh: { direct: "部分日语课程在周一或周四晚上举行。开课情况可能变化。", steps: ["查看当前时间表。", "通过社区交流办公室或相关财团申请。"] }, ko: { direct: "일부 일본어 수업은 월요일 또는 목요일 저녁에 열립니다. 운영 상황은 바뀔 수 있습니다.", steps: ["현재 시간표를 확인하세요.", "지역교류 사무소 또는 관련 재단을 통해 신청하세요."] }, vi: { direct: "Một số lớp tiếng Nhật học tối thứ Hai hoặc thứ Năm. Lịch mở lớp có thể thay đổi.", steps: ["Xem thời khóa biểu hiện tại.", "Đăng ký qua văn phòng giao lưu cộng đồng hoặc quỹ liên quan."] }, ne: { direct: "केही जापानी कक्षा सोमबार वा बिहीबार साँझ हुन्छन्। उपलब्धता बदलिन सक्छ।", steps: ["हालको समयतालिका हेर्नुहोस्।", "सामुदायिक विनिमय कार्यालय वा सम्बन्धित फाउन्डेसनमार्फत आवेदन दिनुहोस्।"] } },
+  },
+  {
+    id: "japanese-class-okubo", categoryId: "japanese", keywords: ["okubo japanese class", "大久保 日本語教室", "大久保 日语课", "오쿠보 일본어", "lớp tiếng nhật okubo", "okubo जापानी"], sourceIds: ["regasu-japanese-classes"],
+    content: { en: { direct: "Regasu classes are held at Shinjuku Multicultural Plaza, Okubo, and other Shinjuku locations; availability can change.", steps: ["Check the current location list.", "Apply through the community exchange office or relevant foundation." ] }, ja: { direct: "講座はしんじゅく多文化共生プラザ、大久保など新宿区内の会場で行われます。開講状況は変わることがあります。", steps: ["現在の会場一覧を確認してください。", "地域交流課または財団の案内で申し込んでください。"] }, zh: { direct: "课程在新宿多文化共生广场、大久保和新宿区内其他地点举行；开课情况可能变化。", steps: ["查看当前地点列表。", "通过社区交流办公室或相关财团申请。"] }, ko: { direct: "수업은 신주쿠 다문화공생플라자, 오쿠보 등 신주쿠 내 장소에서 열리며 운영 상황은 바뀔 수 있습니다.", steps: ["현재 장소 목록을 확인하세요.", "지역교류 사무소 또는 관련 재단을 통해 신청하세요."] }, vi: { direct: "Lớp học diễn ra tại Shinjuku Multicultural Plaza, Okubo và các địa điểm khác ở Shinjuku; lịch mở lớp có thể thay đổi.", steps: ["Xem danh sách địa điểm hiện tại.", "Đăng ký qua văn phòng giao lưu cộng đồng hoặc quỹ liên quan."] }, ne: { direct: "कक्षाहरू Shinjuku Multicultural Plaza, Okubo र Shinjuku का अन्य स्थानमा हुन्छन्; उपलब्धता बदलिन सक्छ।", steps: ["हालको स्थान सूची हेर्नुहोस्।", "सामुदायिक विनिमय कार्यालय वा सम्बन्धित फाउन्डेसनमार्फत आवेदन दिनुहोस्।"] } },
+  },
+  {
+    id: "halal-food", categoryId: "food-prayer", keywords: ["halal", "muslim friendly", "ハラール", "清真", "할랄", "halal", "हलाल"], sourceIds: ["tokyo-muslim-travelers-guide"],
+    content: { en: { direct: "Tokyo's Muslim Travelers' Guide includes halal and Muslim-friendly dining listings.", steps: ["Use the guide to find a possible dining option.", "Confirm current details directly with the facility before you go." ] }, ja: { direct: "東京ムスリム旅行者ガイドには、ハラール・ムスリムフレンドリーな飲食店の案内があります。", steps: ["候補をガイドで探してください。", "行く前に現在の詳細を店舗へ直接確認してください。"] }, zh: { direct: "东京穆斯林旅行者指南列有清真和穆斯林友好餐饮。", steps: ["用指南寻找餐饮候选。", "出发前直接向该设施确认当前详情。"] }, ko: { direct: "도쿄 무슬림 여행자 가이드에는 할랄·무슬림 친화 식당 안내가 있습니다.", steps: ["가이드에서 식당 후보를 찾으세요.", "가기 전에 현재 상세 사항을 해당 시설에 직접 확인하세요."] }, vi: { direct: "Hướng dẫn Du khách Hồi giáo Tokyo có danh sách ăn uống halal và thân thiện với người Hồi giáo.", steps: ["Dùng hướng dẫn để tìm lựa chọn ăn uống.", "Trước khi đi, xác nhận thông tin hiện tại trực tiếp với cơ sở."] }, ne: { direct: "Tokyo Muslim Travelers' Guide मा हलाल र मुस्लिम-मैत्री भोजन सूची छ।", steps: ["गाइडबाट सम्भावित भोजन विकल्प खोज्नुहोस्।", "जानुअघि हालको विवरण सिधै सुविधासँग पुष्टि गर्नुहोस्।"] } },
+  },
+  {
+    id: "prayer-facilities", categoryId: "food-prayer", keywords: ["prayer facility", "prayer room", "mosque", "礼拝施設", "祈祷", "礼拜", "기도", "cầu nguyện", "प्रार्थना"], sourceIds: ["tokyo-muslim-travelers-guide"],
+    content: { en: { direct: "Tokyo's Muslim Travelers' Guide includes prayer-facility listings.", steps: ["Use the guide to find a possible facility.", "Confirm current details directly with the facility before you go." ] }, ja: { direct: "東京ムスリム旅行者ガイドには、礼拝施設の案内があります。", steps: ["候補をガイドで探してください。", "行く前に現在の詳細を施設へ直接確認してください。"] }, zh: { direct: "东京穆斯林旅行者指南列有礼拜设施。", steps: ["用指南寻找设施候选。", "出发前直接向该设施确认当前详情。"] }, ko: { direct: "도쿄 무슬림 여행자 가이드에는 기도 시설 안내가 있습니다.", steps: ["가이드에서 시설 후보를 찾으세요.", "가기 전에 현재 상세 사항을 해당 시설에 직접 확인하세요."] }, vi: { direct: "Hướng dẫn Du khách Hồi giáo Tokyo có danh sách cơ sở cầu nguyện.", steps: ["Dùng hướng dẫn để tìm cơ sở phù hợp.", "Trước khi đi, xác nhận thông tin hiện tại trực tiếp với cơ sở."] }, ne: { direct: "Tokyo Muslim Travelers' Guide मा प्रार्थना सुविधा सूची छ।", steps: ["गाइडबाट सम्भावित सुविधा खोज्नुहोस्।", "जानुअघि हालको विवरण सिधै सुविधासँग पुष्टि गर्नुहोस्।"] } },
   },
 ];
 
