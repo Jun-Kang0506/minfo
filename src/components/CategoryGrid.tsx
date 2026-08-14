@@ -3,6 +3,7 @@
 import { CATEGORIES } from "@/lib/data/categories";
 import { DEFAULT_CATEGORY_ORDER } from "@/lib/data/guided-flow";
 import type { CategoryId } from "@/lib/types";
+import { getMessages } from "@/i18n/messages";
 import { useLanguage } from "./LanguageProvider";
 import { SectionHeading } from "./SectionHeading";
 import { CategoryIcon } from "./icons";
@@ -43,7 +44,7 @@ export function CategoryGrid({
               />
               <span className="min-w-0">
                 <span className={`block text-base font-bold leading-snug ${emergency ? "text-danger" : "text-ink"}`}>
-                  {cat.title[lang]}
+                  {getMessages(lang).categories[cat.id].title}
                 </span>
               </span>
             </button>

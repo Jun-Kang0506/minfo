@@ -15,12 +15,12 @@ const CATEGORY_METADATA = [
   },
   {
     "id": "schools-children",
-    "icon": "book",
+    "icon": "school",
     "exampleTopic": "consultation"
   },
   {
     "id": "food-prayer",
-    "icon": "chat",
+    "icon": "utensils",
     "exampleTopic": "consultation"
   },
   {
