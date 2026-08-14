@@ -26,7 +26,7 @@ function AppInner() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <Header />
+      <Header onHome={() => setCategoryId(null)} />
       <main ref={mainRef} className="flex-1">
         {categoryId ? (
           <section id="categories" className="mx-auto max-w-3xl px-4 py-7 md:py-10">

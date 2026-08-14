@@ -1,6 +1,7 @@
 {
   "brand": {
     "subtitle": "Thông tin của mọi người",
+    "homeLabel": "Trang chủ MINFO",
     "languageLabel": "Ngôn ngữ"
   },
   "textSize": { "label": "Cỡ chữ", "standard": "Chuẩn", "large": "Lớn" },
@@ -11,7 +12,8 @@
     "openData": "Dữ liệu mở",
     "whyMinfo": "Vì sao MINFO?",
     "why": "Vì sao Shinjuku?",
-    "backToTop": "Lên đầu trang"
+    "backToTop": "Lên đầu trang",
+    "mainNavigationLabel": "Điều hướng chính"
   },
   "hero": {
     "kicker": "Hướng dẫn dựa trên thông tin chính thức",

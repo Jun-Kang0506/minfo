@@ -1,6 +1,7 @@
 {
   "brand": {
     "subtitle": "大家的信息",
+    "homeLabel": "MINFO 首页",
     "languageLabel": "语言"
   },
   "textSize": { "label": "文字大小", "standard": "标准", "large": "大号" },
@@ -11,7 +12,8 @@
     "openData": "开放数据",
     "whyMinfo": "为什么用 MINFO",
     "why": "为什么是新宿？",
-    "backToTop": "回到顶部"
+    "backToTop": "回到顶部",
+    "mainNavigationLabel": "主导航"
   },
   "hero": {
     "kicker": "基于官方信息的生活向导",

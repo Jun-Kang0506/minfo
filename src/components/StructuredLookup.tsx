@@ -5,6 +5,7 @@ import type { LanguageCode, LookupDatasetId, LookupRecord, LookupSnapshot } from
 import { useLanguage } from "./LanguageProvider";
 import { getMessages } from "@/i18n/messages";
 import { DIRECTORY_DATASETS } from "@/lib/directory-config";
+import { getShinjukuTownId, getShinjukuTownLabel } from "@/lib/address-town";
 
 function km(record: LookupRecord, position: [number, number]) {
   const radians = Math.PI / 180;
@@ -23,6 +24,8 @@ export function StructuredLookup({ datasetId, onBack, onStartOver }: { datasetId
   const [count, setCount] = useState(config.initialResultCount);
   const [position, setPosition] = useState<[number, number] | null>(null);
   const [locationMessage, setLocationMessage] = useState("");
+  const [townId, setTownId] = useState<string | null>(null);
+  const [showTownPicker, setShowTownPicker] = useState(false);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -37,7 +40,26 @@ export function StructuredLookup({ datasetId, onBack, onStartOver }: { datasetId
     return () => controller.abort();
   }, [datasetId]);
 
-  const records = useMemo(() => !data ? [] : [...data.records].sort((first, second) => {
+  const townOptions = useMemo(() => {
+    if (!data || !config.supportsTownFilter) return [];
+    const towns = new Map<string, string>();
+    let hasUnassigned = false;
+    for (const record of data.records) {
+      const id = getShinjukuTownId(record.address);
+      const label = getShinjukuTownLabel(record.address);
+      if (id && label) towns.set(id, label);
+      else hasUnassigned = true;
+    }
+    return [
+      ...[...towns.entries()].sort(([, first], [, second]) => first.localeCompare(second, "ja")),
+      ...(hasUnassigned ? [["unassigned", ""] as [string, string]] : []),
+    ];
+  }, [config.supportsTownFilter, data]);
+
+  const records = useMemo(() => !data ? [] : data.records.filter((record) => {
+    if (!townId) return true;
+    return townId === "unassigned" ? getShinjukuTownId(record.address) === null : getShinjukuTownId(record.address) === townId;
+  }).sort((first, second) => {
     const firstHasLocation = Boolean(config.supportsDistance && position && first.latitude !== undefined && first.longitude !== undefined);
     const secondHasLocation = Boolean(config.supportsDistance && position && second.latitude !== undefined && second.longitude !== undefined);
     if (firstHasLocation !== secondHasLocation) return firstHasLocation ? -1 : 1;
@@ -46,12 +68,12 @@ export function StructuredLookup({ datasetId, onBack, onStartOver }: { datasetId
       if (difference) return difference;
     }
     return first.displayName.localeCompare(second.displayName, "ja") || first.officialId.localeCompare(second.officialId);
-  }), [config.supportsDistance, data, position]);
+  }), [config.supportsDistance, data, position, townId]);
 
   const locate = () => {
     if (!navigator.geolocation) { setLocationMessage(copy.locationError); return; }
     navigator.geolocation.getCurrentPosition(
-      (nextPosition) => { setPosition([nextPosition.coords.latitude, nextPosition.coords.longitude]); setLocationMessage(""); },
+      (nextPosition) => { setPosition([nextPosition.coords.latitude, nextPosition.coords.longitude]); setTownId(null); setShowTownPicker(false); setCount(config.initialResultCount); setLocationMessage(""); },
       () => setLocationMessage(copy.locationError),
       { timeout: 10000 },
     );
@@ -69,9 +91,24 @@ export function StructuredLookup({ datasetId, onBack, onStartOver }: { datasetId
       </header>
       {config.supportsDistance && <div className="mt-4 flex flex-wrap gap-3">
         <button onClick={locate} className="button-secondary">{copy.location}</button>
+        {config.supportsTownFilter && <button onClick={() => { setPosition(null); setLocationMessage(""); setShowTownPicker(true); }} className="button-secondary">{copy.chooseArea}</button>}
+        {config.supportsTownFilter && <button onClick={() => { setPosition(null); setTownId(null); setShowTownPicker(false); setCount(config.initialResultCount); setLocationMessage(""); }} className="button-secondary">{copy.browseAll}</button>}
         {position && <button onClick={() => { setPosition(null); setLocationMessage(""); }} className="button-secondary">{copy.stop}</button>}
       </div>}
       {config.supportsDistance && <p className="mt-2 text-sm leading-relaxed text-ink-soft">{copy.privacy}</p>}
+      {config.supportsTownFilter && showTownPicker && <div className="mt-4 max-w-md">
+        <label htmlFor="directory-town" className="block text-sm font-semibold text-ink">{copy.areaLabel}</label>
+        <select
+          id="directory-town"
+          value={townId ?? ""}
+          onChange={(event) => { setTownId(event.target.value || null); setPosition(null); setCount(config.initialResultCount); }}
+          className="mt-2 w-full rounded-sm border border-line bg-card px-3 py-2 text-base text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-moss"
+        >
+          <option value="">{copy.areaPlaceholder}</option>
+          {townOptions.map(([id, label]) => <option key={id} value={id}>{id === "unassigned" ? copy.unassignedArea : label}</option>)}
+        </select>
+      </div>}
+      {config.supportsTownFilter && townId && <p className="mt-3 text-sm font-medium text-ink-soft" role="status">{copy.areaResults.replace("{area}", townId === "unassigned" ? copy.unassignedArea : townOptions.find(([id]) => id === townId)?.[1] ?? "")}</p>}
       {locationMessage && <p className="mt-2 text-sm font-medium text-caution" role="status">{locationMessage}</p>}
       <div className="mt-5 divide-y divide-line">
         {records.slice(0, count).map((record) => <FacilityRow key={record.id} record={record} position={position} copy={copy} supportsMap={config.supportsMap} supportsDistance={config.supportsDistance} />)}

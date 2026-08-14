@@ -1,6 +1,7 @@
 {
   "brand": {
     "subtitle": "みんなのインフォ",
+    "homeLabel": "MINFO ホーム",
     "languageLabel": "ことば"
   },
   "textSize": { "label": "文字の大きさ", "standard": "標準", "large": "大きい" },
@@ -11,7 +12,8 @@
     "openData": "オープンデータ",
     "whyMinfo": "MINFOとは",
     "why": "なぜ新宿？",
-    "backToTop": "上にもどる"
+    "backToTop": "上にもどる",
+    "mainNavigationLabel": "メインナビゲーション"
   },
   "hero": {
     "kicker": "公式情報をもとにした案内",

@@ -6,7 +6,7 @@ import { LanguageSelector } from "./LanguageSelector";
 import { TextSizeControl } from "./TextSizeControl";
 import { IconPhone } from "./icons";
 
-export function Header() {
+export function Header({ onHome }: { onHome?: () => void }) {
   const { t } = useLanguage();
 
   const navItems = [
@@ -38,8 +38,13 @@ export function Header() {
 
       <div className="border-b border-line bg-paper/95 backdrop-blur">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-3">
-          <Link href="/" className="flex items-center gap-2.5">
-            <span className="grid h-9 w-9 shrink-0 place-items-center rounded-sm bg-moss text-lg font-bold text-white">
+          <Link
+            href="/"
+            aria-label={t.brand.homeLabel}
+            onNavigate={onHome}
+            className="flex items-center gap-2.5 rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-moss"
+          >
+            <span aria-hidden="true" className="grid h-9 w-9 shrink-0 place-items-center rounded-sm bg-moss text-lg font-bold text-white">
               み
             </span>
             <span className="leading-tight">
@@ -50,7 +55,7 @@ export function Header() {
             </span>
           </Link>
 
-          <nav aria-label="Main" className="hidden items-center gap-6 lg:flex">
+          <nav aria-label={t.nav.mainNavigationLabel} className="hidden items-center gap-6 lg:flex">
             {navItems.map((item) => (
               <Link
                 key={item.href}

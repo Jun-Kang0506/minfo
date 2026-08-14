@@ -1,6 +1,7 @@
 {
   "brand": {
     "subtitle": "모두의 정보",
+    "homeLabel": "MINFO 홈",
     "languageLabel": "언어"
   },
   "textSize": { "label": "글자 크기", "standard": "기본", "large": "크게" },
@@ -11,7 +12,8 @@
     "openData": "오픈데이터",
     "whyMinfo": "왜 MINFO?",
     "why": "왜 신주쿠?",
-    "backToTop": "맨 위로"
+    "backToTop": "맨 위로",
+    "mainNavigationLabel": "주요 탐색"
   },
   "hero": {
     "kicker": "공식 정보에 기반한 생활 안내",

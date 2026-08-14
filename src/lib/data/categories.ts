@@ -54,4 +54,14 @@ const CATEGORY_METADATA = [
     "exampleTopic": "ambulance"
   }
 ] as const;
-export const CATEGORIES: Category[] = CATEGORY_METADATA.map((category, index) => ({ ...category, titleJa: MESSAGES.ja.categories[index].title, title: Object.fromEntries(locales.map((locale) => [locale, MESSAGES[locale].categories[index].title])) as Category["title"], description: Object.fromEntries(locales.map((locale) => [locale, MESSAGES[locale].categories[index].description])) as Category["description"] }));
+/**
+ * The message files are keyed by the stable category ID. Labels are never
+ * assembled from an array position, so changing display order cannot change
+ * routing or attach a translation to the wrong category.
+ */
+export const CATEGORIES: Category[] = CATEGORY_METADATA.map((category) => ({
+  ...category,
+  titleJa: MESSAGES.ja.categories[category.id].title,
+  title: Object.fromEntries(locales.map((locale) => [locale, MESSAGES[locale].categories[category.id].title])) as Category["title"],
+  description: Object.fromEntries(locales.map((locale) => [locale, MESSAGES[locale].categories[category.id].description])) as Category["description"],
+}));

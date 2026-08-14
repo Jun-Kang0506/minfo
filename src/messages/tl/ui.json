@@ -1,6 +1,7 @@
 {
   "brand": {
     "subtitle": "Impormasyon ng lahat",
+    "homeLabel": "MINFO home",
     "languageLabel": "Wika"
   },
   "textSize": { "label": "Laki ng text", "standard": "Karaniwan", "large": "Malaki" },
@@ -11,7 +12,8 @@
     "openData": "Buksan ang Data",
     "whyMinfo": "Bakit MINFO?",
     "why": "Bakit Shinjuku?",
-    "backToTop": "Bumalik sa itaas"
+    "backToTop": "Bumalik sa itaas",
+    "mainNavigationLabel": "Pangunahing nabigasyon"
   },
   "hero": {
     "kicker": "Nakabatay sa mga opisyal na pampublikong mapagkukunan",

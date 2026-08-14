@@ -1,6 +1,7 @@
 {
   "brand": {
     "subtitle": "Everyone's Info",
+    "homeLabel": "MINFO home",
     "languageLabel": "Language"
   },
   "textSize": { "label": "Text size", "standard": "Standard", "large": "Large" },
@@ -11,7 +12,8 @@
     "openData": "Open Data",
     "whyMinfo": "Why MINFO?",
     "why": "Why Shinjuku?",
-    "backToTop": "Back to top"
+    "backToTop": "Back to top",
+    "mainNavigationLabel": "Main navigation"
   },
   "hero": {
     "kicker": "Grounded in official public sources",

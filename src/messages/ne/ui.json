@@ -1,6 +1,7 @@
 {
   "brand": {
     "subtitle": "सबैको जानकारी",
+    "homeLabel": "MINFO गृहपृष्ठ",
     "languageLabel": "भाषा"
   },
   "textSize": { "label": "अक्षरको आकार", "standard": "सामान्य", "large": "ठूलो" },
@@ -11,7 +12,8 @@
     "openData": "खुला डाटा",
     "whyMinfo": "किन MINFO?",
     "why": "किन Shinjuku?",
-    "backToTop": "माथि जानुहोस्"
+    "backToTop": "माथि जानुहोस्",
+    "mainNavigationLabel": "मुख्य नेभिगेसन"
   },
   "hero": {
     "kicker": "आधिकारिक जानकारीमा आधारित मार्गदर्शन",

@@ -34,6 +34,8 @@ export interface UIStrings {
   brand: {
     /** Localized brand subtitle shown after "MINFO" (みんなのインフォ = "everyone's info"). */
     subtitle: string;
+    /** Accessible name for the complete clickable brand block. */
+    homeLabel: string;
     /** Accessible label for the language selector. */
     languageLabel: string;
   };
@@ -47,6 +49,8 @@ export interface UIStrings {
     why: string;
     /** Accessible label for the floating scroll-to-top button. */
     backToTop: string;
+    /** Accessible label for the primary site navigation. */
+    mainNavigationLabel: string;
   };
   emergencyBar: string;
   hero: {

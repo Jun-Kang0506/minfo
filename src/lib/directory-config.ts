@@ -8,6 +8,8 @@ export interface DirectoryDatasetConfig {
   supportsMap: boolean;
   attributeKeys: readonly ("hazards" | "type" | "ownership")[];
   initialResultCount: number;
+  /** Address-town filtering is deliberately limited to these large directories. */
+  supportsTownFilter?: boolean;
   titleKey?: string;
 }
 
@@ -21,6 +23,7 @@ export const DIRECTORY_DATASETS: Record<LookupDatasetId, DirectoryDatasetConfig>
     supportsMap: true,
     attributeKeys: ["type"],
     initialResultCount: 5,
+    supportsTownFilter: true,
     titleKey: "childcare",
   },
   "shinjuku-evacuation-sites": {
@@ -33,7 +36,7 @@ export const DIRECTORY_DATASETS: Record<LookupDatasetId, DirectoryDatasetConfig>
     initialResultCount: 5,
     titleKey: "evacuation",
   },
-  "shinjuku-medical-clinics": { id: "shinjuku-medical-clinics", fallbackCatalogUrl: "https://catalog.data.metro.tokyo.lg.jp/dataset/t131041d0000000121", disclaimerKey: "medical", supportsDistance: true, supportsMap: true, attributeKeys: ["type"], initialResultCount: 5, titleKey: "medical" },
+  "shinjuku-medical-clinics": { id: "shinjuku-medical-clinics", fallbackCatalogUrl: "https://catalog.data.metro.tokyo.lg.jp/dataset/t131041d0000000121", disclaimerKey: "medical", supportsDistance: true, supportsMap: true, attributeKeys: ["type"], initialResultCount: 5, supportsTownFilter: true, titleKey: "medical" },
   "shinjuku-public-elementary-schools": { id: "shinjuku-public-elementary-schools", fallbackCatalogUrl: "https://catalog.data.metro.tokyo.lg.jp/dataset/t000021d2000000191", disclaimerKey: "school", supportsDistance: false, supportsMap: true, attributeKeys: ["type", "ownership"], initialResultCount: 5, titleKey: "elementarySchool" },
   "shinjuku-public-junior-high-schools": { id: "shinjuku-public-junior-high-schools", fallbackCatalogUrl: "https://catalog.data.metro.tokyo.lg.jp/dataset/t000021d2000000191", disclaimerKey: "school", supportsDistance: false, supportsMap: true, attributeKeys: ["type", "ownership"], initialResultCount: 5, titleKey: "juniorHighSchool" },
   "shinjuku-public-high-schools": { id: "shinjuku-public-high-schools", fallbackCatalogUrl: "https://catalog.data.metro.tokyo.lg.jp/dataset/t000021d2000000191", disclaimerKey: "school", supportsDistance: false, supportsMap: true, attributeKeys: ["type", "ownership"], initialResultCount: 5, titleKey: "highSchool" },
