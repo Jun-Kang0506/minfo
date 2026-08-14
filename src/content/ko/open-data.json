@@ -1,0 +1,38 @@
+{
+  "shinjuku-childcare-facilities": {
+    "titleGloss": "신주쿠구 육아 시설 목록",
+    "note": "신주쿠구 육아 시설의 공식 스냅샷 데이터입니다. 빈자리나 접수 상태는 알 수 없습니다."
+  },
+  "shinjuku-evacuation-sites": {
+    "titleGloss": "신주쿠구 지정 긴급 대피 장소 목록",
+    "note": "지진·화재 시 대피 장소: 신주쿠구 공식 긴급 대피 장소 목록입니다."
+  },
+  "shinjuku-public-facilities": {
+    "titleGloss": "신주쿠구 공공시설 정보",
+    "note": "구청·회관·도서관 등 시설의 구조화 데이터: '어느 창구로 가야 하나' 답변의 기반입니다."
+  },
+  "shinjuku-garbage-sorting": {
+    "titleGloss": "신주쿠구 쓰레기 분리 방법 목록",
+    "note": "쓰레기 분리 규칙 데이터: 모든 언어에서 가장 많이 받는 생활 질문 중 하나입니다."
+  },
+  "tokyo-evacuation-shelters": {
+    "titleGloss": "도쿄도 방재 지도: 대피소 목록 데이터",
+    "note": "도쿄 전역 대피소 목록(배리어프리 정보 포함): 구 데이터 교차 확인과 확장의 기반입니다."
+  },
+  "tokyo-flood-forecast": {
+    "titleGloss": "침수 예상 구역도",
+    "note": "도쿄도 공식 침수 위험 지도: 신주쿠·오쿠보 주변 방재 답변의 근거입니다."
+  },
+  "tokyo-medical-ledger": {
+    "titleGloss": "의료기관 대장",
+    "note": "표준 오픈데이터 스키마의 의료기관 대장: '근처 병원 찾기'의 기반입니다."
+  },
+  "tokyo-foreign-population": {
+    "titleGloss": "외국인 인구 (국적별)",
+    "note": "국적별 외국인 인구: MINFO가 어떤 언어를 우선할지 정하는 근거입니다."
+  },
+  "tokyo-medical-welfare-group": {
+    "titleGloss": "의료·복지 (카탈로그 분류)",
+    "note": "카탈로그의 '의료·복지' 카테고리: 구별 의료·복지 데이터를 찾는 검색 경로입니다."
+  }
+}

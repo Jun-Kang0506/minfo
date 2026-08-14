@@ -69,6 +69,8 @@ const LANGUAGE_NAMES: Record<LanguageCode, string> = {
   ko: "Korean (한국어)",
   vi: "Vietnamese (Tiếng Việt)",
   ne: "Nepali (नेपाली)",
+  tl: "Filipino / Tagalog",
+  bn: "Bengali (বাংলা)",
 };
 
 // Structured-output schema — constrains Claude's response to the exact

@@ -12,7 +12,7 @@ function selectEngine() {
   return isClaudeConfigured() ? claudeAnswerEngine : localAnswerEngine;
 }
 
-const LANGS: LanguageCode[] = ["en", "ja", "zh", "ko", "vi", "ne"];
+const LANGS: LanguageCode[] = ["en", "ja", "zh", "ko", "vi", "ne", "tl", "bn"];
 
 export async function POST(request: Request) {
   let body: Partial<AskRequest>;

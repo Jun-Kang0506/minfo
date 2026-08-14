@@ -1,0 +1,44 @@
+{
+  "brand": {
+    "subtitle": "Impormasyon ng lahat",
+    "homeLabel": "MINFO home",
+    "languageLabel": "Wika"
+  },
+  "textSize": { "label": "Laki ng text", "standard": "Karaniwan", "large": "Malaki" },
+  "nav": {
+    "ask": "Magtanong",
+    "categories": "Mga kategorya",
+    "sources": "Mga pinagmumulan",
+    "openData": "Buksan ang Data",
+    "whyMinfo": "Bakit MINFO?",
+    "why": "Bakit Shinjuku?",
+    "backToTop": "Bumalik sa itaas",
+    "mainNavigationLabel": "Pangunahing nabigasyon"
+  },
+  "hero": {
+    "kicker": "Nakabatay sa mga opisyal na pampublikong mapagkukunan",
+    "headline": "Maaasahang impormasyon sa buhay, sa iyong wika.",
+    "sub": "Mga ospital, insurance, basura, mga sakuna: Ipinapaliwanag ng MINFO ang pang-araw-araw na buhay sa Japan nang simple, palaging may mga opisyal na mapagkukunan.",
+    "ctaAsk": "Itanong mo sa MINFO",
+    "trustSources": "Ang bawat sagot ay nagpapakita ng mga opisyal na mapagkukunan nito",
+    "trustLanguages": "8 wika, kabilang ang Easy Japanese (やさしい日本語)",
+    "trustPilot": "Simula sa Shinjuku / Okubo, napapalawak sa buong Tokyo"
+  },
+  "categories": {
+    "title": "Ano ang kailangan mo ng tulong?",
+    "sub": "Pumili ng paksang magsisimula sa opisyal na impormasyon.",
+    "tryLabel": "Subukan mong magtanong"
+  },
+  "ask": {
+    "title": "Itanong mo sa MINFO",
+    "sub": "Mag-type ng tanong o mag-tap ng halimbawa. Ang mga sagot ay kasama ng mga opisyal na mapagkukunan.",
+    "placeholder": "Magtanong tungkol sa pang-araw-araw na buhay sa Shinjuku...",
+    "send": "Magtanong",
+    "examples": "Mga karaniwang tanong",
+    "thinking": "Sinusuri ang mga pinagkakatiwalaang mapagkukunan...",
+    "emptyHint": "Lalabas dito ang iyong sagot, na may mga source."
+  },
+  "mascot": {
+    "alt": "Mascot na gabay ng MINFO"
+  }
+}

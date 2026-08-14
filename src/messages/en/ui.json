@@ -1,0 +1,44 @@
+{
+  "brand": {
+    "subtitle": "Everyone's Info",
+    "homeLabel": "MINFO home",
+    "languageLabel": "Language"
+  },
+  "textSize": { "label": "Text size", "standard": "Standard", "large": "Large" },
+  "nav": {
+    "ask": "Ask",
+    "categories": "Categories",
+    "sources": "Sources",
+    "openData": "Open Data",
+    "whyMinfo": "Why MINFO?",
+    "why": "Why Shinjuku?",
+    "backToTop": "Back to top",
+    "mainNavigationLabel": "Main navigation"
+  },
+  "hero": {
+    "kicker": "Grounded in official public sources",
+    "headline": "Reliable life information, in your language.",
+    "sub": "Hospitals, insurance, garbage, disasters: MINFO explains daily life in Japan simply, always with official sources.",
+    "ctaAsk": "Ask MINFO",
+    "trustSources": "Every answer shows its official sources",
+    "trustLanguages": "8 languages, including Easy Japanese (やさしい日本語)",
+    "trustPilot": "Starting from Shinjuku / Okubo, expandable across Tokyo"
+  },
+  "categories": {
+    "title": "What do you need help with?",
+    "sub": "Choose a topic to start with official information.",
+    "tryLabel": "Try asking"
+  },
+  "ask": {
+    "title": "Ask MINFO",
+    "sub": "Type a question or tap an example. Answers come with official sources.",
+    "placeholder": "Ask about daily life in Shinjuku…",
+    "send": "Ask",
+    "examples": "Common questions",
+    "thinking": "Checking trusted sources…",
+    "emptyHint": "Your answer will appear here, with sources."
+  },
+  "mascot": {
+    "alt": "MINFO guide mascot"
+  }
+}

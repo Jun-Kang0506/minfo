@@ -1,0 +1,219 @@
+{
+  "hospital": {
+    "direct": "You can see a doctor even if you don't speak Japanese. Japan's official Medical Information Net (NAVII) lets you search hospitals and clinics near you — including by the languages they can handle.",
+    "steps": [
+      "Search the Medical Information Net (NAVII) for a hospital or clinic near you that supports your language.",
+      "Bring your residence card and health insurance card to the clinic.",
+      "If you are unsure where to start, Shinjuku Multicultural Plaza can help you in person."
+    ],
+    "safety": "If someone is seriously ill or injured right now, call 119 for an ambulance. Telephone interpretation is available."
+  },
+  "insurance": {
+    "direct": "If you live in Japan for three months or more, you are generally required to join health insurance. With a National Health Insurance card, you usually pay only 30% of medical costs at the hospital.",
+    "steps": [
+      "Register for National Health Insurance at the Shinjuku City Office (unless your employer enrolls you).",
+      "Premiums are based on your income — payment slips arrive by mail.",
+      "Show your insurance card every time you visit a hospital or pharmacy."
+    ],
+    "safety": "Exact rules depend on your visa and job. Please confirm your case at the Shinjuku City Office counter."
+  },
+  "garbage": {
+    "direct": "In Shinjuku, garbage is separated into burnable, metal/ceramic/glass, plastics, bottles & cans, paper, and oversized items — each with its own collection day depending on your address. Official multilingual guides exist.",
+    "steps": [
+      "Check the collection days for your exact address on the Shinjuku City site or your building's notice board.",
+      "Put garbage out by 8:00 AM on the collection day, in transparent or semi-transparent bags.",
+      "Oversized items (furniture, etc.) need a paid reservation before disposal."
+    ]
+  },
+  "earthquake": {
+    "direct": "During an earthquake: protect your head, get under a sturdy table, and stay away from windows. Do not rush outside while the shaking continues. Afterward, check official multilingual updates from Tokyo Bousai.",
+    "steps": [
+      "Learn the evacuation area for your neighborhood in advance (Shinjuku City publishes maps).",
+      "Prepare water, food, and essentials for about three days.",
+      "Get multilingual disaster alerts from the Tokyo Bousai website and disaster-info apps."
+    ],
+    "safety": "If someone is injured or a fire breaks out, call 119 immediately."
+  },
+  "japanese-learning": {
+    "direct": "Regasu Shinjuku offers daily-life Japanese classes for non-native speakers, mainly introductory and beginner level. Class availability can change.",
+    "steps": [
+      "Check the current class information, locations, and schedule.",
+      "Apply through the community exchange office or relevant foundation."
+    ]
+  },
+  "consultation": {
+    "direct": "You don't need to know which counter to go to — that's what consultation desks are for. Shinjuku Multicultural Plaza offers free consultation in multiple languages, and FRESC in Yotsuya gathers national support desks in one building.",
+    "steps": [
+      "Start at Shinjuku Multicultural Plaza for everyday questions — staff will point you to the right office.",
+      "For immigration, work, or legal matters, FRESC offers desks with interpretation.",
+      "At the Shinjuku City Office, ask for the foreign residents' consultation service."
+    ]
+  },
+  "tax": {
+    "direct": "A tax notice usually means a payment or a procedure is required. Common ones are resident tax (from Shinjuku City) and national pension (from the Japan Pension Service). The most important rule: don't ignore it — deadlines matter.",
+    "steps": [
+      "Check which office sent the letter — the sender's name is printed on it.",
+      "Take the letter to that office, or to a consultation desk to read it together.",
+      "If paying is difficult, ask about reductions, exemptions, or installment plans — these exist."
+    ],
+    "safety": "MINFO cannot confirm your specific tax amount or obligation. Please confirm with the office that issued the notice or a qualified professional."
+  },
+  "housing": {
+    "direct": "Renting in Japan has some unique rules: you often need a guarantor or guarantor company, and initial costs can include a deposit (shikikin) and key money (reikin). Official multilingual guidebooks explain contracts step by step.",
+    "steps": [
+      "Read Tokyo's multilingual renting guide before signing anything.",
+      "Ask a consultation desk to check the contract with you if anything is unclear.",
+      "Budget for initial costs — often 4–6 months of rent in total."
+    ],
+    "safety": "For disputes with a landlord or agency, don't rely on general advice — consult FRESC or a qualified professional."
+  },
+  "residence-card": {
+    "direct": "If you lose your residence card, stay calm — there is a clear procedure. Report the loss to the police first, then apply for a re-issue at the Immigration Services Agency within 14 days.",
+    "steps": [
+      "Go to a police station or koban and file a lost-property report (you'll get a report number).",
+      "Apply for re-issuance at the Tokyo Regional Immigration Bureau within 14 days, with a photo and your passport.",
+      "If you're unsure about any step, FRESC can guide you with interpretation."
+    ],
+    "safety": "Residence status rules are legal matters. Always confirm details with the Immigration Services Agency — MINFO cannot give immigration advice."
+  },
+  "police": {
+    "direct": "If you are in danger right now, call 110 (police) — it's free, 24 hours, and interpretation is available. For worries that are not urgent, the police consultation line #9110 and local consultation desks can help.",
+    "steps": [
+      "In immediate danger: call 110, or go to the nearest koban (police box).",
+      "Not urgent but worried: call #9110 for police consultation.",
+      "You can also talk to Shinjuku Multicultural Plaza — they will help you decide what to do next."
+    ],
+    "safety": "Emergency: call 110 for police. Call 119 for fire or ambulance. Both are free and work from any phone."
+  },
+  "ambulance": {
+    "direct": "For a medical emergency, call 119 now. It is free, works from any phone, and the operator can connect telephone interpretation. Say 'Kyūkyū desu' (I need an ambulance), then give your address or a nearby landmark.",
+    "steps": [
+      "Call 119. Say 'Kyūkyū desu', then the address — stay on the line.",
+      "Unlock the door if you can, and have your residence card and insurance card ready.",
+      "Not sure if it's an emergency? Call #7119 for advice (24 hours, Tokyo)."
+    ],
+    "safety": "Call 119 immediately for a medical emergency or fire. Do not wait."
+  },
+  "easy-japanese": {
+    "direct": "Yes — MINFO is designed to explain things in やさしい日本語 (Easy Japanese): short sentences and simple words, an approach recommended by Japanese public offices for sharing information.",
+    "steps": [
+      "Switch the language selector at the top to やさしい日本語.",
+      "Every answer will use short, simple Japanese sentences.",
+      "Staff at Shinjuku Multicultural Plaza can also rephrase difficult documents for you."
+    ]
+  },
+  "bank-account": {
+    "direct": "Foreign residents can open bank accounts in Japan, but every bank sets its own rules — this is general guidance, not official banking advice.",
+    "steps": [
+      "Procedures vary by bank — check the official requirements of the bank you want to use before going.",
+      "Banks commonly ask for a residence card, proof of address, and a phone number or other contact — bring what you have and ask what else is needed.",
+      "If the forms or requirements are confusing, a multilingual consultation desk can help you prepare."
+    ],
+    "safety": "Requirements differ by bank and can change. Always confirm with the bank's own official information."
+  },
+  "lost-wallet": {
+    "direct": "If you lost your wallet, report it at the nearest koban (police box) or police station — found items in Japan are very often handed in. Then protect your cards.",
+    "steps": [
+      "Go to the nearest koban or police station and report the loss — you will get a report number.",
+      "If bank or credit cards were inside, contact the card companies to stop them.",
+      "If your residence card was inside, you also need the re-issue procedure at immigration — ask a consultation desk if you need language help."
+    ],
+    "safety": "If the wallet was stolen rather than lost, tell the police that too. If you are in danger right now, call 110."
+  },
+  "city-office-letter": {
+    "direct": "You don't have to understand an official letter alone. Free consultation desks will read it with you, explain what it means, and tell you what to do next.",
+    "steps": [
+      "Check who sent it — the office name is printed on the envelope or letterhead.",
+      "Bring the letter to Shinjuku Multicultural Plaza — staff can read it with you in your language.",
+      "Confirm any payment or procedure directly with the office that sent the letter."
+    ],
+    "safety": "Official letters often have deadlines. If you see a date, act before it — don't set the letter aside."
+  },
+  "moving-registration": {
+    "direct": "Submit the appropriate address-change notification to Shinjuku City.",
+    "steps": [
+      "After moving into Shinjuku from another municipality, generally file a moving-in notification within 14 days after moving.",
+      "Foreign residents should bring a residence card or special permanent resident certificate.",
+      "Confirm required additional documents with resident registration services, because household relationship or status can change what is required."
+    ],
+    "safety": "The listed documents are not guaranteed to be sufficient. Confirm with Shinjuku City resident registration services."
+  },
+  "school-enrollment": {
+    "direct": "Foreign-national children who wish to attend a Shinjuku municipal elementary or junior-high school need an enrollment application.",
+    "steps": [
+      "For an overseas transfer or enrollment, complete Shinjuku residence registration first.",
+      "The child and guardian may need residence cards or special permanent resident certificates.",
+      "Contact the School Operations Division / school enrollment section. After applying, coordinate with the designated school."
+    ],
+    "safety": "Do not assume acceptance or eligibility is automatic. Confirm official requirements."
+  },
+  "childcare-application": {
+    "direct": "Eligible applicants can submit authorized nursery school or certified childcare center applications electronically through MynaPortal Pittari Service.",
+    "steps": [
+      "Deadlines apply. Use the official source for the current deadline.",
+      "Some applicants, including certain applicants outside Shinjuku or overseas, may need a different procedure.",
+      "Contact the Childcare Division Enrollment/Certification section."
+    ],
+    "safety": "Confirm eligibility, deadline, and procedure with the responsible office."
+  },
+  "public-housing": {
+    "direct": "Shinjuku runs rental housing and announces public recruitment. General criteria include Shinjuku residence, income, housing need, and other rules; exact eligibility varies.",
+    "steps": [
+      "Check the current recruitment notice.",
+      "Ask the Housing Division or Ward Housing Management Center about your case."
+    ],
+    "safety": "Foreign residents need specified statuses such as permanent or long-term residence; not every work visa qualifies. MINFO cannot decide eligibility."
+  },
+  "typhoon-heavy-rain": {
+    "direct": "Typhoons and water disasters are more common from July to September and conditions can develop quickly. Prepare early.",
+    "steps": [
+      "Review flood guidance and prepare what you may need before bad weather.",
+      "For the current situation, check official weather and disaster alerts."
+    ]
+  },
+  "japanese-class-beginner": {
+    "direct": "Regasu Shinjuku offers daily-life Japanese classes for non-native speakers, mainly introductory and beginner level.",
+    "steps": [
+      "Check the current class information and eligibility.",
+      "Apply through the community exchange office or relevant foundation."
+    ]
+  },
+  "japanese-class-evening": {
+    "direct": "Some Regasu Japanese classes meet on Monday or Thursday evenings. Availability can change.",
+    "steps": [
+      "Check the current schedule.",
+      "Apply through the community exchange office or relevant foundation."
+    ]
+  },
+  "japanese-class-okubo": {
+    "direct": "Regasu classes are held at Shinjuku Multicultural Plaza, Okubo, and other Shinjuku locations; availability can change.",
+    "steps": [
+      "Check the current location list.",
+      "Apply through the community exchange office or relevant foundation."
+    ]
+  },
+  "halal-food": {
+    "direct": "Tokyo's Muslim Travelers' Guide includes halal and Muslim-friendly dining listings.",
+    "steps": [
+      "Use the guide to find a possible dining option.",
+      "Confirm current details directly with the facility before you go."
+    ]
+  },
+  "prayer-facilities": {
+    "direct": "Tokyo's Muslim Travelers' Guide includes prayer-facility listings.",
+    "steps": [
+      "Use the guide to find a possible facility.",
+      "Confirm current details directly with the facility before you go."
+    ]
+  },
+  "fallback": {
+    "direct": "I don't have a confirmed answer for this exact question in MINFO's trusted sources yet — but here is what usually works. Your question may fit one of MINFO's topics (hospitals, taxes, garbage, housing, consultation), so try a category below or ask again in different words.",
+    "steps": [
+      "Ask Shinjuku Multicultural Plaza — a free desk that handles any daily-life question in many languages and points you to the right office.",
+      "For visa, work, or legal matters, FRESC near Shinjuku gathers the national support desks with interpretation.",
+      "Try rephrasing your question with a simpler word (e.g. \"hospital\", \"tax letter\", \"garbage\"), or tap a category or example above."
+    ],
+    "safety": "For anything urgent or official, please confirm directly with the relevant public office."
+  }
+  ,"tax-estimate":{"direct":"Use Shinjuku City's official resident-tax simulator for an estimate. MINFO does not calculate tax.","steps":["Use the official simulator.","The estimate depends on income and deductions.","Treat the result as an estimate, not a final tax decision."],"safety":"Some special situations may not be handled. Do not enter sensitive information into MINFO."}
+}

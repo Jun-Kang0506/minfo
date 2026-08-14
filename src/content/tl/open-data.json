@@ -1,0 +1,38 @@
+{
+  "shinjuku-childcare-facilities": {
+    "titleGloss": "Mga pasilidad sa childcare sa Shinjuku",
+    "note": "Opisyal na snapshot data ng mga pasilidad sa childcare sa Shinjuku. Hindi nito ipinapakita ang mga bakante o status ng enrollment."
+  },
+  "shinjuku-evacuation-sites": {
+    "titleGloss": "Itinalagang emergency evacuation sites sa Shinjuku",
+    "note": "Saan pupunta kapag may lindol o sunog: opisyal na listahan ng ward ng evacuation sites, handang i-link sa mga sagot tungkol sa sakuna."
+  },
+  "shinjuku-public-facilities": {
+    "titleGloss": "Mga pampublikong pasilidad sa Shinjuku",
+    "note": "Mga pasilidad ng ward (opisina, hall, library) bilang structured data. Batayan para sa mga sagot na “saang desk ako pupunta?”"
+  },
+  "shinjuku-garbage-sorting": {
+    "titleGloss": "Mga paraan ng paghihiwalay ng basura sa Shinjuku",
+    "note": "Mga patakaran sa paghihiwalay ng basura bilang data: isa sa pinakamadalas itanong sa araw-araw sa bawat wika."
+  },
+  "tokyo-evacuation-shelters": {
+    "titleGloss": "Tokyo disaster-prevention map: listahan ng shelter",
+    "note": "Listahan ng shelter sa buong Tokyo na may accessibility flags: pang-cross-check sa ward data at batayan para sa pagpapalawak."
+  },
+  "tokyo-flood-forecast": {
+    "titleGloss": "Mga mapa ng forecast ng pagbaha",
+    "note": "Opisyal na flood-risk maps para sa Tokyo: batayan sa mga sagot tungkol sa kahandaan sa sakuna sa paligid ng Shinjuku / Okubo."
+  },
+  "tokyo-medical-ledger": {
+    "titleGloss": "Talaan ng mga institusyong medikal",
+    "note": "Isang structured ledger ng mga institusyong medikal sa standardized open-data schema. Batayan para sa “maghanap ng pangangalaga malapit sa akin”."
+  },
+  "tokyo-foreign-population": {
+    "titleGloss": "Banyagang populasyon ayon sa nasyonalidad",
+    "note": "Banyagang populasyon ayon sa nasyonalidad: batayan kung aling mga wika ang dapat unahin ng MINFO, ayon sa ward."
+  },
+  "tokyo-medical-welfare-group": {
+    "titleGloss": "Medikal at welfare: kategorya ng catalog",
+    "note": "Kategorya ng medical at welfare ng catalog: landas ng paghahanap para sa clinic at welfare datasets ayon sa ward, na magkakaiba ang pangalan."
+  }
+}

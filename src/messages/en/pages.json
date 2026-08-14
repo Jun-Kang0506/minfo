@@ -1,0 +1,171 @@
+{
+  "sources": {
+    "title": "Built on official & public information",
+    "sub": "MINFO answers only from a curated set of official and public organizations. Every answer links back to them.",
+    "groupWard": "Shinjuku City",
+    "groupTokyo": "Tokyo Metropolitan",
+    "groupNational": "National",
+    "roadmapTitle": "Open-data roadmap",
+    "roadmapBadge": "Planned · not yet implemented",
+    "roadmap": [
+      {
+        "title": "Tokyo Open Data Catalog connection",
+        "body": "Link answers to live public datasets (facilities, consultation desks, disaster info) instead of static entries."
+      },
+      {
+        "title": "Ward-by-ward expansion",
+        "body": "The category + source structure is ward-agnostic: swap in each ward's official pages to cover all of Tokyo."
+      },
+      {
+        "title": "Anonymized question trends",
+        "body": "Understand what information residents actually need, shared with wards as a public-interest signal, never as personal data."
+      }
+    ]
+  },
+  "openData": {
+    "title": "From open data to usable guidance",
+    "sub": "Open data becomes useful when residents can find it, understand it, and act on it. MINFO builds that final mile.",
+    "now": {
+      "badge": "In use now",
+      "body": "{count} curated records from official/public sources power every answer and source card. Hand-checked, structured open-data-ready."
+    },
+    "next": {
+      "badge": "Candidates · not auto-fetched",
+      "body": "Tokyo / Shinjuku open datasets are identified below, prioritized by usefulness and update needs. Automatic fetching is future work."
+    },
+    "pipelineTitle": "How data becomes guidance",
+    "pipeline": [
+      {
+        "label": "Official data",
+        "desc": "Open dataset or official page"
+      },
+      {
+        "label": "Curated record",
+        "desc": "Checked, structured, source-linked"
+      },
+      {
+        "label": "Multilingual explanation",
+        "desc": "Plain answers in 8 languages"
+      },
+      {
+        "label": "Next action",
+        "desc": "Right office, steps, 119/110 guidance"
+      }
+    ],
+    "strategyTitle": "How MINFO chooses a data access method",
+    "strategyIntro": "Not every dataset should be a live API. The method follows how fast the information changes:",
+    "strategy": [
+      {
+        "title": "Stable information",
+        "body": "Rules and contact desks that rarely change. Curated CSV/JSON source records are enough for the MVP."
+      },
+      {
+        "title": "Periodically updated data",
+        "body": "Facility lists and statistics. Scheduled CSV downloads or batch updates can refresh these records."
+      },
+      {
+        "title": "Time-sensitive information",
+        "body": "Disasters, shelter status, sudden closures. Future versions may need APIs or frequent automated updates."
+      }
+    ],
+    "candidatesTitle": "Tokyo Open Data: candidate datasets",
+    "candidatesSub": "Catalog entries and search targets MINFO plans to connect next, with what each would improve. None are fetched automatically yet.",
+    "catalogCta": "Browse the Tokyo Open Data Catalog",
+    "badges": {
+      "curated": "Curated now",
+      "candidate": "Open-data candidate",
+      "batch": "Periodic · future batch",
+      "live": "Time-sensitive · future API",
+      "searchTarget": "Catalog search target"
+    }
+  },
+  "quality": {
+    "title": "MINFO source-quality check",
+    "sub": "A lightweight checklist inspired by Japan's public open-data quality guidance, not a formal government assessment. Every source in MINFO goes through it.",
+    "items": [
+      {
+        "label": "Official / public source",
+        "desc": "Published by a government body or public organization."
+      },
+      {
+        "label": "Link verified",
+        "desc": "The URL was checked by hand and points to the official page."
+      },
+      {
+        "label": "Language accessible",
+        "desc": "Multilingual, or usable with simple Japanese."
+      },
+      {
+        "label": "Daily-life relevance",
+        "desc": "Answers a question residents actually ask."
+      },
+      {
+        "label": "Update-ready",
+        "desc": "The record can be refreshed when the source changes."
+      },
+      {
+        "label": "Ward-expandable",
+        "desc": "The same structure can host other wards' sources."
+      },
+      {
+        "label": "Improved by feedback",
+        "desc": "User feedback can flag and fix weak sources."
+      }
+    ]
+  },
+  "whyMinfo": {
+    "title": "Why MINFO, not just search or AI chat?",
+    "sub": "MINFO is not trying to beat search engines or general AI at general knowledge. It does one local job well.",
+    "cards": [
+      {
+        "title": "Search engines",
+        "body": "Give you many links. You still have to judge which page is official, current, and applies to Shinjuku."
+      },
+      {
+        "title": "General AI chat",
+        "body": "Gives broad, general answers. Helpful, but not grounded in your ward's offices, and it can guess."
+      },
+      {
+        "title": "MINFO",
+        "body": "Local, source-grounded next steps in your language, with official sources on every answer and 119/110 guidance that never changes. A navigator to real offices, never a replacement for them."
+      }
+    ]
+  },
+  "story": {
+    "title": "Why Shinjuku / Okubo?",
+    "sub": "A civic-tech pilot for multilingual information access, designed to expand across Tokyo.",
+    "blocks": [
+      {
+        "title": "The problem",
+        "body": "Official life information in Japan is reliable, but scattered across dozens of sites, written in dense administrative Japanese, and hard to act on. For residents navigating an unfamiliar system in a second language, even simple questions (\"which counter?\", \"which form?\") become barriers."
+      },
+      {
+        "title": "The people",
+        "body": "Foreign-origin residents and multilingual communities: newly arrived residents, international students, workers, families, and the community supporters who help them. People facing language and information-access barriers, not a lack of ability."
+      },
+      {
+        "title": "The approach",
+        "body": "MINFO is not a translation chatbot. It is a civic information navigator: it explains daily-life systems simply, in eight languages including やさしい日本語, always shows its official sources, and guides people to the right real-world office, never replacing it."
+      },
+      {
+        "title": "Pilot → expansion",
+        "body": "Shinjuku / Okubo is the pilot: one of Japan's most visibly multilingual neighborhoods, dense with students, workers, and families who need daily-life information. The same category + trusted-source structure can then roll out ward by ward across Tokyo."
+      }
+    ],
+    "impactTitle": "What better information access changes",
+    "impact": [
+      "Healthcare access in your own language",
+      "Disaster preparedness that reaches everyone",
+      "Garbage, tax, and housing rules made clear",
+      "Consultation desks that people actually find"
+    ]
+  },
+  "footer": {
+    "tagline": "Multilingual Information Navigator for Foreign-Origin Residents",
+    "meta": "Hackathon prototype 2026 · Shinjuku / Okubo pilot",
+    "emergencyTitle": "Emergency",
+    "fire": "Fire / Ambulance",
+    "police": "Police",
+    "freeNote": "Free · 24 hours · interpretation available"
+  }
+}

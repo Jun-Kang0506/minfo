@@ -1,0 +1,171 @@
+{
+  "sources": {
+    "title": "Binuo sa opisyal at pampublikong impormasyon",
+    "sub": "Ang MINFO ay sumasagot lamang mula sa isang na-curate na hanay ng mga opisyal at pampublikong organisasyon. Bawat sagot ay nagli-link pabalik sa kanila.",
+    "groupWard": "Lungsod ng Shinjuku",
+    "groupTokyo": "Metropolitan Tokyo",
+    "groupNational": "Pambansa",
+    "roadmapTitle": "Roadmap ng open data",
+    "roadmapBadge": "Nakaplano · hindi pa naipatupad",
+    "roadmap": [
+      {
+        "title": "Koneksyon ng Tokyo Open Data Catalog",
+        "body": "I-link ang mga sagot sa mga live na pampublikong dataset (mga pasilidad, consultation desk, impormasyon sa kalamidad) sa halip na mga static na entry."
+      },
+      {
+        "title": "Pagpapalawak ng ward-by-ward",
+        "body": "Ang istraktura ng kategorya + pinagmulan ay ward-agnostic: magpalit sa mga opisyal na pahina ng bawat ward upang masakop ang buong Tokyo."
+      },
+      {
+        "title": "Anonymized tanong trend",
+        "body": "Unawain kung anong impormasyon ang talagang kailangan ng mga residente, na ibinahagi sa mga ward bilang signal ng pampublikong interes, hindi bilang personal na data."
+      }
+    ]
+  },
+  "openData": {
+    "title": "Mula sa bukas na data hanggang sa magagamit na gabay",
+    "sub": "Nagiging kapaki-pakinabang ang bukas na data kapag nahanap ito ng mga residente, naiintindihan ito, at naaksyunan ito. Binubuo ng MINFO ang huling milya na iyon.",
+    "now": {
+      "badge": "Ginagamit ngayon",
+      "body": "Ang {count} na mga na-curate na tala mula sa opisyal/pampublikong source ay nagpapagana sa bawat sagot at source card. Hand-check, structured na open-data-ready."
+    },
+    "next": {
+      "badge": "Mga Kandidato · hindi awtomatikong kinukuha",
+      "body": "Ang mga bukas na dataset ng Tokyo / Shinjuku ay natukoy sa ibaba, na inuuna ayon sa pagiging kapaki-pakinabang at mga pangangailangan sa pag-update. Ang awtomatikong pagkuha ay trabaho sa hinaharap."
+    },
+    "pipelineTitle": "Paano nagiging gabay ang data",
+    "pipeline": [
+      {
+        "label": "Opisyal na data",
+        "desc": "Buksan ang dataset o opisyal na page"
+      },
+      {
+        "label": "Na-curate na rekord",
+        "desc": "Naka-check, nakabalangkas, naka-link sa pinagmulan"
+      },
+      {
+        "label": "Multilingual na paliwanag",
+        "desc": "Mga simpleng sagot sa 8 wika"
+      },
+      {
+        "label": "Susunod na aksyon",
+        "desc": "Tamang opisina, mga hakbang, 119/110 na gabay"
+      }
+    ],
+    "strategyTitle": "Paano pumipili ng paraan ng pag-access ng data ang MINFO",
+    "strategyIntro": "Hindi dapat live na API ang lahat ng dataset. Ang pamamaraan ay sumusunod kung gaano kabilis ang pagbabago ng impormasyon:",
+    "strategy": [
+      {
+        "title": "Matatag na impormasyon",
+        "body": "Mga panuntunan at contact desk na bihirang magbago. Sapat na para sa MVP ang mga na-curate na CSV/JSON na source record."
+      },
+      {
+        "title": "Pana-panahong na-update ang data",
+        "body": "Mga listahan at istatistika ng pasilidad. Maaaring i-refresh ng mga nakaiskedyul na pag-download ng CSV o mga batch na update ang mga talaang ito."
+      },
+      {
+        "title": "Impormasyong sensitibo sa oras",
+        "body": "Mga sakuna, katayuan ng tirahan, biglaang pagsasara. Maaaring kailanganin ng mga bersyon sa hinaharap ang mga API o madalas na awtomatikong pag-update."
+      }
+    ],
+    "candidatesTitle": "Tokyo Open Data: mga dataset ng kandidato",
+    "candidatesSub": "Mga entry sa catalog at mga target sa paghahanap Plano ng MINFO na kumonekta sa susunod, kung ano ang mapapabuti ng bawat isa. Wala pang awtomatikong kinukuha.",
+    "catalogCta": "I-browse ang Tokyo Open Data Catalog",
+    "badges": {
+      "curated": "Na-curate ngayon",
+      "candidate": "Open-data na kandidato",
+      "batch": "Pana-panahon · batch sa hinaharap",
+      "live": "Time-sensitive · hinaharap na API",
+      "searchTarget": "Target sa paghahanap ng catalog"
+    }
+  },
+  "quality": {
+    "title": "Pagsusuri ng kalidad ng source ng MINFO",
+    "sub": "Isang magaan na checklist na inspirasyon ng pampublikong patnubay sa kalidad ng open-data ng Japan, hindi isang pormal na pagtatasa ng pamahalaan. Ang bawat source sa MINFO ay dumadaan dito.",
+    "items": [
+      {
+        "label": "Opisyal / pampublikong mapagkukunan",
+        "desc": "Na-publish ng isang katawan ng pamahalaan o pampublikong organisasyon."
+      },
+      {
+        "label": "Na-verify ang link",
+        "desc": "Ang URL ay sinuri sa pamamagitan ng kamay at tumuturo sa opisyal na pahina."
+      },
+      {
+        "label": "Naa-access ang wika",
+        "desc": "Multilingual, o magagamit sa simpleng Japanese."
+      },
+      {
+        "label": "Kaugnayan sa pang-araw-araw na buhay",
+        "desc": "Sumasagot sa isang tanong na talagang itinatanong ng mga residente."
+      },
+      {
+        "label": "I-update-ready",
+        "desc": "Maaaring i-refresh ang record kapag nagbago ang source."
+      },
+      {
+        "label": "Maaaring palawakin sa iba pang ward",
+        "desc": "Ang parehong istraktura ay maaaring mag-host ng iba pang mga mapagkukunan ng ward."
+      },
+      {
+        "label": "Pinahusay ng feedback",
+        "desc": "Maaaring i-flag at ayusin ng feedback ng user ang mga mahihinang source."
+      }
+    ]
+  },
+  "whyMinfo": {
+    "title": "Bakit MINFO, hindi lang maghanap o AI chat?",
+    "sub": "Hindi sinusubukan ng MINFO na talunin ang mga search engine o pangkalahatang AI sa pangkalahatang kaalaman. Nagagawa nito nang maayos ang isang lokal na trabaho.",
+    "cards": [
+      {
+        "title": "Mga search engine",
+        "body": "Bigyan ka ng maraming link. Kailangan mo pa ring husgahan kung aling pahina ang opisyal, kasalukuyan, at naaangkop sa Shinjuku."
+      },
+      {
+        "title": "Pangkalahatang AI chat",
+        "body": "Nagbibigay ng malawak, pangkalahatang mga sagot. Nakatutulong, ngunit hindi batay sa mga opisina ng iyong ward, at maaari itong hulaan."
+      },
+      {
+        "title": "MINFO",
+        "body": "Lokal, pinagmumulan ng mga susunod na hakbang sa iyong wika, na may mga opisyal na mapagkukunan sa bawat sagot at 119/110 na gabay na hindi nagbabago. Isang navigator sa mga totoong opisina, hindi kailanman kapalit para sa kanila."
+      }
+    ]
+  },
+  "story": {
+    "title": "Bakit Shinjuku / Okubo?",
+    "sub": "Isang civic-tech na pilot para sa pag-access sa impormasyon sa maraming wika, na idinisenyo upang palawakin sa buong Tokyo.",
+    "blocks": [
+      {
+        "title": "Ang problema",
+        "body": "Ang opisyal na impormasyon sa buhay sa Japan ay maaasahan, ngunit nakakalat sa dose-dosenang mga site, nakasulat sa siksik na administratibong Japanese, at mahirap kumilos. Para sa mga residenteng nagna-navigate sa isang hindi pamilyar na sistema sa pangalawang wika, maging ang mga simpleng tanong (\"aling counter?\", \"anong anyo?\") ay nagiging mga hadlang."
+      },
+      {
+        "title": "Ang mga tao",
+        "body": "Mga dayuhang residente at mga multilingguwal na komunidad: mga bagong dating na residente, internasyonal na estudyante, manggagawa, pamilya, at mga tagasuporta ng komunidad na tumutulong sa kanila. Ang mga taong nahaharap sa wika at mga hadlang sa pag-access ng impormasyon, hindi kakulangan ng kakayahan."
+      },
+      {
+        "title": "Ang diskarte",
+        "body": "Ang MINFO ay hindi isang translation chatbot. Isa itong civic information navigator: simple nitong ipinapaliwanag ang mga sistema ng pang-araw-araw na buhay sa walong wika, kabilang ang やさしい日本語, palaging ipinapakita ang mga opisyal na mapagkukunan, at ginagabayan ang mga tao sa tamang opisina nang hindi ito pinapalitan."
+      },
+      {
+        "title": "Pilot → pagpapalawak",
+        "body": "Ang Shinjuku / Okubo ay ang piloto: isa sa mga pinaka-nakikitang multilinggwal na kapitbahayan sa Japan, siksik sa mga mag-aaral, manggagawa, at pamilya na nangangailangan ng pang-araw-araw na impormasyon sa buhay. Ang parehong kategorya + pinagkakatiwalaang pinagmumulan na istraktura ay maaaring ilunsad sa bawat purok sa buong Tokyo."
+      }
+    ],
+    "impactTitle": "Anong mas magandang impormasyon ang nagbabago",
+    "impact": [
+      "Pag-access sa pangangalagang pangkalusugan sa iyong sariling wika",
+      "Paghahanda sa kalamidad na umaabot sa lahat",
+      "Nilinaw ang mga panuntunan sa basura, buwis, at pabahay",
+      "Mga consultation desk na talagang hinahanap ng mga tao"
+    ]
+  },
+  "footer": {
+    "tagline": "Multilingual Information Navigator para sa mga dayuhang naninirahan",
+    "meta": "Hackathon prototype 2026 · Shinjuku / Okubo pilot",
+    "emergencyTitle": "Emergency na sitwasyon",
+    "fire": "Sunog / Ambulansya",
+    "police": "Pulis",
+    "freeNote": "Libre · 24 na oras · magagamit ang interpretasyon"
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "questions": {
+    "health": {
+      "title": "您需要了解什么？",
+      "options": [
+        {
+          "label": "查找诊所",
+          "request": "查找诊所"
+        },
+        {
+          "label": "了解健康保险",
+          "request": "了解健康保险"
+        },
+        {
+          "label": "我现在需要紧急帮助",
+          "request": "我现在需要紧急帮助"
+        }
+      ]
+    },
+    "school_kind": {
+      "title": "您要找哪种学校？",
+      "options": [
+        { "label": "小学", "request": "查找小学" },
+        { "label": "初中", "request": "查找初中" },
+        { "label": "高中", "request": "查找高中" }
+      ]
+    },
+    "health_urgent_kind": {
+      "title": "是什么紧急情况？",
+      "options": [
+        {
+          "label": "救护车或火灾",
+          "request": "救护车或火灾"
+        },
+        {
+          "label": "警察或眼前危险",
+          "request": "警察或眼前危险"
+        }
+      ]
+    },
+    "schools": {
+      "title": "您需要了解什么？",
+      "options": [
+        { "label": "查找学校", "request": "查找学校" },
+        {
+          "label": "申请小学或初中入学",
+          "request": "申请小学或初中入学"
+        },
+        {
+          "label": "申请托育",
+          "request": "申请托育"
+        },
+        {
+          "label": "查找托育设施",
+          "request": "查找托育设施"
+        }
+      ]
+    },
+    "taxes": {
+      "title": "您需要了解什么？",
+      "options": [
+        {
+          "label": "税务或养老金通知，或缴费困难",
+          "request": "税务或养老金通知，或缴费困难"
+        },
+        {
+          "label": "计算我的税",
+          "request": "计算我的税"
+        }
+      ]
+    },
+    "garbage": {
+      "title": "您需要了解什么？",
+      "options": [
+        {
+          "label": "分类、收集日或大型垃圾",
+          "request": "分类、收集日或大型垃圾"
+        }
+      ]
+    },
+    "disaster": {
+      "title": "您需要了解什么？",
+      "options": [
+        {
+          "label": "地震准备和官方警报",
+          "request": "地震准备和官方警报"
+        },
+        {
+          "label": "台风和暴雨准备",
+          "request": "台风和暴雨准备"
+        },
+        {
+          "label": "避难场所",
+          "request": "避难场所"
+        }
+      ]
+    },
+    "japanese": {
+      "title": "您需要了解什么？",
+      "options": [
+        {
+          "label": "找日语课",
+          "request": "找日语课"
+        },
+        {
+          "label": "简明日语",
+          "request": "简明日语"
+        }
+      ]
+    },
+    "japanese_class_need": {
+      "title": "您想找哪种课程？",
+      "options": [
+        {
+          "label": "初学者课程",
+          "request": "初学者课程"
+        },
+        {
+          "label": "晚间课程",
+          "request": "晚间课程"
+        },
+        {
+          "label": "大久保地区课程",
+          "request": "大久保地区课程"
+        }
+      ]
+    },
+    "housing": {
+      "title": "您需要了解什么？",
+      "options": [
+        {
+          "label": "搬家登记",
+          "request": "搬家登记"
+        },
+        {
+          "label": "租房、合同或房东问题",
+          "request": "租房、合同或房东问题"
+        },
+        {
+          "label": "公共住房",
+          "request": "公共住房"
+        }
+      ]
+    },
+    "consultation": {
+      "title": "您需要了解什么？",
+      "options": [
+        {
+          "label": "生活咨询",
+          "request": "生活咨询"
+        },
+        {
+          "label": "看懂政府信件",
+          "request": "看懂政府信件"
+        },
+        {
+          "label": "在留卡",
+          "request": "在留卡"
+        },
+        {
+          "label": "丢失钱包",
+          "request": "丢失钱包"
+        },
+        {
+          "label": "开银行账户",
+          "request": "开银行账户"
+        }
+      ]
+    },
+    "food-prayer": {
+      "title": "您需要了解什么？",
+      "options": [
+        {
+          "label": "清真餐饮",
+          "request": "清真餐饮"
+        },
+        {
+          "label": "礼拜设施",
+          "request": "礼拜设施"
+        }
+      ]
+    },
+    "emergency": {
+      "title": "是什么紧急情况？",
+      "options": [
+        {
+          "label": "救护车或火灾",
+          "request": "救护车或火灾"
+        },
+        {
+          "label": "警察或眼前危险",
+          "request": "警察或眼前危险"
+        }
+      ]
+    }
+  },
+  "ui": {
+    "next": "下一步",
+    "back": "返回",
+    "startOver": "重新开始",
+    "loading": "正在确认可信来源…",
+    "unsupportedTitle": "此主题的信息正在准备中。",
+    "unsupportedNeed": "您选择的是：{need}",
+    "consultation": "查找咨询窗口",
+    "structuredLookupTitle": "托育设施查询正在准备中。",
+    "structuredLookupBody": "使用此查询前，必须确认官方数据集和目录信息。这里不显示实时结果。"
+  }
+}

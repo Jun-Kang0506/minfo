@@ -7,4 +7,6 @@ export const LANGUAGES: Language[] = [
   { code: "ko", nativeLabel: "한국어", englishLabel: "Korean" },
   { code: "vi", nativeLabel: "Tiếng Việt", englishLabel: "Vietnamese" },
   { code: "ne", nativeLabel: "नेपाली", englishLabel: "Nepali" },
+  { code: "tl", nativeLabel: "Filipino", englishLabel: "Filipino / Tagalog" },
+  { code: "bn", nativeLabel: "বাংলা", englishLabel: "Bengali" },
 ];

@@ -1,0 +1,93 @@
+{
+  "shinjuku-foreign": {
+    "title": "Thông tin đời sống cho cư dân nước ngoài của quận Shinjuku",
+    "organization": "Quận Shinjuku",
+    "note": "Trang web chính thức của quận Shinjuku dành cho cư dân nước ngoài: đời sống, rác, y tế, phòng chống thiên tai, thuế, lớp tiếng Nhật và tư vấn (bản tiếng Nhật, Anh, Trung, Hàn)."
+  },
+  "tabunka-plaza": {
+    "title": "Trung tâm Đa văn hóa Shinjuku (Tabunka Plaza)",
+    "organization": "Quận Shinjuku",
+    "note": "Quầy tư vấn đa ngôn ngữ miễn phí và lớp tiếng Nhật, cách Okubo vài phút: nơi đầu tiên nên đến khi bạn chưa biết hỏi ở đâu."
+  },
+  "shinjuku-city": {
+    "title": "Trang web chính thức của quận Shinjuku",
+    "organization": "Quận Shinjuku",
+    "note": "Trang chính thức của Văn phòng quận Shinjuku: đăng ký cư trú, bảo hiểm y tế, thuế và các thủ tục đời sống đều làm tại đây (chủ yếu tiếng Nhật)."
+  },
+  "shinjuku-garbage": {
+    "title": "Hướng dẫn phân loại rác và tái chế của quận Shinjuku",
+    "organization": "Quận Shinjuku",
+    "note": "Quy tắc chính thức về rác và tái chế của quận Shinjuku: cách phân loại, ngày bỏ rác, kèm hướng dẫn đa ngôn ngữ."
+  },
+  "iryou-net": {
+    "title": "Mạng thông tin y tế (NAVII)",
+    "organization": "Bộ Y tế, Lao động và Phúc lợi",
+    "note": "Hệ thống tìm kiếm bệnh viện và phòng khám chính thức toàn Nhật Bản: tìm cơ sở gần bạn và xem ngôn ngữ họ hỗ trợ."
+  },
+  "tokyo-metro": {
+    "title": "Trang chính thức của Chính quyền Tokyo",
+    "organization": "Chính quyền Tokyo",
+    "note": "Trang chính thức của chính quyền Tokyo: thông tin đời sống toàn Tokyo và dịch vụ hỗ trợ đa ngôn ngữ, hữu ích khi câu hỏi vượt ra ngoài Shinjuku."
+  },
+  "tokyo-bousai": {
+    "title": "Trang phòng chống thiên tai Tokyo",
+    "organization": "Chính quyền Tokyo",
+    "note": "Trang phòng chống thiên tai chính thức của Tokyo: hướng dẫn chuẩn bị, thông tin sơ tán và cập nhật khẩn cấp, có trang đa ngôn ngữ."
+  },
+  "tokyo-fire": {
+    "title": "Sở Cứu hỏa Tokyo: 119 / #7119",
+    "organization": "Sở Cứu hỏa Tokyo",
+    "note": "Cơ quan chính thức của số 119 (cứu hỏa / cấp cứu). Cũng vận hành #7119: đường dây 24 giờ khi bạn không chắc có phải cấp cứu."
+  },
+  "isa": {
+    "title": "Cục Quản lý Xuất nhập cảnh và Lưu trú Nhật Bản",
+    "organization": "Bộ Tư pháp",
+    "note": "Cơ quan chính thức về thẻ cư trú, visa và tư cách lưu trú: nơi duy nhất để xác nhận mọi thủ tục xuất nhập cảnh."
+  },
+  "fresc": {
+    "title": "Trung tâm Hỗ trợ Cư dân Nước ngoài (FRESC)",
+    "organization": "Bộ Tư pháp (Yotsuya, Tokyo)",
+    "note": "Các quầy hỗ trợ quốc gia: cư trú, lao động, pháp lý, nhân quyền: tập trung trong một tòa nhà gần Shinjuku, có phiên dịch."
+  },
+  "nta": {
+    "title": "Cơ quan Thuế Quốc gia",
+    "organization": "Cơ quan Thuế Quốc gia",
+    "note": "Cơ quan chính thức về thuế quốc gia: thuế thu nhập, kê khai thuế và hướng dẫn bằng tiếng Anh."
+  },
+  "nenkin": {
+    "title": "Cơ quan Hưu trí Nhật Bản",
+    "organization": "Cơ quan Hưu trí Nhật Bản",
+    "note": "Cơ quan chính thức về đăng ký, đóng và miễn giảm lương hưu quốc dân: có mục quốc tế bằng tiếng Anh."
+  },
+  "tokyo-opendata": {
+    "title": "Danh mục Dữ liệu mở Tokyo",
+    "organization": "Chính quyền Tokyo",
+    "note": "Danh mục dữ liệu mở của Tokyo (cơ sở, quầy tư vấn, thông tin thiên tai): MINFO dự định kết nối để mở rộng ra các quận."
+  },
+  "shinjuku-public-housing-recruitment": {
+    "title": "Tuyển người thuê nhà do quận Shinjuku quản lý",
+    "organization": "Quận Shinjuku",
+    "note": "Thông tin chính thức về tuyển người vào nhà cho thuê do quận Shinjuku quản lý và điều kiện. Hãy xem thông báo hiện tại vì điều kiện thay đổi."
+  },
+  "shinjuku-flood-guidance": {
+    "title": "Hướng dẫn bão và mưa lớn của quận Shinjuku",
+    "organization": "Quận Shinjuku",
+    "note": "Hướng dẫn chính thức của quận Shinjuku về chuẩn bị cho lũ lụt và thiên tai do nước."
+  },
+  "shinjuku-weather-information": {
+    "title": "Thông tin thời tiết phòng chống thiên tai Shinjuku",
+    "organization": "Quận Shinjuku",
+    "note": "Liên kết thời tiết và thông tin thiên tai chính thức cho cư dân Shinjuku."
+  },
+  "regasu-japanese-classes": {
+    "title": "Lớp tiếng Nhật của Quỹ Sáng tạo Tương lai Shinjuku",
+    "organization": "Quỹ Sáng tạo Tương lai Shinjuku (Regasu Shinjuku)",
+    "note": "Thông tin lớp học chính thức cho người không phải bản ngữ học tiếng Nhật đời sống ở Shinjuku. Lịch mở lớp có thể thay đổi."
+  },
+  "tokyo-muslim-travelers-guide": {
+    "title": "Hướng dẫn Du khách Hồi giáo Tokyo",
+    "organization": "Cục Hội nghị và Du khách Tokyo",
+    "note": "Hướng dẫn Tokyo về cơ sở cầu nguyện, ăn uống halal và thân thiện với người Hồi giáo. Hãy xác nhận trực tiếp với từng cơ sở."
+  }
+  ,"shinjuku-resident-tax-simulator":{"title":"Shinjuku City: Mô phỏng thuế cư trú","organization":"Shinjuku City","note":"Công cụ mô phỏng chính thức của Shinjuku City để ước tính thuế cư trú. Kết quả phụ thuộc vào thu nhập và các khoản khấu trừ, chỉ là ước tính, không phải quyết định cuối cùng."}
+}

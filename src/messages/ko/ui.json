@@ -1,0 +1,44 @@
+{
+  "brand": {
+    "subtitle": "모두의 정보",
+    "homeLabel": "MINFO 홈",
+    "languageLabel": "언어"
+  },
+  "textSize": { "label": "글자 크기", "standard": "기본", "large": "크게" },
+  "nav": {
+    "ask": "질문하기",
+    "categories": "카테고리",
+    "sources": "정보 출처",
+    "openData": "오픈데이터",
+    "whyMinfo": "왜 MINFO?",
+    "why": "왜 신주쿠?",
+    "backToTop": "맨 위로",
+    "mainNavigationLabel": "주요 탐색"
+  },
+  "hero": {
+    "kicker": "공식 정보에 기반한 생활 안내",
+    "headline": "당신의 언어로, 믿을 수 있는 생활 정보를.",
+    "sub": "병원, 보험, 쓰레기, 재난 대비. MINFO는 일본 생활 정보를 쉽게 안내하고, 답변에는 항상 공식 출처가 붙습니다.",
+    "ctaAsk": "MINFO에 질문하기",
+    "trustSources": "모든 답변에 공식 출처 표시",
+    "trustLanguages": "8개 언어 지원, 쉬운 일본어(やさしい日本語) 포함",
+    "trustPilot": "신주쿠·오쿠보에서 시작, 도쿄 전역으로 확장 가능"
+  },
+  "categories": {
+    "title": "어떤 도움이 필요하세요?",
+    "sub": "주제를 선택하면 공식 정보로 안내합니다.",
+    "tryLabel": "이렇게 물어보세요"
+  },
+  "ask": {
+    "title": "MINFO에 질문하기",
+    "sub": "질문을 입력하거나 예시를 눌러보세요. 답변에는 공식 출처가 붙습니다.",
+    "placeholder": "신주쿠 생활에 대해 물어보세요…",
+    "send": "질문",
+    "examples": "자주 묻는 질문",
+    "thinking": "신뢰할 수 있는 출처를 확인 중…",
+    "emptyHint": "답변이 출처와 함께 여기에 표시됩니다."
+  },
+  "mascot": {
+    "alt": "MINFO 안내 마스코트"
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "hospital": {
+    "direct": "Maaari kang magpatingin sa doktor kahit hindi ka nagsasalita ng Japanese. Sa opisyal na Medical Information Net (NAVII) ng Japan, makakahanap ka ng malapit na ospital at klinika, kabilang ang ayon sa mga wikang kaya nilang gamitin.",
+    "steps": [
+      "Maghanap sa Medical Information Net (NAVII) para sa isang ospital o klinika na malapit sa iyo na sumusuporta sa iyong wika.",
+      "Dalhin ang iyong residence card at health insurance card sa klinika.",
+      "Kung hindi ka sigurado kung saan magsisimula, ang Shinjuku Multicultural Plaza ay maaaring makatulong sa iyo nang personal."
+    ],
+    "safety": "Kung may malubhang sakit o pinsala ngayon, tumawag sa 119 para sa ambulansya. May interpretasyon sa telepono."
+  },
+  "insurance": {
+    "direct": "Kung nakatira ka sa Japan sa loob ng tatlong buwan o higit pa, karaniwang kinakailangan mong sumali sa health insurance. Gamit ang isang National Health Insurance card, karaniwang 30% lang ng mga gastos sa medikal ang binabayaran mo sa ospital.",
+    "steps": [
+      "Magparehistro para sa National Health Insurance sa Shinjuku City Office (maliban kung i-enroll ka ng iyong employer).",
+      "Ang mga premium ay batay sa iyong kita — dumarating ang mga slip ng pagbabayad sa pamamagitan ng koreo.",
+      "Ipakita ang iyong insurance card sa tuwing bibisita ka sa isang ospital o parmasya."
+    ],
+    "safety": "Ang mga eksaktong tuntunin ay nakasalalay sa iyong visa at trabaho. Mangyaring kumpirmahin ang iyong kaso sa counter ng Shinjuku City Office."
+  },
+  "garbage": {
+    "direct": "Sa Shinjuku, ang mga basura ay nahahati sa nasusunog, metal/ceramic/salamin, mga plastik, bote at lata, papel, at malalaking bagay — bawat isa ay may sariling araw ng koleksyon depende sa iyong address. Mayroong mga opisyal na gabay sa maraming wika.",
+    "steps": [
+      "Tingnan ang mga araw ng koleksyon para sa iyong eksaktong address sa site ng Shinjuku City o sa notice board ng iyong gusali.",
+      "Itapon ang basura bago ang 8:00 AM sa araw ng koleksyon, sa transparent o semi-transparent na mga bag.",
+      "Ang malalaking bagay (muwebles, atbp.) ay nangangailangan ng bayad na reserbasyon bago itapon."
+    ]
+  },
+  "earthquake": {
+    "direct": "Kapag may lindol: protektahan ang ulo, sumilong sa ilalim ng matibay na mesa, at lumayo sa mga bintana. Huwag magmadaling lumabas habang umuuga pa. Pagkatapos, tingnan ang opisyal na mga update sa maraming wika mula sa Tokyo Bousai.",
+    "steps": [
+      "Alamin ang lugar ng paglikas para sa iyong kapitbahayan nang maaga (naglalathala ng mga mapa ang Lungsod ng Shinjuku).",
+      "Maghanda ng tubig, pagkain, at mga kailangan sa loob ng halos tatlong araw.",
+      "Makakuha ng mga multilingguwal na alerto sa kalamidad mula sa website ng Tokyo Bousai at mga app ng impormasyon sa sakuna."
+    ],
+    "safety": "Kung may nasugatan o nagkaroon ng sunog, tumawag kaagad sa 119."
+  },
+  "japanese-learning": {
+    "direct": "Nag-aalok ang Regasu Shinjuku ng mga pang-araw-araw na klase sa Japanese para sa mga hindi katutubong nagsasalita, pangunahin sa antas ng panimula at nagsisimula. Maaaring magbago ang availability ng klase.",
+    "steps": [
+      "Suriin ang kasalukuyang impormasyon ng klase, lokasyon, at iskedyul.",
+      "Mag-apply sa pamamagitan ng community exchange office o nauugnay na pundasyon."
+    ]
+  },
+  "consultation": {
+    "direct": "Hindi mo kailangang malaman kung aling counter ang pupuntahan — para iyon sa mga consultation desk. Nag-aalok ang Shinjuku Multicultural Plaza ng libreng konsultasyon sa maraming wika, at ang FRESC sa Yotsuya ay nagtitipon ng mga national support desk sa isang gusali.",
+    "steps": [
+      "Magsimula sa Shinjuku Multicultural Plaza para sa mga pang-araw-araw na tanong — ituturo ka ng staff sa tamang opisina.",
+      "Para sa imigrasyon, trabaho, o legal na usapin, nag-aalok ang FRESC ng mga desk na may interpretasyon.",
+      "Sa Tanggapan ng Lungsod ng Shinjuku, humingi ng serbisyo sa konsultasyon ng mga dayuhang residente."
+    ]
+  },
+  "tax": {
+    "direct": "Ang tax notice ay karaniwang nangangahulugang kailangan ang pagbabayad o isang proseso. Karaniwan ang resident tax (mula sa Shinjuku City) at national pension (mula sa Japan Pension Service). Pinakamahalaga: huwag itong balewalain—mahalaga ang mga deadline.",
+    "steps": [
+      "Suriin kung aling opisina ang nagpadala ng liham - ang pangalan ng nagpadala ay naka-print dito.",
+      "Dalhin ang sulat sa opisinang iyon, o sa isang consultation desk upang basahin ito nang magkasama.",
+      "Kung mahirap magbayad, magtanong tungkol sa mga reduction, exemption, o installment plan — umiiral ang mga ito."
+    ],
+    "safety": "Hindi makumpirma ng MINFO ang iyong partikular na halaga ng buwis o obligasyon. Mangyaring kumpirmahin sa opisina na nagbigay ng paunawa o isang kwalipikadong propesyonal."
+  },
+  "housing": {
+    "direct": "Ang pagrenta sa Japan ay may ilang natatanging panuntunan: madalas kailangan mo ng guarantor o guarantor na kumpanya, at ang mga paunang gastos ay maaaring magsama ng deposito (shikikin) at key money (reikin). Ang mga opisyal na aklat ng gabay sa maraming wika ay nagpapaliwanag sa mga kontrata nang sunud-sunod.",
+    "steps": [
+      "Basahin ang gabay sa pagrenta ng maraming wika sa Tokyo bago pumirma ng anuman.",
+      "Hilingin sa isang consultation desk na suriin ang kontrata sa iyo kung may hindi malinaw.",
+      "Badyet para sa mga paunang gastos — kadalasan ay 4–6 na buwan ng upa sa kabuuan."
+    ],
+    "safety": "Para sa mga hindi pagkakaunawaan sa isang kasero o ahensya, huwag umasa sa pangkalahatang payo — kumunsulta sa FRESC o isang kwalipikadong propesyonal."
+  },
+  "residence-card": {
+    "direct": "Kung nawala mo ang iyong residence card, manatiling kalmado — may malinaw na pamamaraan. Iulat muna ang pagkawala sa pulis, pagkatapos ay mag-apply para sa muling pag-isyu sa Immigration Services Agency sa loob ng 14 na araw.",
+    "steps": [
+      "Pumunta sa istasyon ng pulisya o koban at maghain ng ulat ng nawalang ari-arian (makakakuha ka ng numero ng ulat).",
+      "Mag-apply para sa muling pag-isyu sa Tokyo Regional Immigration Bureau sa loob ng 14 na araw, kasama ang isang larawan at iyong pasaporte.",
+      "Kung hindi ka sigurado sa anumang hakbang, maaaring gabayan ka ng FRESC sa interpretasyon."
+    ],
+    "safety": "Ang mga tuntunin sa status ng paninirahan ay mga legal na usapin. Palaging kumpirmahin ang mga detalye sa Immigration Services Agency — Hindi makapagbigay ng payo sa imigrasyon ang MINFO."
+  },
+  "police": {
+    "direct": "Kung nasa panganib ka ngayon, tumawag sa 110 (pulis) — libre ito, 24 na oras, at available ang interpretasyon. Para sa mga alalahanin na hindi apurahan, makakatulong ang police consultation line #9110 at mga local consultation desk.",
+    "steps": [
+      "Sa agarang panganib: tumawag sa 110, o pumunta sa pinakamalapit na koban (police box).",
+      "Hindi apurahan ngunit nag-aalala: tumawag sa #9110 para sa konsultasyon sa pulisya.",
+      "Maaari ka ring makipag-usap sa Shinjuku Multicultural Plaza — tutulungan ka nilang magpasya kung ano ang susunod na gagawin."
+    ],
+    "safety": "Emergency: tumawag sa 110 para sa pulis. Tumawag sa 119 para sa sunog o ambulansya. Parehong libre at gumagana mula sa anumang telepono."
+  },
+  "ambulance": {
+    "direct": "Para sa isang medikal na emergency, tumawag sa 119 ngayon. Ito ay libre, gumagana mula sa anumang telepono, at maaaring ikonekta ng operator ang interpretasyon ng telepono. Sabihin ang 'Kyūkyū desu' (kailangan ko ng ambulansya), pagkatapos ay ibigay ang iyong address o isang kalapit na landmark.",
+    "steps": [
+      "Tumawag sa 119. Sabihin ang 'Kyūkyū desu', pagkatapos ay ang address — manatili sa linya.",
+      "I-unlock ang pinto kung magagawa mo, at ihanda ang iyong residence card at insurance card.",
+      "Hindi sigurado kung ito ay isang emergency? Tumawag sa #7119 para sa payo (24 oras, Tokyo)."
+    ],
+    "safety": "Tumawag kaagad sa 119 para sa isang medikal na emergency o sunog. Huwag maghintay."
+  },
+  "easy-japanese": {
+    "direct": "Oo — Ang MINFO ay idinisenyo upang ipaliwanag ang mga bagay sa やさしい日本語 (Easy Japanese): maiikling pangungusap at simpleng salita, isang diskarte na inirerekomenda ng mga pampublikong tanggapan ng Hapon para sa pagbabahagi ng impormasyon.",
+    "steps": [
+      "Ilipat ang tagapili ng wika sa itaas sa やさしい日本語.",
+      "Bawat sagot ay gagamit ng maikli, simpleng mga pangungusap sa Hapon.",
+      "Ang staff sa Shinjuku Multicultural Plaza ay maaari ding mag-rephrase ng mahihirap na dokumento para sa iyo."
+    ]
+  },
+  "bank-account": {
+    "direct": "Ang mga dayuhang residente ay maaaring magbukas ng mga bank account sa Japan, ngunit ang bawat bangko ay nagtatakda ng sarili nitong mga panuntunan — ito ay pangkalahatang patnubay, hindi opisyal na payo sa pagbabangko.",
+    "steps": [
+      "Nag-iiba-iba ang mga pamamaraan ayon sa bangko — suriin ang mga opisyal na kinakailangan ng bangko na gusto mong gamitin bago pumunta.",
+      "Ang mga bangko ay karaniwang humihingi ng residence card, patunay ng address, at numero ng telepono o iba pang contact — dalhin ang mayroon ka at itanong kung ano pa ang kailangan.",
+      "Kung nakakalito ang mga form o kinakailangan, makakatulong sa iyo ang isang multilingual consultation desk na maghanda."
+    ],
+    "safety": "Iba-iba ang mga kinakailangan ayon sa bangko at maaaring magbago. Palaging kumpirmahin gamit ang sariling opisyal na impormasyon ng bangko."
+  },
+  "lost-wallet": {
+    "direct": "Kung nawala ang wallet mo, ireport ito sa pinakamalapit na koban (police box) o police station—madalas na isinusuko sa Japan ang mga nakitang gamit. Pagkatapos, protektahan ang iyong mga card.",
+    "steps": [
+      "Pumunta sa pinakamalapit na istasyon ng koban o pulis at iulat ang pagkawala — makakakuha ka ng numero ng ulat.",
+      "Kung nasa loob ang bangko o mga credit card, makipag-ugnayan sa mga kumpanya ng card para pigilan sila.",
+      "Kung ang iyong residence card ay nasa loob, kailangan mo rin ang proseso ng muling pag-isyu sa imigrasyon — magtanong sa isang consultation desk kung kailangan mo ng tulong sa wika."
+    ],
+    "safety": "Kung ang pitaka ay ninakaw sa halip na nawala, sabihin din sa pulis iyon. Kung nasa panganib ka ngayon, tumawag sa 110."
+  },
+  "city-office-letter": {
+    "direct": "Hindi mo kailangang intindihin ang isang opisyal na liham nang mag-isa. Babasahin ito kasama ng mga libreng consultation desk, ipapaliwanag kung ano ang ibig sabihin nito, at sasabihin sa iyo kung ano ang susunod na gagawin.",
+    "steps": [
+      "Suriin kung sino ang nagpadala nito — ang pangalan ng opisina ay naka-print sa sobre o letterhead.",
+      "Dalhin ang sulat sa Shinjuku Multicultural Plaza — mababasa ito ng staff kasama mo sa iyong wika.",
+      "Kumpirmahin ang anumang pagbabayad o pamamaraan nang direkta sa opisina na nagpadala ng liham."
+    ],
+    "safety": "Ang mga opisyal na liham ay kadalasang may mga deadline. Kung makakita ka ng petsa, kumilos bago ito — huwag isantabi ang sulat."
+  },
+  "moving-registration": {
+    "direct": "Isumite ang naaangkop na abiso sa pagbabago ng address sa Shinjuku City.",
+    "steps": [
+      "Pagkatapos lumipat sa Shinjuku mula sa ibang munisipalidad, karaniwang maghain ng abiso sa paglipat sa loob ng 14 na araw pagkatapos lumipat.",
+      "Ang mga dayuhang residente ay dapat magdala ng residence card o espesyal na sertipiko ng permanenteng residente.",
+      "Kumpirmahin ang mga kinakailangang karagdagang dokumento sa mga serbisyo sa pagpaparehistro ng residente, dahil maaaring baguhin ng relasyon o katayuan ng sambahayan ang kinakailangan."
+    ],
+    "safety": "Ang mga nakalistang dokumento ay hindi garantisadong sapat. Kumpirmahin sa mga serbisyo sa pagpaparehistro ng residente ng Lungsod ng Shinjuku."
+  },
+  "school-enrollment": {
+    "direct": "Ang mga dayuhang bata na gustong pumasok sa elementarya o junior high school sa munisipyo ng Shinjuku ay nangangailangan ng aplikasyon sa pagpapatala.",
+    "steps": [
+      "Para sa paglipat sa ibang bansa o pagpapatala, kumpletuhin muna ang pagpaparehistro ng paninirahan sa Shinjuku.",
+      "Maaaring kailanganin ng bata at tagapag-alaga ang mga residence card o mga espesyal na sertipiko ng permanenteng residente.",
+      "Makipag-ugnayan sa School Operations Division / seksyon ng pagpapatala sa paaralan. Pagkatapos mag-apply, makipag-ugnayan sa itinalagang paaralan."
+    ],
+    "safety": "Huwag ipagpalagay na ang pagtanggap o pagiging karapat-dapat ay awtomatiko. Kumpirmahin ang mga opisyal na kinakailangan."
+  },
+  "childcare-application": {
+    "direct": "Ang mga karapat-dapat na aplikante ay maaaring magsumite ng awtorisadong nursery school o certified childcare center na mga aplikasyon sa elektronikong paraan sa pamamagitan ng MynaPortal Pittari Service.",
+    "steps": [
+      "Nalalapat ang mga deadline. Gamitin ang opisyal na mapagkukunan para sa kasalukuyang deadline.",
+      "Ang ilang mga aplikante, kabilang ang ilang mga aplikante sa labas ng Shinjuku o sa ibang bansa, ay maaaring mangailangan ng ibang pamamaraan.",
+      "Makipag-ugnayan sa seksyon ng Pag-enroll/Certification ng Childcare Division."
+    ],
+    "safety": "Kumpirmahin ang pagiging kwalipikado, deadline, at pamamaraan sa responsableng opisina."
+  },
+  "public-housing": {
+    "direct": "Ang Shinjuku ay nagpapatakbo ng paupahang pabahay at nag-anunsyo ng pampublikong recruitment. Kasama sa pangkalahatang pamantayan ang paninirahan sa Shinjuku, kita, pangangailangan sa pabahay, at iba pang mga patakaran; iba-iba ang eksaktong pagiging karapat-dapat.",
+    "steps": [
+      "Suriin ang kasalukuyang abiso sa recruitment.",
+      "Magtanong sa Housing Division o Ward Housing Management Center tungkol sa iyong kaso."
+    ],
+    "safety": "Ang mga dayuhang residente ay nangangailangan ng mga tinukoy na katayuan tulad ng permanenteng o pangmatagalang paninirahan; hindi lahat ng work visa ay kwalipikado. Ang MINFO ay hindi makapagpasiya ng pagiging karapat-dapat."
+  },
+  "typhoon-heavy-rain": {
+    "direct": "Ang mga bagyo at mga sakuna sa tubig ay mas karaniwan mula Hulyo hanggang Setyembre at ang mga kondisyon ay maaaring mabilis na umunlad. Maghanda nang maaga.",
+    "steps": [
+      "Suriin ang gabay sa pagbaha at ihanda kung ano ang maaaring kailanganin mo bago ang masamang panahon.",
+      "Para sa kasalukuyang sitwasyon, suriin ang opisyal na mga alerto sa panahon at kalamidad."
+    ]
+  },
+  "japanese-class-beginner": {
+    "direct": "Nag-aalok ang Regasu Shinjuku ng mga pang-araw-araw na klase sa Japanese para sa mga hindi katutubong nagsasalita, pangunahin sa antas ng panimula at nagsisimula.",
+    "steps": [
+      "Suriin ang kasalukuyang impormasyon ng klase at pagiging karapat-dapat.",
+      "Mag-apply sa pamamagitan ng community exchange office o nauugnay na pundasyon."
+    ]
+  },
+  "japanese-class-evening": {
+    "direct": "Ang ilang mga klase sa Regasu Japanese ay nagpupulong tuwing Lunes o Huwebes ng gabi. Maaaring magbago ang availability.",
+    "steps": [
+      "Suriin ang kasalukuyang iskedyul.",
+      "Mag-apply sa pamamagitan ng community exchange office o nauugnay na pundasyon."
+    ]
+  },
+  "japanese-class-okubo": {
+    "direct": "Ang mga klase ng Regasu ay ginaganap sa Shinjuku Multicultural Plaza, Okubo, at iba pang mga lokasyon ng Shinjuku; maaaring magbago ang availability.",
+    "steps": [
+      "Suriin ang kasalukuyang listahan ng lokasyon.",
+      "Mag-apply sa pamamagitan ng community exchange office o nauugnay na pundasyon."
+    ]
+  },
+  "halal-food": {
+    "direct": "Kasama sa Muslim Travelers' Guide ng Tokyo ang halal at Muslim-friendly na mga listahan ng kainan.",
+    "steps": [
+      "Gamitin ang gabay upang makahanap ng posibleng opsyon sa kainan.",
+      "Direktang kumpirmahin ang mga kasalukuyang detalye sa pasilidad bago ka pumunta."
+    ]
+  },
+  "prayer-facilities": {
+    "direct": "Kasama sa Muslim Travelers' Guide ng Tokyo ang mga listahan ng prayer-facility.",
+    "steps": [
+      "Gamitin ang gabay upang maghanap ng posibleng pasilidad.",
+      "Direktang kumpirmahin ang mga kasalukuyang detalye sa pasilidad bago ka pumunta."
+    ]
+  },
+  "fallback": {
+    "direct": "Wala pa akong nakumpirmang sagot para sa eksaktong tanong na ito sa mga pinagkakatiwalaang mapagkukunan ng MINFO — ngunit narito ang karaniwang gumagana. Maaaring magkasya ang iyong tanong sa isa sa mga paksa ng MINFO (mga ospital, buwis, basura, pabahay, konsultasyon), kaya subukan ang isang kategorya sa ibaba o magtanong muli sa ibang salita.",
+    "steps": [
+      "Ask Shinjuku Multicultural Plaza — isang libreng desk na humahawak ng anumang pang-araw-araw na tanong sa buhay sa maraming wika at itinuturo ka sa tamang opisina.",
+      "Para sa visa, trabaho, o legal na usapin, tinitipon ng FRESC malapit sa Shinjuku ang mga national support desk na may interpretasyon.",
+      "Subukang palitan ang iyong tanong gamit ang isang mas simpleng salita (hal. \"hospital\", \"liham ng buwis\", \"basura\"), o mag-tap ng kategorya o halimbawa sa itaas."
+    ],
+    "safety": "Para sa anumang apurahan o opisyal, mangyaring direktang kumpirmahin sa nauugnay na pampublikong tanggapan."
+  }
+  ,"tax-estimate":{"direct":"Gamitin ang opisyal na resident-tax simulator ng Shinjuku City para sa tantiya. Hindi kinakalkula ng MINFO ang buwis.","steps":["Gamitin ang opisyal na simulator.","Nakasalalay ang tantiya sa kita at mga deduction.","Ituring ang resulta bilang tantiya, hindi panghuling desisyon sa buwis."],"safety":"Maaaring hindi saklaw ang ilang espesyal na sitwasyon. Huwag maglagay ng sensitibong impormasyon sa MINFO."}
+}

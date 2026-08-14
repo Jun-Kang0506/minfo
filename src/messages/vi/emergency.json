@@ -1,0 +1,8 @@
+{
+  "emergencyBar": "Khẩn cấp? 119 Cứu hỏa / Cấp cứu · 110 Cảnh sát (miễn phí, 24h, có phiên dịch)",
+  "notices": {
+    "medical": "Đây có thể là cấp cứu y tế. Hãy gọi 119 ngay — miễn phí, 24h, có phiên dịch.",
+    "police": "Nếu bạn đang gặp nguy hiểm, hãy gọi 110 (cảnh sát) ngay — miễn phí, 24h, có phiên dịch.",
+    "fire": "Nếu có cháy, hãy gọi 119 ngay — miễn phí, 24h, có phiên dịch. Hãy đến nơi an toàn trước."
+  }
+}

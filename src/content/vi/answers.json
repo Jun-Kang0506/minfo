@@ -1,0 +1,219 @@
+{
+  "hospital": {
+    "direct": "Bạn vẫn có thể đi khám bác sĩ dù không nói được tiếng Nhật. Trang chính thức Medical Information Net (NAVII) của Nhật giúp tìm bệnh viện, phòng khám gần bạn — kể cả theo ngôn ngữ họ hỗ trợ.",
+    "steps": [
+      "Tìm trên Medical Information Net (NAVII) bệnh viện gần bạn có hỗ trợ ngôn ngữ của bạn.",
+      "Mang theo thẻ cư trú và thẻ bảo hiểm y tế khi đi khám.",
+      "Nếu chưa biết bắt đầu từ đâu, hãy đến Shinjuku Multicultural Plaza để được hướng dẫn trực tiếp."
+    ],
+    "safety": "Nếu có người đang bệnh nặng hoặc bị thương, hãy gọi 119 để gọi xe cấp cứu. Có phiên dịch qua điện thoại."
+  },
+  "insurance": {
+    "direct": "Người sống ở Nhật từ ba tháng trở lên về nguyên tắc phải tham gia bảo hiểm y tế. Có thẻ Bảo hiểm Y tế Quốc dân, bạn thường chỉ trả 30% chi phí khám chữa bệnh.",
+    "steps": [
+      "Đăng ký Bảo hiểm Y tế Quốc dân tại Văn phòng quận Shinjuku (trừ khi công ty đã đăng ký cho bạn).",
+      "Phí bảo hiểm tính theo thu nhập — giấy nộp tiền sẽ gửi về nhà.",
+      "Luôn xuất trình thẻ bảo hiểm khi đến bệnh viện hoặc nhà thuốc."
+    ],
+    "safety": "Quy định cụ thể tùy theo visa và công việc. Hãy xác nhận tại quầy của Văn phòng quận Shinjuku."
+  },
+  "garbage": {
+    "direct": "Ở Shinjuku, rác phải được phân loại: rác đốt được, kim loại/gốm/thủy tinh, nhựa, chai lọ & lon, giấy, và rác cỡ lớn — ngày thu gom tùy theo địa chỉ. Có hướng dẫn chính thức bằng nhiều ngôn ngữ.",
+    "steps": [
+      "Xem ngày thu gom của địa chỉ bạn trên trang web quận Shinjuku hoặc bảng thông báo của tòa nhà.",
+      "Bỏ rác trước 8 giờ sáng ngày thu gom, dùng túi trong suốt hoặc bán trong suốt.",
+      "Rác cỡ lớn (đồ nội thất...) cần đặt lịch và trả phí trước."
+    ]
+  },
+  "earthquake": {
+    "direct": "Khi có động đất: bảo vệ đầu, chui xuống gầm bàn chắc chắn, tránh xa cửa sổ. Đừng chạy ra ngoài khi còn rung lắc. Sau đó, xem thông tin chính thức đa ngôn ngữ trên Tokyo Bousai.",
+    "steps": [
+      "Tìm hiểu trước khu vực sơ tán của khu phố bạn (quận Shinjuku có bản đồ công khai).",
+      "Chuẩn bị nước, thức ăn và đồ thiết yếu cho khoảng ba ngày.",
+      "Nhận cảnh báo đa ngôn ngữ từ trang Tokyo Bousai và các ứng dụng thông tin thiên tai."
+    ],
+    "safety": "Nếu có người bị thương hoặc xảy ra hỏa hoạn, hãy gọi 119 ngay."
+  },
+  "japanese-learning": {
+    "direct": "Regasu Shinjuku có lớp tiếng Nhật đời sống cho người không phải bản ngữ, chủ yếu trình độ nhập môn và sơ cấp. Lịch mở lớp có thể thay đổi.",
+    "steps": [
+      "Xem thông tin lớp, địa điểm và lịch hiện tại.",
+      "Đăng ký qua văn phòng giao lưu cộng đồng hoặc quỹ liên quan."
+    ]
+  },
+  "consultation": {
+    "direct": "Không biết phải đến quầy nào cũng không sao — quầy tư vấn sinh ra để giúp việc đó. Shinjuku Multicultural Plaza tư vấn miễn phí bằng nhiều ngôn ngữ, và FRESC ở Yotsuya tập hợp các quầy hỗ trợ quốc gia.",
+    "steps": [
+      "Câu hỏi đời sống hằng ngày: đến Shinjuku Multicultural Plaza trước — nhân viên sẽ chỉ đúng nơi cần đến.",
+      "Vấn đề cư trú, lao động, pháp lý: FRESC có quầy tư vấn kèm phiên dịch.",
+      "Tại Văn phòng quận Shinjuku có dịch vụ tư vấn cho cư dân nước ngoài."
+    ]
+  },
+  "tax": {
+    "direct": "Giấy báo thuế thường có nghĩa là cần nộp tiền hoặc làm thủ tục. Phổ biến nhất là thuế cư trú (từ quận Shinjuku) và lương hưu quốc dân (từ Cơ quan Hưu trí Nhật Bản). Quan trọng nhất: đừng bỏ qua — có thời hạn.",
+    "steps": [
+      "Xem cơ quan nào gửi thư — tên nơi gửi in trên thư.",
+      "Mang thư đến cơ quan đó, hoặc đến quầy tư vấn để đọc cùng nhân viên.",
+      "Nếu khó nộp, hãy hỏi về chế độ giảm, miễn hoặc trả góp — các chế độ này có thật."
+    ],
+    "safety": "MINFO không thể xác nhận số thuế hay nghĩa vụ cụ thể của bạn. Hãy xác nhận với cơ quan gửi giấy báo hoặc chuyên gia."
+  },
+  "housing": {
+    "direct": "Thuê nhà ở Nhật có những quy tắc riêng: thường cần người bảo lãnh hoặc công ty bảo lãnh, chi phí ban đầu có thể gồm tiền cọc (shikikin) và tiền lễ (reikin). Sách hướng dẫn đa ngôn ngữ chính thức giải thích hợp đồng từng bước.",
+    "steps": [
+      "Đọc hướng dẫn thuê nhà đa ngôn ngữ của Tokyo trước khi ký bất cứ gì.",
+      "Nếu có điểm chưa rõ, nhờ quầy tư vấn xem hợp đồng cùng bạn.",
+      "Dự trù chi phí ban đầu — thường tổng cộng 4–6 tháng tiền nhà."
+    ],
+    "safety": "Khi tranh chấp với chủ nhà hoặc môi giới, hãy tư vấn với FRESC hoặc chuyên gia có chuyên môn."
+  },
+  "residence-card": {
+    "direct": "Mất thẻ cư trú? Hãy bình tĩnh — có quy trình rõ ràng. Trước tiên báo mất với cảnh sát, sau đó xin cấp lại tại Cục Quản lý Xuất nhập cảnh trong vòng 14 ngày.",
+    "steps": [
+      "Đến đồn cảnh sát hoặc koban khai báo mất đồ (bạn sẽ nhận số biên nhận).",
+      "Trong 14 ngày, nộp đơn xin cấp lại tại Cục Quản lý Xuất nhập cảnh Tokyo, mang theo ảnh và hộ chiếu.",
+      "Nếu chưa rõ bước nào, FRESC có thể hướng dẫn kèm phiên dịch."
+    ],
+    "safety": "Tư cách cư trú là vấn đề pháp lý. Luôn xác nhận với Cục Quản lý Xuất nhập cảnh — MINFO không thể tư vấn về visa."
+  },
+  "police": {
+    "direct": "Nếu bạn đang gặp nguy hiểm ngay bây giờ, hãy gọi 110 (cảnh sát) — miễn phí, 24 giờ, có phiên dịch. Với lo lắng chưa khẩn cấp, có đường dây tư vấn cảnh sát #9110 và các quầy tư vấn địa phương.",
+    "steps": [
+      "Nguy hiểm ngay lập tức: gọi 110, hoặc đến koban (chốt cảnh sát) gần nhất.",
+      "Chưa khẩn cấp nhưng lo lắng: gọi #9110 để được cảnh sát tư vấn.",
+      "Bạn cũng có thể nói chuyện với Shinjuku Multicultural Plaza để quyết định bước tiếp theo."
+    ],
+    "safety": "Khẩn cấp: gọi 110 cho cảnh sát. Gọi 119 cho cứu hỏa hoặc cấp cứu. Cả hai đều miễn phí."
+  },
+  "ambulance": {
+    "direct": "Cấp cứu y tế: hãy gọi 119 ngay. Miễn phí, gọi được từ mọi điện thoại, tổng đài có thể kết nối phiên dịch. Nói 'Kyūkyū desu' (cần xe cấp cứu), rồi đọc địa chỉ hoặc địa danh gần đó.",
+    "steps": [
+      "Gọi 119, nói 'Kyūkyū desu', rồi đọc địa chỉ — đừng cúp máy.",
+      "Nếu có thể, mở khóa cửa và chuẩn bị thẻ cư trú, thẻ bảo hiểm.",
+      "Không chắc có phải cấp cứu? Gọi #7119 để được tư vấn (Tokyo, 24 giờ)."
+    ],
+    "safety": "Gọi 119 ngay khi có cấp cứu y tế hoặc hỏa hoạn. Đừng chần chừ."
+  },
+  "easy-japanese": {
+    "direct": "Có — MINFO có thể giải thích bằng やさしい日本語 (tiếng Nhật đơn giản): câu ngắn, từ dễ, cách truyền đạt được các cơ quan công của Nhật khuyến nghị.",
+    "steps": [
+      "Chọn やさしい日本語 ở bộ chọn ngôn ngữ phía trên.",
+      "Mọi câu trả lời sẽ dùng tiếng Nhật ngắn gọn, dễ hiểu.",
+      "Nhân viên Shinjuku Multicultural Plaza cũng có thể diễn giải giấy tờ khó bằng lời đơn giản."
+    ]
+  },
+  "bank-account": {
+    "direct": "Cư dân nước ngoài có thể mở tài khoản ngân hàng ở Nhật, nhưng mỗi ngân hàng có quy định riêng — đây là hướng dẫn chung, không phải tư vấn chính thức của ngân hàng.",
+    "steps": [
+      "Thủ tục khác nhau tùy ngân hàng — hãy xem yêu cầu chính thức của ngân hàng bạn muốn dùng trước khi đi.",
+      "Ngân hàng thường yêu cầu thẻ cư trú, giấy tờ xác nhận địa chỉ và số điện thoại hoặc cách liên lạc khác — mang theo những gì bạn có và hỏi thêm cần gì.",
+      "Nếu giấy tờ khó hiểu, quầy tư vấn đa ngôn ngữ có thể giúp bạn chuẩn bị."
+    ],
+    "safety": "Yêu cầu khác nhau theo từng ngân hàng và có thể thay đổi. Hãy luôn xác nhận với thông tin chính thức của ngân hàng."
+  },
+  "lost-wallet": {
+    "direct": "Nếu mất ví, hãy trình báo tại koban (chốt cảnh sát) hoặc đồn cảnh sát gần nhất — đồ thất lạc ở Nhật rất thường được giao nộp. Sau đó bảo vệ các thẻ của bạn.",
+    "steps": [
+      "Đến koban hoặc đồn cảnh sát gần nhất để khai báo mất đồ — bạn sẽ nhận số biên nhận.",
+      "Nếu trong ví có thẻ ngân hàng hoặc thẻ tín dụng, hãy liên hệ công ty thẻ để khóa.",
+      "Nếu thẻ cư trú cũng ở trong ví, bạn cần làm thêm thủ tục cấp lại ở cục xuất nhập cảnh — cần hỗ trợ ngôn ngữ thì hỏi quầy tư vấn."
+    ],
+    "safety": "Nếu ví bị trộm chứ không phải bị mất, hãy nói với cảnh sát điều đó. Nếu bạn đang gặp nguy hiểm, gọi 110."
+  },
+  "city-office-letter": {
+    "direct": "Bạn không cần tự mình hiểu thư của cơ quan hành chính. Quầy tư vấn miễn phí sẽ đọc cùng bạn, giải thích ý nghĩa và hướng dẫn việc cần làm tiếp.",
+    "steps": [
+      "Xem ai gửi — tên cơ quan in trên phong bì hoặc đầu thư.",
+      "Mang thư đến Shinjuku Multicultural Plaza — nhân viên sẽ đọc cùng bạn bằng ngôn ngữ của bạn.",
+      "Việc nộp tiền hoặc thủ tục: xác nhận trực tiếp với cơ quan đã gửi thư."
+    ],
+    "safety": "Thư hành chính thường có thời hạn. Nếu thấy ngày trên thư, hãy xử lý trước ngày đó — đừng để thư sang một bên."
+  },
+  "moving-registration": {
+    "direct": "Hãy nộp thông báo thay đổi địa chỉ phù hợp cho quận Shinjuku.",
+    "steps": [
+      "Sau khi chuyển đến Shinjuku từ một địa phương khác, thông thường hãy nộp thông báo chuyển đến trong vòng 14 ngày sau khi chuyển nhà.",
+      "Cư dân nước ngoài mang theo thẻ cư trú hoặc giấy chứng nhận thường trú đặc biệt.",
+      "Hãy xác nhận giấy tờ bổ sung với bộ phận đăng ký cư trú, vì quan hệ hộ gia đình hoặc tình trạng có thể làm thay đổi yêu cầu."
+    ],
+    "safety": "Các giấy tờ được liệt kê không được bảo đảm là đủ. Hãy xác nhận với bộ phận đăng ký cư trú của quận Shinjuku."
+  },
+  "school-enrollment": {
+    "direct": "Trẻ em mang quốc tịch nước ngoài muốn học tiểu học hoặc trung học cơ sở công lập của Shinjuku cần nộp đơn nhập học.",
+    "steps": [
+      "Nếu chuyển trường hoặc nhập học từ nước ngoài, hãy hoàn tất đăng ký cư trú tại Shinjuku trước.",
+      "Trẻ và người giám hộ có thể cần thẻ cư trú hoặc giấy chứng nhận thường trú đặc biệt.",
+      "Liên hệ Phòng Vận hành Trường học / bộ phận nhập học. Sau khi nộp đơn, phối hợp với trường được chỉ định."
+    ],
+    "safety": "Đừng cho rằng việc được nhận hoặc đủ điều kiện là tự động. Hãy xác nhận yêu cầu chính thức."
+  },
+  "childcare-application": {
+    "direct": "Người đủ điều kiện có thể nộp điện tử đơn vào trường mẫu giáo được cấp phép hoặc trung tâm chăm sóc trẻ được chứng nhận qua MynaPortal Pittari Service.",
+    "steps": [
+      "Có hạn nộp. Hãy dùng nguồn chính thức để xem hạn hiện tại.",
+      "Một số người nộp đơn, gồm một số người ở ngoài Shinjuku hoặc ở nước ngoài, có thể cần thủ tục khác.",
+      "Liên hệ bộ phận Tuyển sinh/Chứng nhận của Phòng Chăm sóc Trẻ em."
+    ],
+    "safety": "Hãy xác nhận điều kiện, hạn nộp và thủ tục với cơ quan phụ trách."
+  },
+  "public-housing": {
+    "direct": "Quận Shinjuku có nhà cho thuê và công bố tuyển người vào ở. Điều kiện chung gồm cư trú tại Shinjuku, thu nhập, nhu cầu nhà ở và các quy định khác; điều kiện chính xác thay đổi theo đợt.",
+    "steps": [
+      "Xem thông báo tuyển hiện tại.",
+      "Hỏi Phòng Nhà ở hoặc Trung tâm Quản lý Nhà ở Quận về trường hợp của bạn."
+    ],
+    "safety": "Người nước ngoài cần tư cách lưu trú được chỉ định như vĩnh trú hoặc định trú; không phải mọi visa làm việc đều đủ điều kiện. MINFO không thể quyết định điều kiện."
+  },
+  "typhoon-heavy-rain": {
+    "direct": "Bão và thiên tai do nước thường nhiều hơn từ tháng 7 đến tháng 9, và tình hình có thể thay đổi nhanh. Hãy chuẩn bị sớm.",
+    "steps": [
+      "Xem hướng dẫn về lũ và chuẩn bị vật dụng cần thiết trước thời tiết xấu.",
+      "Để biết tình hình hiện tại, hãy xem cảnh báo thời tiết và thiên tai chính thức."
+    ]
+  },
+  "japanese-class-beginner": {
+    "direct": "Regasu Shinjuku có lớp tiếng Nhật đời sống cho người không phải bản ngữ, chủ yếu trình độ nhập môn và sơ cấp.",
+    "steps": [
+      "Xem thông tin lớp và điều kiện hiện tại.",
+      "Đăng ký qua văn phòng giao lưu cộng đồng hoặc quỹ liên quan."
+    ]
+  },
+  "japanese-class-evening": {
+    "direct": "Một số lớp tiếng Nhật học tối thứ Hai hoặc thứ Năm. Lịch mở lớp có thể thay đổi.",
+    "steps": [
+      "Xem thời khóa biểu hiện tại.",
+      "Đăng ký qua văn phòng giao lưu cộng đồng hoặc quỹ liên quan."
+    ]
+  },
+  "japanese-class-okubo": {
+    "direct": "Lớp học diễn ra tại Shinjuku Multicultural Plaza, Okubo và các địa điểm khác ở Shinjuku; lịch mở lớp có thể thay đổi.",
+    "steps": [
+      "Xem danh sách địa điểm hiện tại.",
+      "Đăng ký qua văn phòng giao lưu cộng đồng hoặc quỹ liên quan."
+    ]
+  },
+  "halal-food": {
+    "direct": "Hướng dẫn Du khách Hồi giáo Tokyo có danh sách ăn uống halal và thân thiện với người Hồi giáo.",
+    "steps": [
+      "Dùng hướng dẫn để tìm lựa chọn ăn uống.",
+      "Trước khi đi, xác nhận thông tin hiện tại trực tiếp với cơ sở."
+    ]
+  },
+  "prayer-facilities": {
+    "direct": "Hướng dẫn Du khách Hồi giáo Tokyo có danh sách cơ sở cầu nguyện.",
+    "steps": [
+      "Dùng hướng dẫn để tìm cơ sở phù hợp.",
+      "Trước khi đi, xác nhận thông tin hiện tại trực tiếp với cơ sở."
+    ]
+  },
+  "fallback": {
+    "direct": "MINFO chưa có câu trả lời chắc chắn cho câu hỏi này trong các nguồn đáng tin cậy — nhưng bạn có thể làm như sau. Câu hỏi của bạn có thể thuộc một chủ đề của MINFO (bệnh viện, thuế, rác, nhà ở, tư vấn), hãy thử chọn danh mục bên dưới hoặc hỏi lại bằng cách khác.",
+    "steps": [
+      "Hỏi Shinjuku Multicultural Plaza — quầy miễn phí, nhiều ngôn ngữ, nhận mọi câu hỏi đời sống và chỉ bạn đến đúng cơ quan.",
+      "Vấn đề visa, lao động, pháp lý: FRESC gần Shinjuku tập hợp các quầy hỗ trợ quốc gia, có phiên dịch.",
+      "Thử hỏi lại bằng từ đơn giản hơn (ví dụ: 'bệnh viện', 'giấy báo thuế', 'rác'), hoặc chạm vào danh mục và ví dụ phía trên."
+    ],
+    "safety": "Việc khẩn cấp hoặc chính thức: hãy xác nhận trực tiếp với cơ quan công liên quan."
+  }
+  ,"tax-estimate":{"direct":"Hãy dùng công cụ mô phỏng thuế cư trú chính thức của Shinjuku City để ước tính. MINFO không tính thuế.","steps":["Dùng công cụ mô phỏng chính thức.","Ước tính phụ thuộc vào thu nhập và các khoản khấu trừ.","Xem kết quả là ước tính, không phải quyết định thuế cuối cùng."],"safety":"Một số trường hợp đặc biệt có thể không được xử lý. Không nhập thông tin nhạy cảm vào MINFO."}
+}

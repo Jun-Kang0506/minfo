@@ -17,14 +17,14 @@ export function Hero({ onAsk }: { onAsk: () => void }) {
     <section id="top" className="border-b border-line">
       <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-10 md:grid-cols-[1.15fr_0.85fr] md:gap-16 md:py-16">
         <div>
-          <p className="text-[13px] font-semibold text-moss">{t.hero.kicker}</p>
+          <p className="text-sm font-semibold text-moss">{t.hero.kicker}</p>
           <h1 className="mt-3 max-w-2xl text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl">
             {t.hero.headline}
           </h1>
-          <p className="mt-4 max-w-xl text-[16px] leading-relaxed text-ink-soft">{t.hero.sub}</p>
+          <p className="mt-4 max-w-xl text-base leading-relaxed text-ink-soft">{t.hero.sub}</p>
           <button
             onClick={onAsk}
-            className="pressable mt-6 rounded-sm bg-moss px-6 py-3 text-[15px] font-bold text-white transition-colors hover:bg-moss-deep"
+            className="pressable mt-6 rounded-sm bg-moss px-6 py-3 text-base font-bold text-white transition-colors hover:bg-moss-deep"
           >
             {t.hero.ctaAsk}
           </button>
@@ -35,7 +35,7 @@ export function Hero({ onAsk }: { onAsk: () => void }) {
           {facts.map((item) => (
             <li
               key={item}
-              className="flex items-start gap-2.5 border-b border-line py-3.5 text-[14px] font-medium text-ink"
+              className="flex items-start gap-2.5 border-b border-line py-3.5 text-sm font-medium text-ink"
             >
               <IconCheck className="mt-0.5 h-4 w-4 shrink-0 text-moss" strokeWidth={2.5} />
               {item}

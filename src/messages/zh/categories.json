@@ -1,0 +1,42 @@
+{
+  "hospitals": {
+    "title": "医院与保险",
+    "description": "查找会说您语言的医生，了解健康保险。"
+  },
+  "taxes": {
+    "title": "税金与年金",
+    "description": "看懂税务通知、住民税和年金制度。"
+  },
+  "schools-children": {
+    "title": "学校与儿童",
+    "description": "找到咨询学校和儿童服务的合适窗口。"
+  },
+  "food-prayer": {
+    "title": "饮食与祈祷",
+    "description": "找到咨询饮食或祈祷相关问题的窗口。"
+  },
+  "garbage": {
+    "title": "垃圾分类",
+    "description": "新宿的垃圾分类规则、收集日和大型垃圾。"
+  },
+  "disaster": {
+    "title": "防灾准备",
+    "description": "地震、台风、避难场所和多语言警报。"
+  },
+  "housing": {
+    "title": "住房",
+    "description": "租房规则、保证人、合同以及求助渠道。"
+  },
+  "japanese": {
+    "title": "日语学习",
+    "description": "大久保附近的免费/低价日语教室，以及简明日语支持。"
+  },
+  "consultation": {
+    "title": "咨询窗口",
+    "description": "免费多语言咨询窗口，大小生活问题都能问。"
+  },
+  "emergency": {
+    "title": "紧急求助",
+    "description": "救护车·火警 119，警察 110：如何拨打、说什么。"
+  }
+}

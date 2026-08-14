@@ -1,0 +1,15 @@
+[agents]
+enabled = true
+default_subagent_model = "gpt-5.6-terra"
+default_subagent_reasoning_effort = "medium"
+max_concurrent_threads_per_session = 2
+
+[agents.terra]
+description = "Primary implementation agent for bounded React/Next.js coding tasks. Use for UI implementation, refactors, responsive layout, and route/component changes."
+config_file = "agents/terra.toml"
+nickname_candidates = ["Terra"]
+
+[agents.luna]
+description = "Lightweight exploration and verification agent. Use for file discovery, grep, i18n checks, diff review, build/lint, and mechanical validation."
+config_file = "agents/luna.toml"
+nickname_candidates = ["Luna"]

@@ -1,62 +1,52 @@
 "use client";
 
 import { CATEGORIES } from "@/lib/data/categories";
-import { DEMO_PROMPTS } from "@/lib/data/prompts";
-import type { TopicId } from "@/lib/types";
+import { DEFAULT_CATEGORY_ORDER } from "@/lib/data/guided-flow";
+import type { CategoryId } from "@/lib/types";
+import { getMessages } from "@/i18n/messages";
 import { useLanguage } from "./LanguageProvider";
 import { SectionHeading } from "./SectionHeading";
-import { IconArrowRight } from "./icons";
+import { CategoryIcon } from "./icons";
 
 /**
- * Categories as a civic directory — numbered rows like a ward-office floor
- * guide, not feature cards. Every row is one large tap target that asks
- * the category's example question.
+ * Categories emit only their stable ID. The guided flow owns all questions
+ * and outcomes, so translated visible labels never act as routing keys.
  */
 export function CategoryGrid({
   onSelect,
 }: {
-  onSelect: (text: string, topicId: TopicId) => void;
+  onSelect: (categoryId: CategoryId) => void;
 }) {
   const { lang, t } = useLanguage();
 
   return (
-    <section id="categories" className="mx-auto max-w-6xl px-4 py-14 md:py-20">
+    <section id="categories" className="mx-auto max-w-5xl px-4 py-7 md:py-10">
       <SectionHeading title={t.categories.title} sub={t.categories.sub} />
-      <div className="grid border-t-2 border-ink sm:grid-cols-2 sm:gap-x-12">
-        {CATEGORIES.map((cat, i) => {
-          const example = DEMO_PROMPTS.find((p) => p.topicId === cat.exampleTopic);
-          const exampleText = example?.label[lang] ?? "";
+      <div className="grid grid-cols-2 gap-3 sm:gap-4">
+        {DEFAULT_CATEGORY_ORDER.map((categoryId) => {
+          const cat = CATEGORIES.find((item) => item.id === categoryId);
+          if (!cat) return null;
           const emergency = cat.id === "emergency";
           return (
             <button
               key={cat.id}
-              onClick={() => onSelect(exampleText, cat.exampleTopic)}
-              className="group flex w-full items-start gap-4 border-b border-line py-4 text-left transition-colors hover:bg-card"
+              onClick={() => onSelect(cat.id)}
+              className={`pressable group flex min-h-24 w-full flex-col items-start justify-between rounded-lg border p-4 text-left transition-colors focus-visible:z-10 ${
+                emergency
+                  ? "border-danger bg-danger-soft hover:bg-[#f7d8cf]"
+                  : "border-line bg-card hover:border-moss hover:bg-moss-soft/50"
+              }`}
             >
-              <span
-                aria-hidden
-                className={`w-7 shrink-0 pt-0.5 text-[13px] font-bold tabular-nums ${
-                  emergency ? "text-danger" : "text-moss"
-                }`}
-              >
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <span className="min-w-0 flex-1">
-                <span className={`block text-[15.5px] font-bold leading-snug ${emergency ? "text-danger" : "text-ink"}`}>
-                  {cat.title[lang]}
-                </span>
-                <span className="mt-0.5 block text-[13.5px] leading-relaxed text-ink-soft">
-                  {cat.description[lang]}
-                </span>
-                <span
-                  className={`mt-1.5 block text-[13px] font-semibold ${
-                    emergency ? "text-danger" : "text-moss"
-                  }`}
-                >
-                  {t.categories.tryLabel}: “{exampleText}”
+              <CategoryIcon
+                name={cat.icon}
+                className={`h-6 w-6 shrink-0 ${emergency ? "text-danger" : "text-moss"}`}
+                strokeWidth={2}
+              />
+              <span className="min-w-0">
+                <span className={`block text-base font-bold leading-snug ${emergency ? "text-danger" : "text-ink"}`}>
+                  {getMessages(lang).categories[cat.id].title}
                 </span>
               </span>
-              <IconArrowRight className="hover-arrow mt-1 h-4 w-4 shrink-0 text-ink-soft/60" />
             </button>
           );
         })}

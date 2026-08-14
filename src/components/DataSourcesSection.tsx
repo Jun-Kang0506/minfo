@@ -32,8 +32,10 @@ function Tag({ tone, children }: { tone: "moss" | "caution" | "ink"; children: s
   );
 }
 
-export function DataSourcesSection() {
+export function DataSourcesSection({ variant = "all" }: { variant?: "all" | "sources" | "data" }) {
   const { lang, t } = useLanguage();
+  const showSources = variant !== "data";
+  const showData = variant !== "sources";
 
   const tiers = [
     { key: "ward", label: t.sources.groupWard },
@@ -50,11 +52,11 @@ export function DataSourcesSection() {
   const strategyTones = ["moss", "caution", "caution"] as const;
 
   return (
-    <section id="sources" className="mx-auto max-w-6xl px-4 py-14 md:py-20">
-      <SectionHeading title={t.sources.title} sub={t.sources.sub} />
+    <section id={showSources ? "sources" : "data"} className="mx-auto max-w-6xl px-4 py-10 md:py-14">
+      {showSources && <SectionHeading title={t.sources.title} sub={t.sources.sub} />}
 
       {/* Data-use status register: what runs today vs what is identified next */}
-      <div className="mb-10 border-t-2 border-ink">
+      {showSources && <div className="mb-10 border-t-2 border-ink">
         {(
           [
             {
@@ -75,10 +77,10 @@ export function DataSourcesSection() {
             <p className="flex-1 text-[13.5px] leading-relaxed text-ink">{row.body}</p>
           </div>
         ))}
-      </div>
+      </div>}
 
       {/* Source register — grouped by office tier, a reference list, not cards */}
-      <div className="grid gap-x-12 lg:grid-cols-2">
+      {showSources && <div className="grid gap-x-12 lg:grid-cols-2">
         {tiers.map((tier) => {
           const items = SOURCES.filter((s) => sourceTier(s) === tier.key);
           if (items.length === 0) return null;
@@ -95,12 +97,12 @@ export function DataSourcesSection() {
             </div>
           );
         })}
-      </div>
+      </div>}
 
       {/* From open data to usable guidance — the final-mile story.
           Anchor target for the header "Open Data" link; scroll margin
           matches the sticky header (see section[id] in globals.css). */}
-      <div
+      {showData && <div
         id="open-data"
         className="mt-14 scroll-mt-[10.5rem] rounded-lg border border-line bg-card p-5 sm:p-8 lg:scroll-mt-[6.5rem]"
       >
@@ -159,10 +161,10 @@ export function DataSourcesSection() {
             </li>
           ))}
         </ol>
-      </div>
+      </div>}
 
       {/* Tokyo Open Data candidates — a dataset registry, honestly labeled */}
-      <div className="mt-12">
+      {showData && <div className="mt-12">
         <h3 className="flex flex-wrap items-center gap-2.5 text-lg font-bold tracking-tight text-ink">
           {t.openData.candidatesTitle}
           <Tag tone="caution">{t.openData.next.badge}</Tag>
@@ -234,10 +236,10 @@ export function DataSourcesSection() {
           {t.openData.catalogCta}
           <IconExternal className="h-4 w-4" />
         </a>
-      </div>
+      </div>}
 
       {/* Source-quality check — a verification process every record passes */}
-      <div className="mt-12 rounded-lg border border-line bg-card p-5 sm:p-8">
+      {showSources && <div className="mt-12 rounded-lg border border-line bg-card p-5 sm:p-8">
         <div className="flex items-start gap-4">
           <Mascot variant="thinking" size={56} className="hidden sm:block" />
           <div>
@@ -265,10 +267,10 @@ export function DataSourcesSection() {
             </li>
           ))}
         </ol>
-      </div>
+      </div>}
 
       {/* Open-data roadmap — future plans, clearly labeled */}
-      <div className="mt-12">
+      {showData && <div className="mt-12">
         <h3 className="flex flex-wrap items-center gap-2.5 text-[15px] font-bold">
           {t.sources.roadmapTitle}
           <Tag tone="caution">{t.sources.roadmapBadge}</Tag>
@@ -284,7 +286,7 @@ export function DataSourcesSection() {
             </div>
           ))}
         </div>
-      </div>
+      </div>}
     </section>
   );
 }

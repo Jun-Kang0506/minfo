@@ -1,0 +1,93 @@
+{
+  "shinjuku-foreign": {
+    "title": "Shinjuku City: Living Information for Foreign Residents",
+    "organization": "Shinjuku City",
+    "note": "Shinjuku's official website made for foreign residents: daily life, garbage, health, disaster, taxes, Japanese classes, and consultation, with Japanese, English, Chinese, and Korean versions."
+  },
+  "tabunka-plaza": {
+    "title": "Shinjuku Multicultural Plaza",
+    "organization": "Shinjuku City",
+    "note": "Free multilingual consultation desk and Japanese classes, minutes from Okubo: the first stop for daily-life questions when you don't know where to go."
+  },
+  "shinjuku-city": {
+    "title": "Shinjuku City Official Website",
+    "organization": "Shinjuku City",
+    "note": "The ward office for Shinjuku / Okubo residents: resident registration, health insurance, tax, and daily-life procedures all happen here (site mainly in Japanese)."
+  },
+  "shinjuku-garbage": {
+    "title": "Shinjuku City: Recyclable Resources and Garbage",
+    "organization": "Shinjuku City",
+    "note": "Shinjuku's official garbage and recycling rules for foreign residents: how to separate, which day to put out, and multilingual guides."
+  },
+  "iryou-net": {
+    "title": "Medical Information Net (NAVII)",
+    "organization": "Ministry of Health, Labour and Welfare",
+    "note": "Japan's official nationwide search for hospitals and clinics: find facilities near you and check which languages they can handle."
+  },
+  "tokyo-metro": {
+    "title": "Tokyo Metropolitan Government",
+    "organization": "Tokyo Metropolitan Government",
+    "note": "Tokyo-wide living information and multilingual support services from the metropolitan government: useful when a question goes beyond Shinjuku."
+  },
+  "tokyo-bousai": {
+    "title": "Tokyo Disaster Prevention (Tokyo Bousai)",
+    "organization": "Tokyo Metropolitan Government",
+    "note": "Tokyo's official disaster site: preparedness guides, evacuation information, and emergency updates, with multilingual pages."
+  },
+  "tokyo-fire": {
+    "title": "Tokyo Fire Department: 119 / #7119",
+    "organization": "Tokyo Fire Department",
+    "note": "The official authority for 119 (fire / ambulance). Also runs #7119, the 24-hour line for advice when you are not sure it is an emergency."
+  },
+  "isa": {
+    "title": "Immigration Services Agency of Japan",
+    "organization": "Ministry of Justice",
+    "note": "The official authority for residence cards, visas, and status of residence: the only place to confirm any immigration procedure."
+  },
+  "fresc": {
+    "title": "FRESC: Foreign Residents Support Center",
+    "organization": "Ministry of Justice (Yotsuya, Tokyo)",
+    "note": "National support desks: immigration, work, legal, human rights: gathered in one building near Shinjuku, with interpretation available."
+  },
+  "nta": {
+    "title": "National Tax Agency",
+    "organization": "National Tax Agency",
+    "note": "The official authority for national taxes: income tax, filing, and English-language tax guides."
+  },
+  "nenkin": {
+    "title": "Japan Pension Service",
+    "organization": "Japan Pension Service",
+    "note": "The official body for national pension enrollment, payments, and exemptions: with an international section in English."
+  },
+  "tokyo-opendata": {
+    "title": "Tokyo Open Data Catalog",
+    "organization": "Tokyo Metropolitan Government",
+    "note": "Public datasets (facilities, consultation desks, disaster info) that MINFO plans to connect for ward-by-ward expansion across Tokyo."
+  },
+  "shinjuku-public-housing-recruitment": {
+    "title": "Shinjuku City: Ward-run rental housing recruitment",
+    "organization": "Shinjuku City",
+    "note": "Official information on Shinjuku ward-run rental housing recruitment and eligibility. Check the current notice because requirements vary."
+  },
+  "shinjuku-flood-guidance": {
+    "title": "Shinjuku City: Flood and water-disaster guidance",
+    "organization": "Shinjuku City",
+    "note": "Official Shinjuku guidance for flood and water-disaster preparation."
+  },
+  "shinjuku-weather-information": {
+    "title": "Shinjuku City: Weather information",
+    "organization": "Shinjuku City",
+    "note": "Official weather and disaster-information links for Shinjuku residents."
+  },
+  "regasu-japanese-classes": {
+    "title": "Shinjuku Cultural Center Foundation: Japanese classes",
+    "organization": "Shinjuku Cultural Center Foundation (Regasu Shinjuku)",
+    "note": "Official class information for non-native speakers learning daily-life Japanese in Shinjuku. Availability can change."
+  },
+  "tokyo-muslim-travelers-guide": {
+    "title": "Tokyo Muslim Travelers' Guide",
+    "organization": "Tokyo Convention & Visitors Bureau",
+    "note": "A Tokyo guide to prayer facilities, halal and Muslim-friendly dining, and other facilities. Confirm details directly with each facility."
+  }
+  ,"shinjuku-resident-tax-simulator":{"title":"Shinjuku City: Resident tax simulation","organization":"Shinjuku City","note":"Official Shinjuku City simulator for estimating resident tax. Results depend on income and deductions and are estimates, not final decisions."}
+}

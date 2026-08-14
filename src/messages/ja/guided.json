@@ -1,0 +1,208 @@
+{
+  "questions": {
+    "health": {
+      "title": "何について知りたいですか？",
+      "options": [
+        {
+          "label": "診療所をさがす",
+          "request": "診療所をさがす"
+        },
+        {
+          "label": "健康保険を知る",
+          "request": "健康保険を知る"
+        },
+        {
+          "label": "今すぐ緊急の助けが必要",
+          "request": "今すぐ緊急の助けが必要"
+        }
+      ]
+    },
+    "school_kind": {
+      "title": "どの学校をさがしていますか？",
+      "options": [
+        { "label": "小学校", "request": "小学校をさがす" },
+        { "label": "中学校", "request": "中学校をさがす" },
+        { "label": "高等学校", "request": "高等学校をさがす" }
+      ]
+    },
+    "health_urgent_kind": {
+      "title": "どんな緊急ですか？",
+      "options": [
+        {
+          "label": "救急車・火事",
+          "request": "救急車・火事"
+        },
+        {
+          "label": "警察・今すぐ危険",
+          "request": "警察・今すぐ危険"
+        }
+      ]
+    },
+    "schools": {
+      "title": "何について知りたいですか？",
+      "options": [
+        { "label": "学校をさがす", "request": "学校をさがす" },
+        {
+          "label": "小・中学校に入学する",
+          "request": "小・中学校に入学する"
+        },
+        {
+          "label": "保育園などを申し込む",
+          "request": "保育園などを申し込む"
+        },
+        {
+          "label": "保育施設をさがす",
+          "request": "保育施設をさがす"
+        }
+      ]
+    },
+    "taxes": {
+      "title": "何について知りたいですか？",
+      "options": [
+        {
+          "label": "税金・年金の通知、または支払いの困りごと",
+          "request": "税金・年金の通知、または支払いの困りごと"
+        },
+        {
+          "label": "税金の計算",
+          "request": "税金の計算"
+        }
+      ]
+    },
+    "garbage": {
+      "title": "何について知りたいですか？",
+      "options": [
+        {
+          "label": "ごみの分け方・収集日・粗大ごみ",
+          "request": "ごみの分け方・収集日・粗大ごみ"
+        }
+      ]
+    },
+    "disaster": {
+      "title": "何について知りたいですか？",
+      "options": [
+        {
+          "label": "地震への備え・公式情報",
+          "request": "地震への備え・公式情報"
+        },
+        {
+          "label": "台風・大雨への備え",
+          "request": "台風・大雨への備え"
+        },
+        {
+          "label": "避難場所",
+          "request": "避難場所"
+        }
+      ]
+    },
+    "japanese": {
+      "title": "何について知りたいですか？",
+      "options": [
+        {
+          "label": "日本語教室をさがす",
+          "request": "日本語教室をさがす"
+        },
+        {
+          "label": "やさしい日本語",
+          "request": "やさしい日本語"
+        }
+      ]
+    },
+    "japanese_class_need": {
+      "title": "どのような教室をさがしていますか？",
+      "options": [
+        {
+          "label": "初級者向けの教室",
+          "request": "初級者向けの教室"
+        },
+        {
+          "label": "夜の教室",
+          "request": "夜の教室"
+        },
+        {
+          "label": "大久保エリアの教室",
+          "request": "大久保エリアの教室"
+        }
+      ]
+    },
+    "housing": {
+      "title": "何について知りたいですか？",
+      "options": [
+        {
+          "label": "引っ越しの手続き",
+          "request": "引っ越しの手続き"
+        },
+        {
+          "label": "賃貸・契約・大家さんとのトラブル",
+          "request": "賃貸・契約・大家さんとのトラブル"
+        },
+        {
+          "label": "公営住宅",
+          "request": "公営住宅"
+        }
+      ]
+    },
+    "consultation": {
+      "title": "何について知りたいですか？",
+      "options": [
+        {
+          "label": "生活の相談",
+          "request": "生活の相談"
+        },
+        {
+          "label": "役所の手紙を読む",
+          "request": "役所の手紙を読む"
+        },
+        {
+          "label": "在留カード",
+          "request": "在留カード"
+        },
+        {
+          "label": "財布をなくした",
+          "request": "財布をなくした"
+        },
+        {
+          "label": "銀行口座をつくる",
+          "request": "銀行口座をつくる"
+        }
+      ]
+    },
+    "food-prayer": {
+      "title": "何について知りたいですか？",
+      "options": [
+        {
+          "label": "ハラールの食事",
+          "request": "ハラールの食事"
+        },
+        {
+          "label": "礼拝施設",
+          "request": "礼拝施設"
+        }
+      ]
+    },
+    "emergency": {
+      "title": "どんな緊急ですか？",
+      "options": [
+        {
+          "label": "救急車・火事",
+          "request": "救急車・火事"
+        },
+        {
+          "label": "警察・今すぐ危険",
+          "request": "警察・今すぐ危険"
+        }
+      ]
+    }
+  },
+  "ui": {
+    "next": "次へ",
+    "back": "戻る",
+    "startOver": "最初から",
+    "loading": "信頼できる情報を確認しています…",
+    "unsupportedTitle": "このテーマの情報は準備中です。",
+    "unsupportedNeed": "選んだ内容：{need}",
+    "consultation": "相談窓口をさがす",
+    "structuredLookupTitle": "保育施設の検索は準備中です。",
+    "structuredLookupBody": "この検索を使う前に、公式データセットとカタログ情報を確認する必要があります。現在の結果は表示しません。"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "hospitals": {
+    "title": "Hospitals & Health",
+    "description": "Find doctors who speak your language, and understand health insurance."
+  },
+  "taxes": {
+    "title": "Taxes & Pension",
+    "description": "Understand tax notices, resident tax, and the pension system."
+  },
+  "schools-children": {
+    "title": "Schools & Children",
+    "description": "Find the right place to ask about school and children’s services."
+  },
+  "food-prayer": {
+    "title": "Food & Prayer",
+    "description": "Find a consultation desk for food or prayer-related questions."
+  },
+  "garbage": {
+    "title": "Garbage Rules",
+    "description": "Shinjuku's separation rules, collection days, and oversized items."
+  },
+  "disaster": {
+    "title": "Disaster Preparedness",
+    "description": "Earthquakes, typhoons, evacuation areas, and multilingual alerts."
+  },
+  "housing": {
+    "title": "Housing",
+    "description": "Renting rules, guarantors, contracts, and where to get help."
+  },
+  "japanese": {
+    "title": "Japanese Learning",
+    "description": "Free and low-cost classes near Okubo, plus Easy Japanese support."
+  },
+  "consultation": {
+    "title": "Consultation Desks",
+    "description": "Free multilingual desks for any daily-life question, big or small."
+  },
+  "emergency": {
+    "title": "Emergency Help",
+    "description": "119 for ambulance & fire, 110 for police: how to call and what to say."
+  }
+}

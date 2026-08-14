@@ -1,0 +1,25 @@
+{
+  "answer": {
+    "emergency": "Khẩn cấp",
+    "caution": "Lưu ý",
+    "steps": "Các bước tiếp theo",
+    "sources": "Nguồn chính thức & công cộng",
+    "lowConfidence": "MINFO chưa thể xác nhận hoàn toàn. Hãy kiểm tra với cơ quan chính thức.",
+    "disclaimer": "MINFO là bản thử nghiệm, không phải dịch vụ của chính phủ. Việc quan trọng hãy luôn xác nhận với cơ quan chính thức.",
+    "aiBadge": "Câu trả lời AI của Claude · nguồn được xác minh cục bộ",
+    "answerLabel": "Trả lời",
+    "nextStep": "Bước tiếp theo",
+    "whatToDo": "Việc cần làm",
+    "important": "Điều quan trọng",
+    "officialInformation": "Thông tin chính thức",
+    "resultCardLabel": "Thẻ kết quả"
+  },
+  "feedback": {
+    "question": "Câu trả lời này có hữu ích không?",
+    "helpful": "Hữu ích",
+    "confusing": "Khó hiểu",
+    "wrong": "Sai thông tin",
+    "language": "Cần ngôn ngữ của tôi",
+    "thanks": "Cảm ơn bạn. Phản hồi giúp MINFO tốt hơn."
+  }
+}

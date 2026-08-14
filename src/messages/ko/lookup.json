@@ -1,0 +1,52 @@
+{
+  "loading": "공식 스냅샷을 불러오는 중…",
+  "unavailable": "이 공식 스냅샷은 현재 이용할 수 없습니다.",
+  "count": "곳",
+  "more": "5곳 더 보기",
+  "location": "내 위치 사용",
+  "chooseArea": "지역 선택",
+  "browseAll": "전체 보기",
+  "areaLabel": "지역",
+  "areaPlaceholder": "지역을 선택하세요",
+  "unassignedArea": "주소의 정 이름을 확인할 수 없음",
+  "areaResults": "{area}의 장소를 표시하고 있습니다",
+  "stop": "위치 사용 중지",
+  "distance": "대략적인 직선 거리",
+  "map": "지도 열기",
+  "child": "이 스냅샷에는 빈자리, 자격, 요금, 시간, 입소 접수 또는 현재 운영 정보가 없습니다. 직접 확인하세요.",
+  "evac": "이는 위치 데이터이며 실시간 개설이나 상태가 아닙니다. 적합성은 재난과 공식 지시에 따라 달라집니다. 현재 공식 경보는 따로 확인하세요.",
+  "privacy": "위치 정보는 이 기기에서만 사용되며 MINFO로 전송되지 않습니다.",
+  "locationError": "현재 위치를 사용할 수 없습니다. 계속 목록을 볼 수 있습니다.",
+  "listedFor": "해당 재난",
+  "earthquake": "지진",
+  "large_fire": "대규모 화재",
+  "data": "데이터 확인:",
+  "update": "수시 업데이트. 스냅샷 데이터.",
+  "catalog": "이 데이터 정보",
+  "provenance": "Open Data ✓ · Shinjuku City · CC BY 4.0",
+  "addressLabel": "주소",
+  "typeLabel": "유형",
+  "attributionLabel": "오픈 데이터 출처",
+  "snapshotLabel": "스냅샷 데이터",
+  "sourceLabel": "출처",
+  "licenseLabel": "라이선스",
+  "phoneLabel": "전화",
+  "nameReadingLabel": "이름 읽는 법",
+  "officialJapaneseNameLabel": "공식 일본어 이름",
+  "ownershipLabel": "설립 구분",
+  "directoryTitles": { "childcare": "보육 시설", "evacuation": "긴급 대피 장소", "medical": "의원", "elementarySchool": "초등학교", "juniorHighSchool": "중학교", "highSchool": "고등학교" },
+  "ownership": { "public": "공립", "private": "사립" },
+  "governingBodies": { "shinjuku_municipal": "신주쿠구립", "tokyo_metropolitan": "도쿄도립" },
+  "facilityTypes": { "childrens_center": "아동관", "municipal_kindergarten": "구립 유치원", "municipal_licensed_nursery": "구립 인가 보육원", "municipal_certified_childcare_center": "구립 인정 어린이원", "workplace_childcare": "사업장 내 보육소", "childcare_room": "보육실", "family_daycare": "가정 보육", "after_school_club": "방과 후 아동 클럽", "private_kindergarten": "사립 유치원", "private_licensed_nursery": "사립 인가 보육원", "private_certified_childcare_center": "사립 인정 어린이원", "evacuation_site": "대피 장소", "clinic": "의원", "elementary_school": "초등학교", "junior_high_school": "중학교", "high_school": "고등학교" },
+  "datasetNotes": { "childcare": "이 스냅샷에는 빈자리, 자격, 요금, 시간, 입소 접수 또는 현재 운영 정보가 없습니다. 직접 확인하세요.", "evacuation": "이는 위치 데이터이며 실시간 개설이나 상태가 아닙니다. 적합성은 재난과 공식 지시에 따라 달라집니다. 현재 공식 경보는 따로 확인하세요.", "medical": "이것은 의료기관 목록 스냅샷이며 실시간 이용 가능 정보가 아닙니다. 진료 시간, 진료 가능 여부, 언어 지원, 보험 수용 또는 전문의 정보는 표시되지 않습니다. 구급차는 119로 전화하세요.", "school": "이 목록에 학교가 있다고 해서 배정, 입학 또는 입학 허가가 보장되는 것은 아닙니다. 최신 정보는 학교 또는 학교운영과에 문의하세요." },
+  "preparing": {
+    "shinjuku-childcare-facilities": {
+      "title": "보육 시설 조회를 준비 중입니다.",
+      "body": "이 조회를 사용하기 전에 공식 데이터세트와 카탈로그 메타데이터를 확인해야 합니다. 현재 결과는 표시하지 않습니다."
+    },
+    "shinjuku-evacuation-sites": {
+      "title": "대피 장소 조회를 준비 중입니다.",
+      "body": "이 준비 중인 조회는 실시간·개설 중·가장 가까운 대피 장소를 표시하지 않습니다. 현재 상황은 공식 재난 정보를 확인하세요."
+    }
+  }
+}

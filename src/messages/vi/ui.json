@@ -1,0 +1,44 @@
+{
+  "brand": {
+    "subtitle": "Thông tin của mọi người",
+    "homeLabel": "Trang chủ MINFO",
+    "languageLabel": "Ngôn ngữ"
+  },
+  "textSize": { "label": "Cỡ chữ", "standard": "Chuẩn", "large": "Lớn" },
+  "nav": {
+    "ask": "Hỏi",
+    "categories": "Danh mục",
+    "sources": "Nguồn tin",
+    "openData": "Dữ liệu mở",
+    "whyMinfo": "Vì sao MINFO?",
+    "why": "Vì sao Shinjuku?",
+    "backToTop": "Lên đầu trang",
+    "mainNavigationLabel": "Điều hướng chính"
+  },
+  "hero": {
+    "kicker": "Hướng dẫn dựa trên thông tin chính thức",
+    "headline": "Thông tin đời sống đáng tin cậy, bằng ngôn ngữ của bạn.",
+    "sub": "Bệnh viện, bảo hiểm, rác, thiên tai: MINFO giải thích đời sống ở Nhật một cách đơn giản, luôn kèm nguồn chính thức.",
+    "ctaAsk": "Hỏi MINFO",
+    "trustSources": "Mọi câu trả lời đều kèm nguồn chính thức",
+    "trustLanguages": "8 ngôn ngữ, gồm tiếng Nhật đơn giản (やさしい日本語)",
+    "trustPilot": "Bắt đầu từ Shinjuku / Okubo, mở rộng ra Tokyo"
+  },
+  "categories": {
+    "title": "Bạn cần trợ giúp về điều gì?",
+    "sub": "Chọn một chủ đề để bắt đầu với thông tin chính thức.",
+    "tryLabel": "Thử hỏi"
+  },
+  "ask": {
+    "title": "Hỏi MINFO",
+    "sub": "Gõ câu hỏi hoặc chạm vào ví dụ. Câu trả lời kèm nguồn chính thức.",
+    "placeholder": "Hỏi về đời sống ở Shinjuku…",
+    "send": "Hỏi",
+    "examples": "Câu hỏi thường gặp",
+    "thinking": "Đang kiểm tra các nguồn đáng tin cậy…",
+    "emptyHint": "Câu trả lời sẽ hiện ở đây, kèm nguồn."
+  },
+  "mascot": {
+    "alt": "Linh vật hướng dẫn MINFO"
+  }
+}

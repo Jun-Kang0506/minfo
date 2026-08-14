@@ -1,0 +1,52 @@
+{
+  "loading": "Loading official snapshot…",
+  "unavailable": "This official snapshot is unavailable right now.",
+  "count": "places",
+  "more": "Show 5 more",
+  "location": "Use my location",
+  "chooseArea": "Choose an area",
+  "browseAll": "Browse all",
+  "areaLabel": "Area",
+  "areaPlaceholder": "Select an area",
+  "unassignedArea": "Address town not identified",
+  "areaResults": "Showing places in {area}",
+  "stop": "Stop using location",
+  "distance": "Approximate straight-line distance",
+  "map": "Open map",
+  "child": "This snapshot does not show vacancies, eligibility, fees, hours, enrollment acceptance, or current operation. Confirm directly.",
+  "evac": "This is location data, not live opening or status. Suitability depends on the hazard and official instructions. Check current official alerts separately.",
+  "privacy": "Your location stays on this device and is not sent to MINFO.",
+  "locationError": "Could not use your location. You can keep browsing.",
+  "listedFor": "Listed for",
+  "earthquake": "Earthquake",
+  "large_fire": "Large fire",
+  "data": "Data checked:",
+  "update": "Updated as needed. Snapshot data.",
+  "catalog": "About this data",
+  "provenance": "Open Data ✓ · Shinjuku City · CC BY 4.0",
+  "addressLabel": "Address",
+  "typeLabel": "Type",
+  "attributionLabel": "Open Data attribution",
+  "snapshotLabel": "Snapshot data",
+  "sourceLabel": "Source",
+  "licenseLabel": "License",
+  "phoneLabel": "Phone",
+  "nameReadingLabel": "Name reading",
+  "officialJapaneseNameLabel": "Official Japanese name",
+  "ownershipLabel": "Ownership",
+  "directoryTitles": { "childcare": "Childcare facilities", "evacuation": "Evacuation locations", "medical": "Medical clinics", "elementarySchool": "Elementary schools", "juniorHighSchool": "Junior-high schools", "highSchool": "High schools" },
+  "ownership": { "public": "Public", "private": "Private" },
+  "governingBodies": { "shinjuku_municipal": "Shinjuku City municipal", "tokyo_metropolitan": "Tokyo Metropolitan" },
+  "facilityTypes": { "childrens_center": "Children's center", "municipal_kindergarten": "Municipal kindergarten", "municipal_licensed_nursery": "Municipal licensed nursery", "municipal_certified_childcare_center": "Municipal certified childcare center", "workplace_childcare": "Workplace childcare center", "childcare_room": "Childcare room", "family_daycare": "Family daycare", "after_school_club": "After-school children's club", "private_kindergarten": "Private kindergarten", "private_licensed_nursery": "Private licensed nursery", "private_certified_childcare_center": "Private certified childcare center", "evacuation_site": "Evacuation location", "clinic": "Clinic", "elementary_school": "Elementary school", "junior_high_school": "Junior-high school", "high_school": "High school" },
+  "datasetNotes": { "childcare": "This snapshot does not show vacancies, eligibility, fees, hours, enrollment acceptance, or current operation. Confirm directly.", "evacuation": "This is location data, not live opening or status. Suitability depends on the hazard and official instructions. Check current official alerts separately.", "medical": "This is a directory snapshot, not live availability. It does not show opening hours, patient acceptance, language support, insurance acceptance, or specialist availability. For an ambulance, call 119.", "school": "A school in this directory is not a placement, enrollment, or admission guarantee. Contact the school or the School Operations Division for current details." },
+  "preparing": {
+    "shinjuku-childcare-facilities": {
+      "title": "Childcare facility lookup is being prepared.",
+      "body": "The official dataset and catalog metadata must be verified before this lookup can be used. It does not show live results."
+    },
+    "shinjuku-evacuation-sites": {
+      "title": "Evacuation-site lookup is being prepared.",
+      "body": "This prepared lookup does not show live, open, or nearest sites. For the current situation, check official disaster information."
+    }
+  }
+}

@@ -66,6 +66,23 @@ export function IconBook(props: IconProps) {
   );
 }
 
+export function IconSchool(props: IconProps) {
+  return (
+    <svg {...base(props)}>
+      <path d="M3 10l9-5 9 5M5 11v9h14v-9M8 20v-5h3v5M13 20v-5h3v5" />
+      <path d="M10 11h4" />
+    </svg>
+  );
+}
+
+export function IconUtensils(props: IconProps) {
+  return (
+    <svg {...base(props)}>
+      <path d="M5 4v7M8 4v7M5 7.5h3M6.5 11v9M15 4v16M15 4c2.5 1.5 3.5 4.5 2 7h-2" />
+    </svg>
+  );
+}
+
 export function IconChat(props: IconProps) {
   return (
     <svg {...base(props)}>
@@ -140,6 +157,8 @@ const CATEGORY_ICONS = {
   shield: IconShield,
   house: IconHouse,
   book: IconBook,
+  school: IconSchool,
+  utensils: IconUtensils,
   chat: IconChat,
   alert: IconAlert,
 } as const;

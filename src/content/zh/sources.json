@@ -1,0 +1,93 @@
+{
+  "shinjuku-foreign": {
+    "title": "新宿区外国居民生活信息网站",
+    "organization": "新宿区",
+    "note": "新宿区专为外国居民制作的官方网站：涵盖生活、垃圾、医疗、防灾、税金、日语教室和咨询信息，有日、英、中、韩语版本。"
+  },
+  "tabunka-plaza": {
+    "title": "新宿多文化共生广场",
+    "organization": "新宿区",
+    "note": "距大久保几分钟路程的免费多语言咨询窗口，还有日语教室：不知道去哪里时，先来这里。"
+  },
+  "shinjuku-city": {
+    "title": "新宿区官方网站",
+    "organization": "新宿区",
+    "note": "新宿区役所的官方网站：住民登记、健康保险、税务等手续都在这里办理（网站以日语为主）。"
+  },
+  "shinjuku-garbage": {
+    "title": "新宿区垃圾与资源分类指南",
+    "organization": "新宿区",
+    "note": "新宿区面向外国居民的官方垃圾分类规则：怎么分、哪天扔，附多语言指南。"
+  },
+  "iryou-net": {
+    "title": "医疗信息网（NAVII）",
+    "organization": "厚生劳动省",
+    "note": "日本官方的全国医院·诊所检索系统：查找附近的医疗机构，并确认其支持的语言。"
+  },
+  "tokyo-metro": {
+    "title": "东京都政府官方网站",
+    "organization": "东京都政府",
+    "note": "东京都政府的官方网站：全东京范围的生活信息和多语言支援服务，问题超出新宿区时很有用。"
+  },
+  "tokyo-bousai": {
+    "title": "东京都防灾网站",
+    "organization": "东京都政府",
+    "note": "东京都官方防灾网站：防灾指南、避难信息和紧急动态，提供多语言页面。"
+  },
+  "tokyo-fire": {
+    "title": "东京消防厅: 119 / #7119",
+    "organization": "东京消防厅",
+    "note": "119（火警·救护车）的官方机构。还运营 #7119：不确定是否紧急时可拨打的 24 小时咨询电话。"
+  },
+  "isa": {
+    "title": "出入国在留管理厅",
+    "organization": "法务省",
+    "note": "在留卡、签证和在留资格的官方机构：任何入管手续都应在这里确认。"
+  },
+  "fresc": {
+    "title": "外国人在留支援中心（FRESC）",
+    "organization": "法务省（东京·四谷）",
+    "note": "国家级支援窗口（签证、劳动、法律、人权）集中在新宿附近的一栋楼里，提供翻译。"
+  },
+  "nta": {
+    "title": "国税厅",
+    "organization": "国税厅",
+    "note": "国税的官方机构：所得税、报税手续及英文税务指南。"
+  },
+  "nenkin": {
+    "title": "日本年金机构",
+    "organization": "日本年金机构",
+    "note": "国民年金加入、缴纳和减免手续的官方机构：设有英文国际专页。"
+  },
+  "tokyo-opendata": {
+    "title": "东京都开放数据目录",
+    "organization": "东京都政府",
+    "note": "东京都的公开数据目录（设施、咨询窗口、防灾信息）：MINFO 计划接入这些数据以扩展至各区。"
+  },
+  "shinjuku-public-housing-recruitment": {
+    "title": "新宿区区营住房招租信息",
+    "organization": "新宿区",
+    "note": "新宿区区营出租住房招募和资格的官方信息。条件因招募而异，请查看当前公告。"
+  },
+  "shinjuku-flood-guidance": {
+    "title": "新宿区台风与集中暴雨指南",
+    "organization": "新宿区",
+    "note": "新宿区关于洪水和水灾准备的官方信息。"
+  },
+  "shinjuku-weather-information": {
+    "title": "新宿区防灾气象信息",
+    "organization": "新宿区",
+    "note": "面向新宿居民的官方天气和防灾信息链接。"
+  },
+  "regasu-japanese-classes": {
+    "title": "新宿未来创造财团日语教室",
+    "organization": "新宿未来创造财团（Regasu Shinjuku）",
+    "note": "面向在新宿学习生活日语的非母语者的官方课程信息。开课情况可能变化。"
+  },
+  "tokyo-muslim-travelers-guide": {
+    "title": "东京穆斯林旅行者指南",
+    "organization": "东京观光财团",
+    "note": "东京的指南，介绍礼拜设施、清真和穆斯林友好餐饮等。请直接向各设施确认详情。"
+  }
+  ,"shinjuku-resident-tax-simulator":{"title":"新宿区：居民税试算","organization":"新宿区","note":"新宿区官方居民税试算工具。结果取决于收入和扣除项目，仅供估算，并非最终决定。"}
+}

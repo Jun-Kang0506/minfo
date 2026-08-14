@@ -31,6 +31,14 @@
   /* One family for every script — display is weight, not a second font. */
   --font-sans: var(--font-public-sans), var(--font-noto-jp), ui-sans-serif, system-ui, sans-serif;
 
+  /* Type scales are centralized so the optional large-text preference
+     enlarges every script consistently, without forcing a reflow of data. */
+  --font-small: 0.875rem;
+  --font-body: 1.125rem;
+  --font-control: 1rem;
+  --font-heading: 1.5rem;
+  --line-height-body: 1.65;
+
   /* Motion: strong ease-out for entrances/feedback (starts fast),
      never ease-in on UI. */
   --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
@@ -39,6 +47,11 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+html[data-text-size="large"] {
+  font-size: 112.5%;
 }
 
 body {
@@ -46,6 +59,67 @@ body {
   color: var(--color-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+}
+
+/* Shared civic-control contract: stable target size, one compact radius,
+   wrap-safe labels across all eight languages, and clear keyboard focus. */
+.button-primary,
+.button-secondary {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 3rem;
+  max-width: 100%;
+  border-radius: 0.125rem;
+  padding: 0.625rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.button-primary {
+  background: var(--color-moss);
+  color: white;
+}
+.button-primary:hover { background: var(--color-moss-deep); }
+.button-secondary {
+  border: 1px solid var(--color-line);
+  background: var(--color-card);
+  color: var(--color-ink);
+}
+.button-secondary:hover { border-color: var(--color-moss); color: var(--color-moss); }
+.button-primary, .button-secondary { transition: transform 120ms var(--ease-out-strong), background-color 120ms var(--ease-out-strong), border-color 120ms var(--ease-out-strong); }
+.button-primary:active, .button-secondary:active { transform: scale(0.98); }
+
+.lookup-sheet {
+  border: 1px solid var(--color-line);
+  border-left: 4px solid var(--color-moss);
+  border-radius: 0.5rem;
+  background: var(--color-card);
+  padding: 1.25rem;
+}
+.link-action {
+  display: inline-block;
+  max-width: 100%;
+  color: var(--color-moss);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+@media (min-width: 640px) {
+  .lookup-sheet { padding: 1.5rem; }
+}
+
+@media (max-width: 389px) {
+  .button-primary, .button-secondary { width: 100%; }
+  .lookup-sheet { padding: 1rem; }
 }
 
 /* Radius policy: 4px on controls/tags (rounded-sm), 8px on sheets/panels

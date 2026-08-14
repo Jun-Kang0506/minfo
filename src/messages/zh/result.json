@@ -1,0 +1,25 @@
+{
+  "answer": {
+    "emergency": "紧急",
+    "caution": "请注意",
+    "steps": "建议的下一步",
+    "sources": "官方·公共来源",
+    "lowConfidence": "MINFO 无法完全确认，请向官方窗口确认。",
+    "disclaimer": "MINFO 是原型产品，不是政府服务。重要事项请务必向官方窗口确认。",
+    "aiBadge": "由 Claude 生成的 AI 回答 · 来源经本地核验",
+    "answerLabel": "回答",
+    "nextStep": "下一步",
+    "whatToDo": "该怎么做",
+    "important": "重要事项",
+    "officialInformation": "官方信息",
+    "resultCardLabel": "结果卡片"
+  },
+  "feedback": {
+    "question": "这个回答有帮助吗？",
+    "helpful": "有帮助",
+    "confusing": "看不懂",
+    "wrong": "信息有误",
+    "language": "需要我的语言",
+    "thanks": "谢谢！您的反馈会帮助改进 MINFO。"
+  }
+}

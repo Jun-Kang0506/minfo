@@ -1,0 +1,105 @@
+import { createHash } from "node:crypto";
+import { mkdir, writeFile } from "node:fs/promises";
+
+const inputs = [
+  { datasetId: "shinjuku-childcare-facilities", titleJa: "新宿区の子育て施設一覧", catalogUrl: "https://catalog.data.metro.tokyo.lg.jp/dataset/t131041d0000000117", resourceId: "29af39aa-e29b-481e-bc55-f209b1803ec7", resourceUrl: "https://www.city.shinjuku.lg.jp/content/000399969.csv", sourceId: "shinjuku-city", expected: 166, provisionalOfficialIds: new Set(["131041400057", "131041400058", "131041400114"]), requiredHeaders: ["ID", "名称", "名称_カナ", "名称_英字", "種別", "所在地_連結表記", "緯度", "経度", "電話番号", "郵便番号", "URL"] },
+  { datasetId: "shinjuku-evacuation-sites", titleJa: "新宿区の指定緊急避難場所一覧", catalogUrl: "https://catalog.data.metro.tokyo.lg.jp/dataset/t131041d0000000115", resourceId: "ee2a79e8-3420-482f-be76-75a4939022d0", resourceUrl: "https://www.city.shinjuku.lg.jp/content/000399967.csv", sourceId: "shinjuku-city", expected: 10, requiredHeaders: ["ID", "名称", "名称_カナ", "名称_英字", "所在地_連結表記", "緯度", "経度", "電話番号", "郵便番号", "URL", "災害種別_洪水", "災害種別_崖崩れ、土石流及び地滑り", "災害種別_高潮", "災害種別_地震", "災害種別_津波", "災害種別_大規模な火事", "災害種別_内水氾濫", "災害種別_火山現象"] },
+];
+const snapshotDate = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Tokyo" }).format(new Date());
+const clean = (v) => typeof v === "string" && v.trim() ? v.replace(/\r\n/g, "\n").trim() : undefined;
+function csv(text) { const rows=[]; let row=[], field="", q=false; for(let i=0;i<text.length;i++){const c=text[i], n=text[i+1]; if(q){if(c==='"'&&n==='"'){field+='"';i++;}else if(c==='"')q=false;else field+=c;}else if(c==='"')q=true;else if(c===','){row.push(field);field='';}else if(c==='\n'){row.push(field);rows.push(row);row=[];field='';}else if(c!=='\r')field+=c;} if(q) throw Error("unterminated CSV quote"); if(field||row.length){row.push(field);rows.push(row);} return rows; }
+const headers = { id:["ID"], name:["名称"], address:["所在地_連結表記"], lat:["緯度"], lon:["経度"], type:["種別"], kana:["名称_カナ"], latin:["名称_英字"], url:["URL"], phone:["電話番号"], postal:["郵便番号"] };
+function pick(row, map, keys){ for(const key of keys) if(map.has(key)) return clean(row[map.get(key)]); }
+function validHttps(v){ try { return new URL(v).protocol === "https:" ? v : undefined; } catch { return undefined; } }
+/**
+ * Deterministic Hepburn-style helper for an official kana reading. It is only
+ * a pronunciation aid, never an asserted translation or replacement name.
+ * Keep this at ingestion time: no client/API dependency and an auditable
+ * normalized snapshot.
+ */
+const kanaToLatin = new Map(Object.entries({
+  "きゃ":"kya","きゅ":"kyu","きょ":"kyo","ぎゃ":"gya","ぎゅ":"gyu","ぎょ":"gyo","しゃ":"sha","しゅ":"shu","しょ":"sho","じゃ":"ja","じゅ":"ju","じょ":"jo","ちゃ":"cha","ちゅ":"chu","ちょ":"cho","にゃ":"nya","にゅ":"nyu","にょ":"nyo","ひゃ":"hya","ひゅ":"hyu","ひょ":"hyo","びゃ":"bya","びゅ":"byu","びょ":"byo","ぴゃ":"pya","ぴゅ":"pyu","ぴょ":"pyo","みゃ":"mya","みゅ":"myu","みょ":"myo","りゃ":"rya","りゅ":"ryu","りょ":"ryo",
+  "しぇ":"she","じぇ":"je","ちぇ":"che","てぃ":"ti","でぃ":"di","とぅ":"tu","どぅ":"du","ふぁ":"fa","ふぃ":"fi","ふぇ":"fe","ふぉ":"fo","うぃ":"wi","うぇ":"we","うぉ":"wo","ゔぁ":"va","ゔぃ":"vi","ゔぇ":"ve","ゔぉ":"vo","くぁ":"kwa","ぐぁ":"gwa","つぁ":"tsa","つぃ":"tsi","つぇ":"tse","つぉ":"tso",
+  "あ":"a","い":"i","う":"u","え":"e","お":"o","か":"ka","き":"ki","く":"ku","け":"ke","こ":"ko","が":"ga","ぎ":"gi","ぐ":"gu","げ":"ge","ご":"go","さ":"sa","し":"shi","す":"su","せ":"se","そ":"so","ざ":"za","じ":"ji","ず":"zu","ぜ":"ze","ぞ":"zo","た":"ta","ち":"chi","つ":"tsu","て":"te","と":"to","だ":"da","ぢ":"ji","づ":"zu","で":"de","ど":"do","な":"na","に":"ni","ぬ":"nu","ね":"ne","の":"no","は":"ha","ひ":"hi","ふ":"fu","へ":"he","ほ":"ho","ば":"ba","び":"bi","ぶ":"bu","べ":"be","ぼ":"bo","ぱ":"pa","ぴ":"pi","ぷ":"pu","ぺ":"pe","ぽ":"po","ま":"ma","み":"mi","む":"mu","め":"me","も":"mo","や":"ya","ゆ":"yu","よ":"yo","ら":"ra","り":"ri","る":"ru","れ":"re","ろ":"ro","わ":"wa","ゐ":"wi","ゑ":"we","を":"o","ん":"n","ゔ":"vu","ぁ":"a","ぃ":"i","ぅ":"u","ぇ":"e","ぉ":"o","ゎ":"wa"
+}));
+const kanaChar = /[ぁ-ゖァ-ヺ]/;
+const japaneseScript = /[ぁ-ゖァ-ヺ一-龯々〆ヶ]/;
+function hiragana(value) { return [...value.normalize("NFKC")].map((character) => { const code=character.codePointAt(0); return code >= 0x30a1 && code <= 0x30f6 ? String.fromCodePoint(code - 0x60) : character; }).join(""); }
+function lengthenFinalVowel(value) { const last=value.match(/[aeiou]$/)?.[0]; const macron=last === "a" ? "ā" : last === "i" ? "ī" : last === "u" ? "ū" : last === "e" ? "ē" : last === "o" ? "ō" : ""; return macron ? value.slice(0, -1) + macron : value; }
+function romanizeKana(reading) {
+  const value=hiragana(reading); let output="";
+  for(let index=0; index<value.length;) {
+    const character=value[index];
+    if (character === "っ") { const next=kanaToLatin.get(value.slice(index+1,index+3)) ?? kanaToLatin.get(value[index+1] ?? ""); if (next) output += next[0] === "c" ? "t" : next[0]; index++; continue; }
+    if (character === "ー") { output = lengthenFinalVowel(output); index++; continue; }
+    if (character === "ん") { const next=kanaToLatin.get(value.slice(index+1,index+3)) ?? kanaToLatin.get(value[index+1] ?? ""); output += next && /^[aiueoy]/.test(next) ? "n'" : "n"; index++; continue; }
+    const pair=kanaToLatin.get(value.slice(index,index+2)); if (pair) { output += pair; index += 2; continue; }
+    const single=kanaToLatin.get(character); if (single) { output += single; index++; continue; }
+    output += character; index++;
+  }
+  return output.replace(/\s+/g," ").trim().replace(/[a-z]/, (letter) => letter.toUpperCase());
+}
+function nameFields(sourceName, nameKana, nameLatin) {
+  const officialLocalizedName = nameLatin && nameLatin !== sourceName ? nameLatin : !japaneseScript.test(sourceName) ? sourceName : undefined;
+  // Retain a helper for every source reading as an audit field, even when a
+  // better source-provided Latin name wins the display priority.
+  const romanizedName = nameKana ? romanizeKana(nameKana) : undefined;
+  if (nameKana && (!romanizedName || !romanizedName.trim() || kanaChar.test(romanizedName))) throw Error(`Could not generate a usable Latin helper from official reading: ${sourceName}`);
+  const displayName = officialLocalizedName ?? romanizedName ?? sourceName;
+  const displayNameStatus = officialLocalizedName ? "official_localized" : romanizedName ? "romanized_helper" : "japanese_only";
+  return { nameKana, nameLatin, officialLocalizedName, romanizedName, displayName, displayNameStatus };
+}
+const childcareTypes = new Map([
+  ["児童館", "childrens_center"], ["区立幼稚園", "municipal_kindergarten"], ["区立認可保育園", "municipal_licensed_nursery"], ["区立認定こども園", "municipal_certified_childcare_center"],
+  ["地域型保育事業（事業所内保育所）", "workplace_childcare"], ["地域型保育事業（保育ルーム）", "childcare_room"], ["家庭的保育者（保育ママ）", "family_daycare"],
+  ["放課後児童クラブ", "after_school_club"], ["私立幼稚園", "private_kindergarten"], ["私立認可保育園", "private_licensed_nursery"], ["私立認定こども園", "private_certified_childcare_center"],
+]);
+function normalize(input, columns, row) { const map=new Map(columns.map((h,i)=>[h,i])); for(const required of ["ID","名称"]) if(!map.has(required)) throw Error(`${input.datasetId}: missing required header ${required}`); const id=pick(row,map,headers.id); const sourceName=pick(row,map,headers.name); if(!id||!sourceName) throw Error(`${input.datasetId}: blank ID or 名称`); const isProvisional=/[（(]仮称[）)]/.test(sourceName); if(isProvisional && !input.provisionalOfficialIds?.has(id)) throw Error(`${input.datasetId}:${id} unexpected provisional name; review before publishing`); const latitude=Number(pick(row,map,headers.lat)), longitude=Number(pick(row,map,headers.lon)); const coordinates=Number.isFinite(latitude)&&Number.isFinite(longitude) ? {latitude,longitude} : {}; if((Number.isFinite(latitude)) !== (Number.isFinite(longitude))) throw Error(`${input.datasetId}:${id} incomplete coordinates`); if(coordinates.latitude !== undefined && (Math.abs(latitude)>90 || Math.abs(longitude)>180)) throw Error(`${input.datasetId}:${id} invalid coordinates`); const nameKana=pick(row,map,headers.kana), nameLatin=pick(row,map,headers.latin); const sourceType=pick(row,map,headers.type); let type=input.datasetId==="shinjuku-evacuation-sites"?"evacuation_site":undefined; if(input.datasetId==="shinjuku-childcare-facilities"){type=childcareTypes.get(sourceType);if(sourceType&&!type)throw Error(`${input.datasetId}:${id} unexpected facility type ${sourceType}`);} const r={id:`${input.datasetId === "shinjuku-childcare-facilities" ? "childcare" : "evacuation"}:${id}`,datasetId:input.datasetId,sourceId:input.sourceId,officialId:id,sourceName,...nameFields(sourceName,nameKana,nameLatin),nameStatus:isProvisional?"provisional":"official_source",address:pick(row,map,headers.address),type,officialUrl:validHttps(pick(row,map,headers.url)),phone:pick(row,map,headers.phone),postal:pick(row,map,headers.postal),...coordinates}; if(sourceType)r.attributes={sourceType}; if(input.datasetId==="shinjuku-evacuation-sites"){const hazards={}; const flags={flood:"災害種別_洪水",landslide:"災害種別_崖崩れ、土石流及び地滑り",storm_surge:"災害種別_高潮",earthquake:"災害種別_地震",tsunami:"災害種別_津波",large_fire:"災害種別_大規模な火事",inland_flooding:"災害種別_内水氾濫",volcano:"災害種別_火山現象"}; for(const [key,head] of Object.entries(flags)) if(map.has(head)&&clean(row[map.get(head)])==="1") hazards[key]=true; if(Object.keys(hazards).length) r.hazards=hazards;} return r; }
+const outputs = [];
+for (const input of inputs) { const response=await fetch(input.resourceUrl); if(!response.ok) throw Error(`${input.datasetId}: HTTP ${response.status}`); const bytes=new Uint8Array(await response.arrayBuffer()); if(bytes.length<4) throw Error(`${input.datasetId}: empty response`); if(bytes[0]!==0xff||bytes[1]!==0xfe) throw Error(`${input.datasetId}: expected UTF-16LE BOM`); const rows=csv(new TextDecoder("utf-16le").decode(bytes).replace(/^\uFEFF/,"")); const [columns,...body]=rows; if(!columns) throw Error(`${input.datasetId}: no headers`); const missingHeaders=input.requiredHeaders.filter(header=>!columns.includes(header)); if(missingHeaders.length) throw Error(`${input.datasetId}: source schema changed; missing ${missingHeaders.join(", ")}`); const sourceRecords=body.filter(r=>r.some(v=>clean(v))).map(row=>normalize(input,columns,row)); const ids=new Set(); for(const r of sourceRecords){if(ids.has(r.id))throw Error(`${input.datasetId}: duplicate ${r.id}`);ids.add(r.id);} if(sourceRecords.length!==input.expected) throw Error(`${input.datasetId}: expected ${input.expected}, got ${sourceRecords.length}`); const excluded=sourceRecords.filter(r=>r.nameStatus==="provisional"); if(input.provisionalOfficialIds && excluded.length!==input.provisionalOfficialIds.size) throw Error(`${input.datasetId}: expected ${input.provisionalOfficialIds.size} provisional records, got ${excluded.length}`); const records=sourceRecords.filter(r=>r.nameStatus!=="provisional"); records.sort((a,b)=>a.displayName.localeCompare(b.displayName,"ja")||a.officialId.localeCompare(b.officialId)); const excludedRecords=excluded.map(r=>({officialId:r.officialId,sourceName:r.sourceName,nameStatus:"excluded",reason:"unverified_provisional_name"})); const metadata={datasetId:input.datasetId,titleJa:input.titleJa,catalogUrl:input.catalogUrl,resourceId:input.resourceId,resourceUrl:input.resourceUrl,sourceId:input.sourceId,sourceOrganization:"Shinjuku City",license:"CC BY 4.0",encoding:"UTF-16LE BOM",retrievedAt:snapshotDate,verifiedAt:snapshotDate,updateFrequency:"随時",snapshot:true,recordCount:records.length,sourceRecordCount:sourceRecords.length,excludedRecordCount:excluded.length,excludedProvisionalRecordCount:excluded.length,excludedRecords,sourceColumns:columns,normalizerVersion:3,rawSha256:createHash("sha256").update(bytes).digest("hex")}; outputs.push({ filename: input.datasetId === "shinjuku-childcare-facilities" ? "childcare-facilities" : "evacuation-sites", metadata, records }); }
+
+async function fetchCsv(url, encoding) {
+  const response = await fetch(url); if (!response.ok) throw Error(`HTTP ${response.status}: ${url}`);
+  const bytes = new Uint8Array(await response.arrayBuffer());
+  if (encoding === "utf-16le" && (bytes[0] !== 0xff || bytes[1] !== 0xfe)) throw Error(`Expected UTF-16LE BOM: ${url}`);
+  const text = new TextDecoder(encoding, { fatal: true }).decode(bytes).replace(/^\uFEFF/, "");
+  const rows = csv(text); if (!rows.length) throw Error(`Empty CSV: ${url}`);
+  return { bytes, columns: rows[0], rows: rows.slice(1).filter((row) => row.some((cell) => clean(cell))), lastModified: response.headers.get("last-modified") ?? undefined };
+}
+function value(row, columns, header) { const index = columns.indexOf(header); if (index < 0) throw Error(`Missing required header ${header}`); return clean(row[index]); }
+function snapshot(datasetId, titleJa, catalogUrl, resourceUrl, sourceId, organization, encoding, sourceColumns, bytes, records, resourceUrls = [resourceUrl], options = {}) {
+  const ids = new Set(); for (const record of records) { if (ids.has(record.id)) throw Error(`${datasetId}: duplicate normalized ID ${record.id}`); ids.add(record.id); }
+  if (!records.length) throw Error(`${datasetId}: no in-scope records`);
+  records.sort((a, b) => a.sourceName.localeCompare(b.sourceName, "ja") || a.officialId.localeCompare(b.officialId));
+  outputs.push({ filename: datasetId.replace("shinjuku-", "").replaceAll("-", "-"), metadata: { datasetId, titleJa, catalogUrl, resourceId: "official-resource", resourceUrl, resourceUrls, sourceId, sourceOrganization: organization, license: options.license ?? "See official dataset", encoding, retrievedAt: snapshotDate, verifiedAt: snapshotDate, sourceDataDate: options.sourceDataDate, updateFrequency: "annual or as published", snapshot: true, recordCount: records.length, sourceRecordCount: options.sourceRecordCount ?? records.length, excludedRecordCount: 0, excludedProvisionalRecordCount: 0, excludedRecords: [], sourceColumns, normalizerVersion: 4, rawSha256: createHash("sha256").update(bytes).digest("hex") }, records });
+}
+
+const medicalUrl = "https://www.city.shinjuku.lg.jp/content/000399984.csv";
+const medical = await fetchCsv(medicalUrl, "utf-16le");
+const medicalModifiedAt = medical.lastModified ? new Date(medical.lastModified) : undefined;
+const medicalFreshnessFloor = new Date("2025-12-12T00:00:00Z");
+if (!medicalModifiedAt || Number.isNaN(medicalModifiedAt.valueOf()) || medicalModifiedAt < medicalFreshnessFloor) throw Error(`medical source is unexpectedly stale or has no trustworthy Last-Modified date: ${medical.lastModified ?? "missing"}`);
+for (const header of ["ID", "名称", "名称_カナ", "名称_英字", "医療機関の種類", "所在地_連結表記", "緯度", "経度", "電話番号"]) if (!medical.columns.includes(header)) throw Error(`medical schema drift: ${header}`);
+if (medical.rows.length !== 695) throw Error(`medical count drift: expected 695, got ${medical.rows.length}`);
+const clinics = medical.rows.map((row) => { const id=value(row, medical.columns, "ID"), latitude=Number(value(row, medical.columns, "緯度")), longitude=Number(value(row, medical.columns, "経度")), sourceName=value(row, medical.columns, "名称"), nameKana=value(row, medical.columns, "名称_カナ"), nameLatin=value(row, medical.columns, "名称_英字"); if (!id || !Number.isFinite(latitude) || !Number.isFinite(longitude) || Math.abs(latitude)>90 || Math.abs(longitude)>180) throw Error(`medical malformed: ${id}`); if (value(row, medical.columns, "医療機関の種類") !== "診療所") throw Error(`medical unexpected facility type: ${id}`); return { id:`medical:${id}`, datasetId:"shinjuku-medical-clinics", sourceId:"shinjuku-city-medical", officialId:id, sourceName, ...nameFields(sourceName, nameKana, nameLatin), nameStatus:"official_source", type:"clinic", address:value(row, medical.columns, "所在地_連結表記"), phone:value(row, medical.columns, "電話番号"), latitude, longitude }; });
+snapshot("shinjuku-medical-clinics", "新宿区の医療機関一覧（診療所）", "https://catalog.data.metro.tokyo.lg.jp/dataset/t131041d0000000121", medicalUrl, "shinjuku-city-medical", "Shinjuku City", "UTF-16LE BOM", medical.columns, medical.bytes, clinics, [medicalUrl], { license: "CC BY 4.0", sourceDataDate: medicalModifiedAt.toISOString().slice(0, 10), sourceRecordCount: medical.rows.length });
+
+const schoolBase = "https://www.kyoiku.metro.tokyo.lg.jp/documents/d/kyoiku/";
+const schoolInputs = [
+  ["shinjuku-public-elementary-schools", "新宿区の公立小学校", "r7_shougakkou_ichiran", "r7_shougakkou_address", "elementary_school", 29, "設置者", "新宿区"],
+  ["shinjuku-public-junior-high-schools", "新宿区の公立中学校", "r7_chuugakkou_ichiran", "r7_chuugakkou_address", "junior_high_school", 10, "設置者", "新宿区"],
+  ["shinjuku-public-high-schools", "新宿区の公立高等学校", "r7_koutougakkou_ichiran_zennichisei-resolved", "r7_koutougakkou_address", "high_school", 4, "所在地区市町村", "新宿区"],
+];
+for (const [datasetId, titleJa, listPath, addressPath, type, expected, scopeHeader, scope] of schoolInputs) {
+  const listUrl=schoolBase+listPath, addressUrl=schoolBase+addressPath; const [list, address] = await Promise.all([fetchCsv(listUrl, "shift_jis"), fetchCsv(addressUrl, "shift_jis")]);
+  for (const header of ["学校番号", "学校名", scopeHeader]) if (!list.columns.includes(header) || !address.columns.includes(header)) throw Error(`${datasetId} schema drift: ${header}`);
+  for (const header of ["郵便番号", "住所", "電話番号", "学校名(フリガナ)"]) if (!address.columns.includes(header)) throw Error(`${datasetId} address schema drift: ${header}`);
+  const addresses = new Map(address.rows.map((row) => [value(row,address.columns,"学校番号"), row]));
+  const relevantById = new Map();
+  for (const row of list.rows.filter((candidate) => value(candidate,list.columns,scopeHeader) === scope)) { const officialId=value(row,list.columns,"学校番号"), addressRow=addresses.get(officialId); if (!addressRow) throw Error(datasetId + ": missing address for " + officialId); const localAddress=value(addressRow,address.columns,"住所"), phone=value(addressRow,address.columns,"電話番号"), sourceName=value(row,list.columns,"学校名"), nameKana=value(addressRow,address.columns,"学校名(フリガナ)"); if (!localAddress || !phone) throw Error(datasetId + ": malformed contact " + officialId); const record={ id:"school:" + officialId, datasetId, sourceId:"tokyo-public-schools-2025", officialId, sourceName, ...nameFields(sourceName, nameKana), nameStatus:"official_source", address: localAddress.startsWith("東京都") ? localAddress : "東京都新宿区" + localAddress, phone, type, ownership:"public", governingBody: datasetId === "shinjuku-public-high-schools" ? undefined : "shinjuku_municipal" }; const prior=relevantById.get(officialId); if (prior && prior.sourceName !== record.sourceName) throw Error(datasetId + ": conflicting duplicate school " + officialId); relevantById.set(officialId, record); }
+  const relevant = [...relevantById.values()];
+  if (relevant.length !== expected) throw Error(`${datasetId}: expected ${expected}, got ${relevant.length}`);
+  snapshot(datasetId, titleJa, "https://catalog.data.metro.tokyo.lg.jp/dataset/t000021d2000000191", listUrl, "tokyo-public-schools-2025", "Tokyo Metropolitan Board of Education", "Shift_JIS", [...new Set([...list.columns, ...address.columns])], new Uint8Array([...list.bytes, ...address.bytes]), relevant, [listUrl,addressUrl], { sourceDataDate: "School list: 2025-05-01; address and phone: 2025-10", sourceRecordCount: list.rows.length });
+}
+await mkdir("src/lib/data/generated", { recursive:true });
+for (const output of outputs) { await writeFile(`src/lib/data/generated/${output.filename}.json`,JSON.stringify({metadata:output.metadata,records:output.records},null,2)+"\n"); console.log(`${output.metadata.datasetId}: ${output.records.length} ${output.metadata.rawSha256}`); }

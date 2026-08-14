@@ -1,26 +1,25 @@
 "use client";
 
+import Link from "next/link";
 import { useLanguage } from "./LanguageProvider";
 import { LanguageSelector } from "./LanguageSelector";
+import { TextSizeControl } from "./TextSizeControl";
 import { IconPhone } from "./icons";
 
-export function Header() {
+export function Header({ onHome }: { onHome?: () => void }) {
   const { t } = useLanguage();
 
   const navItems = [
-    { href: "#ask", label: t.nav.ask },
-    { href: "#categories", label: t.nav.categories },
-    { href: "#sources", label: t.nav.sources },
-    { href: "#open-data", label: t.nav.openData },
-    { href: "#why-minfo", label: t.nav.whyMinfo },
-    { href: "#why", label: t.nav.why },
+    { href: "/about", label: t.nav.whyMinfo },
+    { href: "/sources", label: t.nav.sources },
+    { href: "/data", label: t.nav.openData },
   ];
 
   return (
     <header className="sticky top-0 z-40">
       {/* Emergency strip — always visible, never buried */}
       <div className="bg-ink px-4 py-2 text-paper">
-        <p className="mx-auto flex max-w-6xl items-center gap-2 text-xs font-medium leading-relaxed sm:text-[13px]">
+        <p className="mx-auto flex max-w-6xl items-center gap-2 text-sm font-medium leading-relaxed">
           <IconPhone className="h-3.5 w-3.5 shrink-0 text-shu-soft" />
           {/* Wraps to two lines on narrow screens — 110 must never be cut off */}
           <span>
@@ -38,49 +37,50 @@ export function Header() {
       </div>
 
       <div className="border-b border-line bg-paper/95 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
-          <a href="#top" className="flex items-center gap-2.5">
-            <span className="grid h-9 w-9 shrink-0 place-items-center rounded-sm bg-moss text-lg font-bold text-white">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-3">
+          <Link
+            href="/"
+            aria-label={t.brand.homeLabel}
+            onNavigate={onHome}
+            className="flex items-center gap-2.5 rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-moss"
+          >
+            <span aria-hidden="true" className="grid h-9 w-9 shrink-0 place-items-center rounded-sm bg-moss text-lg font-bold text-white">
               み
             </span>
             <span className="leading-tight">
               <span className="block text-lg font-extrabold tracking-tight">MINFO</span>
-              <span className="block text-[11px] font-medium text-ink-soft">
+              <span className="block text-xs font-medium text-ink-soft">
                 {t.brand.subtitle}
               </span>
             </span>
-          </a>
+          </Link>
 
-          <nav aria-label="Main" className="hidden items-center gap-6 lg:flex">
+          <nav aria-label={t.nav.mainNavigationLabel} className="hidden items-center gap-6 lg:flex">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 className="whitespace-nowrap text-sm font-semibold text-ink-soft transition-colors hover:text-moss"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
-          <LanguageSelector />
+          <div className="ml-auto flex max-w-full flex-wrap items-center justify-end gap-2">
+            <Link
+              href="/about"
+              aria-label={t.nav.whyMinfo}
+              title={t.nav.whyMinfo}
+              className="grid min-h-11 min-w-11 place-items-center rounded-sm border border-line bg-card text-sm font-bold text-ink transition-colors hover:border-moss hover:text-moss lg:hidden"
+            >
+              <span aria-hidden>i</span>
+            </Link>
+            <TextSizeControl />
+            <LanguageSelector />
+          </div>
         </div>
 
-        {/* Compact anchor nav for mobile / tablet */}
-        <nav
-          aria-label="Sections"
-          className="flex gap-5 overflow-x-auto border-t border-line px-4 py-2 lg:hidden"
-        >
-          {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="whitespace-nowrap text-[13px] font-semibold text-ink-soft"
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
       </div>
     </header>
   );

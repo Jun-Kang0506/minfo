@@ -1,0 +1,171 @@
+{
+  "sources": {
+    "title": "Dựa trên thông tin chính thức & công cộng",
+    "sub": "MINFO chỉ trả lời từ các tổ chức chính thức và công cộng được chọn lọc. Mọi câu trả lời đều dẫn nguồn.",
+    "groupWard": "Quận Shinjuku",
+    "groupTokyo": "Chính quyền Tokyo",
+    "groupNational": "Cấp quốc gia",
+    "roadmapTitle": "Lộ trình dữ liệu mở",
+    "roadmapBadge": "Kế hoạch (chưa triển khai)",
+    "roadmap": [
+      {
+        "title": "Kết nối Danh mục Dữ liệu Mở Tokyo",
+        "body": "Liên kết câu trả lời với dữ liệu công cộng trực tiếp (cơ sở, quầy tư vấn, thông tin thiên tai) thay vì dữ liệu tĩnh."
+      },
+      {
+        "title": "Mở rộng theo từng quận",
+        "body": "Cấu trúc danh mục + nguồn không phụ thuộc quận: thay trang chính thức của từng quận là phủ khắp Tokyo."
+      },
+      {
+        "title": "Xu hướng câu hỏi ẩn danh",
+        "body": "Hiểu cư dân thực sự cần thông tin gì, chia sẻ với các quận như tín hiệu vì lợi ích chung, không bao giờ là dữ liệu cá nhân."
+      }
+    ]
+  },
+  "openData": {
+    "title": "Từ dữ liệu mở đến hướng dẫn dùng được",
+    "sub": "Dữ liệu mở chỉ hữu ích khi cư dân tìm được, hiểu được và hành động được. MINFO đảm nhận 'chặng cuối' đó.",
+    "now": {
+      "badge": "Đang dùng",
+      "body": "{count} bản ghi chọn lọc từ nguồn chính thức/công cộng đang tạo nên mọi câu trả lời và thẻ nguồn. Kiểm tra thủ công, cấu trúc sẵn sàng cho dữ liệu mở."
+    },
+    "next": {
+      "badge": "Ứng viên · chưa tự động lấy",
+      "body": "Các bộ dữ liệu mở Tokyo/Shinjuku bên dưới là ứng viên đã xác định, xếp theo mức hữu ích và nhu cầu cập nhật. Việc lấy tự động là bước tương lai."
+    },
+    "pipelineTitle": "Dữ liệu trở thành hướng dẫn như thế nào",
+    "pipeline": [
+      {
+        "label": "Dữ liệu chính thức",
+        "desc": "Bộ dữ liệu mở hoặc trang chính thức"
+      },
+      {
+        "label": "Bản ghi chọn lọc",
+        "desc": "Đã kiểm tra, có cấu trúc, kèm nguồn"
+      },
+      {
+        "label": "Giải thích đa ngôn ngữ",
+        "desc": "Trả lời dễ hiểu bằng 8 thứ tiếng"
+      },
+      {
+        "label": "Hành động tiếp theo",
+        "desc": "Quầy đúng, các bước, hướng dẫn 119/110"
+      }
+    ],
+    "strategyTitle": "MINFO chọn cách lấy dữ liệu như thế nào",
+    "strategyIntro": "Không phải dữ liệu nào cũng cần API trực tiếp. Cách lấy tùy theo tốc độ thay đổi của thông tin:",
+    "strategy": [
+      {
+        "title": "Thông tin ổn định",
+        "body": "Quy tắc và quầy liên hệ ít thay đổi. Bản ghi CSV/JSON chọn lọc là đủ cho MVP."
+      },
+      {
+        "title": "Dữ liệu cập nhật định kỳ",
+        "body": "Danh sách cơ sở và thống kê. Có thể làm mới bằng tải CSV theo lịch hoặc cập nhật hàng loạt."
+      },
+      {
+        "title": "Thông tin nhạy về thời gian",
+        "body": "Thiên tai, tình trạng nơi trú ẩn, đóng cửa đột xuất. Tương lai có thể cần API hoặc cập nhật tự động thường xuyên."
+      }
+    ],
+    "candidatesTitle": "Dữ liệu Mở Tokyo: các bộ dữ liệu ứng viên",
+    "candidatesSub": "Các mục trong danh mục và mục tiêu tìm kiếm MINFO dự định kết nối tiếp theo, kèm điều mỗi bộ sẽ cải thiện. Chưa có mục nào được lấy tự động.",
+    "catalogCta": "Xem Danh mục Dữ liệu Mở Tokyo",
+    "badges": {
+      "curated": "Đang chọn lọc thủ công",
+      "candidate": "Ứng viên dữ liệu mở",
+      "batch": "Đổi định kỳ · tương lai: hàng loạt",
+      "live": "Nhạy thời gian · tương lai: API",
+      "searchTarget": "Mục tiêu tìm trong danh mục"
+    }
+  },
+  "quality": {
+    "title": "Kiểm tra chất lượng nguồn của MINFO",
+    "sub": "Danh sách kiểm tra gọn nhẹ, lấy cảm hứng từ hướng dẫn chất lượng dữ liệu mở của chính phủ Nhật. Không phải đánh giá chính thức của chính phủ. Mọi nguồn trong MINFO đều qua bước kiểm tra này.",
+    "items": [
+      {
+        "label": "Nguồn chính thức/công cộng",
+        "desc": "Do cơ quan nhà nước hoặc tổ chức công cộng công bố."
+      },
+      {
+        "label": "Liên kết đã xác minh",
+        "desc": "URL được kiểm tra thủ công và dẫn đến trang chính thức."
+      },
+      {
+        "label": "Tiếp cận được về ngôn ngữ",
+        "desc": "Đa ngôn ngữ, hoặc dùng được với tiếng Nhật đơn giản."
+      },
+      {
+        "label": "Sát với đời sống",
+        "desc": "Trả lời câu hỏi cư dân thực sự hay hỏi."
+      },
+      {
+        "label": "Sẵn sàng cập nhật",
+        "desc": "Bản ghi có thể làm mới khi nguồn thay đổi."
+      },
+      {
+        "label": "Mở rộng theo quận",
+        "desc": "Cùng cấu trúc có thể chứa nguồn của quận khác."
+      },
+      {
+        "label": "Cải thiện nhờ phản hồi",
+        "desc": "Phản hồi của người dùng giúp phát hiện và sửa nguồn yếu."
+      }
+    ]
+  },
+  "whyMinfo": {
+    "title": "Vì sao MINFO, thay vì chỉ tìm kiếm hay AI chat?",
+    "sub": "MINFO không cố vượt công cụ tìm kiếm hay AI tổng quát về kiến thức chung. Nó làm tốt một việc tại địa phương.",
+    "cards": [
+      {
+        "title": "Công cụ tìm kiếm",
+        "body": "Cho bạn nhiều liên kết. Bạn vẫn phải tự phán đoán trang nào chính thức, mới nhất và áp dụng cho Shinjuku."
+      },
+      {
+        "title": "AI chat thông thường",
+        "body": "Trả lời rộng và chung chung. Hữu ích, nhưng không dựa trên các cơ quan của quận bạn, và có thể đoán."
+      },
+      {
+        "title": "MINFO",
+        "body": "Bước tiếp theo cụ thể tại địa phương, bằng ngôn ngữ của bạn, kèm nguồn chính thức trên mọi câu trả lời, và hướng dẫn 119/110 luôn cố định. MINFO dẫn bạn đến cơ quan thật, không thay thế họ."
+      }
+    ]
+  },
+  "story": {
+    "title": "Vì sao Shinjuku / Okubo?",
+    "sub": "Dự án civic-tech thí điểm về tiếp cận thông tin đa ngôn ngữ, hướng tới mở rộng khắp Tokyo.",
+    "blocks": [
+      {
+        "title": "Vấn đề",
+        "body": "Thông tin chính thức ở Nhật đáng tin cậy, nhưng rải rác trên hàng chục trang web và viết bằng tiếng Nhật hành chính khó hiểu. Với cư dân phải tìm hiểu một hệ thống xa lạ bằng ngôn ngữ thứ hai, cả câu hỏi đơn giản ('quầy nào?', 'mẫu nào?') cũng thành rào cản."
+      },
+      {
+        "title": "Đối tượng",
+        "body": "Cư dân gốc nước ngoài và cộng đồng đa ngôn ngữ: người mới đến, du học sinh, người lao động, các gia đình, và những người hỗ trợ cộng đồng giúp họ. Họ gặp rào cản ngôn ngữ và tiếp cận thông tin, không phải thiếu năng lực."
+      },
+      {
+        "title": "Cách tiếp cận",
+        "body": "MINFO không phải chatbot dịch thuật. Đó là người dẫn đường thông tin công dân: giải thích đơn giản các hệ thống đời sống bằng tám ngôn ngữ (gồm tiếng Nhật đơn giản), luôn hiển thị nguồn chính thức, và dẫn bạn đến đúng cơ quan thực, không bao giờ thay thế cơ quan."
+      },
+      {
+        "title": "Thí điểm → mở rộng",
+        "body": "Shinjuku / Okubo là một trong những khu phố đa ngôn ngữ rõ nét nhất Nhật Bản, đông sinh viên, người lao động và gia đình cần thông tin đời sống. Cùng cấu trúc 'danh mục + nguồn tin cậy' có thể nhân rộng từng quận khắp Tokyo."
+      }
+    ],
+    "impactTitle": "Tiếp cận thông tin tốt hơn sẽ thay đổi điều gì",
+    "impact": [
+      "Tiếp cận y tế bằng ngôn ngữ của bạn",
+      "Thông tin phòng chống thiên tai đến với mọi người",
+      "Quy tắc rác, thuế, nhà ở trở nên rõ ràng",
+      "Quầy tư vấn được tìm thấy thực sự"
+    ]
+  },
+  "footer": {
+    "tagline": "Trình điều hướng thông tin đa ngôn ngữ cho cư dân gốc nước ngoài",
+    "meta": "Nguyên mẫu hackathon 2026 · Thí điểm Shinjuku / Okubo",
+    "emergencyTitle": "Khẩn cấp",
+    "fire": "Cứu hỏa / Cấp cứu",
+    "police": "Cảnh sát",
+    "freeNote": "Miễn phí · 24h · có phiên dịch"
+  }
+}

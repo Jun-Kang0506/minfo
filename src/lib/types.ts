@@ -1,7 +1,7 @@
 // Shared types for MINFO — keep this file dependency-free so both
 // server (API route / engines) and client components can import it.
 
-export type LanguageCode = "en" | "ja" | "zh" | "ko" | "vi" | "ne";
+export type LanguageCode = "en" | "ja" | "zh" | "ko" | "vi" | "ne" | "tl" | "bn";
 
 export type Localized<T> = Record<LanguageCode, T>;
 
@@ -19,7 +19,9 @@ export type CategoryId =
   | "housing"
   | "japanese"
   | "consultation"
-  | "emergency";
+  | "emergency"
+  | "schools-children"
+  | "food-prayer";
 
 export type TopicId =
   | "hospital"
@@ -29,6 +31,7 @@ export type TopicId =
   | "japanese-learning"
   | "consultation"
   | "tax"
+  | "tax-estimate"
   | "housing"
   | "residence-card"
   | "police"
@@ -37,6 +40,16 @@ export type TopicId =
   | "bank-account"
   | "lost-wallet"
   | "city-office-letter"
+  | "moving-registration"
+  | "school-enrollment"
+  | "childcare-application"
+  | "public-housing"
+  | "typhoon-heavy-rain"
+  | "japanese-class-beginner"
+  | "japanese-class-evening"
+  | "japanese-class-okubo"
+  | "halal-food"
+  | "prayer-facilities"
   | "fallback";
 
 export interface Category {
@@ -89,6 +102,49 @@ export interface OpenDataCandidate {
   note: Localized<string>;
 }
 
+export type LookupDatasetId = "shinjuku-childcare-facilities" | "shinjuku-evacuation-sites" | "shinjuku-medical-clinics" | "shinjuku-public-elementary-schools" | "shinjuku-public-junior-high-schools" | "shinjuku-public-high-schools";
+export type LookupNameStatus = "official_source" | "verified_current" | "provisional" | "excluded";
+/** How the primary directory name was obtained. Never call a helper an official translation. */
+export type LookupDisplayNameStatus = "official_localized" | "romanized_helper" | "japanese_only";
+export type DirectoryAttribute = string | number | boolean | string[];
+/** A common record shape for current and future facility lookup datasets. */
+export interface LookupRecord { id: string; datasetId: LookupDatasetId; sourceId: string; officialId: string; /** Exact official dataset value retained for signs/maps and staff. */ sourceName: string; /** Primary user-facing name: trusted localized source name, a reading helper, or exact source name. */ displayName: string; /** Distinguishes source-provided localized names from generated pronunciation helpers. */ displayNameStatus: LookupDisplayNameStatus; nameStatus: LookupNameStatus; /** Exact official kana reading when the source supplies one. */ nameKana?: string; /** Trusted source-provided Latin/localized name. */ nameLatin?: string; officialLocalizedName?: string; /** Deterministic pronunciation helper generated from `nameKana` at ingestion. */ romanizedName?: string; address?: string; type?: string; subtype?: string; ownership?: string; governingBody?: string; officialUrl?: string; latitude?: number; longitude?: number; phone?: string; postal?: string; attributes?: Record<string, DirectoryAttribute>; hazards?: Partial<Record<"flood" | "landslide" | "storm_surge" | "earthquake" | "tsunami" | "large_fire" | "inland_flooding" | "volcano", true>>; }
+export interface ExcludedLookupRecord { officialId: string; sourceName: string; nameStatus: "excluded"; reason: "unverified_provisional_name"; }
+export interface LookupSnapshotMetadata { datasetId: LookupDatasetId; titleJa: string; catalogUrl: string; resourceId: string; resourceUrl: string; sourceId: string; license: string; encoding: string; retrievedAt: string; verifiedAt: string; updateFrequency: string; snapshot: true; /** User-facing records after deterministic exclusions. */ recordCount: number; sourceRecordCount: number; excludedRecordCount: number; excludedProvisionalRecordCount: number; excludedRecords: ExcludedLookupRecord[]; sourceColumns: string[]; normalizerVersion: 3 | 4; rawSha256: string; sourceOrganization?: string; resourceUrls?: string[]; sourceDataDate?: string; }
+export interface LookupSnapshot { metadata: LookupSnapshotMetadata; records: LookupRecord[]; }
+
+/** How an intent can be delivered without implying every source is live. */
+export type DeliveryKind = "static_guidance" | "structured_lookup" | "live_status" | "unsupported";
+export type ClaimLevel = "information" | "current_status" | "recommendation";
+export type ResearchStatus = "verified_content" | "catalog_url_required" | "implementation_pending";
+
+/**
+ * A structured lookup that is deliberately not an OpenDataCandidate yet:
+ * it has no verified catalog URL, schema, or dataset freshness information.
+ */
+export interface StructuredLookupMetadata {
+  id: string;
+  title: string;
+  ownerDescription: string;
+  freshnessPolicy: string;
+  researchStatus: ResearchStatus;
+  verifiedAt: string;
+  claimLevel: ClaimLevel;
+  deliveryKind: "structured_lookup";
+}
+
+/** Evidence and delivery contract for a stable guided-flow intent. */
+export interface IntentDeliveryMetadata {
+  intentId: string;
+  deliveryKind: DeliveryKind;
+  claimLevel: ClaimLevel;
+  sourceIds: string[];
+  datasetCandidateIds: string[];
+  verifiedAt: string;
+  freshnessPolicy: string;
+  researchStatus: ResearchStatus;
+}
+
 export type SafetyLevel = "emergency" | "caution";
 
 export interface SafetyInfo {
@@ -139,6 +195,30 @@ export interface AskRequest {
 export interface DemoPrompt {
   topicId: TopicId;
   label: Localized<string>;
+}
+
+/** Stable, non-visible identifiers for the guided category flow. */
+export type GuidedOutcome =
+  | { type: "nextQuestion"; questionId: string }
+  | { type: "topic"; topicId: TopicId }
+  | { type: "structuredLookup"; datasetCandidateId: string }
+  | { type: "unsupported" }
+  | { type: "emergency"; topicId: "ambulance" | "police" };
+
+export interface GuidedOption {
+  id: string;
+  /** Stable semantic meaning for this option. Never derive it from translated copy. */
+  intentId: string;
+  label: Localized<string>;
+  /** Descriptive request sent to the answer API. It is never used as a key. */
+  request: Localized<string>;
+  outcome: GuidedOutcome;
+}
+
+export interface GuidedQuestion {
+  id: string;
+  title: Localized<string>;
+  options: GuidedOption[];
 }
 
 /**

@@ -1,0 +1,38 @@
+{
+  "shinjuku-childcare-facilities": {
+    "titleGloss": "Shinjuku childcare facilities",
+    "note": "Official Shinjuku childcare-facility snapshot data. It does not show vacancies or enrollment status."
+  },
+  "shinjuku-evacuation-sites": {
+    "titleGloss": "Shinjuku designated emergency evacuation sites",
+    "note": "Where to go in an earthquake or fire: the ward's official evacuation site list, ready to link to disaster answers."
+  },
+  "shinjuku-public-facilities": {
+    "titleGloss": "Shinjuku public facilities",
+    "note": "Ward facilities (offices, halls, libraries) as structured data. The base for “which desk do I go to?” answers."
+  },
+  "shinjuku-garbage-sorting": {
+    "titleGloss": "Shinjuku garbage sorting methods",
+    "note": "Garbage separation rules as data: one of the most-asked daily-life questions in every language."
+  },
+  "tokyo-evacuation-shelters": {
+    "titleGloss": "Tokyo disaster-prevention map: shelter list",
+    "note": "Tokyo-wide shelter list with accessibility flags: a cross-check for ward data and the base for expansion."
+  },
+  "tokyo-flood-forecast": {
+    "titleGloss": "Flood inundation forecast maps",
+    "note": "Official flood-risk maps for Tokyo: grounding for disaster-preparedness answers around Shinjuku / Okubo."
+  },
+  "tokyo-medical-ledger": {
+    "titleGloss": "Medical institutions ledger",
+    "note": "A structured ledger of medical institutions in a standardized open-data schema. The base for “find care near me”."
+  },
+  "tokyo-foreign-population": {
+    "titleGloss": "Foreign population by nationality",
+    "note": "Foreign population by nationality: evidence for which languages MINFO should prioritize, ward by ward."
+  },
+  "tokyo-medical-welfare-group": {
+    "titleGloss": "Medical & welfare: catalog category",
+    "note": "The catalog's medical & welfare category: the search path for per-ward clinic and welfare datasets, which vary in naming."
+  }
+}
