@@ -24,8 +24,13 @@
   "snapshotLabel": "Snapshot data",
   "sourceLabel": "Source",
   "licenseLabel": "License",
-  "facilityTypes": { "childrens_center": "Children's center", "municipal_kindergarten": "Municipal kindergarten", "municipal_licensed_nursery": "Municipal licensed nursery", "municipal_certified_childcare_center": "Municipal certified childcare center", "workplace_childcare": "Workplace childcare center", "childcare_room": "Childcare room", "family_daycare": "Family daycare", "after_school_club": "After-school children's club", "private_kindergarten": "Private kindergarten", "private_licensed_nursery": "Private licensed nursery", "private_certified_childcare_center": "Private certified childcare center", "evacuation_site": "Evacuation location" },
-  "datasetNotes": { "childcare": "This snapshot does not show vacancies, eligibility, fees, hours, enrollment acceptance, or current operation. Confirm directly.", "evacuation": "This is location data, not live opening or status. Suitability depends on the hazard and official instructions. Check current official alerts separately." },
+  "phoneLabel": "Phone",
+  "ownershipLabel": "Ownership",
+  "directoryTitles": { "medical": "Medical clinics", "elementarySchool": "Elementary schools", "juniorHighSchool": "Junior-high schools", "highSchool": "High schools" },
+  "ownership": { "public": "Public", "private": "Private" },
+  "governingBodies": { "shinjuku_municipal": "Shinjuku City municipal", "tokyo_metropolitan": "Tokyo Metropolitan" },
+  "facilityTypes": { "childrens_center": "Children's center", "municipal_kindergarten": "Municipal kindergarten", "municipal_licensed_nursery": "Municipal licensed nursery", "municipal_certified_childcare_center": "Municipal certified childcare center", "workplace_childcare": "Workplace childcare center", "childcare_room": "Childcare room", "family_daycare": "Family daycare", "after_school_club": "After-school children's club", "private_kindergarten": "Private kindergarten", "private_licensed_nursery": "Private licensed nursery", "private_certified_childcare_center": "Private certified childcare center", "evacuation_site": "Evacuation location", "clinic": "Clinic", "elementary_school": "Elementary school", "junior_high_school": "Junior-high school", "high_school": "High school" },
+  "datasetNotes": { "childcare": "This snapshot does not show vacancies, eligibility, fees, hours, enrollment acceptance, or current operation. Confirm directly.", "evacuation": "This is location data, not live opening or status. Suitability depends on the hazard and official instructions. Check current official alerts separately.", "medical": "This is a directory snapshot, not live availability. It does not show opening hours, patient acceptance, language support, insurance acceptance, or specialist availability. For an ambulance, call 119.", "school": "A school in this directory is not a placement, enrollment, or admission guarantee. Contact the school or the School Operations Division for current details." },
   "preparing": {
     "shinjuku-childcare-facilities": {
       "title": "Childcare facility lookup is being prepared.",

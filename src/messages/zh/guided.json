@@ -4,8 +4,8 @@
       "title": "您需要了解什么？",
       "options": [
         {
-          "label": "找医院",
-          "request": "找医院"
+          "label": "查找诊所",
+          "request": "查找诊所"
         },
         {
           "label": "了解健康保险",
@@ -15,6 +15,14 @@
           "label": "我现在需要紧急帮助",
           "request": "我现在需要紧急帮助"
         }
+      ]
+    },
+    "school_kind": {
+      "title": "您要找哪种学校？",
+      "options": [
+        { "label": "小学", "request": "查找小学" },
+        { "label": "初中", "request": "查找初中" },
+        { "label": "高中", "request": "查找高中" }
       ]
     },
     "health_urgent_kind": {
@@ -33,6 +41,7 @@
     "schools": {
       "title": "您需要了解什么？",
       "options": [
+        { "label": "查找学校", "request": "查找学校" },
         {
           "label": "申请小学或初中入学",
           "request": "申请小学或初中入学"

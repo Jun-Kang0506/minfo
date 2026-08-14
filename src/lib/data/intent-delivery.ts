@@ -23,6 +23,10 @@ export const STRUCTURED_LOOKUP_METADATA: Record<string, StructuredLookupMetadata
 };
 
 export const INTENT_DELIVERY_METADATA: Record<string, IntentDeliveryMetadata> = {
+  find_hospital: { intentId: "find_hospital", deliveryKind: "structured_lookup", claimLevel: "information", sourceIds: ["shinjuku-city-medical"], datasetCandidateIds: ["shinjuku-medical-clinics"], verifiedAt: "2026-08-14", freshnessPolicy: "checked-in official snapshot; not live availability", researchStatus: "verified_content" },
+  find_elementary_school: { intentId: "find_elementary_school", deliveryKind: "structured_lookup", claimLevel: "information", sourceIds: ["tokyo-public-schools-2025"], datasetCandidateIds: ["shinjuku-public-elementary-schools"], verifiedAt: "2026-08-14", freshnessPolicy: "annual official snapshot; directory is not enrollment placement", researchStatus: "verified_content" },
+  find_junior_high_school: { intentId: "find_junior_high_school", deliveryKind: "structured_lookup", claimLevel: "information", sourceIds: ["tokyo-public-schools-2025"], datasetCandidateIds: ["shinjuku-public-junior-high-schools"], verifiedAt: "2026-08-14", freshnessPolicy: "annual official snapshot; directory is not enrollment placement", researchStatus: "verified_content" },
+  find_high_school: { intentId: "find_high_school", deliveryKind: "structured_lookup", claimLevel: "information", sourceIds: ["tokyo-public-schools-2025"], datasetCandidateIds: ["shinjuku-public-high-schools"], verifiedAt: "2026-08-14", freshnessPolicy: "annual official snapshot; directory is not enrollment placement", researchStatus: "verified_content" },
   tax_calculation: {
     intentId: "tax_calculation", deliveryKind: "static_guidance", claimLevel: "information", sourceIds: ["shinjuku-resident-tax-simulator"], datasetCandidateIds: [], verifiedAt: "2026-08-14", freshnessPolicy: "official simulator linked; MINFO does not calculate", researchStatus: "verified_content",
   },

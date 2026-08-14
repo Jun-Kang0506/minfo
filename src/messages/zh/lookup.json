@@ -24,8 +24,13 @@
   "snapshotLabel": "快照数据",
   "sourceLabel": "来源",
   "licenseLabel": "许可",
-  "facilityTypes": { "childrens_center": "儿童馆", "municipal_kindergarten": "区立幼儿园", "municipal_licensed_nursery": "区立认可保育园", "municipal_certified_childcare_center": "区立认定儿童园", "workplace_childcare": "单位内保育所", "childcare_room": "保育室", "family_daycare": "家庭式保育", "after_school_club": "课后儿童俱乐部", "private_kindergarten": "私立幼儿园", "private_licensed_nursery": "私立认可保育园", "private_certified_childcare_center": "私立认定儿童园", "evacuation_site": "避难场所" },
-  "datasetNotes": { "childcare": "此快照不显示空位、资格、费用、时间、入园受理或当前运营情况。请直接确认。", "evacuation": "这是位置数据，不是实时开放或状态。是否适合取决于灾害和官方指示。请另行查看当前官方警报。" },
+  "phoneLabel": "电话",
+  "ownershipLabel": "办学性质",
+  "directoryTitles": { "medical": "诊所", "elementarySchool": "小学", "juniorHighSchool": "初中", "highSchool": "高中" },
+  "ownership": { "public": "公立", "private": "私立" },
+  "governingBodies": { "shinjuku_municipal": "新宿区立", "tokyo_metropolitan": "东京都立" },
+  "facilityTypes": { "childrens_center": "儿童馆", "municipal_kindergarten": "区立幼儿园", "municipal_licensed_nursery": "区立认可保育园", "municipal_certified_childcare_center": "区立认定儿童园", "workplace_childcare": "单位内保育所", "childcare_room": "保育室", "family_daycare": "家庭式保育", "after_school_club": "课后儿童俱乐部", "private_kindergarten": "私立幼儿园", "private_licensed_nursery": "私立认可保育园", "private_certified_childcare_center": "私立认定儿童园", "evacuation_site": "避难场所", "clinic": "诊所", "elementary_school": "小学", "junior_high_school": "初中", "high_school": "高中" },
+  "datasetNotes": { "childcare": "此快照不显示空位、资格、费用、时间、入园受理或当前运营情况。请直接确认。", "evacuation": "这是位置数据，不是实时开放或状态。是否适合取决于灾害和官方指示。请另行查看当前官方警报。", "medical": "这是医疗机构目录快照，不显示实时情况。它不显示营业时间、是否接诊、语言支持、保险受理或专科医生信息。需要救护车请拨打119。", "school": "目录中列出学校并不保证分配、入学或录取。请联系学校或学校运营部门确认最新信息。" },
   "preparing": {
     "shinjuku-childcare-facilities": {
       "title": "托育设施查询正在准备中。",

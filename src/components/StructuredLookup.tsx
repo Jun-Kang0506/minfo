@@ -64,7 +64,7 @@ export function StructuredLookup({ datasetId, onBack, onStartOver }: { datasetId
   return (
     <section className="lookup-sheet">
       <header>
-        <h2 className="text-2xl font-bold tracking-tight text-ink">{metadata.titleJa}</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-ink">{(copy.directoryTitles as Record<string, string> | undefined)?.[config.titleKey ?? ""] ?? metadata.titleJa}</h2>
         <p className="mt-2 text-base text-ink-soft">{metadata.recordCount} {copy.count}</p>
       </header>
       {config.supportsDistance && <div className="mt-4 flex flex-wrap gap-3">
@@ -80,7 +80,7 @@ export function StructuredLookup({ datasetId, onBack, onStartOver }: { datasetId
       <p className="mt-5 text-sm leading-relaxed text-ink-soft">{copy.datasetNotes[config.disclaimerKey]}</p>
       <aside className="mt-4 border-t border-line pt-3 text-xs leading-relaxed text-ink-soft" aria-label={copy.attributionLabel}>
         <p>{copy.data} {metadata.retrievedAt} · {copy.snapshotLabel}</p>
-        <p>{copy.sourceLabel}: {metadata.sourceId} · {copy.licenseLabel}: {metadata.license}</p>
+        <p>{copy.sourceLabel}: {metadata.sourceOrganization ?? metadata.sourceId} · {copy.licenseLabel}: {metadata.license}</p>
         <a href={metadata.catalogUrl} target="_blank" rel="noopener noreferrer" className="link-action">{copy.catalog}</a>
       </aside>
       <Actions lang={lang} onBack={onBack} onStartOver={onStartOver} />
@@ -95,13 +95,18 @@ function FacilityRow({ record, position, copy, supportsMap, supportsDistance }: 
     : record.address ? `https://www.openstreetmap.org/search?query=${encodeURIComponent(record.address)}` : undefined;
   const hazards = record.hazards ? Object.keys(record.hazards).map((key) => hazardLabels[key as keyof typeof hazardLabels]).filter(Boolean).join(", ") : "";
   const facilityTypes = copy.facilityTypes as Record<string, string>;
+  const ownership = (copy.ownership as Record<string, string> | undefined)?.[record.ownership ?? ""];
+  const governingBody = (copy.governingBodies as Record<string, string> | undefined)?.[record.governingBody ?? ""];
+  const phoneNumbers = record.phone?.split(/[;；]/).map((phone) => phone.trim()).filter(Boolean) ?? [];
   return <article className="py-4">
     <h3 className="text-base font-bold leading-snug text-ink">{record.displayName}</h3>
     {record.displayName !== record.sourceName && <p className="mt-1 text-sm text-ink-soft" lang="ja">{record.sourceName}</p>}
     {record.address && <p className="mt-2 text-base leading-relaxed text-ink"><span className="font-semibold text-ink-soft">{copy.addressLabel}: </span><span lang="ja">{record.address}</span></p>}
     {record.type && <p className="mt-1 text-sm text-ink-soft"><span className="font-semibold">{copy.typeLabel}: </span>{facilityTypes[record.type] ?? record.type}</p>}
+    {ownership && <p className="mt-1 text-sm text-ink-soft"><span className="font-semibold">{copy.ownershipLabel}: </span>{ownership}{governingBody ? " · " + governingBody : ""}</p>}
     {hazards && <p className="mt-1 text-sm text-ink-soft"><span className="font-semibold">{copy.listedFor}: </span>{hazards}</p>}
     {supportsDistance && position && record.latitude !== undefined && record.longitude !== undefined && <p className="mt-1 text-sm text-ink-soft"><span className="font-semibold">{copy.distance}: </span>{km(record, position).toFixed(1)} km</p>}
+    {phoneNumbers.length > 0 && <p className="mt-1 text-sm text-ink-soft"><span className="font-semibold">{copy.phoneLabel}: </span>{phoneNumbers.map((phone, index) => <span key={phone}>{index > 0 && " · "}<a className="underline decoration-moss/50 underline-offset-2" href={"tel:" + phone.replace(/[^+0-9]/g, "")}>{phone}</a></span>)}</p>}
     {mapUrl && <a className="link-action mt-2" target="_blank" rel="noopener noreferrer" href={mapUrl}>{copy.map}</a>}
   </article>;
 }

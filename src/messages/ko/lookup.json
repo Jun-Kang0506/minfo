@@ -24,8 +24,13 @@
   "snapshotLabel": "스냅샷 데이터",
   "sourceLabel": "출처",
   "licenseLabel": "라이선스",
-  "facilityTypes": { "childrens_center": "아동관", "municipal_kindergarten": "구립 유치원", "municipal_licensed_nursery": "구립 인가 보육원", "municipal_certified_childcare_center": "구립 인정 어린이원", "workplace_childcare": "사업장 내 보육소", "childcare_room": "보육실", "family_daycare": "가정 보육", "after_school_club": "방과 후 아동 클럽", "private_kindergarten": "사립 유치원", "private_licensed_nursery": "사립 인가 보육원", "private_certified_childcare_center": "사립 인정 어린이원", "evacuation_site": "대피 장소" },
-  "datasetNotes": { "childcare": "이 스냅샷에는 빈자리, 자격, 요금, 시간, 입소 접수 또는 현재 운영 정보가 없습니다. 직접 확인하세요.", "evacuation": "이는 위치 데이터이며 실시간 개설이나 상태가 아닙니다. 적합성은 재난과 공식 지시에 따라 달라집니다. 현재 공식 경보는 따로 확인하세요." },
+  "phoneLabel": "전화",
+  "ownershipLabel": "설립 구분",
+  "directoryTitles": { "medical": "의원", "elementarySchool": "초등학교", "juniorHighSchool": "중학교", "highSchool": "고등학교" },
+  "ownership": { "public": "공립", "private": "사립" },
+  "governingBodies": { "shinjuku_municipal": "신주쿠구립", "tokyo_metropolitan": "도쿄도립" },
+  "facilityTypes": { "childrens_center": "아동관", "municipal_kindergarten": "구립 유치원", "municipal_licensed_nursery": "구립 인가 보육원", "municipal_certified_childcare_center": "구립 인정 어린이원", "workplace_childcare": "사업장 내 보육소", "childcare_room": "보육실", "family_daycare": "가정 보육", "after_school_club": "방과 후 아동 클럽", "private_kindergarten": "사립 유치원", "private_licensed_nursery": "사립 인가 보육원", "private_certified_childcare_center": "사립 인정 어린이원", "evacuation_site": "대피 장소", "clinic": "의원", "elementary_school": "초등학교", "junior_high_school": "중학교", "high_school": "고등학교" },
+  "datasetNotes": { "childcare": "이 스냅샷에는 빈자리, 자격, 요금, 시간, 입소 접수 또는 현재 운영 정보가 없습니다. 직접 확인하세요.", "evacuation": "이는 위치 데이터이며 실시간 개설이나 상태가 아닙니다. 적합성은 재난과 공식 지시에 따라 달라집니다. 현재 공식 경보는 따로 확인하세요.", "medical": "이것은 의료기관 목록 스냅샷이며 실시간 이용 가능 정보가 아닙니다. 진료 시간, 진료 가능 여부, 언어 지원, 보험 수용 또는 전문의 정보는 표시되지 않습니다. 구급차는 119로 전화하세요.", "school": "이 목록에 학교가 있다고 해서 배정, 입학 또는 입학 허가가 보장되는 것은 아닙니다. 최신 정보는 학교 또는 학교운영과에 문의하세요." },
   "preparing": {
     "shinjuku-childcare-facilities": {
       "title": "보육 시설 조회를 준비 중입니다.",

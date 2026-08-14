@@ -17,8 +17,8 @@ const QUESTION_METADATA = {
         "id": "find_hospital",
         "intentId": "find_hospital",
         "outcome": {
-          "type": "topic",
-          "topicId": "hospital"
+          "type": "structuredLookup",
+          "datasetCandidateId": "shinjuku-medical-clinics"
         }
       },
       {
@@ -64,6 +64,11 @@ const QUESTION_METADATA = {
     "id": "schools",
     "options": [
       {
+        "id": "find_school",
+        "intentId": "find_school",
+        "outcome": { "type": "nextQuestion", "questionId": "school_kind" }
+      },
+      {
         "id": "school_enrollment",
         "intentId": "school_enrollment",
         "outcome": {
@@ -87,6 +92,14 @@ const QUESTION_METADATA = {
           "datasetCandidateId": "shinjuku-childcare-facilities"
         }
       }
+    ]
+  },
+  "school_kind": {
+    "id": "school_kind",
+    "options": [
+      { "id": "elementary_school", "intentId": "find_elementary_school", "outcome": { "type": "structuredLookup", "datasetCandidateId": "shinjuku-public-elementary-schools" } },
+      { "id": "junior_high_school", "intentId": "find_junior_high_school", "outcome": { "type": "structuredLookup", "datasetCandidateId": "shinjuku-public-junior-high-schools" } },
+      { "id": "high_school", "intentId": "find_high_school", "outcome": { "type": "structuredLookup", "datasetCandidateId": "shinjuku-public-high-schools" } }
     ]
   },
   "taxes": {

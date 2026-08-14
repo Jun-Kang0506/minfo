@@ -4,8 +4,8 @@
       "title": "Bạn cần hỗ trợ việc gì?",
       "options": [
         {
-          "label": "Tìm bệnh viện",
-          "request": "Tìm bệnh viện"
+          "label": "Tìm phòng khám",
+          "request": "Tìm phòng khám"
         },
         {
           "label": "Tìm hiểu bảo hiểm y tế",
@@ -15,6 +15,14 @@
           "label": "Tôi cần trợ giúp khẩn cấp ngay",
           "request": "Tôi cần trợ giúp khẩn cấp ngay"
         }
+      ]
+    },
+    "school_kind": {
+      "title": "Bạn đang tìm loại trường nào?",
+      "options": [
+        { "label": "Trường tiểu học", "request": "Tìm trường tiểu học" },
+        { "label": "Trường trung học cơ sở", "request": "Tìm trường trung học cơ sở" },
+        { "label": "Trường trung học phổ thông", "request": "Tìm trường trung học phổ thông" }
       ]
     },
     "health_urgent_kind": {
@@ -33,6 +41,7 @@
     "schools": {
       "title": "Bạn cần hỗ trợ việc gì?",
       "options": [
+        { "label": "Tìm trường học", "request": "Tìm trường học" },
         {
           "label": "Nhập học tiểu học hoặc trung học cơ sở",
           "request": "Nhập học tiểu học hoặc trung học cơ sở"

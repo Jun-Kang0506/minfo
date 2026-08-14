@@ -4,8 +4,8 @@
       "title": "何について知りたいですか？",
       "options": [
         {
-          "label": "病院をさがす",
-          "request": "病院をさがす"
+          "label": "診療所をさがす",
+          "request": "診療所をさがす"
         },
         {
           "label": "健康保険を知る",
@@ -15,6 +15,14 @@
           "label": "今すぐ緊急の助けが必要",
           "request": "今すぐ緊急の助けが必要"
         }
+      ]
+    },
+    "school_kind": {
+      "title": "どの学校をさがしていますか？",
+      "options": [
+        { "label": "小学校", "request": "小学校をさがす" },
+        { "label": "中学校", "request": "中学校をさがす" },
+        { "label": "高等学校", "request": "高等学校をさがす" }
       ]
     },
     "health_urgent_kind": {
@@ -33,6 +41,7 @@
     "schools": {
       "title": "何について知りたいですか？",
       "options": [
+        { "label": "学校をさがす", "request": "学校をさがす" },
         {
           "label": "小・中学校に入学する",
           "request": "小・中学校に入学する"

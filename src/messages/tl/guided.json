@@ -4,8 +4,8 @@
       "title": "Ano ang kailangan mo ng tulong?",
       "options": [
         {
-          "label": "Maghanap ng ospital",
-          "request": "Maghanap ng ospital"
+          "label": "Maghanap ng klinika",
+          "request": "Maghanap ng klinika"
         },
         {
           "label": "Unawain ang segurong pangkalusugan",
@@ -15,6 +15,14 @@
           "label": "Kailangan ko ng agarang tulong ngayon",
           "request": "Kailangan ko ng agarang tulong ngayon"
         }
+      ]
+    },
+    "school_kind": {
+      "title": "Anong uri ng paaralan ang hinahanap mo?",
+      "options": [
+        { "label": "Elementarya", "request": "Maghanap ng elementarya" },
+        { "label": "Junior-high school", "request": "Maghanap ng junior-high school" },
+        { "label": "High school", "request": "Maghanap ng high school" }
       ]
     },
     "health_urgent_kind": {
@@ -33,6 +41,7 @@
     "schools": {
       "title": "Ano ang kailangan mo ng tulong?",
       "options": [
+        { "label": "Maghanap ng paaralan", "request": "Maghanap ng paaralan" },
         {
           "label": "Mag-enroll sa elementarya o junior-high school",
           "request": "Mag-enroll sa elementarya o junior-high school"

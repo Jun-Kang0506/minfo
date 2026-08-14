@@ -4,8 +4,8 @@
       "title": "What do you need help with?",
       "options": [
         {
-          "label": "Find a hospital",
-          "request": "Find a hospital"
+          "label": "Find a clinic",
+          "request": "Find a clinic"
         },
         {
           "label": "Understand health insurance",
@@ -34,6 +34,10 @@
       "title": "What do you need help with?",
       "options": [
         {
+          "label": "Find a school",
+          "request": "Find a school"
+        },
+        {
           "label": "Enroll in elementary or junior-high school",
           "request": "Enroll in elementary or junior-high school"
         },
@@ -45,6 +49,14 @@
           "label": "Find a childcare facility",
           "request": "Find a childcare facility"
         }
+      ]
+    },
+    "school_kind": {
+      "title": "What kind of school are you looking for?",
+      "options": [
+        { "label": "Elementary school", "request": "Find an elementary school" },
+        { "label": "Junior-high school", "request": "Find a junior-high school" },
+        { "label": "High school", "request": "Find a high school" }
       ]
     },
     "taxes": {
