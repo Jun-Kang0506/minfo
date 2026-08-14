@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { LANGUAGES } from "@/lib/data/languages";
 import { useLanguage } from "./LanguageProvider";
 import { IconPhone } from "./icons";
@@ -31,9 +32,9 @@ export function Footer() {
               {LANGUAGES.map((l) => l.nativeLabel).join(", ")}
             </p>
             <nav aria-label="Information" className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-paper/85">
-              <a className="underline-offset-4 hover:underline" href="/about">{t.nav.whyMinfo}</a>
-              <a className="underline-offset-4 hover:underline" href="/sources">{t.nav.sources}</a>
-              <a className="underline-offset-4 hover:underline" href="/data">{t.nav.openData}</a>
+              <Link className="underline-offset-4 hover:underline" href="/about">{t.nav.whyMinfo}</Link>
+              <Link className="underline-offset-4 hover:underline" href="/sources">{t.nav.sources}</Link>
+              <Link className="underline-offset-4 hover:underline" href="/data">{t.nav.openData}</Link>
             </nav>
           </div>
 

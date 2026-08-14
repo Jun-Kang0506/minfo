@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { CategoryId } from "@/lib/types";
-import { LanguageProvider, useLanguage } from "./LanguageProvider";
+import { useLanguage } from "./LanguageProvider";
 import { Header } from "./Header";
 import { CategoryGrid } from "./CategoryGrid";
 import { GuidedFlow } from "./GuidedFlow";
@@ -43,9 +43,5 @@ function AppInner() {
 }
 
 export function MinfoApp() {
-  return (
-    <LanguageProvider>
-      <AppInner />
-    </LanguageProvider>
-  );
+  return <AppInner />;
 }

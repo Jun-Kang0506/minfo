@@ -89,6 +89,7 @@ export function StructuredLookup({ datasetId, onBack, onStartOver }: { datasetId
 }
 
 function FacilityRow({ record, position, copy, supportsMap, supportsDistance }: { record: LookupRecord; position: [number, number] | null; copy: ReturnType<typeof getMessages>["lookup"]; supportsMap: boolean; supportsDistance: boolean }) {
+  const { lang } = useLanguage();
   const hazardLabels: Partial<Record<keyof NonNullable<LookupRecord["hazards"]>, string>> = { earthquake: copy.earthquake, large_fire: copy.large_fire };
   const mapUrl = !supportsMap ? undefined : record.latitude !== undefined && record.longitude !== undefined
     ? `https://www.openstreetmap.org/?mlat=${record.latitude}&mlon=${record.longitude}#map=17/${record.latitude}/${record.longitude}`
@@ -98,9 +99,12 @@ function FacilityRow({ record, position, copy, supportsMap, supportsDistance }: 
   const ownership = (copy.ownership as Record<string, string> | undefined)?.[record.ownership ?? ""];
   const governingBody = (copy.governingBodies as Record<string, string> | undefined)?.[record.governingBody ?? ""];
   const phoneNumbers = record.phone?.split(/[;；]/).map((phone) => phone.trim()).filter(Boolean) ?? [];
+  const isJapaneseUi = lang === "ja";
+  const hasHelper = record.displayName !== record.sourceName;
   return <article className="py-4">
-    <h3 className="text-base font-bold leading-snug text-ink">{record.displayName}</h3>
-    {record.displayName !== record.sourceName && <p className="mt-1 text-sm text-ink-soft" lang="ja">{record.sourceName}</p>}
+    {!isJapaneseUi && record.displayNameStatus === "romanized_helper" && <p className="text-xs font-semibold text-ink-soft">{copy.nameReadingLabel}</p>}
+    <h3 className="text-base font-bold leading-snug text-ink" lang={isJapaneseUi ? "ja" : undefined}>{isJapaneseUi ? record.sourceName : record.displayName}</h3>
+    {!isJapaneseUi && hasHelper && <p className="mt-1 text-sm leading-relaxed text-ink-soft"><span className="font-semibold">{copy.officialJapaneseNameLabel}: </span><span lang="ja">{record.sourceName}</span></p>}
     {record.address && <p className="mt-2 text-base leading-relaxed text-ink"><span className="font-semibold text-ink-soft">{copy.addressLabel}: </span><span lang="ja">{record.address}</span></p>}
     {record.type && <p className="mt-1 text-sm text-ink-soft"><span className="font-semibold">{copy.typeLabel}: </span>{facilityTypes[record.type] ?? record.type}</p>}
     {ownership && <p className="mt-1 text-sm text-ink-soft"><span className="font-semibold">{copy.ownershipLabel}: </span>{ownership}{governingBody ? " · " + governingBody : ""}</p>}

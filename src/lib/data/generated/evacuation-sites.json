@@ -6,6 +6,7 @@
     "resourceId": "ee2a79e8-3420-482f-be76-75a4939022d0",
     "resourceUrl": "https://www.city.shinjuku.lg.jp/content/000399967.csv",
     "sourceId": "shinjuku-city",
+    "sourceOrganization": "Shinjuku City",
     "license": "CC BY 4.0",
     "encoding": "UTF-16LE BOM",
     "retrievedAt": "2026-08-14",
@@ -63,126 +64,20 @@
   },
   "records": [
     {
-      "id": "evacuation:131041200010",
-      "datasetId": "shinjuku-evacuation-sites",
-      "sourceId": "shinjuku-city",
-      "officialId": "131041200010",
-      "sourceName": "おとめ山公園地区一帯",
-      "displayName": "おとめ山公園地区一帯",
-      "nameStatus": "official_source",
-      "address": "東京都新宿区下落合",
-      "type": "evacuation_site",
-      "nameKana": "オトメヤマコウエンチクイッタイ",
-      "phone": "(03)5273-4592",
-      "postal": "1610033",
-      "hazards": {
-        "earthquake": true,
-        "large_fire": true
-      }
-    },
-    {
       "id": "evacuation:131041200001",
       "datasetId": "shinjuku-evacuation-sites",
       "sourceId": "shinjuku-city",
       "officialId": "131041200001",
       "sourceName": "迎賓館一帯",
-      "displayName": "迎賓館一帯",
+      "nameKana": "ゲイヒンカンイッタイ",
+      "romanizedName": "Geihinkan'ittai",
+      "displayName": "Geihinkan'ittai",
+      "displayNameStatus": "romanized_helper",
       "nameStatus": "official_source",
       "address": "東京都新宿区南元町、四谷、若葉",
       "type": "evacuation_site",
-      "nameKana": "ゲイヒンカンイッタイ",
       "phone": "(03)5273-4592",
       "postal": "1600012",
-      "hazards": {
-        "earthquake": true,
-        "large_fire": true
-      }
-    },
-    {
-      "id": "evacuation:131041200002",
-      "datasetId": "shinjuku-evacuation-sites",
-      "sourceId": "shinjuku-city",
-      "officialId": "131041200002",
-      "sourceName": "戸山公園一帯",
-      "displayName": "戸山公園一帯",
-      "nameStatus": "official_source",
-      "address": "東京都新宿区大久保、戸山",
-      "type": "evacuation_site",
-      "nameKana": "トヤマコウエンイッタイ",
-      "phone": "(03)5273-4592",
-      "postal": "1690072",
-      "hazards": {
-        "earthquake": true,
-        "large_fire": true
-      }
-    },
-    {
-      "id": "evacuation:131041200004",
-      "datasetId": "shinjuku-evacuation-sites",
-      "sourceId": "shinjuku-city",
-      "officialId": "131041200004",
-      "sourceName": "新宿御苑",
-      "displayName": "新宿御苑",
-      "nameStatus": "official_source",
-      "address": "東京都新宿区内藤町",
-      "type": "evacuation_site",
-      "nameKana": "シンジュクギョエン",
-      "phone": "(03)5273-4592",
-      "postal": "1600014",
-      "hazards": {
-        "earthquake": true,
-        "large_fire": true
-      }
-    },
-    {
-      "id": "evacuation:131041200005",
-      "datasetId": "shinjuku-evacuation-sites",
-      "sourceId": "shinjuku-city",
-      "officialId": "131041200005",
-      "sourceName": "新宿中央公園・高層ビル群一帯",
-      "displayName": "新宿中央公園・高層ビル群一帯",
-      "nameStatus": "official_source",
-      "address": "東京都新宿区西新宿",
-      "type": "evacuation_site",
-      "nameKana": "シンジュクチュウオウコウエン・コウソウビルグンイッタイ",
-      "phone": "(03)5273-4592",
-      "postal": "1600023",
-      "hazards": {
-        "earthquake": true,
-        "large_fire": true
-      }
-    },
-    {
-      "id": "evacuation:131041200008",
-      "datasetId": "shinjuku-evacuation-sites",
-      "sourceId": "shinjuku-city",
-      "officialId": "131041200008",
-      "sourceName": "早稲田大学早稲田キャンパス一帯",
-      "displayName": "早稲田大学早稲田キャンパス一帯",
-      "nameStatus": "official_source",
-      "address": "東京都新宿区戸塚町、西早稲田、早稲田鶴巻町",
-      "type": "evacuation_site",
-      "nameKana": "ワセダダイガクワセダキャンパスイッタイ",
-      "phone": "(03)5273-4592",
-      "postal": "1690071",
-      "hazards": {
-        "earthquake": true,
-        "large_fire": true
-      }
-    },
-    {
-      "id": "evacuation:131041200007",
-      "datasetId": "shinjuku-evacuation-sites",
-      "sourceId": "shinjuku-city",
-      "officialId": "131041200007",
-      "sourceName": "哲学堂公園一帯",
-      "displayName": "哲学堂公園一帯",
-      "nameStatus": "official_source",
-      "address": "東京都新宿区西落合、中井、中落合",
-      "type": "evacuation_site",
-      "nameKana": "テツガクドウコウエンイッタイ",
-      "phone": "(03)5273-4592",
-      "postal": "1610031",
       "hazards": {
         "earthquake": true,
         "large_fire": true
@@ -194,11 +89,13 @@
       "sourceId": "shinjuku-city",
       "officialId": "131041200006",
       "sourceName": "百人町三・四丁目地区",
-      "displayName": "百人町三・四丁目地区",
+      "nameKana": "ヒャクニンチョウサン・ヨンチョウメチク",
+      "romanizedName": "Hyakuninchousan・yonchoumechiku",
+      "displayName": "Hyakuninchousan・yonchoumechiku",
+      "displayNameStatus": "romanized_helper",
       "nameStatus": "official_source",
       "address": "東京都新宿区百人町",
       "type": "evacuation_site",
-      "nameKana": "ヒャクニンチョウサン・ヨンチョウメチク",
       "phone": "(03)5273-4592",
       "postal": "1690073",
       "hazards": {
@@ -212,11 +109,13 @@
       "sourceId": "shinjuku-city",
       "officialId": "131041200003",
       "sourceName": "明治神宮外苑地区",
-      "displayName": "明治神宮外苑地区",
+      "nameKana": "メイジジングウガイエンチク",
+      "romanizedName": "Meijijinguugaienchiku",
+      "displayName": "Meijijinguugaienchiku",
+      "displayNameStatus": "romanized_helper",
       "nameStatus": "official_source",
       "address": "東京都新宿区霞ヶ岳町",
       "type": "evacuation_site",
-      "nameKana": "メイジジングウガイエンチク",
       "phone": "(03)5273-4592",
       "postal": "1600000",
       "hazards": {
@@ -230,13 +129,135 @@
       "sourceId": "shinjuku-city",
       "officialId": "131041200009",
       "sourceName": "落合中央公園一帯",
-      "displayName": "落合中央公園一帯",
+      "nameKana": "オチアイチュウオウコウエンイッタイ",
+      "romanizedName": "Ochiaichuuoukouen'ittai",
+      "displayName": "Ochiaichuuoukouen'ittai",
+      "displayNameStatus": "romanized_helper",
       "nameStatus": "official_source",
       "address": "東京都新宿区上落合",
       "type": "evacuation_site",
-      "nameKana": "オチアイチュウオウコウエンイッタイ",
       "phone": "(03)5273-4592",
       "postal": "1610034",
+      "hazards": {
+        "earthquake": true,
+        "large_fire": true
+      }
+    },
+    {
+      "id": "evacuation:131041200010",
+      "datasetId": "shinjuku-evacuation-sites",
+      "sourceId": "shinjuku-city",
+      "officialId": "131041200010",
+      "sourceName": "おとめ山公園地区一帯",
+      "nameKana": "オトメヤマコウエンチクイッタイ",
+      "romanizedName": "Otomeyamakouenchikuittai",
+      "displayName": "Otomeyamakouenchikuittai",
+      "displayNameStatus": "romanized_helper",
+      "nameStatus": "official_source",
+      "address": "東京都新宿区下落合",
+      "type": "evacuation_site",
+      "phone": "(03)5273-4592",
+      "postal": "1610033",
+      "hazards": {
+        "earthquake": true,
+        "large_fire": true
+      }
+    },
+    {
+      "id": "evacuation:131041200005",
+      "datasetId": "shinjuku-evacuation-sites",
+      "sourceId": "shinjuku-city",
+      "officialId": "131041200005",
+      "sourceName": "新宿中央公園・高層ビル群一帯",
+      "nameKana": "シンジュクチュウオウコウエン・コウソウビルグンイッタイ",
+      "romanizedName": "Shinjukuchuuoukouen・kousoubirugun'ittai",
+      "displayName": "Shinjukuchuuoukouen・kousoubirugun'ittai",
+      "displayNameStatus": "romanized_helper",
+      "nameStatus": "official_source",
+      "address": "東京都新宿区西新宿",
+      "type": "evacuation_site",
+      "phone": "(03)5273-4592",
+      "postal": "1600023",
+      "hazards": {
+        "earthquake": true,
+        "large_fire": true
+      }
+    },
+    {
+      "id": "evacuation:131041200004",
+      "datasetId": "shinjuku-evacuation-sites",
+      "sourceId": "shinjuku-city",
+      "officialId": "131041200004",
+      "sourceName": "新宿御苑",
+      "nameKana": "シンジュクギョエン",
+      "romanizedName": "Shinjukugyoen",
+      "displayName": "Shinjukugyoen",
+      "displayNameStatus": "romanized_helper",
+      "nameStatus": "official_source",
+      "address": "東京都新宿区内藤町",
+      "type": "evacuation_site",
+      "phone": "(03)5273-4592",
+      "postal": "1600014",
+      "hazards": {
+        "earthquake": true,
+        "large_fire": true
+      }
+    },
+    {
+      "id": "evacuation:131041200007",
+      "datasetId": "shinjuku-evacuation-sites",
+      "sourceId": "shinjuku-city",
+      "officialId": "131041200007",
+      "sourceName": "哲学堂公園一帯",
+      "nameKana": "テツガクドウコウエンイッタイ",
+      "romanizedName": "Tetsugakudoukouen'ittai",
+      "displayName": "Tetsugakudoukouen'ittai",
+      "displayNameStatus": "romanized_helper",
+      "nameStatus": "official_source",
+      "address": "東京都新宿区西落合、中井、中落合",
+      "type": "evacuation_site",
+      "phone": "(03)5273-4592",
+      "postal": "1610031",
+      "hazards": {
+        "earthquake": true,
+        "large_fire": true
+      }
+    },
+    {
+      "id": "evacuation:131041200002",
+      "datasetId": "shinjuku-evacuation-sites",
+      "sourceId": "shinjuku-city",
+      "officialId": "131041200002",
+      "sourceName": "戸山公園一帯",
+      "nameKana": "トヤマコウエンイッタイ",
+      "romanizedName": "Toyamakouen'ittai",
+      "displayName": "Toyamakouen'ittai",
+      "displayNameStatus": "romanized_helper",
+      "nameStatus": "official_source",
+      "address": "東京都新宿区大久保、戸山",
+      "type": "evacuation_site",
+      "phone": "(03)5273-4592",
+      "postal": "1690072",
+      "hazards": {
+        "earthquake": true,
+        "large_fire": true
+      }
+    },
+    {
+      "id": "evacuation:131041200008",
+      "datasetId": "shinjuku-evacuation-sites",
+      "sourceId": "shinjuku-city",
+      "officialId": "131041200008",
+      "sourceName": "早稲田大学早稲田キャンパス一帯",
+      "nameKana": "ワセダダイガクワセダキャンパスイッタイ",
+      "romanizedName": "Wasedadaigakuwasedakyanpasuittai",
+      "displayName": "Wasedadaigakuwasedakyanpasuittai",
+      "displayNameStatus": "romanized_helper",
+      "nameStatus": "official_source",
+      "address": "東京都新宿区戸塚町、西早稲田、早稲田鶴巻町",
+      "type": "evacuation_site",
+      "phone": "(03)5273-4592",
+      "postal": "1690071",
       "hazards": {
         "earthquake": true,
         "large_fire": true

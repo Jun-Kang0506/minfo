@@ -21,6 +21,7 @@ export const DIRECTORY_DATASETS: Record<LookupDatasetId, DirectoryDatasetConfig>
     supportsMap: true,
     attributeKeys: ["type"],
     initialResultCount: 5,
+    titleKey: "childcare",
   },
   "shinjuku-evacuation-sites": {
     id: "shinjuku-evacuation-sites",
@@ -30,6 +31,7 @@ export const DIRECTORY_DATASETS: Record<LookupDatasetId, DirectoryDatasetConfig>
     supportsMap: true,
     attributeKeys: ["hazards"],
     initialResultCount: 5,
+    titleKey: "evacuation",
   },
   "shinjuku-medical-clinics": { id: "shinjuku-medical-clinics", fallbackCatalogUrl: "https://catalog.data.metro.tokyo.lg.jp/dataset/t131041d0000000121", disclaimerKey: "medical", supportsDistance: true, supportsMap: true, attributeKeys: ["type"], initialResultCount: 5, titleKey: "medical" },
   "shinjuku-public-elementary-schools": { id: "shinjuku-public-elementary-schools", fallbackCatalogUrl: "https://catalog.data.metro.tokyo.lg.jp/dataset/t000021d2000000191", disclaimerKey: "school", supportsDistance: false, supportsMap: true, attributeKeys: ["type", "ownership"], initialResultCount: 5, titleKey: "elementarySchool" },
