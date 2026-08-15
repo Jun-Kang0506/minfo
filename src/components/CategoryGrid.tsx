@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import minfoLeafDefault from "../../public/mascot/minfo-leaf-default.png";
 import { CATEGORIES } from "@/lib/data/categories";
 import { DEFAULT_CATEGORY_ORDER } from "@/lib/data/guided-flow";
 import type { CategoryId } from "@/lib/types";
@@ -27,7 +28,7 @@ export function CategoryGrid({
           <SectionHeading title={t.categories.title} sub={t.categories.sub} />
         </div>
         <Image
-          src="/mascot/minfo-leaf-default.png"
+          src={minfoLeafDefault}
           alt=""
           width={1254}
           height={1254}
