@@ -12,7 +12,7 @@
   "areaResults": "{area}의 장소를 표시하고 있습니다",
   "stop": "위치 사용 중지",
   "distance": "대략적인 직선 거리",
-  "map": "지도 열기",
+  "mapHandoff": { "googleMaps": "Google Maps", "appleMaps": "Apple Maps", "close": "닫기", "directions": { "get": "길찾기", "chooseProvider": "지도 앱 선택", "googleMapsLabel": "Google Maps로 길찾기", "appleMapsLabel": "Apple Maps로 길찾기" }, "search": { "get": "지도에서 찾기", "chooseProvider": "검색할 지도 선택", "googleMapsLabel": "Google Maps에서 검색", "appleMapsLabel": "Apple Maps에서 검색", "notice": "이 검색은 시설의 공식 이름과 주소를 사용합니다. MINFO는 사용자의 위치를 추가하지 않습니다. 출발 전에 같은 시설인지 확인하세요." } },
   "child": "이 스냅샷에는 빈자리, 자격, 요금, 시간, 입소 접수 또는 현재 운영 정보가 없습니다. 직접 확인하세요.",
   "evac": "이는 위치 데이터이며 실시간 개설이나 상태가 아닙니다. 적합성은 재난과 공식 지시에 따라 달라집니다. 현재 공식 경보는 따로 확인하세요.",
   "privacy": "위치 정보는 이 기기에서만 사용되며 MINFO로 전송되지 않습니다.",

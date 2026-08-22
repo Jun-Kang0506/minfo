@@ -12,7 +12,7 @@
   "areaResults": "Đang hiển thị các địa điểm ở {area}",
   "stop": "Ngừng dùng vị trí",
   "distance": "Khoảng cách đường thẳng gần đúng",
-  "map": "Mở bản đồ",
+  "mapHandoff": { "googleMaps": "Google Maps", "appleMaps": "Apple Maps", "close": "Đóng", "directions": { "get": "Chỉ đường", "chooseProvider": "Chọn ứng dụng bản đồ", "googleMapsLabel": "Mở chỉ đường bằng Google Maps", "appleMapsLabel": "Mở chỉ đường bằng Apple Maps" }, "search": { "get": "Tìm trên bản đồ", "chooseProvider": "Chọn bản đồ để tìm", "googleMapsLabel": "Tìm bằng Google Maps", "appleMapsLabel": "Tìm bằng Apple Maps", "notice": "Tìm kiếm này dùng tên chính thức và địa chỉ của cơ sở. MINFO không thêm vị trí của bạn. Hãy kiểm tra đúng cơ sở trước khi đi." } },
   "child": "Bản chụp này không cho biết chỗ trống, điều kiện, phí, giờ, tiếp nhận nhập học hoặc hoạt động hiện tại. Hãy xác nhận trực tiếp.",
   "evac": "Đây là dữ liệu vị trí, không phải tình trạng mở cửa hoặc trực tiếp. Sự phù hợp tùy vào nguy cơ và hướng dẫn chính thức. Hãy xem cảnh báo chính thức hiện tại riêng.",
   "privacy": "Vị trí chỉ được dùng trên thiết bị này và không gửi đến MINFO.",

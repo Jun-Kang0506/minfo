@@ -12,7 +12,7 @@
   "areaResults": "Ipinapakita ang mga lugar sa {area}",
   "stop": "Ihinto ang paggamit ng lokasyon",
   "distance": "Tinatayang straight-line na distansya",
-  "map": "Buksan ang mapa",
+  "mapHandoff": { "googleMaps": "Google Maps", "appleMaps": "Apple Maps", "close": "Isara", "directions": { "get": "Kumuha ng direksyon", "chooseProvider": "Pumili ng mapa", "googleMapsLabel": "Buksan ang direksyon sa Google Maps", "appleMapsLabel": "Buksan ang direksyon sa Apple Maps" }, "search": { "get": "Hanapin sa mapa", "chooseProvider": "Pumili ng mapa para maghanap", "googleMapsLabel": "Maghanap gamit ang Google Maps", "appleMapsLabel": "Maghanap gamit ang Apple Maps", "notice": "Ginagamit ng paghahanap na ito ang opisyal na pangalan at address ng pasilidad. Hindi idinaragdag ng MINFO ang iyong lokasyon. Tiyaking tamang pasilidad ang resulta bago pumunta." } },
   "child": "Ang snapshot na ito ay hindi nagpapakita ng mga bakante, pagiging kwalipikado, mga bayarin, oras, pagtanggap sa pagpapatala, o kasalukuyang operasyon. Direktang kumpirmahin.",
   "evac": "Ito ay data ng lokasyon, hindi live na pagbubukas o status. Ang pagiging angkop ay nakasalalay sa panganib at opisyal na mga tagubilin. Suriin nang hiwalay ang mga kasalukuyang opisyal na alerto.",
   "privacy": "Nananatili ang iyong lokasyon sa device na ito at hindi ipinapadala sa MINFO.",

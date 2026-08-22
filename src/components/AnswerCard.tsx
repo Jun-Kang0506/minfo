@@ -1,11 +1,15 @@
 "use client";
 
+import { useRef } from "react";
 import type { Answer } from "@/lib/types";
 import { useLanguage } from "./LanguageProvider";
 import { SafetyNotice } from "./SafetyNotice";
 import { SourceCard } from "./SourceCard";
 import { FeedbackButtons } from "./FeedbackButtons";
 import { IconAlert } from "./icons";
+import { getCounterPhraseId } from "@/lib/data/counter-phrases";
+import { ShowAtCounter } from "./ShowAtCounter";
+import { NextActionCheck } from "./NextActionCheck";
 
 /**
  * An answer is a structured guidance document: label → direct answer →
@@ -20,6 +24,8 @@ export function AnswerCard({ answer }: { answer: Answer }) {
   const emergency = answer.safety?.level === "emergency";
   // Group reveal classes; emergencies get everything at once.
   const g = (n: 1 | 2 | 3 | 4) => (emergency ? "" : `reveal-${n}`);
+  const phraseId = getCounterPhraseId(answer);
+  const sourcesRef = useRef<HTMLHeadingElement>(null);
 
   return (
     <article
@@ -84,7 +90,7 @@ export function AnswerCard({ answer }: { answer: Answer }) {
       <div className={g(4)}>
         {answer.sources.length > 0 && (
           <div className="mt-5">
-            <h3 className="border-b-2 border-ink pb-1.5 text-xs font-bold uppercase tracking-[0.12em] text-ink">
+            <h3 ref={sourcesRef} tabIndex={-1} className="border-b-2 border-ink pb-1.5 text-xs font-bold uppercase tracking-[0.12em] text-ink">
               {t.answer.sources}
             </h3>
             <div className="divide-y divide-line">
@@ -95,6 +101,8 @@ export function AnswerCard({ answer }: { answer: Answer }) {
           </div>
         )}
 
+        {phraseId && <ShowAtCounter phraseId={phraseId} />}
+        <NextActionCheck hasPreviousCard={false} hasSources={answer.sources.length > 0} onViewOfficial={() => sourcesRef.current?.focus()} />
         <div className="mt-5 border-t border-line pt-4">
           <FeedbackButtons />
         </div>

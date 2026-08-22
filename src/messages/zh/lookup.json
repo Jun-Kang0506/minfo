@@ -12,7 +12,7 @@
   "areaResults": "正在显示 {area} 的地点",
   "stop": "停止使用位置",
   "distance": "大致直线距离",
-  "map": "打开地图",
+  "mapHandoff": { "googleMaps": "Google Maps", "appleMaps": "Apple Maps", "close": "关闭", "directions": { "get": "获取路线", "chooseProvider": "选择地图", "googleMapsLabel": "使用 Google Maps 获取路线", "appleMapsLabel": "使用 Apple Maps 获取路线" }, "search": { "get": "在地图上查找", "chooseProvider": "选择地图进行搜索", "googleMapsLabel": "使用 Google Maps 搜索", "appleMapsLabel": "使用 Apple Maps 搜索", "notice": "此搜索使用设施的正式名称和地址。MINFO 不会添加您的位置。出发前请确认搜索结果是同一设施。" } },
   "child": "此快照不显示空位、资格、费用、时间、入园受理或当前运营情况。请直接确认。",
   "evac": "这是位置数据，不是实时开放或状态。是否适合取决于灾害和官方指示。请另行查看当前官方警报。",
   "privacy": "您的位置只在此设备上使用，不会发送给 MINFO。",

@@ -14,6 +14,8 @@
     "officialInformation": "공식 정보",
     "resultCardLabel": "결과 카드"
   },
+  "counter": { "title": "창구에서 보여주기", "show": "창구에서 보여주기", "japaneseLabel": "직원에게 보여줄 일본어", "meaningLabel": "뜻", "close": "닫기", "phrases": { "moving-address": { "meaning": "이사 후 주소 절차를 상담합니다." }, "my-number-explanation": { "meaning": "My Number와 카드의 차이를 묻습니다." }, "my-number-card-application": { "meaning": "My Number 카드 신청을 상담합니다." }, "my-number-card-change": { "meaning": "My Number 카드 변경 절차를 상담합니다." }, "my-number-check": { "meaning": "자신의 My Number 확인 방법을 묻습니다." }, "school-enrollment": { "meaning": "자녀의 학교 입학 절차를 상담합니다." }, "childcare-application": { "meaning": "보육시설 신청을 상담합니다." }, "tax-pension-notice": { "meaning": "이 세금 또는 연금 통지를 묻습니다." }, "official-letter": { "meaning": "구청에서 온 이 편지를 묻습니다." }, "health-insurance": { "meaning": "건강보험 절차를 상담합니다." }, "residence-card": { "meaning": "재류카드 절차를 상담합니다." }, "japanese-class": { "meaning": "일본어 교실을 상담합니다." }, "clinic-reception": { "meaning": "진료를 원한다고 말하고 접수 도움을 요청합니다." } } },
+  "nextAction": { "question": "다음에 무엇을 할지 아시나요?", "yes": "예", "notYet": "아직", "yesStatus": "좋습니다. 준비되면 이 페이지의 선택지를 사용하세요.", "recoveryIntro": "다음 중 하나를 시도하세요:", "reviewGuidance": "안내 다시 보기", "viewOfficial": "공식 정보 보기", "chooseAnother": "다른 주제 선택" },
   "feedback": {
     "question": "이 답변이 도움이 되었나요?",
     "helpful": "도움됨",

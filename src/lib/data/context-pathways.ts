@@ -1,47 +1,14 @@
 import type { ContextPathwayTarget, LanguageCode, Localized } from "../types";
 import { MESSAGES } from "@/i18n/messages";
 
-export type ContextPathwayId = "students";
-
-export type ContextPathwayItem = {
-  id: string;
-  target: ContextPathwayTarget;
-  title: Localized<string>;
-  description: Localized<string>;
-};
-
-export type ContextPathwaySection = {
-  id: string;
-  title: Localized<string>;
-  items: ContextPathwayItem[];
-};
-
-type StudentMessages = { students: { sections: Array<{ id: string; title: string; items: Array<{ id: string; title: string; description: string }> }> } };
+export type ContextPathwayId = "students" | "new-to-japan";
+export type ContextPathwayItem = { id: string; target: ContextPathwayTarget; title: Localized<string>; description: Localized<string> };
+export type ContextPathwaySection = { id: string; title: Localized<string>; items: ContextPathwayItem[] };
+export type ContextPathwayDefinition = { id: ContextPathwayId; route: "/students" | "/new-to-japan"; messageKey: "students" | "newToJapan"; sections: ContextPathwaySection[] };
+type PathwayMessages = Record<"students" | "newToJapan", { sections: Array<{ id: string; title: string; items: Array<{ id: string; title: string; description: string }> }> }>;
 const locales: LanguageCode[] = ["en", "ja", "zh", "ko", "vi", "ne", "tl", "bn"];
-
 const targets: Record<string, ContextPathwayTarget> = {
-  registration: { type: "topic", topicId: "moving-registration" },
-  myNumber: { type: "guidedQuestion", categoryId: "consultation", questionId: "my_number" },
-  insurance: { type: "topic", topicId: "insurance" },
-  japanese: { type: "category", categoryId: "japanese" },
-  housing: { type: "topic", topicId: "housing" },
-  clinic: { type: "structuredLookup", categoryId: "hospitals", datasetCandidateId: "shinjuku-medical-clinics" },
-  disaster: { type: "category", categoryId: "disaster" },
-  taxes: { type: "category", categoryId: "taxes" },
-  work: { type: "topic", topicId: "student-part-time-work" },
-  consultation: { type: "category", categoryId: "consultation" },
-  emergency: { type: "category", categoryId: "emergency" },
+  registration: { type: "topic", topicId: "moving-registration", categoryId: "housing" }, myNumber: { type: "guidedQuestion", categoryId: "consultation", questionId: "my_number" }, insurance: { type: "topic", topicId: "insurance", categoryId: "hospitals" }, garbage: { type: "topic", topicId: "garbage", categoryId: "garbage" }, japanese: { type: "category", categoryId: "japanese" }, housing: { type: "topic", topicId: "housing", categoryId: "housing" }, clinic: { type: "structuredLookup", categoryId: "hospitals", datasetCandidateId: "shinjuku-medical-clinics" }, disaster: { type: "category", categoryId: "disaster" }, taxes: { type: "category", categoryId: "taxes" }, work: { type: "topic", topicId: "student-part-time-work", categoryId: "consultation" }, consultation: { type: "category", categoryId: "consultation" }, emergency: { type: "category", categoryId: "emergency" },
 };
-
-export const STUDENT_PATHWAY_SECTIONS: ContextPathwaySection[] = locales.map((locale) => (MESSAGES[locale].pages as StudentMessages).students.sections)
-  .reduce((all, sections) => all.length ? all : sections, [] as StudentMessages["students"]["sections"])
-  .map((section) => ({
-    id: section.id,
-    title: Object.fromEntries(locales.map((locale) => [locale, ((MESSAGES[locale].pages as StudentMessages).students.sections.find((item) => item.id === section.id)?.title ?? "")])) as Localized<string>,
-    items: section.items.map((item) => ({
-      id: item.id,
-      target: targets[item.id],
-      title: Object.fromEntries(locales.map((locale) => [locale, ((MESSAGES[locale].pages as StudentMessages).students.sections.find((group) => group.id === section.id)?.items.find((entry) => entry.id === item.id)?.title ?? "")])) as Localized<string>,
-      description: Object.fromEntries(locales.map((locale) => [locale, ((MESSAGES[locale].pages as StudentMessages).students.sections.find((group) => group.id === section.id)?.items.find((entry) => entry.id === item.id)?.description ?? "")])) as Localized<string>,
-    })),
-  }));
+function localize(key: "students" | "newToJapan"): ContextPathwaySection[] { const base = (MESSAGES.en.pages as PathwayMessages)[key].sections; return base.map((section) => ({ id: section.id, title: Object.fromEntries(locales.map((lang) => [lang, (MESSAGES[lang].pages as PathwayMessages)[key].sections.find((item) => item.id === section.id)?.title ?? ""])) as Localized<string>, items: section.items.map((item) => ({ id: item.id, target: targets[item.id], title: Object.fromEntries(locales.map((lang) => [lang, (MESSAGES[lang].pages as PathwayMessages)[key].sections.find((group) => group.id === section.id)?.items.find((entry) => entry.id === item.id)?.title ?? ""])) as Localized<string>, description: Object.fromEntries(locales.map((lang) => [lang, (MESSAGES[lang].pages as PathwayMessages)[key].sections.find((group) => group.id === section.id)?.items.find((entry) => entry.id === item.id)?.description ?? ""])) as Localized<string> })) })); }
+export const CONTEXT_PATHWAYS: Record<ContextPathwayId, ContextPathwayDefinition> = { students: { id: "students", route: "/students", messageKey: "students", sections: localize("students") }, "new-to-japan": { id: "new-to-japan", route: "/new-to-japan", messageKey: "newToJapan", sections: localize("newToJapan") } };

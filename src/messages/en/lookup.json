@@ -12,7 +12,7 @@
   "areaResults": "Showing places in {area}",
   "stop": "Stop using location",
   "distance": "Approximate straight-line distance",
-  "map": "Open map",
+  "mapHandoff": { "googleMaps": "Google Maps", "appleMaps": "Apple Maps", "close": "Close", "directions": { "get": "Get directions", "chooseProvider": "Open directions with", "googleMapsLabel": "Open directions with Google Maps", "appleMapsLabel": "Open directions with Apple Maps" }, "search": { "get": "Find on map", "chooseProvider": "Choose a map to search", "googleMapsLabel": "Search with Google Maps", "appleMapsLabel": "Search with Apple Maps", "notice": "This search uses the official facility name and address. MINFO does not add your location. Check that the result is the same facility before you travel." } },
   "child": "This snapshot does not show vacancies, eligibility, fees, hours, enrollment acceptance, or current operation. Confirm directly.",
   "evac": "This is location data, not live opening or status. Suitability depends on the hazard and official instructions. Check current official alerts separately.",
   "privacy": "Your location stays on this device and is not sent to MINFO.",

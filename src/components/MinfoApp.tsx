@@ -8,13 +8,15 @@ import { CategoryGrid } from "./CategoryGrid";
 import { GuidedFlow } from "./GuidedFlow";
 import { Footer } from "./Footer";
 import { ScrollToTopButton } from "./ScrollToTopButton";
-import { StudentPathway } from "./StudentPathway";
+import { ContextPathwayPage } from "./ContextPathwayPage";
+import { ContextPathwaysHome } from "./ContextPathwaysHome";
+import type { ContextPathwayId } from "@/lib/data/context-pathways";
 
-function AppInner({ initialContext }: { initialContext?: "students" }) {
+function AppInner({ initialContext }: { initialContext?: ContextPathwayId }) {
   const { lang } = useLanguage();
   const [categoryId, setCategoryId] = useState<CategoryId | null>(null);
   const [pathwayTarget, setPathwayTarget] = useState<ContextPathwayTarget | null>(null);
-  const [context, setContext] = useState<"home" | "students">(initialContext ?? "home");
+  const [context, setContext] = useState<"home" | ContextPathwayId>(initialContext ?? "home");
   const mainRef = useRef<HTMLElement | null>(null);
 
   // Language switch: replay a short opacity settle on the page content so
@@ -35,10 +37,10 @@ function AppInner({ initialContext }: { initialContext?: "students" }) {
           <section id="categories" className="mx-auto max-w-3xl px-4 py-7 md:py-10">
             <GuidedFlow key={pathwayTarget ? JSON.stringify(pathwayTarget) : categoryId} categoryId={categoryId} initialTopicId={pathwayTarget?.type === "topic" ? pathwayTarget.topicId : undefined} initialQuestionId={pathwayTarget?.type === "guidedQuestion" ? pathwayTarget.questionId : undefined} initialDatasetCandidateId={pathwayTarget?.type === "structuredLookup" ? pathwayTarget.datasetCandidateId : undefined} onExit={() => { setCategoryId(null); setPathwayTarget(null); setContext(initialContext ?? "home"); }} />
           </section>
-        ) : context === "students" ? (
-          <StudentPathway onSelect={(target: ContextPathwayTarget) => { setPathwayTarget(target); setCategoryId(target.type === "category" || target.type === "guidedQuestion" || target.type === "structuredLookup" ? target.categoryId : target.topicId === "moving-registration" || target.topicId === "housing" ? "housing" : target.topicId === "insurance" ? "hospitals" : "consultation"); }} />
+        ) : context !== "home" ? (
+          <ContextPathwayPage pathwayId={context} onSelect={(target: ContextPathwayTarget) => { setPathwayTarget(target); setCategoryId(target.type === "category" || target.type === "guidedQuestion" || target.type === "structuredLookup" ? target.categoryId : target.categoryId ?? "consultation"); }} />
         ) : (
-          <CategoryGrid onSelect={(id) => { setPathwayTarget(null); setCategoryId(id); }} />
+          <><CategoryGrid onSelect={(id) => { setPathwayTarget(null); setCategoryId(id); }} /><ContextPathwaysHome /></>
         )}
       </main>
       <Footer />
@@ -47,6 +49,6 @@ function AppInner({ initialContext }: { initialContext?: "students" }) {
   );
 }
 
-export function MinfoApp({ initialContext }: { initialContext?: "students" }) {
+export function MinfoApp({ initialContext }: { initialContext?: ContextPathwayId }) {
   return <AppInner initialContext={initialContext} />;
 }

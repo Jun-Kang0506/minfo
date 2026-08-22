@@ -14,6 +14,8 @@
     "officialInformation": "Thông tin chính thức",
     "resultCardLabel": "Thẻ kết quả"
   },
+  "counter": { "title": "Đưa tại quầy", "show": "Đưa tại quầy", "japaneseLabel": "Tiếng Nhật để đưa nhân viên", "meaningLabel": "Ý nghĩa", "close": "Đóng", "phrases": { "moving-address": { "meaning": "Xin tư vấn thủ tục địa chỉ sau khi chuyển nhà." }, "my-number-explanation": { "meaning": "Hỏi sự khác nhau giữa My Number và thẻ My Number." }, "my-number-card-application": { "meaning": "Xin tư vấn đăng ký thẻ My Number." }, "my-number-card-change": { "meaning": "Xin tư vấn thủ tục thay đổi thẻ My Number." }, "my-number-check": { "meaning": "Hỏi cách kiểm tra My Number của mình." }, "school-enrollment": { "meaning": "Xin tư vấn thủ tục nhập học cho trẻ." }, "childcare-application": { "meaning": "Xin tư vấn đăng ký cơ sở chăm sóc trẻ." }, "tax-pension-notice": { "meaning": "Hỏi về thông báo thuế hoặc hưu trí này." }, "official-letter": { "meaning": "Hỏi về thư này từ văn phòng thành phố." }, "health-insurance": { "meaning": "Xin tư vấn thủ tục bảo hiểm y tế." }, "residence-card": { "meaning": "Xin tư vấn thủ tục thẻ cư trú." }, "japanese-class": { "meaning": "Xin tư vấn lớp học tiếng Nhật." }, "clinic-reception": { "meaning": "Nói rằng bạn muốn khám và nhờ quầy tiếp nhận giúp đỡ." } } },
+  "nextAction": { "question": "Bạn có biết cần làm gì tiếp theo không?", "yes": "Có", "notYet": "Chưa", "yesStatus": "Tốt. Hãy dùng các lựa chọn trên trang này khi bạn sẵn sàng.", "recoveryIntro": "Hãy thử một trong các cách sau:", "reviewGuidance": "Xem lại hướng dẫn", "viewOfficial": "Xem thông tin chính thức", "chooseAnother": "Chọn chủ đề khác" },
   "feedback": {
     "question": "Câu trả lời này có hữu ích không?",
     "helpful": "Hữu ích",

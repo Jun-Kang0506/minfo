@@ -190,6 +190,7 @@ export interface Answer {
 }
 
 export type FeedbackChoice = "helpful" | "confusing" | "wrong" | "language";
+export type NextActionChoice = "yes" | "not-yet";
 
 export interface AskRequest {
   text: string;
@@ -214,7 +215,7 @@ export type GuidedOutcome =
 /** A contextual pathway reuses the category flow or a stable answer topic. */
 export type ContextPathwayTarget =
   | { type: "category"; categoryId: CategoryId }
-  | { type: "topic"; topicId: TopicId }
+  | { type: "topic"; topicId: TopicId; categoryId?: CategoryId }
   | { type: "guidedQuestion"; categoryId: CategoryId; questionId: string }
   | { type: "structuredLookup"; categoryId: CategoryId; datasetCandidateId: LookupDatasetId };
 

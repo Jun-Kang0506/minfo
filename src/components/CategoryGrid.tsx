@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import minfoLeafDefault from "../../public/mascot/minfo-leaf-default.png";
 import { CATEGORIES } from "@/lib/data/categories";
 import { DEFAULT_CATEGORY_ORDER } from "@/lib/data/guided-flow";
@@ -65,11 +64,6 @@ export function CategoryGrid({
           );
         })}
       </div>
-      <section className="mt-8 rounded-lg border border-line bg-card p-5">
-        <h2 className="text-lg font-bold text-ink">{getMessages(lang).pages.students.homeTitle}</h2>
-        <p className="mt-1 text-sm leading-relaxed text-ink-soft">{getMessages(lang).pages.students.homeSub}</p>
-        <Link href="/students" className="button-secondary mt-4">{getMessages(lang).pages.students.homeCta}</Link>
-      </section>
     </section>
   );
 }
