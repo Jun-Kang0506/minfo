@@ -76,9 +76,10 @@
     "garbage": {
       "title": "What do you need help with?",
       "options": [
+        { "label": "How do I sort a specific item?", "request": "How do I sort a specific item?" },
         {
-          "label": "Sorting, collection days, or oversized garbage",
-          "request": "Sorting, collection days, or oversized garbage"
+          "label": "Collection days, oversized garbage, or general rules",
+          "request": "Collection days, oversized garbage, or general rules"
         }
       ]
     },

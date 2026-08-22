@@ -73,10 +73,11 @@
     ],
     "candidatesTitle": "Dữ liệu Mở Tokyo: các bộ dữ liệu ứng viên",
     "candidatesSub": "Các mục trong danh mục và mục tiêu tìm kiếm MINFO dự định kết nối tiếp theo, kèm điều mỗi bộ sẽ cải thiện. Chưa có mục nào được lấy tự động.",
+    "activeTitle": "Dữ liệu đang dùng trong MINFO", "activeSub": "Ảnh chụp dữ liệu chính thức đã kiểm tra và đang dùng trong luồng hướng dẫn của MINFO.", "candidateTitle": "Dữ liệu đề xuất", "candidateSub": "Dữ liệu chính thức đã kiểm tra nhưng chưa dùng trong luồng hướng dẫn của MINFO.",
     "catalogCta": "Xem Danh mục Dữ liệu Mở Tokyo",
     "badges": {
       "curated": "Đang chọn lọc thủ công",
-      "candidate": "Ứng viên dữ liệu mở",
+      "active": "Đang dùng trong MINFO", "candidate": "Đề xuất", "checkedSnapshot": "Ảnh chụp dữ liệu đã kiểm tra", "plannedBatch": "Dự kiến cập nhật định kỳ",
       "batch": "Đổi định kỳ · tương lai: hàng loạt",
       "live": "Nhạy thời gian · tương lai: API",
       "searchTarget": "Mục tiêu tìm trong danh mục"

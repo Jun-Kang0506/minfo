@@ -1,0 +1,1996 @@
+{
+  "schemaVersion": 1,
+  "locale": "tl",
+  "status": "minfo_multilingual_search_helper",
+  "sourceSnapshotSha256": "1b66d0dc7ad841e77d915f27a48c77682ba6ed2cff1c07a15a2d1508332c2a04",
+  "items": [
+    {
+      "id": "131041S00001",
+      "n": "Pang-yelo"
+    },
+    {
+      "id": "131041S00002",
+      "n": "Plantsa"
+    },
+    {
+      "id": "131041S00003",
+      "n": "Mesa ng plantsa"
+    },
+    {
+      "id": "131041S00004",
+      "n": "Kurtinang accordion"
+    },
+    {
+      "id": "131041S00005",
+      "n": "Kaso ng attaché"
+    },
+    {
+      "id": "131041S00006",
+      "n": "Pressure cooker"
+    },
+    {
+      "id": "131041S00007",
+      "n": "Langis ng makina"
+    },
+    {
+      "id": "131041S00008",
+      "n": "Mantika"
+    },
+    {
+      "id": "131041S00009",
+      "n": "Bote na may langis"
+    },
+    {
+      "id": "131041S00010",
+      "n": "Makinang panggantsilyo (makinang panahi)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00011",
+      "n": "Album"
+    },
+    {
+      "id": "131041S00012",
+      "n": "Lata ng aluminyo (inumin o pagkain)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00013",
+      "n": "Aluminum foil"
+    },
+    {
+      "id": "131041S00014",
+      "n": "Safety pin"
+    },
+    {
+      "id": "131041S00015",
+      "n": "Amplifier"
+    },
+    {
+      "id": "131041S00016",
+      "n": "Bato"
+    },
+    {
+      "id": "131041S00017",
+      "n": "Lalagyan ng damit"
+    },
+    {
+      "id": "131041S00018",
+      "n": "Silya (silyang pansahig, silyang pantanggap ng bisita, bangko at iba pa)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00019",
+      "n": "Tabla"
+    },
+    {
+      "id": "131041S00020",
+      "n": "18-litro na lata"
+    },
+    {
+      "id": "131041S00021",
+      "n": "Bote ng isshō"
+    },
+    {
+      "id": "131041S00022",
+      "n": "Takip ng bote ng isshō (metal sa ibabaw, plastik sa ilalim)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00023",
+      "n": "Basurang medikal"
+    },
+    {
+      "id": "131041S00024",
+      "n": "Patuyuan ng damit"
+    },
+    {
+      "id": "131041S00025",
+      "n": "Selyo"
+    },
+    {
+      "id": "131041S00026",
+      "n": "Ink cartridge"
+    },
+    {
+      "id": "131041S00027",
+      "n": "Windsurf board"
+    },
+    {
+      "id": "131041S00028",
+      "n": "Bentilador sa bintana"
+    },
+    {
+      "id": "131041S00029",
+      "n": "Windbreaker jacket"
+    },
+    {
+      "id": "131041S00030",
+      "n": "Paso (terracotta na hindi glazed o seramika)"
+    },
+    {
+      "id": "131041S00031",
+      "n": "Paso (plastik)"
+    },
+    {
+      "id": "131041S00032",
+      "n": "Bidet toilet seat (simpleng upuan)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00033",
+      "n": "Wood carpet"
+    },
+    {
+      "id": "131041S00034",
+      "n": "Kumot na balahibo"
+    },
+    {
+      "id": "131041S00035",
+      "n": "Air conditioner"
+    },
+    {
+      "id": "131041S00036",
+      "n": "Kagamitang video o audio"
+    },
+    {
+      "id": "131041S00037",
+      "n": "Pinutol na sanga",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00038",
+      "n": "Tubong pintura (metal)"
+    },
+    {
+      "id": "131041S00039",
+      "n": "Tubong pintura (plastik)"
+    },
+    {
+      "id": "131041S00040",
+      "n": "MO disk"
+    },
+    {
+      "id": "131041S00041",
+      "n": "MD disk (kasama ang case)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00042",
+      "n": "MD player"
+    },
+    {
+      "id": "131041S00043",
+      "n": "Electronic organ"
+    },
+    {
+      "id": "131041S00044",
+      "n": "Extension cord"
+    },
+    {
+      "id": "131041S00045",
+      "n": "Lapis"
+    },
+    {
+      "id": "131041S00046",
+      "n": "Pantasa ng lapis (de-kuryente o mano-mano)"
+    },
+    {
+      "id": "131041S00047",
+      "n": "Dalang pantasa ng lapis"
+    },
+    {
+      "id": "131041S00048",
+      "n": "Langis ng makina"
+    },
+    {
+      "id": "131041S00049",
+      "n": "Mantika"
+    },
+    {
+      "id": "131041S00050",
+      "n": "Oil heater"
+    },
+    {
+      "id": "131041S00051",
+      "n": "Kahon ng kendi (papel)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00052",
+      "n": "Supot ng kendi (plastik)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00053",
+      "n": "Sandok na metal"
+    },
+    {
+      "id": "131041S00054",
+      "n": "Sandok na plastik"
+    },
+    {
+      "id": "131041S00055",
+      "n": "Nahulog na dahon"
+    },
+    {
+      "id": "131041S00056",
+      "n": "Basang pamunas"
+    },
+    {
+      "id": "131041S00057",
+      "n": "Lampin"
+    },
+    {
+      "id": "131041S00058",
+      "n": "Laruan (kahoy o plastik)"
+    },
+    {
+      "id": "131041S00059",
+      "n": "Laruan na metal"
+    },
+    {
+      "id": "131041S00060",
+      "n": "Organ"
+    },
+    {
+      "id": "131041S00061",
+      "n": "Mangkok na kahoy",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00062",
+      "n": "Pampainit ng tubig"
+    },
+    {
+      "id": "131041S00063",
+      "n": "Termometro"
+    },
+    {
+      "id": "131041S00064",
+      "n": "Kagamitang OA (maliban sa computer at display)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00065",
+      "n": "Kagamitang audio"
+    },
+    {
+      "id": "131041S00066",
+      "n": "Motorsiklo"
+    },
+    {
+      "id": "131041S00067",
+      "n": "Oven toaster"
+    },
+    {
+      "id": "131041S00068",
+      "n": "Oven microwave"
+    },
+    {
+      "id": "131041S00069",
+      "n": "Kabibe"
+    },
+    {
+      "id": "131041S00070",
+      "n": "Flashlight"
+    },
+    {
+      "id": "131041S00071",
+      "n": "Heat pack"
+    },
+    {
+      "id": "131041S00072",
+      "n": "Salamin"
+    },
+    {
+      "id": "131041S00073",
+      "n": "Muwebles"
+    },
+    {
+      "id": "131041S00074",
+      "n": "Basket (panglaba, natitiklop, pamimili at iba pa)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00075",
+      "n": "Payong"
+    },
+    {
+      "id": "131041S00076",
+      "n": "Patungan ng payong"
+    },
+    {
+      "id": "131041S00077",
+      "n": "Humidifier"
+    },
+    {
+      "id": "131041S00078",
+      "n": "Portable gas stove"
+    },
+    {
+      "id": "131041S00079",
+      "n": "Cassette tape"
+    },
+    {
+      "id": "131041S00080",
+      "n": "Gas cassette canister"
+    },
+    {
+      "id": "131041S00081",
+      "n": "Cutter na kutsilyo"
+    },
+    {
+      "id": "131041S00082",
+      "n": "Lalagyan ng cup noodles (plastik)"
+    },
+    {
+      "id": "131041S00083",
+      "n": "Lalagyan ng cup noodles (papel)"
+    },
+    {
+      "id": "131041S00084",
+      "n": "Bag (tela, katad o vinyl)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00085",
+      "n": "Plorera (seramika o salamin)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00086",
+      "n": "Paper cup"
+    },
+    {
+      "id": "131041S00087",
+      "n": "Paper bag"
+    },
+    {
+      "id": "131041S00088",
+      "n": "Kamera"
+    },
+    {
+      "id": "131041S00089",
+      "n": "Karaoke machine"
+    },
+    {
+      "id": "131041S00090",
+      "n": "Cube shelf"
+    },
+    {
+      "id": "131041S00091",
+      "n": "Lata ng inumin o pagkain (aluminyo o bakal)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00092",
+      "n": "Exhaust fan"
+    },
+    {
+      "id": "131041S00093",
+      "n": "Papel na packing cushion"
+    },
+    {
+      "id": "131041S00094",
+      "n": "Plastik na packing cushion"
+    },
+    {
+      "id": "131041S00095",
+      "n": "Desiccant"
+    },
+    {
+      "id": "131041S00096",
+      "n": "Tuyong baterya (manganese, alkaline o lithium)"
+    },
+    {
+      "id": "131041S00097",
+      "n": "Tuyong baterya (button cell, maliit na rechargeable o power bank)"
+    },
+    {
+      "id": "131041S00098",
+      "n": "Kurtina"
+    },
+    {
+      "id": "131041S00099",
+      "n": "Riles ng kurtina"
+    },
+    {
+      "id": "131041S00100",
+      "n": "Metal na frame ng larawan"
+    },
+    {
+      "id": "131041S00101",
+      "n": "Frame ng larawan (kahoy o plastik)"
+    },
+    {
+      "id": "131041S00102",
+      "n": "Gas oven"
+    },
+    {
+      "id": "131041S00103",
+      "n": "Gas stove",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00104",
+      "n": "Packing tape"
+    },
+    {
+      "id": "131041S00105",
+      "n": "Mesang salamin"
+    },
+    {
+      "id": "131041S00106",
+      "n": "Boteng salamin (inumin o pagkain)"
+    },
+    {
+      "id": "131041S00107",
+      "n": "Basag na boteng salamin"
+    },
+    {
+      "id": "131041S00108",
+      "n": "Kick scooter"
+    },
+    {
+      "id": "131041S00109",
+      "n": "Hagdan"
+    },
+    {
+      "id": "131041S00110",
+      "n": "Takip (plastik)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00111",
+      "n": "Maleta"
+    },
+    {
+      "id": "131041S00112",
+      "n": "Dressing table"
+    },
+    {
+      "id": "131041S00113",
+      "n": "Fireproof safe",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00114",
+      "n": "Keyboard ng computer"
+    },
+    {
+      "id": "131041S00115",
+      "n": "Keyboard na instrumento"
+    },
+    {
+      "id": "131041S00116",
+      "n": "Gitara"
+    },
+    {
+      "id": "131041S00117",
+      "n": "Silver paper"
+    },
+    {
+      "id": "131041S00118",
+      "n": "Air purifier"
+    },
+    {
+      "id": "131041S00119",
+      "n": "Pako"
+    },
+    {
+      "id": "131041S00120",
+      "n": "Bulaklak at halaman"
+    },
+    {
+      "id": "131041S00121",
+      "n": "Gamot"
+    },
+    {
+      "id": "131041S00122",
+      "n": "Bote ng gamot",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00123",
+      "n": "Kutsilyo sa prutas"
+    },
+    {
+      "id": "131041S00124",
+      "n": "Lipstick"
+    },
+    {
+      "id": "131041S00125",
+      "n": "Cushion"
+    },
+    {
+      "id": "131041S00126",
+      "n": "Sapatos"
+    },
+    {
+      "id": "131041S00127",
+      "n": "Christmas tree"
+    },
+    {
+      "id": "131041S00128",
+      "n": "Crayon"
+    },
+    {
+      "id": "131041S00129",
+      "n": "Cooler"
+    },
+    {
+      "id": "131041S00130",
+      "n": "Cooler box"
+    },
+    {
+      "id": "131041S00131",
+      "n": "Fluorescent tube o ilaw"
+    },
+    {
+      "id": "131041S00132",
+      "n": "Produktong gawa sa lupang diatomaceous (may asbestos)"
+    },
+    {
+      "id": "131041S00133",
+      "n": "Produktong diatomaceous earth (walang asbestos)"
+    },
+    {
+      "id": "131041S00134",
+      "n": "Handheld game console"
+    },
+    {
+      "id": "131041S00135",
+      "n": "Mobile phone"
+    },
+    {
+      "id": "131041S00136",
+      "n": "Pambura"
+    },
+    {
+      "id": "131041S00137",
+      "n": "Pang-sukat ng presyon ng dugo (mercury type)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00138",
+      "n": "Blood pressure monitor"
+    },
+    {
+      "id": "131041S00139",
+      "n": "Sipit"
+    },
+    {
+      "id": "131041S00140",
+      "n": "Flower arranger needle holder"
+    },
+    {
+      "id": "131041S00141",
+      "n": "Moped"
+    },
+    {
+      "id": "131041S00142",
+      "n": "Game console"
+    },
+    {
+      "id": "131041S00143",
+      "n": "Mga kasangkapan"
+    },
+    {
+      "id": "131041S00144",
+      "n": "Maliit na rechargeable battery"
+    },
+    {
+      "id": "131041S00145",
+      "n": "Kotatsu table"
+    },
+    {
+      "id": "131041S00146",
+      "n": "Home copier",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00147",
+      "n": "Bond paper"
+    },
+    {
+      "id": "131041S00148",
+      "n": "Lalagyan ng bigas (metal o kahoy)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00149",
+      "n": "Cork"
+    },
+    {
+      "id": "131041S00150",
+      "n": "Pambukas ng cork"
+    },
+    {
+      "id": "131041S00151",
+      "n": "Saksakan"
+    },
+    {
+      "id": "131041S00152",
+      "n": "Contact lens"
+    },
+    {
+      "id": "131041S00153",
+      "n": "Stereo system"
+    },
+    {
+      "id": "131041S00154",
+      "n": "Packing material (papel)"
+    },
+    {
+      "id": "131041S00155",
+      "n": "Packing material (plastik)"
+    },
+    {
+      "id": "131041S00156",
+      "n": "Kable ng kuryente",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00157",
+      "n": "Coffee maker"
+    },
+    {
+      "id": "131041S00158",
+      "n": "Piyon ng Go"
+    },
+    {
+      "id": "131041S00159",
+      "n": "Banig"
+    },
+    {
+      "id": "131041S00160",
+      "n": "Go o shogi board"
+    },
+    {
+      "id": "131041S00161",
+      "n": "Golf club"
+    },
+    {
+      "id": "131041S00162",
+      "n": "Golf bag"
+    },
+    {
+      "id": "131041S00163",
+      "n": "Golf ball"
+    },
+    {
+      "id": "131041S00164",
+      "n": "Goggles"
+    },
+    {
+      "id": "131041S00165",
+      "n": "Pitaka"
+    },
+    {
+      "id": "131041S00166",
+      "n": "Siphon"
+    },
+    {
+      "id": "131041S00167",
+      "n": "Tripod"
+    },
+    {
+      "id": "131041S00168",
+      "n": "Tricycle"
+    },
+    {
+      "id": "131041S00169",
+      "n": "Surfboard"
+    },
+    {
+      "id": "131041S00170",
+      "n": "Floor chair"
+    },
+    {
+      "id": "131041S00171",
+      "n": "Iba pang papel",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00172",
+      "n": "Unan na upuan"
+    },
+    {
+      "id": "131041S00173",
+      "n": "Electric shaver",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00174",
+      "n": "Pantakip sa sahig"
+    },
+    {
+      "id": "131041S00175",
+      "n": "Tukod sa hardin",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00176",
+      "n": "Panlabas na unit ng air conditioner",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00177",
+      "n": "Panloob na unit ng air conditioner",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00178",
+      "n": "Lawn mower (hindi de-singaw)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00179",
+      "n": "Mechanical pencil na plastik"
+    },
+    {
+      "id": "131041S00180",
+      "n": "Mechanical pencil na metal"
+    },
+    {
+      "id": "131041S00181",
+      "n": "Home shredder",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00182",
+      "n": "Fire extinguisher"
+    },
+    {
+      "id": "131041S00183",
+      "n": "Dishwasher dryer"
+    },
+    {
+      "id": "131041S00184",
+      "n": "Rak ng pagkain"
+    },
+    {
+      "id": "131041S00185",
+      "n": "Mantika"
+    },
+    {
+      "id": "131041S00186",
+      "n": "Kagamitan sa pagkain (metal, seramika o salamin)"
+    },
+    {
+      "id": "131041S00187",
+      "n": "Kagamitan sa pagkain (papel o plastik)"
+    },
+    {
+      "id": "131041S00188",
+      "n": "Shopping cart"
+    },
+    {
+      "id": "131041S00189",
+      "n": "Uling na kalan"
+    },
+    {
+      "id": "131041S00190",
+      "n": "Synthesizer"
+    },
+    {
+      "id": "131041S00191",
+      "n": "Pahayagan o flyer"
+    },
+    {
+      "id": "131041S00192",
+      "n": "Kumot na sapin"
+    },
+    {
+      "id": "131041S00193",
+      "n": "CD player o CD radio-cassette"
+    },
+    {
+      "id": "131041S00194",
+      "n": "CD, CD-R o CD-RW"
+    },
+    {
+      "id": "131041S00195",
+      "n": "Magnet"
+    },
+    {
+      "id": "131041S00196",
+      "n": "Bisikleta",
+      "a": [
+        "bike"
+      ]
+    },
+    {
+      "id": "131041S00197",
+      "n": "Karpet"
+    },
+    {
+      "id": "131041S00198",
+      "n": "Rechargeable battery"
+    },
+    {
+      "id": "131041S00199",
+      "n": "Duralumin case"
+    },
+    {
+      "id": "131041S00200",
+      "n": "Juicer"
+    },
+    {
+      "id": "131041S00201",
+      "n": "Water purifier"
+    },
+    {
+      "id": "131041S00202",
+      "n": "Dehumidifier"
+    },
+    {
+      "id": "131041S00203",
+      "n": "Aquarium (salamin)"
+    },
+    {
+      "id": "131041S00204",
+      "n": "Aquarium (plastik)"
+    },
+    {
+      "id": "131041S00205",
+      "n": "Rice cooker"
+    },
+    {
+      "id": "131041S00206",
+      "n": "Full-length mirror"
+    },
+    {
+      "id": "131041S00207",
+      "n": "Scanner"
+    },
+    {
+      "id": "131041S00208",
+      "n": "Ski board"
+    },
+    {
+      "id": "131041S00209",
+      "n": "Ski boots"
+    },
+    {
+      "id": "131041S00210",
+      "n": "Ski poles"
+    },
+    {
+      "id": "131041S00211",
+      "n": "Skate shoes"
+    },
+    {
+      "id": "131041S00212",
+      "n": "Standing ashtray"
+    },
+    {
+      "id": "131041S00213",
+      "n": "Bamboo blind o reed screen"
+    },
+    {
+      "id": "131041S00214",
+      "n": "Steam heater"
+    },
+    {
+      "id": "131041S00215",
+      "n": "Stepper exercise machine"
+    },
+    {
+      "id": "131041S00216",
+      "n": "Stereo"
+    },
+    {
+      "id": "131041S00217",
+      "n": "Stove"
+    },
+    {
+      "id": "131041S00218",
+      "n": "Buhangin"
+    },
+    {
+      "id": "131041S00219",
+      "n": "Sneakers"
+    },
+    {
+      "id": "131041S00220",
+      "n": "Slatted mat"
+    },
+    {
+      "id": "131041S00221",
+      "n": "Snowboard"
+    },
+    {
+      "id": "131041S00222",
+      "n": "Spray can"
+    },
+    {
+      "id": "131041S00223",
+      "n": "Takip o nozzle ng spray can"
+    },
+    {
+      "id": "131041S00224",
+      "n": "Plastik na kutsara"
+    },
+    {
+      "id": "131041S00225",
+      "n": "Metal na kutsara"
+    },
+    {
+      "id": "131041S00226",
+      "n": "Smartphone"
+    },
+    {
+      "id": "131041S00227",
+      "n": "Pangdikdik na kahoy"
+    },
+    {
+      "id": "131041S00228",
+      "n": "Mortar"
+    },
+    {
+      "id": "131041S00229",
+      "n": "Maleta"
+    },
+    {
+      "id": "131041S00230",
+      "n": "Infrared heater"
+    },
+    {
+      "id": "131041S00231",
+      "n": "Produktong petrolyo"
+    },
+    {
+      "id": "131041S00232",
+      "n": "Sabon"
+    },
+    {
+      "id": "131041S00233",
+      "n": "Cellophane tape"
+    },
+    {
+      "id": "131041S00234",
+      "n": "Insenso"
+    },
+    {
+      "id": "131041S00235",
+      "n": "Washing machine o clothes dryer"
+    },
+    {
+      "id": "131041S00236",
+      "n": "Electric fan"
+    },
+    {
+      "id": "131041S00237",
+      "n": "Bathroom vanity"
+    },
+    {
+      "id": "131041S00238",
+      "n": "Vacuum cleaner"
+    },
+    {
+      "id": "131041S00239",
+      "n": "Sofa"
+    },
+    {
+      "id": "131041S00240",
+      "n": "Sled"
+    },
+    {
+      "id": "131041S00241",
+      "n": "Mercury thermometer",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00242",
+      "n": "Thermometer"
+    },
+    {
+      "id": "131041S00243",
+      "n": "Fireproof safe"
+    },
+    {
+      "id": "131041S00244",
+      "n": "Timbangan"
+    },
+    {
+      "id": "131041S00245",
+      "n": "Typewriter"
+    },
+    {
+      "id": "131041S00246",
+      "n": "Gulong"
+    },
+    {
+      "id": "131041S00247",
+      "n": "Tire chain"
+    },
+    {
+      "id": "131041S00248",
+      "n": "Tile"
+    },
+    {
+      "id": "131041S00249",
+      "n": "Tatami mat"
+    },
+    {
+      "id": "131041S00250",
+      "n": "Mesa sa paggupit ng tela"
+    },
+    {
+      "id": "131041S00251",
+      "n": "Palanggana"
+    },
+    {
+      "id": "131041S00252",
+      "n": "Hand cart"
+    },
+    {
+      "id": "131041S00253",
+      "n": "Dumbbell"
+    },
+    {
+      "id": "131041S00254",
+      "n": "Karton"
+    },
+    {
+      "id": "131041S00255",
+      "n": "Kadena"
+    },
+    {
+      "id": "131041S00256",
+      "n": "Child seat"
+    },
+    {
+      "id": "131041S00257",
+      "n": "Mangkok ng kanin"
+    },
+    {
+      "id": "131041S00258",
+      "n": "Wok"
+    },
+    {
+      "id": "131041S00259",
+      "n": "Tube (toothpaste, mayonnaise at iba pa)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00260",
+      "n": "Flyer"
+    },
+    {
+      "id": "131041S00261",
+      "n": "Tungkod (kahoy)"
+    },
+    {
+      "id": "131041S00262",
+      "n": "Tungkod (plastik)"
+    },
+    {
+      "id": "131041S00263",
+      "n": "Tungkod (metal)"
+    },
+    {
+      "id": "131041S00264",
+      "n": "Mesa"
+    },
+    {
+      "id": "131041S00265",
+      "n": "Lupa"
+    },
+    {
+      "id": "131041S00266",
+      "n": "Tension rod"
+    },
+    {
+      "id": "131041S00267",
+      "n": "Banga"
+    },
+    {
+      "id": "131041S00268",
+      "n": "Nail cutter"
+    },
+    {
+      "id": "131041S00269",
+      "n": "Fishing rod"
+    },
+    {
+      "id": "131041S00270",
+      "n": "Kahon ng tissue"
+    },
+    {
+      "id": "131041S00271",
+      "n": "Barbell"
+    },
+    {
+      "id": "131041S00272",
+      "n": "Tennis ball"
+    },
+    {
+      "id": "131041S00273",
+      "n": "Tennis racket"
+    },
+    {
+      "id": "131041S00274",
+      "n": "Telebisyon"
+    },
+    {
+      "id": "131041S00275",
+      "n": "TV stand"
+    },
+    {
+      "id": "131041S00276",
+      "n": "Astronomical telescope"
+    },
+    {
+      "id": "131041S00277",
+      "n": "Mesa"
+    },
+    {
+      "id": "131041S00278",
+      "n": "Display o monitor"
+    },
+    {
+      "id": "131041S00279",
+      "n": "DVD"
+    },
+    {
+      "id": "131041S00280",
+      "n": "DVD case"
+    },
+    {
+      "id": "131041S00281",
+      "n": "DVD player"
+    },
+    {
+      "id": "131041S00282",
+      "n": "Digital camera"
+    },
+    {
+      "id": "131041S00283",
+      "n": "Electric carpet"
+    },
+    {
+      "id": "131041S00284",
+      "n": "Electric kettle"
+    },
+    {
+      "id": "131041S00285",
+      "n": "Kable ng kuryente"
+    },
+    {
+      "id": "131041S00286",
+      "n": "Desk lamp"
+    },
+    {
+      "id": "131041S00287",
+      "n": "Electric pot (kasama ang thermos)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00288",
+      "n": "Electric blanket"
+    },
+    {
+      "id": "131041S00289",
+      "n": "Bumbilya"
+    },
+    {
+      "id": "131041S00290",
+      "n": "Electronic organ"
+    },
+    {
+      "id": "131041S00291",
+      "n": "Microwave oven"
+    },
+    {
+      "id": "131041S00292",
+      "n": "Calculator"
+    },
+    {
+      "id": "131041S00293",
+      "n": "Telepono"
+    },
+    {
+      "id": "131041S00294",
+      "n": "Mesa ng telepono"
+    },
+    {
+      "id": "131041S00295",
+      "n": "Phone book"
+    },
+    {
+      "id": "131041S00296",
+      "n": "Whetstone"
+    },
+    {
+      "id": "131041S00297",
+      "n": "Orasan"
+    },
+    {
+      "id": "131041S00298",
+      "n": "Corrugated metal sheet"
+    },
+    {
+      "id": "131041S00299",
+      "n": "Pinto"
+    },
+    {
+      "id": "131041S00300",
+      "n": "Hawla ng ibon"
+    },
+    {
+      "id": "131041S00301",
+      "n": "Pintura"
+    },
+    {
+      "id": "131041S00302",
+      "n": "Martilyo"
+    },
+    {
+      "id": "131041S00303",
+      "n": "Toaster"
+    },
+    {
+      "id": "131041S00304",
+      "n": "Pinto"
+    },
+    {
+      "id": "131041S00305",
+      "n": "Hawakan ng pinto"
+    },
+    {
+      "id": "131041S00306",
+      "n": "Hair dryer",
+      "a": [
+        "pantuyo ng buhok"
+      ]
+    },
+    {
+      "id": "131041S00307",
+      "n": "Drum (instrumento)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00308",
+      "n": "Drip coffee pot"
+    },
+    {
+      "id": "131041S00309",
+      "n": "Kutsilyo"
+    },
+    {
+      "id": "131041S00310",
+      "n": "Bota"
+    },
+    {
+      "id": "131041S00311",
+      "n": "Palayok"
+    },
+    {
+      "id": "131041S00312",
+      "n": "Basurang pagkain"
+    },
+    {
+      "id": "131041S00313",
+      "n": "Papel na may matapang na amoy"
+    },
+    {
+      "id": "131041S00314",
+      "n": "Manika"
+    },
+    {
+      "id": "131041S00315",
+      "n": "Stuffed toy"
+    },
+    {
+      "id": "131041S00316",
+      "n": "Sleeping bag"
+    },
+    {
+      "id": "131041S00317",
+      "n": "Adhesive tape"
+    },
+    {
+      "id": "131041S00318",
+      "n": "Luwad (luwad na papel)"
+    },
+    {
+      "id": "131041S00319",
+      "n": "Clay (oil clay)"
+    },
+    {
+      "id": "131041S00320",
+      "n": "Clay (gypsum clay)"
+    },
+    {
+      "id": "131041S00321",
+      "n": "Pestisidyo"
+    },
+    {
+      "id": "131041S00322",
+      "n": "Lagari"
+    },
+    {
+      "id": "131041S00323",
+      "n": "Notebook"
+    },
+    {
+      "id": "131041S00324",
+      "n": "Laptop"
+    },
+    {
+      "id": "131041S00325",
+      "n": "Basurang materyal"
+    },
+    {
+      "id": "131041S00326",
+      "n": "Puting tray"
+    },
+    {
+      "id": "131041S00327",
+      "n": "Gunting na metal",
+      "a": [
+        "gunting"
+      ]
+    },
+    {
+      "id": "131041S00328",
+      "n": "Gunting na plastik",
+      "a": [
+        "gunting"
+      ]
+    },
+    {
+      "id": "131041S00329",
+      "n": "Styrofoam"
+    },
+    {
+      "id": "131041S00330",
+      "n": "Paputok"
+    },
+    {
+      "id": "131041S00331",
+      "n": "Sipilyo"
+    },
+    {
+      "id": "131041S00332",
+      "n": "Karayom"
+    },
+    {
+      "id": "131041S00333",
+      "n": "Panyo"
+    },
+    {
+      "id": "131041S00334",
+      "n": "Hanger (plastik o kahoy)"
+    },
+    {
+      "id": "131041S00335",
+      "n": "Hanger na metal"
+    },
+    {
+      "id": "131041S00336",
+      "n": "Hanger rack"
+    },
+    {
+      "id": "131041S00337",
+      "n": "Timba"
+    },
+    {
+      "id": "131041S00338",
+      "n": "Baterya ng sasakyan, motorsiklo o bisikleta",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00339",
+      "n": "Bat (kahoy)"
+    },
+    {
+      "id": "131041S00340",
+      "n": "Bat na metal"
+    },
+    {
+      "id": "131041S00341",
+      "n": "Hair clip (plastik)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00342",
+      "n": "Barbell (bar at weights)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00343",
+      "n": "Crowbar"
+    },
+    {
+      "id": "131041S00344",
+      "n": "Tubong metal"
+    },
+    {
+      "id": "131041S00345",
+      "n": "Tubong plastik"
+    },
+    {
+      "id": "131041S00346",
+      "n": "Pipe cart"
+    },
+    {
+      "id": "131041S00347",
+      "n": "Computer"
+    },
+    {
+      "id": "131041S00348",
+      "n": "Keyboard o mouse ng computer"
+    },
+    {
+      "id": "131041S00349",
+      "n": "Pachinko machine"
+    },
+    {
+      "id": "131041S00350",
+      "n": "Paper pack (gatas o itlog)"
+    },
+    {
+      "id": "131041S00351",
+      "n": "Plastik na egg pack"
+    },
+    {
+      "id": "131041S00352",
+      "n": "Razor"
+    },
+    {
+      "id": "131041S00353",
+      "n": "Hibachi o kalan ng uling"
+    },
+    {
+      "id": "131041S00354",
+      "n": "Kagamitang pangmukha"
+    },
+    {
+      "id": "131041S00355",
+      "n": "Video camera"
+    },
+    {
+      "id": "131041S00356",
+      "n": "Video tape"
+    },
+    {
+      "id": "131041S00357",
+      "n": "Video deck"
+    },
+    {
+      "id": "131041S00358",
+      "n": "Vinyl na payong"
+    },
+    {
+      "id": "131041S00359",
+      "n": "Vinyl na supot"
+    },
+    {
+      "id": "131041S00360",
+      "n": "Bote (inumin, pagkain, gamot o kosmetiko)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00361",
+      "n": "Kahon ng beer"
+    },
+    {
+      "id": "131041S00362",
+      "n": "Bote ng beer"
+    },
+    {
+      "id": "131041S00363",
+      "n": "Piano"
+    },
+    {
+      "id": "131041S00364",
+      "n": "PHS"
+    },
+    {
+      "id": "131041S00365",
+      "n": "PCR o antibody test kit"
+    },
+    {
+      "id": "131041S00366",
+      "n": "Fax"
+    },
+    {
+      "id": "131041S00367",
+      "n": "Sobre"
+    },
+    {
+      "id": "131041S00368",
+      "n": "Sobre na may bintana",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00369",
+      "n": "Futon"
+    },
+    {
+      "id": "131041S00370",
+      "n": "Futon dryer"
+    },
+    {
+      "id": "131041S00371",
+      "n": "Step stool"
+    },
+    {
+      "id": "131041S00372",
+      "n": "Music stand"
+    },
+    {
+      "id": "131041S00373",
+      "n": "Frying pan"
+    },
+    {
+      "id": "131041S00374",
+      "n": "Floppy disk"
+    },
+    {
+      "id": "131041S00375",
+      "n": "Floppy disk drive"
+    },
+    {
+      "id": "131041S00376",
+      "n": "Takip ng paliguan"
+    },
+    {
+      "id": "131041S00377",
+      "n": "Food processor"
+    },
+    {
+      "id": "131041S00378",
+      "n": "Blind"
+    },
+    {
+      "id": "131041S00379",
+      "n": "Blu-ray"
+    },
+    {
+      "id": "131041S00380",
+      "n": "Blu-ray case"
+    },
+    {
+      "id": "131041S00381",
+      "n": "Blu-ray recorder"
+    },
+    {
+      "id": "131041S00382",
+      "n": "Home printer",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00383",
+      "n": "Hair spray"
+    },
+    {
+      "id": "131041S00384",
+      "n": "Helmet"
+    },
+    {
+      "id": "131041S00385",
+      "n": "Kama"
+    },
+    {
+      "id": "131041S00386",
+      "n": "Frame ng kama"
+    },
+    {
+      "id": "131041S00387",
+      "n": "Mattress"
+    },
+    {
+      "id": "131041S00388",
+      "n": "Baby stroller"
+    },
+    {
+      "id": "131041S00389",
+      "n": "Baby bed"
+    },
+    {
+      "id": "131041S00390",
+      "n": "Sinturon"
+    },
+    {
+      "id": "131041S00391",
+      "n": "Bench press"
+    },
+    {
+      "id": "131041S00392",
+      "n": "PET bottle"
+    },
+    {
+      "id": "131041S00393",
+      "n": "Takip ng PET bottle"
+    },
+    {
+      "id": "131041S00394",
+      "n": "Pet toilet sheet"
+    },
+    {
+      "id": "131041S00395",
+      "n": "Litter para sa alagang hayop (papel, kahoy o okara)"
+    },
+    {
+      "id": "131041S00396",
+      "n": "Pet litter (mineral)"
+    },
+    {
+      "id": "131041S00397",
+      "n": "Pintura"
+    },
+    {
+      "id": "131041S00398",
+      "n": "Paper knife na metal",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00399",
+      "n": "Walis (mesa, sahig, kawayan at iba pa)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00400",
+      "n": "Balot (pagkain, lambat ng prutas o film ng basang pamunas)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00401",
+      "n": "Pambalot na papel"
+    },
+    {
+      "id": "131041S00402",
+      "n": "Kutsilyo sa kusina"
+    },
+    {
+      "id": "131041S00403",
+      "n": "Stapler"
+    },
+    {
+      "id": "131041S00404",
+      "n": "Hot carpet"
+    },
+    {
+      "id": "131041S00405",
+      "n": "Hot plate"
+    },
+    {
+      "id": "131041S00406",
+      "n": "Bote ng gatas ng sanggol (salamin)"
+    },
+    {
+      "id": "131041S00407",
+      "n": "Bote ng gatas ng sanggol (plastik)"
+    },
+    {
+      "id": "131041S00408",
+      "n": "Cooling gel pack"
+    },
+    {
+      "id": "131041S00409",
+      "n": "Hardcover na libro",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00410",
+      "n": "Bookshelf"
+    },
+    {
+      "id": "131041S00411",
+      "n": "Hose"
+    },
+    {
+      "id": "131041S00412",
+      "n": "Hose reel"
+    },
+    {
+      "id": "131041S00413",
+      "n": "Home bread maker"
+    },
+    {
+      "id": "131041S00414",
+      "n": "Waterproof paper"
+    },
+    {
+      "id": "131041S00415",
+      "n": "Bowling ball"
+    },
+    {
+      "id": "131041S00416",
+      "n": "Boston bag"
+    },
+    {
+      "id": "131041S00417",
+      "n": "Button battery"
+    },
+    {
+      "id": "131041S00418",
+      "n": "Bodyboard"
+    },
+    {
+      "id": "131041S00419",
+      "n": "Ballpen"
+    },
+    {
+      "id": "131041S00420",
+      "n": "Mga bola"
+    },
+    {
+      "id": "131041S00421",
+      "n": "Portable CD o MD player",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00422",
+      "n": "Mouse ng computer",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00423",
+      "n": "Unan"
+    },
+    {
+      "id": "131041S00424",
+      "n": "Punda ng unan"
+    },
+    {
+      "id": "131041S00425",
+      "n": "Magnet"
+    },
+    {
+      "id": "131041S00426",
+      "n": "Massage chair o massage machine",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00427",
+      "n": "Mat (doormat at iba pa)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00428",
+      "n": "Mattress"
+    },
+    {
+      "id": "131041S00429",
+      "n": "Saklay"
+    },
+    {
+      "id": "131041S00430",
+      "n": "Salamin sa bintana"
+    },
+    {
+      "id": "131041S00431",
+      "n": "Sangkalan"
+    },
+    {
+      "id": "131041S00432",
+      "n": "Fountain pen"
+    },
+    {
+      "id": "131041S00433",
+      "n": "Mesa ng mahjong"
+    },
+    {
+      "id": "131041S00434",
+      "n": "Mahjong tiles"
+    },
+    {
+      "id": "131041S00435",
+      "n": "Mixer"
+    },
+    {
+      "id": "131041S00436",
+      "n": "Makinang panahi"
+    },
+    {
+      "id": "131041S00437",
+      "n": "Mini stereo"
+    },
+    {
+      "id": "131041S00438",
+      "n": "Kulungan ng insekto"
+    },
+    {
+      "id": "131041S00439",
+      "n": "Magnifying glass"
+    },
+    {
+      "id": "131041S00440",
+      "n": "Salamin sa mata"
+    },
+    {
+      "id": "131041S00441",
+      "n": "Kumot"
+    },
+    {
+      "id": "131041S00442",
+      "n": "Kahoy"
+    },
+    {
+      "id": "131041S00443",
+      "n": "Mochi maker"
+    },
+    {
+      "id": "131041S00444",
+      "n": "Sampayan"
+    },
+    {
+      "id": "131041S00445",
+      "n": "Stand ng sampayan"
+    },
+    {
+      "id": "131041S00446",
+      "n": "Kettle"
+    },
+    {
+      "id": "131041S00447",
+      "n": "Kemikal"
+    },
+    {
+      "id": "131041S00448",
+      "n": "Mailbox"
+    },
+    {
+      "id": "131041S00449",
+      "n": "Warm-air heater"
+    },
+    {
+      "id": "131041S00450",
+      "n": "Pampakulo ng tubig"
+    },
+    {
+      "id": "131041S00451",
+      "n": "Lalagyan (papel)"
+    },
+    {
+      "id": "131041S00452",
+      "n": "Lalagyan (plastik)"
+    },
+    {
+      "id": "131041S00453",
+      "n": "Lalagyan (metal)"
+    },
+    {
+      "id": "131041S00454",
+      "n": "Takip ng bathtub"
+    },
+    {
+      "id": "131041S00455",
+      "n": "Lighter"
+    },
+    {
+      "id": "131041S00456",
+      "n": "Racket (tennis o badminton)"
+    },
+    {
+      "id": "131041S00457",
+      "n": "Racket (table tennis)"
+    },
+    {
+      "id": "131041S00458",
+      "n": "Remote-control toy"
+    },
+    {
+      "id": "131041S00459",
+      "n": "Rack na metal"
+    },
+    {
+      "id": "131041S00460",
+      "n": "Rack na kahoy o plastik"
+    },
+    {
+      "id": "131041S00461",
+      "n": "School backpack"
+    },
+    {
+      "id": "131041S00462",
+      "n": "Treadmill"
+    },
+    {
+      "id": "131041S00463",
+      "n": "Backpack"
+    },
+    {
+      "id": "131041S00464",
+      "n": "Bag sa paglalakbay"
+    },
+    {
+      "id": "131041S00465",
+      "n": "Refrigerator o freezer"
+    },
+    {
+      "id": "131041S00466",
+      "n": "Cool-air machine"
+    },
+    {
+      "id": "131041S00467",
+      "n": "Record"
+    },
+    {
+      "id": "131041S00468",
+      "n": "Leisure sheet"
+    },
+    {
+      "id": "131041S00469",
+      "n": "Ladrilyo"
+    },
+    {
+      "id": "131041S00470",
+      "n": "Lens na salamin"
+    },
+    {
+      "id": "131041S00471",
+      "n": "Lens na plastik"
+    },
+    {
+      "id": "131041S00472",
+      "n": "Briquette charcoal"
+    },
+    {
+      "id": "131041S00473",
+      "n": "Laser disc"
+    },
+    {
+      "id": "131041S00474",
+      "n": "Laser disc player"
+    },
+    {
+      "id": "131041S00475",
+      "n": "Kandila"
+    },
+    {
+      "id": "131041S00476",
+      "n": "Rowing machine"
+    },
+    {
+      "id": "131041S00477",
+      "n": "Roaster"
+    },
+    {
+      "id": "131041S00478",
+      "n": "Lubid"
+    },
+    {
+      "id": "131041S00479",
+      "n": "Roll curtain"
+    },
+    {
+      "id": "131041S00480",
+      "n": "Rubber band"
+    },
+    {
+      "id": "131041S00481",
+      "n": "Wagon"
+    },
+    {
+      "id": "131041S00482",
+      "n": "Word processor"
+    }
+  ]
+}

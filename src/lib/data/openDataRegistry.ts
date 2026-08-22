@@ -1,8 +1,8 @@
-import type { OpenDataCandidate } from "../types";
+import type { OpenDataRegistryEntry } from "../types";
 import { getLocalizedOpenDataContent } from "../../i18n/content";
 
 /** Stable catalog metadata. Localized title glosses and notes live in src/content. */
-type OpenDataMetadata = Omit<OpenDataCandidate, "titleGloss" | "note">;
+type OpenDataMetadata = Omit<OpenDataRegistryEntry, "titleGloss" | "note">;
 
 const OPEN_DATA_METADATA: OpenDataMetadata[] = [
   {
@@ -13,7 +13,7 @@ const OPEN_DATA_METADATA: OpenDataMetadata[] = [
     "organization": "Shinjuku City",
     "format": "CSV",
     "updatePlan": "batch",
-    "kind": "dataset"
+    "kind": "dataset", "status": "active", "lookupIds": ["shinjuku-childcare-facilities"], "refresh": "checked_snapshot"
   },
   {
     "id": "shinjuku-evacuation-sites",
@@ -23,7 +23,7 @@ const OPEN_DATA_METADATA: OpenDataMetadata[] = [
     "organization": "Shinjuku City",
     "format": "CSV",
     "updatePlan": "batch",
-    "kind": "dataset"
+    "kind": "dataset", "status": "active", "lookupIds": ["shinjuku-evacuation-sites"], "refresh": "checked_snapshot"
   },
   {
     "id": "shinjuku-public-facilities",
@@ -33,7 +33,7 @@ const OPEN_DATA_METADATA: OpenDataMetadata[] = [
     "organization": "Shinjuku City",
     "format": "CSV",
     "updatePlan": "batch",
-    "kind": "dataset"
+    "kind": "dataset", "status": "candidate", "refresh": "planned_batch"
   },
   {
     "id": "shinjuku-garbage-sorting",
@@ -43,7 +43,7 @@ const OPEN_DATA_METADATA: OpenDataMetadata[] = [
     "organization": "Shinjuku City",
     "format": "CSV",
     "updatePlan": "batch",
-    "kind": "dataset"
+    "kind": "dataset", "status": "active", "lookupIds": ["shinjuku-garbage-sorting"], "refresh": "checked_snapshot"
   },
   {
     "id": "tokyo-evacuation-shelters",
@@ -53,7 +53,7 @@ const OPEN_DATA_METADATA: OpenDataMetadata[] = [
     "organization": "Tokyo Metropolitan Government",
     "format": "CSV",
     "updatePlan": "batch",
-    "kind": "dataset"
+    "kind": "dataset", "status": "candidate", "refresh": "planned_batch"
   },
   {
     "id": "tokyo-flood-forecast",
@@ -63,7 +63,7 @@ const OPEN_DATA_METADATA: OpenDataMetadata[] = [
     "organization": "Tokyo Metropolitan Government",
     "format": "PDF / CSV",
     "updatePlan": "batch",
-    "kind": "dataset"
+    "kind": "dataset", "status": "candidate", "refresh": "planned_batch"
   },
   {
     "id": "tokyo-medical-ledger",
@@ -73,7 +73,7 @@ const OPEN_DATA_METADATA: OpenDataMetadata[] = [
     "organization": "Tokyo Metropolitan Government",
     "format": "CSV",
     "updatePlan": "batch",
-    "kind": "dataset"
+    "kind": "dataset", "status": "candidate", "refresh": "planned_batch"
   },
   {
     "id": "tokyo-foreign-population",
@@ -83,20 +83,14 @@ const OPEN_DATA_METADATA: OpenDataMetadata[] = [
     "organization": "Tokyo Metropolitan Government",
     "format": "CSV",
     "updatePlan": "batch",
-    "kind": "dataset"
+    "kind": "dataset", "status": "candidate", "refresh": "planned_batch"
   },
-  {
-    "id": "tokyo-medical-welfare-group",
-    "titleJa": "医療・福祉（カタログ分類）",
-    "titleEn": "Medical & welfare: catalog category",
-    "url": "https://catalog.data.metro.tokyo.lg.jp/group/c005",
-    "organization": "Tokyo Metropolitan Government",
-    "updatePlan": "batch",
-    "kind": "searchTarget"
+  { "id":"shinjuku-medical-clinics", "titleJa":"新宿区の医療機関一覧（診療所）", "titleEn":"Shinjuku medical clinics", "url":"https://catalog.data.metro.tokyo.lg.jp/dataset/t131041d0000000121", "organization":"Shinjuku City", "format":"CSV", "updatePlan":"batch", "kind":"dataset", "status":"active", "lookupIds":["shinjuku-medical-clinics"], "refresh":"checked_snapshot" },
+  { "id":"tokyo-public-schools-2025", "titleJa":"公立学校統計調査報告書〖東京都公立学校一覧〗", "titleEn":"Tokyo public schools 2025", "url":"https://catalog.data.metro.tokyo.lg.jp/dataset/t000021d2000000191", "organization":"Tokyo Metropolitan Board of Education", "format":"CSV", "updatePlan":"batch", "kind":"dataset", "status":"active", "lookupIds":["shinjuku-public-elementary-schools","shinjuku-public-junior-high-schools","shinjuku-public-high-schools"], "refresh":"checked_snapshot"
   }
 ];
 
-export const OPEN_DATA_CANDIDATES: OpenDataCandidate[] = OPEN_DATA_METADATA.map((candidate) => ({
-  ...candidate,
-  ...getLocalizedOpenDataContent(candidate.id),
+export const OPEN_DATA_REGISTRY: OpenDataRegistryEntry[] = OPEN_DATA_METADATA.map((entry) => ({
+  ...entry,
+  ...getLocalizedOpenDataContent(entry.id),
 }));

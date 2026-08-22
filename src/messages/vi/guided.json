@@ -73,9 +73,10 @@
     "garbage": {
       "title": "Bạn cần hỗ trợ việc gì?",
       "options": [
+        { "label": "Một đồ vật cụ thể phải phân loại thế nào?", "request": "Một đồ vật cụ thể phải phân loại thế nào?" },
         {
-          "label": "Phân loại, ngày thu gom hoặc rác cỡ lớn",
-          "request": "Phân loại, ngày thu gom hoặc rác cỡ lớn"
+          "label": "Ngày thu gom, rác cồng kềnh hoặc quy tắc chung",
+          "request": "Ngày thu gom, rác cồng kềnh hoặc quy tắc chung"
         }
       ]
     },

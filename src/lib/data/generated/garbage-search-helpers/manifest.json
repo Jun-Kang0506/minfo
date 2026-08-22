@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "status": "minfo_multilingual_search_helper",
+  "policyVersion": "phase-7.7.2-v1",
+  "sourceDatasetId": "shinjuku-garbage-sorting",
+  "sourceResourceUrl": "https://www.city.shinjuku.lg.jp/content/000420404.csv",
+  "sourceSnapshotSha256": "1b66d0dc7ad841e77d915f27a48c77682ba6ed2cff1c07a15a2d1508332c2a04",
+  "generationMethod": "development_ai_assisted_static",
+  "generatorProvider": "OpenAI",
+  "generatorModel": "gpt-5.6-terra",
+  "promptVersion": "garbage-helper-v1",
+  "promptSha256": "ed21dce024b9f5e72dfc6c047980ce7117d1e22533efdf85275457b19782ebef",
+  "generatedAt": "2026-08-22T12:24:03.394Z",
+  "linguisticCertification": false,
+  "locales": [
+    "en",
+    "zh",
+    "ko",
+    "vi",
+    "ne",
+    "tl",
+    "bn"
+  ],
+  "officialRecordCount": 482,
+  "helperRecordCountPerLocale": 482
+}

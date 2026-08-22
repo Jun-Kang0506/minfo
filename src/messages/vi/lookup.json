@@ -12,7 +12,24 @@
   "areaResults": "Đang hiển thị các địa điểm ở {area}",
   "stop": "Ngừng dùng vị trí",
   "distance": "Khoảng cách đường thẳng gần đúng",
-  "mapHandoff": { "googleMaps": "Google Maps", "appleMaps": "Apple Maps", "close": "Đóng", "directions": { "get": "Chỉ đường", "chooseProvider": "Chọn ứng dụng bản đồ", "googleMapsLabel": "Mở chỉ đường bằng Google Maps", "appleMapsLabel": "Mở chỉ đường bằng Apple Maps" }, "search": { "get": "Tìm trên bản đồ", "chooseProvider": "Chọn bản đồ để tìm", "googleMapsLabel": "Tìm bằng Google Maps", "appleMapsLabel": "Tìm bằng Apple Maps", "notice": "Tìm kiếm này dùng tên chính thức và địa chỉ của cơ sở. MINFO không thêm vị trí của bạn. Hãy kiểm tra đúng cơ sở trước khi đi." } },
+  "mapHandoff": {
+    "googleMaps": "Google Maps",
+    "appleMaps": "Apple Maps",
+    "close": "Đóng",
+    "directions": {
+      "get": "Chỉ đường",
+      "chooseProvider": "Chọn ứng dụng bản đồ",
+      "googleMapsLabel": "Mở chỉ đường bằng Google Maps",
+      "appleMapsLabel": "Mở chỉ đường bằng Apple Maps"
+    },
+    "search": {
+      "get": "Tìm trên bản đồ",
+      "chooseProvider": "Chọn bản đồ để tìm",
+      "googleMapsLabel": "Tìm bằng Google Maps",
+      "appleMapsLabel": "Tìm bằng Apple Maps",
+      "notice": "Tìm kiếm này dùng tên chính thức và địa chỉ của cơ sở. MINFO không thêm vị trí của bạn. Hãy kiểm tra đúng cơ sở trước khi đi."
+    }
+  },
   "child": "Bản chụp này không cho biết chỗ trống, điều kiện, phí, giờ, tiếp nhận nhập học hoặc hoạt động hiện tại. Hãy xác nhận trực tiếp.",
   "evac": "Đây là dữ liệu vị trí, không phải tình trạng mở cửa hoặc trực tiếp. Sự phù hợp tùy vào nguy cơ và hướng dẫn chính thức. Hãy xem cảnh báo chính thức hiện tại riêng.",
   "privacy": "Vị trí chỉ được dùng trên thiết bị này và không gửi đến MINFO.",
@@ -34,11 +51,46 @@
   "nameReadingLabel": "Cách đọc tên",
   "officialJapaneseNameLabel": "Tên tiếng Nhật chính thức",
   "ownershipLabel": "Loại hình quản lý",
-  "directoryTitles": { "childcare": "Cơ sở chăm sóc trẻ", "evacuation": "Địa điểm sơ tán khẩn cấp", "medical": "Phòng khám", "elementarySchool": "Trường tiểu học", "juniorHighSchool": "Trường trung học cơ sở", "highSchool": "Trường trung học phổ thông" },
-  "ownership": { "public": "Công lập", "private": "Tư thục" },
-  "governingBodies": { "shinjuku_municipal": "Thành phố Shinjuku", "tokyo_metropolitan": "Đô thị Tokyo" },
-  "facilityTypes": { "childrens_center": "Trung tâm trẻ em", "municipal_kindergarten": "Trường mẫu giáo quận lập", "municipal_licensed_nursery": "Nhà trẻ được cấp phép của quận", "municipal_certified_childcare_center": "Trung tâm chăm sóc trẻ được chứng nhận của quận", "workplace_childcare": "Nhà trẻ tại nơi làm việc", "childcare_room": "Phòng chăm sóc trẻ", "family_daycare": "Giữ trẻ tại gia đình", "after_school_club": "Câu lạc bộ trẻ em sau giờ học", "private_kindergarten": "Trường mẫu giáo tư thục", "private_licensed_nursery": "Nhà trẻ tư thục được cấp phép", "private_certified_childcare_center": "Trung tâm chăm sóc trẻ tư thục được chứng nhận", "evacuation_site": "Địa điểm sơ tán", "clinic": "Phòng khám", "elementary_school": "Trường tiểu học", "junior_high_school": "Trường trung học cơ sở", "high_school": "Trường trung học phổ thông" },
-  "datasetNotes": { "childcare": "Bản chụp này không cho biết chỗ trống, điều kiện, phí, giờ, tiếp nhận nhập học hoặc hoạt động hiện tại. Hãy xác nhận trực tiếp.", "evacuation": "Đây là dữ liệu vị trí, không phải tình trạng mở cửa hoặc trực tiếp. Sự phù hợp tùy vào nguy cơ và hướng dẫn chính thức. Hãy xem cảnh báo chính thức hiện tại riêng.", "medical": "Đây là ảnh chụp danh bạ cơ sở y tế, không phải tình trạng còn nhận bệnh theo thời gian thực. Không hiển thị giờ mở cửa, khả năng tiếp nhận bệnh nhân, hỗ trợ ngôn ngữ, chấp nhận bảo hiểm hoặc chuyên khoa. Gọi 119 nếu cần xe cứu thương.", "school": "Việc một trường có trong danh bạ không bảo đảm được phân trường, nhập học hay tuyển sinh. Hãy liên hệ trường hoặc Phòng Vận hành Trường học để biết thông tin mới nhất." },
+  "directoryTitles": {
+    "childcare": "Cơ sở chăm sóc trẻ",
+    "evacuation": "Địa điểm sơ tán khẩn cấp",
+    "medical": "Phòng khám",
+    "elementarySchool": "Trường tiểu học",
+    "juniorHighSchool": "Trường trung học cơ sở",
+    "highSchool": "Trường trung học phổ thông"
+  },
+  "ownership": {
+    "public": "Công lập",
+    "private": "Tư thục"
+  },
+  "governingBodies": {
+    "shinjuku_municipal": "Thành phố Shinjuku",
+    "tokyo_metropolitan": "Đô thị Tokyo"
+  },
+  "facilityTypes": {
+    "childrens_center": "Trung tâm trẻ em",
+    "municipal_kindergarten": "Trường mẫu giáo quận lập",
+    "municipal_licensed_nursery": "Nhà trẻ được cấp phép của quận",
+    "municipal_certified_childcare_center": "Trung tâm chăm sóc trẻ được chứng nhận của quận",
+    "workplace_childcare": "Nhà trẻ tại nơi làm việc",
+    "childcare_room": "Phòng chăm sóc trẻ",
+    "family_daycare": "Giữ trẻ tại gia đình",
+    "after_school_club": "Câu lạc bộ trẻ em sau giờ học",
+    "private_kindergarten": "Trường mẫu giáo tư thục",
+    "private_licensed_nursery": "Nhà trẻ tư thục được cấp phép",
+    "private_certified_childcare_center": "Trung tâm chăm sóc trẻ tư thục được chứng nhận",
+    "evacuation_site": "Địa điểm sơ tán",
+    "clinic": "Phòng khám",
+    "elementary_school": "Trường tiểu học",
+    "junior_high_school": "Trường trung học cơ sở",
+    "high_school": "Trường trung học phổ thông"
+  },
+  "datasetNotes": {
+    "childcare": "Bản chụp này không cho biết chỗ trống, điều kiện, phí, giờ, tiếp nhận nhập học hoặc hoạt động hiện tại. Hãy xác nhận trực tiếp.",
+    "evacuation": "Đây là dữ liệu vị trí, không phải tình trạng mở cửa hoặc trực tiếp. Sự phù hợp tùy vào nguy cơ và hướng dẫn chính thức. Hãy xem cảnh báo chính thức hiện tại riêng.",
+    "medical": "Đây là ảnh chụp danh bạ cơ sở y tế, không phải tình trạng còn nhận bệnh theo thời gian thực. Không hiển thị giờ mở cửa, khả năng tiếp nhận bệnh nhân, hỗ trợ ngôn ngữ, chấp nhận bảo hiểm hoặc chuyên khoa. Gọi 119 nếu cần xe cứu thương.",
+    "school": "Việc một trường có trong danh bạ không bảo đảm được phân trường, nhập học hay tuyển sinh. Hãy liên hệ trường hoặc Phòng Vận hành Trường học để biết thông tin mới nhất."
+  },
   "preparing": {
     "shinjuku-childcare-facilities": {
       "title": "Tính năng tìm cơ sở chăm sóc trẻ đang được chuẩn bị.",
@@ -48,5 +100,30 @@
       "title": "Tính năng tìm địa điểm sơ tán đang được chuẩn bị.",
       "body": "Tính năng đang chuẩn bị này không hiển thị địa điểm sơ tán trực tiếp, đang mở hoặc gần nhất. Hãy xem thông tin thiên tai chính thức để biết tình hình hiện tại."
     }
+  },
+  "garbage": {
+    "title": "Tìm cách phân loại một đồ vật",
+    "intro": "Nhập đồ vật bạn muốn vứt đi.",
+    "inputLabel": "Tên đồ vật bằng tiếng Việt hoặc tiếng Nhật",
+    "placeholder": "Ví dụ: xe đạp / 自転車",
+    "localizedItemLabel": "Đồ vật",
+    "checkJapaneseLabel": "Kiểm tra tên tiếng Nhật chính thức",
+    "trustNote": "Trợ giúp tìm kiếm của MINFO không phải là bản dịch chính thức. Thông tin phân loại đến từ Open Data tiếng Nhật chính thức của Shinjuku City.",
+    "search": "Tìm kiếm",
+    "loading": "Đang tải dữ liệu phân loại chính thức…",
+    "unavailable": "Hiện không thể sử dụng dữ liệu phân loại. Hãy xem dữ liệu chính thức hoặc thử lại.",
+    "retry": "Thử lại",
+    "multiple": "Tìm thấy {count} kết quả phù hợp. Hãy chọn đồ vật bạn muốn tìm.",
+    "truncated": "Đang hiển thị {shown} kết quả đầu tiên trong tổng số {count}. Hãy nhập thêm ký tự để thu hẹp kết quả.",
+    "noMatch": "Không tìm thấy “{query}”. Hãy thử tên ngắn hơn hoặc tên khác. Bạn cũng có thể dùng tên tiếng Nhật chính thức.",
+    "chooseItemLabel": "Chọn {item}",
+    "resultTitle": "Kết quả phân loại",
+    "officialItemLabel": "Tên đồ vật chính thức bằng tiếng Nhật",
+    "categoryLabel": "Phân loại",
+    "officialCategoryLabel": "Phân loại chính thức bằng tiếng Nhật",
+    "officialNoteLabel": "Ghi chú chính thức (tiếng Nhật)",
+    "searchAgain": "Tìm lại",
+    "sourceLink": "Xem dữ liệu chính thức",
+    "disclaimer": "Đây là bản chụp dữ liệu chính thức đã được kiểm tra, không phải dịch vụ thông báo ngày thu gom theo thời gian thực. Hãy kiểm tra ghi chú chính thức và trang chính thức trước khi vứt."
   }
 }

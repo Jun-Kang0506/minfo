@@ -127,6 +127,11 @@ const QUESTION_METADATA = {
     "id": "garbage",
     "options": [
       {
+        "id": "garbage_item_lookup",
+        "intentId": "garbage_item_lookup",
+        "outcome": { "type": "structuredLookup", "datasetCandidateId": "shinjuku-garbage-sorting" }
+      },
+      {
         "id": "garbage_rules",
         "intentId": "garbage_rules",
         "outcome": {

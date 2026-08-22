@@ -12,7 +12,24 @@
   "areaResults": "Showing places in {area}",
   "stop": "Stop using location",
   "distance": "Approximate straight-line distance",
-  "mapHandoff": { "googleMaps": "Google Maps", "appleMaps": "Apple Maps", "close": "Close", "directions": { "get": "Get directions", "chooseProvider": "Open directions with", "googleMapsLabel": "Open directions with Google Maps", "appleMapsLabel": "Open directions with Apple Maps" }, "search": { "get": "Find on map", "chooseProvider": "Choose a map to search", "googleMapsLabel": "Search with Google Maps", "appleMapsLabel": "Search with Apple Maps", "notice": "This search uses the official facility name and address. MINFO does not add your location. Check that the result is the same facility before you travel." } },
+  "mapHandoff": {
+    "googleMaps": "Google Maps",
+    "appleMaps": "Apple Maps",
+    "close": "Close",
+    "directions": {
+      "get": "Get directions",
+      "chooseProvider": "Open directions with",
+      "googleMapsLabel": "Open directions with Google Maps",
+      "appleMapsLabel": "Open directions with Apple Maps"
+    },
+    "search": {
+      "get": "Find on map",
+      "chooseProvider": "Choose a map to search",
+      "googleMapsLabel": "Search with Google Maps",
+      "appleMapsLabel": "Search with Apple Maps",
+      "notice": "This search uses the official facility name and address. MINFO does not add your location. Check that the result is the same facility before you travel."
+    }
+  },
   "child": "This snapshot does not show vacancies, eligibility, fees, hours, enrollment acceptance, or current operation. Confirm directly.",
   "evac": "This is location data, not live opening or status. Suitability depends on the hazard and official instructions. Check current official alerts separately.",
   "privacy": "Your location stays on this device and is not sent to MINFO.",
@@ -34,11 +51,46 @@
   "nameReadingLabel": "Name reading",
   "officialJapaneseNameLabel": "Official Japanese name",
   "ownershipLabel": "Ownership",
-  "directoryTitles": { "childcare": "Childcare facilities", "evacuation": "Evacuation locations", "medical": "Medical clinics", "elementarySchool": "Elementary schools", "juniorHighSchool": "Junior-high schools", "highSchool": "High schools" },
-  "ownership": { "public": "Public", "private": "Private" },
-  "governingBodies": { "shinjuku_municipal": "Shinjuku City municipal", "tokyo_metropolitan": "Tokyo Metropolitan" },
-  "facilityTypes": { "childrens_center": "Children's center", "municipal_kindergarten": "Municipal kindergarten", "municipal_licensed_nursery": "Municipal licensed nursery", "municipal_certified_childcare_center": "Municipal certified childcare center", "workplace_childcare": "Workplace childcare center", "childcare_room": "Childcare room", "family_daycare": "Family daycare", "after_school_club": "After-school children's club", "private_kindergarten": "Private kindergarten", "private_licensed_nursery": "Private licensed nursery", "private_certified_childcare_center": "Private certified childcare center", "evacuation_site": "Evacuation location", "clinic": "Clinic", "elementary_school": "Elementary school", "junior_high_school": "Junior-high school", "high_school": "High school" },
-  "datasetNotes": { "childcare": "This snapshot does not show vacancies, eligibility, fees, hours, enrollment acceptance, or current operation. Confirm directly.", "evacuation": "This is location data, not live opening or status. Suitability depends on the hazard and official instructions. Check current official alerts separately.", "medical": "This is a directory snapshot, not live availability. It does not show opening hours, patient acceptance, language support, insurance acceptance, or specialist availability. For an ambulance, call 119.", "school": "A school in this directory is not a placement, enrollment, or admission guarantee. Contact the school or the School Operations Division for current details." },
+  "directoryTitles": {
+    "childcare": "Childcare facilities",
+    "evacuation": "Evacuation locations",
+    "medical": "Medical clinics",
+    "elementarySchool": "Elementary schools",
+    "juniorHighSchool": "Junior-high schools",
+    "highSchool": "High schools"
+  },
+  "ownership": {
+    "public": "Public",
+    "private": "Private"
+  },
+  "governingBodies": {
+    "shinjuku_municipal": "Shinjuku City municipal",
+    "tokyo_metropolitan": "Tokyo Metropolitan"
+  },
+  "facilityTypes": {
+    "childrens_center": "Children's center",
+    "municipal_kindergarten": "Municipal kindergarten",
+    "municipal_licensed_nursery": "Municipal licensed nursery",
+    "municipal_certified_childcare_center": "Municipal certified childcare center",
+    "workplace_childcare": "Workplace childcare center",
+    "childcare_room": "Childcare room",
+    "family_daycare": "Family daycare",
+    "after_school_club": "After-school children's club",
+    "private_kindergarten": "Private kindergarten",
+    "private_licensed_nursery": "Private licensed nursery",
+    "private_certified_childcare_center": "Private certified childcare center",
+    "evacuation_site": "Evacuation location",
+    "clinic": "Clinic",
+    "elementary_school": "Elementary school",
+    "junior_high_school": "Junior-high school",
+    "high_school": "High school"
+  },
+  "datasetNotes": {
+    "childcare": "This snapshot does not show vacancies, eligibility, fees, hours, enrollment acceptance, or current operation. Confirm directly.",
+    "evacuation": "This is location data, not live opening or status. Suitability depends on the hazard and official instructions. Check current official alerts separately.",
+    "medical": "This is a directory snapshot, not live availability. It does not show opening hours, patient acceptance, language support, insurance acceptance, or specialist availability. For an ambulance, call 119.",
+    "school": "A school in this directory is not a placement, enrollment, or admission guarantee. Contact the school or the School Operations Division for current details."
+  },
   "preparing": {
     "shinjuku-childcare-facilities": {
       "title": "Childcare facility lookup is being prepared.",
@@ -48,5 +100,30 @@
       "title": "Evacuation-site lookup is being prepared.",
       "body": "This prepared lookup does not show live, open, or nearest sites. For the current situation, check official disaster information."
     }
+  },
+  "garbage": {
+    "title": "Find how to sort an item",
+    "intro": "Enter the item you want to throw away.",
+    "inputLabel": "Item name in English or Japanese",
+    "placeholder": "Example: bicycle / 自転車",
+    "localizedItemLabel": "Item",
+    "checkJapaneseLabel": "Check the official Japanese name",
+    "trustNote": "MINFO search helpers are not official translations. Disposal information comes from Shinjuku City’s official Japanese Open Data.",
+    "search": "Search",
+    "loading": "Loading official sorting data…",
+    "unavailable": "Sorting data is unavailable right now. View the official data or try again.",
+    "retry": "Try again",
+    "multiple": "{count} matches found. Choose the item you mean.",
+    "truncated": "Showing the first {shown} of {count} matches. Add more characters to narrow the search.",
+    "noMatch": "We could not find “{query}”. Try a shorter or different name. You can also try the official Japanese item name.",
+    "chooseItemLabel": "Choose {item}",
+    "resultTitle": "Sorting result",
+    "officialItemLabel": "Official Japanese item",
+    "categoryLabel": "Category",
+    "officialCategoryLabel": "Official Japanese category",
+    "officialNoteLabel": "Official note (Japanese)",
+    "searchAgain": "Search again",
+    "sourceLink": "View official data",
+    "disclaimer": "This is a checked official snapshot, not a live collection-day service. Check the official note and official page before disposal."
   }
 }

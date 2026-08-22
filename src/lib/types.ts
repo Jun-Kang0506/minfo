@@ -83,7 +83,7 @@ export interface Source {
   note: Localized<string>;
 }
 
-export interface OpenDataCandidate {
+export interface OpenDataRegistryEntry {
   id: string;
   /** Official dataset title as listed in the Tokyo Open Data Catalog. */
   titleJa: string;
@@ -102,6 +102,9 @@ export interface OpenDataCandidate {
   format?: string;
   /** How a future MINFO would keep this fresh — never fetched automatically today. */
   updatePlan: "batch" | "live";
+  status?: "active" | "candidate";
+  lookupIds?: readonly string[];
+  refresh?: "checked_snapshot" | "planned_batch" | "planned_live";
   /** "dataset" = a specific catalog entry; "searchTarget" = a catalog category to search. */
   kind: "dataset" | "searchTarget";
   /** Why this matters for MINFO users — shown in the user's language. */
@@ -119,13 +122,17 @@ export interface ExcludedLookupRecord { officialId: string; sourceName: string; 
 export interface LookupSnapshotMetadata { datasetId: LookupDatasetId; titleJa: string; catalogUrl: string; resourceId: string; resourceUrl: string; sourceId: string; license: string; encoding: string; retrievedAt: string; verifiedAt: string; updateFrequency: string; snapshot: true; /** User-facing records after deterministic exclusions. */ recordCount: number; sourceRecordCount: number; excludedRecordCount: number; excludedProvisionalRecordCount: number; excludedRecords: ExcludedLookupRecord[]; sourceColumns: string[]; normalizerVersion: 3 | 4; rawSha256: string; sourceOrganization?: string; resourceUrls?: string[]; sourceDataDate?: string; }
 export interface LookupSnapshot { metadata: LookupSnapshotMetadata; records: LookupRecord[]; }
 
+export type GarbageDatasetId = "shinjuku-garbage-sorting";
+export interface GarbageRecord { id: string; datasetId: GarbageDatasetId; sourceId: "shinjuku-garbage"; officialId: string; officialItem: string; searchKey: string; categoryId: string; officialCategory: string; officialNote?: string; }
+export interface GarbageSnapshot { metadata: { datasetId: GarbageDatasetId; titleJa: string; catalogUrl: string; resourceId: string; resourceUrl: string; packageId: string; sourceId: "shinjuku-garbage"; sourceOrganization: string; license: string; encoding: "UTF-8 BOM"; retrievedAt: string; verifiedAt: string; catalogMetadataUpdatedAt: string; updateFrequency: string; snapshot: true; recordCount: number; noteCount: number; sourceColumns: string[]; normalizerVersion: 1; rawSha256: string; }; records: GarbageRecord[]; }
+
 /** How an intent can be delivered without implying every source is live. */
 export type DeliveryKind = "static_guidance" | "structured_lookup" | "live_status" | "unsupported";
 export type ClaimLevel = "information" | "current_status" | "recommendation";
 export type ResearchStatus = "verified_content" | "catalog_url_required" | "implementation_pending";
 
 /**
- * A structured lookup that is deliberately not an OpenDataCandidate yet:
+ * A structured lookup that is deliberately not an Open Data registry entry yet:
  * it has no verified catalog URL, schema, or dataset freshness information.
  */
 export interface StructuredLookupMetadata {

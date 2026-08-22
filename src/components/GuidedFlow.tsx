@@ -10,6 +10,8 @@ import { deriveResultCards, ResultSequence } from "./ResultSequence";
 import { IconArrowRight } from "./icons";
 import { StructuredLookup } from "./StructuredLookup";
 import { isLookupDatasetId } from "@/lib/lookups";
+import { isGarbageDatasetId } from "@/lib/lookups";
+import { GarbageLookup } from "./GarbageLookup";
 import { getMessages } from "@/i18n/messages";
 
 type View = "question" | "loading" | "result" | "unsupported" | "structuredLookup";
@@ -176,6 +178,7 @@ export function GuidedFlow({ categoryId, onExit, initialTopicId, initialQuestion
   if (view === "structuredLookup" && resolution?.datasetCandidateId) {
     const lookup = STRUCTURED_LOOKUP_METADATA[resolution.datasetCandidateId];
     if (isLookupDatasetId(resolution.datasetCandidateId)) return <StructuredLookup key={resolution.datasetCandidateId} datasetId={resolution.datasetCandidateId} onBack={goBack} onStartOver={onExit} />;
+    if (isGarbageDatasetId(resolution.datasetCandidateId)) return <GarbageLookup onBack={goBack} onStartOver={onExit} />;
     // Static IDs never trigger a fetch. Missing metadata remains an honest preparing state.
     return <StructuredLookupCard lang={lang} lookup={lookup} headingRef={headingRef} onBack={goBack} onStartOver={onExit} />;
   }

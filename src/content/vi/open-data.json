@@ -34,5 +34,13 @@
   "tokyo-medical-welfare-group": {
     "titleGloss": "Y tế & phúc lợi (nhóm trong danh mục)",
     "note": "Nhóm 'y tế & phúc lợi' trong danh mục: đường tìm dữ liệu phòng khám và phúc lợi theo từng quận."
+  },
+  "shinjuku-medical-clinics": {
+    "titleGloss": "Phòng khám tại Shinjuku",
+    "note": "Ảnh chụp dữ liệu chính thức của Shinjuku được dùng cho chức năng tìm phòng khám của MINFO. Đây là danh bạ, không cho biết cơ sở đang mở cửa hay đang tiếp nhận bệnh nhân."
+  },
+  "tokyo-public-schools-2025": {
+    "titleGloss": "Danh sách trường công lập Tokyo",
+    "note": "MINFO lọc các trường ở Shinjuku từ một nguồn chính thức của Tokyo để dùng cho chức năng tìm trường tiểu học, trung học cơ sở và trung học phổ thông. Có tên trong danh sách không bảo đảm việc nhập học hoặc phân trường."
   }
 }

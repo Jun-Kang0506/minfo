@@ -34,5 +34,7 @@
   "tokyo-medical-welfare-group": {
     "titleGloss": "Medical & welfare: catalog category",
     "note": "The catalog's medical & welfare category: the search path for per-ward clinic and welfare datasets, which vary in naming."
-  }
+  },
+  "shinjuku-medical-clinics": { "titleGloss":"Shinjuku medical clinics", "note":"Official Shinjuku City clinic snapshot used by MINFO’s clinic lookup. It is a directory, not live opening or patient-acceptance information." },
+  "tokyo-public-schools-2025": { "titleGloss":"Tokyo public school lists", "note":"One official Tokyo source, filtered to Shinjuku, powers MINFO’s elementary, junior-high, and high-school lookups. A listing is not an enrollment or placement guarantee." }
 }

@@ -73,10 +73,11 @@
     ],
     "candidatesTitle": "Tokyo Open Data: candidate datasets",
     "candidatesSub": "Catalog entries and search targets MINFO plans to connect next, with what each would improve. None are fetched automatically yet.",
+    "activeTitle": "Active data in MINFO", "activeSub": "Checked official snapshots used in MINFO’s guided journeys.", "candidateTitle": "Candidate data", "candidateSub": "Reviewed official datasets not yet used in a MINFO journey.",
     "catalogCta": "Browse the Tokyo Open Data Catalog",
     "badges": {
       "curated": "Curated now",
-      "candidate": "Open-data candidate",
+      "active": "In MINFO", "candidate": "Candidate", "checkedSnapshot": "Checked snapshot", "plannedBatch": "Planned batch update",
       "batch": "Periodic · future batch",
       "live": "Time-sensitive · future API",
       "searchTarget": "Catalog search target"

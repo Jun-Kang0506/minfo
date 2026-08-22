@@ -73,10 +73,11 @@
     ],
     "candidatesTitle": "Tokyo Open Data: mga dataset ng kandidato",
     "candidatesSub": "Mga entry sa catalog at mga target sa paghahanap Plano ng MINFO na kumonekta sa susunod, kung ano ang mapapabuti ng bawat isa. Wala pang awtomatikong kinukuha.",
+    "activeTitle":"Data na ginagamit sa MINFO","activeSub":"Nasuring opisyal na snapshot na ginagamit sa mga gabay ng MINFO.","candidateTitle":"Kandidatong data","candidateSub":"Nasuring opisyal na data na hindi pa ginagamit sa gabay ng MINFO.",
     "catalogCta": "I-browse ang Tokyo Open Data Catalog",
     "badges": {
       "curated": "Na-curate ngayon",
-      "candidate": "Open-data na kandidato",
+      "active":"Ginagamit sa MINFO","candidate":"Kandidato","checkedSnapshot":"Nasuring snapshot ng data","plannedBatch":"Planong pana-panahong update",
       "batch": "Pana-panahon · batch sa hinaharap",
       "live": "Time-sensitive · hinaharap na API",
       "searchTarget": "Target sa paghahanap ng catalog"

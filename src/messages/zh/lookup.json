@@ -12,7 +12,24 @@
   "areaResults": "正在显示 {area} 的地点",
   "stop": "停止使用位置",
   "distance": "大致直线距离",
-  "mapHandoff": { "googleMaps": "Google Maps", "appleMaps": "Apple Maps", "close": "关闭", "directions": { "get": "获取路线", "chooseProvider": "选择地图", "googleMapsLabel": "使用 Google Maps 获取路线", "appleMapsLabel": "使用 Apple Maps 获取路线" }, "search": { "get": "在地图上查找", "chooseProvider": "选择地图进行搜索", "googleMapsLabel": "使用 Google Maps 搜索", "appleMapsLabel": "使用 Apple Maps 搜索", "notice": "此搜索使用设施的正式名称和地址。MINFO 不会添加您的位置。出发前请确认搜索结果是同一设施。" } },
+  "mapHandoff": {
+    "googleMaps": "Google Maps",
+    "appleMaps": "Apple Maps",
+    "close": "关闭",
+    "directions": {
+      "get": "获取路线",
+      "chooseProvider": "选择地图",
+      "googleMapsLabel": "使用 Google Maps 获取路线",
+      "appleMapsLabel": "使用 Apple Maps 获取路线"
+    },
+    "search": {
+      "get": "在地图上查找",
+      "chooseProvider": "选择地图进行搜索",
+      "googleMapsLabel": "使用 Google Maps 搜索",
+      "appleMapsLabel": "使用 Apple Maps 搜索",
+      "notice": "此搜索使用设施的正式名称和地址。MINFO 不会添加您的位置。出发前请确认搜索结果是同一设施。"
+    }
+  },
   "child": "此快照不显示空位、资格、费用、时间、入园受理或当前运营情况。请直接确认。",
   "evac": "这是位置数据，不是实时开放或状态。是否适合取决于灾害和官方指示。请另行查看当前官方警报。",
   "privacy": "您的位置只在此设备上使用，不会发送给 MINFO。",
@@ -34,11 +51,46 @@
   "nameReadingLabel": "名称读音",
   "officialJapaneseNameLabel": "正式日文名称",
   "ownershipLabel": "办学性质",
-  "directoryTitles": { "childcare": "托育设施", "evacuation": "紧急避难场所", "medical": "诊所", "elementarySchool": "小学", "juniorHighSchool": "初中", "highSchool": "高中" },
-  "ownership": { "public": "公立", "private": "私立" },
-  "governingBodies": { "shinjuku_municipal": "新宿区立", "tokyo_metropolitan": "东京都立" },
-  "facilityTypes": { "childrens_center": "儿童馆", "municipal_kindergarten": "区立幼儿园", "municipal_licensed_nursery": "区立认可保育园", "municipal_certified_childcare_center": "区立认定儿童园", "workplace_childcare": "单位内保育所", "childcare_room": "保育室", "family_daycare": "家庭式保育", "after_school_club": "课后儿童俱乐部", "private_kindergarten": "私立幼儿园", "private_licensed_nursery": "私立认可保育园", "private_certified_childcare_center": "私立认定儿童园", "evacuation_site": "避难场所", "clinic": "诊所", "elementary_school": "小学", "junior_high_school": "初中", "high_school": "高中" },
-  "datasetNotes": { "childcare": "此快照不显示空位、资格、费用、时间、入园受理或当前运营情况。请直接确认。", "evacuation": "这是位置数据，不是实时开放或状态。是否适合取决于灾害和官方指示。请另行查看当前官方警报。", "medical": "这是医疗机构目录快照，不显示实时情况。它不显示营业时间、是否接诊、语言支持、保险受理或专科医生信息。需要救护车请拨打119。", "school": "目录中列出学校并不保证分配、入学或录取。请联系学校或学校运营部门确认最新信息。" },
+  "directoryTitles": {
+    "childcare": "托育设施",
+    "evacuation": "紧急避难场所",
+    "medical": "诊所",
+    "elementarySchool": "小学",
+    "juniorHighSchool": "初中",
+    "highSchool": "高中"
+  },
+  "ownership": {
+    "public": "公立",
+    "private": "私立"
+  },
+  "governingBodies": {
+    "shinjuku_municipal": "新宿区立",
+    "tokyo_metropolitan": "东京都立"
+  },
+  "facilityTypes": {
+    "childrens_center": "儿童馆",
+    "municipal_kindergarten": "区立幼儿园",
+    "municipal_licensed_nursery": "区立认可保育园",
+    "municipal_certified_childcare_center": "区立认定儿童园",
+    "workplace_childcare": "单位内保育所",
+    "childcare_room": "保育室",
+    "family_daycare": "家庭式保育",
+    "after_school_club": "课后儿童俱乐部",
+    "private_kindergarten": "私立幼儿园",
+    "private_licensed_nursery": "私立认可保育园",
+    "private_certified_childcare_center": "私立认定儿童园",
+    "evacuation_site": "避难场所",
+    "clinic": "诊所",
+    "elementary_school": "小学",
+    "junior_high_school": "初中",
+    "high_school": "高中"
+  },
+  "datasetNotes": {
+    "childcare": "此快照不显示空位、资格、费用、时间、入园受理或当前运营情况。请直接确认。",
+    "evacuation": "这是位置数据，不是实时开放或状态。是否适合取决于灾害和官方指示。请另行查看当前官方警报。",
+    "medical": "这是医疗机构目录快照，不显示实时情况。它不显示营业时间、是否接诊、语言支持、保险受理或专科医生信息。需要救护车请拨打119。",
+    "school": "目录中列出学校并不保证分配、入学或录取。请联系学校或学校运营部门确认最新信息。"
+  },
   "preparing": {
     "shinjuku-childcare-facilities": {
       "title": "托育设施查询正在准备中。",
@@ -48,5 +100,30 @@
       "title": "避难场所查询正在准备中。",
       "body": "此准备中的查询不显示实时、开放或最近的避难场所。请查看官方防灾信息了解当前情况。"
     }
+  },
+  "garbage": {
+    "title": "查询物品的垃圾分类",
+    "intro": "输入您想丢弃的物品。",
+    "inputLabel": "中文或日文物品名称",
+    "placeholder": "例如：自行车 / 自転車",
+    "localizedItemLabel": "物品",
+    "checkJapaneseLabel": "请核对官方日文名称",
+    "trustNote": "MINFO 搜索助手不是官方翻译。分类信息来自新宿区官方日文开放数据。",
+    "search": "查询",
+    "loading": "正在加载官方垃圾分类数据…",
+    "unavailable": "目前无法使用垃圾分类数据。请查看官方数据或重试。",
+    "retry": "重试",
+    "multiple": "找到{count}个匹配结果。请选择您要查询的物品。",
+    "truncated": "共找到{count}个结果，现显示前{shown}个。请输入更多文字以缩小范围。",
+    "noMatch": "未找到“{query}”。请尝试更短或不同的名称，也可以输入官方日文物品名称。",
+    "chooseItemLabel": "选择{item}",
+    "resultTitle": "垃圾分类结果",
+    "officialItemLabel": "官方日文物品名称",
+    "categoryLabel": "分类",
+    "officialCategoryLabel": "官方日文分类",
+    "officialNoteLabel": "官方备注（日文）",
+    "searchAgain": "重新查询",
+    "sourceLink": "查看官方数据",
+    "disclaimer": "这是经过确认的官方数据快照，不是实时收集日服务。丢弃前请查看官方备注和官方页面。"
   }
 }

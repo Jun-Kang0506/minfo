@@ -23,6 +23,7 @@ export const STRUCTURED_LOOKUP_METADATA: Record<string, StructuredLookupMetadata
 };
 
 export const INTENT_DELIVERY_METADATA: Record<string, IntentDeliveryMetadata> = {
+  garbage_item_lookup: { intentId: "garbage_item_lookup", deliveryKind: "structured_lookup", claimLevel: "information", sourceIds: ["shinjuku-garbage"], datasetCandidateIds: ["shinjuku-garbage-sorting"], verifiedAt: "2026-08-22", freshnessPolicy: "checked-in official snapshot; not collection-day service", researchStatus: "verified_content" },
   my_number_overview: { intentId: "my_number_overview", deliveryKind: "static_guidance", claimLevel: "information", sourceIds: ["shinjuku-my-number", "my-number-card-portal"], datasetCandidateIds: [], verifiedAt: "2026-08-22", freshnessPolicy: "curated official guidance", researchStatus: "verified_content" },
   my_number_apply_card: { intentId: "my_number_apply_card", deliveryKind: "static_guidance", claimLevel: "information", sourceIds: ["shinjuku-my-number", "my-number-card-portal"], datasetCandidateIds: [], verifiedAt: "2026-08-22", freshnessPolicy: "curated official guidance", researchStatus: "verified_content" },
   my_number_lost_card: { intentId: "my_number_lost_card", deliveryKind: "static_guidance", claimLevel: "information", sourceIds: ["my-number-card-contact", "my-number-card-portal"], datasetCandidateIds: [], verifiedAt: "2026-08-22", freshnessPolicy: "official contact guidance", researchStatus: "verified_content" },

@@ -12,7 +12,24 @@
   "areaResults": "{area}의 장소를 표시하고 있습니다",
   "stop": "위치 사용 중지",
   "distance": "대략적인 직선 거리",
-  "mapHandoff": { "googleMaps": "Google Maps", "appleMaps": "Apple Maps", "close": "닫기", "directions": { "get": "길찾기", "chooseProvider": "지도 앱 선택", "googleMapsLabel": "Google Maps로 길찾기", "appleMapsLabel": "Apple Maps로 길찾기" }, "search": { "get": "지도에서 찾기", "chooseProvider": "검색할 지도 선택", "googleMapsLabel": "Google Maps에서 검색", "appleMapsLabel": "Apple Maps에서 검색", "notice": "이 검색은 시설의 공식 이름과 주소를 사용합니다. MINFO는 사용자의 위치를 추가하지 않습니다. 출발 전에 같은 시설인지 확인하세요." } },
+  "mapHandoff": {
+    "googleMaps": "Google Maps",
+    "appleMaps": "Apple Maps",
+    "close": "닫기",
+    "directions": {
+      "get": "길찾기",
+      "chooseProvider": "지도 앱 선택",
+      "googleMapsLabel": "Google Maps로 길찾기",
+      "appleMapsLabel": "Apple Maps로 길찾기"
+    },
+    "search": {
+      "get": "지도에서 찾기",
+      "chooseProvider": "검색할 지도 선택",
+      "googleMapsLabel": "Google Maps에서 검색",
+      "appleMapsLabel": "Apple Maps에서 검색",
+      "notice": "이 검색은 시설의 공식 이름과 주소를 사용합니다. MINFO는 사용자의 위치를 추가하지 않습니다. 출발 전에 같은 시설인지 확인하세요."
+    }
+  },
   "child": "이 스냅샷에는 빈자리, 자격, 요금, 시간, 입소 접수 또는 현재 운영 정보가 없습니다. 직접 확인하세요.",
   "evac": "이는 위치 데이터이며 실시간 개설이나 상태가 아닙니다. 적합성은 재난과 공식 지시에 따라 달라집니다. 현재 공식 경보는 따로 확인하세요.",
   "privacy": "위치 정보는 이 기기에서만 사용되며 MINFO로 전송되지 않습니다.",
@@ -34,11 +51,46 @@
   "nameReadingLabel": "이름 읽는 법",
   "officialJapaneseNameLabel": "공식 일본어 이름",
   "ownershipLabel": "설립 구분",
-  "directoryTitles": { "childcare": "보육 시설", "evacuation": "긴급 대피 장소", "medical": "의원", "elementarySchool": "초등학교", "juniorHighSchool": "중학교", "highSchool": "고등학교" },
-  "ownership": { "public": "공립", "private": "사립" },
-  "governingBodies": { "shinjuku_municipal": "신주쿠구립", "tokyo_metropolitan": "도쿄도립" },
-  "facilityTypes": { "childrens_center": "아동관", "municipal_kindergarten": "구립 유치원", "municipal_licensed_nursery": "구립 인가 보육원", "municipal_certified_childcare_center": "구립 인정 어린이원", "workplace_childcare": "사업장 내 보육소", "childcare_room": "보육실", "family_daycare": "가정 보육", "after_school_club": "방과 후 아동 클럽", "private_kindergarten": "사립 유치원", "private_licensed_nursery": "사립 인가 보육원", "private_certified_childcare_center": "사립 인정 어린이원", "evacuation_site": "대피 장소", "clinic": "의원", "elementary_school": "초등학교", "junior_high_school": "중학교", "high_school": "고등학교" },
-  "datasetNotes": { "childcare": "이 스냅샷에는 빈자리, 자격, 요금, 시간, 입소 접수 또는 현재 운영 정보가 없습니다. 직접 확인하세요.", "evacuation": "이는 위치 데이터이며 실시간 개설이나 상태가 아닙니다. 적합성은 재난과 공식 지시에 따라 달라집니다. 현재 공식 경보는 따로 확인하세요.", "medical": "이것은 의료기관 목록 스냅샷이며 실시간 이용 가능 정보가 아닙니다. 진료 시간, 진료 가능 여부, 언어 지원, 보험 수용 또는 전문의 정보는 표시되지 않습니다. 구급차는 119로 전화하세요.", "school": "이 목록에 학교가 있다고 해서 배정, 입학 또는 입학 허가가 보장되는 것은 아닙니다. 최신 정보는 학교 또는 학교운영과에 문의하세요." },
+  "directoryTitles": {
+    "childcare": "보육 시설",
+    "evacuation": "긴급 대피 장소",
+    "medical": "의원",
+    "elementarySchool": "초등학교",
+    "juniorHighSchool": "중학교",
+    "highSchool": "고등학교"
+  },
+  "ownership": {
+    "public": "공립",
+    "private": "사립"
+  },
+  "governingBodies": {
+    "shinjuku_municipal": "신주쿠구립",
+    "tokyo_metropolitan": "도쿄도립"
+  },
+  "facilityTypes": {
+    "childrens_center": "아동관",
+    "municipal_kindergarten": "구립 유치원",
+    "municipal_licensed_nursery": "구립 인가 보육원",
+    "municipal_certified_childcare_center": "구립 인정 어린이원",
+    "workplace_childcare": "사업장 내 보육소",
+    "childcare_room": "보육실",
+    "family_daycare": "가정 보육",
+    "after_school_club": "방과 후 아동 클럽",
+    "private_kindergarten": "사립 유치원",
+    "private_licensed_nursery": "사립 인가 보육원",
+    "private_certified_childcare_center": "사립 인정 어린이원",
+    "evacuation_site": "대피 장소",
+    "clinic": "의원",
+    "elementary_school": "초등학교",
+    "junior_high_school": "중학교",
+    "high_school": "고등학교"
+  },
+  "datasetNotes": {
+    "childcare": "이 스냅샷에는 빈자리, 자격, 요금, 시간, 입소 접수 또는 현재 운영 정보가 없습니다. 직접 확인하세요.",
+    "evacuation": "이는 위치 데이터이며 실시간 개설이나 상태가 아닙니다. 적합성은 재난과 공식 지시에 따라 달라집니다. 현재 공식 경보는 따로 확인하세요.",
+    "medical": "이것은 의료기관 목록 스냅샷이며 실시간 이용 가능 정보가 아닙니다. 진료 시간, 진료 가능 여부, 언어 지원, 보험 수용 또는 전문의 정보는 표시되지 않습니다. 구급차는 119로 전화하세요.",
+    "school": "이 목록에 학교가 있다고 해서 배정, 입학 또는 입학 허가가 보장되는 것은 아닙니다. 최신 정보는 학교 또는 학교운영과에 문의하세요."
+  },
   "preparing": {
     "shinjuku-childcare-facilities": {
       "title": "보육 시설 조회를 준비 중입니다.",
@@ -48,5 +100,30 @@
       "title": "대피 장소 조회를 준비 중입니다.",
       "body": "이 준비 중인 조회는 실시간·개설 중·가장 가까운 대피 장소를 표시하지 않습니다. 현재 상황은 공식 재난 정보를 확인하세요."
     }
+  },
+  "garbage": {
+    "title": "품목의 쓰레기 분류 찾기",
+    "intro": "버리려는 물건을 입력하세요.",
+    "inputLabel": "한국어 또는 일본어 품목명",
+    "placeholder": "예: 자전거 / 自転車",
+    "localizedItemLabel": "품목",
+    "checkJapaneseLabel": "공식 일본어 이름을 확인하세요",
+    "trustNote": "MINFO 검색 도우미는 공식 번역이 아닙니다. 분류 정보는 신주쿠구의 공식 일본어 오픈 데이터에서 제공합니다.",
+    "search": "검색",
+    "loading": "공식 분류 데이터를 불러오는 중…",
+    "unavailable": "현재 분류 데이터를 사용할 수 없습니다. 공식 데이터를 확인하거나 다시 시도하세요.",
+    "retry": "다시 시도",
+    "multiple": "{count}개의 일치 항목을 찾았습니다. 찾는 품목을 선택하세요.",
+    "truncated": "전체 {count}개 중 처음 {shown}개를 표시합니다. 검색 범위를 좁히려면 글자를 더 입력하세요.",
+    "noMatch": "“{query}”을 찾지 못했습니다. 더 짧거나 다른 이름으로 검색하세요. 공식 일본어 품목명도 사용할 수 있습니다.",
+    "chooseItemLabel": "{item} 선택",
+    "resultTitle": "분류 결과",
+    "officialItemLabel": "공식 일본어 품목명",
+    "categoryLabel": "분류",
+    "officialCategoryLabel": "공식 일본어 분류",
+    "officialNoteLabel": "공식 비고(일본어)",
+    "searchAgain": "다시 검색",
+    "sourceLink": "공식 데이터 보기",
+    "disclaimer": "확인된 공식 데이터 스냅샷이며 실시간 수거 요일 서비스가 아닙니다. 버리기 전에 공식 비고와 공식 페이지를 확인하세요."
   }
 }

@@ -73,9 +73,10 @@
     "garbage": {
       "title": "Ano ang kailangan mo ng tulong?",
       "options": [
+        { "label": "Paano pag-uuriin ang isang partikular na bagay?", "request": "Paano pag-uuriin ang isang partikular na bagay?" },
         {
-          "label": "Pag-uuri, araw ng koleksyon, o malalaking basura",
-          "request": "Pag-uuri, araw ng koleksyon, o malalaking basura"
+          "label": "Araw ng koleksyon, malalaking basura, o pangkalahatang tuntunin",
+          "request": "Araw ng koleksyon, malalaking basura, o pangkalahatang tuntunin"
         }
       ]
     },

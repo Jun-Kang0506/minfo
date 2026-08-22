@@ -73,10 +73,11 @@
     ],
     "candidatesTitle": "도쿄 오픈데이터: 후보 데이터셋",
     "candidatesSub": "MINFO가 다음에 연결하려는 카탈로그 항목과 검색 대상, 그리고 각각 무엇이 좋아지는지입니다. 아직 자동으로 가져오지 않습니다.",
+    "activeTitle": "MINFO에서 사용 중인 데이터", "activeSub": "MINFO 안내 과정에서 사용하는 확인된 공식 데이터입니다.", "candidateTitle": "후보 데이터", "candidateSub": "확인했지만 아직 MINFO 안내 과정에서 사용하지 않는 공식 데이터입니다.",
     "catalogCta": "도쿄 오픈데이터 카탈로그 보기",
     "badges": {
       "curated": "현재 수동 관리",
-      "candidate": "오픈데이터 후보",
+      "active": "MINFO에서 사용 중", "candidate": "후보", "checkedSnapshot": "확인된 데이터 스냅샷", "plannedBatch": "향후 정기 업데이트",
       "batch": "주기적 변경 · 향후 배치",
       "live": "시간 민감 · 향후 API",
       "searchTarget": "카탈로그 검색 대상"

@@ -1,0 +1,1708 @@
+{
+  "schemaVersion": 1,
+  "collisions": [
+    {
+      "locale": "en",
+      "normalizedKey": "cookingoil",
+      "officialIds": [
+        "131041S00008",
+        "131041S00185"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00008",
+          "field": "primary",
+          "value": "Cooking oil"
+        },
+        {
+          "officialId": "131041S00185",
+          "field": "primary",
+          "value": "cooking oil"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "en",
+      "normalizedKey": "thermometer",
+      "officialIds": [
+        "131041S00063",
+        "131041S00242"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00063",
+          "field": "primary",
+          "value": "thermometer"
+        },
+        {
+          "officialId": "131041S00242",
+          "field": "primary",
+          "value": "thermometer"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "en",
+      "normalizedKey": "fireproofsafe",
+      "officialIds": [
+        "131041S00113",
+        "131041S00243"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00113",
+          "field": "primary",
+          "value": "Fireproof safe"
+        },
+        {
+          "officialId": "131041S00243",
+          "field": "primary",
+          "value": "fireproof safe"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "en",
+      "normalizedKey": "magnet",
+      "officialIds": [
+        "131041S00195",
+        "131041S00425"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00195",
+          "field": "primary",
+          "value": "magnet"
+        },
+        {
+          "officialId": "131041S00425",
+          "field": "primary",
+          "value": "magnet"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "en",
+      "normalizedKey": "door",
+      "officialIds": [
+        "131041S00299",
+        "131041S00304"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00299",
+          "field": "primary",
+          "value": "door"
+        },
+        {
+          "officialId": "131041S00304",
+          "field": "primary",
+          "value": "door"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "en",
+      "normalizedKey": "paint",
+      "officialIds": [
+        "131041S00301",
+        "131041S00397"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00301",
+          "field": "primary",
+          "value": "paint"
+        },
+        {
+          "officialId": "131041S00397",
+          "field": "primary",
+          "value": "paint"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "en",
+      "normalizedKey": "knife",
+      "officialIds": [
+        "131041S00309",
+        "131041S00402"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00309",
+          "field": "primary",
+          "value": "knife"
+        },
+        {
+          "officialId": "131041S00402",
+          "field": "primary",
+          "value": "knife"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "en",
+      "normalizedKey": "scissors",
+      "officialIds": [
+        "131041S00327",
+        "131041S00328"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00327",
+          "field": "alias",
+          "value": "scissors"
+        },
+        {
+          "officialId": "131041S00328",
+          "field": "alias",
+          "value": "scissors"
+        }
+      ],
+      "reason": "same_base_qualified",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "zh",
+      "normalizedKey": "油(机械用)",
+      "officialIds": [
+        "131041S00007",
+        "131041S00048"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00007",
+          "field": "primary",
+          "value": "油（机械用）"
+        },
+        {
+          "officialId": "131041S00048",
+          "field": "primary",
+          "value": "油（机械用）"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "zh",
+      "normalizedKey": "油(食用)",
+      "officialIds": [
+        "131041S00008",
+        "131041S00049"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00008",
+          "field": "primary",
+          "value": "油（食用）"
+        },
+        {
+          "officialId": "131041S00049",
+          "field": "primary",
+          "value": "油（食用）"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "zh",
+      "normalizedKey": "温度计",
+      "officialIds": [
+        "131041S00063",
+        "131041S00242"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00063",
+          "field": "primary",
+          "value": "温度计"
+        },
+        {
+          "officialId": "131041S00242",
+          "field": "primary",
+          "value": "温度计"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "zh",
+      "normalizedKey": "手提箱",
+      "officialIds": [
+        "131041S00111",
+        "131041S00229"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00111",
+          "field": "primary",
+          "value": "手提箱"
+        },
+        {
+          "officialId": "131041S00229",
+          "field": "primary",
+          "value": "手提箱"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "zh",
+      "normalizedKey": "防火保险箱",
+      "officialIds": [
+        "131041S00113",
+        "131041S00243"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00113",
+          "field": "primary",
+          "value": "防火保险箱"
+        },
+        {
+          "officialId": "131041S00243",
+          "field": "primary",
+          "value": "防火保险箱"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "zh",
+      "normalizedKey": "地毯",
+      "officialIds": [
+        "131041S00174",
+        "131041S00197"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00174",
+          "field": "primary",
+          "value": "地毯"
+        },
+        {
+          "officialId": "131041S00197",
+          "field": "primary",
+          "value": "地毯"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "zh",
+      "normalizedKey": "磁铁",
+      "officialIds": [
+        "131041S00195",
+        "131041S00425"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00195",
+          "field": "primary",
+          "value": "磁铁"
+        },
+        {
+          "officialId": "131041S00425",
+          "field": "primary",
+          "value": "磁铁"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "zh",
+      "normalizedKey": "门",
+      "officialIds": [
+        "131041S00299",
+        "131041S00304"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00299",
+          "field": "primary",
+          "value": "门"
+        },
+        {
+          "officialId": "131041S00304",
+          "field": "primary",
+          "value": "门"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "zh",
+      "normalizedKey": "油漆",
+      "officialIds": [
+        "131041S00301",
+        "131041S00397"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00301",
+          "field": "primary",
+          "value": "油漆"
+        },
+        {
+          "officialId": "131041S00397",
+          "field": "primary",
+          "value": "油漆"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "zh",
+      "normalizedKey": "刀",
+      "officialIds": [
+        "131041S00309",
+        "131041S00402"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00309",
+          "field": "primary",
+          "value": "刀"
+        },
+        {
+          "officialId": "131041S00402",
+          "field": "primary",
+          "value": "刀"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "zh",
+      "normalizedKey": "剪刀",
+      "officialIds": [
+        "131041S00327",
+        "131041S00328"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00327",
+          "field": "alias",
+          "value": "剪刀"
+        },
+        {
+          "officialId": "131041S00328",
+          "field": "alias",
+          "value": "剪刀"
+        }
+      ],
+      "reason": "same_base_qualified",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "zh",
+      "normalizedKey": "浴缸盖",
+      "officialIds": [
+        "131041S00376",
+        "131041S00454"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00376",
+          "field": "primary",
+          "value": "浴缸盖"
+        },
+        {
+          "officialId": "131041S00454",
+          "field": "primary",
+          "value": "浴缸盖"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "zh",
+      "normalizedKey": "床垫",
+      "officialIds": [
+        "131041S00387",
+        "131041S00428"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00387",
+          "field": "primary",
+          "value": "床垫"
+        },
+        {
+          "officialId": "131041S00428",
+          "field": "primary",
+          "value": "床垫"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "ko",
+      "normalizedKey": "오일(기계용)",
+      "officialIds": [
+        "131041S00007",
+        "131041S00048"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00007",
+          "field": "primary",
+          "value": "오일(기계용)"
+        },
+        {
+          "officialId": "131041S00048",
+          "field": "primary",
+          "value": "오일(기계용)"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "ko",
+      "normalizedKey": "자석",
+      "officialIds": [
+        "131041S00195",
+        "131041S00425"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00195",
+          "field": "primary",
+          "value": "자석"
+        },
+        {
+          "officialId": "131041S00425",
+          "field": "primary",
+          "value": "자석"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "ko",
+      "normalizedKey": "전기카펫",
+      "officialIds": [
+        "131041S00283",
+        "131041S00404"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00283",
+          "field": "primary",
+          "value": "전기 카펫"
+        },
+        {
+          "officialId": "131041S00404",
+          "field": "primary",
+          "value": "전기 카펫"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "ko",
+      "normalizedKey": "문",
+      "officialIds": [
+        "131041S00299",
+        "131041S00304"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00299",
+          "field": "primary",
+          "value": "문"
+        },
+        {
+          "officialId": "131041S00304",
+          "field": "primary",
+          "value": "문"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "ko",
+      "normalizedKey": "페인트",
+      "officialIds": [
+        "131041S00301",
+        "131041S00397"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00301",
+          "field": "primary",
+          "value": "페인트"
+        },
+        {
+          "officialId": "131041S00397",
+          "field": "primary",
+          "value": "페인트"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "ko",
+      "normalizedKey": "가위",
+      "officialIds": [
+        "131041S00327",
+        "131041S00328"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00327",
+          "field": "alias",
+          "value": "가위"
+        },
+        {
+          "officialId": "131041S00328",
+          "field": "alias",
+          "value": "가위"
+        }
+      ],
+      "reason": "same_base_qualified",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "ko",
+      "normalizedKey": "빨랫줄",
+      "officialIds": [
+        "131041S00444",
+        "131041S00445"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00444",
+          "field": "primary",
+          "value": "빨랫줄"
+        },
+        {
+          "officialId": "131041S00445",
+          "field": "primary",
+          "value": "빨랫줄"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "vi",
+      "normalizedKey": "dầu(chomáymóc)",
+      "officialIds": [
+        "131041S00007",
+        "131041S00048"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00007",
+          "field": "primary",
+          "value": "Dầu (cho máy móc)"
+        },
+        {
+          "officialId": "131041S00048",
+          "field": "primary",
+          "value": "Dầu (cho máy móc)"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "vi",
+      "normalizedKey": "dầu(ănđược)",
+      "officialIds": [
+        "131041S00008",
+        "131041S00049"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00008",
+          "field": "primary",
+          "value": "dầu (ăn được)"
+        },
+        {
+          "officialId": "131041S00049",
+          "field": "primary",
+          "value": "Dầu (ăn được)"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "vi",
+      "normalizedKey": "vánlướtsóng",
+      "officialIds": [
+        "131041S00027",
+        "131041S00169"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00027",
+          "field": "primary",
+          "value": "ván lướt sóng"
+        },
+        {
+          "officialId": "131041S00169",
+          "field": "primary",
+          "value": "ván lướt sóng"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "vi",
+      "normalizedKey": "nhiệtkế",
+      "officialIds": [
+        "131041S00063",
+        "131041S00242"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00063",
+          "field": "primary",
+          "value": "nhiệt kế"
+        },
+        {
+          "officialId": "131041S00242",
+          "field": "primary",
+          "value": "nhiệt kế"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "vi",
+      "normalizedKey": "namchâm",
+      "officialIds": [
+        "131041S00195",
+        "131041S00425"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00195",
+          "field": "primary",
+          "value": "nam châm"
+        },
+        {
+          "officialId": "131041S00425",
+          "field": "primary",
+          "value": "nam châm"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "vi",
+      "normalizedKey": "xeđẩy",
+      "officialIds": [
+        "131041S00252",
+        "131041S00388",
+        "131041S00481"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00252",
+          "field": "primary",
+          "value": "xe đẩy"
+        },
+        {
+          "officialId": "131041S00388",
+          "field": "primary",
+          "value": "xe đẩy"
+        },
+        {
+          "officialId": "131041S00481",
+          "field": "primary",
+          "value": "Xe đẩy"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "vi",
+      "normalizedKey": "bàn",
+      "officialIds": [
+        "131041S00264",
+        "131041S00277"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00264",
+          "field": "primary",
+          "value": "bàn"
+        },
+        {
+          "officialId": "131041S00277",
+          "field": "primary",
+          "value": "bàn"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "vi",
+      "normalizedKey": "cửa",
+      "officialIds": [
+        "131041S00299",
+        "131041S00304"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00299",
+          "field": "primary",
+          "value": "cửa"
+        },
+        {
+          "officialId": "131041S00304",
+          "field": "primary",
+          "value": "cửa"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "vi",
+      "normalizedKey": "sơn",
+      "officialIds": [
+        "131041S00301",
+        "131041S00397"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00301",
+          "field": "primary",
+          "value": "sơn"
+        },
+        {
+          "officialId": "131041S00397",
+          "field": "primary",
+          "value": "sơn"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "vi",
+      "normalizedKey": "condao",
+      "officialIds": [
+        "131041S00309",
+        "131041S00402"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00309",
+          "field": "primary",
+          "value": "con dao"
+        },
+        {
+          "officialId": "131041S00402",
+          "field": "primary",
+          "value": "con dao"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "vi",
+      "normalizedKey": "kéo",
+      "officialIds": [
+        "131041S00327",
+        "131041S00328"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00327",
+          "field": "alias",
+          "value": "kéo"
+        },
+        {
+          "officialId": "131041S00328",
+          "field": "alias",
+          "value": "kéo"
+        }
+      ],
+      "reason": "same_base_qualified",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "vi",
+      "normalizedKey": "nắpbồntắm",
+      "officialIds": [
+        "131041S00376",
+        "131041S00454"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00376",
+          "field": "primary",
+          "value": "nắp bồn tắm"
+        },
+        {
+          "officialId": "131041S00454",
+          "field": "primary",
+          "value": "nắp bồn tắm"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "ne",
+      "normalizedKey": "मेसिनकोतेल",
+      "officialIds": [
+        "131041S00007",
+        "131041S00048"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00007",
+          "field": "primary",
+          "value": "मेसिनको तेल"
+        },
+        {
+          "officialId": "131041S00048",
+          "field": "primary",
+          "value": "मेसिनको तेल"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "ne",
+      "normalizedKey": "खानेतेल",
+      "officialIds": [
+        "131041S00008",
+        "131041S00049",
+        "131041S00185"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00008",
+          "field": "primary",
+          "value": "खाने तेल"
+        },
+        {
+          "officialId": "131041S00049",
+          "field": "primary",
+          "value": "खाने तेल"
+        },
+        {
+          "officialId": "131041S00185",
+          "field": "primary",
+          "value": "खाने तेल"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "ne",
+      "normalizedKey": "इलेक्ट्रोनिकअर्गन",
+      "officialIds": [
+        "131041S00043",
+        "131041S00290"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00043",
+          "field": "primary",
+          "value": "इलेक्ट्रोनिक अर्गन"
+        },
+        {
+          "officialId": "131041S00290",
+          "field": "primary",
+          "value": "इलेक्ट्रोनिक अर्गन"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "ne",
+      "normalizedKey": "थर्मोमिटर",
+      "officialIds": [
+        "131041S00063",
+        "131041S00242"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00063",
+          "field": "primary",
+          "value": "थर्मोमिटर"
+        },
+        {
+          "officialId": "131041S00242",
+          "field": "primary",
+          "value": "थर्मोमिटर"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "ne",
+      "normalizedKey": "सुटकेस",
+      "officialIds": [
+        "131041S00111",
+        "131041S00229"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00111",
+          "field": "primary",
+          "value": "सुटकेस"
+        },
+        {
+          "officialId": "131041S00229",
+          "field": "primary",
+          "value": "सुटकेस"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "ne",
+      "normalizedKey": "अग्निरोधीसेफ",
+      "officialIds": [
+        "131041S00113",
+        "131041S00243"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00113",
+          "field": "primary",
+          "value": "अग्निरोधी सेफ"
+        },
+        {
+          "officialId": "131041S00243",
+          "field": "primary",
+          "value": "अग्निरोधी सेफ"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "ne",
+      "normalizedKey": "बिजुलीकोतार",
+      "officialIds": [
+        "131041S00156",
+        "131041S00285"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00156",
+          "field": "primary",
+          "value": "बिजुलीको तार"
+        },
+        {
+          "officialId": "131041S00285",
+          "field": "primary",
+          "value": "बिजुलीको तार"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "ne",
+      "normalizedKey": "चुम्बक",
+      "officialIds": [
+        "131041S00195",
+        "131041S00425"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00195",
+          "field": "primary",
+          "value": "चुम्बक"
+        },
+        {
+          "officialId": "131041S00425",
+          "field": "primary",
+          "value": "चुम्बक"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "ne",
+      "normalizedKey": "ढोका",
+      "officialIds": [
+        "131041S00299",
+        "131041S00304"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00299",
+          "field": "primary",
+          "value": "ढोका"
+        },
+        {
+          "officialId": "131041S00304",
+          "field": "primary",
+          "value": "ढोका"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "ne",
+      "normalizedKey": "कैंची",
+      "officialIds": [
+        "131041S00327",
+        "131041S00328"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00327",
+          "field": "alias",
+          "value": "कैंची"
+        },
+        {
+          "officialId": "131041S00328",
+          "field": "alias",
+          "value": "कैंची"
+        }
+      ],
+      "reason": "same_base_qualified",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "tl",
+      "normalizedKey": "langisngmakina",
+      "officialIds": [
+        "131041S00007",
+        "131041S00048"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00007",
+          "field": "primary",
+          "value": "Langis ng makina"
+        },
+        {
+          "officialId": "131041S00048",
+          "field": "primary",
+          "value": "Langis ng makina"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "tl",
+      "normalizedKey": "mantika",
+      "officialIds": [
+        "131041S00008",
+        "131041S00049",
+        "131041S00185"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00008",
+          "field": "primary",
+          "value": "Mantika"
+        },
+        {
+          "officialId": "131041S00049",
+          "field": "primary",
+          "value": "Mantika"
+        },
+        {
+          "officialId": "131041S00185",
+          "field": "primary",
+          "value": "Mantika"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "tl",
+      "normalizedKey": "electronicorgan",
+      "officialIds": [
+        "131041S00043",
+        "131041S00290"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00043",
+          "field": "primary",
+          "value": "Electronic organ"
+        },
+        {
+          "officialId": "131041S00290",
+          "field": "primary",
+          "value": "Electronic organ"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "tl",
+      "normalizedKey": "maleta",
+      "officialIds": [
+        "131041S00111",
+        "131041S00229"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00111",
+          "field": "primary",
+          "value": "Maleta"
+        },
+        {
+          "officialId": "131041S00229",
+          "field": "primary",
+          "value": "Maleta"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "tl",
+      "normalizedKey": "fireproofsafe",
+      "officialIds": [
+        "131041S00113",
+        "131041S00243"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00113",
+          "field": "primary",
+          "value": "Fireproof safe"
+        },
+        {
+          "officialId": "131041S00243",
+          "field": "primary",
+          "value": "Fireproof safe"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "tl",
+      "normalizedKey": "kablengkuryente",
+      "officialIds": [
+        "131041S00156",
+        "131041S00285"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00156",
+          "field": "primary",
+          "value": "Kable ng kuryente"
+        },
+        {
+          "officialId": "131041S00285",
+          "field": "primary",
+          "value": "Kable ng kuryente"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "tl",
+      "normalizedKey": "magnet",
+      "officialIds": [
+        "131041S00195",
+        "131041S00425"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00195",
+          "field": "primary",
+          "value": "Magnet"
+        },
+        {
+          "officialId": "131041S00425",
+          "field": "primary",
+          "value": "Magnet"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "tl",
+      "normalizedKey": "mesa",
+      "officialIds": [
+        "131041S00264",
+        "131041S00277"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00264",
+          "field": "primary",
+          "value": "Mesa"
+        },
+        {
+          "officialId": "131041S00277",
+          "field": "primary",
+          "value": "Mesa"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "tl",
+      "normalizedKey": "pinto",
+      "officialIds": [
+        "131041S00299",
+        "131041S00304"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00299",
+          "field": "primary",
+          "value": "Pinto"
+        },
+        {
+          "officialId": "131041S00304",
+          "field": "primary",
+          "value": "Pinto"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "tl",
+      "normalizedKey": "pintura",
+      "officialIds": [
+        "131041S00301",
+        "131041S00397"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00301",
+          "field": "primary",
+          "value": "Pintura"
+        },
+        {
+          "officialId": "131041S00397",
+          "field": "primary",
+          "value": "Pintura"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "tl",
+      "normalizedKey": "gunting",
+      "officialIds": [
+        "131041S00327",
+        "131041S00328"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00327",
+          "field": "alias",
+          "value": "gunting"
+        },
+        {
+          "officialId": "131041S00328",
+          "field": "alias",
+          "value": "gunting"
+        }
+      ],
+      "reason": "same_base_qualified",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "tl",
+      "normalizedKey": "mattress",
+      "officialIds": [
+        "131041S00387",
+        "131041S00428"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00387",
+          "field": "primary",
+          "value": "Mattress"
+        },
+        {
+          "officialId": "131041S00428",
+          "field": "primary",
+          "value": "Mattress"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "bn",
+      "normalizedKey": "যন্ত্রেরতেল",
+      "officialIds": [
+        "131041S00007",
+        "131041S00048"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00007",
+          "field": "primary",
+          "value": "যন্ত্রের তেল"
+        },
+        {
+          "officialId": "131041S00048",
+          "field": "primary",
+          "value": "যন্ত্রের তেল"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "bn",
+      "normalizedKey": "খাবারতেল",
+      "officialIds": [
+        "131041S00008",
+        "131041S00049",
+        "131041S00185"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00008",
+          "field": "primary",
+          "value": "খাবার তেল"
+        },
+        {
+          "officialId": "131041S00049",
+          "field": "primary",
+          "value": "খাবার তেল"
+        },
+        {
+          "officialId": "131041S00185",
+          "field": "primary",
+          "value": "খাবার তেল"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "bn",
+      "normalizedKey": "ইলেকট্রনিকঅর্গান",
+      "officialIds": [
+        "131041S00043",
+        "131041S00290"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00043",
+          "field": "primary",
+          "value": "ইলেকট্রনিক অর্গান"
+        },
+        {
+          "officialId": "131041S00290",
+          "field": "primary",
+          "value": "ইলেকট্রনিক অর্গান"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "bn",
+      "normalizedKey": "থার্মোমিটার",
+      "officialIds": [
+        "131041S00063",
+        "131041S00242"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00063",
+          "field": "primary",
+          "value": "থার্মোমিটার"
+        },
+        {
+          "officialId": "131041S00242",
+          "field": "primary",
+          "value": "থার্মোমিটার"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "bn",
+      "normalizedKey": "স্যুটকেস",
+      "officialIds": [
+        "131041S00111",
+        "131041S00229"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00111",
+          "field": "primary",
+          "value": "স্যুটকেস"
+        },
+        {
+          "officialId": "131041S00229",
+          "field": "primary",
+          "value": "স্যুটকেস"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "bn",
+      "normalizedKey": "অগ্নিরোধীসেফ",
+      "officialIds": [
+        "131041S00113",
+        "131041S00243"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00113",
+          "field": "primary",
+          "value": "অগ্নিরোধী সেফ"
+        },
+        {
+          "officialId": "131041S00243",
+          "field": "primary",
+          "value": "অগ্নিরোধী সেফ"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "bn",
+      "normalizedKey": "চুম্বক",
+      "officialIds": [
+        "131041S00195",
+        "131041S00425"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00195",
+          "field": "primary",
+          "value": "চুম্বক"
+        },
+        {
+          "officialId": "131041S00425",
+          "field": "primary",
+          "value": "চুম্বক"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "bn",
+      "normalizedKey": "দরজা",
+      "officialIds": [
+        "131041S00299",
+        "131041S00304"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00299",
+          "field": "primary",
+          "value": "দরজা"
+        },
+        {
+          "officialId": "131041S00304",
+          "field": "primary",
+          "value": "দরজা"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "bn",
+      "normalizedKey": "কাঁচি",
+      "officialIds": [
+        "131041S00327",
+        "131041S00328"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00327",
+          "field": "alias",
+          "value": "কাঁচি"
+        },
+        {
+          "officialId": "131041S00328",
+          "field": "alias",
+          "value": "কাঁচি"
+        }
+      ],
+      "reason": "same_base_qualified",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "bn",
+      "normalizedKey": "বাথটাবেরঢাকনা",
+      "officialIds": [
+        "131041S00376",
+        "131041S00454"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00376",
+          "field": "primary",
+          "value": "বাথটাবের ঢাকনা"
+        },
+        {
+          "officialId": "131041S00454",
+          "field": "primary",
+          "value": "বাথটাবের ঢাকনা"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    },
+    {
+      "locale": "bn",
+      "normalizedKey": "গদি",
+      "officialIds": [
+        "131041S00387",
+        "131041S00428"
+      ],
+      "sourceForms": [
+        {
+          "officialId": "131041S00387",
+          "field": "primary",
+          "value": "গদি"
+        },
+        {
+          "officialId": "131041S00428",
+          "field": "primary",
+          "value": "গদি"
+        }
+      ],
+      "reason": "lexical_homonym",
+      "displayMode": "require_choice",
+      "approved": true
+    }
+  ]
+}

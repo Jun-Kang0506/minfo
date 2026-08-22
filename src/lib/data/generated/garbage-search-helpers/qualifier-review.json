@@ -1,0 +1,6935 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "id": "131041S00001",
+      "sourceBaseJa": "アイスピック",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00002",
+      "sourceBaseJa": "アイロン",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00003",
+      "sourceBaseJa": "アイロン台",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00004",
+      "sourceBaseJa": "アコーディオンカーテン",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00005",
+      "sourceBaseJa": "アタッシュケース",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00006",
+      "sourceBaseJa": "圧力鍋",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00007",
+      "sourceBaseJa": "油",
+      "sourceQualifierJa": "機械用",
+      "clusterId": "油",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00008",
+      "sourceBaseJa": "油",
+      "sourceQualifierJa": "食用",
+      "clusterId": "油",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00009",
+      "sourceBaseJa": "油の付着したびん",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00010",
+      "sourceBaseJa": "編み機",
+      "sourceQualifierJa": "ミシン",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00011",
+      "sourceBaseJa": "アルバム",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00012",
+      "sourceBaseJa": "アルミ缶",
+      "sourceQualifierJa": "飲料用・食品用",
+      "categoryId": "recyclables-cans",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00013",
+      "sourceBaseJa": "アルミ箔、アルミホイル",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00014",
+      "sourceBaseJa": "安全ピン",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00015",
+      "sourceBaseJa": "アンプ",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00016",
+      "sourceBaseJa": "石",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00017",
+      "sourceBaseJa": "衣装ケース",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00018",
+      "sourceBaseJa": "椅子",
+      "sourceQualifierJa": "座椅子・応接用椅子・長椅子等",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00019",
+      "sourceBaseJa": "板",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00020",
+      "sourceBaseJa": "一斗缶",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00021",
+      "sourceBaseJa": "一升瓶",
+      "categoryId": "recyclables-glass-bottles",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00022",
+      "sourceBaseJa": "一升瓶のふた",
+      "sourceQualifierJa": "上が金属、下がプラスチック製",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00023",
+      "sourceBaseJa": "医療廃棄物",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00024",
+      "sourceBaseJa": "衣類用乾燥機",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00025",
+      "sourceBaseJa": "印鑑",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00026",
+      "sourceBaseJa": "インクカートリッジ",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00027",
+      "sourceBaseJa": "ウィンドサーフボード",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00028",
+      "sourceBaseJa": "ウィンドファン",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00029",
+      "sourceBaseJa": "ウィンドブレーカー",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00030",
+      "sourceBaseJa": "植木鉢",
+      "sourceQualifierJa": "素焼き、陶器製",
+      "clusterId": "植木鉢",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00031",
+      "sourceBaseJa": "植木鉢",
+      "sourceQualifierJa": "プラスチック製",
+      "clusterId": "植木鉢",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00032",
+      "sourceBaseJa": "ウォシュレット",
+      "sourceQualifierJa": "簡易便座",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00033",
+      "sourceBaseJa": "ウッドカーペット",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00034",
+      "sourceBaseJa": "羽毛ふとん",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00035",
+      "sourceBaseJa": "エアコン",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00036",
+      "sourceBaseJa": "映像・音響機器",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00037",
+      "sourceBaseJa": "枝",
+      "sourceQualifierJa": "せん定後の枝",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00038",
+      "sourceBaseJa": "絵の具のチューブ",
+      "sourceQualifierJa": "金属製",
+      "clusterId": "絵の具のチューブ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00039",
+      "sourceBaseJa": "絵の具のチューブ",
+      "sourceQualifierJa": "プラスチック製",
+      "clusterId": "絵の具のチューブ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00040",
+      "sourceBaseJa": "MO",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00041",
+      "sourceBaseJa": "MD",
+      "sourceQualifierJa": "ケースも含む",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00042",
+      "sourceBaseJa": "MDプレイヤー",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00043",
+      "sourceBaseJa": "エレクトーン",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00044",
+      "sourceBaseJa": "延長コード",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00045",
+      "sourceBaseJa": "えんぴつ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00046",
+      "sourceBaseJa": "えんぴつ削り",
+      "sourceQualifierJa": "電動・手動",
+      "clusterId": "えんぴつ削り",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00047",
+      "sourceBaseJa": "えんぴつ削り",
+      "sourceQualifierJa": "携帯用",
+      "clusterId": "えんぴつ削り",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00048",
+      "sourceBaseJa": "オイル",
+      "sourceQualifierJa": "機械用",
+      "clusterId": "オイル",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00049",
+      "sourceBaseJa": "オイル",
+      "sourceQualifierJa": "食用",
+      "clusterId": "オイル",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00050",
+      "sourceBaseJa": "オイルヒーター",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00051",
+      "sourceBaseJa": "お菓子の箱",
+      "sourceQualifierJa": "紙製",
+      "categoryId": "recyclables-used-paper",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00052",
+      "sourceBaseJa": "お菓子の袋",
+      "sourceQualifierJa": "プラスチック製",
+      "categoryId": "recyclables-plastic-containers-packaging",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00053",
+      "sourceBaseJa": "おたま",
+      "sourceQualifierJa": "金属",
+      "clusterId": "おたま",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00054",
+      "sourceBaseJa": "おたま",
+      "sourceQualifierJa": "プラスチック製",
+      "clusterId": "おたま",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00055",
+      "sourceBaseJa": "落ち葉",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00056",
+      "sourceBaseJa": "お手拭き",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00057",
+      "sourceBaseJa": "おむつ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00058",
+      "sourceBaseJa": "おもちゃ",
+      "sourceQualifierJa": "木製・プラスチック製",
+      "clusterId": "おもちゃ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00059",
+      "sourceBaseJa": "おもちゃ",
+      "sourceQualifierJa": "金属製",
+      "clusterId": "おもちゃ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00060",
+      "sourceBaseJa": "オルガン",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00061",
+      "sourceBaseJa": "お椀",
+      "sourceQualifierJa": "木製",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00062",
+      "sourceBaseJa": "温水器",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00063",
+      "sourceBaseJa": "温度計",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00064",
+      "sourceBaseJa": "OA機器",
+      "sourceQualifierJa": "パソコン、ディスプレイを除く",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00065",
+      "sourceBaseJa": "オーディオ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00066",
+      "sourceBaseJa": "オートバイ",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00067",
+      "sourceBaseJa": "オーブントースター",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00068",
+      "sourceBaseJa": "オーブンレンジ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00069",
+      "sourceBaseJa": "貝殻",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00070",
+      "sourceBaseJa": "懐中電灯",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00071",
+      "sourceBaseJa": "カイロ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00072",
+      "sourceBaseJa": "鏡",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00073",
+      "sourceBaseJa": "家具",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00074",
+      "sourceBaseJa": "かご",
+      "sourceQualifierJa": "洗濯かご・折り畳みかご・買い物かご等",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00075",
+      "sourceBaseJa": "傘",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00076",
+      "sourceBaseJa": "傘立て",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00077",
+      "sourceBaseJa": "加湿器",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00078",
+      "sourceBaseJa": "カセットコンロ",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00079",
+      "sourceBaseJa": "カセットテープ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00080",
+      "sourceBaseJa": "カセットボンベ",
+      "categoryId": "recyclables-spray-cans-gas-canisters-batteries",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00081",
+      "sourceBaseJa": "カッター",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00082",
+      "sourceBaseJa": "カップめんのカップ",
+      "sourceQualifierJa": "プラスチック製",
+      "clusterId": "カップめんのカップ",
+      "categoryId": "recyclables-plastic-containers-packaging",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00083",
+      "sourceBaseJa": "カップめんのカップ",
+      "sourceQualifierJa": "紙製",
+      "clusterId": "カップめんのカップ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00084",
+      "sourceBaseJa": "かばん",
+      "sourceQualifierJa": "布製・革製・ビニール製",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00085",
+      "sourceBaseJa": "花瓶",
+      "sourceQualifierJa": "陶器製またはガラス製",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00086",
+      "sourceBaseJa": "紙コップ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00087",
+      "sourceBaseJa": "紙ぶくろ",
+      "categoryId": "recyclables-used-paper",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00088",
+      "sourceBaseJa": "カメラ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00089",
+      "sourceBaseJa": "カラオケ演奏装置",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00090",
+      "sourceBaseJa": "カラーボックス",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00091",
+      "sourceBaseJa": "缶",
+      "sourceQualifierJa": "飲料用・食品用のアルミ・スチール缶",
+      "categoryId": "recyclables-cans",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00092",
+      "sourceBaseJa": "換気扇",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00093",
+      "sourceBaseJa": "緩衝材",
+      "sourceQualifierJa": "紙製",
+      "clusterId": "緩衝材",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00094",
+      "sourceBaseJa": "緩衝材",
+      "sourceQualifierJa": "プラスチック製",
+      "clusterId": "緩衝材",
+      "categoryId": "plastic-containers-packaging",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00095",
+      "sourceBaseJa": "乾燥剤",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00096",
+      "sourceBaseJa": "乾電池",
+      "sourceQualifierJa": "マンガン乾電池、アルカリ乾電池、リチウム乾電池",
+      "clusterId": "乾電池",
+      "categoryId": "recyclables-spray-cans-gas-canisters-batteries",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00097",
+      "sourceBaseJa": "乾電池",
+      "sourceQualifierJa": "ボタン電池、小型充電式電池、モバイルバッテリー",
+      "clusterId": "乾電池",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00098",
+      "sourceBaseJa": "カーテン",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00099",
+      "sourceBaseJa": "カーテンレール",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00100",
+      "sourceBaseJa": "額縁",
+      "sourceQualifierJa": "金属製",
+      "clusterId": "額縁",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00101",
+      "sourceBaseJa": "額縁",
+      "sourceQualifierJa": "木製・プラスチック製",
+      "clusterId": "額縁",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00102",
+      "sourceBaseJa": "ガスオーブン",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00103",
+      "sourceBaseJa": "ガステーブル",
+      "sourceQualifierJa": "ガスコンロ",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00104",
+      "sourceBaseJa": "ガムテープ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00105",
+      "sourceBaseJa": "ガラステーブル",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00106",
+      "sourceBaseJa": "ガラスびん",
+      "sourceQualifierJa": "飲料、食品用",
+      "clusterId": "ガラスびん",
+      "categoryId": "recyclables-glass-bottles",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00107",
+      "sourceBaseJa": "ガラスびん",
+      "sourceQualifierJa": "破損、割れたもの",
+      "clusterId": "ガラスびん",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00108",
+      "sourceBaseJa": "キックボード",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00109",
+      "sourceBaseJa": "脚立",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00110",
+      "sourceBaseJa": "キャップ",
+      "sourceQualifierJa": "プラスチック製",
+      "categoryId": "recyclables-plastic-containers-packaging",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00111",
+      "sourceBaseJa": "キャリーケース",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00112",
+      "sourceBaseJa": "鏡台",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00113",
+      "sourceBaseJa": "金庫",
+      "sourceQualifierJa": "耐火性",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00114",
+      "sourceBaseJa": "キーボード",
+      "sourceQualifierJa": "パソコン",
+      "clusterId": "キーボード",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00115",
+      "sourceBaseJa": "キーボード",
+      "sourceQualifierJa": "楽器",
+      "clusterId": "キーボード",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00116",
+      "sourceBaseJa": "ギター",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00117",
+      "sourceBaseJa": "銀紙",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00118",
+      "sourceBaseJa": "空気清浄機",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00119",
+      "sourceBaseJa": "釘",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00120",
+      "sourceBaseJa": "草花",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00121",
+      "sourceBaseJa": "薬",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00122",
+      "sourceBaseJa": "薬のびん",
+      "sourceQualifierJa": "飲み薬用",
+      "categoryId": "recyclables-glass-bottles",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00123",
+      "sourceBaseJa": "果物ナイフ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00124",
+      "sourceBaseJa": "口紅",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00125",
+      "sourceBaseJa": "クッション",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00126",
+      "sourceBaseJa": "靴",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00127",
+      "sourceBaseJa": "クリスマスツリー",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00128",
+      "sourceBaseJa": "クレヨン",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00129",
+      "sourceBaseJa": "クーラー",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00130",
+      "sourceBaseJa": "クーラーボックス",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00131",
+      "sourceBaseJa": "蛍光管・蛍光灯",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00132",
+      "sourceBaseJa": "珪藻土製品",
+      "sourceQualifierJa": "石綿含有",
+      "clusterId": "珪藻土製品",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00133",
+      "sourceBaseJa": "珪藻土製品",
+      "sourceQualifierJa": "石綿除外",
+      "clusterId": "珪藻土製品",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00134",
+      "sourceBaseJa": "携帯ゲーム機",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00135",
+      "sourceBaseJa": "携帯電話",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00136",
+      "sourceBaseJa": "消しゴム",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00137",
+      "sourceBaseJa": "血圧計",
+      "sourceQualifierJa": "水銀式",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00138",
+      "sourceBaseJa": "血圧計",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00139",
+      "sourceBaseJa": "毛抜き",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00140",
+      "sourceBaseJa": "剣山",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00141",
+      "sourceBaseJa": "原付バイク",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00142",
+      "sourceBaseJa": "ゲーム機",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00143",
+      "sourceBaseJa": "工具類",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00144",
+      "sourceBaseJa": "小型充電式電池",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00145",
+      "sourceBaseJa": "こたつ",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00146",
+      "sourceBaseJa": "コピー機",
+      "sourceQualifierJa": "家庭用",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00147",
+      "sourceBaseJa": "コピー用紙",
+      "categoryId": "recyclables-used-paper",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00148",
+      "sourceBaseJa": "米びつ",
+      "sourceQualifierJa": "金属、木製",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00149",
+      "sourceBaseJa": "コルク",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00150",
+      "sourceBaseJa": "コルク抜き",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00151",
+      "sourceBaseJa": "コンセント",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00152",
+      "sourceBaseJa": "コンタクトレンズ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00153",
+      "sourceBaseJa": "コンポ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00154",
+      "sourceBaseJa": "梱包材",
+      "sourceQualifierJa": "紙製",
+      "clusterId": "梱包材",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00155",
+      "sourceBaseJa": "梱包材",
+      "sourceQualifierJa": "プラスチック製",
+      "clusterId": "梱包材",
+      "categoryId": "plastic-containers-packaging",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00156",
+      "sourceBaseJa": "コード",
+      "sourceQualifierJa": "電気類",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00157",
+      "sourceBaseJa": "コーヒーメーカー",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00158",
+      "sourceBaseJa": "碁石",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00159",
+      "sourceBaseJa": "ござ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00160",
+      "sourceBaseJa": "碁盤・将棋盤",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00161",
+      "sourceBaseJa": "ゴルフクラブ",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00162",
+      "sourceBaseJa": "ゴルフバック",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00163",
+      "sourceBaseJa": "ゴルフボール",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00164",
+      "sourceBaseJa": "ゴーグル",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00165",
+      "sourceBaseJa": "財布",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00166",
+      "sourceBaseJa": "サイフォン",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00167",
+      "sourceBaseJa": "三脚",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00168",
+      "sourceBaseJa": "三輪車",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00169",
+      "sourceBaseJa": "サーフボード",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00170",
+      "sourceBaseJa": "座いす",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00171",
+      "sourceBaseJa": "雑紙",
+      "sourceQualifierJa": "雑がみ",
+      "categoryId": "recyclables-used-paper",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00172",
+      "sourceBaseJa": "座布団",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00173",
+      "sourceBaseJa": "シェイバー",
+      "sourceQualifierJa": "ひげ剃り",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00174",
+      "sourceBaseJa": "敷物",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00175",
+      "sourceBaseJa": "支柱",
+      "sourceQualifierJa": "園芸用",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00176",
+      "sourceBaseJa": "室外機",
+      "sourceQualifierJa": "エアコン",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00177",
+      "sourceBaseJa": "室内機",
+      "sourceQualifierJa": "エアコン",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00178",
+      "sourceBaseJa": "芝刈り機",
+      "sourceQualifierJa": "エンジン式を除く",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00179",
+      "sourceBaseJa": "シャープペンシル",
+      "sourceQualifierJa": "プラスチック製",
+      "clusterId": "シャープペンシル",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00180",
+      "sourceBaseJa": "シャープペンシル",
+      "sourceQualifierJa": "金属製",
+      "clusterId": "シャープペンシル",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00181",
+      "sourceBaseJa": "シュレッダー",
+      "sourceQualifierJa": "家庭用",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00182",
+      "sourceBaseJa": "消火器",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00183",
+      "sourceBaseJa": "食品洗乾燥機",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00184",
+      "sourceBaseJa": "食品棚",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00185",
+      "sourceBaseJa": "食用油",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00186",
+      "sourceBaseJa": "食器",
+      "sourceQualifierJa": "金属・陶器・ガラス",
+      "clusterId": "食器",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00187",
+      "sourceBaseJa": "食器",
+      "sourceQualifierJa": "紙類・プラスチック製",
+      "clusterId": "食器",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00188",
+      "sourceBaseJa": "ショッピングカート",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00189",
+      "sourceBaseJa": "七輪",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00190",
+      "sourceBaseJa": "シンセサイザー",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00191",
+      "sourceBaseJa": "新聞・チラシ",
+      "categoryId": "recyclables-used-paper",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00192",
+      "sourceBaseJa": "シーツ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00193",
+      "sourceBaseJa": "CDプレイヤー・CDラジカセ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00194",
+      "sourceBaseJa": "CD/CD-R/CD-RW",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00195",
+      "sourceBaseJa": "磁石",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00196",
+      "sourceBaseJa": "自転車",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00197",
+      "sourceBaseJa": "じゅうたん",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00198",
+      "sourceBaseJa": "充電式電池",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00199",
+      "sourceBaseJa": "ジュラルミンケース",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00200",
+      "sourceBaseJa": "ジューサー",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00201",
+      "sourceBaseJa": "浄水機",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00202",
+      "sourceBaseJa": "除湿機",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00203",
+      "sourceBaseJa": "水槽",
+      "sourceQualifierJa": "ガラス製",
+      "clusterId": "水槽",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00204",
+      "sourceBaseJa": "水槽",
+      "sourceQualifierJa": "プラスチック製",
+      "clusterId": "水槽",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00205",
+      "sourceBaseJa": "炊飯器",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00206",
+      "sourceBaseJa": "姿見",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00207",
+      "sourceBaseJa": "スキャナー",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00208",
+      "sourceBaseJa": "スキーの板",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00209",
+      "sourceBaseJa": "スキーの靴",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00210",
+      "sourceBaseJa": "スキーのストック",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00211",
+      "sourceBaseJa": "スケート靴",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00212",
+      "sourceBaseJa": "スタンド式灰皿",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00213",
+      "sourceBaseJa": "すだれ・よしず",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00214",
+      "sourceBaseJa": "スチーム暖房機",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00215",
+      "sourceBaseJa": "ステッパー",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00216",
+      "sourceBaseJa": "ステレオ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00217",
+      "sourceBaseJa": "ストーブ",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00218",
+      "sourceBaseJa": "砂",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00219",
+      "sourceBaseJa": "スニーカー",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00220",
+      "sourceBaseJa": "すのこ",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00221",
+      "sourceBaseJa": "スノーボード",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00222",
+      "sourceBaseJa": "スプレー缶",
+      "categoryId": "recyclables-spray-cans-gas-canisters-batteries",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00223",
+      "sourceBaseJa": "スプレー缶のキャップ・ノズル",
+      "categoryId": "recyclables-plastic-containers-packaging",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00224",
+      "sourceBaseJa": "スプーン",
+      "sourceQualifierJa": "プラスチック製",
+      "clusterId": "スプーン",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00225",
+      "sourceBaseJa": "スプーン",
+      "sourceQualifierJa": "金属製",
+      "clusterId": "スプーン",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00226",
+      "sourceBaseJa": "スマートフォン",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00227",
+      "sourceBaseJa": "すりこ木",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00228",
+      "sourceBaseJa": "すり鉢",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00229",
+      "sourceBaseJa": "スーツケース",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00230",
+      "sourceBaseJa": "赤外線ヒーター",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00231",
+      "sourceBaseJa": "石油類",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00232",
+      "sourceBaseJa": "石けん",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00233",
+      "sourceBaseJa": "セロハンテープ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00234",
+      "sourceBaseJa": "線香",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00235",
+      "sourceBaseJa": "洗濯機・衣類乾燥機",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00236",
+      "sourceBaseJa": "扇風機",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00237",
+      "sourceBaseJa": "洗面化粧台",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00238",
+      "sourceBaseJa": "掃除機",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00239",
+      "sourceBaseJa": "ソファー",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00240",
+      "sourceBaseJa": "そり",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00241",
+      "sourceBaseJa": "体温計",
+      "sourceQualifierJa": "水銀式",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00242",
+      "sourceBaseJa": "体温計",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00243",
+      "sourceBaseJa": "耐火金庫",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00244",
+      "sourceBaseJa": "体重計",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00245",
+      "sourceBaseJa": "タイプライター",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00246",
+      "sourceBaseJa": "タイヤ",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00247",
+      "sourceBaseJa": "タイヤチェーン",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00248",
+      "sourceBaseJa": "タイル",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00249",
+      "sourceBaseJa": "たたみ",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00250",
+      "sourceBaseJa": "裁ち台",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00251",
+      "sourceBaseJa": "タライ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00252",
+      "sourceBaseJa": "台車",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00253",
+      "sourceBaseJa": "ダンベル",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00254",
+      "sourceBaseJa": "ダンボール",
+      "categoryId": "recyclables-used-paper",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00255",
+      "sourceBaseJa": "チェーン",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00256",
+      "sourceBaseJa": "チャイルドシート",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00257",
+      "sourceBaseJa": "茶碗",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00258",
+      "sourceBaseJa": "中華鍋",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00259",
+      "sourceBaseJa": "チューブ",
+      "sourceQualifierJa": "歯磨きやマヨネーズ等",
+      "categoryId": "recyclables-plastic-containers-packaging",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00260",
+      "sourceBaseJa": "チラシ",
+      "categoryId": "recyclables-used-paper",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00261",
+      "sourceBaseJa": "杖",
+      "sourceQualifierJa": "木製",
+      "clusterId": "杖",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00262",
+      "sourceBaseJa": "杖",
+      "sourceQualifierJa": "プラスチック製",
+      "clusterId": "杖",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00263",
+      "sourceBaseJa": "杖",
+      "sourceQualifierJa": "金属製",
+      "clusterId": "杖",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00264",
+      "sourceBaseJa": "机",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00265",
+      "sourceBaseJa": "土",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00266",
+      "sourceBaseJa": "突っ張り棒",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00267",
+      "sourceBaseJa": "つぼ",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00268",
+      "sourceBaseJa": "爪切り",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00269",
+      "sourceBaseJa": "釣竿",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00270",
+      "sourceBaseJa": "ティッシュペーパーの箱",
+      "categoryId": "recyclables-used-paper",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00271",
+      "sourceBaseJa": "鉄アレイ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00272",
+      "sourceBaseJa": "テニスボール",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00273",
+      "sourceBaseJa": "テニスラケット",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00274",
+      "sourceBaseJa": "テレビ",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00275",
+      "sourceBaseJa": "テレビ台",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00276",
+      "sourceBaseJa": "天体望遠鏡",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00277",
+      "sourceBaseJa": "テーブル",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00278",
+      "sourceBaseJa": "ディスプレイ・モニター",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00279",
+      "sourceBaseJa": "DVD",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00280",
+      "sourceBaseJa": "DVDのケース",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00281",
+      "sourceBaseJa": "DVDプレイヤー",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00282",
+      "sourceBaseJa": "デジタルカメラ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00283",
+      "sourceBaseJa": "電気カーペット",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00284",
+      "sourceBaseJa": "電気ケトル",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00285",
+      "sourceBaseJa": "電気コード",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00286",
+      "sourceBaseJa": "電気スタンド",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00287",
+      "sourceBaseJa": "電気ポット",
+      "sourceQualifierJa": "ポット・魔法瓶等を含む",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00288",
+      "sourceBaseJa": "電気毛布",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00289",
+      "sourceBaseJa": "電球",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00290",
+      "sourceBaseJa": "電子オルガン",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00291",
+      "sourceBaseJa": "電子レンジ",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00292",
+      "sourceBaseJa": "電卓",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00293",
+      "sourceBaseJa": "電話機",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00294",
+      "sourceBaseJa": "電話台",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00295",
+      "sourceBaseJa": "電話帳",
+      "categoryId": "recyclables-used-paper",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00296",
+      "sourceBaseJa": "砥石",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00297",
+      "sourceBaseJa": "時計",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00298",
+      "sourceBaseJa": "トタン板",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00299",
+      "sourceBaseJa": "扉",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00300",
+      "sourceBaseJa": "鳥かご",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00301",
+      "sourceBaseJa": "塗料",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00302",
+      "sourceBaseJa": "とんかち",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00303",
+      "sourceBaseJa": "トースター",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00304",
+      "sourceBaseJa": "ドア",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00305",
+      "sourceBaseJa": "ドアのぶ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00306",
+      "sourceBaseJa": "ドライヤー",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00307",
+      "sourceBaseJa": "ドラム",
+      "sourceQualifierJa": "楽器",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00308",
+      "sourceBaseJa": "ドリップポット",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00309",
+      "sourceBaseJa": "ナイフ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00310",
+      "sourceBaseJa": "長靴",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00311",
+      "sourceBaseJa": "鍋",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00312",
+      "sourceBaseJa": "生ごみ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00313",
+      "sourceBaseJa": "匂いの強い紙類",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00314",
+      "sourceBaseJa": "人形",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00315",
+      "sourceBaseJa": "ぬいぐるみ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00316",
+      "sourceBaseJa": "寝袋",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00317",
+      "sourceBaseJa": "粘着テープ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00318",
+      "sourceBaseJa": "粘土",
+      "sourceQualifierJa": "紙粘土",
+      "clusterId": "粘土",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00319",
+      "sourceBaseJa": "粘土",
+      "sourceQualifierJa": "油粘土",
+      "clusterId": "粘土",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00320",
+      "sourceBaseJa": "粘土",
+      "sourceQualifierJa": "石膏粘土",
+      "clusterId": "粘土",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00321",
+      "sourceBaseJa": "農薬",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00322",
+      "sourceBaseJa": "のこぎり",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00323",
+      "sourceBaseJa": "ノート",
+      "categoryId": "recyclables-used-paper",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00324",
+      "sourceBaseJa": "ノートパソコン",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00325",
+      "sourceBaseJa": "廃材",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00326",
+      "sourceBaseJa": "白色トレイ",
+      "categoryId": "recyclables-plastic-containers-packaging",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00327",
+      "sourceBaseJa": "はさみ",
+      "sourceQualifierJa": "金属製",
+      "clusterId": "はさみ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00328",
+      "sourceBaseJa": "はさみ",
+      "sourceQualifierJa": "プラスチック製",
+      "clusterId": "はさみ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00329",
+      "sourceBaseJa": "発泡スチロール",
+      "categoryId": "recyclables-plastic-containers-packaging",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00330",
+      "sourceBaseJa": "花火",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00331",
+      "sourceBaseJa": "歯ブラシ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00332",
+      "sourceBaseJa": "針",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00333",
+      "sourceBaseJa": "ハンカチ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00334",
+      "sourceBaseJa": "ハンガー",
+      "sourceQualifierJa": "プラスチック製及び木製",
+      "clusterId": "ハンガー",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00335",
+      "sourceBaseJa": "ハンガー",
+      "sourceQualifierJa": "金属製",
+      "clusterId": "ハンガー",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00336",
+      "sourceBaseJa": "ハンガーラック",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00337",
+      "sourceBaseJa": "バケツ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00338",
+      "sourceBaseJa": "バッテリー",
+      "sourceQualifierJa": "自動車・オートバイ・自転車",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00339",
+      "sourceBaseJa": "バット",
+      "sourceQualifierJa": "木製",
+      "clusterId": "バット",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00340",
+      "sourceBaseJa": "バット",
+      "sourceQualifierJa": "金属製",
+      "clusterId": "バット",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00341",
+      "sourceBaseJa": "バレッタ",
+      "sourceQualifierJa": "プラスチック製",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00342",
+      "sourceBaseJa": "バーベル",
+      "sourceQualifierJa": "棒及び重り",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00343",
+      "sourceBaseJa": "バール",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00344",
+      "sourceBaseJa": "パイプ",
+      "sourceQualifierJa": "金属製",
+      "clusterId": "パイプ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00345",
+      "sourceBaseJa": "パイプ",
+      "sourceQualifierJa": "プラスチック製",
+      "clusterId": "パイプ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00346",
+      "sourceBaseJa": "パイプワゴン",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00347",
+      "sourceBaseJa": "パソコン",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00348",
+      "sourceBaseJa": "パソコンのキーボード、マウス",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00349",
+      "sourceBaseJa": "パチンコ台",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00350",
+      "sourceBaseJa": "パック",
+      "sourceQualifierJa": "紙パック・牛乳パック・紙製たまごパック等",
+      "clusterId": "パック",
+      "categoryId": "recyclables-used-paper",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00351",
+      "sourceBaseJa": "パック",
+      "sourceQualifierJa": "プラ製たまごパック",
+      "clusterId": "パック",
+      "categoryId": "plastic-containers-packaging",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00352",
+      "sourceBaseJa": "ひげ剃り",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00353",
+      "sourceBaseJa": "火鉢・七輪",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00354",
+      "sourceBaseJa": "美顔器",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00355",
+      "sourceBaseJa": "ビデオカメラ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00356",
+      "sourceBaseJa": "ビデオテープ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00357",
+      "sourceBaseJa": "ビデオデッキ",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00358",
+      "sourceBaseJa": "ビニール傘",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00359",
+      "sourceBaseJa": "ビニール袋",
+      "categoryId": "recyclables-plastic-containers-packaging",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00360",
+      "sourceBaseJa": "びん",
+      "sourceQualifierJa": "飲料・食品用、飲み薬用、化粧品等のびん",
+      "categoryId": "recyclables-glass-bottles",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00361",
+      "sourceBaseJa": "ビールケース",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00362",
+      "sourceBaseJa": "ビールびん",
+      "categoryId": "recyclables-glass-bottles",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00363",
+      "sourceBaseJa": "ピアノ",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00364",
+      "sourceBaseJa": "PHS",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00365",
+      "sourceBaseJa": "PCR検査キット・抗体検査簡易キット",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00366",
+      "sourceBaseJa": "ファックス",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00367",
+      "sourceBaseJa": "封筒",
+      "categoryId": "recyclables-used-paper",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00368",
+      "sourceBaseJa": "封筒",
+      "sourceQualifierJa": "窓付き",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00369",
+      "sourceBaseJa": "布団",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00370",
+      "sourceBaseJa": "布団乾燥機",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00371",
+      "sourceBaseJa": "踏み台",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00372",
+      "sourceBaseJa": "譜面立て",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00373",
+      "sourceBaseJa": "フライパン",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00374",
+      "sourceBaseJa": "フロッピーディスク",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00375",
+      "sourceBaseJa": "フロッピーディスクドライブ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00376",
+      "sourceBaseJa": "風呂のふた",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00377",
+      "sourceBaseJa": "フードプロセッサー",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00378",
+      "sourceBaseJa": "ブラインド",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00379",
+      "sourceBaseJa": "ブルーレイ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00380",
+      "sourceBaseJa": "ブルーレイのケース",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00381",
+      "sourceBaseJa": "ブルーレイレコーダー",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00382",
+      "sourceBaseJa": "プリンター",
+      "sourceQualifierJa": "家庭用",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00383",
+      "sourceBaseJa": "ヘアスプレー",
+      "categoryId": "recyclables-spray-cans-gas-canisters-batteries",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00384",
+      "sourceBaseJa": "ヘルメット",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00385",
+      "sourceBaseJa": "ベッド",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00386",
+      "sourceBaseJa": "ベッドの枠",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00387",
+      "sourceBaseJa": "ベッドマット",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00388",
+      "sourceBaseJa": "ベビーカー",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00389",
+      "sourceBaseJa": "ベビーベッド",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00390",
+      "sourceBaseJa": "ベルト",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00391",
+      "sourceBaseJa": "ベンチプレス",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00392",
+      "sourceBaseJa": "ペットボトル",
+      "categoryId": "recyclables-pet-bottles",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00393",
+      "sourceBaseJa": "ペットボトルのふた",
+      "categoryId": "recyclables-plastic-containers-packaging",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00394",
+      "sourceBaseJa": "ペット用のトイレシート",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00395",
+      "sourceBaseJa": "ペット用のトイレの砂",
+      "sourceQualifierJa": "紙・木・おから",
+      "clusterId": "ペット用のトイレの砂",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00396",
+      "sourceBaseJa": "ペット用のトイレの砂",
+      "sourceQualifierJa": "鉱物性",
+      "clusterId": "ペット用のトイレの砂",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00397",
+      "sourceBaseJa": "ペンキ",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00398",
+      "sourceBaseJa": "ペーパーナイフ",
+      "sourceQualifierJa": "金属製",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00399",
+      "sourceBaseJa": "ほうき",
+      "sourceQualifierJa": "卓上ほうき、自由ほうき、竹ぼうき、熊手等",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00400",
+      "sourceBaseJa": "包装",
+      "sourceQualifierJa": "食料品の包装・果物ネット、おしぼりの包装フィルム等",
+      "categoryId": "recyclables-plastic-containers-packaging",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00401",
+      "sourceBaseJa": "包装紙",
+      "categoryId": "recyclables-used-paper",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00402",
+      "sourceBaseJa": "包丁",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00403",
+      "sourceBaseJa": "ホッチキス",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00404",
+      "sourceBaseJa": "ホットカーペット",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00405",
+      "sourceBaseJa": "ホットプレート",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00406",
+      "sourceBaseJa": "ほ乳瓶",
+      "sourceQualifierJa": "ガラス製",
+      "clusterId": "ほ乳瓶",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00407",
+      "sourceBaseJa": "ほ乳瓶",
+      "sourceQualifierJa": "プラスチック製",
+      "clusterId": "ほ乳瓶",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00408",
+      "sourceBaseJa": "保冷材",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00409",
+      "sourceBaseJa": "本",
+      "sourceQualifierJa": "ハードカバー",
+      "categoryId": "recyclables-used-paper",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00410",
+      "sourceBaseJa": "本棚",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00411",
+      "sourceBaseJa": "ホース",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00412",
+      "sourceBaseJa": "ホースリール",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00413",
+      "sourceBaseJa": "ホームベーカリー",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00414",
+      "sourceBaseJa": "防水加工紙",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00415",
+      "sourceBaseJa": "ボウリングの玉",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00416",
+      "sourceBaseJa": "ボストンバッグ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00417",
+      "sourceBaseJa": "ボタン電池",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00418",
+      "sourceBaseJa": "ボディボード",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00419",
+      "sourceBaseJa": "ボールペン",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00420",
+      "sourceBaseJa": "ボール類",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00421",
+      "sourceBaseJa": "ポータブルCD",
+      "sourceQualifierJa": "MD）プレーヤー（ウォークマン等",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00422",
+      "sourceBaseJa": "マウス",
+      "sourceQualifierJa": "PC",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00423",
+      "sourceBaseJa": "まくら",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00424",
+      "sourceBaseJa": "まくらカバー",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00425",
+      "sourceBaseJa": "マグネット",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00426",
+      "sourceBaseJa": "マッサージチェア",
+      "sourceQualifierJa": "その他、マッサージ機",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00427",
+      "sourceBaseJa": "マット",
+      "sourceQualifierJa": "玄関等、各種マット",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "check_japanese",
+        "zh": "check_japanese",
+        "ko": "check_japanese",
+        "vi": "check_japanese",
+        "ne": "check_japanese",
+        "tl": "check_japanese",
+        "bn": "check_japanese"
+      }
+    },
+    {
+      "id": "131041S00428",
+      "sourceBaseJa": "マットレス",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00429",
+      "sourceBaseJa": "松葉づえ",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00430",
+      "sourceBaseJa": "窓ガラス",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00431",
+      "sourceBaseJa": "まな板",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00432",
+      "sourceBaseJa": "万年筆",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00433",
+      "sourceBaseJa": "麻雀卓",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00434",
+      "sourceBaseJa": "麻雀牌",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00435",
+      "sourceBaseJa": "ミキサー",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00436",
+      "sourceBaseJa": "ミシン",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00437",
+      "sourceBaseJa": "ミニコンポ",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00438",
+      "sourceBaseJa": "虫かご",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00439",
+      "sourceBaseJa": "虫めがね",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00440",
+      "sourceBaseJa": "めがね",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00441",
+      "sourceBaseJa": "毛布",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00442",
+      "sourceBaseJa": "木材",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00443",
+      "sourceBaseJa": "餅つき機",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00444",
+      "sourceBaseJa": "物干し竿",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00445",
+      "sourceBaseJa": "物干し台",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00446",
+      "sourceBaseJa": "やかん",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00447",
+      "sourceBaseJa": "薬品",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00448",
+      "sourceBaseJa": "郵便受け",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00449",
+      "sourceBaseJa": "温風器",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00450",
+      "sourceBaseJa": "湯沸し器",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00451",
+      "sourceBaseJa": "容器",
+      "sourceQualifierJa": "紙製",
+      "clusterId": "容器",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00452",
+      "sourceBaseJa": "容器",
+      "sourceQualifierJa": "プラスチック製",
+      "clusterId": "容器",
+      "categoryId": "recyclables-plastic-containers-packaging",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00453",
+      "sourceBaseJa": "容器",
+      "sourceQualifierJa": "金属",
+      "clusterId": "容器",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00454",
+      "sourceBaseJa": "浴槽のふた",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00455",
+      "sourceBaseJa": "ライター",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00456",
+      "sourceBaseJa": "ラケット",
+      "sourceQualifierJa": "テニス・バトミントン",
+      "clusterId": "ラケット",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00457",
+      "sourceBaseJa": "ラケット",
+      "sourceQualifierJa": "卓球",
+      "clusterId": "ラケット",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00458",
+      "sourceBaseJa": "ラジコン",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00459",
+      "sourceBaseJa": "ラック",
+      "sourceQualifierJa": "金属製",
+      "clusterId": "ラック",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00460",
+      "sourceBaseJa": "ラック",
+      "sourceQualifierJa": "木製及びプラスチック製",
+      "clusterId": "ラック",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00461",
+      "sourceBaseJa": "ランドセル",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00462",
+      "sourceBaseJa": "ランニングマシン",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00463",
+      "sourceBaseJa": "リュックサック",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00464",
+      "sourceBaseJa": "旅行かばん",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00465",
+      "sourceBaseJa": "冷蔵庫・冷凍庫",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00466",
+      "sourceBaseJa": "冷風機",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00467",
+      "sourceBaseJa": "レコード",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00468",
+      "sourceBaseJa": "レジャーシート",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00469",
+      "sourceBaseJa": "レンガ",
+      "categoryId": "not-collected",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00470",
+      "sourceBaseJa": "レンズ",
+      "sourceQualifierJa": "ガラス製",
+      "clusterId": "レンズ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00471",
+      "sourceBaseJa": "レンズ",
+      "sourceQualifierJa": "プラスチック製",
+      "clusterId": "レンズ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "qualifier_preserved",
+        "zh": "qualifier_preserved",
+        "ko": "qualifier_preserved",
+        "vi": "qualifier_preserved",
+        "ne": "qualifier_preserved",
+        "tl": "qualifier_preserved",
+        "bn": "qualifier_preserved"
+      }
+    },
+    {
+      "id": "131041S00472",
+      "sourceBaseJa": "練炭",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00473",
+      "sourceBaseJa": "レーザーディスク",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00474",
+      "sourceBaseJa": "レーザーディスクプレーヤー",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00475",
+      "sourceBaseJa": "ろうそく",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00476",
+      "sourceBaseJa": "ローイングマシン",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00477",
+      "sourceBaseJa": "ロースター",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00478",
+      "sourceBaseJa": "ロープ",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00479",
+      "sourceBaseJa": "ロールカーテン",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00480",
+      "sourceBaseJa": "輪ゴム",
+      "categoryId": "burnable",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00481",
+      "sourceBaseJa": "ワゴン",
+      "categoryId": "bulky",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    },
+    {
+      "id": "131041S00482",
+      "sourceBaseJa": "ワープロ",
+      "categoryId": "metal-ceramic-glass",
+      "localeStatus": {
+        "en": "not_applicable",
+        "zh": "not_applicable",
+        "ko": "not_applicable",
+        "vi": "not_applicable",
+        "ne": "not_applicable",
+        "tl": "not_applicable",
+        "bn": "not_applicable"
+      }
+    }
+  ]
+}

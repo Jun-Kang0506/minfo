@@ -2,7 +2,7 @@
 
 import type { Source } from "@/lib/types";
 import { SOURCES } from "@/lib/data/sources";
-import { OPEN_DATA_CANDIDATES } from "@/lib/data/openDataCandidates";
+import { OPEN_DATA_REGISTRY } from "@/lib/data/openDataRegistry";
 import { localizedOrganization } from "@/lib/data/sourceL10n";
 import { useLanguage } from "./LanguageProvider";
 import { SectionHeading } from "./SectionHeading";
@@ -163,17 +163,10 @@ export function DataSourcesSection({ variant = "all" }: { variant?: "all" | "sou
         </ol>
       </div>}
 
-      {/* Tokyo Open Data candidates — a dataset registry, honestly labeled */}
+      {/* Open Data registry — active snapshots first, then future candidates. */}
       {showData && <div className="mt-12">
-        <h3 className="flex flex-wrap items-center gap-2.5 text-lg font-bold tracking-tight text-ink">
-          {t.openData.candidatesTitle}
-          <Tag tone="caution">{t.openData.next.badge}</Tag>
-        </h3>
-        <p className="mt-1 max-w-3xl text-[13.5px] leading-relaxed text-ink-soft">
-          {t.openData.candidatesSub}
-        </p>
-        <ul className="mt-4 border-t-2 border-ink">
-          {OPEN_DATA_CANDIDATES.map((c) => {
+        {(["active", "candidate"] as const).map((status) => <div key={status} className="mt-6"><h4 className="text-[15px] font-bold text-ink">{(t.openData as unknown as Record<string, string>)[status === "active" ? "activeTitle" : "candidateTitle"]}</h4><p className="mt-1 text-sm text-ink-soft">{(t.openData as unknown as Record<string, string>)[status === "active" ? "activeSub" : "candidateSub"]}</p><ul className="mt-4 border-t-2 border-ink">
+          {OPEN_DATA_REGISTRY.filter((entry) => (entry.status ?? "candidate") === status).map((c) => {
             const gloss = c.titleGloss[lang];
             // Official catalog title is visible signage only in the Japanese
             // UI; other languages lead with the localized gloss and keep the
@@ -193,12 +186,10 @@ export function DataSourcesSection({ variant = "all" }: { variant?: "all" | "sou
                   <span className="flex flex-col gap-1.5 sm:w-56 sm:shrink-0">
                     <span className="flex flex-wrap gap-1.5">
                       <Tag tone={c.kind === "dataset" ? "moss" : "ink"}>
-                        {c.kind === "dataset"
-                          ? t.openData.badges.candidate
-                          : t.openData.badges.searchTarget}
+                        {status === "active" ? (t.openData.badges as Record<string, string>).active : t.openData.badges.candidate}
                       </Tag>
                       <Tag tone="caution">
-                        {c.updatePlan === "live" ? t.openData.badges.live : t.openData.badges.batch}
+                        {c.refresh === "checked_snapshot" ? (t.openData.badges as Record<string, string>).checkedSnapshot : c.updatePlan === "live" ? t.openData.badges.live : (t.openData.badges as Record<string, string>).plannedBatch}
                       </Tag>
                     </span>
                     <span className="text-[12px] text-ink-soft">
@@ -225,8 +216,7 @@ export function DataSourcesSection({ variant = "all" }: { variant?: "all" | "sou
                 </a>
               </li>
             );
-          })}
-        </ul>
+          })}</ul></div>)}
         <a
           href={TOKYO_OPEN_DATA_PORTAL}
           target="_blank"

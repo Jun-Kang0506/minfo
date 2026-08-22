@@ -1,0 +1,1998 @@
+{
+  "schemaVersion": 1,
+  "locale": "en",
+  "status": "minfo_multilingual_search_helper",
+  "sourceSnapshotSha256": "1b66d0dc7ad841e77d915f27a48c77682ba6ed2cff1c07a15a2d1508332c2a04",
+  "items": [
+    {
+      "id": "131041S00001",
+      "n": "ice pick"
+    },
+    {
+      "id": "131041S00002",
+      "n": "iron"
+    },
+    {
+      "id": "131041S00003",
+      "n": "ironing board"
+    },
+    {
+      "id": "131041S00004",
+      "n": "accordion curtains"
+    },
+    {
+      "id": "131041S00005",
+      "n": "attache case"
+    },
+    {
+      "id": "131041S00006",
+      "n": "pressure cooker"
+    },
+    {
+      "id": "131041S00007",
+      "n": "Machine oil"
+    },
+    {
+      "id": "131041S00008",
+      "n": "Cooking oil"
+    },
+    {
+      "id": "131041S00009",
+      "n": "bottle with oil on it"
+    },
+    {
+      "id": "131041S00010",
+      "n": "Knitting machine (sewing machine)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00011",
+      "n": "album"
+    },
+    {
+      "id": "131041S00012",
+      "n": "Aluminum cans (for beverages and food)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00013",
+      "n": "aluminum foil, aluminum foil"
+    },
+    {
+      "id": "131041S00014",
+      "n": "safety pin"
+    },
+    {
+      "id": "131041S00015",
+      "n": "amplifier"
+    },
+    {
+      "id": "131041S00016",
+      "n": "stone"
+    },
+    {
+      "id": "131041S00017",
+      "n": "costume case"
+    },
+    {
+      "id": "131041S00018",
+      "n": "Chairs (floor chairs, reception chairs, benches, etc.)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00019",
+      "n": "board"
+    },
+    {
+      "id": "131041S00020",
+      "n": "18-liter metal can"
+    },
+    {
+      "id": "131041S00021",
+      "n": "1.8-liter bottle"
+    },
+    {
+      "id": "131041S00022",
+      "n": "1.8-liter bottle cap (metal top, plastic bottom)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00023",
+      "n": "medical waste"
+    },
+    {
+      "id": "131041S00024",
+      "n": "clothes dryer"
+    },
+    {
+      "id": "131041S00025",
+      "n": "Personal seal stamp"
+    },
+    {
+      "id": "131041S00026",
+      "n": "ink cartridge"
+    },
+    {
+      "id": "131041S00027",
+      "n": "windsurf board"
+    },
+    {
+      "id": "131041S00028",
+      "n": "wind fan"
+    },
+    {
+      "id": "131041S00029",
+      "n": "windbreaker"
+    },
+    {
+      "id": "131041S00030",
+      "n": "Flowerpot (unglazed, ceramic)"
+    },
+    {
+      "id": "131041S00031",
+      "n": "Flower pot (plastic)"
+    },
+    {
+      "id": "131041S00032",
+      "n": "Washlet (simple toilet seat)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00033",
+      "n": "wood carpet"
+    },
+    {
+      "id": "131041S00034",
+      "n": "down comforter"
+    },
+    {
+      "id": "131041S00035",
+      "n": "air conditioner"
+    },
+    {
+      "id": "131041S00036",
+      "n": "Video/audio equipment"
+    },
+    {
+      "id": "131041S00037",
+      "n": "Branch (branch after pruning)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00038",
+      "n": "paint tube (metal)"
+    },
+    {
+      "id": "131041S00039",
+      "n": "paint tube (plastic)"
+    },
+    {
+      "id": "131041S00040",
+      "n": "M.O."
+    },
+    {
+      "id": "131041S00041",
+      "n": "MD (including case)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00042",
+      "n": "MD player"
+    },
+    {
+      "id": "131041S00043",
+      "n": "Electone"
+    },
+    {
+      "id": "131041S00044",
+      "n": "extension cord"
+    },
+    {
+      "id": "131041S00045",
+      "n": "pencil"
+    },
+    {
+      "id": "131041S00046",
+      "n": "Pencil sharpener (electric/manual)"
+    },
+    {
+      "id": "131041S00047",
+      "n": "Pencil sharpener (portable)"
+    },
+    {
+      "id": "131041S00048",
+      "n": "Oil (for machinery)"
+    },
+    {
+      "id": "131041S00049",
+      "n": "Oil (edible)"
+    },
+    {
+      "id": "131041S00050",
+      "n": "oil heater"
+    },
+    {
+      "id": "131041S00051",
+      "n": "Sweets box (paper)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00052",
+      "n": "Sweets bag (plastic)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00053",
+      "n": "Ladle (metal)"
+    },
+    {
+      "id": "131041S00054",
+      "n": "Ladle (plastic)"
+    },
+    {
+      "id": "131041S00055",
+      "n": "fallen leaves"
+    },
+    {
+      "id": "131041S00056",
+      "n": "towel"
+    },
+    {
+      "id": "131041S00057",
+      "n": "diaper"
+    },
+    {
+      "id": "131041S00058",
+      "n": "Toys (wooden/plastic)"
+    },
+    {
+      "id": "131041S00059",
+      "n": "Toys (metal)"
+    },
+    {
+      "id": "131041S00060",
+      "n": "organ"
+    },
+    {
+      "id": "131041S00061",
+      "n": "Bowl (wooden)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00062",
+      "n": "water heater (onsuiki)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00063",
+      "n": "thermometer"
+    },
+    {
+      "id": "131041S00064",
+      "n": "OA equipment (excluding computers and displays)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00065",
+      "n": "audio"
+    },
+    {
+      "id": "131041S00066",
+      "n": "motorcycle"
+    },
+    {
+      "id": "131041S00067",
+      "n": "toaster oven"
+    },
+    {
+      "id": "131041S00068",
+      "n": "oven range"
+    },
+    {
+      "id": "131041S00069",
+      "n": "seashell"
+    },
+    {
+      "id": "131041S00070",
+      "n": "flashlight"
+    },
+    {
+      "id": "131041S00071",
+      "n": "Disposable heat pack"
+    },
+    {
+      "id": "131041S00072",
+      "n": "mirror"
+    },
+    {
+      "id": "131041S00073",
+      "n": "furniture"
+    },
+    {
+      "id": "131041S00074",
+      "n": "Baskets (laundry baskets, folding baskets, shopping baskets, etc.)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00075",
+      "n": "umbrella"
+    },
+    {
+      "id": "131041S00076",
+      "n": "umbrella stand"
+    },
+    {
+      "id": "131041S00077",
+      "n": "humidifier"
+    },
+    {
+      "id": "131041S00078",
+      "n": "cassette stove"
+    },
+    {
+      "id": "131041S00079",
+      "n": "cassette tape"
+    },
+    {
+      "id": "131041S00080",
+      "n": "Cassette gas canister"
+    },
+    {
+      "id": "131041S00081",
+      "n": "cutter"
+    },
+    {
+      "id": "131041S00082",
+      "n": "Cup noodle cup (plastic)"
+    },
+    {
+      "id": "131041S00083",
+      "n": "Cup noodle cup (paper)"
+    },
+    {
+      "id": "131041S00084",
+      "n": "Bags (cloth, leather, vinyl)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00085",
+      "n": "Vase (ceramic or glass)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00086",
+      "n": "paper cup"
+    },
+    {
+      "id": "131041S00087",
+      "n": "paper bag"
+    },
+    {
+      "id": "131041S00088",
+      "n": "camera"
+    },
+    {
+      "id": "131041S00089",
+      "n": "karaoke performance equipment"
+    },
+    {
+      "id": "131041S00090",
+      "n": "Cube storage shelf"
+    },
+    {
+      "id": "131041S00091",
+      "n": "Cans (aluminum and steel cans for beverages and food)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00092",
+      "n": "ventilation fan"
+    },
+    {
+      "id": "131041S00093",
+      "n": "Cushioning material (made of paper)"
+    },
+    {
+      "id": "131041S00094",
+      "n": "Cushioning material (plastic)"
+    },
+    {
+      "id": "131041S00095",
+      "n": "desiccant"
+    },
+    {
+      "id": "131041S00096",
+      "n": "Dry batteries (manganese batteries, alkaline batteries, lithium batteries)"
+    },
+    {
+      "id": "131041S00097",
+      "n": "Dry batteries (button batteries, small rechargeable batteries, mobile batteries)"
+    },
+    {
+      "id": "131041S00098",
+      "n": "curtain"
+    },
+    {
+      "id": "131041S00099",
+      "n": "curtain rail"
+    },
+    {
+      "id": "131041S00100",
+      "n": "Picture frame (metal)"
+    },
+    {
+      "id": "131041S00101",
+      "n": "Picture frame (wooden/plastic)"
+    },
+    {
+      "id": "131041S00102",
+      "n": "gas oven"
+    },
+    {
+      "id": "131041S00103",
+      "n": "Gas stove",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00104",
+      "n": "Packing tape"
+    },
+    {
+      "id": "131041S00105",
+      "n": "glass table"
+    },
+    {
+      "id": "131041S00106",
+      "n": "Glass bottles (for beverages and food)"
+    },
+    {
+      "id": "131041S00107",
+      "n": "Glass bottles (damaged or broken)"
+    },
+    {
+      "id": "131041S00108",
+      "n": "Kick scooter"
+    },
+    {
+      "id": "131041S00109",
+      "n": "stepladder"
+    },
+    {
+      "id": "131041S00110",
+      "n": "Cap (plastic)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00111",
+      "n": "carry case"
+    },
+    {
+      "id": "131041S00112",
+      "n": "dressing table"
+    },
+    {
+      "id": "131041S00113",
+      "n": "Fireproof safe",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00114",
+      "n": "keyboard (computer)"
+    },
+    {
+      "id": "131041S00115",
+      "n": "keyboard (musical instrument)"
+    },
+    {
+      "id": "131041S00116",
+      "n": "guitar"
+    },
+    {
+      "id": "131041S00117",
+      "n": "silver paper"
+    },
+    {
+      "id": "131041S00118",
+      "n": "air purifier"
+    },
+    {
+      "id": "131041S00119",
+      "n": "nail"
+    },
+    {
+      "id": "131041S00120",
+      "n": "flowers"
+    },
+    {
+      "id": "131041S00121",
+      "n": "medicine"
+    },
+    {
+      "id": "131041S00122",
+      "n": "Medicine bottle (for drinking medicine)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00123",
+      "n": "paring knife"
+    },
+    {
+      "id": "131041S00124",
+      "n": "lipstick"
+    },
+    {
+      "id": "131041S00125",
+      "n": "floor cushion (zabuton)"
+    },
+    {
+      "id": "131041S00126",
+      "n": "shoes"
+    },
+    {
+      "id": "131041S00127",
+      "n": "christmas tree"
+    },
+    {
+      "id": "131041S00128",
+      "n": "crayon"
+    },
+    {
+      "id": "131041S00129",
+      "n": "cooler"
+    },
+    {
+      "id": "131041S00130",
+      "n": "cooler box"
+    },
+    {
+      "id": "131041S00131",
+      "n": "Fluorescent tube/fluorescent light"
+    },
+    {
+      "id": "131041S00132",
+      "n": "Diatomaceous earth products (contains asbestos)"
+    },
+    {
+      "id": "131041S00133",
+      "n": "Diatomaceous earth products (excluding asbestos)"
+    },
+    {
+      "id": "131041S00134",
+      "n": "portable game machine"
+    },
+    {
+      "id": "131041S00135",
+      "n": "mobile phone"
+    },
+    {
+      "id": "131041S00136",
+      "n": "eraser"
+    },
+    {
+      "id": "131041S00137",
+      "n": "Blood pressure monitor (mercury type)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00138",
+      "n": "blood pressure monitor"
+    },
+    {
+      "id": "131041S00139",
+      "n": "Tweezers"
+    },
+    {
+      "id": "131041S00140",
+      "n": "Kenzan"
+    },
+    {
+      "id": "131041S00141",
+      "n": "moped bike"
+    },
+    {
+      "id": "131041S00142",
+      "n": "game machine"
+    },
+    {
+      "id": "131041S00143",
+      "n": "Tools"
+    },
+    {
+      "id": "131041S00144",
+      "n": "small rechargeable battery"
+    },
+    {
+      "id": "131041S00145",
+      "n": "Kotatsu"
+    },
+    {
+      "id": "131041S00146",
+      "n": "Copy machine (home use)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00147",
+      "n": "copy paper"
+    },
+    {
+      "id": "131041S00148",
+      "n": "Rice bin (metal, wooden)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00149",
+      "n": "cork"
+    },
+    {
+      "id": "131041S00150",
+      "n": "corkscrew"
+    },
+    {
+      "id": "131041S00151",
+      "n": "outlet"
+    },
+    {
+      "id": "131041S00152",
+      "n": "contact lenses"
+    },
+    {
+      "id": "131041S00153",
+      "n": "component"
+    },
+    {
+      "id": "131041S00154",
+      "n": "Packing material (paper)"
+    },
+    {
+      "id": "131041S00155",
+      "n": "Packing material (plastic)"
+    },
+    {
+      "id": "131041S00156",
+      "n": "Cord (electrical)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00157",
+      "n": "coffee maker"
+    },
+    {
+      "id": "131041S00158",
+      "n": "Go stones"
+    },
+    {
+      "id": "131041S00159",
+      "n": "Mat"
+    },
+    {
+      "id": "131041S00160",
+      "n": "Go board/Shogi board"
+    },
+    {
+      "id": "131041S00161",
+      "n": "golf club"
+    },
+    {
+      "id": "131041S00162",
+      "n": "golf bag"
+    },
+    {
+      "id": "131041S00163",
+      "n": "golf ball"
+    },
+    {
+      "id": "131041S00164",
+      "n": "goggles"
+    },
+    {
+      "id": "131041S00165",
+      "n": "wallet"
+    },
+    {
+      "id": "131041S00166",
+      "n": "siphon"
+    },
+    {
+      "id": "131041S00167",
+      "n": "tripod"
+    },
+    {
+      "id": "131041S00168",
+      "n": "tricycle"
+    },
+    {
+      "id": "131041S00169",
+      "n": "surfboard"
+    },
+    {
+      "id": "131041S00170",
+      "n": "sitting chair"
+    },
+    {
+      "id": "131041S00171",
+      "n": "Miscellaneous paper (miscellaneous paper)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00172",
+      "n": "cushion"
+    },
+    {
+      "id": "131041S00173",
+      "n": "Shaver (shaving)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00174",
+      "n": "rug"
+    },
+    {
+      "id": "131041S00175",
+      "n": "Post (for gardening)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00176",
+      "n": "Outdoor unit (air conditioner)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00177",
+      "n": "Indoor unit (air conditioner)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00178",
+      "n": "Lawn mowers (excluding engine type)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00179",
+      "n": "Mechanical pencil (plastic)"
+    },
+    {
+      "id": "131041S00180",
+      "n": "Mechanical pencil (metal)"
+    },
+    {
+      "id": "131041S00181",
+      "n": "Shredder (home use)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00182",
+      "n": "fire extinguisher"
+    },
+    {
+      "id": "131041S00183",
+      "n": "food washer/dryer"
+    },
+    {
+      "id": "131041S00184",
+      "n": "food shelf"
+    },
+    {
+      "id": "131041S00185",
+      "n": "cooking oil"
+    },
+    {
+      "id": "131041S00186",
+      "n": "Tableware (metal, ceramics, glass)"
+    },
+    {
+      "id": "131041S00187",
+      "n": "Tableware (paper/plastic)"
+    },
+    {
+      "id": "131041S00188",
+      "n": "shopping cart"
+    },
+    {
+      "id": "131041S00189",
+      "n": "Charcoal brazier"
+    },
+    {
+      "id": "131041S00190",
+      "n": "synthesizer"
+    },
+    {
+      "id": "131041S00191",
+      "n": "Newspapers/flyers"
+    },
+    {
+      "id": "131041S00192",
+      "n": "sheets"
+    },
+    {
+      "id": "131041S00193",
+      "n": "CD player/CD radio cassette player"
+    },
+    {
+      "id": "131041S00194",
+      "n": "CD/CD-R/CD-RW"
+    },
+    {
+      "id": "131041S00195",
+      "n": "magnet"
+    },
+    {
+      "id": "131041S00196",
+      "n": "bicycle",
+      "a": [
+        "bike"
+      ]
+    },
+    {
+      "id": "131041S00197",
+      "n": "carpet"
+    },
+    {
+      "id": "131041S00198",
+      "n": "rechargeable batteries"
+    },
+    {
+      "id": "131041S00199",
+      "n": "duralumin case"
+    },
+    {
+      "id": "131041S00200",
+      "n": "juicer"
+    },
+    {
+      "id": "131041S00201",
+      "n": "water purifier"
+    },
+    {
+      "id": "131041S00202",
+      "n": "dehumidifier"
+    },
+    {
+      "id": "131041S00203",
+      "n": "Aquarium (glass)"
+    },
+    {
+      "id": "131041S00204",
+      "n": "Aquarium (plastic)"
+    },
+    {
+      "id": "131041S00205",
+      "n": "rice cooker"
+    },
+    {
+      "id": "131041S00206",
+      "n": "full-length mirror"
+    },
+    {
+      "id": "131041S00207",
+      "n": "scanner"
+    },
+    {
+      "id": "131041S00208",
+      "n": "ski board"
+    },
+    {
+      "id": "131041S00209",
+      "n": "ski shoes"
+    },
+    {
+      "id": "131041S00210",
+      "n": "ski poles"
+    },
+    {
+      "id": "131041S00211",
+      "n": "skate shoes"
+    },
+    {
+      "id": "131041S00212",
+      "n": "stand type ashtray"
+    },
+    {
+      "id": "131041S00213",
+      "n": "Blinds/Yoshizu"
+    },
+    {
+      "id": "131041S00214",
+      "n": "steam heating machine"
+    },
+    {
+      "id": "131041S00215",
+      "n": "stepper"
+    },
+    {
+      "id": "131041S00216",
+      "n": "stereo"
+    },
+    {
+      "id": "131041S00217",
+      "n": "stove"
+    },
+    {
+      "id": "131041S00218",
+      "n": "sand"
+    },
+    {
+      "id": "131041S00219",
+      "n": "sneakers"
+    },
+    {
+      "id": "131041S00220",
+      "n": "Slatted mat"
+    },
+    {
+      "id": "131041S00221",
+      "n": "snowboarding"
+    },
+    {
+      "id": "131041S00222",
+      "n": "spray can"
+    },
+    {
+      "id": "131041S00223",
+      "n": "Spray can cap and nozzle"
+    },
+    {
+      "id": "131041S00224",
+      "n": "Spoon (plastic)"
+    },
+    {
+      "id": "131041S00225",
+      "n": "Spoon (metal)"
+    },
+    {
+      "id": "131041S00226",
+      "n": "smartphone"
+    },
+    {
+      "id": "131041S00227",
+      "n": "Wooden pestle"
+    },
+    {
+      "id": "131041S00228",
+      "n": "Grinding bowl"
+    },
+    {
+      "id": "131041S00229",
+      "n": "suitcase"
+    },
+    {
+      "id": "131041S00230",
+      "n": "infrared heater"
+    },
+    {
+      "id": "131041S00231",
+      "n": "petroleum"
+    },
+    {
+      "id": "131041S00232",
+      "n": "soap"
+    },
+    {
+      "id": "131041S00233",
+      "n": "cellophane tape"
+    },
+    {
+      "id": "131041S00234",
+      "n": "Incense sticks"
+    },
+    {
+      "id": "131041S00235",
+      "n": "Washing machine/clothes dryer"
+    },
+    {
+      "id": "131041S00236",
+      "n": "electric fan"
+    },
+    {
+      "id": "131041S00237",
+      "n": "bathroom vanity"
+    },
+    {
+      "id": "131041S00238",
+      "n": "vacuum cleaner"
+    },
+    {
+      "id": "131041S00239",
+      "n": "sofa"
+    },
+    {
+      "id": "131041S00240",
+      "n": "sled"
+    },
+    {
+      "id": "131041S00241",
+      "n": "Thermometer (mercury type)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00242",
+      "n": "thermometer"
+    },
+    {
+      "id": "131041S00243",
+      "n": "fireproof safe"
+    },
+    {
+      "id": "131041S00244",
+      "n": "weight scale"
+    },
+    {
+      "id": "131041S00245",
+      "n": "typewriter"
+    },
+    {
+      "id": "131041S00246",
+      "n": "tires"
+    },
+    {
+      "id": "131041S00247",
+      "n": "tire chain"
+    },
+    {
+      "id": "131041S00248",
+      "n": "tiles"
+    },
+    {
+      "id": "131041S00249",
+      "n": "Tatami"
+    },
+    {
+      "id": "131041S00250",
+      "n": "cutting table"
+    },
+    {
+      "id": "131041S00251",
+      "n": "Terai"
+    },
+    {
+      "id": "131041S00252",
+      "n": "trolley"
+    },
+    {
+      "id": "131041S00253",
+      "n": "dumbbell"
+    },
+    {
+      "id": "131041S00254",
+      "n": "cardboard"
+    },
+    {
+      "id": "131041S00255",
+      "n": "chain"
+    },
+    {
+      "id": "131041S00256",
+      "n": "child seat"
+    },
+    {
+      "id": "131041S00257",
+      "n": "tea bowl"
+    },
+    {
+      "id": "131041S00258",
+      "n": "wok"
+    },
+    {
+      "id": "131041S00259",
+      "n": "Tube (toothpaste, mayonnaise, etc.)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00260",
+      "n": "flyer"
+    },
+    {
+      "id": "131041S00261",
+      "n": "Cane (wooden)"
+    },
+    {
+      "id": "131041S00262",
+      "n": "Cane (plastic)"
+    },
+    {
+      "id": "131041S00263",
+      "n": "Cane (metal)"
+    },
+    {
+      "id": "131041S00264",
+      "n": "desk"
+    },
+    {
+      "id": "131041S00265",
+      "n": "soil"
+    },
+    {
+      "id": "131041S00266",
+      "n": "tension rod"
+    },
+    {
+      "id": "131041S00267",
+      "n": "jar"
+    },
+    {
+      "id": "131041S00268",
+      "n": "Nail clippers"
+    },
+    {
+      "id": "131041S00269",
+      "n": "fishing rod"
+    },
+    {
+      "id": "131041S00270",
+      "n": "tissue paper box"
+    },
+    {
+      "id": "131041S00271",
+      "n": "Iron dumbbell"
+    },
+    {
+      "id": "131041S00272",
+      "n": "tennis ball"
+    },
+    {
+      "id": "131041S00273",
+      "n": "tennis racket"
+    },
+    {
+      "id": "131041S00274",
+      "n": "television"
+    },
+    {
+      "id": "131041S00275",
+      "n": "TV stand"
+    },
+    {
+      "id": "131041S00276",
+      "n": "astronomical telescope"
+    },
+    {
+      "id": "131041S00277",
+      "n": "table"
+    },
+    {
+      "id": "131041S00278",
+      "n": "display monitor"
+    },
+    {
+      "id": "131041S00279",
+      "n": "DVD"
+    },
+    {
+      "id": "131041S00280",
+      "n": "dvd case"
+    },
+    {
+      "id": "131041S00281",
+      "n": "DVD player"
+    },
+    {
+      "id": "131041S00282",
+      "n": "digital camera"
+    },
+    {
+      "id": "131041S00283",
+      "n": "electric carpet"
+    },
+    {
+      "id": "131041S00284",
+      "n": "electric kettle"
+    },
+    {
+      "id": "131041S00285",
+      "n": "electrical cord"
+    },
+    {
+      "id": "131041S00286",
+      "n": "desk lamp"
+    },
+    {
+      "id": "131041S00287",
+      "n": "Electric pot (including pots, thermos flasks, etc.)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00288",
+      "n": "electric blanket"
+    },
+    {
+      "id": "131041S00289",
+      "n": "light bulb"
+    },
+    {
+      "id": "131041S00290",
+      "n": "electronic organ"
+    },
+    {
+      "id": "131041S00291",
+      "n": "microwave oven"
+    },
+    {
+      "id": "131041S00292",
+      "n": "calculator"
+    },
+    {
+      "id": "131041S00293",
+      "n": "telephone"
+    },
+    {
+      "id": "131041S00294",
+      "n": "telephone stand"
+    },
+    {
+      "id": "131041S00295",
+      "n": "telephone directory"
+    },
+    {
+      "id": "131041S00296",
+      "n": "whetstone"
+    },
+    {
+      "id": "131041S00297",
+      "n": "clock"
+    },
+    {
+      "id": "131041S00298",
+      "n": "galvanized iron plate"
+    },
+    {
+      "id": "131041S00299",
+      "n": "door"
+    },
+    {
+      "id": "131041S00300",
+      "n": "birdcage"
+    },
+    {
+      "id": "131041S00301",
+      "n": "paint"
+    },
+    {
+      "id": "131041S00302",
+      "n": "Hammer"
+    },
+    {
+      "id": "131041S00303",
+      "n": "toaster"
+    },
+    {
+      "id": "131041S00304",
+      "n": "door"
+    },
+    {
+      "id": "131041S00305",
+      "n": "door knob"
+    },
+    {
+      "id": "131041S00306",
+      "n": "hair dryer",
+      "a": [
+        "blow dryer"
+      ]
+    },
+    {
+      "id": "131041S00307",
+      "n": "drum (musical instrument)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00308",
+      "n": "drip pot"
+    },
+    {
+      "id": "131041S00309",
+      "n": "knife"
+    },
+    {
+      "id": "131041S00310",
+      "n": "boots"
+    },
+    {
+      "id": "131041S00311",
+      "n": "cooking pot"
+    },
+    {
+      "id": "131041S00312",
+      "n": "food waste"
+    },
+    {
+      "id": "131041S00313",
+      "n": "paper with strong smell"
+    },
+    {
+      "id": "131041S00314",
+      "n": "doll"
+    },
+    {
+      "id": "131041S00315",
+      "n": "stuffed animal"
+    },
+    {
+      "id": "131041S00316",
+      "n": "sleeping bag"
+    },
+    {
+      "id": "131041S00317",
+      "n": "adhesive tape"
+    },
+    {
+      "id": "131041S00318",
+      "n": "clay (paper clay)"
+    },
+    {
+      "id": "131041S00319",
+      "n": "clay (oil clay)"
+    },
+    {
+      "id": "131041S00320",
+      "n": "clay (gypsum clay)"
+    },
+    {
+      "id": "131041S00321",
+      "n": "Pesticides"
+    },
+    {
+      "id": "131041S00322",
+      "n": "saw"
+    },
+    {
+      "id": "131041S00323",
+      "n": "notes"
+    },
+    {
+      "id": "131041S00324",
+      "n": "laptop"
+    },
+    {
+      "id": "131041S00325",
+      "n": "scrap wood"
+    },
+    {
+      "id": "131041S00326",
+      "n": "white tray"
+    },
+    {
+      "id": "131041S00327",
+      "n": "scissors (metal)",
+      "a": [
+        "scissors"
+      ]
+    },
+    {
+      "id": "131041S00328",
+      "n": "scissors (plastic)",
+      "a": [
+        "scissors"
+      ]
+    },
+    {
+      "id": "131041S00329",
+      "n": "styrofoam"
+    },
+    {
+      "id": "131041S00330",
+      "n": "fireworks"
+    },
+    {
+      "id": "131041S00331",
+      "n": "toothbrush"
+    },
+    {
+      "id": "131041S00332",
+      "n": "needle"
+    },
+    {
+      "id": "131041S00333",
+      "n": "handkerchief"
+    },
+    {
+      "id": "131041S00334",
+      "n": "Hangers (plastic and wooden)"
+    },
+    {
+      "id": "131041S00335",
+      "n": "Hanger (metal)"
+    },
+    {
+      "id": "131041S00336",
+      "n": "hanger rack"
+    },
+    {
+      "id": "131041S00337",
+      "n": "bucket"
+    },
+    {
+      "id": "131041S00338",
+      "n": "Batteries (cars, motorcycles, bicycles)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00339",
+      "n": "Bat (wooden)"
+    },
+    {
+      "id": "131041S00340",
+      "n": "Bat (metal)"
+    },
+    {
+      "id": "131041S00341",
+      "n": "Valletta (plastic)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00342",
+      "n": "Barbell (bar and weight)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00343",
+      "n": "crowbar"
+    },
+    {
+      "id": "131041S00344",
+      "n": "pipe (metal)"
+    },
+    {
+      "id": "131041S00345",
+      "n": "pipe (plastic)"
+    },
+    {
+      "id": "131041S00346",
+      "n": "pipe wagon"
+    },
+    {
+      "id": "131041S00347",
+      "n": "computer"
+    },
+    {
+      "id": "131041S00348",
+      "n": "computer keyboard and mouse"
+    },
+    {
+      "id": "131041S00349",
+      "n": "pachinko machine"
+    },
+    {
+      "id": "131041S00350",
+      "n": "Packs (paper packs, milk cartons, paper egg cartons, etc.)"
+    },
+    {
+      "id": "131041S00351",
+      "n": "Pack (plastic egg pack)"
+    },
+    {
+      "id": "131041S00352",
+      "n": "Electric shaver"
+    },
+    {
+      "id": "131041S00353",
+      "n": "Hibachi/Shichirin"
+    },
+    {
+      "id": "131041S00354",
+      "n": "Facial beauty device"
+    },
+    {
+      "id": "131041S00355",
+      "n": "video camera"
+    },
+    {
+      "id": "131041S00356",
+      "n": "videotape"
+    },
+    {
+      "id": "131041S00357",
+      "n": "video deck"
+    },
+    {
+      "id": "131041S00358",
+      "n": "vinyl umbrella"
+    },
+    {
+      "id": "131041S00359",
+      "n": "plastic bag"
+    },
+    {
+      "id": "131041S00360",
+      "n": "Bottles (bottles for beverages, food, medicines, cosmetics, etc.)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00361",
+      "n": "beer case"
+    },
+    {
+      "id": "131041S00362",
+      "n": "beer bottle"
+    },
+    {
+      "id": "131041S00363",
+      "n": "piano"
+    },
+    {
+      "id": "131041S00364",
+      "n": "PHS"
+    },
+    {
+      "id": "131041S00365",
+      "n": "PCR test kit/antibody test simple kit"
+    },
+    {
+      "id": "131041S00366",
+      "n": "fax"
+    },
+    {
+      "id": "131041S00367",
+      "n": "envelope"
+    },
+    {
+      "id": "131041S00368",
+      "n": "Envelope (with window)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00369",
+      "n": "Futon"
+    },
+    {
+      "id": "131041S00370",
+      "n": "futon dryer"
+    },
+    {
+      "id": "131041S00371",
+      "n": "Step stool"
+    },
+    {
+      "id": "131041S00372",
+      "n": "music stand"
+    },
+    {
+      "id": "131041S00373",
+      "n": "frying pan"
+    },
+    {
+      "id": "131041S00374",
+      "n": "floppy disk"
+    },
+    {
+      "id": "131041S00375",
+      "n": "floppy disk drive"
+    },
+    {
+      "id": "131041S00376",
+      "n": "bath lid"
+    },
+    {
+      "id": "131041S00377",
+      "n": "food processor"
+    },
+    {
+      "id": "131041S00378",
+      "n": "blinds"
+    },
+    {
+      "id": "131041S00379",
+      "n": "blu ray"
+    },
+    {
+      "id": "131041S00380",
+      "n": "blu ray case"
+    },
+    {
+      "id": "131041S00381",
+      "n": "blu ray recorder"
+    },
+    {
+      "id": "131041S00382",
+      "n": "Printer (home use)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00383",
+      "n": "hair spray"
+    },
+    {
+      "id": "131041S00384",
+      "n": "helmet"
+    },
+    {
+      "id": "131041S00385",
+      "n": "bed"
+    },
+    {
+      "id": "131041S00386",
+      "n": "bed frame"
+    },
+    {
+      "id": "131041S00387",
+      "n": "bed mat"
+    },
+    {
+      "id": "131041S00388",
+      "n": "stroller"
+    },
+    {
+      "id": "131041S00389",
+      "n": "crib"
+    },
+    {
+      "id": "131041S00390",
+      "n": "belt"
+    },
+    {
+      "id": "131041S00391",
+      "n": "bench press"
+    },
+    {
+      "id": "131041S00392",
+      "n": "plastic bottle"
+    },
+    {
+      "id": "131041S00393",
+      "n": "plastic bottle lid"
+    },
+    {
+      "id": "131041S00394",
+      "n": "toilet seat for pets"
+    },
+    {
+      "id": "131041S00395",
+      "n": "Pet toilet litter (paper, wood, okara)"
+    },
+    {
+      "id": "131041S00396",
+      "n": "Pet litter (mineral)"
+    },
+    {
+      "id": "131041S00397",
+      "n": "paint"
+    },
+    {
+      "id": "131041S00398",
+      "n": "Paper knife (metal)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00399",
+      "n": "Brooms (desk brooms, free brooms, bamboo brooms, rakes, etc.)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00400",
+      "n": "Packaging (food packaging, fruit nets, wet towel packaging films, etc.)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00401",
+      "n": "wrapping paper"
+    },
+    {
+      "id": "131041S00402",
+      "n": "knife"
+    },
+    {
+      "id": "131041S00403",
+      "n": "stapler"
+    },
+    {
+      "id": "131041S00404",
+      "n": "hot carpet"
+    },
+    {
+      "id": "131041S00405",
+      "n": "hot plate"
+    },
+    {
+      "id": "131041S00406",
+      "n": "Baby bottle (glass)"
+    },
+    {
+      "id": "131041S00407",
+      "n": "Baby bottle (plastic)"
+    },
+    {
+      "id": "131041S00408",
+      "n": "Cold pack"
+    },
+    {
+      "id": "131041S00409",
+      "n": "Book (hardcover)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00410",
+      "n": "bookshelf"
+    },
+    {
+      "id": "131041S00411",
+      "n": "hose"
+    },
+    {
+      "id": "131041S00412",
+      "n": "hose reel"
+    },
+    {
+      "id": "131041S00413",
+      "n": "Home bread maker"
+    },
+    {
+      "id": "131041S00414",
+      "n": "waterproof paper"
+    },
+    {
+      "id": "131041S00415",
+      "n": "bowling ball"
+    },
+    {
+      "id": "131041S00416",
+      "n": "boston bag"
+    },
+    {
+      "id": "131041S00417",
+      "n": "button battery"
+    },
+    {
+      "id": "131041S00418",
+      "n": "body board"
+    },
+    {
+      "id": "131041S00419",
+      "n": "ballpoint pen"
+    },
+    {
+      "id": "131041S00420",
+      "n": "balls"
+    },
+    {
+      "id": "131041S00421",
+      "n": "Portable CD (MD) player (Walkman, etc.)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00422",
+      "n": "Mouse (PC)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00423",
+      "n": "pillow"
+    },
+    {
+      "id": "131041S00424",
+      "n": "pillow cover"
+    },
+    {
+      "id": "131041S00425",
+      "n": "magnet"
+    },
+    {
+      "id": "131041S00426",
+      "n": "Massage chair (other, massage machine)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00427",
+      "n": "Mats (various mats for entrances, etc.)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00428",
+      "n": "mattress"
+    },
+    {
+      "id": "131041S00429",
+      "n": "crutches"
+    },
+    {
+      "id": "131041S00430",
+      "n": "window glass"
+    },
+    {
+      "id": "131041S00431",
+      "n": "cutting board"
+    },
+    {
+      "id": "131041S00432",
+      "n": "fountain pen"
+    },
+    {
+      "id": "131041S00433",
+      "n": "mahjong table"
+    },
+    {
+      "id": "131041S00434",
+      "n": "mahjong tiles"
+    },
+    {
+      "id": "131041S00435",
+      "n": "mixer"
+    },
+    {
+      "id": "131041S00436",
+      "n": "sewing machine"
+    },
+    {
+      "id": "131041S00437",
+      "n": "mini component"
+    },
+    {
+      "id": "131041S00438",
+      "n": "insect cage"
+    },
+    {
+      "id": "131041S00439",
+      "n": "magnifying glass"
+    },
+    {
+      "id": "131041S00440",
+      "n": "glasses"
+    },
+    {
+      "id": "131041S00441",
+      "n": "blanket"
+    },
+    {
+      "id": "131041S00442",
+      "n": "wood"
+    },
+    {
+      "id": "131041S00443",
+      "n": "Mochi pounding machine"
+    },
+    {
+      "id": "131041S00444",
+      "n": "clothesline"
+    },
+    {
+      "id": "131041S00445",
+      "n": "drying rack"
+    },
+    {
+      "id": "131041S00446",
+      "n": "kettle"
+    },
+    {
+      "id": "131041S00447",
+      "n": "chemicals"
+    },
+    {
+      "id": "131041S00448",
+      "n": "mailbox"
+    },
+    {
+      "id": "131041S00449",
+      "n": "hot air heater"
+    },
+    {
+      "id": "131041S00450",
+      "n": "water boiler (yuwakashiki)",
+      "r": "check_japanese"
+    },
+    {
+      "id": "131041S00451",
+      "n": "Container (made of paper)"
+    },
+    {
+      "id": "131041S00452",
+      "n": "Container (plastic)"
+    },
+    {
+      "id": "131041S00453",
+      "n": "Container (metal)"
+    },
+    {
+      "id": "131041S00454",
+      "n": "bathtub lid"
+    },
+    {
+      "id": "131041S00455",
+      "n": "lighter"
+    },
+    {
+      "id": "131041S00456",
+      "n": "Racket (tennis/badminton)"
+    },
+    {
+      "id": "131041S00457",
+      "n": "Racket (table tennis)"
+    },
+    {
+      "id": "131041S00458",
+      "n": "Radio-controlled toy"
+    },
+    {
+      "id": "131041S00459",
+      "n": "Rack (metal)"
+    },
+    {
+      "id": "131041S00460",
+      "n": "Racks (wooden and plastic)"
+    },
+    {
+      "id": "131041S00461",
+      "n": "school bag"
+    },
+    {
+      "id": "131041S00462",
+      "n": "running machine"
+    },
+    {
+      "id": "131041S00463",
+      "n": "rucksack"
+    },
+    {
+      "id": "131041S00464",
+      "n": "travel bag"
+    },
+    {
+      "id": "131041S00465",
+      "n": "Refrigerator/freezer"
+    },
+    {
+      "id": "131041S00466",
+      "n": "Air cooler"
+    },
+    {
+      "id": "131041S00467",
+      "n": "Vinyl record"
+    },
+    {
+      "id": "131041S00468",
+      "n": "Picnic sheet"
+    },
+    {
+      "id": "131041S00469",
+      "n": "brick"
+    },
+    {
+      "id": "131041S00470",
+      "n": "Lens (glass)"
+    },
+    {
+      "id": "131041S00471",
+      "n": "Lens (plastic)"
+    },
+    {
+      "id": "131041S00472",
+      "n": "briquettes"
+    },
+    {
+      "id": "131041S00473",
+      "n": "laser disc"
+    },
+    {
+      "id": "131041S00474",
+      "n": "laser disc player"
+    },
+    {
+      "id": "131041S00475",
+      "n": "candle"
+    },
+    {
+      "id": "131041S00476",
+      "n": "rowing machine"
+    },
+    {
+      "id": "131041S00477",
+      "n": "roaster"
+    },
+    {
+      "id": "131041S00478",
+      "n": "rope"
+    },
+    {
+      "id": "131041S00479",
+      "n": "roll curtains"
+    },
+    {
+      "id": "131041S00480",
+      "n": "rubber band"
+    },
+    {
+      "id": "131041S00481",
+      "n": "wagon"
+    },
+    {
+      "id": "131041S00482",
+      "n": "word processor"
+    }
+  ]
+}

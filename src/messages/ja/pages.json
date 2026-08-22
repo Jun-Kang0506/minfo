@@ -73,10 +73,11 @@
     ],
     "candidatesTitle": "東京都オープンデータ：つかいたいデータ",
     "candidatesSub": "MINFOがこれからつなげたいデータと、何がよくなるかです。まだ自動ではつかっていません。",
+    "activeTitle": "MINFOで使っているデータ", "activeSub": "MINFOの案内で使う、確認ずみの公式データです。", "candidateTitle": "これから使う候補", "candidateSub": "公式データを確認しましたが、まだMINFOの案内では使っていません。",
     "catalogCta": "東京都オープンデータカタログを見る",
     "badges": {
       "curated": "いまつかっています",
-      "candidate": "オープンデータ候補",
+      "active": "MINFOで使用中", "candidate": "候補", "checkedSnapshot": "確認ずみの保存データ", "plannedBatch": "これから定期更新",
       "batch": "ときどきかわる・これから定期更新",
       "live": "すぐかわる・これから API",
       "searchTarget": "カタログでさがす"

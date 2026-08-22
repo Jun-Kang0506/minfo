@@ -73,10 +73,11 @@
     ],
     "candidatesTitle": "东京都开放数据：候选数据集",
     "candidatesSub": "MINFO 计划接入的目录条目和检索目标，以及各自能改进什么。目前均未自动获取。",
+    "activeTitle": "MINFO 正在使用的数据", "activeSub": "MINFO 引导流程中使用的已确认官方数据。", "candidateTitle": "候选数据", "candidateSub": "已确认、但尚未用于 MINFO 引导流程的官方数据。",
     "catalogCta": "浏览东京都开放数据目录",
     "badges": {
       "curated": "当前人工维护",
-      "candidate": "开放数据候选",
+      "active": "MINFO 正在使用", "candidate": "候选", "checkedSnapshot": "已确认的数据快照", "plannedBatch": "计划定期更新",
       "batch": "定期变化·未来批量更新",
       "live": "时效性强·未来 API",
       "searchTarget": "目录检索目标"
