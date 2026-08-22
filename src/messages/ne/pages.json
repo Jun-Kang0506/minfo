@@ -1,4 +1,7 @@
 {
+  "students": { "homeTitle": "तपाईंको अवस्थाका लागि जानकारी", "homeSub": "अन्तर्राष्ट्रिय विद्यार्थीका सामान्य कामका लागि छोटो बाटो।", "homeCta": "अन्तर्राष्ट्रिय विद्यार्थीका लागि", "title": "अन्तर्राष्ट्रिय विद्यार्थीका लागि", "sub": "जीवनको काम छान्नुहोस्। यो बाटोले तपाईंको योग्यता वा हैसियत निर्णय गर्दैन।", "sections": [{ "id": "start", "title": "जापानमा जीवन सुरु", "items": [{ "id": "registration", "title": "ठेगाना दर्ता", "description": "बसाइँसराइ र बासिन्दा दर्ता" }, { "id": "myNumber", "title": "My Number", "description": "My Number र कार्ड" }, { "id": "insurance", "title": "स्वास्थ्य बीमा", "description": "स्वास्थ्य बीमा बुझ्नुहोस्" }] }, { "id": "life", "title": "पढाइ र दैनिक जीवन", "items": [{ "id": "japanese", "title": "जापानी कक्षा", "description": "कक्षा खोज्नुहोस्" }, { "id": "housing", "title": "आवास", "description": "कोठा भाडा र बसाइँसराइ" }, { "id": "clinic", "title": "अस्पताल र क्लिनिक", "description": "चिकित्सा सहायता खोज्नुहोस्" }, { "id": "disaster", "title": "विपद् तयारी", "description": "आपतकालका लागि तयारी" }] }, { "id": "work", "title": "अंशकालिक काम", "items": [{ "id": "work", "title": "अंशकालिक कामको आधार", "description": "अनुमति र सामान्य सीमा" }, { "id": "taxes", "title": "कर", "description": "कर पत्र र भुक्तानी" }] }, { "id": "help", "title": "सहायता चाहिँदा", "items": [{ "id": "consultation", "title": "परामर्श", "description": "सहायता डेस्क खोज्नुहोस्" }, { "id": "emergency", "title": "आपतकाल", "description": "119 र 110 मार्गदर्शन" }] }] },
+  "contextPathwaysHome": { "title": "तपाईंको अवस्थाको जानकारी", "sub": "सामान्य कामका लागि छोटो बाटो।", "newToJapan": "जापानमा नयाँ", "students": "अन्तर्राष्ट्रिय विद्यार्थी" },
+  "newToJapan": { "title": "जापानमा नयाँ", "sub": "सामान्य काम छान्नुहोस्। यस मार्गले तपाईंको योग्यता वा स्थिति निर्धारण गर्दैन।", "sections": [{ "id": "start", "title": "जापानमा जीवन सुरु", "items": [{ "id": "registration", "title": "ठेगाना दर्ता", "description": "बसाइँसराइ र बासिन्दा दर्ता" }, { "id": "myNumber", "title": "My Number", "description": "My Number र कार्ड" }, { "id": "insurance", "title": "स्वास्थ्य बीमा", "description": "स्वास्थ्य बीमा बुझ्नुहोस्" }] }, { "id": "daily", "title": "दैनिक जीवन", "items": [{ "id": "garbage", "title": "फोहोर नियम", "description": "छुट्याउने र संकलन निर्देश" }, { "id": "japanese", "title": "जापानी सिक्नुहोस्", "description": "जापानी कक्षा खोज्नुहोस्" }, { "id": "clinic", "title": "क्लिनिक खोज्नुहोस्", "description": "शिन्जुकु क्लिनिक खोज्नुहोस्" }, { "id": "housing", "title": "आवास", "description": "भाडा र बसाइँसराइ" }] }, { "id": "help", "title": "सुरक्षित रहनुहोस् / सहयोग", "items": [{ "id": "disaster", "title": "विपद् तयारी", "description": "सुरक्षा निर्देश खोज्नुहोस्" }, { "id": "consultation", "title": "परामर्श", "description": "सहायता डेस्क खोज्नुहोस्" }, { "id": "emergency", "title": "आपतकाल", "description": "119 र 110 निर्देश" }] }] },
   "sources": {
     "title": "आधिकारिक तथा सार्वजनिक जानकारीमा आधारित",
     "sub": "MINFO ले छानिएका आधिकारिक/सार्वजनिक निकायबाट मात्र उत्तर दिन्छ। हरेक उत्तरमा स्रोत जोडिन्छ।",
@@ -70,10 +73,11 @@
     ],
     "candidatesTitle": "टोकियो खुला डाटा: उम्मेदवार डाटासेट",
     "candidatesSub": "MINFO ले अब जोड्न चाहेका क्याटलग सूची र खोज लक्ष्य, र हरेकले के सुधार्छ। अहिले कुनै पनि स्वतः लिइँदैन।",
+    "activeTitle":"MINFO मा प्रयोग भइरहेको डेटा","activeSub":"MINFO को मार्गदर्शनमा प्रयोग हुने जाँच गरिएको आधिकारिक स्न्यापसट।","candidateTitle":"उम्मेदवार डेटा","candidateSub":"जाँच गरिएको तर MINFO को मार्गदर्शनमा अझै प्रयोग नभएको आधिकारिक डेटा।",
     "catalogCta": "टोकियो खुला डाटा क्याटलग हेर्नुहोस्",
     "badges": {
       "curated": "अहिले हातले छानिएको",
-      "candidate": "खुला डाटा उम्मेदवार",
+      "active":"MINFO मा प्रयोगमा","candidate":"उम्मेदवार","checkedSnapshot":"जाँच गरिएको डेटा स्न्यापसट","plannedBatch":"भविष्यमा नियमित अद्यावधिक",
       "batch": "समय-समयमा बदलिने · भविष्य: ब्याच",
       "live": "छिटो बदलिने · भविष्य: API",
       "searchTarget": "क्याटलग खोज लक्ष्य"

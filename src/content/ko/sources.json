@@ -1,4 +1,8 @@
 {
+  "shinjuku-my-number": { "title": "신주쿠구: My Number Card", "organization": "신주쿠구", "note": "외국인 주민을 위한 My Number 및 My Number Card 공식 안내입니다." },
+  "my-number-card-portal": { "title": "My Number Card 공식 포털", "organization": "지방공공단체정보시스템기구", "note": "신청 방법과 자주 묻는 질문을 포함한 My Number Card 공식 정보입니다." },
+  "my-number-card-contact": { "title": "My Number Card 외국어 연락", "organization": "지방공공단체정보시스템기구", "note": "분실 또는 도난 뒤의 일시 정지와 외국어 지원 공식 안내입니다." },
+  "isa-student-work": { "title": "출입국재류관리청: 자격 외 활동 허가", "organization": "일본 출입국재류관리청", "note": "학생 근무 조건을 포함한 자격 외 활동 허가 공식 정보입니다." },
   "shinjuku-foreign": {
     "title": "신주쿠구 외국인을 위한 생활 정보",
     "organization": "신주쿠구",

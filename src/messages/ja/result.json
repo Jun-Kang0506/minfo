@@ -14,6 +14,8 @@
     "officialInformation": "公式情報",
     "resultCardLabel": "結果カード"
   },
+  "counter": { "title": "まどぐちで見せる", "show": "まどぐちで見せる", "japaneseLabel": "スタッフに見せる日本語", "meaningLabel": "いみ", "close": "とじる", "phrases": { "moving-address": { "meaning": "引っ越したあとの住所の手続きについて相談します。" }, "my-number-explanation": { "meaning": "マイナンバーとカードのちがいを聞きます。" }, "my-number-card-application": { "meaning": "カードの申請について相談します。" }, "my-number-card-change": { "meaning": "カードの変更について相談します。" }, "my-number-check": { "meaning": "自分のマイナンバーを確認する方法を聞きます。" }, "school-enrollment": { "meaning": "子どもの入学手続きについて相談します。" }, "childcare-application": { "meaning": "保育施設の申し込みについて相談します。" }, "tax-pension-notice": { "meaning": "税金や年金の通知について聞きます。" }, "official-letter": { "meaning": "役所からの手紙について聞きます。" }, "health-insurance": { "meaning": "健康保険の手続きについて相談します。" }, "residence-card": { "meaning": "在留カードの手続きについて相談します。" }, "japanese-class": { "meaning": "日本語教室について相談します。" }, "clinic-reception": { "meaning": "診察を受けたいと伝え、受付に助けをたのみます。" } } },
+  "nextAction": { "question": "つぎにすることが わかりますか？", "yes": "はい", "notYet": "まだ", "yesStatus": "よかったです。できるときに、このページの選択肢をつかってください。", "recoveryIntro": "このどちらかをためしてください。", "reviewGuidance": "案内をもう一度見る", "viewOfficial": "公式情報を見る", "chooseAnother": "別のことを選ぶ" },
   "feedback": {
     "question": "このこたえは役に立ちましたか？",
     "helpful": "役に立った",

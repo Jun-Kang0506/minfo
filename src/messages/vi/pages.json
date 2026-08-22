@@ -1,4 +1,7 @@
 {
+  "students": { "homeTitle": "Thông tin cho hoàn cảnh của bạn", "homeSub": "Lối tắt cho các việc thường gặp của du học sinh.", "homeCta": "Dành cho du học sinh", "title": "Dành cho du học sinh", "sub": "Chọn việc trong cuộc sống. Lối đi này không quyết định điều kiện hay tư cách của bạn.", "sections": [{ "id": "start", "title": "Bắt đầu cuộc sống ở Nhật", "items": [{ "id": "registration", "title": "Đăng ký địa chỉ", "description": "Chuyển nhà và đăng ký cư trú" }, { "id": "myNumber", "title": "My Number", "description": "My Number và thẻ" }, { "id": "insurance", "title": "Bảo hiểm y tế", "description": "Hiểu bảo hiểm y tế" }] }, { "id": "life", "title": "Học tập và đời sống", "items": [{ "id": "japanese", "title": "Lớp tiếng Nhật", "description": "Tìm lớp học" }, { "id": "housing", "title": "Nhà ở", "description": "Thuê nhà và chuyển nhà" }, { "id": "clinic", "title": "Bệnh viện và phòng khám", "description": "Tìm trợ giúp y tế" }, { "id": "disaster", "title": "Chuẩn bị thiên tai", "description": "Chuẩn bị khẩn cấp" }] }, { "id": "work", "title": "Làm thêm", "items": [{ "id": "work", "title": "Cơ bản về làm thêm", "description": "Giấy phép và giới hạn chung" }, { "id": "taxes", "title": "Thuế", "description": "Thư thuế và thanh toán" }] }, { "id": "help", "title": "Khi cần giúp đỡ", "items": [{ "id": "consultation", "title": "Tư vấn", "description": "Tìm bàn hỗ trợ" }, { "id": "emergency", "title": "Khẩn cấp", "description": "Hướng dẫn 119 và 110" }] }] },
+  "contextPathwaysHome": { "title": "Thông tin cho hoàn cảnh của bạn", "sub": "Lối tắt đến các việc thường gặp.", "newToJapan": "Mới đến Nhật", "students": "Sinh viên quốc tế" },
+  "newToJapan": { "title": "Mới đến Nhật", "sub": "Chọn một việc thường gặp. Lối đi này không quyết định tư cách hay tình trạng của bạn.", "sections": [{ "id": "start", "title": "Bắt đầu cuộc sống ở Nhật", "items": [{ "id": "registration", "title": "Đăng ký địa chỉ", "description": "Chuyển nhà và đăng ký cư dân" }, { "id": "myNumber", "title": "My Number", "description": "My Number và thẻ" }, { "id": "insurance", "title": "Bảo hiểm y tế", "description": "Tìm hiểu bảo hiểm y tế" }] }, { "id": "daily", "title": "Đời sống hằng ngày", "items": [{ "id": "garbage", "title": "Quy tắc rác", "description": "Hướng dẫn phân loại và thu gom" }, { "id": "japanese", "title": "Học tiếng Nhật", "description": "Tìm lớp tiếng Nhật" }, { "id": "clinic", "title": "Tìm phòng khám", "description": "Tìm phòng khám Shinjuku" }, { "id": "housing", "title": "Nhà ở", "description": "Thuê nhà và chuyển nhà" }] }, { "id": "help", "title": "An toàn / cần giúp đỡ", "items": [{ "id": "disaster", "title": "Chuẩn bị thiên tai", "description": "Chuẩn bị và tìm hướng dẫn an toàn" }, { "id": "consultation", "title": "Tư vấn", "description": "Tìm bàn hỗ trợ" }, { "id": "emergency", "title": "Khẩn cấp", "description": "Hướng dẫn 119 và 110" }] }] },
   "sources": {
     "title": "Dựa trên thông tin chính thức & công cộng",
     "sub": "MINFO chỉ trả lời từ các tổ chức chính thức và công cộng được chọn lọc. Mọi câu trả lời đều dẫn nguồn.",
@@ -70,10 +73,11 @@
     ],
     "candidatesTitle": "Dữ liệu Mở Tokyo: các bộ dữ liệu ứng viên",
     "candidatesSub": "Các mục trong danh mục và mục tiêu tìm kiếm MINFO dự định kết nối tiếp theo, kèm điều mỗi bộ sẽ cải thiện. Chưa có mục nào được lấy tự động.",
+    "activeTitle": "Dữ liệu đang dùng trong MINFO", "activeSub": "Ảnh chụp dữ liệu chính thức đã kiểm tra và đang dùng trong luồng hướng dẫn của MINFO.", "candidateTitle": "Dữ liệu đề xuất", "candidateSub": "Dữ liệu chính thức đã kiểm tra nhưng chưa dùng trong luồng hướng dẫn của MINFO.",
     "catalogCta": "Xem Danh mục Dữ liệu Mở Tokyo",
     "badges": {
       "curated": "Đang chọn lọc thủ công",
-      "candidate": "Ứng viên dữ liệu mở",
+      "active": "Đang dùng trong MINFO", "candidate": "Đề xuất", "checkedSnapshot": "Ảnh chụp dữ liệu đã kiểm tra", "plannedBatch": "Dự kiến cập nhật định kỳ",
       "batch": "Đổi định kỳ · tương lai: hàng loạt",
       "live": "Nhạy thời gian · tương lai: API",
       "searchTarget": "Mục tiêu tìm trong danh mục"

@@ -34,5 +34,7 @@
   "tokyo-medical-welfare-group": {
     "titleGloss": "医疗·福祉（目录分类）",
     "note": "目录中的「医疗·福祉」分类：检索各区诊所和福祉数据的入口（各区命名不一）。"
-  }
+  },
+  "shinjuku-medical-clinics": { "titleGloss":"新宿区诊所", "note":"MINFO 的诊所查询使用的新宿区官方数据快照。这是一份名录，不显示诊所是否正在营业或接收患者。" },
+  "tokyo-public-schools-2025": { "titleGloss":"东京都公立学校名单", "note":"MINFO 从一个东京都官方数据源中筛选出新宿区学校，用于小学、初中和高中查询。列入名单不代表保证入学或分配学校。" }
 }

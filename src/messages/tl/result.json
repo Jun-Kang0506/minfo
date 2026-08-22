@@ -14,12 +14,14 @@
     "officialInformation": "Opisyal na impormasyon",
     "resultCardLabel": "Card ng resulta"
   },
+  "counter": { "title": "Ipakita sa tanggapan", "show": "Ipakita sa tanggapan", "japaneseLabel": "Hapones na ipapakita sa kawani", "meaningLabel": "Kahulugan", "close": "Isara", "phrases": { "moving-address": { "meaning": "Humingi ng tulong sa proseso ng tirahan pagkatapos lumipat." }, "my-number-explanation": { "meaning": "Magtanong tungkol sa pagkakaiba ng My Number at My Number Card." }, "my-number-card-application": { "meaning": "Humingi ng tulong sa aplikasyon ng My Number Card." }, "my-number-card-change": { "meaning": "Humingi ng tulong sa pagbabago ng My Number Card." }, "my-number-check": { "meaning": "Magtanong kung paano tingnan ang sariling My Number." }, "school-enrollment": { "meaning": "Magtanong tungkol sa pagpapatala ng bata sa paaralan." }, "childcare-application": { "meaning": "Magtanong tungkol sa aplikasyon sa pangangalaga ng bata." }, "tax-pension-notice": { "meaning": "Magtanong tungkol sa abisong ito ng buwis o pensiyon." }, "official-letter": { "meaning": "Magtanong tungkol sa liham na ito mula sa tanggapan ng lungsod." }, "health-insurance": { "meaning": "Humingi ng tulong sa proseso ng segurong pangkalusugan." }, "residence-card": { "meaning": "Humingi ng tulong sa proseso ng kard ng paninirahan." }, "japanese-class": { "meaning": "Magtanong tungkol sa klase ng Hapones." }, "clinic-reception": { "meaning": "Sabihing gusto mong magpatingin at humingi ng tulong sa tanggapan ng pagtanggap." } } },
+  "nextAction": { "question": "Alam mo ba ang susunod na gagawin?", "yes": "Oo", "notYet": "Hindi pa", "yesStatus": "Mabuti. Gamitin ang mga opsyon sa pahinang ito kapag handa ka na.", "recoveryIntro": "Subukan ang isa sa mga ito:", "reviewGuidance": "Balikan ang gabay", "viewOfficial": "Tingnan ang opisyal na impormasyon", "chooseAnother": "Pumili ng ibang paksa" },
   "feedback": {
     "question": "Nakakatulong ba ito?",
     "helpful": "Nakakatulong",
     "confusing": "Nakakalito",
     "wrong": "Maling impormasyon",
     "language": "Kailangan ang aking wika",
-    "thanks": "salamat po. Nakakatulong ang iyong feedback na mapabuti ang MINFO."
+    "thanks": "Salamat po. Nakakatulong ang iyong puna na mapabuti ang MINFO."
   }
 }

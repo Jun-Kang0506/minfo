@@ -12,7 +12,24 @@
   "areaResults": "Ipinapakita ang mga lugar sa {area}",
   "stop": "Ihinto ang paggamit ng lokasyon",
   "distance": "Tinatayang straight-line na distansya",
-  "map": "Buksan ang mapa",
+  "mapHandoff": {
+    "googleMaps": "Google Maps",
+    "appleMaps": "Apple Maps",
+    "close": "Isara",
+    "directions": {
+      "get": "Kumuha ng direksyon",
+      "chooseProvider": "Pumili ng mapa",
+      "googleMapsLabel": "Buksan ang direksyon sa Google Maps",
+      "appleMapsLabel": "Buksan ang direksyon sa Apple Maps"
+    },
+    "search": {
+      "get": "Hanapin sa mapa",
+      "chooseProvider": "Pumili ng mapa para maghanap",
+      "googleMapsLabel": "Maghanap gamit ang Google Maps",
+      "appleMapsLabel": "Maghanap gamit ang Apple Maps",
+      "notice": "Ginagamit ng paghahanap na ito ang opisyal na pangalan at address ng pasilidad. Hindi idinaragdag ng MINFO ang iyong lokasyon. Tiyaking tamang pasilidad ang resulta bago pumunta."
+    }
+  },
   "child": "Ang snapshot na ito ay hindi nagpapakita ng mga bakante, pagiging kwalipikado, mga bayarin, oras, pagtanggap sa pagpapatala, o kasalukuyang operasyon. Direktang kumpirmahin.",
   "evac": "Ito ay data ng lokasyon, hindi live na pagbubukas o status. Ang pagiging angkop ay nakasalalay sa panganib at opisyal na mga tagubilin. Suriin nang hiwalay ang mga kasalukuyang opisyal na alerto.",
   "privacy": "Nananatili ang iyong lokasyon sa device na ito at hindi ipinapadala sa MINFO.",
@@ -34,11 +51,46 @@
   "nameReadingLabel": "Pagbigkas ng pangalan",
   "officialJapaneseNameLabel": "Opisyal na pangalang Hapon",
   "ownershipLabel": "Uri ng pamamahala",
-  "directoryTitles": { "childcare": "Mga pasilidad sa pangangalaga ng bata", "evacuation": "Mga lugar ng emerhensiyang paglikas", "medical": "Mga klinika", "elementarySchool": "Mga elementarya", "juniorHighSchool": "Mga junior-high school", "highSchool": "Mga high school" },
-  "ownership": { "public": "Pampubliko", "private": "Pribado" },
-  "governingBodies": { "shinjuku_municipal": "Pamahalaang Lungsod ng Shinjuku", "tokyo_metropolitan": "Pamahalaang Metropolitan ng Tokyo" },
-  "facilityTypes": { "childrens_center": "Sentro para sa mga bata", "municipal_kindergarten": "Kindergarten ng lungsod", "municipal_licensed_nursery": "Lisensiyadong nursery ng lungsod", "municipal_certified_childcare_center": "Sertipikadong childcare center ng lungsod", "workplace_childcare": "Childcare center sa trabaho", "childcare_room": "Silid ng pangangalaga ng bata", "family_daycare": "Pangangalaga ng bata sa tahanan", "after_school_club": "Klub para sa mga bata pagkatapos ng klase", "private_kindergarten": "Pribadong kindergarten", "private_licensed_nursery": "Pribadong lisensiyadong nursery", "private_certified_childcare_center": "Pribadong sertipikadong childcare center", "evacuation_site": "Lugar ng paglikas", "clinic": "Klinika", "elementary_school": "Elementarya", "junior_high_school": "Junior-high school", "high_school": "High school" },
-  "datasetNotes": { "childcare": "Ang snapshot na ito ay hindi nagpapakita ng mga bakante, pagiging kwalipikado, mga bayarin, oras, pagtanggap sa pagpapatala, o kasalukuyang operasyon. Direktang kumpirmahin.", "evacuation": "Ito ay data ng lokasyon, hindi live na pagbubukas o status. Ang pagiging angkop ay nakasalalay sa panganib at opisyal na mga tagubilin. Suriin nang hiwalay ang mga kasalukuyang opisyal na alerto.", "medical": "Ito ay snapshot ng direktoryo ng mga klinika, hindi live na impormasyon ng availability. Hindi nito ipinapakita ang oras, pagtanggap ng pasyente, suporta sa wika, pagtanggap ng insurance, o espesyalista. Tumawag sa 119 para sa ambulansya.", "school": "Ang pagkakalista ng paaralan ay hindi garantiya ng pagtatalaga, pagpapatala, o pagpasok. Makipag-ugnayan sa paaralan o sa School Operations Division para sa kasalukuyang detalye." },
+  "directoryTitles": {
+    "childcare": "Mga pasilidad sa pangangalaga ng bata",
+    "evacuation": "Mga lugar ng emerhensiyang paglikas",
+    "medical": "Mga klinika",
+    "elementarySchool": "Mga elementarya",
+    "juniorHighSchool": "Mga junior-high school",
+    "highSchool": "Mga high school"
+  },
+  "ownership": {
+    "public": "Pampubliko",
+    "private": "Pribado"
+  },
+  "governingBodies": {
+    "shinjuku_municipal": "Pamahalaang Lungsod ng Shinjuku",
+    "tokyo_metropolitan": "Pamahalaang Metropolitan ng Tokyo"
+  },
+  "facilityTypes": {
+    "childrens_center": "Sentro para sa mga bata",
+    "municipal_kindergarten": "Kindergarten ng lungsod",
+    "municipal_licensed_nursery": "Lisensiyadong nursery ng lungsod",
+    "municipal_certified_childcare_center": "Sertipikadong childcare center ng lungsod",
+    "workplace_childcare": "Childcare center sa trabaho",
+    "childcare_room": "Silid ng pangangalaga ng bata",
+    "family_daycare": "Pangangalaga ng bata sa tahanan",
+    "after_school_club": "Klub para sa mga bata pagkatapos ng klase",
+    "private_kindergarten": "Pribadong kindergarten",
+    "private_licensed_nursery": "Pribadong lisensiyadong nursery",
+    "private_certified_childcare_center": "Pribadong sertipikadong childcare center",
+    "evacuation_site": "Lugar ng paglikas",
+    "clinic": "Klinika",
+    "elementary_school": "Elementarya",
+    "junior_high_school": "Junior-high school",
+    "high_school": "High school"
+  },
+  "datasetNotes": {
+    "childcare": "Ang snapshot na ito ay hindi nagpapakita ng mga bakante, pagiging kwalipikado, mga bayarin, oras, pagtanggap sa pagpapatala, o kasalukuyang operasyon. Direktang kumpirmahin.",
+    "evacuation": "Ito ay data ng lokasyon, hindi live na pagbubukas o status. Ang pagiging angkop ay nakasalalay sa panganib at opisyal na mga tagubilin. Suriin nang hiwalay ang mga kasalukuyang opisyal na alerto.",
+    "medical": "Ito ay snapshot ng direktoryo ng mga klinika, hindi live na impormasyon ng availability. Hindi nito ipinapakita ang oras, pagtanggap ng pasyente, suporta sa wika, pagtanggap ng insurance, o espesyalista. Tumawag sa 119 para sa ambulansya.",
+    "school": "Ang pagkakalista ng paaralan ay hindi garantiya ng pagtatalaga, pagpapatala, o pagpasok. Makipag-ugnayan sa paaralan o sa School Operations Division para sa kasalukuyang detalye."
+  },
   "preparing": {
     "shinjuku-childcare-facilities": {
       "title": "Inihahanda ang paghahanap sa pasilidad ng pangangalaga ng bata.",
@@ -48,5 +100,30 @@
       "title": "Inihahanda ang paghahanap sa lugar ng paglikas.",
       "body": "Ang inihandang paghahanap na ito ay hindi nagpapakita ng live, bukas, o pinakamalapit na mga site. Para sa kasalukuyang sitwasyon, suriin ang opisyal na impormasyon sa sakuna."
     }
+  },
+  "garbage": {
+    "title": "Hanapin ang tamang pag-uuri ng isang bagay",
+    "intro": "Ilagay ang bagay na gusto mong itapon.",
+    "inputLabel": "Pangalan ng bagay sa Filipino o Japanese",
+    "placeholder": "Halimbawa: bisikleta / 自転車",
+    "localizedItemLabel": "Bagay",
+    "checkJapaneseLabel": "Tingnan ang opisyal na pangalang Japanese",
+    "trustNote": "Ang mga pantulong sa paghahanap ng MINFO ay hindi opisyal na salin. Ang impormasyon sa pagtatapon ay mula sa opisyal na Japanese Open Data ng Lungsod ng Shinjuku.",
+    "search": "Maghanap",
+    "loading": "Nilo-load ang opisyal na data sa pag-uuri…",
+    "unavailable": "Hindi available ngayon ang data sa pag-uuri. Tingnan ang opisyal na data o subukan muli.",
+    "retry": "Subukan muli",
+    "multiple": "May {count} katugmang resulta. Piliin ang bagay na hinahanap mo.",
+    "truncated": "Ipinapakita ang unang {shown} sa {count} resulta. Magdagdag ng mga karakter upang paliitin ang paghahanap.",
+    "noMatch": "Hindi namin nakita ang “{query}”. Subukan ang mas maikli o ibang pangalan. Maaari mo ring gamitin ang opisyal na pangalang Japanese.",
+    "chooseItemLabel": "Piliin ang {item}",
+    "resultTitle": "Resulta ng pag-uuri",
+    "officialItemLabel": "Opisyal na pangalan ng bagay sa Japanese",
+    "categoryLabel": "Kategorya",
+    "officialCategoryLabel": "Opisyal na kategorya sa Japanese",
+    "officialNoteLabel": "Opisyal na tala (Japanese)",
+    "searchAgain": "Maghanap muli",
+    "sourceLink": "Tingnan ang opisyal na data",
+    "disclaimer": "Ito ay nasuring naka-save na kopya ng opisyal na data, hindi isang live na serbisyo para sa araw ng koleksyon. Suriin ang opisyal na tala at opisyal na pahina bago magtapon."
   }
 }

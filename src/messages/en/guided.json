@@ -1,5 +1,6 @@
 {
   "questions": {
+    "my_number": { "title": "About My Number / My Number Card", "options": [{ "label": "What is My Number?", "request": "What is My Number?" }, { "label": "I want to apply for a My Number Card", "request": "Apply for a My Number Card" }, { "label": "I lost my My Number Card", "request": "Lost My Number Card" }, { "label": "My address or residence status changed", "request": "Update My Number Card" }, { "label": "I do not know my My Number", "request": "I do not know my My Number" }] },
     "health": {
       "title": "What do you need help with?",
       "options": [
@@ -75,9 +76,10 @@
     "garbage": {
       "title": "What do you need help with?",
       "options": [
+        { "label": "How do I sort a specific item?", "request": "How do I sort a specific item?" },
         {
-          "label": "Sorting, collection days, or oversized garbage",
-          "request": "Sorting, collection days, or oversized garbage"
+          "label": "Collection days, oversized garbage, or general rules",
+          "request": "Collection days, oversized garbage, or general rules"
         }
       ]
     },
@@ -148,6 +150,7 @@
     "consultation": {
       "title": "What do you need help with?",
       "options": [
+        { "label": "About My Number / My Number Card", "request": "About My Number / My Number Card" },
         {
           "label": "Daily-life help",
           "request": "Daily-life help"

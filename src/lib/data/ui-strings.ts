@@ -87,6 +87,8 @@ export interface UIStrings {
     officialInformation: string;
     resultCardLabel: string;
   };
+  counter: { title: string; show: string; japaneseLabel: string; meaningLabel: string; close: string; phrases: Record<string, { meaning: string }> };
+  nextAction: { question: string; yes: string; notYet: string; yesStatus: string; recoveryIntro: string; reviewGuidance: string; viewOfficial: string; chooseAnother: string };
   feedback: {
     question: string;
     helpful: string;
@@ -167,4 +169,4 @@ export const UI_STRINGS: Localized<UIStrings> = Object.fromEntries(
     const messages = MESSAGES[locale];
     return [locale, { ...messages.ui, ...messages.pages, ...messages.result, emergencyBar: messages.emergency.emergencyBar }];
   }),
-) as Localized<UIStrings>;
+) as unknown as Localized<UIStrings>;

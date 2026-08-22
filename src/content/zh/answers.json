@@ -206,6 +206,12 @@
       "出发前直接向该设施确认当前详情。"
     ]
   },
+  "my-number-overview": { "direct": "My Number 是发给在日本有住民记录者的12位个人号码。My Number Card 是带照片的IC卡。拥有 My Number 不代表已经拥有该卡。", "steps": ["如需办卡或办理手续，请查看下方官方信息。"] },
+  "my-number-apply-card": { "direct": "申请 My Number Card 与获得 My Number 是两回事。根据申请表，可使用智能手机、在线或邮寄等官方方式申请。", "steps": ["查看申请表，并通过官方门户办理。", "申请信息与在留卡不一致时，请联系市区町村。"] },
+  "my-number-lost-card": { "direct": "请立即按照官方联系方式申请暂时停止遗失或被盗的 My Number Card。提供外语电话支持。", "steps": ["立即使用下方官方联系方式。", "如涉及盗窃或犯罪，也请联系警方。"] },
+  "my-number-update": { "direct": "地址或在留期限变更时，My Number Card 可能需要办理手续。延长在留期限的外国居民应在卡到期前确认有效期更新。", "steps": ["在到期前向市区町村确认所需手续。"] },
+  "my-number-find": { "direct": "My Number 与 My Number Card 不同。个人号码通知书不是一般身份证件。", "steps": ["查看您的通知卡或个人号码通知书，确认 My Number。", "如仍需要，请向市区町村申请显示 My Number 的住民票。"] },
+  "student-part-time-work": { "direct": "如适用于您：持留学在留资格的学生从事有偿工作前，通常需要资格外活动许可。MINFO不能确认您的个人许可。", "steps": ["开始工作前请查看出入国在留管理厅的官方指引。", "持综合许可时，一般每周最多28小时，学校长假期间每天最多8小时。禁止的工作仍不可从事。"] },
   "fallback": {
     "direct": "MINFO 的可信来源中暂时没有这个问题的确切答案——但您可以这样做。您的问题可能属于 MINFO 的某个分类（医院、税金、垃圾、住房、咨询），请试试下面的分类，或换个说法再问一次。",
     "steps": [

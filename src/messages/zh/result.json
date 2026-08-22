@@ -14,6 +14,8 @@
     "officialInformation": "官方信息",
     "resultCardLabel": "结果卡片"
   },
+  "counter": { "title": "在窗口出示", "show": "在窗口出示", "japaneseLabel": "给工作人员看的日语", "meaningLabel": "含义", "close": "关闭", "phrases": { "moving-address": { "meaning": "咨询搬家后的地址手续。" }, "my-number-explanation": { "meaning": "询问 My Number 与 My Number 卡的区别。" }, "my-number-card-application": { "meaning": "咨询 My Number 卡申请。" }, "my-number-card-change": { "meaning": "咨询 My Number 卡变更手续。" }, "my-number-check": { "meaning": "询问如何确认自己的 My Number。" }, "school-enrollment": { "meaning": "咨询孩子的入学手续。" }, "childcare-application": { "meaning": "咨询托育设施申请。" }, "tax-pension-notice": { "meaning": "询问这份税金或养老金通知。" }, "official-letter": { "meaning": "询问这封来自政府窗口的信。" }, "health-insurance": { "meaning": "咨询健康保险手续。" }, "residence-card": { "meaning": "咨询在留卡手续。" }, "japanese-class": { "meaning": "咨询日语课程。" }, "clinic-reception": { "meaning": "说明希望就诊，并请接待人员协助。" } } },
+  "nextAction": { "question": "您知道下一步该做什么吗？", "yes": "知道", "notYet": "还不知道", "yesStatus": "很好。准备好后，请使用本页的选项。", "recoveryIntro": "请尝试以下一种：", "reviewGuidance": "再看一次指引", "viewOfficial": "查看官方信息", "chooseAnother": "选择其他主题" },
   "feedback": {
     "question": "这个回答有帮助吗？",
     "helpful": "有帮助",

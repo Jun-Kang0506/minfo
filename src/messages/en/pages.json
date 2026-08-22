@@ -1,4 +1,7 @@
 {
+  "students": { "homeTitle": "Information for your situation", "homeSub": "A shortcut to common tasks for international students.", "homeCta": "For international students", "title": "For international students", "sub": "Choose a life task. This pathway does not decide your eligibility or status.", "sections": [{ "id": "start", "title": "Starting life in Japan", "items": [{ "id": "registration", "title": "Address registration", "description": "Moving and resident registration" }, { "id": "myNumber", "title": "My Number", "description": "My Number and My Number Card" }, { "id": "insurance", "title": "Health insurance", "description": "Understand health insurance" }] }, { "id": "life", "title": "Studying and daily life", "items": [{ "id": "japanese", "title": "Japanese classes", "description": "Find a class" }, { "id": "housing", "title": "Housing", "description": "Renting and moving" }, { "id": "clinic", "title": "Hospitals and clinics", "description": "Find medical help" }, { "id": "disaster", "title": "Disaster preparation", "description": "Prepare for emergencies" }] }, { "id": "work", "title": "Working part-time", "items": [{ "id": "work", "title": "Part-time work basics", "description": "Permission and general limits" }, { "id": "taxes", "title": "Taxes", "description": "Tax letters and payments" }] }, { "id": "help", "title": "When you need help", "items": [{ "id": "consultation", "title": "Consultation", "description": "Find a support desk" }, { "id": "emergency", "title": "Emergency", "description": "119 and 110 guidance" }] }] },
+  "contextPathwaysHome": { "title": "Information for your situation", "sub": "Shortcuts to common tasks.", "newToJapan": "New to Japan", "students": "International students" },
+  "newToJapan": { "title": "New to Japan", "sub": "Choose a common task. This pathway does not decide your eligibility or status.", "sections": [{ "id": "start", "title": "Starting life in Japan", "items": [{ "id": "registration", "title": "Address registration", "description": "Moving and resident registration" }, { "id": "myNumber", "title": "My Number", "description": "My Number and My Number Card" }, { "id": "insurance", "title": "Health insurance", "description": "Understand health insurance" }] }, { "id": "daily", "title": "Daily life", "items": [{ "id": "garbage", "title": "Garbage rules", "description": "Sorting and collection guidance" }, { "id": "japanese", "title": "Japanese learning", "description": "Find a Japanese class" }, { "id": "clinic", "title": "Find a clinic", "description": "Search Shinjuku clinics" }, { "id": "housing", "title": "Housing", "description": "Renting and moving" }] }, { "id": "help", "title": "Stay safe / get help", "items": [{ "id": "disaster", "title": "Disaster preparedness", "description": "Prepare and find safety guidance" }, { "id": "consultation", "title": "Consultation", "description": "Find a support desk" }, { "id": "emergency", "title": "Emergency", "description": "119 and 110 guidance" }] }] },
   "sources": {
     "title": "Built on official & public information",
     "sub": "MINFO answers only from a curated set of official and public organizations. Every answer links back to them.",
@@ -70,10 +73,11 @@
     ],
     "candidatesTitle": "Tokyo Open Data: candidate datasets",
     "candidatesSub": "Catalog entries and search targets MINFO plans to connect next, with what each would improve. None are fetched automatically yet.",
+    "activeTitle": "Active data in MINFO", "activeSub": "Checked official snapshots used in MINFO’s guided journeys.", "candidateTitle": "Candidate data", "candidateSub": "Reviewed official datasets not yet used in a MINFO journey.",
     "catalogCta": "Browse the Tokyo Open Data Catalog",
     "badges": {
       "curated": "Curated now",
-      "candidate": "Open-data candidate",
+      "active": "In MINFO", "candidate": "Candidate", "checkedSnapshot": "Checked snapshot", "plannedBatch": "Planned batch update",
       "batch": "Periodic · future batch",
       "live": "Time-sensitive · future API",
       "searchTarget": "Catalog search target"

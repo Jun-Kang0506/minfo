@@ -8,6 +8,9 @@ import { SourceCard } from "./SourceCard";
 import { FeedbackButtons } from "./FeedbackButtons";
 import { IconAlert, IconArrowRight } from "./icons";
 import { GUIDED_UI } from "@/lib/data/guided-flow";
+import { getCounterPhraseId } from "@/lib/data/counter-phrases";
+import { ShowAtCounter } from "./ShowAtCounter";
+import { NextActionCheck } from "./NextActionCheck";
 
 export type ResultCardDescriptor = { kind: "summary" | "steps" | "references"; answer: Answer };
 
@@ -37,7 +40,7 @@ export function ResultSequence({ answer, index, onBack, onNext, onStartOver, fee
       <article className={`rounded-lg border border-line border-l-4 bg-card p-5 sm:p-6 ${emergency ? "animate-fade border-l-danger" : "border-l-moss"}`}>
         {card.kind === "summary" && <Summary answer={answer} headingRef={headingRef} emergency={emergency} />}
         {card.kind === "steps" && <Steps answer={answer} headingRef={headingRef} />}
-        {card.kind === "references" && <References answer={answer} headingRef={headingRef} feedback={feedback} onFeedback={onFeedback} />}
+        {card.kind === "references" && <References answer={answer} headingRef={headingRef} feedback={feedback} onFeedback={onFeedback} hasPreviousCard={currentIndex > 0} onReviewGuidance={onBack} onChooseAnother={onStartOver} />}
       </article>
       <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
         <button onClick={onBack} className="button-secondary">{GUIDED_UI.back[lang]}</button>
@@ -52,9 +55,18 @@ export function ResultSequence({ answer, index, onBack, onNext, onStartOver, fee
 
 function Summary({ answer, headingRef, emergency }: { answer: Answer; headingRef: React.RefObject<HTMLHeadingElement | null>; emergency: boolean }) {
   const { t } = useLanguage();
-  return <><div className="flex flex-wrap items-center justify-between gap-2"><h2 ref={headingRef} tabIndex={-1} className={`text-sm font-bold uppercase tracking-[0.12em] ${emergency ? "text-danger" : "text-moss"}`}>{t.answer.nextStep}</h2>{answer.engine === "claude" && <p className="rounded-sm border border-line bg-paper px-2 py-0.5 text-xs font-semibold text-ink-soft">{t.answer.aiBadge}</p>}</div><p className="mt-3 text-lg leading-relaxed text-ink">{answer.direct}</p>{answer.safety && <div className="mt-4"><SafetyNotice safety={answer.safety} /></div>}{emergency && <div className="mt-5"><StepsList answer={answer} /></div>}{answer.confidence === "low" && <p className="mt-4 flex items-start gap-2 text-sm font-semibold text-caution"><IconAlert className="mt-0.5 h-4 w-4 shrink-0" />{t.answer.lowConfidence}</p>}</>;
+  const urgentLostCardSource = answer.topicId === "my-number-lost-card" ? answer.sources[0] : undefined;
+  return <><div className="flex flex-wrap items-center justify-between gap-2"><h2 ref={headingRef} tabIndex={-1} className={`text-sm font-bold uppercase tracking-[0.12em] ${emergency ? "text-danger" : "text-moss"}`}>{t.answer.nextStep}</h2>{answer.engine === "claude" && <p className="rounded-sm border border-line bg-paper px-2 py-0.5 text-xs font-semibold text-ink-soft">{t.answer.aiBadge}</p>}</div><p className="mt-3 text-lg leading-relaxed text-ink">{answer.direct}</p>{urgentLostCardSource && <div className="mt-5 border-t border-line pt-3"><SourceCard source={urgentLostCardSource} compact /></div>}{answer.safety && <div className="mt-4"><SafetyNotice safety={answer.safety} /></div>}{emergency && <div className="mt-5"><StepsList answer={answer} /></div>}{answer.confidence === "low" && <p className="mt-4 flex items-start gap-2 text-sm font-semibold text-caution"><IconAlert className="mt-0.5 h-4 w-4 shrink-0" />{t.answer.lowConfidence}</p>}</>;
 }
 
 function Steps({ answer, headingRef }: { answer: Answer; headingRef: React.RefObject<HTMLHeadingElement | null> }) { const { t } = useLanguage(); return <><h2 ref={headingRef} tabIndex={-1} className="text-sm font-bold uppercase tracking-[0.12em] text-ink-soft">{answer.topicId === "tax-estimate" ? t.answer.important : t.answer.whatToDo}</h2><StepsList answer={answer} /></>; }
 function StepsList({ answer }: { answer: Answer }) { return <ol className="mt-2 divide-y divide-line">{answer.steps.map((step, i) => <li key={i} className="flex gap-3 py-2.5 text-base leading-relaxed text-ink"><span className="w-5 shrink-0 text-right font-bold tabular-nums text-moss">{i + 1}.</span>{step}</li>)}</ol>; }
-function References({ answer, headingRef, feedback, onFeedback }: { answer: Answer; headingRef: React.RefObject<HTMLHeadingElement | null>; feedback: FeedbackChoice | null; onFeedback: (choice: FeedbackChoice) => void }) { const { t } = useLanguage(); return <>{answer.sources.length > 0 ? <><h2 ref={headingRef} tabIndex={-1} className="text-xs font-bold uppercase tracking-[0.12em] text-ink-soft">{t.answer.officialInformation}</h2><div className="mt-3 divide-y divide-line">{answer.sources.map((source) => <SourceCard key={source.id} source={source} compact />)}</div></> : <h2 ref={headingRef} tabIndex={-1} className="sr-only">{t.answer.resultCardLabel}</h2>}<div className="mt-5 border-t border-line pt-4"><FeedbackButtons value={feedback} onChange={onFeedback} /></div></>; }
+function References({ answer, headingRef, feedback, onFeedback, hasPreviousCard, onReviewGuidance, onChooseAnother }: { answer: Answer; headingRef: React.RefObject<HTMLHeadingElement | null>; feedback: FeedbackChoice | null; onFeedback: (choice: FeedbackChoice) => void; hasPreviousCard: boolean; onReviewGuidance: () => void; onChooseAnother: () => void }) {
+  const { t } = useLanguage();
+  const phraseId = getCounterPhraseId(answer);
+  return <>{answer.sources.length > 0 ? <><h2 ref={headingRef} tabIndex={-1} className="text-xs font-bold uppercase tracking-[0.12em] text-ink-soft">{t.answer.officialInformation}</h2><div className="mt-3 divide-y divide-line">{answer.sources.map((source) => <SourceCard key={source.id} source={source} compact />)}</div></> : <h2 ref={headingRef} tabIndex={-1} className="sr-only">{t.answer.resultCardLabel}</h2>}
+    {phraseId && <ShowAtCounter phraseId={phraseId} />}
+    <NextActionCheck hasPreviousCard={hasPreviousCard} hasSources={answer.sources.length > 0} onReviewGuidance={onReviewGuidance} onViewOfficial={() => headingRef.current?.focus()} onChooseAnother={onChooseAnother} />
+    <div className="mt-5 border-t border-line pt-4"><FeedbackButtons value={feedback} onChange={onFeedback} /></div>
+  </>;
+}

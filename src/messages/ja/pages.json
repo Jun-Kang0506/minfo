@@ -1,4 +1,7 @@
 {
+  "students": { "homeTitle": "あなたの状況のための情報", "homeSub": "留学生によくある生活の手続きを、ここからさがせます。", "homeCta": "留学生の方へ", "title": "留学生の方へ", "sub": "生活のことをえらんでください。この案内は、あなたの資格や条件を決めるものではありません。", "sections": [{ "id": "start", "title": "日本での生活をはじめる", "items": [{ "id": "registration", "title": "住所の手続き", "description": "引っこし・住民登録" }, { "id": "myNumber", "title": "マイナンバー", "description": "マイナンバーとカード" }, { "id": "insurance", "title": "健康保険", "description": "健康保険を知る" }] }, { "id": "life", "title": "勉強と毎日の生活", "items": [{ "id": "japanese", "title": "日本語教室", "description": "教室をさがす" }, { "id": "housing", "title": "住まい", "description": "家をかりる・引っこし" }, { "id": "clinic", "title": "病院・クリニック", "description": "病気のとき" }, { "id": "disaster", "title": "防災", "description": "災害にそなえる" }] }, { "id": "work", "title": "アルバイト", "items": [{ "id": "work", "title": "アルバイトの基本", "description": "許可と時間のルール" }, { "id": "taxes", "title": "税金", "description": "税金の手紙・支払い" }] }, { "id": "help", "title": "こまったとき", "items": [{ "id": "consultation", "title": "相談", "description": "相談する場所" }, { "id": "emergency", "title": "緊急", "description": "119・110の案内" }] }] },
+  "contextPathwaysHome": { "title": "あなたの状況の情報", "sub": "よくある手続きへの近道です。", "newToJapan": "日本に来たばかりの人", "students": "留学生" },
+  "newToJapan": { "title": "日本に来たばかりの人", "sub": "よくある手続きを選んでください。この案内は資格や在留状況を決めません。", "sections": [{ "id": "start", "title": "日本での生活を始める", "items": [{ "id": "registration", "title": "住所登録", "description": "引っ越しと住民登録" }, { "id": "myNumber", "title": "マイナンバー", "description": "マイナンバーとカード" }, { "id": "insurance", "title": "健康保険", "description": "健康保険を知る" }] }, { "id": "daily", "title": "毎日の生活", "items": [{ "id": "garbage", "title": "ごみのルール", "description": "分別と収集の案内" }, { "id": "japanese", "title": "日本語を学ぶ", "description": "日本語教室を探す" }, { "id": "clinic", "title": "病院・クリニック", "description": "新宿のクリニックを探す" }, { "id": "housing", "title": "住まい", "description": "賃貸と引っ越し" }] }, { "id": "help", "title": "安全・相談", "items": [{ "id": "disaster", "title": "災害への備え", "description": "安全情報を探して備える" }, { "id": "consultation", "title": "相談", "description": "相談窓口を探す" }, { "id": "emergency", "title": "緊急", "description": "119と110の案内" }] }] },
   "sources": {
     "title": "公式の情報をつかっています",
     "sub": "MINFOは、公式・公共の情報だけをつかってこたえます。こたえには、いつも情報のもとがついています。",
@@ -70,10 +73,11 @@
     ],
     "candidatesTitle": "東京都オープンデータ：つかいたいデータ",
     "candidatesSub": "MINFOがこれからつなげたいデータと、何がよくなるかです。まだ自動ではつかっていません。",
+    "activeTitle": "MINFOで使っているデータ", "activeSub": "MINFOの案内で使う、確認ずみの公式データです。", "candidateTitle": "これから使う候補", "candidateSub": "公式データを確認しましたが、まだMINFOの案内では使っていません。",
     "catalogCta": "東京都オープンデータカタログを見る",
     "badges": {
       "curated": "いまつかっています",
-      "candidate": "オープンデータ候補",
+      "active": "MINFOで使用中", "candidate": "候補", "checkedSnapshot": "確認ずみの保存データ", "plannedBatch": "これから定期更新",
       "batch": "ときどきかわる・これから定期更新",
       "live": "すぐかわる・これから API",
       "searchTarget": "カタログでさがす"

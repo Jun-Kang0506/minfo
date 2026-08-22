@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "data:refresh": "node scripts/ingest-open-data.mjs",
+    "data:helpers:check": "node scripts/check-garbage-search-helpers.mjs",
     "i18n:check": "node scripts/check-i18n.mjs"
   },
   "dependencies": {

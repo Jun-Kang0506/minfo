@@ -1,5 +1,6 @@
 {
   "questions": {
+    "my_number": { "title": "Về My Number / My Number Card", "options": [{ "label": "My Number là gì?", "request": "My Number là gì" }, { "label": "Đăng ký My Number Card", "request": "Đăng ký My Number Card" }, { "label": "Tôi mất My Number Card", "request": "Mất My Number Card" }, { "label": "Địa chỉ hoặc tư cách lưu trú thay đổi", "request": "Cập nhật My Number Card" }, { "label": "Tôi không biết My Number", "request": "Không biết My Number" }] },
     "health": {
       "title": "Bạn cần hỗ trợ việc gì?",
       "options": [
@@ -72,9 +73,10 @@
     "garbage": {
       "title": "Bạn cần hỗ trợ việc gì?",
       "options": [
+        { "label": "Một đồ vật cụ thể phải phân loại thế nào?", "request": "Một đồ vật cụ thể phải phân loại thế nào?" },
         {
-          "label": "Phân loại, ngày thu gom hoặc rác cỡ lớn",
-          "request": "Phân loại, ngày thu gom hoặc rác cỡ lớn"
+          "label": "Ngày thu gom, rác cồng kềnh hoặc quy tắc chung",
+          "request": "Ngày thu gom, rác cồng kềnh hoặc quy tắc chung"
         }
       ]
     },
@@ -145,6 +147,7 @@
     "consultation": {
       "title": "Bạn cần hỗ trợ việc gì?",
       "options": [
+        { "label": "Về My Number / My Number Card", "request": "Về My Number / My Number Card" },
         {
           "label": "Hỗ trợ đời sống",
           "request": "Hỗ trợ đời sống"

@@ -6,12 +6,14 @@ import { useLanguage } from "./LanguageProvider";
 import { getMessages } from "@/i18n/messages";
 import { DIRECTORY_DATASETS } from "@/lib/directory-config";
 import { getShinjukuTownId, getShinjukuTownLabel } from "@/lib/address-town";
+import { getValidCoordinates, type ValidCoordinates } from "@/lib/map-links";
+import { MapHandoffChooser, type MapHandoffCopy } from "./MapHandoffChooser";
 
-function km(record: LookupRecord, position: [number, number]) {
+function km([latitude, longitude]: ValidCoordinates, position: [number, number]) {
   const radians = Math.PI / 180;
-  const latitudeDifference = (position[0] - record.latitude!) * radians;
-  const longitudeDifference = (position[1] - record.longitude!) * radians;
-  const calculation = Math.sin(latitudeDifference / 2) ** 2 + Math.cos(record.latitude! * radians) * Math.cos(position[0] * radians) * Math.sin(longitudeDifference / 2) ** 2;
+  const latitudeDifference = (position[0] - latitude) * radians;
+  const longitudeDifference = (position[1] - longitude) * radians;
+  const calculation = Math.sin(latitudeDifference / 2) ** 2 + Math.cos(latitude * radians) * Math.cos(position[0] * radians) * Math.sin(longitudeDifference / 2) ** 2;
   return 6371 * 2 * Math.atan2(Math.sqrt(calculation), Math.sqrt(1 - calculation));
 }
 
@@ -60,11 +62,13 @@ export function StructuredLookup({ datasetId, onBack, onStartOver }: { datasetId
     if (!townId) return true;
     return townId === "unassigned" ? getShinjukuTownId(record.address) === null : getShinjukuTownId(record.address) === townId;
   }).sort((first, second) => {
-    const firstHasLocation = Boolean(config.supportsDistance && position && first.latitude !== undefined && first.longitude !== undefined);
-    const secondHasLocation = Boolean(config.supportsDistance && position && second.latitude !== undefined && second.longitude !== undefined);
+    const firstCoordinates = getValidCoordinates(first.latitude, first.longitude);
+    const secondCoordinates = getValidCoordinates(second.latitude, second.longitude);
+    const firstHasLocation = Boolean(config.supportsDistance && position && firstCoordinates);
+    const secondHasLocation = Boolean(config.supportsDistance && position && secondCoordinates);
     if (firstHasLocation !== secondHasLocation) return firstHasLocation ? -1 : 1;
     if (firstHasLocation) {
-      const difference = km(first, position!) - km(second, position!);
+      const difference = km(firstCoordinates!, position!) - km(secondCoordinates!, position!);
       if (difference) return difference;
     }
     return first.displayName.localeCompare(second.displayName, "ja") || first.officialId.localeCompare(second.officialId);
@@ -111,7 +115,7 @@ export function StructuredLookup({ datasetId, onBack, onStartOver }: { datasetId
       {config.supportsTownFilter && townId && <p className="mt-3 text-sm font-medium text-ink-soft" role="status">{copy.areaResults.replace("{area}", townId === "unassigned" ? copy.unassignedArea : townOptions.find(([id]) => id === townId)?.[1] ?? "")}</p>}
       {locationMessage && <p className="mt-2 text-sm font-medium text-caution" role="status">{locationMessage}</p>}
       <div className="mt-5 divide-y divide-line">
-        {records.slice(0, count).map((record) => <FacilityRow key={record.id} record={record} position={position} copy={copy} supportsMap={config.supportsMap} supportsDistance={config.supportsDistance} />)}
+        {records.slice(0, count).map((record) => <FacilityRow key={record.id} record={record} position={position} copy={copy} supportsDistance={config.supportsDistance} />)}
       </div>
       {count < records.length && <button onClick={() => setCount((current) => current + 5)} className="button-secondary mt-4">{copy.more}</button>}
       <p className="mt-5 text-sm leading-relaxed text-ink-soft">{copy.datasetNotes[config.disclaimerKey]}</p>
@@ -125,12 +129,10 @@ export function StructuredLookup({ datasetId, onBack, onStartOver }: { datasetId
   );
 }
 
-function FacilityRow({ record, position, copy, supportsMap, supportsDistance }: { record: LookupRecord; position: [number, number] | null; copy: ReturnType<typeof getMessages>["lookup"]; supportsMap: boolean; supportsDistance: boolean }) {
+function FacilityRow({ record, position, copy, supportsDistance }: { record: LookupRecord; position: [number, number] | null; copy: ReturnType<typeof getMessages>["lookup"]; supportsDistance: boolean }) {
   const { lang } = useLanguage();
   const hazardLabels: Partial<Record<keyof NonNullable<LookupRecord["hazards"]>, string>> = { earthquake: copy.earthquake, large_fire: copy.large_fire };
-  const mapUrl = !supportsMap ? undefined : record.latitude !== undefined && record.longitude !== undefined
-    ? `https://www.openstreetmap.org/?mlat=${record.latitude}&mlon=${record.longitude}#map=17/${record.latitude}/${record.longitude}`
-    : record.address ? `https://www.openstreetmap.org/search?query=${encodeURIComponent(record.address)}` : undefined;
+  const coordinates = getValidCoordinates(record.latitude, record.longitude);
   const hazards = record.hazards ? Object.keys(record.hazards).map((key) => hazardLabels[key as keyof typeof hazardLabels]).filter(Boolean).join(", ") : "";
   const facilityTypes = copy.facilityTypes as Record<string, string>;
   const ownership = (copy.ownership as Record<string, string> | undefined)?.[record.ownership ?? ""];
@@ -146,9 +148,9 @@ function FacilityRow({ record, position, copy, supportsMap, supportsDistance }: 
     {record.type && <p className="mt-1 text-sm text-ink-soft"><span className="font-semibold">{copy.typeLabel}: </span>{facilityTypes[record.type] ?? record.type}</p>}
     {ownership && <p className="mt-1 text-sm text-ink-soft"><span className="font-semibold">{copy.ownershipLabel}: </span>{ownership}{governingBody ? " · " + governingBody : ""}</p>}
     {hazards && <p className="mt-1 text-sm text-ink-soft"><span className="font-semibold">{copy.listedFor}: </span>{hazards}</p>}
-    {supportsDistance && position && record.latitude !== undefined && record.longitude !== undefined && <p className="mt-1 text-sm text-ink-soft"><span className="font-semibold">{copy.distance}: </span>{km(record, position).toFixed(1)} km</p>}
+    {supportsDistance && position && coordinates && <p className="mt-1 text-sm text-ink-soft"><span className="font-semibold">{copy.distance}: </span>{km(coordinates, position).toFixed(1)} km</p>}
     {phoneNumbers.length > 0 && <p className="mt-1 text-sm text-ink-soft"><span className="font-semibold">{copy.phoneLabel}: </span>{phoneNumbers.map((phone, index) => <span key={phone}>{index > 0 && " · "}<a className="underline decoration-moss/50 underline-offset-2" href={"tel:" + phone.replace(/[^+0-9]/g, "")}>{phone}</a></span>)}</p>}
-    {mapUrl && <a className="link-action mt-2" target="_blank" rel="noopener noreferrer" href={mapUrl}>{copy.map}</a>}
+    <MapHandoffChooser record={record} copy={copy.mapHandoff as MapHandoffCopy} />
   </article>;
 }
 

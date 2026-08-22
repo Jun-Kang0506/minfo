@@ -10,6 +10,8 @@ import { deriveResultCards, ResultSequence } from "./ResultSequence";
 import { IconArrowRight } from "./icons";
 import { StructuredLookup } from "./StructuredLookup";
 import { isLookupDatasetId } from "@/lib/lookups";
+import { isGarbageDatasetId } from "@/lib/lookups";
+import { GarbageLookup } from "./GarbageLookup";
 import { getMessages } from "@/i18n/messages";
 
 type View = "question" | "loading" | "result" | "unsupported" | "structuredLookup";
@@ -37,14 +39,14 @@ function LoadingCard({ label }: { label: string }) {
   );
 }
 
-export function GuidedFlow({ categoryId, onExit }: { categoryId: CategoryId; onExit: () => void }) {
+export function GuidedFlow({ categoryId, onExit, initialTopicId, initialQuestionId, initialDatasetCandidateId }: { categoryId: CategoryId; onExit: () => void; initialTopicId?: TopicId; initialQuestionId?: string; initialDatasetCandidateId?: string }) {
   const { lang } = useLanguage();
   const [history, setHistory] = useState<ActiveQuestion[]>([
-    { questionId: GUIDED_FLOWS[categoryId].startQuestionId },
+    { questionId: initialQuestionId ?? GUIDED_FLOWS[categoryId].startQuestionId },
   ]);
-  const [view, setView] = useState<View>("question");
+  const [view, setView] = useState<View>(initialTopicId ? "loading" : initialDatasetCandidateId ? "structuredLookup" : "question");
   const [answer, setAnswer] = useState<Answer | null>(null);
-  const [resolution, setResolution] = useState<SemanticResolution | null>(null);
+  const [resolution, setResolution] = useState<SemanticResolution | null>(initialTopicId ? { questionId: "context", optionId: initialTopicId, intentId: initialTopicId, topicId: initialTopicId } : initialDatasetCandidateId ? { questionId: "context", optionId: initialDatasetCandidateId, intentId: initialDatasetCandidateId, datasetCandidateId: initialDatasetCandidateId, deliveryKind: "structured_lookup" } : null);
   const [resultCardIndex, setResultCardIndex] = useState(0);
   const [feedback, setFeedback] = useState<FeedbackChoice | null>(null);
   const headingRef = useRef<HTMLHeadingElement | HTMLLegendElement | null>(null);
@@ -72,11 +74,11 @@ export function GuidedFlow({ categoryId, onExit }: { categoryId: CategoryId; onE
     : undefined;
 
   useEffect(() => {
-    if (!resolution?.topicId || !resolvedOption) return;
+    if (!resolution?.topicId) return;
 
     const controller = new AbortController();
     let current = true;
-    const request = resolvedOption.request[lang];
+    const request = resolvedOption?.request[lang] ?? resolution.topicId;
     const capturedKey = semanticKey;
     const capturedLang = lang;
     const isCurrent = () => current && latestLang.current === capturedLang && latestResolution.current?.topicId && [latestResolution.current.questionId, latestResolution.current.optionId, latestResolution.current.intentId, latestResolution.current.topicId].join(":") === capturedKey;
@@ -176,6 +178,7 @@ export function GuidedFlow({ categoryId, onExit }: { categoryId: CategoryId; onE
   if (view === "structuredLookup" && resolution?.datasetCandidateId) {
     const lookup = STRUCTURED_LOOKUP_METADATA[resolution.datasetCandidateId];
     if (isLookupDatasetId(resolution.datasetCandidateId)) return <StructuredLookup key={resolution.datasetCandidateId} datasetId={resolution.datasetCandidateId} onBack={goBack} onStartOver={onExit} />;
+    if (isGarbageDatasetId(resolution.datasetCandidateId)) return <GarbageLookup onBack={goBack} onStartOver={onExit} />;
     // Static IDs never trigger a fetch. Missing metadata remains an honest preparing state.
     return <StructuredLookupCard lang={lang} lookup={lookup} headingRef={headingRef} onBack={goBack} onStartOver={onExit} />;
   }

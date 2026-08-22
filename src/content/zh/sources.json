@@ -1,4 +1,8 @@
 {
+  "shinjuku-my-number": { "title": "新宿区：My Number Card", "organization": "新宿区", "note": "面向外国居民的 My Number 和 My Number Card 官方指引。" },
+  "my-number-card-portal": { "title": "My Number Card 官方门户", "organization": "地方公共团体信息系统机构", "note": "包含申请方法和常见问题的 My Number Card 官方信息。" },
+  "my-number-card-contact": { "title": "My Number Card 外语联系", "organization": "地方公共团体信息系统机构", "note": "遗失或被盗后暂时停用及外语支持的官方指引。" },
+  "isa-student-work": { "title": "出入国在留管理厅：资格外活动许可", "organization": "日本出入国在留管理厅", "note": "包括留学生工作条件的资格外活动许可官方信息。" },
   "shinjuku-foreign": {
     "title": "新宿区外国居民生活信息网站",
     "organization": "新宿区",

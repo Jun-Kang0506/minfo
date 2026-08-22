@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "sourceSnapshotSha256": "1b66d0dc7ad841e77d915f27a48c77682ba6ed2cff1c07a15a2d1508332c2a04",
+  "officialRecordCount": 482,
+  "officialNoteCount": 172,
+  "allLocalesComplete": true,
+  "snapshotUnchanged": true,
+  "locales": {
+    "en": {
+      "recordCount": 482,
+      "distinctOfficialIdCount": 482,
+      "primaryNameCount": 482,
+      "aliasCount": 4,
+      "checkJapaneseCount": 50,
+      "collisionCount": 8,
+      "uncompressedBytes": 22334,
+      "gzipBytes": 5424
+    },
+    "zh": {
+      "recordCount": 482,
+      "distinctOfficialIdCount": 482,
+      "primaryNameCount": 482,
+      "aliasCount": 6,
+      "checkJapaneseCount": 50,
+      "collisionCount": 13,
+      "uncompressedBytes": 21793,
+      "gzipBytes": 5647
+    },
+    "ko": {
+      "recordCount": 482,
+      "distinctOfficialIdCount": 482,
+      "primaryNameCount": 482,
+      "aliasCount": 2,
+      "checkJapaneseCount": 50,
+      "collisionCount": 7,
+      "uncompressedBytes": 22740,
+      "gzipBytes": 5769
+    },
+    "vi": {
+      "recordCount": 482,
+      "distinctOfficialIdCount": 482,
+      "primaryNameCount": 482,
+      "aliasCount": 5,
+      "checkJapaneseCount": 50,
+      "collisionCount": 12,
+      "uncompressedBytes": 24337,
+      "gzipBytes": 6108
+    },
+    "ne": {
+      "recordCount": 482,
+      "distinctOfficialIdCount": 482,
+      "primaryNameCount": 482,
+      "aliasCount": 4,
+      "checkJapaneseCount": 48,
+      "collisionCount": 10,
+      "uncompressedBytes": 33514,
+      "gzipBytes": 6249
+    },
+    "tl": {
+      "recordCount": 482,
+      "distinctOfficialIdCount": 482,
+      "primaryNameCount": 482,
+      "aliasCount": 4,
+      "checkJapaneseCount": 48,
+      "collisionCount": 12,
+      "uncompressedBytes": 22367,
+      "gzipBytes": 5587
+    },
+    "bn": {
+      "recordCount": 482,
+      "distinctOfficialIdCount": 482,
+      "primaryNameCount": 482,
+      "aliasCount": 4,
+      "checkJapaneseCount": 48,
+      "collisionCount": 11,
+      "uncompressedBytes": 33928,
+      "gzipBytes": 6267
+    }
+  }
+}

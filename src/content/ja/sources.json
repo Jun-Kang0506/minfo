@@ -1,4 +1,8 @@
 {
+  "shinjuku-my-number": { "title": "新宿区 マイナンバーカード", "organization": "新宿区", "note": "外国人住民向けのマイナンバー・マイナンバーカードの公式案内です。" },
+  "my-number-card-portal": { "title": "マイナンバーカード総合サイト", "organization": "地方公共団体情報システム機構", "note": "申請方法やよくある質問を含む、マイナンバーカードの公式情報です。" },
+  "my-number-card-contact": { "title": "マイナンバーカード 外国語対応・お問い合わせ", "organization": "地方公共団体情報システム機構", "note": "紛失・盗難時の一時停止と外国語サポートの公式案内です。" },
+  "isa-student-work": { "title": "出入国在留管理庁 資格外活動許可", "organization": "出入国在留管理庁", "note": "留学生の就労条件を含む、資格外活動許可の公式情報です。" },
   "shinjuku-foreign": {
     "title": "新宿区 外国人のための生活情報",
     "organization": "新宿区",

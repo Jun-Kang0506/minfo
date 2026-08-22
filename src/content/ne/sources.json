@@ -1,4 +1,8 @@
 {
+  "shinjuku-my-number": { "title": "शिन्जुकु सिटी: My Number Card", "organization": "शिन्जुकु सिटी", "note": "विदेशी बासिन्दाका लागि My Number र My Number Card को आधिकारिक मार्गदर्शन।" },
+  "my-number-card-portal": { "title": "My Number Card आधिकारिक पोर्टल", "organization": "स्थानीय सरकार सूचना प्रणाली संस्था", "note": "आवेदन र सामान्य प्रश्नसहित My Number Card को आधिकारिक जानकारी।" },
+  "my-number-card-contact": { "title": "My Number Card विदेशी भाषा सम्पर्क", "organization": "स्थानीय सरकार सूचना प्रणाली संस्था", "note": "हराए वा चोरी भएमा अस्थायी रोक र विदेशी भाषा सहायताको आधिकारिक मार्गदर्शन।" },
+  "isa-student-work": { "title": "अध्यागमन सेवा निकाय: हैसियत बाहिरको काम अनुमति", "organization": "जापान अध्यागमन सेवा निकाय", "note": "विद्यार्थीको काम सर्तसहित हैसियत बाहिरको गतिविधि अनुमतिको आधिकारिक जानकारी।" },
   "shinjuku-foreign": {
     "title": "शिन्जुकु सिटीका विदेशी बासिन्दाका लागि जीवन जानकारी",
     "organization": "शिन्जुकु सिटी",

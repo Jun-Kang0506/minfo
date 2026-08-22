@@ -1,5 +1,6 @@
 {
   "questions": {
+    "my_number": { "title": "My Number / My Number Card बारे", "options": [{ "label": "My Number के हो?", "request": "My Number के हो" }, { "label": "My Number Card आवेदन", "request": "My Number Card आवेदन" }, { "label": "मेरो My Number Card हरायो", "request": "My Number Card हरायो" }, { "label": "ठेगाना वा बसोबास हैसियत बदलियो", "request": "My Number Card अद्यावधिक" }, { "label": "मेरो My Number थाहा छैन", "request": "My Number थाहा छैन" }] },
     "health": {
       "title": "तपाईंलाई केमा सहयोग चाहिन्छ?",
       "options": [
@@ -72,9 +73,10 @@
     "garbage": {
       "title": "तपाईंलाई केमा सहयोग चाहिन्छ?",
       "options": [
+        { "label": "यो वस्तु कसरी छुट्याउने?", "request": "यो वस्तु कसरी छुट्याउने?" },
         {
-          "label": "छुट्याउने, संकलन दिन वा ठूलो फोहोर",
-          "request": "छुट्याउने, संकलन दिन वा ठूलो फोहोर"
+          "label": "सङ्कलन दिन, ठूलो आकारको फोहोर वा सामान्य नियम",
+          "request": "सङ्कलन दिन, ठूलो आकारको फोहोर वा सामान्य नियम"
         }
       ]
     },
@@ -145,6 +147,7 @@
     "consultation": {
       "title": "तपाईंलाई केमा सहयोग चाहिन्छ?",
       "options": [
+        { "label": "My Number / My Number Card बारे", "request": "My Number / My Number Card बारे" },
         {
           "label": "दैनिक जीवन सहयोग",
           "request": "दैनिक जीवन सहयोग"

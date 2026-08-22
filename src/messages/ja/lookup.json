@@ -12,7 +12,24 @@
   "areaResults": "{area} の施設を表示しています",
   "stop": "現在地の使用をやめる",
   "distance": "おおよその直線距離",
-  "map": "地図を開く",
+  "mapHandoff": {
+    "googleMaps": "Google Maps",
+    "appleMaps": "Apple Maps",
+    "close": "とじる",
+    "directions": {
+      "get": "行き方を見る",
+      "chooseProvider": "地図をえらんでください",
+      "googleMapsLabel": "Google Maps で行き方を見る",
+      "appleMapsLabel": "Apple Maps で行き方を見る"
+    },
+    "search": {
+      "get": "地図でさがす",
+      "chooseProvider": "地図をえらんでください",
+      "googleMapsLabel": "Google Maps でさがす",
+      "appleMapsLabel": "Apple Maps でさがす",
+      "notice": "施設の公式の名前と住所で地図をさがします。MINFOは、あなたの今いる場所を送りません。行く前に、同じ施設か確認してください。"
+    }
+  },
   "child": "このスナップショットには空き状況、利用資格、料金、時間、入園受付、現在の運営状況はありません。直接確認してください。",
   "evac": "これは場所のデータで、開設状況や現在の状況ではありません。適切かどうかは災害と公式の指示によります。現在の警報は別に確認してください。",
   "privacy": "位置情報はこの端末だけで使われ、MINFOには送信されません。",
@@ -34,11 +51,46 @@
   "nameReadingLabel": "読み方",
   "officialJapaneseNameLabel": "正式な日本語名",
   "ownershipLabel": "設置区分",
-  "directoryTitles": { "childcare": "子育て施設", "evacuation": "緊急避難場所", "medical": "診療所", "elementarySchool": "小学校", "juniorHighSchool": "中学校", "highSchool": "高等学校" },
-  "ownership": { "public": "公立", "private": "私立" },
-  "governingBodies": { "shinjuku_municipal": "新宿区立", "tokyo_metropolitan": "東京都立" },
-  "facilityTypes": { "childrens_center": "児童館", "municipal_kindergarten": "区立幼稚園", "municipal_licensed_nursery": "区立認可保育園", "municipal_certified_childcare_center": "区立認定こども園", "workplace_childcare": "事業所内保育所", "childcare_room": "保育ルーム", "family_daycare": "家庭的保育", "after_school_club": "放課後児童クラブ", "private_kindergarten": "私立幼稚園", "private_licensed_nursery": "私立認可保育園", "private_certified_childcare_center": "私立認定こども園", "evacuation_site": "避難場所", "clinic": "診療所", "elementary_school": "小学校", "junior_high_school": "中学校", "high_school": "高等学校" },
-  "datasetNotes": { "childcare": "このスナップショットには空き状況、利用資格、料金、時間、入園受付、現在の運営状況はありません。直接確認してください。", "evacuation": "これは場所のデータで、開設状況や現在の状況ではありません。適切かどうかは災害と公式の指示によります。現在の警報は別に確認してください。", "medical": "これは医療機関の一覧データであり、現在の利用状況ではありません。診療時間、受診可否、言語対応、保険の取扱い、専門医の有無は表示しません。救急車は119番です。", "school": "この一覧に学校があっても、通学先・入学・入園が保証されるわけではありません。最新の情報は学校または学校運営課に確認してください。" },
+  "directoryTitles": {
+    "childcare": "子育て施設",
+    "evacuation": "緊急避難場所",
+    "medical": "診療所",
+    "elementarySchool": "小学校",
+    "juniorHighSchool": "中学校",
+    "highSchool": "高等学校"
+  },
+  "ownership": {
+    "public": "公立",
+    "private": "私立"
+  },
+  "governingBodies": {
+    "shinjuku_municipal": "新宿区立",
+    "tokyo_metropolitan": "東京都立"
+  },
+  "facilityTypes": {
+    "childrens_center": "児童館",
+    "municipal_kindergarten": "区立幼稚園",
+    "municipal_licensed_nursery": "区立認可保育園",
+    "municipal_certified_childcare_center": "区立認定こども園",
+    "workplace_childcare": "事業所内保育所",
+    "childcare_room": "保育ルーム",
+    "family_daycare": "家庭的保育",
+    "after_school_club": "放課後児童クラブ",
+    "private_kindergarten": "私立幼稚園",
+    "private_licensed_nursery": "私立認可保育園",
+    "private_certified_childcare_center": "私立認定こども園",
+    "evacuation_site": "避難場所",
+    "clinic": "診療所",
+    "elementary_school": "小学校",
+    "junior_high_school": "中学校",
+    "high_school": "高等学校"
+  },
+  "datasetNotes": {
+    "childcare": "このスナップショットには空き状況、利用資格、料金、時間、入園受付、現在の運営状況はありません。直接確認してください。",
+    "evacuation": "これは場所のデータで、開設状況や現在の状況ではありません。適切かどうかは災害と公式の指示によります。現在の警報は別に確認してください。",
+    "medical": "これは医療機関の一覧データであり、現在の利用状況ではありません。診療時間、受診可否、言語対応、保険の取扱い、専門医の有無は表示しません。救急車は119番です。",
+    "school": "この一覧に学校があっても、通学先・入学・入園が保証されるわけではありません。最新の情報は学校または学校運営課に確認してください。"
+  },
   "preparing": {
     "shinjuku-childcare-facilities": {
       "title": "保育施設の検索は準備中です。",
@@ -48,5 +100,30 @@
       "title": "避難場所の検索は準備中です。",
       "body": "この準備中の検索は、現在開設中・最寄りの避難場所を表示しません。現在の状況は公式の防災情報で確認してください。"
     }
+  },
+  "garbage": {
+    "title": "ごみの分け方を調べる",
+    "intro": "捨てたい物の名前を入力してください。",
+    "inputLabel": "ごみの品目名（日本語）",
+    "placeholder": "例：自転車",
+    "localizedItemLabel": "品目",
+    "checkJapaneseLabel": "公式の日本語名を確認してください",
+    "trustNote": "分別の情報は、新宿区の公式日本語オープンデータから表示しています。",
+    "search": "調べる",
+    "loading": "公式の分別データを読み込んでいます…",
+    "unavailable": "分別データを今は使えません。公式データを見るか、もう一度ためしてください。",
+    "retry": "もう一度ためす",
+    "multiple": "{count}件見つかりました。調べたい品目を選んでください。",
+    "truncated": "{count}件のうち、はじめの{shown}件を表示しています。文字を増やして、しぼってください。",
+    "noMatch": "「{query}」に合う公式の品目名が見つかりません。日本語を確認するか、文字を減らして調べてください。",
+    "chooseItemLabel": "{item}を選ぶ",
+    "resultTitle": "分別の結果",
+    "officialItemLabel": "公式の日本語の品目名",
+    "categoryLabel": "分別区分",
+    "officialCategoryLabel": "公式の日本語の分別区分",
+    "officialNoteLabel": "公式の備考（日本語）",
+    "searchAgain": "もう一度調べる",
+    "sourceLink": "公式データを見る",
+    "disclaimer": "これは確認ずみの公式データの保存版です。収集日の案内ではありません。捨てる前に、公式の備考と公式ページを確認してください。"
   }
 }

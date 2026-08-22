@@ -1,5 +1,6 @@
 {
   "questions": {
+    "my_number": { "title": "Tungkol sa My Number / My Number Card", "options": [{ "label": "Ano ang My Number?", "request": "Ano ang My Number" }, { "label": "Mag-apply ng My Number Card", "request": "Mag-apply ng My Number Card" }, { "label": "Nawala ang My Number Card", "request": "Nawala ang My Number Card" }, { "label": "Nagbago ang address o residence status", "request": "I-update ang My Number Card" }, { "label": "Hindi ko alam ang My Number", "request": "Hindi alam ang My Number" }] },
     "health": {
       "title": "Ano ang kailangan mo ng tulong?",
       "options": [
@@ -72,9 +73,10 @@
     "garbage": {
       "title": "Ano ang kailangan mo ng tulong?",
       "options": [
+        { "label": "Paano pag-uuriin ang isang partikular na bagay?", "request": "Paano pag-uuriin ang isang partikular na bagay?" },
         {
-          "label": "Pag-uuri, araw ng koleksyon, o malalaking basura",
-          "request": "Pag-uuri, araw ng koleksyon, o malalaking basura"
+          "label": "Araw ng koleksyon, malalaking basura, o pangkalahatang tuntunin",
+          "request": "Araw ng koleksyon, malalaking basura, o pangkalahatang tuntunin"
         }
       ]
     },
@@ -145,6 +147,7 @@
     "consultation": {
       "title": "Ano ang kailangan mo ng tulong?",
       "options": [
+        { "label": "Tungkol sa My Number / My Number Card", "request": "Tungkol sa My Number / My Number Card" },
         {
           "label": "Pang-araw-araw na tulong sa buhay",
           "request": "Pang-araw-araw na tulong sa buhay"

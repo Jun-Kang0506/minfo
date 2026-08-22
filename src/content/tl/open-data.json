@@ -34,5 +34,13 @@
   "tokyo-medical-welfare-group": {
     "titleGloss": "Medikal at welfare: kategorya ng catalog",
     "note": "Kategorya ng medical at welfare ng catalog: landas ng paghahanap para sa clinic at welfare datasets ayon sa ward, na magkakaiba ang pangalan."
+  },
+  "shinjuku-medical-clinics": {
+    "titleGloss": "Mga klinika sa Shinjuku",
+    "note": "Opisyal na snapshot ng data ng Shinjuku City na ginagamit sa paghahanap ng klinika sa MINFO. Listahan ito ng mga pasilidad at hindi nito ipinapakita kung bukas ngayon o tumatanggap ng pasyente."
+  },
+  "tokyo-public-schools-2025": {
+    "titleGloss": "Mga listahan ng pampublikong paaralan sa Tokyo",
+    "note": "Pinili mula sa iisang opisyal na source ng Tokyo ang mga paaralan sa Shinjuku para sa paghahanap ng elementarya, junior high school, at high school sa MINFO. Ang pagkakasama sa listahan ay hindi garantiya ng pagpasok o pagtatalaga sa paaralan."
   }
 }
