@@ -206,6 +206,12 @@
       "Trước khi đi, xác nhận thông tin hiện tại trực tiếp với cơ sở."
     ]
   },
+  "my-number-overview": { "direct": "My Number là số cá nhân 12 chữ số cấp cho người có đăng ký cư trú tại Nhật Bản. My Number Card là thẻ IC có ảnh. Có My Number không có nghĩa là bạn đã có thẻ.", "steps": ["Xem thông tin chính thức bên dưới nếu bạn cần thẻ hoặc thủ tục."] },
+  "my-number-apply-card": { "direct": "Đăng ký My Number Card là việc riêng với việc được cấp My Number. Tùy mẫu đơn, có thể đăng ký chính thức bằng điện thoại thông minh, trực tuyến hoặc qua bưu điện.", "steps": ["Kiểm tra mẫu đơn và dùng cổng chính thức.", "Nếu thông tin đơn khác với thẻ lưu trú, hãy liên hệ chính quyền địa phương."] },
+  "my-number-lost-card": { "direct": "Hãy làm ngay: dùng hướng dẫn liên hệ chính thức để yêu cầu tạm khóa My Number Card bị mất hoặc bị trộm. Có hỗ trợ điện thoại bằng tiếng nước ngoài.", "steps": ["Dùng ngay thông tin liên hệ chính thức bên dưới.", "Nếu liên quan đến trộm cắp hoặc tội phạm, cũng hãy liên hệ cảnh sát."] },
+  "my-number-update": { "direct": "Khi địa chỉ hoặc thời hạn lưu trú thay đổi, My Number Card có thể cần thủ tục. Người nước ngoài gia hạn thời gian lưu trú có thể cần cập nhật hiệu lực thẻ trước khi hết hạn.", "steps": ["Xác nhận thủ tục cần thiết với chính quyền địa phương trước khi thẻ hết hạn."] },
+  "my-number-find": { "direct": "My Number và My Number Card khác nhau. Thông báo số cá nhân không phải giấy tờ tùy thân chung.", "steps": ["Kiểm tra Thẻ Thông báo hoặc Thông báo số cá nhân để xem My Number.", "Nếu vẫn cần, hãy xin giấy chứng nhận cư trú có ghi My Number tại chính quyền địa phương."] },
+  "student-part-time-work": { "direct": "Nếu áp dụng với bạn: sinh viên có tư cách lưu trú Du học thường cần giấy phép hoạt động ngoài tư cách trước khi làm việc có lương. MINFO không thể xác nhận giấy phép cá nhân của bạn.", "steps": ["Xem hướng dẫn chính thức của Cơ quan Dịch vụ Xuất nhập cảnh trước khi bắt đầu làm việc.", "Với giấy phép toàn diện, giới hạn chung là tối đa 28 giờ mỗi tuần và 8 giờ mỗi ngày trong kỳ nghỉ dài. Công việc bị cấm vẫn bị loại trừ."] },
   "fallback": {
     "direct": "MINFO chưa có câu trả lời chắc chắn cho câu hỏi này trong các nguồn đáng tin cậy — nhưng bạn có thể làm như sau. Câu hỏi của bạn có thể thuộc một chủ đề của MINFO (bệnh viện, thuế, rác, nhà ở, tư vấn), hãy thử chọn danh mục bên dưới hoặc hỏi lại bằng cách khác.",
     "steps": [

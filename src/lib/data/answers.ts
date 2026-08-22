@@ -4,6 +4,44 @@ import { getAnswerContent } from "../../i18n/content";
 /** Stable answer metadata. Localized display content lives in src/content. */
 const ANSWER_METADATA: Omit<AnswerTemplate, "content">[] = [
   {
+    "id": "my-number-overview",
+    "categoryId": "consultation",
+    "keywords": ["my number", "individual number", "マイナンバー", "个人编号"],
+    "sourceIds": ["shinjuku-my-number", "my-number-card-portal"]
+  },
+  {
+    "id": "my-number-apply-card",
+    "categoryId": "consultation",
+    "keywords": ["apply my number card", "my number card application", "マイナンバーカード 申請"],
+    "sourceIds": ["shinjuku-my-number", "my-number-card-portal"]
+  },
+  {
+    "id": "my-number-lost-card",
+    "categoryId": "consultation",
+    "safetyLevel": "caution",
+    "keywords": ["lost my number card", "my number card stolen", "マイナンバーカード 紛失"],
+    "sourceIds": ["my-number-card-contact", "my-number-card-portal"]
+  },
+  {
+    "id": "my-number-update",
+    "categoryId": "consultation",
+    "keywords": ["my number card address", "my number card expiry", "マイナンバーカード 更新"],
+    "sourceIds": ["shinjuku-my-number", "my-number-card-portal"]
+  },
+  {
+    "id": "my-number-find",
+    "categoryId": "consultation",
+    "keywords": ["do not know my number", "find my number", "マイナンバー わからない"],
+    "sourceIds": ["shinjuku-my-number", "my-number-card-portal"]
+  },
+  {
+    "id": "student-part-time-work",
+    "categoryId": "consultation",
+    "safetyLevel": "caution",
+    "keywords": ["student part time work", "student work permission", "資格外活動許可", "留学生 アルバイト"],
+    "sourceIds": ["isa-student-work"]
+  },
+  {
     "id": "hospital",
     "categoryId": "hospitals",
     "safetyLevel": "caution",

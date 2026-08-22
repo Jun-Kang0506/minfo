@@ -248,6 +248,11 @@ const QUESTION_METADATA = {
     "id": "consultation",
     "options": [
       {
+        "id": "my_number",
+        "intentId": "my_number",
+        "outcome": { "type": "nextQuestion", "questionId": "my_number" }
+      },
+      {
         "id": "daily_life_help",
         "intentId": "daily_life_help",
         "outcome": {
@@ -287,6 +292,16 @@ const QUESTION_METADATA = {
           "topicId": "bank-account"
         }
       }
+    ]
+  },
+  "my_number": {
+    "id": "my_number",
+    "options": [
+      { "id": "my_number_overview", "intentId": "my_number_overview", "outcome": { "type": "topic", "topicId": "my-number-overview" } },
+      { "id": "my_number_apply_card", "intentId": "my_number_apply_card", "outcome": { "type": "topic", "topicId": "my-number-apply-card" } },
+      { "id": "my_number_lost_card", "intentId": "my_number_lost_card", "outcome": { "type": "topic", "topicId": "my-number-lost-card" } },
+      { "id": "my_number_update", "intentId": "my_number_update", "outcome": { "type": "topic", "topicId": "my-number-update" } },
+      { "id": "my_number_find", "intentId": "my_number_find", "outcome": { "type": "topic", "topicId": "my-number-find" } }
     ]
   },
   "food-prayer": {

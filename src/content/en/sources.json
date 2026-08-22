@@ -1,4 +1,8 @@
 {
+  "shinjuku-my-number": { "title": "Shinjuku City: My Number Card", "organization": "Shinjuku City", "note": "Official Shinjuku guidance for foreign residents about My Number and the My Number Card." },
+  "my-number-card-portal": { "title": "My Number Card Official Portal", "organization": "Local Governments Information Systems Organization", "note": "Official My Number Card information, including application guidance and FAQs." },
+  "my-number-card-contact": { "title": "My Number Card: foreign-language contact", "organization": "Local Governments Information Systems Organization", "note": "Official contact guidance for temporary suspension and foreign-language support after loss or theft." },
+  "isa-student-work": { "title": "Immigration Services Agency: permission to work outside status", "organization": "Immigration Services Agency of Japan", "note": "Official information about permission for activities outside a residence status, including student work conditions." },
   "shinjuku-foreign": {
     "title": "Shinjuku City: Living Information for Foreign Residents",
     "organization": "Shinjuku City",

@@ -37,14 +37,14 @@ function LoadingCard({ label }: { label: string }) {
   );
 }
 
-export function GuidedFlow({ categoryId, onExit }: { categoryId: CategoryId; onExit: () => void }) {
+export function GuidedFlow({ categoryId, onExit, initialTopicId, initialQuestionId, initialDatasetCandidateId }: { categoryId: CategoryId; onExit: () => void; initialTopicId?: TopicId; initialQuestionId?: string; initialDatasetCandidateId?: string }) {
   const { lang } = useLanguage();
   const [history, setHistory] = useState<ActiveQuestion[]>([
-    { questionId: GUIDED_FLOWS[categoryId].startQuestionId },
+    { questionId: initialQuestionId ?? GUIDED_FLOWS[categoryId].startQuestionId },
   ]);
-  const [view, setView] = useState<View>("question");
+  const [view, setView] = useState<View>(initialTopicId ? "loading" : initialDatasetCandidateId ? "structuredLookup" : "question");
   const [answer, setAnswer] = useState<Answer | null>(null);
-  const [resolution, setResolution] = useState<SemanticResolution | null>(null);
+  const [resolution, setResolution] = useState<SemanticResolution | null>(initialTopicId ? { questionId: "context", optionId: initialTopicId, intentId: initialTopicId, topicId: initialTopicId } : initialDatasetCandidateId ? { questionId: "context", optionId: initialDatasetCandidateId, intentId: initialDatasetCandidateId, datasetCandidateId: initialDatasetCandidateId, deliveryKind: "structured_lookup" } : null);
   const [resultCardIndex, setResultCardIndex] = useState(0);
   const [feedback, setFeedback] = useState<FeedbackChoice | null>(null);
   const headingRef = useRef<HTMLHeadingElement | HTMLLegendElement | null>(null);
@@ -72,11 +72,11 @@ export function GuidedFlow({ categoryId, onExit }: { categoryId: CategoryId; onE
     : undefined;
 
   useEffect(() => {
-    if (!resolution?.topicId || !resolvedOption) return;
+    if (!resolution?.topicId) return;
 
     const controller = new AbortController();
     let current = true;
-    const request = resolvedOption.request[lang];
+    const request = resolvedOption?.request[lang] ?? resolution.topicId;
     const capturedKey = semanticKey;
     const capturedLang = lang;
     const isCurrent = () => current && latestLang.current === capturedLang && latestResolution.current?.topicId && [latestResolution.current.questionId, latestResolution.current.optionId, latestResolution.current.intentId, latestResolution.current.topicId].join(":") === capturedKey;

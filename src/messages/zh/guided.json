@@ -1,5 +1,6 @@
 {
   "questions": {
+    "my_number": { "title": "关于 My Number / My Number Card", "options": [{ "label": "什么是 My Number？", "request": "什么是 My Number" }, { "label": "我要申请 My Number Card", "request": "申请 My Number Card" }, { "label": "我遗失了 My Number Card", "request": "遗失 My Number Card" }, { "label": "我的地址或在留身份变更", "request": "更新 My Number Card" }, { "label": "我不知道自己的 My Number", "request": "不知道 My Number" }] },
     "health": {
       "title": "您需要了解什么？",
       "options": [
@@ -145,6 +146,7 @@
     "consultation": {
       "title": "您需要了解什么？",
       "options": [
+        { "label": "关于 My Number / My Number Card", "request": "关于 My Number / My Number Card" },
         {
           "label": "生活咨询",
           "request": "生活咨询"

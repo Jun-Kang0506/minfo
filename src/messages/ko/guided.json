@@ -1,5 +1,6 @@
 {
   "questions": {
+    "my_number": { "title": "My Number / My Number Card", "options": [{ "label": "My Number란?", "request": "My Number란" }, { "label": "My Number Card 신청", "request": "My Number Card 신청" }, { "label": "My Number Card를 잃어버림", "request": "My Number Card 분실" }, { "label": "주소 또는 체류 자격 변경", "request": "My Number Card 갱신" }, { "label": "My Number를 모름", "request": "My Number를 모름" }] },
     "health": {
       "title": "무엇이 필요하신가요?",
       "options": [
@@ -145,6 +146,7 @@
     "consultation": {
       "title": "무엇이 필요하신가요?",
       "options": [
+        { "label": "My Number / My Number Card", "request": "My Number / My Number Card" },
         {
           "label": "생활 상담",
           "request": "생활 상담"

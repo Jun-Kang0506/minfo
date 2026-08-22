@@ -50,6 +50,12 @@ export type TopicId =
   | "japanese-class-okubo"
   | "halal-food"
   | "prayer-facilities"
+  | "my-number-overview"
+  | "my-number-apply-card"
+  | "my-number-lost-card"
+  | "my-number-update"
+  | "my-number-find"
+  | "student-part-time-work"
   | "fallback";
 
 export interface Category {
@@ -204,6 +210,13 @@ export type GuidedOutcome =
   | { type: "structuredLookup"; datasetCandidateId: string }
   | { type: "unsupported" }
   | { type: "emergency"; topicId: "ambulance" | "police" };
+
+/** A contextual pathway reuses the category flow or a stable answer topic. */
+export type ContextPathwayTarget =
+  | { type: "category"; categoryId: CategoryId }
+  | { type: "topic"; topicId: TopicId }
+  | { type: "guidedQuestion"; categoryId: CategoryId; questionId: string }
+  | { type: "structuredLookup"; categoryId: CategoryId; datasetCandidateId: LookupDatasetId };
 
 export interface GuidedOption {
   id: string;

@@ -167,4 +167,4 @@ export const UI_STRINGS: Localized<UIStrings> = Object.fromEntries(
     const messages = MESSAGES[locale];
     return [locale, { ...messages.ui, ...messages.pages, ...messages.result, emergencyBar: messages.emergency.emergencyBar }];
   }),
-) as Localized<UIStrings>;
+) as unknown as Localized<UIStrings>;

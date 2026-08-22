@@ -1,4 +1,8 @@
 {
+  "shinjuku-my-number": { "title": "Lungsod ng Shinjuku: My Number Card", "organization": "Lungsod ng Shinjuku", "note": "Opisyal na gabay para sa mga dayuhang residente tungkol sa My Number at My Number Card." },
+  "my-number-card-portal": { "title": "Opisyal na Portal ng My Number Card", "organization": "Local Governments Information Systems Organization", "note": "Opisyal na impormasyon sa My Number Card, kabilang ang aplikasyon at karaniwang tanong." },
+  "my-number-card-contact": { "title": "My Number Card: contact sa ibang wika", "organization": "Local Governments Information Systems Organization", "note": "Opisyal na gabay para sa pansamantalang pagsuspinde at tulong sa ibang wika pagkatapos mawala o manakaw." },
+  "isa-student-work": { "title": "Immigration Services Agency: pahintulot sa trabaho sa labas ng status", "organization": "Immigration Services Agency of Japan", "note": "Opisyal na impormasyon tungkol sa pahintulot sa gawain sa labas ng residence status, kabilang ang kondisyon sa trabaho ng estudyante." },
   "shinjuku-foreign": {
     "title": "Shinjuku City: Impormasyon sa Pamumuhay para sa mga Dayuhang Residente",
     "organization": "Shinjuku City",

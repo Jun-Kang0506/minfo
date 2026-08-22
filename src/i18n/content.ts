@@ -67,13 +67,15 @@ export function getAnswerContent(id: string): Localized<LocalizedAnswerContent> 
     throw new Error(`Missing English answer content for ${id}`);
   }
 
-  return Object.fromEntries(
-    languages.map((lang) => [lang, answerContent[lang][id] ?? answerContent.en[id]])
-  ) as Localized<LocalizedAnswerContent>;
+  return Object.fromEntries(languages.map((lang) => {
+    const content = answerContent[lang][id];
+    if (!content) throw new Error(`Missing ${lang} answer content for ${id}`);
+    return [lang, content];
+  })) as Localized<LocalizedAnswerContent>;
 }
 
 export function getSourceContent(id: string, lang: LanguageCode): SourceContent | undefined {
-  return sourceContent[lang][id] ?? sourceContent.en[id];
+  return sourceContent[lang][id];
 }
 
 export function getLocalizedSourceNotes(id: string): Localized<string> {
@@ -94,7 +96,11 @@ export function getLocalizedOpenDataContent(id: string): {
     throw new Error(`Missing English open-data content for ${id}`);
   }
 
-  const content = languages.map((lang) => [lang, openDataContent[lang][id] ?? openDataContent.en[id]] as const);
+  const content = languages.map((lang) => {
+    const item = openDataContent[lang][id];
+    if (!item) throw new Error(`Missing ${lang} open-data content for ${id}`);
+    return [lang, item] as const;
+  });
 
   return {
     titleGloss: Object.fromEntries(content.map(([lang, item]) => [lang, item.titleGloss])) as Localized<string>,

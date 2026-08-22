@@ -1,4 +1,8 @@
 {
+  "shinjuku-my-number": { "title": "Thành phố Shinjuku: My Number Card", "organization": "Thành phố Shinjuku", "note": "Hướng dẫn chính thức cho cư dân nước ngoài về My Number và My Number Card." },
+  "my-number-card-portal": { "title": "Cổng chính thức My Number Card", "organization": "Tổ chức Hệ thống Thông tin Chính quyền Địa phương", "note": "Thông tin chính thức về My Number Card, gồm cách đăng ký và câu hỏi thường gặp." },
+  "my-number-card-contact": { "title": "Liên hệ ngoại ngữ My Number Card", "organization": "Tổ chức Hệ thống Thông tin Chính quyền Địa phương", "note": "Hướng dẫn chính thức về tạm khóa và hỗ trợ ngoại ngữ sau khi mất hoặc bị trộm." },
+  "isa-student-work": { "title": "Cơ quan Dịch vụ Xuất nhập cảnh: giấy phép làm việc ngoài tư cách", "organization": "Cơ quan Dịch vụ Xuất nhập cảnh Nhật Bản", "note": "Thông tin chính thức về giấy phép hoạt động ngoài tư cách, gồm điều kiện làm việc của sinh viên." },
   "shinjuku-foreign": {
     "title": "Thông tin đời sống cho cư dân nước ngoài của quận Shinjuku",
     "organization": "Quận Shinjuku",

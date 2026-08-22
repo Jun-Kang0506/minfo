@@ -1,4 +1,5 @@
 {
+  "students": { "homeTitle": "适合您情况的信息", "homeSub": "国际学生常用生活事项的快捷入口。", "homeCta": "国际学生专区", "title": "国际学生专区", "sub": "请选择生活事项。本路径不会判断您的资格或在留身份。", "sections": [{ "id": "start", "title": "开始在日本生活", "items": [{ "id": "registration", "title": "住址登记", "description": "搬家和住民登记" }, { "id": "myNumber", "title": "My Number", "description": "My Number 与卡" }, { "id": "insurance", "title": "健康保险", "description": "了解健康保险" }] }, { "id": "life", "title": "学习和日常生活", "items": [{ "id": "japanese", "title": "日语课程", "description": "寻找课程" }, { "id": "housing", "title": "住房", "description": "租房和搬家" }, { "id": "clinic", "title": "医院和诊所", "description": "寻找医疗帮助" }, { "id": "disaster", "title": "防灾准备", "description": "为紧急情况做准备" }] }, { "id": "work", "title": "兼职工作", "items": [{ "id": "work", "title": "兼职基础", "description": "许可和一般限制" }, { "id": "taxes", "title": "税务", "description": "税务信件和缴费" }] }, { "id": "help", "title": "需要帮助时", "items": [{ "id": "consultation", "title": "咨询", "description": "寻找咨询窗口" }, { "id": "emergency", "title": "紧急情况", "description": "119 和 110 指引" }] }] },
   "sources": {
     "title": "基于官方与公共信息",
     "sub": "MINFO 只使用经过筛选的官方和公共机构信息回答，每个回答都会注明来源。",

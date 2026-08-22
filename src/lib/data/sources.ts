@@ -6,6 +6,31 @@ type SourceMetadata = Omit<Source, "title" | "organization" | "note">;
 
 const SOURCE_METADATA: SourceMetadata[] = [
   {
+    "id": "shinjuku-my-number",
+    "titleJa": "新宿区 外国人向け生活情報 マイナンバーカード",
+    "url": "https://www.foreign.city.shinjuku.lg.jp/jp/kurashi/mynumbercard/",
+    "categories": ["consultation"]
+  },
+  {
+    "id": "my-number-card-portal",
+    "titleJa": "マイナンバーカード総合サイト",
+    "url": "https://www.kojinbango-card.go.jp/en-faq/",
+    "localizedUrls": { "en": "https://www.kojinbango-card.go.jp/en-faq/" },
+    "categories": ["consultation"]
+  },
+  {
+    "id": "my-number-card-contact",
+    "titleJa": "マイナンバーカード総合サイト 外国語対応・お問い合わせ",
+    "url": "https://www.kojinbango-card.go.jp/contact/tel/",
+    "categories": ["consultation"]
+  },
+  {
+    "id": "isa-student-work",
+    "titleJa": "出入国在留管理庁 資格外活動許可",
+    "url": "https://www.moj.go.jp/isa/applications/procedures/16-8.html",
+    "categories": ["consultation"]
+  },
+  {
     "id": "shinjuku-foreign",
     "titleJa": "新宿区 外国人向け生活情報ウェブサイト",
     "url": "https://www.foreign.city.shinjuku.lg.jp/en/",
